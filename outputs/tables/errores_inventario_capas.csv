@@ -1,0 +1,6 @@
+﻿ruta,nombre_archivo,carpeta_origen,numero_features,geometria,crs,columnas_disponibles,tipos_columnas,bounds_extension_espacial,estado,error
+data\raw\hidrologia_atoyac\conjunto_de_datos\a1809.shp,a1809.shp,hidrologia_atoyac\conjunto_de_datos,,,,,,,error,UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfa in position 10: invalid start byte
+data\raw\hidrologia_atoyac\conjunto_de_datos\i1809.shp,i1809.shp,hidrologia_atoyac\conjunto_de_datos,,,,,,,error,UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf3 in position 17: invalid continuation byte
+data\raw\hidrologia_atoyac\conjunto_de_datos\m1809.shp,m1809.shp,hidrologia_atoyac\conjunto_de_datos,,,,,,,error,UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 3: invalid continuation byte
+data\raw\hidrologia_atoyac\conjunto_de_datos\n1809.shp,n1809.shp,hidrologia_atoyac\conjunto_de_datos,,,,,,,error,UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 2: invalid continuation byte
+data\raw\hidrologia_atoyac\conjunto_de_datos\p1809.shp,p1809.shp,hidrologia_atoyac\conjunto_de_datos,,,,,,,error,UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 2: invalid continuation byte

@@ -1,0 +1,204 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\geometry{margin=2.35cm}
+\definecolor{AtoyacBlue}{HTML}{174A6A}
+\definecolor{AtoyacGreen}{HTML}{2F6F5E}
+\definecolor{AtoyacGray}{HTML}{555555}
+\hypersetup{colorlinks=true, linkcolor=AtoyacBlue, urlcolor=AtoyacBlue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\setlength{\headheight}{14pt}
+\setlist[itemize]{leftmargin=1.4em, itemsep=0.25em, topsep=0.25em}
+\setlist[enumerate]{leftmargin=1.6em, itemsep=0.3em, topsep=0.3em}
+\renewcommand{\arraystretch}{1.15}
+
+\titleformat{\section}{\Large\bfseries\color{AtoyacBlue}}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\large\bfseries\color{AtoyacGreen}}{\thesubsection}{0.7em}{}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{AtoyacGray}{Observaciones Atoyac}}
+\rhead{\textcolor{AtoyacGray}{Diagnostico textil}}
+\cfoot{\textcolor{AtoyacGray}{\thepage\ de \pageref{LastPage}}}
+
+\begin{document}
+
+{\centering
+{\Huge\bfseries\color{AtoyacBlue} Observaciones del diagnostico\par}
+{\Large\bfseries SAIC, DENUE textil productivo e hidrografia\par}
+\vspace{0.8em}
+{\large Servicio social Atoyac\par}
+{\normalsize \today\par}
+\vspace{1.2em}
+}
+\hrule
+\vspace{1em}
+
+\section{Alcance de las observaciones}
+
+Estas observaciones sintetizan la lectura de las tablas generadas por el flujo reproducible. Se usan como insumo para una priorizacion preliminar de actividad textil potencialmente relevante en la zona alta del Atoyac.
+
+El documento no afirma contaminacion directa por establecimiento. Las expresiones usadas son: actividad potencialmente relevante, presion ambiental potencial, proximidad a red hidrografica, unidades pequenas inferidas y zonas para revision o validacion de campo.
+
+\section{Observaciones a partir de SAIC}
+
+SAIC se interpreta a nivel municipal/entidad. No ubica negocios individuales ni sustituye a DENUE. Su valor principal es mostrar estructura economica agregada por actividad y estrato de personal ocupado.
+
+\subsection{Estructura general municipal}
+
+\begin{longtable}{p{3.3cm}p{1.7cm}p{1.5cm}p{1.7cm}p{2.2cm}p{2.2cm}p{2.2cm}}
+\toprule
+Municipio & SCIAN & UE & Personal & Personal/UE & Prop. familiar & Maquila/ingresos \\
+\midrule
+Huejotzingo & 313 & 21 & 1233 & 58.71 & 0.006 & 0.038 \\
+Huejotzingo & 314 & 22 & 91 & 4.14 & 0.341 & 0.031 \\
+San Martin Texmelucan & 314 & 28 & 70 & 2.50 & 0.543 & 0.041 \\
+San Martin Texmelucan & 315 & 321 & 1050 & 3.27 & 0.473 & 0.243 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Observacion SAIC 1.} Huejotzingo muestra una estructura muy distinta en SCIAN 313: pocas unidades economicas relativas, pero con alto personal promedio por unidad economica. Esto sugiere presencia de establecimientos mas grandes o intensivos en personal dentro de insumos textiles y acabado textil.
+
+\textbf{Observacion SAIC 2.} San Martin Texmelucan concentra actividad en SCIAN 315, fabricacion de prendas de vestir, con 321 unidades economicas y 1050 personas ocupadas. La lectura sugiere una base amplia de confeccion o produccion de prendas a escala municipal.
+
+\textbf{Observacion SAIC 3.} San Martin Texmelucan 315 presenta una proporcion familiar/no remunerada de 0.473 y una proporcion remunerada de 0.507. Esto no prueba informalidad, pero si sugiere una estructura donde el componente familiar o no remunerado tiene peso considerable.
+
+\textbf{Observacion SAIC 4.} Huejotzingo 313 tiene proporcion familiar/no remunerada muy baja y proporcion remunerada muy alta. Esto apunta a una organizacion laboral mas formalizada o empresarial en ese subsector, comparada con actividades de menor escala.
+
+\textbf{Observacion SAIC 5.} El indicador de maquila sobre ingresos es especialmente alto en Puebla total 315 y relevante en San Martin Texmelucan 315. Esto puede ser consistente con trabajo por encargo o transformacion para terceros, aunque no identifica cadenas productivas especificas.
+
+\subsection{Estrato 0 a 10: micro y unidades pequenas}
+
+\begin{longtable}{p{3.3cm}p{1.7cm}p{1.5cm}p{1.7cm}p{2.1cm}p{2.2cm}p{2.2cm}}
+\toprule
+Municipio & SCIAN & UE & Personal & Personal/UE & Prop. familiar & Maquila/ingresos \\
+\midrule
+Huejotzingo & 313 & 5 & 21 & 4.20 & 0.333 & 0.804 \\
+Huejotzingo & 314 & 19 & 44 & 2.32 & 0.636 & 0.225 \\
+San Martin Texmelucan & 314 & 28 & 70 & 2.50 & 0.543 & 0.041 \\
+San Martin Texmelucan & 315 & 303 & 753 & 2.49 & 0.618 & 0.260 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Observacion SAIC 6.} El estrato 0 a 10 revela evidencia agregada de unidades pequenas. No permite ubicar negocios, pero si permite inferir que existe actividad de baja escala que puede no observarse completamente en DENUE.
+
+\textbf{Observacion SAIC 7.} San Martin Texmelucan 315 tiene 303 unidades economicas en estrato 0 a 10. Esta es una senal fuerte de tejido productivo pequeno en prendas de vestir a nivel municipal.
+
+\textbf{Observacion SAIC 8.} Huejotzingo 314 tiene 19 unidades economicas en estrato 0 a 10, con proporcion familiar/no remunerada de 0.636. Esto puede apoyar una hipotesis de unidades pequenas o familiares en productos textiles excepto prendas de vestir.
+
+\textbf{Observacion SAIC 9.} Huejotzingo 313 en estrato 0 a 10 tiene maquila/ingresos de 0.804. Aunque son pocas unidades, este indicador sugiere que una parte importante de sus ingresos proviene de maquilar o transformar materias primas de terceros.
+
+\textbf{Observacion SAIC 10.} La lectura de microempresas debe tratarse como inferencia agregada municipal. Para convertirla en evidencia territorial se requeriria validacion de campo, padrones locales, entrevistas o una fuente con ubicacion.
+
+\section{Observaciones a partir de negocios identificados en DENUE}
+
+El filtro actual excluye comercio de prendas, boutiques, tiendas, novedades, mercerias, zapaterias y falsos positivos no textiles. La base final conserva actividad textil productiva o de proceso: confeccion, maquila, costura, modista, pantalon, jeans, mezclilla, bordado, deshebrado, lavado, deslavado, tintoreria, tenido, acabado y tratamiento.
+
+\subsection{Distribucion por localidad/zona}
+
+\begin{longtable}{p{4cm}p{3.7cm}r}
+\toprule
+Zona & Categoria & Establecimientos \\
+\midrule
+Huejotzingo & Alta relevancia ambiental & 44 \\
+Huejotzingo & Media relevancia ambiental & 32 \\
+Huejotzingo & Revisar & 29 \\
+San Martin Texmelucan & Alta relevancia ambiental & 119 \\
+San Martin Texmelucan & Media relevancia ambiental & 390 \\
+San Martin Texmelucan & Revisar & 101 \\
+Xalmimilulco & Alta relevancia ambiental & 23 \\
+Xalmimilulco & Media relevancia ambiental & 277 \\
+Xalmimilulco & Revisar & 52 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Observacion DENUE 1.} La base final contiene 1067 establecimientos productivos o de proceso textil potencialmente relevantes.
+
+\textbf{Observacion DENUE 2.} San Martin Texmelucan concentra el mayor numero de puntos DENUE filtrados, con 610 establecimientos. Esto coincide con la lectura SAIC de una base amplia de fabricacion de prendas de vestir.
+
+\textbf{Observacion DENUE 3.} Xalmimilulco registra 352 establecimientos filtrados, la mayoria de media relevancia ambiental. Esto refuerza su importancia espacial dentro del municipio de Huejotzingo, aunque SAIC no la observe como unidad independiente.
+
+\textbf{Observacion DENUE 4.} Huejotzingo muestra 105 establecimientos filtrados, pero 44 son de alta relevancia ambiental. En terminos relativos, la presencia de actividades de lavado, tintoreria, acabado o tratamiento merece revision focalizada.
+
+\textbf{Observacion DENUE 5.} Las categorias ``revisar'' son importantes porque pueden incluir nombres ambiguos o registros SCIAN que requieren validacion manual. No deben descartarse ni interpretarse automaticamente como alto riesgo.
+
+\subsection{Proximidad a cauces}
+
+\begin{longtable}{p{4cm}p{2.6cm}r}
+\toprule
+Rango o buffer & Categoria & Establecimientos \\
+\midrule
+0--100 m & Alta & 23 \\
+0--100 m & Media & 67 \\
+0--100 m & Revisar & 13 \\
+0--250 m acumulado & Alta & 61 \\
+0--250 m acumulado & Media & 166 \\
+0--250 m acumulado & Revisar & 41 \\
+0--500 m acumulado & Alta & 123 \\
+0--500 m acumulado & Media & 349 \\
+0--500 m acumulado & Revisar & 98 \\
+0--1000 m acumulado & Alta & 177 \\
+0--1000 m acumulado & Media & 627 \\
+0--1000 m acumulado & Revisar & 166 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Observacion DENUE 6.} En el buffer de 100 m hay 103 establecimientos filtrados: 23 de alta relevancia, 67 de media y 13 por revisar. Este grupo es prioritario para revision de campo por proximidad inmediata a cauces.
+
+\textbf{Observacion DENUE 7.} Dentro de 500 m se acumulan 570 establecimientos filtrados. Esta concentracion indica que buena parte de la actividad textil productiva o de proceso ocurre dentro de una franja cercana a la red hidrografica.
+
+\textbf{Observacion DENUE 8.} Dentro de 1000 m se acumulan 970 establecimientos filtrados. Esto no significa afectacion ambiental, pero si muestra una proximidad territorial amplia entre actividad textil y cauces/red hidrografica.
+
+\textbf{Observacion DENUE 9.} San Martin concentra 68 establecimientos en 0--100 m y 230 en 250--500 m. Su lectura debe combinarse con SAIC 315, donde existe una base municipal amplia de unidades pequenas.
+
+\textbf{Observacion DENUE 10.} Xalmimilulco concentra su mayor volumen entre 500 y 1000 m, con 194 establecimientos en ese rango. Esto sugiere un patron espacial distinto al de los puntos mas inmediatos al cauce.
+
+\section{Cruce interpretativo SAIC--DENUE}
+
+\textbf{Sintesis 1.} SAIC ayuda a entender la estructura municipal, mientras DENUE permite ubicar puntos. La combinacion de ambas fuentes es mas fuerte que cualquiera por separado.
+
+\textbf{Sintesis 2.} San Martin Texmelucan tiene coherencia entre SAIC y DENUE: SAIC muestra muchas unidades pequenas en prendas de vestir y DENUE muestra la mayor concentracion espacial de establecimientos filtrados.
+
+\textbf{Sintesis 3.} Xalmimilulco debe tratarse como hallazgo espacial relevante dentro de Huejotzingo. No aparece separado en SAIC, pero DENUE y las capas por localidad permiten observarlo con detalle territorial.
+
+\textbf{Sintesis 4.} Huejotzingo 313 sugiere establecimientos mas grandes o mas intensivos en personal, mientras DENUE muestra puntos de alta relevancia ambiental potencial. Esto justifica revisar con cuidado procesos de acabado, lavado o tratamiento.
+
+\textbf{Sintesis 5.} La brecha entre SAIC 0 a 10 y DENUE puede usarse como argumento para buscar microtalleres no visibles o parcialmente captados: no como afirmacion, sino como hipotesis de trabajo para campo.
+
+\section{Recomendaciones de siguiente paso}
+
+\begin{enumerate}
+  \item Priorizar revision de campo de puntos de alta relevancia ambiental dentro de 100 m y 250 m de cauces.
+  \item Usar los mapas interactivos para validar nombres, SCIAN y categoria punto por punto.
+  \item Revisar manualmente la categoria \texttt{revisar}, especialmente en San Martin y Xalmimilulco.
+  \item Cruzar las zonas de alta densidad DENUE con el estrato SAIC 0 a 10 para ubicar areas donde podria existir actividad pequena no completamente visible en DENUE.
+  \item Buscar fuentes complementarias: padrones municipales, licencias, recorridos, entrevistas, informacion comunitaria o directorios locales.
+\end{enumerate}
+
+\section{Archivos clave}
+
+\begin{itemize}
+  \item \texttt{outputs/tables/saic\_microempresas\_estrato\_0\_10.csv}
+  \item \texttt{outputs/tables/saic\_indicadores\_lectura\_analitica.csv}
+  \item \texttt{outputs/tables/denue\_textil\_identificacion.csv}
+  \item \texttt{outputs/tables/denue\_excluidos\_comercio\_prendas.csv}
+  \item \texttt{outputs/tables/conteo\_negocios\_por\_rango\_distancia.csv}
+  \item \texttt{outputs/maps\_interactive/}
+\end{itemize}
+
+\end{document}

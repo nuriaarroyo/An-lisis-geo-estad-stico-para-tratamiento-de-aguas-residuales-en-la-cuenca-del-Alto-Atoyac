@@ -1,0 +1,331 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\geometry{margin=2.35cm}
+\definecolor{AtoyacBlue}{HTML}{174A6A}
+\definecolor{AtoyacGreen}{HTML}{2F6F5E}
+\definecolor{AtoyacGray}{HTML}{555555}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=AtoyacBlue,
+  urlcolor=AtoyacBlue
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\setlength{\headheight}{14pt}
+\setlist[itemize]{leftmargin=1.4em, itemsep=0.2em, topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.6em, itemsep=0.25em, topsep=0.25em}
+\renewcommand{\arraystretch}{1.18}
+
+\titleformat{\section}
+  {\Large\bfseries\color{AtoyacBlue}}
+  {\thesection}{0.7em}{}
+\titleformat{\subsection}
+  {\large\bfseries\color{AtoyacGreen}}
+  {\thesubsection}{0.7em}{}
+\titlespacing*{\section}{0pt}{1.4em}{0.35em}
+\titlespacing*{\subsection}{0pt}{1em}{0.25em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{AtoyacGray}{Diagnostico textil Atoyac}}
+\rhead{\textcolor{AtoyacGray}{Servicio social}}
+\cfoot{\textcolor{AtoyacGray}{\thepage\ de \pageref{LastPage}}}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\title{Documentacion metodologica del diagnostico geoespacial de actividad textil en la zona alta del Atoyac}
+\author{Servicio social Atoyac}
+\date{\today}
+
+\begin{document}
+{\centering
+{\Huge\bfseries\color{AtoyacBlue} Documentacion metodologica\par}
+{\Large\bfseries diagnostico geoespacial de actividad textil en la zona alta del Atoyac\par}
+\vspace{0.8em}
+{\large Servicio social Atoyac\par}
+{\normalsize \today\par}
+\vspace{1.2em}
+}
+
+\hrule
+\vspace{1em}
+
+\section{Objetivo}
+
+El flujo construido tiene como objetivo identificar establecimientos y zonas de actividad textil, mezclilla, confeccion, maquila, lavanderia, tintoreria o acabado textil que sean potencialmente relevantes para un analisis ambiental en la zona alta del Atoyac. El resultado es una priorizacion preliminar por actividad economica y proximidad a la red hidrografica. No se afirma que un establecimiento contamine directamente.
+
+\section{Fuentes de datos}
+
+\begin{itemize}
+  \item Capas geoespaciales de INEGI descargadas por localidad o zona de interes: Huejotzingo, Santa Ana Xalmimilulco y San Martin Texmelucan. En este proyecto los AGEB estan organizados como recortes por localidad/zona de descarga, no como municipios completos.
+  \item DENUE en formato SHP y CSV lateral. El SHP aporta la geometria; el CSV lateral aporta campos claros de identificacion.
+  \item Hidrografia e hidrologia del Atoyac, incluyendo subareas RH18A y la zona RH18Ad.
+  \item SAIC de INEGI exportado en CSV. En esta consulta SAIC esta a nivel municipal/entidad, por lo que se usa para Huejotzingo y San Martin Texmelucan. Xalmimilulco se analiza espacialmente con DENUE porque pertenece al municipio de Huejotzingo y no aparece como unidad independiente en SAIC.
+\end{itemize}
+
+\section{Flujo reproducible}
+
+El procesamiento se ejecuta con:
+
+\begin{verbatim}
+python scripts/run_all.py
+\end{verbatim}
+
+El flujo realiza las siguientes tareas:
+
+\begin{enumerate}
+  \item Inventaria los shapefiles disponibles en \texttt{data/raw/}.
+  \item Reproyecta y unifica capas en \texttt{data/processed/}. El CRS metrico seleccionado es \texttt{EPSG:6372}.
+  \item Une y filtra DENUE.
+  \item Procesa SAIC y calcula indicadores economicos.
+  \item Calcula distancias de establecimientos DENUE textiles a cauces/red hidrografica.
+  \item Genera mapas generales y mapas separados para Huejotzingo, Xalmimilulco y San Martin.
+\end{enumerate}
+
+\section{Campos DENUE disponibles}
+
+En los DENUE descargados para este proyecto, los campos conservados de identificacion son:
+
+\begin{itemize}
+  \item \texttt{id}
+  \item \texttt{clee}
+  \item \texttt{nombre\_de\_la\_unidad\_economica}
+  \item \texttt{codigo\_de\_la\_clase\_actividad\_scian}
+  \item \texttt{latitud}
+  \item \texttt{longitud}
+  \item \texttt{source\_folder}, que indica si el registro proviene de Huejotzingo, Xalmimilulco o San Martin.
+\end{itemize}
+
+La descarga actual no contiene una columna confiable de tamano, estrato de personal ocupado o numero de trabajadores por establecimiento. Por esa razon, el tamano individual de cada negocio no se usa en la clasificacion DENUE. Si en una descarga posterior de DENUE aparece un campo como \texttt{per\_ocu}, \texttt{estrato}, \texttt{personal ocupado} o equivalente, el flujo puede ampliarse para cruzar relevancia ambiental con tamano de establecimiento.
+
+\section{Como se filtro la actividad textil}
+
+El filtro DENUE combina criterios de inclusion y exclusion. La version actual excluye comercio de prendas para concentrarse en confeccion, produccion, tratamiento de mezclilla, lavado, tintoreria, tenido y acabado textil.
+
+\begin{enumerate}
+  \item Codigo SCIAN cuando esta disponible. Se consideran relevantes los codigos que inician con 313, 314, 315 y, si aparece, 8122.
+  \item Busqueda textual normalizada en campos descriptivos. Se convierten los textos a minusculas, se eliminan acentos y se buscan palabras clave.
+  \item Exclusion de comercio de prendas: tiendas, ventas, boutiques, novedades, mercerias, zapaterias y codigos SCIAN comerciales 46*. Estos registros se guardan aparte para auditoria.
+\end{enumerate}
+
+En una version previa se uso la palabra \texttt{taller} como palabra clave de inclusion. Esa regla se retiro porque generaba falsos positivos, por ejemplo talleres mecanicos, electricos, de bicicletas o servicios no textiles. En la version actual, \texttt{taller} no mete un registro al analisis por si solo. Solo puede ayudar a clasificar un registro como media relevancia cuando el establecimiento ya entro por codigo SCIAN textil o por otra senal textil mas especifica, como costura, pantalon, jeans, mezclilla, confeccion, maquila o bordado.
+
+Las palabras clave usadas son:
+
+\begin{longtable}{p{4cm}p{10cm}}
+\toprule
+Grupo & Palabras clave \\
+\midrule
+Textil general & textil, textiles, mezclilla, denim \\
+Produccion, confeccion y mezclilla & confeccion, maquila, costura, modista, sastreria, bordado, pantalon, jeans, deshebrado \\
+Procesos potencialmente humedos o de acabado & lavanderia, laundry, tintoreria, tenido, acabado, lavado, deslavado, tratado, tratamiento \\
+\bottomrule
+\end{longtable}
+
+\section{Clasificacion de relevancia ambiental potencial}
+
+La categoria asignada no mide contaminacion observada. Clasifica la actividad por su posible relacion con procesos de uso de agua, lavado, acabado o manejo de insumos textiles.
+
+\begin{longtable}{p{4cm}p{5cm}p{6cm}}
+\toprule
+Categoria & Criterio & Interpretacion \\
+\midrule
+\texttt{alta\_relevancia\_ambiental} & Lavanderia, tintoreria, tenido, acabado, lavado o procesos humedos. & Actividades con mayor potencial de relacion con descargas, consumo de agua o manejo de sustancias asociadas a acabado textil. Requieren revision prioritaria. \\
+\texttt{media\_relevancia\_ambiental} & Confeccion, maquila, costura, prendas, ropa, pantalon, jeans o bordado. & Actividad productiva o semi-productiva textil, pero no necesariamente asociada a procesos humedos en el registro DENUE. \\
+\texttt{revisar} & Coincidencias ambiguas. & Requiere validacion manual del nombre, codigo SCIAN o contexto local. \\
+\bottomrule
+\end{longtable}
+
+\section{Proximidad a cauces e hidrografia}
+
+Para cada establecimiento DENUE textil se calcula la distancia al cauce o linea hidrografica mas cercana. Se usan preferentemente geometria lineal; cuando hay poligonos, estos se reservan para contexto cartografico.
+
+Los rangos usados son:
+
+\begin{itemize}
+  \item 0--100 m
+  \item 100--250 m
+  \item 250--500 m
+  \item 500--1000 m
+  \item Mayor a 1000 m
+\end{itemize}
+
+Estos rangos son bandas de proximidad o cautela. No son intervalos estadisticos de confianza. Un negocio cercano a un cauce no implica contaminacion; solo indica mayor prioridad para revision ambiental, especialmente si su actividad fue clasificada como alta o media relevancia.
+
+\section{Tablas generadas para identificar negocios}
+
+El flujo si guarda tablas con nombres de establecimientos. La tabla principal para identificar puntos en los mapas es:
+
+\begin{verbatim}
+outputs/tables/denue_textil_identificacion.csv
+\end{verbatim}
+
+Esta tabla incluye, cuando estan disponibles:
+
+\begin{itemize}
+  \item ID DENUE
+  \item CLEE
+  \item nombre de la unidad economica
+  \item codigo SCIAN
+  \item region de origen
+  \item categoria de relevancia ambiental potencial
+  \item palabras clave detectadas
+  \item distancia a hidrografia
+  \item rango de distancia
+  \item latitud y longitud
+\end{itemize}
+
+Tambien se guardan:
+
+\begin{itemize}
+  \item \texttt{outputs/tables/denue\_textil.csv}
+  \item \texttt{outputs/tables/denue\_excluidos\_comercio\_prendas.csv}
+  \item \texttt{outputs/tables/denue\_revisar\_para\_auditoria.csv}
+  \item \texttt{outputs/tables/denue\_textil\_distancias.csv}
+  \item \texttt{outputs/tables/conteo\_negocios\_por\_rango\_distancia.csv}
+  \item \texttt{outputs/tables/resumen\_denue\_por\_localidad\_categoria.csv}
+\end{itemize}
+
+Los registros clasificados como \texttt{revisar} se separan para auditoria manual. El notebook \path{notebooks/02_auditoria_manual_revisar_denue.ipynb} crea una plantilla editable donde se puede marcar cada establecimiento como pertinente, no pertinente o duda, y proponer una categoria manual.
+
+\section{Mapas generados}
+
+Los mapas estaticos se guardan en \texttt{outputs/maps/}. Se incluyen mapas generales, mapas de solo cauces, mapa especifico RH18Ad y mapas separados por Huejotzingo, Xalmimilulco y San Martin:
+
+\begin{itemize}
+  \item DENUE total.
+  \item DENUE textil por categoria.
+  \item Heat map de DENUE textil.
+  \item Rangos de distancia a cauces.
+\end{itemize}
+
+\section{Posibilidad de mapas interactivos}
+
+Se generaron mapas interactivos en HTML con Leaflet para explorar cada punto con nombre, CLEE, SCIAN, categoria y distancia. Los archivos estan en:
+
+\begin{verbatim}
+outputs/maps_interactive/
+\end{verbatim}
+
+Esto permite:
+
+\begin{itemize}
+  \item hacer clic en cada punto;
+  \item ver nombre del negocio y codigo SCIAN;
+  \item filtrar por categoria de relevancia ambiental;
+  \item activar o desactivar capas de hidrografia, AGEBS y DENUE total;
+  \item revisar de manera mas clara los puntos cercanos al rio.
+\end{itemize}
+
+Metodologicamente, el mapa interactivo no cambiaria los resultados; solo facilitaria la inspeccion y validacion manual.
+
+\section{Uso de SAIC}
+
+SAIC no identifica negocios individuales ni coordenadas. Su utilidad aqui es comparar estructura economica municipal por actividad textil. Los indicadores calculados son:
+
+\begin{itemize}
+  \item unidades economicas;
+  \item personal ocupado total;
+  \item personal promedio por unidad economica;
+  \item proporcion familiar/no remunerada;
+  \item proporcion remunerada;
+  \item ingresos por unidad economica;
+  \item produccion por unidad economica;
+  \item valor agregado por unidad economica;
+  \item ingresos por maquilar sobre ingresos totales.
+\end{itemize}
+
+La tabla de lectura analitica es:
+
+\begin{verbatim}
+outputs/tables/saic_indicadores_lectura_analitica.csv
+\end{verbatim}
+
+Estos indicadores pueden sugerir diferencias de estructura productiva. Por ejemplo, una proporcion alta de personal familiar/no remunerado o un personal promedio bajo puede apuntar a unidades mas pequenas o familiares. Sin embargo, no prueba informalidad ni permite ubicar microempresas especificas.
+
+\section{Microempresas o talleres que podrian no aparecer en DENUE}
+
+Una lectura importante es que algunas microempresas, talleres domesticos o unidades pequenas pueden no observarse claramente en DENUE, sobre todo si operan desde vivienda, no tienen local visible, trabajan por subcontratacion o no estan plenamente captadas como establecimiento. En ese caso SAIC no permite ubicarlas espacialmente ni saber su nombre, pero si puede revelar su existencia agregada mediante el estrato de personal ocupado.
+
+El estrato \texttt{0 a 10} en SAIC se interpreta como evidencia municipal agregada de unidades economicas pequenas. Esta evidencia sirve para inferir que existe actividad textil de pequena escala aunque no se identifique cada taller en el mapa. La tabla generada para esta lectura es:
+
+\begin{verbatim}
+outputs/tables/saic_microempresas_estrato_0_10.csv
+\end{verbatim}
+
+Esta tabla incluye:
+
+\begin{itemize}
+  \item municipio;
+  \item actividad SCIAN;
+  \item unidades economicas en estrato 0 a 10;
+  \item personal ocupado;
+  \item personal promedio por unidad economica;
+  \item proporcion familiar/no remunerada;
+  \item ingresos por unidad economica;
+  \item maquila sobre ingresos.
+\end{itemize}
+
+La interpretacion propuesta es:
+
+\begin{itemize}
+  \item Si SAIC muestra muchas unidades economicas en \texttt{0 a 10}, existe una base censal para hablar de tejido productivo pequeno o micro.
+  \item Si ademas la proporcion familiar/no remunerada es alta, puede discutirse como indicio de unidades familiares o de baja escala organizativa, sin afirmar informalidad.
+  \item Si el indicador de maquila sobre ingresos es alto, puede sugerir presencia de trabajo por encargo o transformacion para terceros.
+  \item Si DENUE no muestra suficientes puntos para explicar la magnitud SAIC, esa diferencia puede justificar validacion de campo o busqueda de fuentes complementarias.
+\end{itemize}
+
+SAIC opera como fuente censal agregada. DENUE identifica establecimientos registrados o captados, pero puede omitir talleres domesticos, unidades informales, subcontratacion no visible o actividades que operan sin local fijo. Para aproximarse a esas microempresas se proponen pasos complementarios:
+
+\begin{enumerate}
+  \item Comparar zonas con alta densidad DENUE textil contra indicadores SAIC de unidades pequenas o alta proporcion familiar/no remunerada.
+  \item Hacer validacion de campo en zonas con concentracion de maquila, confeccion o lavanderia.
+  \item Revisar padrones municipales, licencias, directorios locales, camaras empresariales o informacion comunitaria.
+  \item Incorporar entrevistas o recorridos para detectar actividad domiciliaria o subcontratada.
+  \item Usar el mapa de rangos de distancia para priorizar visitas cerca de cauces, sin asumir contaminacion.
+\end{enumerate}
+
+\section{Limitaciones}
+
+\begin{itemize}
+  \item La clasificacion depende de nombres, codigos y palabras clave disponibles en DENUE.
+  \item No hay evidencia directa de contaminacion en este flujo.
+  \item La descarga actual de DENUE no contiene tamano individual de establecimientos.
+  \item SAIC es municipal y agregado; no ubica puntos ni negocios.
+  \item Xalmimilulco debe interpretarse espacialmente como localidad/zona dentro de Huejotzingo, no como municipio SAIC independiente.
+\end{itemize}
+
+\section{Lenguaje recomendado}
+
+Se recomienda usar expresiones como:
+
+\begin{itemize}
+  \item actividad potencialmente relevante;
+  \item presion ambiental potencial;
+  \item proximidad a red hidrografica;
+  \item priorizacion preliminar;
+  \item zonas para revision o validacion de campo.
+\end{itemize}
+
+Se debe evitar afirmar que un establecimiento contamina sin evidencia ambiental directa.
+
+\end{document}

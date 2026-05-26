@@ -1,0 +1,12 @@
+﻿columna,dtype
+id,int64
+clee,object
+nombre_de_la_unidad_economica,object
+codigo_de_la_clase_actividad_scian,int64
+latitud,float64
+longitud,float64
+source_path,object
+source_file,object
+source_folder,object
+layer_type,object
+geometry,geometry

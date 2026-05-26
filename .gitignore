@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local geospatial data.
+# These inputs/derivatives are large and should be regenerated or downloaded from the cited public sources.
+data/raw/
+data/processed/
+
+# QGIS/local project files
+*.qgz
+*.qgs~
+
+# LaTeX build artifacts
+docs/*.aux
+docs/*.log
+docs/*.out
+docs/*.toc
+docs/*.fls
+docs/*.fdb_latexmk
+docs/*.synctex.gz
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
