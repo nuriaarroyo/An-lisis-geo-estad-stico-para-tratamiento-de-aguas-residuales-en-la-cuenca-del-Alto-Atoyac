@@ -6,4 +6,4 @@ fiona
 matplotlib
 numpy
 openpyxl
-
+plotly

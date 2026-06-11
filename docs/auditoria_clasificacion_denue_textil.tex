@@ -1,0 +1,204 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\geometry{margin=2.25cm}
+\definecolor{AtoyacBlue}{HTML}{174A6A}
+\definecolor{AtoyacGreen}{HTML}{2F6F5E}
+\definecolor{AtoyacGray}{HTML}{555555}
+\hypersetup{colorlinks=true, linkcolor=AtoyacBlue, urlcolor=AtoyacBlue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\setlength{\headheight}{14pt}
+\setlist[itemize]{leftmargin=1.35em, itemsep=0.2em, topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.5em, itemsep=0.25em, topsep=0.25em}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{AtoyacGray}{Auditoria DENUE textil}}
+\rhead{\textcolor{AtoyacGray}{Clasificacion productiva}}
+\cfoot{\textcolor{AtoyacGray}{\thepage\ de \pageref{LastPage}}}
+
+\newcommand{\mapfig}[3]{
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.92\textwidth,height=0.72\textheight,keepaspectratio]{#1}
+\caption{#2. La clasificacion representa una prioridad de investigacion basada en actividad declarada, senales textuales y ubicacion. No constituye evidencia de descarga ni contaminacion atribuible al establecimiento.}
+\label{#3}
+\end{figure}
+}
+
+\begin{document}
+
+{\centering
+{\Huge\bfseries\color{AtoyacBlue} Guia de auditoria y clasificacion DENUE textil\par}
+{\Large\bfseries Actividad productiva probable y prioridad de investigacion\par}
+\vspace{0.8em}
+{\large Servicio social Atoyac\par}
+{\normalsize \today\par}
+\vspace{1em}
+}
+\hrule
+\vspace{1em}
+
+\section{Proposito}
+
+Este documento guia la revision de la nueva clasificacion productiva DENUE. El objetivo no es afirmar contaminacion, descargas o incumplimiento. El objetivo es construir un universo reproducible de establecimientos prioritarios para investigacion documental y, cuando corresponda, validacion en campo.
+
+La tabla central es:
+
+\begin{verbatim}
+outputs/tables/denue_clasificacion_productiva/
+denue_universo_textil_clasificado.csv
+\end{verbatim}
+
+El campo central es \texttt{flag\_estudio\_prioritario}, acompanado por \texttt{motivo\_flag\_estudio\_prioritario}.
+
+Para el alcance operativo de este proyecto, el campo mas importante es \texttt{flag\_universo\_alcance\_proyecto}. Ese campo marca los registros que pertenecen al universo real de analisis ambiental: procesos humedos o tratamiento, lavado/deslavado/lavanderia, o mezclilla/jeans. Los demas registros siguen siendo textiles y se conservan como contexto trazable, pero no forman el universo principal del alcance.
+
+\section{Que registros se auditan}
+
+No todos los registros se auditan con la misma intensidad. La auditoria prioriza:
+
+\begin{itemize}
+  \item establecimientos con senales de lavado, deslavado, lavanderia, tenido, tintoreria, acabado o tratamiento;
+  \item registros con senales de mezclilla o jeans;
+  \item maquila productiva o fabricacion textil con incertidumbre;
+  \item registros cercanos a hidrografia, especialmente a 250 m o menos;
+  \item casos ambiguos, contradictorios o con baja confianza.
+\end{itemize}
+
+El Excel de trabajo es:
+
+\begin{verbatim}
+outputs/tables/auditoria_enriquecida/
+auditoria_denue_textil_priorizada.xlsx
+\end{verbatim}
+
+\section{Columnas que debe llenar la persona auditora}
+
+\begin{longtable}{p{4cm}p{10cm}}
+\toprule
+Columna & Como llenarla \\
+\midrule
+\texttt{categoria\_auditada} & Alta, media, baja, excluir, pendiente o revisar, segun evidencia. \\
+\texttt{etapa\_productiva\_auditada} & Confirmar o corregir la etapa sugerida: lavado, deslavado, tintoreria, acabado, confeccion, comercio, etc. \\
+\texttt{notas\_auditoria} & Justificacion breve: evidencia observada, duda, fuente usada o razon para excluir. \\
+\texttt{fuente\_auditoria} & DENUE, Google Maps, busqueda web, padron, directorio, evidencia fotografica, visita de campo u otra fuente. \\
+\texttt{decision\_estudio} & Incluir prioritario, incluir como contexto productivo, excluir, mantener pendiente, validar documentalmente o validar en campo. \\
+\texttt{fecha\_auditoria} & Fecha de revision en formato AAAA-MM-DD. \\
+\texttt{auditor\_responsable} & Nombre, iniciales o equipo responsable. \\
+\bottomrule
+\end{longtable}
+
+\section{Como interpretar los flags}
+
+\begin{itemize}
+  \item \texttt{flag\_estudio\_prioritario}: senales especialmente relevantes para investigar procesos de tratamiento de prendas, mezclilla o textiles con posible uso de agua.
+  \item \texttt{flag\_universo\_alcance\_proyecto}: registros dentro del alcance real del proyecto: procesos humedos, lavado/deslavado/lavanderia o mezclilla/jeans.
+  \item \texttt{flag\_proceso\_humedo\_relevante}: senales de lavado, tintoreria, tenido, acabado o tratamiento.
+  \item \texttt{flag\_lavado\_deslavado}: subconjunto de alta atencion dentro de procesos humedos; incluye lavado, deslavado, prelavado o lavanderia.
+  \item \texttt{flag\_mezclilla\_jeans}: senales de mezclilla, denim, jeans o pantalon de mezclilla.
+  \item \texttt{flag\_maquila\_productiva}: senales de maquila o confeccion productiva.
+  \item \texttt{flag\_cercania\_hidrografia\_250m}: distancia a hidrografia menor o igual a 250 m. Aumenta prioridad de revision, pero no prueba descarga.
+  \item \texttt{flag\_posible\_falso\_positivo}: registro que entro al universo textil pero puede no ser relevante para el estudio prioritario.
+  \item \texttt{flag\_posible\_falso\_negativo}: registro con senales mixtas que no conviene excluir automaticamente.
+\end{itemize}
+
+\section{Resultados de control}
+
+\begin{longtable}{lr}
+\toprule
+Indicador & Registros \\
+\midrule
+Universo textil inicial & 1067 \\
+Universo textil depurado & 1049 \\
+Universo de alcance del proyecto & 327 \\
+Universo ambientalmente prioritario & 266 \\
+Pendientes de auditoria & 452 \\
+Procesos humedos o tratamiento & 222 \\
+Senales de lavado o deslavado & 171 \\
+Senales de tenido o tintoreria & 20 \\
+Senales de acabado o tratamiento & 5 \\
+Senales de mezclilla o jeans & 110 \\
+Maquila o confeccion productiva & 561 \\
+Comercio o renta & 7 \\
+Confeccion especializada de baja relevancia & 17 \\
+Prioritarios a 250 m o menos de hidrografia & 83 \\
+\bottomrule
+\end{longtable}
+
+\section{Fuentes recomendadas para auditar}
+
+\begin{itemize}
+  \item DENUE y campos originales del registro.
+  \item Google Maps y Street View cuando exista cobertura.
+  \item Busqueda web del nombre comercial.
+  \item Padrones municipales, licencias, directorios o camaras empresariales.
+  \item Evidencia fotografica o visita de campo.
+  \item Informacion comunitaria o institucional disponible.
+\end{itemize}
+
+\section{Ejemplos de decision}
+
+\begin{longtable}{p{4cm}p{4cm}p{6cm}}
+\toprule
+Caso & Decision sugerida & Criterio \\
+\midrule
+Lavanderia, tintoreria, deslavado o acabado & Incluir prioritario & Senal compatible con proceso humedo o tratamiento. \\
+Jeans o mezclilla con maquila/fabricacion & Validar documentalmente o incluir prioritario si hay tratamiento & Puede formar parte de cadena productiva relevante. \\
+Confecciones genericas & Contexto productivo o pendiente & No asumir proceso humedo sin evidencia adicional. \\
+Boutique, tienda o comercio & Excluir del universo prioritario & Conservar trazabilidad, sin inflar el universo ambiental. \\
+Novias, modista, sastreria o arreglos & Excluir del universo prioritario & Confeccion especializada de baja relevancia si no hay senales industriales. \\
+Registro ambiguo cerca de hidrografia & Auditoria documental obligatoria & Cercania aumenta prioridad de revision, no prueba contaminacion. \\
+\bottomrule
+\end{longtable}
+
+\section{Mapas clave}
+
+\mapfig{../outputs/maps/denue_clasificacion_productiva/01_universo_textil_inicial.png}{Universo textil detectado inicialmente}{fig:universo-inicial}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/02_universo_textil_depurado.png}{Universo textil depurado}{fig:universo-depurado}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/03_establecimientos_prioritarios_estudio.png}{Establecimientos prioritarios para investigacion}{fig:prioritarios}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/04_procesos_humedos_relevantes.png}{Senales compatibles con procesos humedos o tratamiento}{fig:procesos-humedos}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/05_lavado_deslavado.png}{Senales de lavado y deslavado}{fig:lavado}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/07_tenido_tintoreria.png}{Senales de tenido y tintoreria}{fig:tenido}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/08_acabado_tratamiento.png}{Senales de acabado y tratamiento especial}{fig:acabado}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/09_mezclilla_jeans.png}{Senales de mezclilla y jeans}{fig:mezclilla}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/11_pendientes_auditoria.png}{Registros pendientes de auditoria}{fig:pendientes}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/14_prioritarios_250m_hidrografia.png}{Prioritarios a 250 m o menos de hidrografia}{fig:prioritarios-250}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/17_prioridad_campo.png}{Prioridad de campo o revision territorial}{fig:prioridad-campo}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/18_final_universo_recomendado.png}{Universo recomendado consolidado}{fig:final}
+\mapfig{../outputs/maps/denue_clasificacion_productiva/19_universo_alcance_proyecto.png}{Universo de alcance del proyecto: procesos humedos, lavado/deslavado o mezclilla/jeans}{fig:alcance-proyecto}
+
+\section{Mapas interactivos}
+
+Los mapas interactivos Plotly se encuentran en:
+
+\begin{verbatim}
+outputs/maps_interactive/denue_clasificacion_productiva/index.html
+\end{verbatim}
+
+\section{Aplicacion de auditoria}
+
+Despues de llenar el Excel, ejecutar:
+
+\begin{verbatim}
+python scripts/07_apply_denue_audit.py
+\end{verbatim}
+
+Ese script conserva compatibilidad con las plantillas antiguas y ademas lee el Excel priorizado para producir salidas auditadas de la clasificacion productiva.
+
+\end{document}

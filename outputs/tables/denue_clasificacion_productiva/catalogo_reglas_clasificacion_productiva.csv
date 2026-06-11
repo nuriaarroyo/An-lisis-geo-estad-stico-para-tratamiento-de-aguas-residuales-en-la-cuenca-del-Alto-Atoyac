@@ -1,0 +1,14 @@
+﻿familia_regla,descripcion,terminos
+lavado_deslavado,"Senales de lavado, deslavado, prelavado o procesos de agua sobre prendas.",lavado; lavado industrial; deslavado; prelavado; enjuague; stone wash; stonewashed; acid wash; lavado de mezclilla; lavado de jeans
+lavanderia_industrial,Senales de lavanderia o tintoreria de prendas; se considera presion potencial alta por uso de agua.,lavanderia; lavanderia industrial; lavanderia de prendas; laundry; clean clothes; lavanderia y tintoreria
+tenido_tintoreria,"Senales de tenido, tinte o tintoreria.",tenido; teñido; tinte; tintoreria; tintoreria industrial; teñido de prendas; tenido de prendas
+acabado_tratamiento,"Senales de acabado, tratamiento, blanqueado, suavizado o decolorado.",acabado; acabado textil; acabado de prendas; tratamiento; tratamiento textil; tratamiento de prendas; tratamiento especial; tratado; blanqueado; suavizado; pigmentado; decolorado; procesos humedos; procesamiento de ropa
+mezclilla_jeans,"Senales de mezclilla, denim, jeans o pantalon de mezclilla.",mezclilla; denim; jeans; pantalon jeans; pantalones de mezclilla; prendas de mezclilla; transformacion de mezclilla; deshebrado
+industrial,"Senales de escala productiva, industria, fabrica, manufactura o transformacion.",industrial; industria; fabrica; fabricacion; maquiladora; produccion; procesamiento; transformacion; manufactura; textilera; corte industrial
+maquila,"Senales de maquila, maquiladora o ensamble/confeccion productiva.",maquila; maquiladora; confeccion en serie; ensamble de prendas; taller textil; taller de mezclilla
+confeccion,,confeccion; confecciones; costura; costurera; elaboracion de ropa; fabricacion de ropa; prendas de vestir; ropa; pantalon
+confeccion_especializada,"Senales de modista, novias, sastreria o confeccion sobre medida de baja relevancia ambiental.",vestidos de novia; novias; xv años; xv anos; quinceañera; quinceanera; alta costura; diseño de modas; diseno de modas; modista; sastreria; trajes de gala; sobre medida; arreglos de ropa; composturas; costura domestica; uniformes escolares; taller de vestidos; confeccion artesanal
+bordado_estampado,,bordado; bordados; estampado; serigrafia; sublimacion; impresion textil
+comercio,"Senales de venta, tienda, boutique, merceria o comercializacion.",venta; tienda; boutique; local comercial; accesorios; ropa para dama; ropa para caballero; ropa infantil; mayoreo; menudeo; distribuidora; comercializadora; outlet; bazar; merceria; tienda de novias; zapateria; novedades
+renta,Senales de renta o alquiler de prendas.,renta; alquiler; renta de vestidos; renta de trajes; renta de prendas; accesorios para novia
+no_textil,,autolavado; auto lavado; mecanico; mecanica; automotriz; bicicleta; carpinteria; herreria; celulares

@@ -1,0 +1,11 @@
+﻿validacion,ok,detalle
+sin_perdida_registros,True,1067 de 1067
+ids_duplicados,True,
+campo_critico_etapa_productiva_sugerida,True,vacios=0
+campo_critico_presion_ambiental_potencial,True,vacios=0
+campo_critico_confianza_clasificacion,True,vacios=0
+campo_critico_decision_estudio_sugerida,True,vacios=0
+prioritarios_con_motivo,True,sin_motivo=0
+excluidos_con_senal_humeda,True,casos=0
+comercio_con_senal_industrial_identificado,True,casos_para_revision=0
+cercanos_no_prioritarios_sin_auditoria,True,casos=0

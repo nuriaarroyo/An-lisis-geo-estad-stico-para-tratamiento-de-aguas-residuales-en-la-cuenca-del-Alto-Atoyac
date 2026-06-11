@@ -137,6 +137,30 @@ Xalmimilulco & Revisar & 52 \\
 
 \textbf{Observacion DENUE 5.} Las categorias ``revisar'' son importantes porque pueden incluir nombres ambiguos o registros SCIAN que requieren validacion manual. No deben descartarse ni interpretarse automaticamente como alto riesgo.
 
+\subsection{Estado de la auditoria enriquecida}
+
+La auditoria enriquecida se genero para los 182 registros clasificados como \texttt{revisar}. Su objetivo es apoyar la decision humana con consultas sugeridas, palabras clave detectadas, prioridad de revision y una categoria sugerida. No modifica automaticamente la base final.
+
+\begin{longtable}{p{4cm}rrrr}
+\toprule
+Zona & Alta sugerida & Media sugerida & Excluir sugerido & Revisar sugerido \\
+\midrule
+Huejotzingo & 1 & 4 & 1 & 23 \\
+San Martin Texmelucan & 1 & 8 & 7 & 85 \\
+Xalmimilulco & 0 & 1 & 1 & 50 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Observacion Auditoria 1.} La auditoria enriquecida no esta cerrada: los 182 registros tienen vacia la columna \texttt{categoria\_auditada} y tambien \texttt{notas\_auditoria}. Por lo tanto, siguen siendo pendientes de decision humana.
+
+\textbf{Observacion Auditoria 2.} La categoria sugerida identifica 2 registros como posibles altas, 13 como posibles medias, 9 como probablemente excluibles y 158 como todavia ambiguos. Estas sugerencias sirven para ordenar el trabajo, no para sustituir la revision.
+
+\textbf{Observacion Auditoria 3.} Hay 41 registros pendientes dentro de 250 m de hidrografia: 9 en Huejotzingo, 28 en San Martin Texmelucan y 4 en Xalmimilulco. Este grupo conviene revisar primero por proximidad espacial.
+
+\textbf{Observacion Auditoria 4.} La prioridad de revision calculada en la tabla enriquecida marca 41 registros como prioridad alta, 11 como media, 6 como baja y 124 como manual. La prioridad alta puede venir por cercania a hidrografia o por senales de posible alta relevancia.
+
+\textbf{Observacion Auditoria 5.} El archivo recomendado para trabajar es el Excel consolidado de la carpeta de auditoria enriquecida. Las columnas que deben llenarse son las de categoria auditada, notas, fuente y decision de estudio.
+
 \subsection{Proximidad a cauces}
 
 \begin{longtable}{p{4cm}p{2.6cm}r}
@@ -180,12 +204,56 @@ Rango o buffer & Categoria & Establecimientos \\
 
 \textbf{Sintesis 5.} La brecha entre SAIC 0 a 10 y DENUE puede usarse como argumento para buscar microtalleres no visibles o parcialmente captados: no como afirmacion, sino como hipotesis de trabajo para campo.
 
+\section{Resultados de la clasificacion productiva ampliada}
+
+La nueva clasificacion productiva se aplico a los 1067 registros del universo textil inicial. Esta clasificacion no sustituye la auditoria documental; ordena el universo por etapa productiva probable, presion ambiental potencial, prioridad de investigacion y confianza. Para el alcance operativo del proyecto, el universo principal se restringe a procesos humedos, lavado/deslavado/lavanderia o mezclilla/jeans.
+
+\begin{longtable}{p{8cm}r}
+\toprule
+Universo o indicador & Registros \\
+\midrule
+Universo A: textil inicial clasificado & 1067 \\
+Universo B: textil depurado & 1049 \\
+Universo C: alcance del proyecto & 327 \\
+Universo D: ambientalmente prioritario & 266 \\
+Universo E: pendiente de auditoria & 452 \\
+Procesos humedos o tratamiento & 222 \\
+Senales de lavado o deslavado & 171 \\
+Senales de tenido o tintoreria & 20 \\
+Senales de acabado o tratamiento especial & 5 \\
+Senales de mezclilla o jeans & 110 \\
+Maquila o confeccion productiva & 561 \\
+Comercio o renta & 7 \\
+Confeccion especializada de baja relevancia & 17 \\
+Prioritarios a 250 m o menos de hidrografia & 83 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Observacion Clasificacion 1.} El universo depurado conserva 1049 de 1067 registros. Las exclusiones son trazables y se concentran en comercio, renta o confeccion especializada de baja relevancia para el objetivo ambiental.
+
+\textbf{Observacion Clasificacion 2.} El universo de alcance del proyecto suma 327 registros: 52 en Huejotzingo, 68 en Santa Ana Xalmimilulco y 207 en San Martin Texmelucan. Este debe ser el universo central para la auditoria ambiental, porque concentra procesos humedos, lavado/deslavado/lavanderia o mezclilla/jeans.
+
+\textbf{Observacion Clasificacion 3.} Hay 266 establecimientos con \texttt{flag\_estudio\_prioritario}. Este grupo debe entenderse como prioridad de investigacion por actividad declarada y senales textuales, no como evidencia de descarga o contaminacion.
+
+\textbf{Observacion Clasificacion 4.} Los procesos humedos o de tratamiento suman 222 registros. Dentro de estos, las senales mas frecuentes corresponden a lavado, deslavado, lavanderia o tintoreria de prendas.
+
+\textbf{Observacion Clasificacion 5.} La cercania a hidrografia identifica 83 prioritarios a 250 m o menos. Estos registros conviene revisarlos primero en campo o documentalmente, manteniendo la cautela metodologica.
+
+\textbf{Observacion Clasificacion 6.} La confianza de la clasificacion es alta en 57 registros, media en 881 y baja en 129. Los registros de baja confianza deben auditarse antes de usarse como evidencia narrativa fuerte.
+
+\textbf{Observacion Clasificacion 7.} Por municipio, San Martin Texmelucan aporta 610 registros del universo textil inicial y Huejotzingo 457, incluyendo Santa Ana Xalmimilulco como localidad/zona dentro de Huejotzingo.
+
 \section{Recomendaciones de siguiente paso}
 
 \begin{enumerate}
+  \item Usar primero el Excel priorizado de \texttt{outputs/tables/auditoria\_enriquecida/} como archivo central de auditoria.
+  \item Tomar como universo central los 327 registros con \texttt{flag\_universo\_alcance\_proyecto}; usar lo demas como contexto textil, no como alcance principal.
+  \item Revisar de forma prioritaria los 266 establecimientos con \texttt{flag\_estudio\_prioritario}, especialmente los 83 ubicados a 250 m o menos de hidrografia.
   \item Priorizar revision de campo de puntos de alta relevancia ambiental dentro de 100 m y 250 m de cauces.
   \item Usar los mapas interactivos para validar nombres, SCIAN y categoria punto por punto.
-  \item Revisar manualmente la categoria \texttt{revisar}, especialmente en San Martin y Xalmimilulco.
+  \item Llenar la auditoria enriquecida de los 182 registros \texttt{revisar}, empezando por los 41 registros dentro de 250 m de hidrografia.
+  \item Despues de llenar el Excel priorizado, correr el script 07 para consolidar las decisiones manuales de la clasificacion productiva.
+  \item Correr los scripts \texttt{07\_apply\_denue\_audit.py} y \texttt{08\_make\_audited\_maps.py} para actualizar la base auditada y los mapas finales.
   \item Cruzar las zonas de alta densidad DENUE con el estrato SAIC 0 a 10 para ubicar areas donde podria existir actividad pequena no completamente visible en DENUE.
   \item Buscar fuentes complementarias: padrones municipales, licencias, recorridos, entrevistas, informacion comunitaria o directorios locales.
 \end{enumerate}
@@ -196,7 +264,11 @@ Rango o buffer & Categoria & Establecimientos \\
   \item \texttt{outputs/tables/saic\_microempresas\_estrato\_0\_10.csv}
   \item \texttt{outputs/tables/saic\_indicadores\_lectura\_analitica.csv}
   \item \texttt{outputs/tables/denue\_textil\_identificacion.csv}
+  \item \texttt{outputs/tables/denue\_clasificacion\_productiva/denue\_universo\_alcance\_proyecto.csv}
+  \item \texttt{outputs/tables/denue\_clasificacion\_productiva/localidades/}
   \item \texttt{outputs/tables/denue\_excluidos\_comercio\_prendas.csv}
+  \item \texttt{outputs/tables/auditoria\_enriquecida/auditoria\_revisar\_todos\_enriquecida.xlsx}
+  \item \texttt{outputs/tables/auditoria\_enriquecida/reporte\_auditoria\_revisar\_denue.md}
   \item \texttt{outputs/tables/conteo\_negocios\_por\_rango\_distancia.csv}
   \item \texttt{outputs/maps\_interactive/}
 \end{itemize}

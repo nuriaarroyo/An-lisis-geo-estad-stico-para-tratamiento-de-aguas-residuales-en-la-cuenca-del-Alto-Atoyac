@@ -31,10 +31,13 @@ SAIC permite extraer indicadores comparativos municipales, por ejemplo unidades 
 - `scripts/00_inventory_raw_data.py`: inventaria shapefiles y registra errores de lectura.
 - `scripts/01_prepare_geodata.py`: reproyecta y unifica capas en `data/processed/`.
 - `scripts/02_filter_denue_textil.py`: filtra DENUE por palabras clave y codigos SCIAN textiles.
+- `scripts/02b_clasificacion_productiva_denue.py`: clasifica todos los DENUE textiles por etapa productiva probable, presion ambiental potencial, prioridad de estudio, confianza y necesidad de auditoria.
 - `scripts/03_process_saic.py`: limpia SAIC y calcula indicadores economicos.
 - `scripts/04_spatial_analysis.py`: calcula distancias a hidrografia, buffers y cruces con AGEB/localidad.
 - `scripts/05_make_maps.py`: genera mapas del diagnostico automatico, incluyendo la categoria `revisar`, y figura SAIC en PNG.
+- `scripts/05b_make_productive_classification_maps.py`: genera mapas PNG de la clasificacion productiva DENUE.
 - `scripts/06_make_interactive_maps.py`: genera mapas HTML interactivos para identificar establecimientos.
+- `scripts/06b_make_plotly_productive_maps.py`: genera mapas interactivos Plotly e indice HTML de la clasificacion productiva.
 - `scripts/07_apply_denue_audit.py`: aplica las categorias editadas manualmente en las plantillas de auditoria.
 - `scripts/08_make_audited_maps.py`: genera mapas posteriores a la auditoria, solo con categorias alta y media.
 - `scripts/run_all.py`: ejecuta todo el flujo en orden.
@@ -60,6 +63,15 @@ python scripts/run_all.py
 - `data/processed/denue_textil.gpkg`
 - `data/processed/denue_textil_con_distancia.gpkg`
 - `outputs/tables/denue_textil.csv`
+- `outputs/tables/denue_clasificacion_productiva/denue_universo_textil_clasificado.csv`
+- `outputs/tables/denue_clasificacion_productiva/denue_universo_textil_depurado.csv`
+- `outputs/tables/denue_clasificacion_productiva/denue_universo_alcance_proyecto.csv`
+- `outputs/tables/denue_clasificacion_productiva/denue_estudio_prioritario.csv`
+- `outputs/tables/denue_clasificacion_productiva/denue_pendientes_auditoria.csv`
+- `outputs/tables/denue_clasificacion_productiva/localidades/denue_universo_alcance_huejotzingo.csv`
+- `outputs/tables/denue_clasificacion_productiva/localidades/denue_universo_alcance_xalmimilulco.csv`
+- `outputs/tables/denue_clasificacion_productiva/localidades/denue_universo_alcance_san_martin.csv`
+- `outputs/tables/auditoria_enriquecida/auditoria_denue_textil_priorizada.xlsx`
 - `outputs/tables/denue_excluidos_comercio_prendas.csv`
 - `outputs/tables/auditoria_revisar_huejotzingo.csv`
 - `outputs/tables/auditoria_revisar_xalmimilulco.csv`
@@ -92,11 +104,17 @@ python scripts/run_all.py
 - `outputs/maps/14_huejotzingo_denue_textil_auditado_alta_media.png`
 - `outputs/maps/14_xalmimilulco_denue_textil_auditado_alta_media.png`
 - `outputs/maps/14_san_martin_denue_textil_auditado_alta_media.png`
+- `outputs/maps/denue_clasificacion_productiva/`
 - `outputs/figures/saic_indicadores_municipio.png`
 - `outputs/maps_interactive/denue_textil_productivo_interactivo.html`
 - `outputs/maps_interactive/huejotzingo_denue_textil_productivo_interactivo.html`
 - `outputs/maps_interactive/xalmimilulco_denue_textil_productivo_interactivo.html`
 - `outputs/maps_interactive/san_martin_denue_textil_productivo_interactivo.html`
+- `outputs/maps_interactive/denue_clasificacion_productiva/index.html`
+
+La guia detallada del flujo nuevo esta en `docs/guia_ejecucion_clasificacion_denue.md`.
+
+El universo operativo del alcance ambiental queda marcado con `flag_universo_alcance_proyecto`: procesos humedos/tratamiento, lavado/deslavado/lavanderia o mezclilla/jeans. Los registros textiles fuera de ese criterio se conservan como contexto, pero no como universo principal de la auditoria ambiental.
 
 ## QGIS
 

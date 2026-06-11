@@ -205,7 +205,132 @@ Tambien se guardan:
   \item \texttt{outputs/tables/resumen\_denue\_por\_localidad\_categoria.csv}
 \end{itemize}
 
-Los registros clasificados como \texttt{revisar} se separan para auditoria manual. El notebook \path{notebooks/02_auditoria_manual_revisar_denue.ipynb} crea una plantilla editable donde se puede marcar cada establecimiento como pertinente, no pertinente o duda, y proponer una categoria manual.
+Los registros clasificados como \texttt{revisar} se separan para auditoria manual. El notebook \path{notebooks/02_auditoria_manual_revisar_denue.ipynb} crea plantillas editables donde se puede revisar cada establecimiento y proponer una categoria manual.
+
+\section{Auditoria manual enriquecida DENUE}
+
+La salida mas reciente de apoyo a auditoria se guarda en:
+
+\begin{verbatim}
+outputs/tables/auditoria_enriquecida/
+\end{verbatim}
+
+Esta carpeta fue creada como una version enriquecida de las plantillas \texttt{revisar}. No cambia por si sola la clasificacion final: agrega columnas de apoyo para que la revision manual sea mas rapida y trazable.
+
+Los archivos principales son:
+
+\begin{itemize}
+  \item \texttt{auditoria\_revisar\_todos\_enriquecida.xlsx}: archivo recomendado para revisar manualmente los 182 registros pendientes.
+  \item \texttt{auditoria\_revisar\_todos\_enriquecida.csv}: version plana del mismo contenido.
+  \item \texttt{auditoria\_revisar\_huejotzingo\_enriquecida.csv}: 29 registros.
+  \item \texttt{auditoria\_revisar\_xalmimilulco\_enriquecida.csv}: 52 registros.
+  \item \texttt{auditoria\_revisar\_san\_martin\_enriquecida.csv}: 101 registros.
+  \item \texttt{reporte\_auditoria\_revisar\_denue.md}: resumen operativo de la auditoria enriquecida.
+\end{itemize}
+
+Las columnas enriquecidas incluyen:
+
+\begin{itemize}
+  \item \texttt{query\_maps} y \texttt{query\_web}, para buscar rapidamente evidencia externa del establecimiento.
+  \item \texttt{keywords\_detectadas}, con palabras encontradas en el texto del registro.
+  \item \texttt{criterio\_auditoria} y \texttt{criterio\_auditoria\_sugerido}, con la razon preliminar de la sugerencia.
+  \item \texttt{categoria\_sugerida}, que propone \texttt{alta}, \texttt{media}, \texttt{excluir} o \texttt{revisar}.
+  \item \texttt{prioridad\_revision}, que combina categoria sugerida y cercania a hidrografia.
+\end{itemize}
+
+Las columnas que deben llenarse manualmente son:
+
+\begin{itemize}
+  \item \texttt{categoria\_auditada}: decision final humana para el registro. Valores recomendados: \texttt{alta}, \texttt{media}, \texttt{excluir} o \texttt{revisar}.
+  \item \texttt{notas\_auditoria}: evidencia o justificacion breve de la decision.
+  \item \texttt{fuente\_auditoria}: fuente usada, por ejemplo DENUE, Google Maps, sitio web, recorrido, padron municipal o revision local.
+  \item \texttt{decision\_estudio}: uso operativo de la decision, por ejemplo incluir, excluir, mantener pendiente o validar en campo.
+\end{itemize}
+
+Al momento de esta actualizacion, los 182 registros de la auditoria enriquecida siguen pendientes. Las columnas manuales \texttt{categoria\_auditada} y \texttt{notas\_auditoria} estan vacias en todos los casos. La columna \texttt{categoria\_sugerida} es solo una ayuda; no sustituye la decision manual.
+
+El resumen de sugerencias automaticas dentro de la auditoria enriquecida es:
+
+\begin{longtable}{p{4cm}r}
+\toprule
+Categoria sugerida & Registros \\
+\midrule
+Alta & 2 \\
+Media & 13 \\
+Excluir & 9 \\
+Revisar & 158 \\
+\bottomrule
+\end{longtable}
+
+Tambien hay 41 registros pendientes dentro de 250 m de hidrografia. Estos son prioritarios para revisar, aunque la proximidad no prueba contaminacion.
+
+\subsection{Como aplicar la auditoria despues de llenarla}
+
+El script actual que consolida la auditoria es:
+
+\begin{verbatim}
+python scripts/07_apply_denue_audit.py
+\end{verbatim}
+
+Ese script lee las plantillas originales:
+
+\begin{itemize}
+  \item \texttt{outputs/tables/auditoria\_revisar\_huejotzingo.csv}
+  \item \texttt{outputs/tables/auditoria\_revisar\_xalmimilulco.csv}
+  \item \texttt{outputs/tables/auditoria\_revisar\_san\_martin.csv}
+\end{itemize}
+
+La version actual de \texttt{07\_apply\_denue\_audit.py} conserva compatibilidad con esas plantillas originales y tambien lee el Excel priorizado \texttt{auditoria\_denue\_textil\_priorizada.xlsx} para consolidar la auditoria productiva cuando existan decisiones manuales. Despues se corre:
+
+\begin{verbatim}
+python scripts/07_apply_denue_audit.py
+python scripts/08_make_audited_maps.py
+\end{verbatim}
+
+Hasta que se complete ese paso, \texttt{denue\_categorias\_auditadas.csv} conserva solo los registros ya clasificados como alta o media por el flujo automatico, y \texttt{denue\_pendiente\_auditoria.csv} conserva los 182 registros sin decision final.
+
+\section{Clasificacion productiva DENUE ampliada}
+
+Se agrego un paso reproducible para clasificar todos los establecimientos del universo textil inicial, no solo los registros marcados como \texttt{revisar}. El script es:
+
+\begin{verbatim}
+python scripts/02b_clasificacion_productiva_denue.py
+\end{verbatim}
+
+Este paso parte de \texttt{data/processed/denue\_textil\_con\_distancia.gpkg}, conserva las columnas originales y agrega variables de interpretacion metodologica:
+
+\begin{itemize}
+  \item actividad DENUE declarada;
+  \item etapa productiva probable;
+  \item presion ambiental potencial;
+  \item prioridad para el estudio;
+  \item nivel de confianza;
+  \item necesidad de auditoria documental;
+  \item necesidad de validacion en campo;
+  \item motivo concreto de inclusion, exclusion o permanencia como pendiente.
+\end{itemize}
+
+El campo central para prioridad de investigacion es \texttt{flag\_estudio\_prioritario}. Este campo no afirma contaminacion ni descarga; identifica establecimientos particularmente relevantes para investigar procesos de tratamiento de prendas, mezclilla o textiles que podrian implicar uso de agua y generacion de aguas residuales. Siempre debe leerse junto con \texttt{motivo\_flag\_estudio\_prioritario}.
+
+Para definir el alcance operativo del proyecto se agrego el campo \texttt{flag\_universo\_alcance\_proyecto}. Este campo separa el universo real de analisis ambiental: procesos humedos o tratamiento, lavado/deslavado/lavanderia, o mezclilla/jeans. Los demas registros se conservan como contexto textil, pero no como universo principal del alcance.
+
+Las reglas son jerarquicas. Primero se identifican senales de procesos humedos y tratamiento especial de prendas: lavado, deslavado, lavanderia, tenido, tintoreria, acabado, blanqueado, suavizado o tratamiento. Despues se identifican senales de mezclilla, jeans, maquila y fabricacion productiva. En tercer lugar se separa confeccion especializada de baja relevancia para el objetivo ambiental. Finalmente se clasifican comercio, renta y servicios no productivos.
+
+La distancia a hidrografia se usa para elevar prioridad de investigacion cuando el establecimiento ya tiene senales productivas o cuando el texto es ambiguo. No se interpreta como evidencia de contaminacion.
+
+Los universos generados son:
+
+\begin{itemize}
+  \item Universo A: \texttt{denue\_universo\_textil\_clasificado.csv}, con todos los registros textiles iniciales.
+  \item Universo B: \texttt{denue\_universo\_textil\_depurado.csv}, excluyendo comercio, renta y confeccion especializada de baja relevancia.
+  \item Universo C: \texttt{denue\_universo\_alcance\_proyecto.csv}, con procesos humedos, lavado/deslavado/lavanderia o mezclilla/jeans.
+  \item Universo D: \texttt{denue\_estudio\_prioritario.csv}, con establecimientos prioritarios para investigacion.
+  \item Universo E: \texttt{denue\_pendientes\_auditoria.csv}, con registros que requieren auditoria documental o validacion.
+\end{itemize}
+
+Tambien se generan tablas separadas por localidad en \texttt{outputs/tables/denue\_clasificacion\_productiva/localidades/}. Cada tabla conserva nombre, SCIAN, localidad, municipio, latitud y longitud para facilitar filtros y visualizaciones por Huejotzingo, Santa Ana Xalmimilulco y San Martin Texmelucan.
+
+Tambien se genera el Excel \texttt{auditoria\_denue\_textil\_priorizada.xlsx}, que contiene hojas para universo de alcance del proyecto, hojas de alcance por localidad, universo prioritario, procesos humedos, mezclilla, auditoria obligatoria, pendientes, excluidos, cercanos a hidrografia, catalogo de reglas e instrucciones de auditoria.
 
 \section{Mapas generados}
 
