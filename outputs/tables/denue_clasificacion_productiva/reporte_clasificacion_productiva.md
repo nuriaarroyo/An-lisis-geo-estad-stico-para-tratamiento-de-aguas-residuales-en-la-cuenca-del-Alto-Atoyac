@@ -6,11 +6,11 @@ No constituye evidencia de descarga, contaminacion ni incumplimiento normativo.
 ## Conteos principales
 
 - Universo textil inicial: 1067
-- Universo textil depurado: 1049
-- Universo de alcance del proyecto (humedos, lavado/deslavado o mezclilla/jeans): 327
-- Universo ambientalmente prioritario: 266
+- Universo textil depurado: 1020
+- Universo de alcance del proyecto (humedos, lavado/deslavado o mezclilla/jeans): 303
+- Universo ambientalmente prioritario: 241
 - Universo pendiente de auditoria: 452
-- Prioritarios cerca de hidrografia <=250 m: 83
+- Prioritarios cerca de hidrografia <=250 m: 77
 
 ## Archivos principales
 

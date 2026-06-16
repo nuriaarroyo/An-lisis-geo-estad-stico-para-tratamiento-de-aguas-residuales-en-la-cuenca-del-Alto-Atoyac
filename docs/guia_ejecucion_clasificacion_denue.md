@@ -35,6 +35,7 @@ python scripts/06_make_interactive_maps.py
 python scripts/06b_make_plotly_productive_maps.py
 python scripts/07_apply_denue_audit.py
 python scripts/08_make_audited_maps.py
+python scripts/09_make_final_priority_universe.py
 ```
 
 Tambien se puede correr:
@@ -63,6 +64,11 @@ python scripts/run_all.py
 - `outputs/tables/auditoria_enriquecida/auditoria_denue_textil_priorizada.xlsx`
 - `outputs/maps/denue_clasificacion_productiva/`
 - `outputs/maps_interactive/denue_clasificacion_productiva/index.html`
+- `outputs/universo_prioritario_denue/universo_prioritario_denue.csv`
+- `outputs/universo_prioritario_denue/universo_prioritario_denue.gpkg`
+- `outputs/universo_prioritario_denue/huejotzingo/`
+- `outputs/universo_prioritario_denue/santa_ana_xalmimilulco/`
+- `outputs/universo_prioritario_denue/san_martin_texmelucan/`
 
 ## Como llenar el Excel de auditoria
 
@@ -97,6 +103,7 @@ Despues de llenar el Excel:
 
 ```powershell
 python scripts/07_apply_denue_audit.py
+python scripts/09_make_final_priority_universe.py
 ```
 
 El script produce:
@@ -105,6 +112,9 @@ El script produce:
 - `outputs/tables/denue_clasificacion_productiva/denue_clasificacion_productiva_pendiente_decision_manual.csv`
 - `outputs/tables/denue_clasificacion_productiva/denue_clasificacion_productiva_con_decision_manual.csv`
 - `data/processed/denue_clasificacion_productiva_auditada.gpkg`
+- `outputs/universo_prioritario_denue/`, con el universo prioritario final y una subcarpeta por localidad.
+
+El script `09_make_final_priority_universe.py` usa `outputs/tables/auditoria_enriquecida/auditoria_denue_textil_priorizada_manual.xlsx` si existe. Los registros con `categoria_auditada = FALSE` no entran al universo prioritario final.
 
 ## Abrir mapas HTML
 

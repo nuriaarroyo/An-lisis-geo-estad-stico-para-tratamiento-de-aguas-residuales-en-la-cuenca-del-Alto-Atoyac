@@ -19,6 +19,7 @@ SCRIPTS = [
     "06b_make_plotly_productive_maps.py",
     "07_apply_denue_audit.py",
     "08_make_audited_maps.py",
+    "09_make_final_priority_universe.py",
 ]
 
 

@@ -40,6 +40,7 @@ SAIC permite extraer indicadores comparativos municipales, por ejemplo unidades 
 - `scripts/06b_make_plotly_productive_maps.py`: genera mapas interactivos Plotly e indice HTML de la clasificacion productiva.
 - `scripts/07_apply_denue_audit.py`: aplica las categorias editadas manualmente en las plantillas de auditoria.
 - `scripts/08_make_audited_maps.py`: genera mapas posteriores a la auditoria, solo con categorias alta y media.
+- `scripts/09_make_final_priority_universe.py`: genera el universo prioritario DENUE final, aplicando filtros contra falsos positivos y la auditoria manual `FALSE`.
 - `scripts/run_all.py`: ejecuta todo el flujo en orden.
 
 ## Como correr
@@ -111,6 +112,7 @@ python scripts/run_all.py
 - `outputs/maps_interactive/xalmimilulco_denue_textil_productivo_interactivo.html`
 - `outputs/maps_interactive/san_martin_denue_textil_productivo_interactivo.html`
 - `outputs/maps_interactive/denue_clasificacion_productiva/index.html`
+- `outputs/universo_prioritario_denue/`: universo prioritario final con tabla, capa GeoPackage, resumen y subcarpetas por Huejotzingo, Santa Ana Xalmimilulco y San Martin Texmelucan.
 
 La guia detallada del flujo nuevo esta en `docs/guia_ejecucion_clasificacion_denue.md`.
 

@@ -139,6 +139,16 @@ RULE_TERMS: dict[str, list[str]] = {
         "sublimacion",
         "impresion textil",
     ],
+    "planchado": [
+        "planchado",
+        "planchaduria",
+        "planchaduria sin nombre",
+        "servicio de planchado",
+        "servicio de planchaduria",
+        "plancha de pantalon",
+        "planchado de pantalon",
+        "planchas",
+    ],
     "comercio": [
         "venta",
         "tienda",
@@ -170,6 +180,8 @@ RULE_TERMS: dict[str, list[str]] = {
     "no_textil": [
         "autolavado",
         "auto lavado",
+        "lavado y engrasado",
+        "engrasado",
         "mecanico",
         "mecanica",
         "automotriz",
@@ -177,6 +189,17 @@ RULE_TERMS: dict[str, list[str]] = {
         "carpinteria",
         "herreria",
         "celulares",
+        "lavadora",
+        "lavadoras",
+        "reparacion de lavadoras",
+        "reparadora de lavadoras",
+        "reparaciones de tapetes",
+        "tratamiento medico",
+        "medico",
+        "quirurgico",
+        "diagnostico",
+        "diseno de interiores",
+        "diseño de interiores",
     ],
 }
 
@@ -214,6 +237,7 @@ BOOLEAN_COLUMNS = [
     "tiene_senal_acabado_tratamiento",
     "tiene_senal_industrial",
     "tiene_senal_maquila",
+    "tiene_senal_planchado",
     "es_confeccion_especializada",
     "es_comercio_o_renta",
     "requiere_auditoria_manual",
@@ -316,6 +340,9 @@ def classify_row(row: pd.Series) -> dict[str, object]:
     has_renta = bool(found["renta"])
     has_no_textil = bool(found["no_textil"])
     has_bordado_estampado = bool(found["bordado_estampado"])
+    has_planchado = bool(found["planchado"])
+    has_direct_wet_text = bool(found["lavado_deslavado"] or found["lavanderia_industrial"] or found["tenido_tintoreria"] or found["acabado_tratamiento"])
+    only_planchado_scian = has_planchado and not has_direct_wet_text
     process_humedo = has_lavado or has_tenido or has_acabado or stage_from_scian == "lavanderia_industrial"
 
     rules: list[str] = []
@@ -337,12 +364,26 @@ def classify_row(row: pd.Series) -> dict[str, object]:
     audit_reason: list[str] = []
     priority_reason: list[str] = []
 
-    if has_no_textil and not (process_humedo or has_mezclilla or has_maquila):
+    if has_no_textil:
         stage = "no_pertinente"
         pressure = "baja"
         decision = "excluir_del_universo_prioritario"
         confidence = "media"
-        exclusion_reason = "senal no textil sin senales productivas relevantes"
+        exclusion_reason = "senal no textil o de servicio no relacionado con proceso textil del alcance"
+        process_humedo = False
+        has_lavado = False
+        has_tenido = False
+        has_acabado = False
+    elif only_planchado_scian:
+        stage = "planchado_sin_proceso_humedo"
+        pressure = "baja"
+        decision = "excluir_del_universo_prioritario"
+        confidence = "media"
+        exclusion_reason = "planchaduria o servicio de planchado sin senal textual de lavado, tintoreria, tenido o acabado"
+        process_humedo = False
+        has_lavado = False
+        has_tenido = False
+        has_acabado = False
     elif process_humedo:
         if found["lavado_deslavado"]:
             stage = "lavado_deslavado"
@@ -442,7 +483,13 @@ def classify_row(row: pd.Series) -> dict[str, object]:
         field_priority = "baja"
 
     text_ambiguous = stage in {"revisar", "desconocido"} or confidence == "baja"
-    possible_false_positive = stage in {"comercio_simple", "renta_prendas", "confeccion_especializada_baja_relevancia", "no_pertinente"}
+    possible_false_positive = stage in {
+        "comercio_simple",
+        "renta_prendas",
+        "confeccion_especializada_baja_relevancia",
+        "no_pertinente",
+        "planchado_sin_proceso_humedo",
+    }
     possible_false_negative = (has_commerce or has_especializada) and (process_humedo or has_mezclilla or has_maquila or has_industrial)
     requires_audit = (
         text_ambiguous
@@ -483,9 +530,11 @@ def classify_row(row: pd.Series) -> dict[str, object]:
         "mezclilla_jeans",
         "industrial",
         "maquila",
+        "planchado",
         "confeccion_especializada",
         "comercio",
         "renta",
+        "no_textil",
     ]:
         keywords.extend(found[family])
 
@@ -508,6 +557,7 @@ def classify_row(row: pd.Series) -> dict[str, object]:
         "tiene_senal_acabado_tratamiento": has_acabado,
         "tiene_senal_industrial": has_industrial,
         "tiene_senal_maquila": has_maquila,
+        "tiene_senal_planchado": has_planchado,
         "es_confeccion_especializada": has_especializada,
         "es_comercio_o_renta": has_commerce or has_renta,
         "requiere_auditoria_manual": requires_audit,
