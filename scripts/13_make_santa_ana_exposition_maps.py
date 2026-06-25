@@ -51,6 +51,19 @@ COLORS = {
     "linea_mismo_id_desplazado": "#d95f02",
     "mayra_nombre_exactoy_cerca": "#1b9e77",
     "mayra_revisar_nombre_o_distancia": "#d95f02",
+    "mh_id_en_denue2026_base": "#1b9e77",
+    "mh_id_no_en_denue2026_base": "#d73027",
+    "mh_id_en_filtro2026": "#7570b3",
+    "mh_id_no_en_filtro2026": "#d95f02",
+    "actual_2026_y_mh": "#1b9e77",
+    "actual_y_2026_no_mh": "#66a61e",
+    "actual_y_mh_no_2026": "#a6d854",
+    "2026_y_mh_no_actual": "#80b1d3",
+    "solo_actual": "#d73027",
+    "solo_2026": "#7570b3",
+    "solo_mh": "#e7298a",
+    "mh_sin_id": "#969696",
+    "mh_id_fuera_denue2026": "#8c510a",
 }
 
 
@@ -292,6 +305,249 @@ def mayra_nearest(mayra: gpd.GeoDataFrame, denue2026: gpd.GeoDataFrame) -> tuple
     return nearest, gpd.GeoDataFrame(lines, geometry="geometry", crs=mayra.crs)
 
 
+def mh_filtrado_vs_source(
+    mh: gpd.GeoDataFrame,
+    source: gpd.GeoDataFrame,
+    source_id_col: str,
+    ok_label: str,
+    missing_label: str,
+) -> gpd.GeoDataFrame:
+    mh = add_key(mh, "ID DENUE")
+    source = add_key(source, source_id_col)
+    source_ids = set(source["_id_key"]) - {""}
+    out = keep_points(mh, ["Name", "DENUE", "ID DENUE", "_id_key"])
+    out["id"] = out["_id_key"]
+    out["comparacion"] = out["_id_key"].map(
+        lambda value: "mh_filtrado_sin_id" if not value else (ok_label if value in source_ids else missing_label)
+    )
+    out["fuente_mapa"] = "mh_filtrado"
+    return out
+
+
+def bool_text(value: object) -> str:
+    return "si" if bool(value) else "no"
+
+
+def signal_summary(row: pd.Series) -> str:
+    signals = []
+    for label, col in [
+        ("proceso humedo", "flag_proceso_humedo_relevante"),
+        ("mezclilla/jeans", "flag_mezclilla_jeans"),
+        ("lavado/deslavado", "flag_lavado_deslavado"),
+        ("tenido/tintoreria", "flag_tenido_tintoreria"),
+        ("acabado/tratamiento", "flag_acabado_tratamiento"),
+        ("maquila", "flag_maquila_productiva"),
+        ("cercania <=250m hidrografia", "flag_cercania_hidrografia_250m"),
+    ]:
+        if bool(row.get(col, False)):
+            signals.append(label)
+    if signals:
+        return "; ".join(signals)
+    if row.get("en_mh_filtrado", False) and row.get("en_clasificacion_2026", False):
+        return "textil/confeccion sin senal prioritaria humeda o mezclilla"
+    if row.get("en_mh_filtrado", False):
+        return "MH sin senales verificables por falta de ID o por no existir en DENUE 2026"
+    return "sin senales prioritarias registradas"
+
+
+def union_conjuntos_senales(
+    santa: gpd.GeoDataFrame,
+    u2026: gpd.GeoDataFrame,
+    denue2026: gpd.GeoDataFrame,
+    classified2026: gpd.GeoDataFrame,
+    mh: gpd.GeoDataFrame,
+) -> gpd.GeoDataFrame:
+    santa = add_key(santa)
+    u2026 = add_key(u2026)
+    denue2026 = add_key(denue2026)
+    classified2026 = add_key(classified2026)
+    mh = add_key(mh, "ID DENUE")
+
+    u2026_santa = u2026[u2026["localidad"].fillna("").astype(str).eq("Santa Ana Xalmimilulco")].copy()
+    actual_ids = set(santa["_id_key"]) - {""}
+    u2026_ids = set(u2026_santa["_id_key"]) - {""}
+    mh_ids = set(mh["_id_key"]) - {""}
+    denue_ids = set(denue2026["_id_key"]) - {""}
+    classified_ids = set(classified2026["_id_key"]) - {""}
+    all_ids = sorted(actual_ids | u2026_ids | mh_ids)
+
+    denue_lookup = denue2026.drop_duplicates("_id_key").set_index("_id_key", drop=False)
+    class_lookup = classified2026.drop_duplicates("_id_key").set_index("_id_key", drop=False)
+    actual_lookup = santa.drop_duplicates("_id_key").set_index("_id_key", drop=False)
+    u2026_lookup = u2026_santa.drop_duplicates("_id_key").set_index("_id_key", drop=False)
+    mh_lookup = mh.drop_duplicates("_id_key").set_index("_id_key", drop=False)
+
+    rows = []
+    class_cols = [
+        "categoria_relevancia_ambiental",
+        "etapa_productiva_sugerida",
+        "decision_estudio_sugerida",
+        "decision_alcance_proyecto",
+        "presion_ambiental_potencial",
+        "confianza_clasificacion",
+        "flag_universo_alcance_proyecto",
+        "flag_estudio_prioritario",
+        "flag_proceso_humedo_relevante",
+        "flag_mezclilla_jeans",
+        "flag_lavado_deslavado",
+        "flag_tenido_tintoreria",
+        "flag_acabado_tratamiento",
+        "flag_maquila_productiva",
+        "flag_cercania_hidrografia_250m",
+        "distancia_hidrografia_m",
+        "evidencia_clasificacion",
+        "palabras_clave_etapa",
+        "motivo_flag_estudio_prioritario",
+        "motivo_universo_alcance_proyecto",
+        "motivo_exclusion_prioritaria",
+        "motivo_auditoria",
+    ]
+    raw_cols = [
+        "id",
+        "clee",
+        "nombre_de_la_unidad_economica",
+        "codigo_de_la_clase_actividad_scian",
+        "nombre_clase_actividad_scian",
+        "per_ocu",
+        "municipio",
+        "localidad",
+    ]
+
+    for id_key in all_ids:
+        source_row = None
+        for lookup in [class_lookup, denue_lookup, actual_lookup, u2026_lookup, mh_lookup]:
+            if id_key in lookup.index:
+                source_row = lookup.loc[id_key]
+                if isinstance(source_row, pd.DataFrame):
+                    source_row = source_row.iloc[0]
+                break
+        if source_row is None:
+            continue
+
+        in_actual = id_key in actual_ids
+        in_2026 = id_key in u2026_ids
+        in_mh = id_key in mh_ids
+        if in_actual and in_2026 and in_mh:
+            conjunto = "actual_2026_y_mh"
+        elif in_actual and in_2026:
+            conjunto = "actual_y_2026_no_mh"
+        elif in_actual and in_mh:
+            conjunto = "actual_y_mh_no_2026"
+        elif in_2026 and in_mh:
+            conjunto = "2026_y_mh_no_actual"
+        elif in_actual:
+            conjunto = "solo_actual"
+        elif in_2026:
+            conjunto = "solo_2026"
+        else:
+            conjunto = "solo_mh"
+
+        row = {
+            "_id_key": id_key,
+            "id": id_key,
+            "en_universo_actual_santa": in_actual,
+            "en_filtrado_2026_santa": in_2026,
+            "en_mh_filtrado": in_mh,
+            "en_denue2026_base": id_key in denue_ids,
+            "en_clasificacion_2026": id_key in classified_ids,
+            "conjunto_comparativo": conjunto,
+            "comparacion": conjunto,
+            "fuente_mapa": "union_conjuntos",
+            "geometry": source_row.geometry,
+        }
+
+        for col in raw_cols:
+            if id_key in denue_lookup.index and col in denue_lookup.columns:
+                value = denue_lookup.loc[id_key, col]
+                row[col] = value.iloc[0] if isinstance(value, pd.Series) else value
+            elif col in source_row.index:
+                row[col] = source_row.get(col, "")
+        if id_key in class_lookup.index:
+            class_row = class_lookup.loc[id_key]
+            if isinstance(class_row, pd.DataFrame):
+                class_row = class_row.iloc[0]
+            for col in class_cols:
+                if col in class_row.index:
+                    row[col] = class_row.get(col, "")
+        elif id_key in actual_lookup.index:
+            actual_row = actual_lookup.loc[id_key]
+            if isinstance(actual_row, pd.DataFrame):
+                actual_row = actual_row.iloc[0]
+            for col in class_cols:
+                if col in actual_row.index:
+                    row[col] = actual_row.get(col, "")
+
+        if id_key in mh_lookup.index:
+            mh_row = mh_lookup.loc[id_key]
+            if isinstance(mh_row, pd.DataFrame):
+                mh_row = mh_row.iloc[0]
+            row["mh_name"] = mh_row.get("Name", "")
+            row["mh_denue_flag"] = mh_row.get("DENUE", "")
+            row["mh_id_denue"] = mh_row.get("ID DENUE", "")
+        rows.append(row)
+
+    # Preserve MH points without ID because they are evidence of non-auditable records.
+    mh_no_id = mh[mh["_id_key"].eq("")].copy()
+    for _, mh_row in mh_no_id.iterrows():
+        rows.append(
+            {
+                "_id_key": "",
+                "id": "",
+                "nombre_de_la_unidad_economica": f"MH sin ID - Name {mh_row.get('Name', '')}",
+                "en_universo_actual_santa": False,
+                "en_filtrado_2026_santa": False,
+                "en_mh_filtrado": True,
+                "en_denue2026_base": False,
+                "en_clasificacion_2026": False,
+                "conjunto_comparativo": "mh_sin_id",
+                "comparacion": "mh_sin_id",
+                "fuente_mapa": "mh_filtrado",
+                "mh_name": mh_row.get("Name", ""),
+                "mh_denue_flag": mh_row.get("DENUE", ""),
+                "mh_id_denue": mh_row.get("ID DENUE", ""),
+                "geometry": mh_row.geometry,
+            }
+        )
+
+    out = gpd.GeoDataFrame(rows, geometry="geometry", crs=santa.crs)
+    if out.empty:
+        return out
+    out["nombre_mapa"] = out["nombre_de_la_unidad_economica"].fillna("").astype(str)
+    out["membresia"] = out.apply(
+        lambda row: "; ".join(
+            label
+            for label, col in [
+                ("actual Santa", "en_universo_actual_santa"),
+                ("filtrado 2026 Santa", "en_filtrado_2026_santa"),
+                ("MH filtrado", "en_mh_filtrado"),
+            ]
+            if bool(row.get(col, False))
+        )
+        or "sin membresia validada",
+        axis=1,
+    )
+    out["senales_resumen"] = out.apply(signal_summary, axis=1)
+    out["lectura_auditoria"] = out.apply(
+        lambda row: (
+            "Coincide en ambos filtros y tambien en MH."
+            if row["conjunto_comparativo"] == "actual_2026_y_mh"
+            else "Coincide entre mi universo actual y mi filtrado 2026; no esta en MH filtrado."
+            if row["conjunto_comparativo"] == "actual_y_2026_no_mh"
+            else "Nuevo candidato del filtrado 2026 para Santa Ana."
+            if row["conjunto_comparativo"] == "2026_y_mh_no_actual"
+            else "Nuevo candidato del filtrado 2026 que tambien aparece en MH filtrado."
+            if row["conjunto_comparativo"] == "solo_2026"
+            else "Solo aparece en MH filtrado; revisar si es maquila/confeccion sin senal prioritaria."
+            if row["conjunto_comparativo"] == "solo_mh"
+            else "Registro MH sin ID DENUE; no auditable por llave."
+            if row["conjunto_comparativo"] == "mh_sin_id"
+            else "Solo aparece en universo actual; revisar cambio de version/fuente."
+        ),
+        axis=1,
+    )
+    return out
+
+
 def base_layers(crs: str) -> tuple[gpd.GeoDataFrame | None, gpd.GeoDataFrame | None]:
     localidades = read_any(PATHS["localidades"]) if PATHS["localidades"].exists() else None
     hydro = read_any(PATHS["hidrografia"]) if PATHS["hidrografia"].exists() else None
@@ -361,6 +617,22 @@ def interactive_map(gdf: gpd.GeoDataFrame, name: str, title: str) -> None:
             "nombre_denue2026_cercano",
             "ID DENUE",
             "DENUE",
+            "membresia",
+            "senales_resumen",
+            "lectura_auditoria",
+            "codigo_de_la_clase_actividad_scian",
+            "nombre_clase_actividad_scian",
+            "decision_estudio_sugerida",
+            "flag_estudio_prioritario",
+            "flag_proceso_humedo_relevante",
+            "flag_mezclilla_jeans",
+            "flag_lavado_deslavado",
+            "flag_tenido_tintoreria",
+            "flag_acabado_tratamiento",
+            "flag_maquila_productiva",
+            "evidencia_clasificacion",
+            "palabras_clave_etapa",
+            "motivo_flag_estudio_prioritario",
         ]
         if c in web.columns
     ]
@@ -449,6 +721,7 @@ def main() -> None:
     santa = read_any(PATHS["santa_actual"])
     u2026 = read_any(PATHS["universo2026"])
     denue2026 = read_any(PATHS["denue2026_raw"])
+    classified2026 = read_any(PROCESSED_DIR / "denue2026_universo_textil_clasificado.gpkg")
     mh2 = read_any(PATHS["mh2"])
     mh = read_any(PATHS["mh_filtrado"])
     mayra = read_any(PATHS["mayra"])
@@ -506,6 +779,39 @@ def main() -> None:
             "Mayra vs DENUE 2026: vecino mas cercano",
             line_gdf=mayra_lines,
             line_name="06b_lineas_mayra_a_denue2026_cercano",
+        )
+    )
+    summaries.append(
+        save_layer(
+            mh_filtrado_vs_source(
+                mh,
+                denue2026,
+                "id",
+                "mh_id_en_denue2026_base",
+                "mh_id_no_en_denue2026_base",
+            ),
+            "07_mh_filtrado_vs_denue2026_base",
+            "MH filtrado vs DENUE 2026 base",
+        )
+    )
+    summaries.append(
+        save_layer(
+            mh_filtrado_vs_source(
+                mh,
+                u2026,
+                "id",
+                "mh_id_en_filtro2026",
+                "mh_id_no_en_filtro2026",
+            ),
+            "08_mh_filtrado_vs_filtrado_2026",
+            "MH filtrado vs universo prioritario filtrado 2026",
+        )
+    )
+    summaries.append(
+        save_layer(
+            union_conjuntos_senales(santa, u2026, denue2026, classified2026, mh),
+            "09_union_conjuntos_santa_ana_senales",
+            "Santa Ana: union de conjuntos y senales por punto",
         )
     )
     summary = pd.concat(summaries, ignore_index=True)

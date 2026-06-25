@@ -22,6 +22,19 @@ Lectura principal: el universo actual de Santa Ana coincide con DENUE 2026/MH2 s
 | 05_mh_filtrado_mismos_ids_desplazados | punto_mh_mismo_id_desplazado | 7 |
 | 06_mayra_vs_denue2026_vecino_cercano | mayra_nombre_exactoy_cerca | 7 |
 | 06_mayra_vs_denue2026_vecino_cercano | mayra_revisar_nombre_o_distancia | 42 |
+| 07_mh_filtrado_vs_denue2026_base | mh_filtrado_sin_id | 6 |
+| 07_mh_filtrado_vs_denue2026_base | mh_id_en_denue2026_base | 42 |
+| 07_mh_filtrado_vs_denue2026_base | mh_id_no_en_denue2026_base | 1 |
+| 08_mh_filtrado_vs_filtrado_2026 | mh_filtrado_sin_id | 6 |
+| 08_mh_filtrado_vs_filtrado_2026 | mh_id_en_filtro2026 | 10 |
+| 08_mh_filtrado_vs_filtrado_2026 | mh_id_no_en_filtro2026 | 33 |
+| 09_union_conjuntos_santa_ana_senales | 2026_y_mh_no_actual | 2 |
+| 09_union_conjuntos_santa_ana_senales | actual_2026_y_mh | 7 |
+| 09_union_conjuntos_santa_ana_senales | actual_y_2026_no_mh | 30 |
+| 09_union_conjuntos_santa_ana_senales | mh_sin_id | 6 |
+| 09_union_conjuntos_santa_ana_senales | solo_2026 | 3 |
+| 09_union_conjuntos_santa_ana_senales | solo_actual | 1 |
+| 09_union_conjuntos_santa_ana_senales | solo_mh | 34 |
 
 ## Fuentes usadas
 
