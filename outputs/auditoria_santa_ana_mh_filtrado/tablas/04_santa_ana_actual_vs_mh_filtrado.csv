@@ -1,0 +1,88 @@
+﻿id,clee,nombre_de_la_unidad_economica,codigo_de_la_clase_actividad_scian,localidad,etapa_productiva_sugerida,_id_key,nombre_mapa,comparacion,fuente_mapa,Name,DENUE,ID DENUE
+3326066,21074812210000262001000000U9,LAVANDERIA LAVAPLUS,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,3326066,LAVANDERIA LAVAPLUS,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3326348,21074315229001403002000000U0,TALLER DE MAQUILA DE PANTALON DE MEZCLILLA,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,3326348,TALLER DE MAQUILA DE PANTALON DE MEZCLILLA,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3427228,21074812210000141000000000U5,TINTORERIA LIZ,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,3427228,TINTORERIA LIZ,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3427244,21074812210000131000000000U6,TINTORERIA LIZ,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,3427244,TINTORERIA LIZ,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3427952,21074812210000031010000000U8,MAQUILA DE LAVANDERIA DE PANTALON,313310.0,Santa Ana Xalmimilulco,lavanderia_industrial,3427952,MAQUILA DE LAVANDERIA DE PANTALON,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3428125,21074812210000182000000000U9,LAVANDERIA SANTA CECILIA,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,3428125,LAVANDERIA SANTA CECILIA,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3428134,21074812210000223001000000U1,LAVANDERIA SANTA MONICA,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,3428134,LAVANDERIA SANTA MONICA,actual_coincide_id_mh_filtrado,universo_actual_santa_ana,,,
+3428174,21074812210000172002000000U0,LAVANDERIA ALEX,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,3428174,LAVANDERIA ALEX,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3428228,21074315229000811002000000U5,MAQUILAR PANTALON DE MEZCLILLA,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,3428228,MAQUILAR PANTALON DE MEZCLILLA,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3428283,21074812210000121001000000U7,LAVANDERIA LAVAMEXXAL,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,3428283,LAVANDERIA LAVAMEXXAL,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3428321,21074812210000051011000000U6,LAVANDERIA Y TERMINADOS G C,313310.0,Santa Ana Xalmimilulco,lavanderia_industrial,3428321,LAVANDERIA Y TERMINADOS G C,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+8088970,21074315229001671000000000U2,MAQUILADORA DE PANTALONES DE MEZCLILLA,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,8088970,MAQUILADORA DE PANTALONES DE MEZCLILLA,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+8089261,21074812210000431000000000U0,LAVANDERIA REY,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,8089261,LAVANDERIA REY,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+8090455,21074315229001931000000000U0,TALLER DE MAQUILA DE MEZCLILLA,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,8090455,TALLER DE MAQUILA DE MEZCLILLA,actual_coincide_id_mh_filtrado,universo_actual_santa_ana,,,
+8776900,21074812210000521000000000U8,LAVANDERIA MARY,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,8776900,LAVANDERIA MARY,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+8949535,21074315229001601000000000U9,TALLER DE MAQUILA DE MEZCLILLA SIN NOMBRE,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,8949535,TALLER DE MAQUILA DE MEZCLILLA SIN NOMBRE,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+9725562,21074315229002411000000000U2,TALLER DE MAQUILA DE PANTALON DE MEZCLILLA,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,9725562,TALLER DE MAQUILA DE PANTALON DE MEZCLILLA,actual_coincide_id_mh_filtrado,universo_actual_santa_ana,,,
+10086701,21074812210000601000000000U8,LAVANDERIA MEXICO,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,10086701,LAVANDERIA MEXICO,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+10099363,21074315223001011000000000U4,MAQUILA DE PANTALON DE MEZCLILLA SIN NOMBRE,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,10099363,MAQUILA DE PANTALON DE MEZCLILLA SIN NOMBRE,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+10801837,21074812210000772000000000U7,LAVANDERIA SIN NOMBRE,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,10801837,LAVANDERIA SIN NOMBRE,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+10876257,21074812210000751000000000U1,LAVANDERIA MA & MA,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,10876257,LAVANDERIA MA & MA,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+11081907,21074812210000921000000000U0,BODEGA SIN NOMBRE,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,11081907,BODEGA SIN NOMBRE,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+11096797,21074812210000642000000000U2,LAVADOS Y PROCESOS FLORES,812210.0,Santa Ana Xalmimilulco,lavado_deslavado,11096797,LAVADOS Y PROCESOS FLORES,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+11149643,21074812210000672000000000U9,LAVANDERIA LOS SOLARES,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,11149643,LAVANDERIA LOS SOLARES,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+11183668,21074812210000251000000000U2,BODEGA DE DESPERDICIO,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,11183668,BODEGA DE DESPERDICIO,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3326137,21074315229001301002000000U6,MAQUILA DE PANTALON FOSIL JEANS,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,3326137,MAQUILA DE PANTALON FOSIL JEANS,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3326339,21074315229001291001000000U9,MAQUILA DE PANTALON DE MEZCLILLA SIN NOMBRE,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,3326339,MAQUILA DE PANTALON DE MEZCLILLA SIN NOMBRE,actual_coincide_id_mh_filtrado,universo_actual_santa_ana,,,
+3427213,21074812210000342001000000U9,LAVANDERIA MAGALY,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,3427213,LAVANDERIA MAGALY,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3427993,21074812210000213002000000U2,LAVANDERIA SIN NOMBRE,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,3427993,LAVANDERIA SIN NOMBRE,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3428103,21074812210000192001000000U8,LAVANDERIA NOVALAV,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,3428103,LAVANDERIA NOVALAV,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+6861846,21074812210000364001000000U3,STONE LAV,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,6861846,STONE LAV,actual_coincide_id_mh_filtrado,universo_actual_santa_ana,,,
+7742787,21074461160000781011000000U9,TALLER DE MAQUILA Y PANTALONES DE MEZCLILLA,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,7742787,TALLER DE MAQUILA Y PANTALONES DE MEZCLILLA,actual_coincide_id_mh_filtrado,universo_actual_santa_ana,,,
+8089452,21074812210000451001000000U8,LAVANDERIA RUGLAS,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,8089452,LAVANDERIA RUGLAS,actual_coincide_id_mh_filtrado,universo_actual_santa_ana,,,
+8089562,21074812210000471000000000U6,LAVANDERIA SANTY,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,8089562,LAVANDERIA SANTY,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+8111334,21074434222000041000000000U0,VAQUIMTEX PRODUCTOS PARA LAVANDERIA,434222.0,Santa Ana Xalmimilulco,lavanderia_industrial,8111334,VAQUIMTEX PRODUCTOS PARA LAVANDERIA,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+8777526,21074315229002171000000000U2,MAQUILA DESHEBRADO,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,8777526,MAQUILA DESHEBRADO,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+10451408,21074812210000861000000000U8,STONE LAV,812210.0,Santa Ana Xalmimilulco,lavanderia_industrial,10451408,STONE LAV,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+11133786,21074315229002281000000000U9,MAQUILA DESHEBRADO DE PANTALON SIN NOMBRE,315229.0,Santa Ana Xalmimilulco,fabricacion_mezclilla,11133786,MAQUILA DESHEBRADO DE PANTALON SIN NOMBRE,actual_falta_en_mh_filtrado,universo_actual_santa_ana,,,
+3538483,,,,,,3538483,1,mh_filtrado_con_id_no_en_actual,mh_filtrado,1,1.0,3538483.0
+,,,,,,,2,mh_filtrado_sin_id,mh_filtrado,2,0.0,
+,,,,,,,3,mh_filtrado_sin_id,mh_filtrado,3,0.0,
+,,,,,,,4,mh_filtrado_sin_id,mh_filtrado,4,0.0,
+8089452,,,,,,8089452,5,mh_filtrado_coincide_id_actual,mh_filtrado,5,1.0,8089452.0
+8089455,,,,,,8089455,6,mh_filtrado_con_id_no_en_actual,mh_filtrado,6,1.0,8089455.0
+3427268,,,,,,3427268,7,mh_filtrado_con_id_no_en_actual,mh_filtrado,7,1.0,3427268.0
+3326339,,,,,,3326339,8,mh_filtrado_coincide_id_actual,mh_filtrado,8,1.0,3326339.0
+11359086,,,,,,11359086,9,mh_filtrado_con_id_no_en_actual,mh_filtrado,9,1.0,11359086.0
+3326347,,,,,,3326347,11,mh_filtrado_con_id_no_en_actual,mh_filtrado,11,1.0,3326347.0
+8089208,,,,,,8089208,12,mh_filtrado_con_id_no_en_actual,mh_filtrado,12,1.0,8089208.0
+3327188,,,,,,3327188,13,mh_filtrado_con_id_no_en_actual,mh_filtrado,13,1.0,3327188.0
+9725562,,,,,,9725562,14,mh_filtrado_coincide_id_actual,mh_filtrado,14,1.0,9725562.0
+3427182,,,,,,3427182,15,mh_filtrado_con_id_no_en_actual,mh_filtrado,15,1.0,3427182.0
+3427211,,,,,,3427211,16,mh_filtrado_con_id_no_en_actual,mh_filtrado,16,1.0,3427211.0
+3428048,,,,,,3428048,17,mh_filtrado_con_id_no_en_actual,mh_filtrado,17,1.0,3428048.0
+6450047,,,,,,6450047,18,mh_filtrado_con_id_no_en_actual,mh_filtrado,18,1.0,6450047.0
+,,,,,,,19,mh_filtrado_sin_id,mh_filtrado,19,0.0,
+11179294,,,,,,11179294,20,mh_filtrado_con_id_no_en_actual,mh_filtrado,20,1.0,11179294.0
+3427858,,,,,,3427858,21,mh_filtrado_con_id_no_en_actual,mh_filtrado,21,1.0,3427858.0
+3427887,,,,,,3427887,22,mh_filtrado_con_id_no_en_actual,mh_filtrado,22,1.0,3427887.0
+3427899,,,,,,3427899,23,mh_filtrado_con_id_no_en_actual,mh_filtrado,23,1.0,3427899.0
+3326144,,,,,,3326144,24,mh_filtrado_con_id_no_en_actual,mh_filtrado,24,1.0,3326144.0
+,,,,,,,25,mh_filtrado_sin_id,mh_filtrado,25,0.0,
+10398573,,,,,,10398573,26,mh_filtrado_con_id_no_en_actual,mh_filtrado,26,1.0,10398573.0
+3326133,,,,,,3326133,27,mh_filtrado_con_id_no_en_actual,mh_filtrado,27,1.0,3326133.0
+8090624,,,,,,8090624,28,mh_filtrado_con_id_no_en_actual,mh_filtrado,28,1.0,8090624.0
+3428151,,,,,,3428151,29,mh_filtrado_con_id_no_en_actual,mh_filtrado,29,1.0,3428151.0
+11119257,,,,,,11119257,30,mh_filtrado_con_id_no_en_actual,mh_filtrado,30,1.0,11119257.0
+11313187,,,,,,11313187,31,mh_filtrado_con_id_no_en_actual,mh_filtrado,31,1.0,11313187.0
+3428168,,,,,,3428168,32,mh_filtrado_con_id_no_en_actual,mh_filtrado,32,1.0,3428168.0
+9890180,,,,,,9890180,33,mh_filtrado_con_id_no_en_actual,mh_filtrado,33,1.0,9890180.0
+10122074,,,,,,10122074,34,mh_filtrado_con_id_no_en_actual,mh_filtrado,34,1.0,10122074.0
+9804661,,,,,,9804661,35,mh_filtrado_con_id_no_en_actual,mh_filtrado,35,1.0,9804661.0
+,,,,,,,36,mh_filtrado_sin_id,mh_filtrado,36,0.0,
+7742787,,,,,,7742787,37,mh_filtrado_coincide_id_actual,mh_filtrado,37,1.0,7742787.0
+11521781,,,,,,11521781,38,mh_filtrado_con_id_no_en_actual,mh_filtrado,38,1.0,11521781.0
+10494863,,,,,,10494863,39,mh_filtrado_con_id_no_en_actual,mh_filtrado,39,1.0,10494863.0
+11528292,,,,,,11528292,40,mh_filtrado_con_id_no_en_actual,mh_filtrado,40,1.0,11528292.0
+10416578,,,,,,10416578,41,mh_filtrado_con_id_no_en_actual,mh_filtrado,41,1.0,10416578.0
+9890969,,,,,,9890969,42,mh_filtrado_con_id_no_en_actual,mh_filtrado,42,1.0,9890969.0
+11303687,,,,,,11303687,43,mh_filtrado_con_id_no_en_actual,mh_filtrado,43,1.0,11303687.0
+3428134,,,,,,3428134,44,mh_filtrado_coincide_id_actual,mh_filtrado,44,1.0,3428134.0
+6272576,,,,,,6272576,45,mh_filtrado_con_id_no_en_actual,mh_filtrado,45,1.0,6272576.0
+6861846,,,,,,6861846,46,mh_filtrado_coincide_id_actual,mh_filtrado,46,1.0,6861846.0
+3428329,,,,,,3428329,47,mh_filtrado_con_id_no_en_actual,mh_filtrado,47,1.0,3428329.0
+11290346,,,,,,11290346,48,mh_filtrado_con_id_no_en_actual,mh_filtrado,48,1.0,11290346.0
+8090455,,,,,,8090455,49,mh_filtrado_coincide_id_actual,mh_filtrado,49,1.0,8090455.0
+11173772,,,,,,11173772,50,mh_filtrado_con_id_no_en_actual,mh_filtrado,50,1.0,11173772.0

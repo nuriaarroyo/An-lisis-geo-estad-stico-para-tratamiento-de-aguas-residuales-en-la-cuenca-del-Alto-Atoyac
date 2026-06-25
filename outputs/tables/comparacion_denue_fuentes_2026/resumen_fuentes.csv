@@ -1,0 +1,10 @@
+﻿fuente,ruta,registros,ids_unicos,ids_duplicados,clee_unicos,clee_duplicados,columna_nombre,crs
+processed_raw,data\processed\denue_raw.gpkg,20311,20311,0,20311,0,nombre_de_la_unidad_economica,EPSG:6372
+processed_textil,data\processed\denue_textil.gpkg,1067,1067,0,1067,0,nombre_de_la_unidad_economica,EPSG:6372
+classified,data\processed\denue_universo_textil_clasificado.gpkg,1067,1067,0,1067,0,nombre_de_la_unidad_economica,EPSG:6372
+final_all,outputs\universo_prioritario_denue\universo_prioritario_denue.gpkg,239,239,0,239,0,nombre_de_la_unidad_economica,EPSG:6372
+final_santa_ana,outputs\universo_prioritario_denue\santa_ana_xalmimilulco\capa_universo_prioritario_denue_santa_ana_xalmimilulco.gpkg,38,38,0,38,0,nombre_de_la_unidad_economica,EPSG:6372
+denue2026,data\raw\denue2026\Denue26 area estudio.shp,2114,2114,0,2114,0,nom_estab,EPSG:4326
+maryhelen_mh2,data\processed\capa_maryhelen\capa MH2.shp,2095,2095,0,2095,0,nom_estab,EPSG:4326
+maryhelen_mh,data\processed\capa_maryhelen\capa MH.shp,49,44,5,0,48,DENUE,EPSG:4326
+mayra,data\processed\capa_mayra\capa mayra.shp,49,0,48,0,48,Nombre,EPSG:4326

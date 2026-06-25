@@ -1,0 +1,4 @@
+﻿fuente_original,ruta,processed_source_folder,registros_original,registros_processed_raw,ids_en_ambas,ids_original_no_processed,ids_processed_no_original,clee_en_ambas,clee_original_no_processed,clee_processed_no_original
+raw_xalmimilulco,data\raw\agebs\xalmimilulco\INEGI_DENUE_.csv,agebs\xalmimilulco,2059,2059,2059,0,0,2059,0,0
+raw_huejotzingo,data\raw\agebs\huejotzingo\INEGI_DENUE_.csv,agebs\huejotzingo,4051,4051,4051,0,0,4051,0,0
+raw_san_martin,data\raw\agebs\san_martin\INEGI_DENUE_.csv,agebs\san_martin,14201,14201,14201,0,0,14201,0,0

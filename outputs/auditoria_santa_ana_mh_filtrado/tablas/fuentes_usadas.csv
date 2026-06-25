@@ -1,0 +1,7 @@
+﻿fuente,ruta
+santa_actual,outputs\universo_prioritario_denue\santa_ana_xalmimilulco\capa_universo_prioritario_denue_santa_ana_xalmimilulco.gpkg
+universo2026,outputs\universo_prioritario_denue_2026\universo_prioritario_denue_2026.gpkg
+denue2026_raw,data\processed\denue2026_raw.gpkg
+mh2,data\processed\capa_maryhelen\capa MH2.shp
+mh_filtrado,data\processed\capa_maryhelen\capa MH.shp
+mayra,data\processed\capa_mayra\capa mayra.shp
