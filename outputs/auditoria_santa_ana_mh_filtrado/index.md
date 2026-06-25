@@ -50,3 +50,13 @@ Lectura principal: el universo actual de Santa Ana coincide con DENUE 2026/MH2 s
 ## Nota
 
 Estos mapas son para limpieza y auditoria. No constituyen evidencia de descarga, contaminacion ni incumplimiento.
+
+## Foco textil estricto Santa Ana 2026
+
+Se genero un producto separado para retirar el ruido del foco amplio: planchado, confeccion/alta costura, ropa terminada generica, talleres sin senal especifica, lavados no textiles, insumos, bodegas y servicios de agua.
+
+- Reporte: `../foco_textil_estricto_santa_ana_2026/index.md`
+- Mapa interactivo principal: `../foco_textil_estricto_santa_ana_2026/mapas/mapa_foco_textil_estricto_santa_ana.html`
+- Comparacion con MH: `../foco_textil_estricto_santa_ana_2026/mapas/mapa_comparacion_estricto_vs_mh.html`
+- Excluidos del foco amplio: `../foco_textil_estricto_santa_ana_2026/mapas/mapa_excluidos_del_foco_amplio.html`
+
