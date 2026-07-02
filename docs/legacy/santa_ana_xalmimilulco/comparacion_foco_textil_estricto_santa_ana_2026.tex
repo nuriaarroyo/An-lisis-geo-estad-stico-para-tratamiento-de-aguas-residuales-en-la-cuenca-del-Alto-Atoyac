@@ -1,0 +1,132 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=2cm]{geometry}
+
+\usepackage{graphicx}
+
+\usepackage{booktabs}
+
+\usepackage{hyperref}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[utf8]{inputenc}
+
+\title{Auditoría de universos de Santa Ana Xalmimilulco}
+
+\author{Proyecto Atoyac - salida reproducible}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Objetivo y jerarquía}
+
+El universo original de Santa Ana es el canónico. MH es una capa ya filtrada de referencia. El foco estricto es una alternativa analítica trazable y el filtrado 2026 es contextual. Ningún conjunto constituye evidencia de descarga o contaminación.
+
+\section{Pipeline único}
+
+La ejecución completa se realiza con \texttt{python scripts\textbackslash run\_santa\_ana\_pipeline.py}: construir alternativa, comparar, documentar y validar.
+
+\section{Tamaños}
+
+\begin{tabular}{ll}
+\toprule
+conjunto & registros \\
+\midrule
+universo\_canonico\_original\_santa\_ana & 38 \\
+mh\_filtrado & 49 \\
+mh\_filtrado\_con\_id & 43 \\
+mh\_filtrado\_sin\_id & 6 \\
+foco\_estricto\_alternativo & 67 \\
+filtrado\_prioritario\_2026 & 42 \\
+union\_comparacion & 111 \\
+\bottomrule
+\end{tabular}
+
+\section{Canónico original frente a MH filtrado}
+
+\begin{tabular}{ll}
+\toprule
+comparacion\_canonico\_vs\_mh & registros \\
+\midrule
+canonico\_y\_mh & 7 \\
+mh\_sin\_id & 6 \\
+solo\_canonico\_original & 31 \\
+solo\_mh\_filtrado & 36 \\
+\bottomrule
+\end{tabular}
+
+\section{Canónico original frente al foco estricto alternativo}
+
+\begin{tabular}{ll}
+\toprule
+comparacion\_canonico\_vs\_foco & registros \\
+\midrule
+canonico\_y\_foco\_estricto & 34 \\
+solo\_canonico\_original & 4 \\
+solo\_foco\_estricto & 33 \\
+\bottomrule
+\end{tabular}
+
+\section{Reglas de la alternativa analítica}
+
+\begin{tabular}{lll}
+\toprule
+rule\_id & rule\_type & registros\_activados \\
+\midrule
+exc\_nombre\_no\_objetivo & exclusion & 35 \\
+exc\_actividad\_no\_objetivo & exclusion & 4 \\
+exc\_decision\_previa & exclusion & 7 \\
+inc\_humedo\_flags & inclusion & 28 \\
+inc\_humedo\_texto & inclusion & 34 \\
+inc\_humedo\_etapa\_scian & inclusion & 33 \\
+inc\_mezclilla\_nombre & inclusion & 42 \\
+inc\_mezclilla\_etapa & inclusion & 38 \\
+inc\_material\_textil & inclusion & 3 \\
+\bottomrule
+\end{tabular}
+
+\begin{description}
+
+\item[\texttt{exc\_nombre\_no\_objetivo}] Evita que una palabra generica como lavado o taller se interprete como proceso textil relevante.
+
+\item[\texttt{exc\_actividad\_no\_objetivo}] Retira actividades cuyo giro declarado no corresponde al proceso textil estudiado.
+
+\item[\texttt{exc\_decision\_previa}] Respeta las exclusiones explícitas de la clasificación previa.
+
+\item[\texttt{inc\_humedo\_flags}] Señal estructurada de tratamiento o proceso húmedo textil.
+
+\item[\texttt{inc\_humedo\_texto}] Señal textual explícita de proceso húmedo o acabado.
+
+\item[\texttt{inc\_humedo\_etapa\_scian}] Señal sectorial o de etapa compatible con lavado, tintorería o acabado.
+
+\item[\texttt{inc\_mezclilla\_nombre}] Identifica establecimientos vinculados explícitamente con mezclilla o jeans.
+
+\item[\texttt{inc\_mezclilla\_etapa}] Conserva la señal de mezclilla asignada en la clasificación productiva.
+
+\item[\texttt{inc\_material\_textil}] Incluye producción de material textil, no confección genérica de ropa terminada.
+
+\end{description}
+
+\section{Mapas}
+
+\begin{figure}[h!]\centering
+
+\includegraphics[width=0.95\linewidth]{../outputs/foco_textil_estricto_santa_ana_2026/mapas/mapa_comparacion_directa_4_conjuntos.png}
+
+\caption{Comparación de los cuatro conjuntos.}
+
+\end{figure}
+
+\begin{figure}[h!]\centering
+
+\includegraphics[width=0.95\linewidth]{../outputs/foco_textil_estricto_santa_ana_2026/mapas/mapa_canonico_original_vs_mh_filtrado.png}
+
+\caption{Universo canónico original frente a MH filtrado.}
+
+\end{figure}
+
+\end{document}

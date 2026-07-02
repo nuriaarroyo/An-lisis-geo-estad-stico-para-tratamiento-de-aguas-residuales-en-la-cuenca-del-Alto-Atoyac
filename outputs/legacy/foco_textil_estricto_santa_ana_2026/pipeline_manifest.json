@@ -1,0 +1,61 @@
+{
+  "pipeline": "auditoria_santa_ana",
+  "goal": "Conservar el original como canónico y comparar tres conjuntos secundarios.",
+  "started_at": "2026-07-02T09:25:27-06:00",
+  "finished_at": "2026-07-02T09:25:48-06:00",
+  "status": "ok",
+  "inputs": {
+    "universo_canonico_original": {
+      "path": "outputs\\universo_prioritario_denue\\santa_ana_xalmimilulco\\capa_universo_prioritario_denue_santa_ana_xalmimilulco.gpkg",
+      "exists": true,
+      "bytes": 184320
+    },
+    "mh_filtrado": {
+      "path": "data\\processed\\capa_maryhelen\\capa MH.shp",
+      "exists": true,
+      "bytes": 1864
+    },
+    "denue_2026_clasificado": {
+      "path": "data\\processed\\denue2026_universo_textil_clasificado.gpkg",
+      "exists": true,
+      "bytes": 1613824
+    },
+    "filtrado_prioritario_2026": {
+      "path": "outputs\\universo_prioritario_denue_2026\\universo_prioritario_denue_2026.gpkg",
+      "exists": true,
+      "bytes": 319488
+    }
+  },
+  "stages": [
+    {
+      "stage": "construir_alternativa",
+      "status": "ok",
+      "registros": 67
+    },
+    {
+      "stage": "comparar",
+      "status": "ok",
+      "registros": 111
+    },
+    {
+      "stage": "validar",
+      "status": "ok",
+      "validaciones": 8
+    },
+    {
+      "stage": "documentar",
+      "status": "ok"
+    }
+  ],
+  "summary": {
+    "universo_canonico_original": 38,
+    "mh_filtrado": 49,
+    "mh_con_id": 43,
+    "mh_sin_id": 6,
+    "foco_estricto_alternativo": 67,
+    "filtrado_prioritario_2026": 42,
+    "union_comparacion": 111,
+    "validaciones_ok": 8,
+    "sha256_ids_foco_alternativo": "7a32e76ebe4792245f5520b392dbe1d6ef73a5c2d675f8a8050435bc95acb18a"
+  }
+}

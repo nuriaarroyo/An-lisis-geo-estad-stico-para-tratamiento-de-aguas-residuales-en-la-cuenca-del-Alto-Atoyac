@@ -112,7 +112,9 @@ python scripts/run_all.py
 - `outputs/maps_interactive/xalmimilulco_denue_textil_productivo_interactivo.html`
 - `outputs/maps_interactive/san_martin_denue_textil_productivo_interactivo.html`
 - `outputs/maps_interactive/denue_clasificacion_productiva/index.html`
-- `outputs/universo_prioritario_denue/`: universo prioritario final con tabla, capa GeoPackage, resumen y subcarpetas por Huejotzingo, Santa Ana Xalmimilulco y San Martin Texmelucan.
+- `outputs/universo_prioritario_denue/`: universo prioritario general y entregables de Huejotzingo y San Martin Texmelucan.
+- `outputs/santa_ana_xalmimilulco/`: unica carpeta vigente para Santa Ana; contiene el canonico original, comparaciones, mapas y trazabilidad.
+- `outputs/legacy/`: auditorias y focos anteriores conservados como historial.
 
 La guia detallada del flujo nuevo esta en `docs/guia_ejecucion_clasificacion_denue.md`.
 

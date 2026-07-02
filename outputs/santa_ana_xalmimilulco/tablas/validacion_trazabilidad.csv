@@ -1,0 +1,9 @@
+﻿validacion,resultado,detalle
+foco_ids_unicos,OK,67 IDs
+foco_igual_a_trazabilidad,OK,67 IDs
+foco_igual_a_comparacion,OK,67 IDs
+canonico_igual_a_comparacion,OK,38 IDs
+mh_filtrado_total,OK,49 puntos
+exclusion_tiene_prioridad,OK,0 inclusiones con exclusion
+catalogo_corresponde_a_columnas,OK,ninguna
+ids_comparacion_unicos,OK,111 puntos

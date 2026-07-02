@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from datetime import datetime
 from pathlib import Path
 
@@ -15,6 +16,12 @@ from common import OUTPUTS_DIR, PROCESSED_DIR, ensure_output_dirs, log, normaliz
 SOURCE_GPKG = PROCESSED_DIR / "denue_universo_textil_clasificado.gpkg"
 MANUAL_AUDIT = OUTPUTS_DIR / "tables" / "auditoria_enriquecida" / "auditoria_denue_textil_priorizada_manual.xlsx"
 OUT_DIR = OUTPUTS_DIR / "universo_prioritario_denue"
+SANTA_REFERENCE_DIR = (
+    OUTPUTS_DIR
+    / "santa_ana_xalmimilulco"
+    / "referencias"
+    / "universo_canonico_original"
+)
 
 LOCALITY_SLUGS = {
     "Huejotzingo": "huejotzingo",
@@ -221,11 +228,14 @@ def write_outputs(final: gpd.GeoDataFrame, excluded: gpd.GeoDataFrame, manual_fa
         hydro = hydro.to_crs(final.crs)
 
     rows = []
+    link_rows = []
     for localidad, slug in LOCALITY_SLUGS.items():
-        folder = OUT_DIR / slug
+        folder = SANTA_REFERENCE_DIR if localidad == "Santa Ana Xalmimilulco" else OUT_DIR / slug
         folder.mkdir(parents=True, exist_ok=True)
         local = final.loc[final["localidad"].eq(localidad)].copy()
         rows.append({"localidad": localidad, "registros": len(local), "carpeta": relpath(folder)})
+        href_folder = os.path.relpath(folder, OUT_DIR).replace("\\", "/")
+        link_rows.append((localidad, slug, href_folder))
         local.drop(columns="geometry", errors="ignore").to_csv(folder / f"tabla_universo_prioritario_denue_{slug}.csv", index=False, encoding="utf-8-sig")
         safe_to_file(local, folder / f"capa_universo_prioritario_denue_{slug}.gpkg", layer=f"prioritario_{slug}"[:63])
         static_map(local, folder / f"mapa_universo_prioritario_denue_{slug}.png", f"Universo prioritario DENUE final - {localidad}", localidades, hydro)
@@ -233,8 +243,8 @@ def write_outputs(final: gpd.GeoDataFrame, excluded: gpd.GeoDataFrame, manual_fa
     pd.DataFrame(rows).to_csv(OUT_DIR / "resumen_por_localidad.csv", index=False, encoding="utf-8-sig")
 
     index_links = "\n".join(
-        f"<li><a href='{slug}/mapa_universo_prioritario_denue_{slug}.html'>{localidad}</a></li>"
-        for localidad, slug in LOCALITY_SLUGS.items()
+        f"<li><a href='{href_folder}/mapa_universo_prioritario_denue_{slug}.html'>{localidad}</a></li>"
+        for localidad, slug, href_folder in link_rows
     )
     html = f"""<!doctype html>
 <html lang="es">

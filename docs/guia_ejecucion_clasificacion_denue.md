@@ -67,7 +67,7 @@ python scripts/run_all.py
 - `outputs/universo_prioritario_denue/universo_prioritario_denue.csv`
 - `outputs/universo_prioritario_denue/universo_prioritario_denue.gpkg`
 - `outputs/universo_prioritario_denue/huejotzingo/`
-- `outputs/universo_prioritario_denue/santa_ana_xalmimilulco/`
+- `outputs/santa_ana_xalmimilulco/referencias/universo_canonico_original/`
 - `outputs/universo_prioritario_denue/san_martin_texmelucan/`
 
 ## Como llenar el Excel de auditoria
