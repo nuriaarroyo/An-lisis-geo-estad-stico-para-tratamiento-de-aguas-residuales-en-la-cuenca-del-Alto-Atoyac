@@ -1,9 +1,13 @@
 ﻿validacion,resultado,detalle
-foco_ids_unicos,OK,67 IDs
-foco_igual_a_trazabilidad,OK,67 IDs
-foco_igual_a_comparacion,OK,67 IDs
+candidatos_son_subconjunto_denue,OK,361 candidatos
+foco_es_subconjunto_candidatos,OK,293 IDs
+foco_ids_unicos,OK,293 IDs
+foco_igual_a_trazabilidad,OK,293 IDs
+foco_igual_a_comparacion,OK,293 IDs
 canonico_igual_a_comparacion,OK,38 IDs
 mh_filtrado_total,OK,49 puntos
 exclusion_tiene_prioridad,OK,0 inclusiones con exclusion
 catalogo_corresponde_a_columnas,OK,ninguna
-ids_comparacion_unicos,OK,111 puntos
+ids_comparacion_unicos,OK,322 puntos
+diccionario_keywords_ids_unicos,OK,201 palabras
+politica_cubre_resultados,OK,9 categorias usadas

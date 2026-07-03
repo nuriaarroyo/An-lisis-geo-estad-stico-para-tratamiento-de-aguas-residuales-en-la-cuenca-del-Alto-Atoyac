@@ -7,7 +7,6 @@ import pandas as pd
 
 from common import (
     PROCESSED_DIR,
-    TABLES_DIR,
     add_source_fields,
     choose_target_crs,
     clean_dataframe_columns,
@@ -21,9 +20,9 @@ from common import (
     safe_read_vector,
     safe_to_file,
     shapefiles,
-    write_errors,
 )
 
+METADATA_DIR = PROCESSED_DIR / "metadata"
 
 OUTPUTS = {
     "agebs": "agebs.gpkg",
@@ -34,6 +33,7 @@ OUTPUTS = {
     "cuencas": "cuencas.gpkg",
     "hidrografia": "hidrografia.gpkg",
     "denue": "denue_raw.gpkg",
+    "denue2026": "denue2026_raw.gpkg",
 }
 
 
@@ -42,6 +42,8 @@ def classify_layer(path: Path) -> str | None:
     name = normalize_text(path.stem)
     if "hidrografia_atoyac" in text or "hidrologia_atoyac" in text:
         return "hidrografia"
+    if "denue2026" in text or "denue26" in name:
+        return "denue2026"
     if "denue" in name:
         return "denue"
     if "ageb" in name and "arearurales" not in name:
@@ -92,12 +94,27 @@ def enrich_denue_from_csv(gdf: gpd.GeoDataFrame, path: Path) -> gpd.GeoDataFrame
     return gdf
 
 
+def standardize_denue_columns(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
+    aliases = {
+        "nom_estab": "nombre_de_la_unidad_economica",
+        "codigo_act": "codigo_de_la_clase_actividad_scian",
+        "nombre_act": "nombre_clase_actividad_scian",
+    }
+    out = gdf.rename(columns={old: new for old, new in aliases.items() if old in gdf.columns})
+    if "id" in out.columns:
+        out["id"] = out["id"].fillna("").astype(str).str.replace(r"\.0$", "", regex=True).str.strip()
+    if "clee" in out.columns:
+        out["clee"] = out["clee"].fillna("").astype(str).str.upper().str.strip()
+    return out
+
+
 def read_prepare_one(path: Path, layer_type: str, target_crs: str) -> gpd.GeoDataFrame:
     gdf = safe_read_vector(path)
     gdf = clean_dataframe_columns(gdf)
-    if layer_type == "denue":
+    if layer_type in {"denue", "denue2026"}:
         gdf = enrich_denue_from_csv(gdf, path)
         gdf = clean_dataframe_columns(gdf)
+        gdf = standardize_denue_columns(gdf)
     gdf = ensure_crs_and_project(gdf, target_crs)
     gdf = drop_empty_geometry(gdf)
     return add_source_fields(gdf, path, layer_type)
@@ -119,6 +136,7 @@ def combine_layers(paths: list[Path], layer_type: str, target_crs: str, errors: 
 
 def main() -> None:
     ensure_output_dirs()
+    METADATA_DIR.mkdir(parents=True, exist_ok=True)
     target_crs, crs_note = choose_target_crs()
     errors: list[dict] = []
     layer_paths: dict[str, list[Path]] = {key: [] for key in OUTPUTS}
@@ -129,10 +147,10 @@ def main() -> None:
 
     pd.DataFrame(
         [{"tipo_capa": key, "archivo": value, "capas_detectadas": len(layer_paths[key])} for key, value in OUTPUTS.items()]
-    ).to_csv(TABLES_DIR / "resumen_capas_procesadas.csv", index=False, encoding="utf-8-sig")
+    ).to_csv(METADATA_DIR / "resumen_capas_procesadas.csv", index=False, encoding="utf-8-sig")
 
     pd.DataFrame([{"target_crs": target_crs, "nota": crs_note or "CRS metrico seleccionado correctamente"}]).to_csv(
-        TABLES_DIR / "crs_procesamiento.csv", index=False, encoding="utf-8-sig"
+        METADATA_DIR / "crs_procesamiento.csv", index=False, encoding="utf-8-sig"
     )
 
     for layer_type, filename in OUTPUTS.items():
@@ -144,7 +162,12 @@ def main() -> None:
         safe_to_file(combined, out, layer=layer_type)
         log(f"Guardado {relpath(out)} con {len(combined)} features")
 
-    write_errors(errors, "errores_prepare_geodata.csv")
+    if errors:
+        pd.DataFrame(errors).to_csv(
+            METADATA_DIR / "errores_prepare_geodata.csv",
+            index=False,
+            encoding="utf-8-sig",
+        )
     log("Preparacion geoespacial terminada")
 
 

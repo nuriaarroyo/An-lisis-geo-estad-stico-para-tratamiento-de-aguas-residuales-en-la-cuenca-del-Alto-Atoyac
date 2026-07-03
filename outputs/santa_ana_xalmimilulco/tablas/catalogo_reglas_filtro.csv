@@ -1,10 +1,11 @@
-﻿rule_id,rule_type,source,criterion,interpretation,registros_activados
-exc_nombre_no_objetivo,exclusion,nombre_de_la_unidad_economica,"planchado, costura, ropa terminada, lavado no textil, insumos, bodega u otro termino no objetivo",Evita que una palabra generica como lavado o taller se interprete como proceso textil relevante.,35
-exc_actividad_no_objetivo,exclusion,nombre_clase_actividad_scian,"agua, calzado, bolsas, computadoras o comercio al por mayor",Retira actividades cuyo giro declarado no corresponde al proceso textil estudiado.,4
-exc_decision_previa,exclusion,decision_estudio_sugerida,"decision previa de excluir por comercio, renta o del universo prioritario",Respeta las exclusiones explícitas de la clasificación previa.,7
-inc_humedo_flags,inclusion,flags de clasificacion,"proceso humedo, lavado/deslavado, tenido/tintoreria o acabado/tratamiento",Señal estructurada de tratamiento o proceso húmedo textil.,28
-inc_humedo_texto,inclusion,"nombre, actividad y etapa","lavanderia, lavado, deslavado, stone wash, tintoreria, tenido, acabado o poliproceso",Señal textual explícita de proceso húmedo o acabado.,34
-inc_humedo_etapa_scian,inclusion,etapa_productiva_sugerida y SCIAN,etapa húmeda reconocida o SCIAN 812210/313310,"Señal sectorial o de etapa compatible con lavado, tintorería o acabado.",33
-inc_mezclilla_nombre,inclusion,nombre_de_la_unidad_economica,"mezclilla, jeans, denim, deshebrado o variantes",Identifica establecimientos vinculados explícitamente con mezclilla o jeans.,42
-inc_mezclilla_etapa,inclusion,etapa_productiva_sugerida,fabricacion_mezclilla,Conserva la señal de mezclilla asignada en la clasificación productiva.,38
-inc_material_textil,inclusion,"SCIAN, nombre, actividad y etapa","SCIAN 313 con señal de textil, tela, tejido, hilado o pasamaneria","Incluye producción de material textil, no confección genérica de ropa terminada.",3
+﻿rule_id,stage,source,criterion,interpretation,registros_activados
+base_saic_textil,candidato,codigo SCIAN,Prefijo manufacturero textil identificado en SAIC,SAIC define las familias manufactureras que se buscan posteriormente en DENUE.,310
+base_servicio_textil,candidato,codigo SCIAN,Codigo marcado como textile_service,Extiende SAIC con lavanderia y tintoreria para detectar procesos relevantes.,27
+base_texto_textil,candidato,nombre razon social y actividad DENUE,Palabra del grupo candidate_textile,Recupera establecimientos cuya descripcion explicita una posible relacion textil.,436
+exc_comercio_o_giro_no_textil,depuracion,codigo SCIAN y texto DENUE,Comercio sin produccion o giro no textil,Retira comercio y coincidencias de sectores no textiles.,869
+exc_nombre_no_objetivo,exclusion_estricta,nombre razon social y actividad,Palabra del grupo excluded_name,Identifica planchado confeccion menor insumos y otros falsos positivos.,49
+exc_actividad_no_objetivo,exclusion_estricta,actividad y codigo SCIAN,Palabra excluded_activity o codigo comercial,Identifica actividades declaradas fuera del objetivo analitico.,770
+inc_humedo_texto,inclusion_estricta,nombre razon social y actividad,Palabra del grupo wet_specific,Senal textual explicita de proceso humedo o acabado.,8
+inc_humedo_scian,inclusion_estricta,codigo SCIAN,Codigo marcado como wet_process,Actividad compatible con lavanderia tintoreria o acabado textil.,4
+inc_mezclilla_texto,inclusion_estricta,nombre razon social y actividad,Palabra del grupo denim,Senal explicita de trabajo con mezclilla o jeans.,44
+inc_material_textil,inclusion_estricta,codigo SCIAN y texto,SCIAN 313 mas palabra material sin exclusion,Incluye produccion de material textil y evita productos terminados no objetivo.,0

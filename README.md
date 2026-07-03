@@ -28,20 +28,12 @@ SAIC permite extraer indicadores comparativos municipales, por ejemplo unidades 
 
 ## Scripts
 
-- `scripts/00_inventory_raw_data.py`: inventaria shapefiles y registra errores de lectura.
-- `scripts/01_prepare_geodata.py`: reproyecta y unifica capas en `data/processed/`.
-- `scripts/02_filter_denue_textil.py`: filtra DENUE por palabras clave y codigos SCIAN textiles.
-- `scripts/02b_clasificacion_productiva_denue.py`: clasifica todos los DENUE textiles por etapa productiva probable, presion ambiental potencial, prioridad de estudio, confianza y necesidad de auditoria.
-- `scripts/03_process_saic.py`: limpia SAIC y calcula indicadores economicos.
-- `scripts/04_spatial_analysis.py`: calcula distancias a hidrografia, buffers y cruces con AGEB/localidad.
-- `scripts/05_make_maps.py`: genera mapas del diagnostico automatico, incluyendo la categoria `revisar`, y figura SAIC en PNG.
-- `scripts/05b_make_productive_classification_maps.py`: genera mapas PNG de la clasificacion productiva DENUE.
-- `scripts/06_make_interactive_maps.py`: genera mapas HTML interactivos para identificar establecimientos.
-- `scripts/06b_make_plotly_productive_maps.py`: genera mapas interactivos Plotly e indice HTML de la clasificacion productiva.
-- `scripts/07_apply_denue_audit.py`: aplica las categorias editadas manualmente en las plantillas de auditoria.
-- `scripts/08_make_audited_maps.py`: genera mapas posteriores a la auditoria, solo con categorias alta y media.
-- `scripts/09_make_final_priority_universe.py`: genera el universo prioritario DENUE final, aplicando filtros contra falsos positivos y la auditoria manual `FALSE`.
-- `scripts/run_all.py`: ejecuta todo el flujo en orden.
+- `scripts/01_prepare_geodata.py`: unico importador; normaliza las capas de `data/raw/` y genera GeoPackage en `data/processed/`.
+- `scripts/run_santa_ana_pipeline.py`: ejecuta SAIC, clasificacion DENUE, filtro estricto, comparaciones, mapas y validacion.
+- `scripts/santa_ana_filter_rules.py`: catalogo unico de reglas auditables.
+- `scripts/santa_ana_audit_utils.py`: lectura, exportacion, mapas y LaTeX.
+- `scripts/common.py`: utilidades generales de rutas, texto y GeoPackage.
+- `scripts/legacy/`: scripts experimentales conservados como historial; no forman parte del flujo vigente.
 
 ## Como correr
 
@@ -51,74 +43,29 @@ Instala dependencias en tu ambiente de Python:
 pip install -r requirements.txt
 ```
 
-Luego ejecuta:
+Cuando cambian las fuentes:
 
 ```bash
-python scripts/run_all.py
+python scripts/01_prepare_geodata.py
+```
+
+Para producir el analisis de Santa Ana:
+
+```bash
+python scripts/run_santa_ana_pipeline.py
 ```
 
 ## Outputs principales
 
-- `outputs/tables/inventario_capas.csv`
-- `data/processed/agebs.gpkg`, `manzanas.gpkg`, `localidades.gpkg`, `vialidades.gpkg`, `caminos_carreteras.gpkg`, `cuencas.gpkg`, `hidrografia.gpkg`, `denue_raw.gpkg`
-- `data/processed/denue_textil.gpkg`
-- `data/processed/denue_textil_con_distancia.gpkg`
-- `outputs/tables/denue_textil.csv`
-- `outputs/tables/denue_clasificacion_productiva/denue_universo_textil_clasificado.csv`
-- `outputs/tables/denue_clasificacion_productiva/denue_universo_textil_depurado.csv`
-- `outputs/tables/denue_clasificacion_productiva/denue_universo_alcance_proyecto.csv`
-- `outputs/tables/denue_clasificacion_productiva/denue_estudio_prioritario.csv`
-- `outputs/tables/denue_clasificacion_productiva/denue_pendientes_auditoria.csv`
-- `outputs/tables/denue_clasificacion_productiva/localidades/denue_universo_alcance_huejotzingo.csv`
-- `outputs/tables/denue_clasificacion_productiva/localidades/denue_universo_alcance_xalmimilulco.csv`
-- `outputs/tables/denue_clasificacion_productiva/localidades/denue_universo_alcance_san_martin.csv`
-- `outputs/tables/auditoria_enriquecida/auditoria_denue_textil_priorizada.xlsx`
-- `outputs/tables/denue_excluidos_comercio_prendas.csv`
-- `outputs/tables/auditoria_revisar_huejotzingo.csv`
-- `outputs/tables/auditoria_revisar_xalmimilulco.csv`
-- `outputs/tables/auditoria_revisar_san_martin.csv`
-- `outputs/tables/denue_categorias_auditadas.csv`
-- `outputs/tables/saic_indicadores.csv`
-- `outputs/tables/saic_indicadores_lectura_analitica.csv`
-- `outputs/tables/conteo_negocios_por_buffer.csv`
-- `outputs/tables/conteo_negocios_por_rango_distancia.csv`
-- `outputs/maps/01_contexto_territorial.png`
-- `outputs/maps/02_denue_textil_categorias.png`
-- `outputs/maps/03_buffers_hidrografia_denue.png`
-- `outputs/maps/04_concentracion_textil_por_ageb.png`
-- `outputs/maps/05_cauces_rio_red_hidrografica.png`
-- `outputs/maps/06_rh18ad_hidrografia_especifica.png`
-- `outputs/maps/07_hidrologia_completa_por_tipo.png`
-- `outputs/maps/08_hidrologia_completa_por_area_rh.png`
-- `outputs/maps/10_huejotzingo_denue_total.png`
-- `outputs/maps/11_huejotzingo_denue_textil_categorias.png`
-- `outputs/maps/12_huejotzingo_heatmap_denue_textil.png`
-- `outputs/maps/13_huejotzingo_rangos_distancia_rio.png`
-- `outputs/maps/10_xalmimilulco_denue_total.png`
-- `outputs/maps/11_xalmimilulco_denue_textil_categorias.png`
-- `outputs/maps/12_xalmimilulco_heatmap_denue_textil.png`
-- `outputs/maps/13_xalmimilulco_rangos_distancia_rio.png`
-- `outputs/maps/10_san_martin_denue_total.png`
-- `outputs/maps/11_san_martin_denue_textil_categorias.png`
-- `outputs/maps/12_san_martin_heatmap_denue_textil.png`
-- `outputs/maps/13_san_martin_rangos_distancia_rio.png`
-- `outputs/maps/14_huejotzingo_denue_textil_auditado_alta_media.png`
-- `outputs/maps/14_xalmimilulco_denue_textil_auditado_alta_media.png`
-- `outputs/maps/14_san_martin_denue_textil_auditado_alta_media.png`
-- `outputs/maps/denue_clasificacion_productiva/`
-- `outputs/figures/saic_indicadores_municipio.png`
-- `outputs/maps_interactive/denue_textil_productivo_interactivo.html`
-- `outputs/maps_interactive/huejotzingo_denue_textil_productivo_interactivo.html`
-- `outputs/maps_interactive/xalmimilulco_denue_textil_productivo_interactivo.html`
-- `outputs/maps_interactive/san_martin_denue_textil_productivo_interactivo.html`
-- `outputs/maps_interactive/denue_clasificacion_productiva/index.html`
-- `outputs/universo_prioritario_denue/`: universo prioritario general y entregables de Huejotzingo y San Martin Texmelucan.
-- `outputs/santa_ana_xalmimilulco/`: unica carpeta vigente para Santa Ana; contiene el canonico original, comparaciones, mapas y trazabilidad.
-- `outputs/legacy/`: auditorias y focos anteriores conservados como historial.
+- `data/processed/denue2026_raw.gpkg`: DENUE 2026 preparado, sin filtros experimentales.
+- `outputs/santa_ana_xalmimilulco/`: unica carpeta vigente de la localidad.
+- `outputs/santa_ana_xalmimilulco/capas_qgis/denue_textil_candidatos.gpkg`: candidatos derivados de SAIC y texto DENUE.
+- `outputs/santa_ana_xalmimilulco/capas_qgis/universo_relevante_filtro_explicito.gpkg`: resultado relevante del filtro explícito.
+- `outputs/santa_ana_xalmimilulco/tablas/saic_actividades_textiles.csv`: actividades SAIC usadas.
+- `outputs/santa_ana_xalmimilulco/tablas/validacion_trazabilidad.csv`: controles del proceso.
+- `outputs/legacy/`: resultados experimentales anteriores.
 
-La guia detallada del flujo nuevo esta en `docs/guia_ejecucion_clasificacion_denue.md`.
-
-El universo operativo del alcance ambiental queda marcado con `flag_universo_alcance_proyecto`: procesos humedos/tratamiento, lavado/deslavado/lavanderia o mezclilla/jeans. Los registros textiles fuera de ese criterio se conservan como contexto, pero no como universo principal de la auditoria ambiental.
+La guia vigente esta en `docs/santa_ana_xalmimilulco/guia_pipeline.md`.
 
 ## QGIS
 

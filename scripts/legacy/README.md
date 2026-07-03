@@ -3,9 +3,12 @@
 Estos archivos documentan etapas anteriores del desarrollo del filtro y sus
 comparaciones. No forman parte del flujo operativo vigente.
 
-Incluyen las comparaciones exploratorias 10 y 12--18. El script
-`11_apply_filters_denue2026.py` permanece fuera de esta carpeta porque prepara
-los insumos DENUE 2026 que consume el pipeline actual.
+Incluyen el inventario opcional, la cadena experimental 02--18, los mapas y las
+auditorias anteriores. El pipeline vigente ya no importa estos modulos.
+
+Los unicos scripts operativos en la raiz son `01_prepare_geodata.py`,
+`run_santa_ana_pipeline.py`, `santa_ana_filter_rules.py`,
+`santa_ana_audit_utils.py` y `common.py`.
 
 La unica entrada que debe ejecutarse es:
 

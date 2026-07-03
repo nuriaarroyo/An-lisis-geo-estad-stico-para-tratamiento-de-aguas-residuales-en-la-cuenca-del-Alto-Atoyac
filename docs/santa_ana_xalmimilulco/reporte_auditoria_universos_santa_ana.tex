@@ -24,25 +24,62 @@
 
 \section{Objetivo y jerarquía}
 
-El universo original de Santa Ana es el canónico. MH es una capa ya filtrada de referencia. El foco estricto es una alternativa analítica trazable y el filtrado 2026 es contextual. Ningún conjunto constituye evidencia de descarga o contaminación.
+El universo original de Santa Ana es el canónico. MH es una capa ya filtrada de referencia. El filtro explícito nuevo es una alternativa analítica trazable. Ningún conjunto constituye evidencia de descarga o contaminación.
 
 \section{Pipeline único}
 
-La ejecución completa se realiza con \texttt{python scripts\textbackslash run\_santa\_ana\_pipeline.py}: construir alternativa, comparar, documentar y validar.
+La ejecución completa se realiza con \texttt{python scripts\textbackslash run\_santa\_ana\_pipeline.py}. Primero SAIC define las familias manufactureras textiles; después esas familias y los servicios 8122 se buscan en DENUE; finalmente se aplican las exclusiones y señales estrictas aprendidas.
 
 \section{Tamaños}
+
+Los vocabularios, codigos SCIAN y prioridades se leen desde \texttt{config\textbackslash filtros\_textiles\_santa\_ana}. Ningun script historico es entrada de esta ejecucion.
 
 \begin{tabular}{ll}
 \toprule
 conjunto & registros \\
 \midrule
+denue\_2026\_santa\_ana\_total & 1732 \\
+denue\_textil\_candidatos & 361 \\
 universo\_canonico\_original\_santa\_ana & 38 \\
 mh\_filtrado & 49 \\
 mh\_filtrado\_con\_id & 43 \\
 mh\_filtrado\_sin\_id & 6 \\
-foco\_estricto\_alternativo & 67 \\
-filtrado\_prioritario\_2026 & 42 \\
-union\_comparacion & 111 \\
+universo\_relevante\_filtro\_explicito & 293 \\
+registros\_revisar\_filtro\_explicito & 18 \\
+union\_comparacion & 322 \\
+\bottomrule
+\end{tabular}
+
+\section{Resultado del filtro explícito}
+
+\begin{tabular}{lll}
+\toprule
+categoria\_filtro & relevancia\_ambiental & registros \\
+\midrule
+excluir\_comercio & excluir & 795 \\
+fuera\_filtro & fuera & 589 \\
+maquila\_textil & media & 171 \\
+produccion\_textil & media & 114 \\
+excluir\_actividad\_no\_objetivo & excluir & 29 \\
+revisar\_lavado\_generico & revisar & 16 \\
+excluir\_lavado\_no\_textil & excluir & 8 \\
+lavado\_acabado\_textil & alta & 8 \\
+revisar\_maquila\_sola & revisar & 2 \\
+\bottomrule
+\end{tabular}
+
+\section{Comparación con el filtro anterior}
+
+\begin{tabular}{ll}
+\toprule
+comparacion\_filtro & registros \\
+\midrule
+antes\_entraba\_ahora\_excluye & 4 \\
+antes\_entraba\_ahora\_revisar & 16 \\
+antes\_no\_ahora\_entra & 271 \\
+antes\_no\_ahora\_fuera & 1417 \\
+antes\_y\_ahora\_entra & 22 \\
+revisar & 2 \\
 \bottomrule
 \end{tabular}
 
@@ -59,15 +96,15 @@ solo\_mh\_filtrado & 36 \\
 \bottomrule
 \end{tabular}
 
-\section{Canónico original frente al foco estricto alternativo}
+\section{Canónico original frente al filtro explícito}
 
 \begin{tabular}{ll}
 \toprule
 comparacion\_canonico\_vs\_foco & registros \\
 \midrule
-canonico\_y\_foco\_estricto & 34 \\
-solo\_canonico\_original & 4 \\
-solo\_foco\_estricto & 33 \\
+canonico\_y\_foco\_estricto & 18 \\
+solo\_canonico\_original & 20 \\
+solo\_foco\_estricto & 275 \\
 \bottomrule
 \end{tabular}
 
@@ -75,39 +112,42 @@ solo\_foco\_estricto & 33 \\
 
 \begin{tabular}{lll}
 \toprule
-rule\_id & rule\_type & registros\_activados \\
+rule\_id & stage & registros\_activados \\
 \midrule
-exc\_nombre\_no\_objetivo & exclusion & 35 \\
-exc\_actividad\_no\_objetivo & exclusion & 4 \\
-exc\_decision\_previa & exclusion & 7 \\
-inc\_humedo\_flags & inclusion & 28 \\
-inc\_humedo\_texto & inclusion & 34 \\
-inc\_humedo\_etapa\_scian & inclusion & 33 \\
-inc\_mezclilla\_nombre & inclusion & 42 \\
-inc\_mezclilla\_etapa & inclusion & 38 \\
-inc\_material\_textil & inclusion & 3 \\
+base\_saic\_textil & candidato & 310 \\
+base\_servicio\_textil & candidato & 27 \\
+base\_texto\_textil & candidato & 436 \\
+exc\_comercio\_o\_giro\_no\_textil & depuracion & 869 \\
+exc\_nombre\_no\_objetivo & exclusion\_estricta & 49 \\
+exc\_actividad\_no\_objetivo & exclusion\_estricta & 770 \\
+inc\_humedo\_texto & inclusion\_estricta & 8 \\
+inc\_humedo\_scian & inclusion\_estricta & 4 \\
+inc\_mezclilla\_texto & inclusion\_estricta & 44 \\
+inc\_material\_textil & inclusion\_estricta & 0 \\
 \bottomrule
 \end{tabular}
 
 \begin{description}
 
-\item[\texttt{exc\_nombre\_no\_objetivo}] Evita que una palabra generica como lavado o taller se interprete como proceso textil relevante.
+\item[\texttt{base\_saic\_textil}] SAIC define las familias manufactureras que se buscan posteriormente en DENUE.
 
-\item[\texttt{exc\_actividad\_no\_objetivo}] Retira actividades cuyo giro declarado no corresponde al proceso textil estudiado.
+\item[\texttt{base\_servicio\_textil}] Extiende SAIC con lavanderia y tintoreria para detectar procesos relevantes.
 
-\item[\texttt{exc\_decision\_previa}] Respeta las exclusiones explícitas de la clasificación previa.
+\item[\texttt{base\_texto\_textil}] Recupera establecimientos cuya descripcion explicita una posible relacion textil.
 
-\item[\texttt{inc\_humedo\_flags}] Señal estructurada de tratamiento o proceso húmedo textil.
+\item[\texttt{exc\_comercio\_o\_giro\_no\_textil}] Retira comercio y coincidencias de sectores no textiles.
 
-\item[\texttt{inc\_humedo\_texto}] Señal textual explícita de proceso húmedo o acabado.
+\item[\texttt{exc\_nombre\_no\_objetivo}] Identifica planchado confeccion menor insumos y otros falsos positivos.
 
-\item[\texttt{inc\_humedo\_etapa\_scian}] Señal sectorial o de etapa compatible con lavado, tintorería o acabado.
+\item[\texttt{exc\_actividad\_no\_objetivo}] Identifica actividades declaradas fuera del objetivo analitico.
 
-\item[\texttt{inc\_mezclilla\_nombre}] Identifica establecimientos vinculados explícitamente con mezclilla o jeans.
+\item[\texttt{inc\_humedo\_texto}] Senal textual explicita de proceso humedo o acabado.
 
-\item[\texttt{inc\_mezclilla\_etapa}] Conserva la señal de mezclilla asignada en la clasificación productiva.
+\item[\texttt{inc\_humedo\_scian}] Actividad compatible con lavanderia tintoreria o acabado textil.
 
-\item[\texttt{inc\_material\_textil}] Incluye producción de material textil, no confección genérica de ropa terminada.
+\item[\texttt{inc\_mezclilla\_texto}] Senal explicita de trabajo con mezclilla o jeans.
+
+\item[\texttt{inc\_material\_textil}] Incluye produccion de material textil y evita productos terminados no objetivo.
 
 \end{description}
 
@@ -115,9 +155,9 @@ inc\_material\_textil & inclusion & 3 \\
 
 \begin{figure}[h!]\centering
 
-\includegraphics[width=0.95\linewidth]{../../outputs/santa_ana_xalmimilulco/mapas/mapa_comparacion_directa_4_conjuntos.png}
+\includegraphics[width=0.95\linewidth]{../../outputs/santa_ana_xalmimilulco/mapas/mapa_comparacion_3_universos.png}
 
-\caption{Comparación de los cuatro conjuntos.}
+\caption{Comparación de los tres universos vigentes.}
 
 \end{figure}
 

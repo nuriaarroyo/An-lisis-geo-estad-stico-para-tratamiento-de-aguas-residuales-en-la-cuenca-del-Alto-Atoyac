@@ -1,0 +1,202 @@
+keyword_id,term,groups,process_stage,universe,evidence_level,classification_role,notes
+kw001,textil,candidate_textile|textile_explicit|material,material_textil,principal,media,inclusion,Senal general de actividad textil
+kw002,textilera,candidate_textile|textile_explicit|industrial,manufactura_textil,principal,alta,inclusion,Unidad descrita como industria textil
+kw003,tela,candidate_textile|textile_explicit|material,material_textil,principal,media,inclusion,Material textil explicito
+kw004,telas,candidate_textile|textile_explicit|material,material_textil,principal,media,inclusion,Material textil explicito
+kw005,tejido,candidate_textile|textile_explicit|material|production,tejido,principal,alta,inclusion,Proceso de formacion de tela
+kw006,tejeduria,candidate_textile|textile_explicit|material|production,tejido,principal,alta,inclusion,Proceso de formacion de tela
+kw007,telar,candidate_textile|textile_explicit|material|production,tejido,principal,media,inclusion,Equipo o proceso de tejido
+kw008,hilado,candidate_textile|textile_explicit|material|production,hilatura,principal,alta,inclusion,Produccion de hilo
+kw009,hilatura,candidate_textile|textile_explicit|material|production,hilatura,principal,alta,inclusion,Produccion de hilo
+kw010,hilo,candidate_textile|textile_explicit|material,material_textil,contexto,baja,alerta,Material textil que requiere contexto productivo
+kw011,fibra textil,candidate_textile|textile_explicit|material,material_textil,principal,media,inclusion,Materia prima textil
+kw012,pasamaneria,candidate_textile|textile_explicit|material,material_textil,principal,media,inclusion,Produccion de articulos textiles
+kw013,mezclilla,candidate_textile|textile_explicit|denim,mezclilla_jeans,principal,alta,inclusion,Material prioritario para deslavado
+kw014,mesclilla,candidate_textile|textile_explicit|denim,mezclilla_jeans,principal,alta,inclusion,Variante ortografica de mezclilla
+kw015,denim,candidate_textile|textile_explicit|denim,mezclilla_jeans,principal,alta,inclusion,Material prioritario para deslavado
+kw016,jean,candidate_textile|textile_explicit|denim,mezclilla_jeans,principal,alta,inclusion,Prenda o material de mezclilla
+kw017,jeans,candidate_textile|textile_explicit|denim,mezclilla_jeans,principal,alta,inclusion,Prenda o material de mezclilla
+kw018,pantalon de mezclilla,candidate_textile|textile_explicit|denim,mezclilla_jeans,principal,alta,inclusion,Producto de mezclilla explicito
+kw019,pantalones de mezclilla,candidate_textile|textile_explicit|denim,mezclilla_jeans,principal,alta,inclusion,Producto de mezclilla explicito
+kw020,prendas de mezclilla,candidate_textile|textile_explicit|denim,mezclilla_jeans,principal,alta,inclusion,Producto de mezclilla explicito
+kw021,transformacion de mezclilla,candidate_textile|textile_explicit|denim|production,mezclilla_jeans,principal,alta,inclusion,Proceso productivo de mezclilla
+kw022,deshebrado,candidate_textile|textile_explicit|denim|production,mezclilla_jeans,principal,alta,inclusion,Acabado asociado con mezclilla
+kw023,desebrado,candidate_textile|textile_explicit|denim|production,mezclilla_jeans,principal,alta,inclusion,Variante ortografica de deshebrado
+kw024,fosil,candidate_textile|denim,mezclilla_jeans,revisar,media,alerta,Nombre local observado asociado con mezclilla
+kw025,lavado,candidate_textile|wash_generic,lavado,revisar,baja,alerta,Lavado generico requiere contexto textil
+kw026,lavado industrial,candidate_textile|wash_generic|wet_specific|industrial,lavado_industrial,principal,alta,inclusion,Lavado con escala industrial explicita
+kw027,lavado textil,candidate_textile|wash_generic|wet_specific,lavado_textil,principal,alta,inclusion,Lavado con objeto textil explicito
+kw028,lavado de prendas,candidate_textile|wash_generic|wet_specific,lavado_textil,principal,alta,inclusion,Lavado con objeto textil explicito
+kw029,lavado de ropa,candidate_textile|wash_generic|wet_specific,lavado_textil,principal,alta,inclusion,Lavado con objeto textil explicito
+kw030,lavado de mezclilla,candidate_textile|wash_generic|wet_specific|denim,deslavado_mezclilla,principal,alta,inclusion,Lavado de mezclilla explicito
+kw031,lavado de jeans,candidate_textile|wash_generic|wet_specific|denim,deslavado_mezclilla,principal,alta,inclusion,Lavado de jeans explicito
+kw032,deslavado,candidate_textile|wash_generic|wet_specific,deslavado,principal,alta,inclusion,Proceso humedo textil prioritario
+kw033,deslave,candidate_textile|wash_generic|wet_specific,deslavado,principal,alta,inclusion,Variante de deslavado
+kw034,prelavado,candidate_textile|wash_generic|wet_specific,prelavado,principal,alta,inclusion,Proceso humedo previo
+kw035,enjuague,candidate_textile|wash_generic|wet_specific,enjuague,revisar,media,alerta,Proceso humedo que requiere contexto textil
+kw036,stone wash,candidate_textile|wash_generic|wet_specific|denim,deslavado_mezclilla,principal,alta,inclusion,Acabado de mezclilla explicito
+kw037,stonewashed,candidate_textile|wash_generic|wet_specific|denim,deslavado_mezclilla,principal,alta,inclusion,Acabado de mezclilla explicito
+kw038,stone lav,candidate_textile|wash_generic|wet_specific|denim,deslavado_mezclilla,principal,alta,inclusion,Variante observada de stone wash
+kw039,acid wash,candidate_textile|wash_generic|wet_specific|denim,deslavado_mezclilla,principal,alta,inclusion,Acabado quimico de mezclilla
+kw040,laundry,candidate_textile|wash_generic,lavanderia,revisar,baja,alerta,Termino ingles de lavanderia
+kw041,clean clothes,candidate_textile|wash_generic,lavanderia,revisar,baja,alerta,Nombre comercial observado
+kw042,lavanderia,candidate_textile|wash_generic,lavanderia,revisar,baja,alerta,Lavanderia generica requiere contexto
+kw043,lavanderia industrial,candidate_textile|wash_generic|wet_specific|industrial,lavanderia_industrial,principal,alta,inclusion,Lavanderia con escala industrial explicita
+kw044,lavanderia de prendas,candidate_textile|wash_generic|wet_specific,lavanderia_prendas,principal,alta,inclusion,Lavanderia con objeto textil
+kw045,lavanderia y tintoreria,candidate_textile|wash_generic|wet_specific,tintoreria,principal,alta,inclusion,Servicio con proceso humedo explicito
+kw046,tenido,candidate_textile|wash_generic|wet_specific,tenido,principal,alta,inclusion,Proceso de coloracion textil
+kw047,tinte,candidate_textile|wash_generic|wet_specific,tenido,principal,alta,inclusion,Proceso o insumo de coloracion
+kw048,tintura,candidate_textile|wash_generic|wet_specific,tenido,principal,alta,inclusion,Proceso de coloracion textil
+kw049,tintoreria,candidate_textile|wash_generic|wet_specific,tintoreria,principal,alta,inclusion,Proceso humedo de coloracion
+kw050,tintoreria industrial,candidate_textile|wash_generic|wet_specific|industrial,tintoreria_industrial,principal,alta,inclusion,Tintoreria con escala industrial
+kw051,tenido de prendas,candidate_textile|wash_generic|wet_specific,tenido,principal,alta,inclusion,Coloracion de prendas explicita
+kw052,acabado,candidate_textile|wash_generic|wet_specific,acabado,revisar,media,alerta,Acabado requiere confirmar objeto textil
+kw053,acabado textil,candidate_textile|wash_generic|wet_specific|textile_explicit,acabado_textil,principal,alta,inclusion,Acabado con objeto textil explicito
+kw054,acabado de prendas,candidate_textile|wash_generic|wet_specific,acabado_textil,principal,alta,inclusion,Acabado con objeto textil explicito
+kw055,tratamiento,candidate_textile|wash_generic,tratamiento,revisar,baja,alerta,Tratamiento generico requiere contexto textil
+kw056,tratamiento textil,candidate_textile|wash_generic|wet_specific|textile_explicit,tratamiento_textil,principal,alta,inclusion,Tratamiento con objeto textil explicito
+kw057,tratamiento de prendas,candidate_textile|wash_generic|wet_specific,tratamiento_textil,principal,alta,inclusion,Tratamiento con objeto textil explicito
+kw058,tratamiento especial,candidate_textile|wash_generic,tratamiento,revisar,media,alerta,Tratamiento que requiere confirmar objeto
+kw059,blanqueado,candidate_textile|wash_generic|wet_specific,acabado_textil,principal,alta,inclusion,Acabado humedo potencial
+kw060,suavizado,candidate_textile|wash_generic|wet_specific,acabado_textil,principal,alta,inclusion,Acabado humedo potencial
+kw061,pigmentado,candidate_textile|wash_generic|wet_specific,acabado_textil,principal,alta,inclusion,Acabado o coloracion
+kw062,decolorado,candidate_textile|wash_generic|wet_specific,acabado_textil,principal,alta,inclusion,Remocion de color
+kw063,procesos humedos,candidate_textile|wash_generic|wet_specific,proceso_humedo,principal,alta,inclusion,Proceso humedo declarado
+kw064,procesamiento de ropa,candidate_textile|wash_generic|wet_specific|production,procesamiento_textil,principal,alta,inclusion,Procesamiento de prendas declarado
+kw065,poliproceso,candidate_textile|wash_generic|wet_specific,proceso_humedo,principal,alta,inclusion,Nombre observado de procesos textiles multiples
+kw066,estampado,candidate_textile|textile_explicit|production,estampado,revisar,media,alerta,Puede implicar acabado pero requiere validar tecnica
+kw067,serigrafia,candidate_textile|production,estampado,revisar,media,alerta,Puede ser textil o no textil
+kw068,sublimacion,candidate_textile|production,estampado,revisar,media,alerta,Puede ser textil o no textil
+kw069,impresion textil,candidate_textile|textile_explicit|production,estampado_textil,principal,media,inclusion,Impresion con objeto textil
+kw070,bordado,candidate_textile|textile_explicit|production,bordado,revisar,media,alerta,Produccion seca con menor prioridad hidrica
+kw071,bordados,candidate_textile|textile_explicit|production,bordado,revisar,media,alerta,Produccion seca con menor prioridad hidrica
+kw072,maquila,candidate_textile|maquila,maquila,revisar,baja,alerta,Maquila sola no confirma sector textil
+kw073,maquilado,candidate_textile|maquila,maquila,revisar,baja,alerta,Maquila sola no confirma sector textil
+kw074,maquiladora,candidate_textile|maquila|industrial,maquila_industrial,revisar,media,alerta,Escala productiva sin confirmar sector
+kw075,maquila textil,candidate_textile|maquila|textile_explicit,maquila_textil,principal,alta,inclusion,Maquila textil explicita
+kw076,maquila de ropa,candidate_textile|maquila|textile_explicit,maquila_textil,principal,alta,inclusion,Maquila de ropa explicita
+kw077,maquila de prendas,candidate_textile|maquila|textile_explicit,maquila_textil,principal,alta,inclusion,Maquila de prendas explicita
+kw078,maquila de mezclilla,candidate_textile|maquila|textile_explicit|denim,maquila_mezclilla,principal,alta,inclusion,Maquila de mezclilla explicita
+kw079,confeccion en serie,candidate_textile|maquila|production|industrial,confeccion_industrial,principal,alta,inclusion,Produccion seriada de prendas
+kw080,ensamble de prendas,candidate_textile|maquila|production|textile_explicit,confeccion_industrial,principal,alta,inclusion,Ensamble de prendas explicito
+kw081,taller textil,candidate_textile|maquila|textile_explicit,taller_textil,revisar,media,alerta,Taller textil sin proceso especificado
+kw082,taller de mezclilla,candidate_textile|maquila|textile_explicit|denim,taller_mezclilla,principal,alta,inclusion,Taller con material prioritario
+kw083,fabricacion,candidate_textile|industrial|production,manufactura,revisar,media,alerta,Fabricacion requiere objeto textil
+kw084,produccion,candidate_textile|industrial|production,manufactura,revisar,media,alerta,Produccion requiere objeto textil
+kw085,elaboracion,candidate_textile|production,manufactura,revisar,baja,alerta,Elaboracion requiere objeto textil
+kw086,manufactura,candidate_textile|industrial|production,manufactura,revisar,media,alerta,Manufactura requiere objeto textil
+kw087,procesamiento,candidate_textile|industrial|production,procesamiento,revisar,media,alerta,Procesamiento requiere objeto textil
+kw088,transformacion,candidate_textile|industrial|production,transformacion,revisar,media,alerta,Transformacion requiere objeto textil
+kw089,industrial,candidate_textile|industrial,escala_industrial,revisar,media,alerta,Indicador de escala
+kw090,industria,candidate_textile|industrial,escala_industrial,revisar,media,alerta,Indicador de escala
+kw091,fabrica,candidate_textile|industrial|production,manufactura,revisar,media,alerta,Indicador de produccion
+kw092,corte industrial,candidate_textile|industrial|production,corte,revisar,media,alerta,Proceso seco de produccion
+kw093,corte,candidate_textile|production,corte,revisar,baja,alerta,Proceso seco que requiere contexto textil
+kw094,confeccion,candidate_textile|textile_explicit|production,confeccion,revisar,media,alerta,Produccion de prenda terminada
+kw095,confecciones,candidate_textile|textile_explicit|production,confeccion,revisar,media,alerta,Produccion de prenda terminada
+kw096,fabricacion de ropa,candidate_textile|textile_explicit|production,confeccion,principal,media,inclusion,Produccion de prendas declarada
+kw097,elaboracion de ropa,candidate_textile|textile_explicit|production,confeccion,principal,media,inclusion,Produccion de prendas declarada
+kw098,prendas de vestir,candidate_textile|textile_explicit,confeccion,revisar,baja,alerta,Objeto textil sin proceso suficiente
+kw099,prenda,candidate_textile|textile_explicit,confeccion,revisar,baja,alerta,Objeto textil sin proceso suficiente
+kw100,ropa,candidate_textile|textile_explicit,confeccion,revisar,baja,alerta,Objeto textil sin proceso suficiente
+kw101,pantalon,candidate_textile|textile_explicit,confeccion,revisar,baja,alerta,Objeto textil sin proceso suficiente
+kw102,ropa de trabajo,candidate_textile|textile_explicit,confeccion,revisar,media,alerta,Prenda especializada que requiere proceso
+kw103,uniforme industrial,candidate_textile|textile_explicit,confeccion,revisar,media,alerta,Prenda especializada que requiere proceso
+kw104,costura,candidate_textile|textile_explicit|excluded_name,confeccion_menor,exclusion,baja,exclusion,Costura sin escala industrial
+kw105,costurera,candidate_textile|textile_explicit|excluded_name,confeccion_menor,exclusion,baja,exclusion,Servicio personal de costura
+kw106,alta costura,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Prenda terminada sobre medida
+kw107,modista,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Servicio personal de confeccion
+kw108,sastreria,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Servicio sobre medida
+kw109,sastre,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Servicio sobre medida
+kw110,vestido de novia,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Prenda terminada especializada
+kw111,vestidos de novia,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Prenda terminada especializada
+kw112,novia,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Prenda terminada especializada
+kw113,xv anos,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Prenda terminada especializada
+kw114,quinceanera,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Prenda terminada especializada
+kw115,diseno de modas,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Diseno sin evidencia productiva industrial
+kw116,trajes de gala,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Prenda terminada especializada
+kw117,sobre medida,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Confeccion personalizada
+kw118,arreglos de ropa,candidate_textile|excluded_name,confeccion_menor,exclusion,baja,exclusion,Reparacion menor
+kw119,composturas,candidate_textile|excluded_name,confeccion_menor,exclusion,baja,exclusion,Reparacion menor
+kw120,costura domestica,candidate_textile|excluded_name,confeccion_menor,exclusion,baja,exclusion,Actividad sin escala industrial
+kw121,uniformes escolares,candidate_textile|commerce|excluded_name,comercio_prendas,exclusion,baja,exclusion,Producto terminado o comercio
+kw122,taller de vestidos,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Prenda terminada especializada
+kw123,confeccion artesanal,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Produccion sin escala industrial
+kw124,planchado,candidate_textile|excluded_name,planchado,exclusion,baja,exclusion,Servicio seco sin proceso humedo
+kw125,planchaduria,candidate_textile|excluded_name,planchado,exclusion,baja,exclusion,Servicio seco sin proceso humedo
+kw126,servicio de planchado,candidate_textile|excluded_name,planchado,exclusion,baja,exclusion,Servicio seco sin proceso humedo
+kw127,plancha de pantalon,candidate_textile|excluded_name,planchado,exclusion,baja,exclusion,Servicio seco sin proceso humedo
+kw128,venta,commerce,comercio,exclusion,baja,exclusion,Comercializacion
+kw129,tienda,commerce,comercio,exclusion,baja,exclusion,Comercializacion
+kw130,boutique,commerce,comercio_prendas,exclusion,baja,exclusion,Comercializacion de ropa
+kw131,local comercial,commerce,comercio,exclusion,baja,exclusion,Comercializacion
+kw132,accesorios,commerce,comercio,exclusion,baja,exclusion,Comercializacion
+kw133,ropa para dama,commerce,comercio_prendas,exclusion,baja,exclusion,Comercializacion de ropa
+kw134,ropa para caballero,commerce,comercio_prendas,exclusion,baja,exclusion,Comercializacion de ropa
+kw135,ropa infantil,commerce,comercio_prendas,exclusion,baja,exclusion,Comercializacion de ropa
+kw136,mayoreo,commerce,comercio,exclusion,baja,exclusion,Comercializacion
+kw137,menudeo,commerce,comercio,exclusion,baja,exclusion,Comercializacion
+kw138,distribuidora,commerce,comercio,exclusion,baja,exclusion,Comercializacion
+kw139,comercializadora,commerce,comercio,exclusion,baja,exclusion,Comercializacion
+kw140,outlet,commerce,comercio_prendas,exclusion,baja,exclusion,Comercializacion de ropa
+kw141,bazar,commerce,comercio,exclusion,baja,exclusion,Comercializacion
+kw142,merceria,commerce,comercio_textil,exclusion,baja,exclusion,Comercializacion de insumos
+kw143,tienda de novias,commerce|excluded_name,comercio_prendas,exclusion,baja,exclusion,Comercializacion de ropa
+kw144,zapateria,commerce|excluded_activity,calzado,exclusion,baja,exclusion,Giro no textil objetivo
+kw145,novedades,commerce,comercio,exclusion,baja,exclusion,Comercializacion
+kw146,renta,commerce,alquiler_prendas,exclusion,baja,exclusion,Alquiler sin proceso productivo
+kw147,alquiler,commerce,alquiler_prendas,exclusion,baja,exclusion,Alquiler sin proceso productivo
+kw148,renta de vestidos,commerce|excluded_name,alquiler_prendas,exclusion,baja,exclusion,Alquiler de prendas
+kw149,renta de trajes,commerce|excluded_name,alquiler_prendas,exclusion,baja,exclusion,Alquiler de prendas
+kw150,autolavado,non_textile|non_textile_wash|excluded_name,lavado_vehiculos,exclusion,alta,exclusion,Lavado no textil
+kw151,auto lavado,non_textile|non_textile_wash|excluded_name,lavado_vehiculos,exclusion,alta,exclusion,Lavado no textil
+kw152,lavado de autos,non_textile|non_textile_wash|excluded_name,lavado_vehiculos,exclusion,alta,exclusion,Lavado no textil
+kw153,lavado y engrasado,non_textile|non_textile_wash|excluded_name,servicio_automotriz,exclusion,alta,exclusion,Lavado no textil
+kw154,engrasado,non_textile|non_textile_wash|excluded_name,servicio_automotriz,exclusion,alta,exclusion,Servicio no textil
+kw155,mecanico,non_textile,servicio_automotriz,exclusion,alta,exclusion,Giro no textil
+kw156,mecanica,non_textile,servicio_automotriz,exclusion,alta,exclusion,Giro no textil
+kw157,automotriz,non_textile,servicio_automotriz,exclusion,alta,exclusion,Giro no textil
+kw158,vehiculo,non_textile,servicio_automotriz,exclusion,alta,exclusion,Giro no textil
+kw159,moto,non_textile,servicio_automotriz,exclusion,alta,exclusion,Giro no textil
+kw160,bicicleta,non_textile,servicio_no_textil,exclusion,alta,exclusion,Giro no textil
+kw161,carpinteria,non_textile,servicio_no_textil,exclusion,alta,exclusion,Giro no textil
+kw162,herreria,non_textile,servicio_no_textil,exclusion,alta,exclusion,Giro no textil
+kw163,torno,non_textile,servicio_no_textil,exclusion,alta,exclusion,Giro no textil
+kw164,celular,non_textile,servicio_no_textil,exclusion,alta,exclusion,Giro no textil
+kw165,lavadora,non_textile|non_textile_wash|excluded_name,reparacion_electrodomesticos,exclusion,alta,exclusion,Reparacion o venta no textil
+kw166,reparacion de lavadoras,non_textile|non_textile_wash|excluded_name,reparacion_electrodomesticos,exclusion,alta,exclusion,Giro no textil
+kw167,reparadora de lavadoras,non_textile|non_textile_wash|excluded_name,reparacion_electrodomesticos,exclusion,alta,exclusion,Giro no textil
+kw168,tratamiento medico,non_textile|excluded_activity,servicio_medico,exclusion,alta,exclusion,Tratamiento no textil
+kw169,medico,non_textile|excluded_activity,servicio_medico,exclusion,alta,exclusion,Giro no textil
+kw170,quirurgico,non_textile|excluded_activity,servicio_medico,exclusion,alta,exclusion,Giro no textil
+kw171,diagnostico,non_textile|excluded_activity,servicio_medico,exclusion,alta,exclusion,Giro no textil
+kw172,diseno de interiores,non_textile|excluded_activity,servicio_no_textil,exclusion,alta,exclusion,Giro no textil
+kw173,agua potable,non_textile|excluded_name|excluded_activity,suministro_agua,exclusion,alta,exclusion,Giro no textil
+kw174,sosapahue,non_textile|excluded_name,suministro_agua,exclusion,alta,exclusion,Giro no textil
+kw175,calzado,non_textile|excluded_activity,calzado,exclusion,alta,exclusion,Giro no textil objetivo
+kw176,bolso,non_textile|excluded_activity,articulos_no_textiles,exclusion,alta,exclusion,Giro no textil objetivo
+kw177,maleta,non_textile|excluded_activity,articulos_no_textiles,exclusion,alta,exclusion,Giro no textil objetivo
+kw178,computadora,non_textile|excluded_activity,electronica,exclusion,alta,exclusion,Giro no textil
+kw179,publicidad,non_textile|excluded_name,servicio_no_textil,exclusion,alta,exclusion,Giro no textil
+kw180,productos para lavanderia,non_textile|excluded_name,insumos_lavanderia,exclusion,alta,exclusion,Venta de insumos no proceso
+kw181,bodega,excluded_name,almacenamiento,exclusion,media,exclusion,Almacen sin proceso declarado
+kw182,desperdicio,excluded_name,residuos,exclusion,media,exclusion,Manejo de desperdicios no proceso textil confirmado
+kw183,servilleta,material_exclusion|excluded_name,producto_terminado,exclusion,media,exclusion,Evita falso positivo de material textil
+kw184,recuerdo,material_exclusion|excluded_name,producto_terminado,exclusion,media,exclusion,Evita falso positivo de material textil
+kw185,piel,material_exclusion|excluded_name,material_no_objetivo,exclusion,media,exclusion,Material fuera del foco textil
+kw186,comercio al por mayor,commerce|excluded_activity,comercio,exclusion,alta,exclusion,SCIAN o descripcion comercial
+kw187,captacion tratamiento y suministro de agua,non_textile|excluded_activity,suministro_agua,exclusion,alta,exclusion,Giro no textil
+kw188,lavadoras,non_textile|non_textile_wash|excluded_name,reparacion_electrodomesticos,exclusion,alta,exclusion,Reparacion o venta no textil
+kw189,vestido,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Prenda terminada especializada
+kw190,vestidos,candidate_textile|excluded_name,confeccion_especializada,exclusion,baja,exclusion,Prenda terminada especializada
+kw191,planchas,candidate_textile|excluded_name,planchado,exclusion,baja,exclusion,Servicio seco sin proceso humedo
+kw192,motos,non_textile,servicio_automotriz,exclusion,alta,exclusion,Giro no textil
+kw193,autos,non_textile|non_textile_wash,servicio_automotriz,exclusion,alta,exclusion,Giro no textil
+kw194,vehiculos,non_textile,servicio_automotriz,exclusion,alta,exclusion,Giro no textil
+kw195,celulares,non_textile,servicio_no_textil,exclusion,alta,exclusion,Giro no textil
+kw196,bolsos,non_textile|excluded_activity,articulos_no_textiles,exclusion,alta,exclusion,Giro no textil objetivo
+kw197,maletas,non_textile|excluded_activity,articulos_no_textiles,exclusion,alta,exclusion,Giro no textil objetivo
+kw198,computadoras,non_textile|excluded_activity,electronica,exclusion,alta,exclusion,Giro no textil
+kw199,servilletas,material_exclusion|excluded_name,producto_terminado,exclusion,media,exclusion,Evita falso positivo de material textil
+kw200,recuerdos,material_exclusion|excluded_name,producto_terminado,exclusion,media,exclusion,Evita falso positivo de material textil
+kw201,bodegas,excluded_name,almacenamiento,exclusion,media,exclusion,Almacen sin proceso declarado

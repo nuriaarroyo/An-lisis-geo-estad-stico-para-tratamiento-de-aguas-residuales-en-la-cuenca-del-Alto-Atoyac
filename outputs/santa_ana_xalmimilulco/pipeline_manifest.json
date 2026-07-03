@@ -1,8 +1,8 @@
 {
   "pipeline": "auditoria_santa_ana",
   "goal": "Conservar el original como canónico y comparar tres conjuntos secundarios.",
-  "started_at": "2026-07-02T09:59:34-06:00",
-  "finished_at": "2026-07-02T10:00:29-06:00",
+  "started_at": "2026-07-03T14:09:13-06:00",
+  "finished_at": "2026-07-03T14:09:58-06:00",
   "status": "ok",
   "inputs": {
     "universo_canonico_original": {
@@ -15,32 +15,67 @@
       "exists": true,
       "bytes": 1864
     },
-    "denue_2026_clasificado": {
-      "path": "data\\processed\\denue2026_universo_textil_clasificado.gpkg",
+    "saic": {
+      "path": "data\\raw\\saic\\SAIC_Exporta_2026525_9559716.csv",
       "exists": true,
-      "bytes": 1613824
+      "bytes": 4144
     },
-    "filtrado_prioritario_2026": {
-      "path": "outputs\\universo_prioritario_denue_2026\\universo_prioritario_denue_2026.gpkg",
+    "denue_2026_preparado": {
+      "path": "data\\processed\\denue2026_raw.gpkg",
       "exists": true,
-      "bytes": 319488
+      "bytes": 1323008
+    },
+    "filtro_anterior_referencia": {
+      "path": "data\\reference\\santa_ana_xalmimilulco\\filtro_anterior_clasificacion.csv",
+      "exists": true,
+      "bytes": 41132
+    },
+    "diccionario_palabras_clave": {
+      "path": "config\\filtros_textiles_santa_ana\\palabras_clave.csv",
+      "exists": true,
+      "bytes": 24497
+    },
+    "catalogo_codigos_scian": {
+      "path": "config\\filtros_textiles_santa_ana\\codigos_scian.csv",
+      "exists": true,
+      "bytes": 881
+    },
+    "politica_categorias": {
+      "path": "config\\filtros_textiles_santa_ana\\politica_categorias.csv",
+      "exists": true,
+      "bytes": 1376
+    },
+    "catalogo_reglas": {
+      "path": "config\\filtros_textiles_santa_ana\\reglas_clasificacion.csv",
+      "exists": true,
+      "bytes": 1707
     }
   },
   "stages": [
     {
-      "stage": "construir_alternativa",
+      "stage": "clasificar_saic",
       "status": "ok",
-      "registros": 67
+      "prefijos_scian": [
+        "313",
+        "314",
+        "315"
+      ]
+    },
+    {
+      "stage": "clasificar_denue",
+      "status": "ok",
+      "candidatos_textiles": 361,
+      "filtro_explicito_relevante": 293
     },
     {
       "stage": "comparar",
       "status": "ok",
-      "registros": 111
+      "registros": 322
     },
     {
       "stage": "validar",
       "status": "ok",
-      "validaciones": 8
+      "validaciones": 12
     },
     {
       "stage": "documentar",
@@ -48,14 +83,21 @@
     }
   ],
   "summary": {
+    "denue_2026_santa_ana_total": 1732,
+    "denue_textil_candidatos": 361,
+    "prefijos_textiles_saic": [
+      "313",
+      "314",
+      "315"
+    ],
     "universo_canonico_original": 38,
     "mh_filtrado": 49,
     "mh_con_id": 43,
     "mh_sin_id": 6,
-    "foco_estricto_alternativo": 67,
-    "filtrado_prioritario_2026": 42,
-    "union_comparacion": 111,
-    "validaciones_ok": 8,
-    "sha256_ids_foco_alternativo": "7a32e76ebe4792245f5520b392dbe1d6ef73a5c2d675f8a8050435bc95acb18a"
+    "universo_relevante_filtro_explicito": 293,
+    "registros_revisar": 18,
+    "union_comparacion": 322,
+    "validaciones_ok": 12,
+    "sha256_ids_filtro_explicito": "6a71bea0c0b578e69a1bc6929dbe4c7e1ade4386208d44f952e9f863b4fff28b"
   }
 }

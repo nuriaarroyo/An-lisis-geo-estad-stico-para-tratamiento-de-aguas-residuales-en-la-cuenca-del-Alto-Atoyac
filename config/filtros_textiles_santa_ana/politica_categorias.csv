@@ -1,0 +1,12 @@
+priority,category,relevance,universe,include_relevant,include_review,reason
+0,fuera_filtro,fuera,fuera,false,false,Sin senal suficiente para el universo textil o de revision.
+10,revisar_textil_ambiguo,revisar,revision,false,true,Senal textil presente pero sin proceso productivo claramente identificado.
+20,revisar_lavado_generico,revisar,revision,false,true,Lavanderia o lavado generico sin evidencia de proceso industrial textil.
+30,revisar_maquila_sola,revisar,revision,false,true,La palabra maquila aparece sin una senal textil suficiente.
+40,revisar_maquila_senal_textil,revisar,revision,false,true,Maquila con senales productivas compatibles pero no concluyentes.
+50,produccion_textil,media,principal,true,false,Actividad manufacturera textil explicita por SCIAN y/o texto.
+60,maquila_textil,media,principal,true,false,Maquila combinada con prendas confeccion mezclilla u otra senal textil.
+70,lavado_acabado_textil,alta,principal,true,false,Lavado deslavado tenido o acabado con contexto textil.
+80,excluir_actividad_no_objetivo,excluir,exclusion,false,false,Actividad de confeccion menor planchado insumos o giro no textil sin proceso humedo suficiente.
+90,excluir_lavado_no_textil,excluir,exclusion,false,false,Lavado autolavado o reparacion sin relacion textil.
+100,excluir_comercio,excluir,exclusion,false,false,Comercio simple sin evidencia productiva suficiente.

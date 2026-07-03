@@ -1,0 +1,8 @@
+﻿code,match_type,signal,process_stage,universe,evidence_level,description
+313,prefix,textile_manufacturing,fabricacion_insumos_textiles,principal,alta,Fabricacion de insumos textiles y acabado de textiles
+314,prefix,textile_manufacturing,fabricacion_productos_textiles,principal,media,Fabricacion de productos textiles excepto prendas
+315,prefix,textile_manufacturing,confeccion_prendas,principal,media,Fabricacion de prendas de vestir
+8122,prefix,textile_service,lavanderia_tintoreria,revisar,media,Servicios de lavanderia y tintoreria
+313310,exact,wet_process,acabado_textil,principal,alta,Acabado de productos textiles
+812210,exact,wet_service_possible,lavanderia_tintoreria,revisar,media,Lavanderias y tintorerias que requieren evidencia textual para distinguir proceso textil de servicio generico
+46,prefix,commerce,comercio,exclusion,alta,Comercio al por mayor o al por menor
