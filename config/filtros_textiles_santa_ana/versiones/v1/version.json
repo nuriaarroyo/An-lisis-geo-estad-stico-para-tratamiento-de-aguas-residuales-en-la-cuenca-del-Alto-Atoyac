@@ -1,0 +1,17 @@
+{
+  "version": "v1",
+  "scope": "Santa Ana Xalmimilulco",
+  "input_data": [
+    "DENUE 2026 preparado",
+    "SAIC",
+    "diccionarios de esta carpeta"
+  ],
+  "classification_dependency": "No usa tablas ni capas de resultados legacy",
+  "files": [
+    "palabras_clave.csv",
+    "codigos_scian.csv",
+    "politica_categorias.csv",
+    "reglas_clasificacion.csv"
+  ],
+  "method_note": "Las senales representan prioridad de revision y no evidencia de contaminacion."
+}

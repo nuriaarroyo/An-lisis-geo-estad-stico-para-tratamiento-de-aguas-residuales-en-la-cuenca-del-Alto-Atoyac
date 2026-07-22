@@ -13,9 +13,9 @@ Proceso: `SAIC -> candidatos textiles DENUE -> filtro explícito -> comparacione
 ## Archivos
 
 - `../../config/filtros_textiles_santa_ana/README.md`
-- `../../config/filtros_textiles_santa_ana/palabras_clave.csv`
-- `../../config/filtros_textiles_santa_ana/codigos_scian.csv`
-- `../../config/filtros_textiles_santa_ana/politica_categorias.csv`
+- `../../config/filtros_textiles_santa_ana/versiones/v1/palabras_clave.csv`
+- `../../config/filtros_textiles_santa_ana/versiones/v1/codigos_scian.csv`
+- `../../config/filtros_textiles_santa_ana/versiones/v1/politica_categorias.csv`
 - `referencias/universo_canonico_original/capa_universo_prioritario_denue_santa_ana_xalmimilulco.gpkg`
 - `capas_qgis/denue_textil_candidatos.gpkg`
 - `capas_qgis/comparacion_3_universos.gpkg`
@@ -33,7 +33,6 @@ Proceso: `SAIC -> candidatos textiles DENUE -> filtro explícito -> comparacione
 - `tablas/catalogo_codigos_scian.csv`
 - `tablas/politica_categorias.csv`
 - `tablas/catalogo_reglas_filtro.csv`
-- `tablas/comparacion_filtro_anterior_vs_explicito.csv`
 - `tablas/resumen_categorias_filtro.csv`
 - `tablas/validacion_trazabilidad.csv`
 - `pipeline_manifest.json`

@@ -34,6 +34,7 @@ from santa_ana_audit_utils import (
 )
 from santa_ana_filter_rules import (
     FILTER_CONFIG_PATHS,
+    FILTER_VERSION,
     FilterCatalogs,
     apply_filter_rules,
     load_filter_catalogs,
@@ -50,13 +51,6 @@ MANIFEST_PATH = OUT_DIR / "pipeline_manifest.json"
 REPORT_TEX = DOCS_DIR / "reporte_auditoria_universos_santa_ana.tex"
 
 DENUE_2026_RAW = PROCESSED_DIR / "denue2026_raw.gpkg"
-PREVIOUS_CLASSIFICATION = (
-    PROJECT_ROOT
-    / "data"
-    / "reference"
-    / "santa_ana_xalmimilulco"
-    / "filtro_anterior_clasificacion.csv"
-)
 EXPLICIT_CLASSIFICATION = PROCESSED_DIR / "denue2026_santa_ana_clasificacion_explicita.gpkg"
 EXPLICIT_RELEVANT_REVIEW = PROCESSED_DIR / "denue2026_santa_ana_relevantes_revisar.gpkg"
 MH_FILTERED = PROCESSED_DIR / "capa_maryhelen" / "capa MH.shp"
@@ -92,17 +86,17 @@ CATEGORY_SUMMARY_CSV = TABLES_DIR / "resumen_categorias_filtro.csv"
 CANONICAL_MH_CSV = TABLES_DIR / "comparacion_canonico_vs_mh.csv"
 CANONICAL_FOCUS_CSV = TABLES_DIR / "comparacion_canonico_vs_foco.csv"
 VALIDATION_CSV = TABLES_DIR / "validacion_trazabilidad.csv"
-PREVIOUS_COMPARISON_CSV = TABLES_DIR / "comparacion_filtro_anterior_vs_explicito.csv"
-PREVIOUS_DETAIL_CSV = TABLES_DIR / "detalle_comparacion_filtro_anterior_vs_explicito.csv"
 
-INPUTS = {
-    "universo_canonico_original": CANONICAL_ORIGINAL,
-    "mh_filtrado": MH_FILTERED,
+CLASSIFICATION_INPUTS = {
     "saic": SAIC_SOURCE,
     "denue_2026_preparado": DENUE_2026_RAW,
-    "filtro_anterior_referencia": PREVIOUS_CLASSIFICATION,
     **FILTER_CONFIG_PATHS,
 }
+COMPARISON_INPUTS = {
+    "universo_canonico_original": CANONICAL_ORIGINAL,
+    "mh_filtrado": MH_FILTERED,
+}
+INPUTS = {**CLASSIFICATION_INPUTS, **COMPARISON_INPUTS}
 COLORS = {
     "en_los_3": "#006837",
     "canonico_y_foco_no_mh": "#31a354",
@@ -142,7 +136,6 @@ HOVER_FIELDS = [
     "universos_keywords_detectados",
     "niveles_evidencia_detectados",
     "campos_coincidentes",
-    "clasificacion_anterior",
     "categoria_foco_estricto",
     "reglas_inclusion_activadas",
     "reglas_exclusion_activadas",
@@ -211,8 +204,6 @@ def prepare_source(gdf: gpd.GeoDataFrame, source: str, id_column: str) -> gpd.Ge
         "texto_normalizado",
         "keywords_detectadas",
         "campos_coincidentes",
-        "clasificacion_anterior",
-        "comparacion_filtro",
         "relevancia_ambiental",
         "geometry",
     }
@@ -243,43 +234,6 @@ def load_source_sets() -> dict[str, gpd.GeoDataFrame]:
 
 def membership_ids(gdf: gpd.GeoDataFrame) -> set[str]:
     return set(gdf["_id_key"]) - {""}
-
-
-def add_previous_classification(trace: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
-    out = trace.copy()
-    out["flag_anterior"] = False
-    out["clasificacion_anterior"] = "sin_registro_en_filtro_anterior"
-    if PREVIOUS_CLASSIFICATION.exists():
-        previous = read_csv_robust(PREVIOUS_CLASSIFICATION, dtype=str).fillna("")
-        previous["_id_key"] = normalize_denue_id(previous["id"])
-        priority_raw = previous.get(
-            "flag_estudio_prioritario",
-            pd.Series(False, index=previous.index),
-        ).fillna(False)
-        priority = (
-            priority_raw.astype(bool)
-            if pd.api.types.is_bool_dtype(priority_raw)
-            else priority_raw.astype(str).str.lower().isin({"true", "1", "si", "yes"})
-        )
-        previous_ids = set(previous["_id_key"]) - {""}
-        priority_ids = set(previous.loc[priority, "_id_key"]) - {""}
-        out["flag_anterior"] = out["_id_key"].isin(priority_ids)
-        out.loc[
-            out["_id_key"].isin(previous_ids),
-            "clasificacion_anterior",
-        ] = "no_prioritario_anterior"
-        out.loc[out["flag_anterior"], "clasificacion_anterior"] = "prioritario_anterior"
-
-    old = out["flag_anterior"]
-    new = out["flag_nuevo_relevante"]
-    review = out["flag_nuevo_revisar"]
-    out["comparacion_filtro"] = "antes_no_ahora_fuera"
-    out.loc[~old & review, "comparacion_filtro"] = "revisar"
-    out.loc[~old & new, "comparacion_filtro"] = "antes_no_ahora_entra"
-    out.loc[old & ~new & ~review, "comparacion_filtro"] = "antes_entraba_ahora_excluye"
-    out.loc[old & review, "comparacion_filtro"] = "antes_entraba_ahora_revisar"
-    out.loc[old & new, "comparacion_filtro"] = "antes_y_ahora_entra"
-    return out
 
 
 def classify_saic_activities() -> tuple[pd.DataFrame, tuple[str, ...]]:
@@ -331,7 +285,6 @@ def build_focus(
 ]:
     trace = apply_filter_rules(read_vector(DENUE_2026_RAW), saic_prefixes, catalogs)
     trace["_id_key"] = normalize_denue_id(trace["id"])
-    trace = add_previous_classification(trace)
     trace["en_universo_canonico_original"] = trace["_id_key"].isin(membership_ids(sets["canonical"]))
     trace["en_mh_filtrado"] = trace["_id_key"].isin(membership_ids(sets["mh"]))
     trace["senales_foco_estricto"] = trace["reglas_inclusion_activadas"].replace(
@@ -640,7 +593,6 @@ def write_report(
     summaries: dict[str, pd.DataFrame],
 ) -> None:
     rules = catalog[["rule_id", "stage", "registros_activados"]]
-    previous_comparison = pd.read_csv(PREVIOUS_COMPARISON_CSV, encoding="utf-8-sig")
     body = [
         r"\section{Objetivo y jerarquía}",
         (
@@ -667,8 +619,6 @@ def write_report(
             summaries["filter_categories"],
             ["categoria_filtro", "relevancia_ambiental", "registros"],
         ),
-        r"\section{Comparación con el filtro anterior}",
-        latex_table(previous_comparison, ["comparacion_filtro", "registros"]),
         r"\section{Canónico original frente a MH filtrado}",
         latex_table(
             summaries["canonical_mh"],
@@ -737,9 +687,9 @@ def write_index(
         "## Archivos",
         "",
         "- `../../config/filtros_textiles_santa_ana/README.md`",
-        "- `../../config/filtros_textiles_santa_ana/palabras_clave.csv`",
-        "- `../../config/filtros_textiles_santa_ana/codigos_scian.csv`",
-        "- `../../config/filtros_textiles_santa_ana/politica_categorias.csv`",
+        "- `../../config/filtros_textiles_santa_ana/versiones/v1/palabras_clave.csv`",
+        "- `../../config/filtros_textiles_santa_ana/versiones/v1/codigos_scian.csv`",
+        "- `../../config/filtros_textiles_santa_ana/versiones/v1/politica_categorias.csv`",
         "- `referencias/universo_canonico_original/capa_universo_prioritario_denue_santa_ana_xalmimilulco.gpkg`",
         "- `capas_qgis/denue_textil_candidatos.gpkg`",
         "- `capas_qgis/comparacion_3_universos.gpkg`",
@@ -757,7 +707,6 @@ def write_index(
         "- `tablas/catalogo_codigos_scian.csv`",
         "- `tablas/politica_categorias.csv`",
         "- `tablas/catalogo_reglas_filtro.csv`",
-        "- `tablas/comparacion_filtro_anterior_vs_explicito.csv`",
         "- `tablas/resumen_categorias_filtro.csv`",
         "- `tablas/validacion_trazabilidad.csv`",
         "- `pipeline_manifest.json`",
@@ -789,6 +738,11 @@ def file_metadata(path: Path) -> dict[str, object]:
         "path": relpath(path),
         "exists": path.exists(),
         "bytes": path.stat().st_size if path.exists() else 0,
+        "sha256": (
+            hashlib.sha256(path.read_bytes()).hexdigest()
+            if path.exists() and path.is_file()
+            else None
+        ),
     }
 
 
@@ -805,11 +759,17 @@ def write_manifest(
 ) -> None:
     manifest = {
         "pipeline": "auditoria_santa_ana",
+        "filter_version": FILTER_VERSION,
         "goal": "Conservar el original como canónico y comparar tres conjuntos secundarios.",
         "started_at": started_at,
         "finished_at": now() if status != "running" else None,
         "status": status,
-        "inputs": {name: file_metadata(path) for name, path in INPUTS.items()},
+        "classification_inputs": {
+            name: file_metadata(path) for name, path in CLASSIFICATION_INPUTS.items()
+        },
+        "comparison_inputs": {
+            name: file_metadata(path) for name, path in COMPARISON_INPUTS.items()
+        },
         "stages": stages,
         "summary": summary or {},
     }
@@ -876,32 +836,6 @@ def main() -> None:
             "relevantes_revisar",
         )
         catalog.to_csv(RULES_CSV, index=False, encoding="utf-8-sig")
-        (
-            trace.groupby("comparacion_filtro", dropna=False)
-            .size()
-            .reset_index(name="registros")
-            .to_csv(PREVIOUS_COMPARISON_CSV, index=False, encoding="utf-8-sig")
-        )
-        comparison_detail_columns = [
-            "_id_key",
-            "id",
-            "nombre_de_la_unidad_economica",
-            "codigo_de_la_clase_actividad_scian",
-            "nombre_clase_actividad_scian",
-            "clasificacion_anterior",
-            "flag_anterior",
-            "categoria_filtro",
-            "flag_nuevo_relevante",
-            "flag_nuevo_revisar",
-            "comparacion_filtro",
-            "motivo_clasificacion",
-            "keywords_detectadas",
-        ]
-        trace[comparison_detail_columns].to_csv(
-            PREVIOUS_DETAIL_CSV,
-            index=False,
-            encoding="utf-8-sig",
-        )
         stages.append(
             {
                 "stage": "clasificar_denue",
@@ -955,6 +889,7 @@ def main() -> None:
         stages.append({"stage": "documentar", "status": "ok"})
 
         summary = {
+            "filter_version": FILTER_VERSION,
             "denue_2026_santa_ana_total": len(trace),
             "denue_textil_candidatos": len(candidates),
             "prefijos_textiles_saic": list(saic_prefixes),

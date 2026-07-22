@@ -1,18 +1,21 @@
 # Catalogos del filtro textil de Santa Ana
 
-Estos archivos son entradas del pipeline y constituyen la definicion auditable
-del filtro. Se editan aqui; las copias de `outputs/` son resultados generados.
+Cada subcarpeta de `versiones/` contiene la definicion exacta de un filtro.
+La version activa se declara mediante `FILTER_VERSION` en
+`scripts/santa_ana_filter_rules.py`. Las copias de `outputs/` son resultados.
+
+La primera version operativa es `versiones/v1/`.
 
 ## Archivos
 
-- `palabras_clave.csv`: una palabra o frase normalizada por renglon. `groups`
+- `versiones/v1/palabras_clave.csv`: una palabra o frase por renglon. `groups`
   indica en que pruebas booleanas participa; `process_stage`, `universe` y
   `evidence_level` explican su interpretacion.
-- `codigos_scian.csv`: codigos exactos o prefijos y la senal que representan.
-- `politica_categorias.csv`: prioridad de asignacion. Una prioridad mayor
+- `versiones/v1/codigos_scian.csv`: codigos exactos o prefijos y su senal.
+- `versiones/v1/politica_categorias.csv`: prioridad de asignacion. Una prioridad mayor
   sustituye una categoria de prioridad menor cuando ambas condiciones se
   cumplen.
-- `reglas_clasificacion.csv`: catalogo humano de las reglas y su objetivo.
+- `versiones/v1/reglas_clasificacion.csv`: catalogo humano de las reglas.
 
 ## Flujo
 

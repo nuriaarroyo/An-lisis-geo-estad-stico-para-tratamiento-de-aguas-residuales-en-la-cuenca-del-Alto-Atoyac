@@ -11,7 +11,9 @@ from common import PROJECT_ROOT, normalize_text, read_csv_robust
 
 
 LOCALIDAD_OBJETIVO = "Santa Ana Xalmimilulco"
-FILTER_CONFIG_DIR = PROJECT_ROOT / "config" / "filtros_textiles_santa_ana"
+FILTER_VERSION = "v1"
+FILTER_CONFIG_ROOT = PROJECT_ROOT / "config" / "filtros_textiles_santa_ana"
+FILTER_CONFIG_DIR = FILTER_CONFIG_ROOT / "versiones" / FILTER_VERSION
 KEYWORDS_PATH = FILTER_CONFIG_DIR / "palabras_clave.csv"
 SCIAN_PATH = FILTER_CONFIG_DIR / "codigos_scian.csv"
 CATEGORY_POLICY_PATH = FILTER_CONFIG_DIR / "politica_categorias.csv"

@@ -48,10 +48,9 @@ El estado de cada ejecucion queda en
 - **Alternativa analitica:** filtro ejecutado por
   `scripts/santa_ana_filter_rules.py` y definido por los catalogos de
   `config/filtros_textiles_santa_ana/`.
-- **Antecedente diagnostico:** foco amplio conservado en `scripts/legacy/`. No forma parte del pipeline vigente.
-
-Los scripts experimentales anteriores están en `scripts/legacy/` y no son
-dependencias del pipeline vigente.
+La clasificacion no lee tablas, capas, banderas ni resultados producidos por
+scripts historicos. El canonico y MH se incorporan solamente despues del
+filtrado para comparar membresias.
 
 ## Scripts vigentes
 
@@ -63,18 +62,20 @@ Los archivos activos para este análisis son:
   mediante reglas booleanas visibles.
 - `scripts/santa_ana_audit_utils.py`: concentra lectura, exportacion, mapas y LaTeX.
 
-Los scripts anteriores se conservan en `scripts/legacy/` como historial y no
-deben ejecutarse.
+Los scripts historicos no son entradas, importaciones ni dependencias.
 
 ## Como leer el codigo
 
 1. Abrir `scripts/run_santa_ana_pipeline.py` y comenzar por `main()` al final.
    Esa funcion muestra el orden completo sin detalles tecnicos.
-2. Abrir `config/filtros_textiles_santa_ana/palabras_clave.csv`: contiene una
+2. Abrir `config/filtros_textiles_santa_ana/versiones/v1/palabras_clave.csv`:
+   contiene una
    palabra o frase por renglon.
-3. Abrir `config/filtros_textiles_santa_ana/codigos_scian.csv`: contiene las
+3. Abrir `config/filtros_textiles_santa_ana/versiones/v1/codigos_scian.csv`:
+   contiene las
    senales por codigo o prefijo SCIAN.
-4. Abrir `config/filtros_textiles_santa_ana/politica_categorias.csv`: muestra
+4. Abrir `config/filtros_textiles_santa_ana/versiones/v1/politica_categorias.csv`:
+   muestra
    prioridad, relevancia y pertenencia a universos.
 5. Leer `apply_filter_rules()` en `scripts/santa_ana_filter_rules.py`: muestra
    como se combinan las senales con AND, OR y exclusiones.
@@ -92,7 +93,7 @@ La carpeta `outputs/santa_ana_xalmimilulco/` contiene solamente:
 
 - Cinco GeoPackage: candidatos, clasificación completa, relevantes/revisar, universo relevante y comparación.
 - Cuatro mapas en HTML y PNG.
-- Quince tablas CSV de SAIC, DENUE, reglas, comparación anterior, resumen y validación.
+- Tablas CSV de SAIC, DENUE, reglas, diccionarios, resumen y validacion.
 - `index.md` y `pipeline_manifest.json`.
 - El reporte principal en `docs/santa_ana_xalmimilulco/reporte_auditoria_universos_santa_ana.pdf`.
 
@@ -114,7 +115,7 @@ no textil, planchado, insumos o servicio.
 ## Como modificar el filtro
 
 El vocabulario se modifica en
-`config/filtros_textiles_santa_ana/palabras_clave.csv`. Los codigos se
+`config/filtros_textiles_santa_ana/versiones/v1/palabras_clave.csv`. Los codigos se
 modifican en `codigos_scian.csv`; la prioridad y el resultado de cada categoria
 se modifican en `politica_categorias.csv`. Solo se edita Python cuando cambia la
 forma de combinar senales.

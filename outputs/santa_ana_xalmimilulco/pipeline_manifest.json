@@ -1,54 +1,60 @@
 {
   "pipeline": "auditoria_santa_ana",
+  "filter_version": "v1",
   "goal": "Conservar el original como canónico y comparar tres conjuntos secundarios.",
-  "started_at": "2026-07-03T14:09:13-06:00",
-  "finished_at": "2026-07-03T14:09:58-06:00",
+  "started_at": "2026-07-03T14:43:21-06:00",
+  "finished_at": "2026-07-03T14:44:41-06:00",
   "status": "ok",
-  "inputs": {
-    "universo_canonico_original": {
-      "path": "outputs\\santa_ana_xalmimilulco\\referencias\\universo_canonico_original\\capa_universo_prioritario_denue_santa_ana_xalmimilulco.gpkg",
-      "exists": true,
-      "bytes": 184320
-    },
-    "mh_filtrado": {
-      "path": "data\\processed\\capa_maryhelen\\capa MH.shp",
-      "exists": true,
-      "bytes": 1864
-    },
+  "classification_inputs": {
     "saic": {
       "path": "data\\raw\\saic\\SAIC_Exporta_2026525_9559716.csv",
       "exists": true,
-      "bytes": 4144
+      "bytes": 4144,
+      "sha256": "b7b8c87581766b62f5eaeed2cf782917e1c93871fe6ffaec9e78758ef31b5d2d"
     },
     "denue_2026_preparado": {
       "path": "data\\processed\\denue2026_raw.gpkg",
       "exists": true,
-      "bytes": 1323008
-    },
-    "filtro_anterior_referencia": {
-      "path": "data\\reference\\santa_ana_xalmimilulco\\filtro_anterior_clasificacion.csv",
-      "exists": true,
-      "bytes": 41132
+      "bytes": 1323008,
+      "sha256": "3e097089ee95cba6f5e74ac88c9470c0b8cdbb5f07d2c2569cf250a7e050cc67"
     },
     "diccionario_palabras_clave": {
-      "path": "config\\filtros_textiles_santa_ana\\palabras_clave.csv",
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\palabras_clave.csv",
       "exists": true,
-      "bytes": 24497
+      "bytes": 24497,
+      "sha256": "559fcbdc457ddd6ea7bc150eb2df1578f24b1ad44367fc63e1dbff532a30e81e"
     },
     "catalogo_codigos_scian": {
-      "path": "config\\filtros_textiles_santa_ana\\codigos_scian.csv",
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\codigos_scian.csv",
       "exists": true,
-      "bytes": 881
+      "bytes": 881,
+      "sha256": "52bd879ecd7972e3a95fad67aa3ba9c5f0f3cf11f30f0880beed30267e914700"
     },
     "politica_categorias": {
-      "path": "config\\filtros_textiles_santa_ana\\politica_categorias.csv",
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\politica_categorias.csv",
       "exists": true,
-      "bytes": 1376
+      "bytes": 1376,
+      "sha256": "8952d23611f9591b45de1e8fead09cdd3173926b1b06d0b17160c9fcbb42be94"
     },
     "catalogo_reglas": {
-      "path": "config\\filtros_textiles_santa_ana\\reglas_clasificacion.csv",
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\reglas_clasificacion.csv",
       "exists": true,
-      "bytes": 1707
+      "bytes": 1707,
+      "sha256": "b4e6663a72e16cd539ca17561bcd7edebe071bf524ef78b4e3a6204deaa58d75"
+    }
+  },
+  "comparison_inputs": {
+    "universo_canonico_original": {
+      "path": "outputs\\santa_ana_xalmimilulco\\referencias\\universo_canonico_original\\capa_universo_prioritario_denue_santa_ana_xalmimilulco.gpkg",
+      "exists": true,
+      "bytes": 184320,
+      "sha256": "9c8434aaddb4ac52481f5d72dcf37bc3f48d1b503255e7d82dd95b85b6946c8d"
+    },
+    "mh_filtrado": {
+      "path": "data\\processed\\capa_maryhelen\\capa MH.shp",
+      "exists": true,
+      "bytes": 1864,
+      "sha256": "3a99ab0cd80ac6f4584858213d4341fb603ae954f2f4bccbb3820dc047bb4d03"
     }
   },
   "stages": [
@@ -83,6 +89,7 @@
     }
   ],
   "summary": {
+    "filter_version": "v1",
     "denue_2026_santa_ana_total": 1732,
     "denue_textil_candidatos": 361,
     "prefijos_textiles_saic": [
