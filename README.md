@@ -1,76 +1,89 @@
-# Análisis geo-estadístico para el desarrollo de tren de tratamiento de aguas residuales en la cuenca del Alto Atoyac
+# Diagnóstico textil reproducible — Alto Atoyac
 
-Este proyecto construye un diagnostico reproducible para identificar actividad textil/mezclilla potencialmente relevante en la zona alta del Atoyac. El flujo no afirma contaminacion directa por establecimiento; produce una priorizacion preliminar por tipo de actividad y proximidad a red hidrografica.
+El proyecto construye un universo analítico independiente de establecimientos con señales
+textiles. Actualmente está activa:
 
-## Datos esperados
+- Santa Ana Xalmimilulco
 
-- `data/raw/agebs/`: capas SHP de INEGI organizadas por localidad/zona de descarga: Huejotzingo, Santa Ana Xalmimilulco y San Martin Texmelucan. En este proyecto los AGEB se tratan como recortes por localidad/zona, no como evidencia municipal completa.
-- `data/raw/hidrografia_atoyac/` y `data/raw/hidrologia_atoyac/`: capas de red hidrografica, areas hidrologicas y elementos asociados.
-- `data/raw/saic/`: CSV exportado de SAIC. SAIC esta a nivel municipal/entidad para esta consulta; por eso se compara Huejotzingo y San Martin Texmelucan como municipios. Xalmimilulco se analiza espacialmente con DENUE y capas locales porque pertenece al municipio de Huejotzingo y no aparece como unidad independiente en SAIC. San Salvador el Verde no se usa como evidencia censal principal si no aparece en la consulta.
+Huejotzingo y San Martín Texmelucan permanecen configuradas pero desactivadas en
+`localidades.csv`.
 
-## Criterio metodologico
+La clasificación no utiliza las capas MH ni canónica. Esas referencias se abren solamente
+después de materializar y registrar la capa independiente. Los resultados representan
+prioridad de análisis; no prueban descargas ni contaminación.
 
-El filtro DENUE textil usa dos fuentes de evidencia y excluye comercio de prendas:
+## Ejecución
 
-- Codigo SCIAN cuando existe en los datos, especialmente 313, 314, 315 y 8122.
-- Normalizacion de texto y palabras clave en columnas descriptivas del DENUE, como nombre de unidad economica, actividad, clase o campos equivalentes.
-- Exclusion de comercio de prendas, boutiques, tiendas, novedades, mercerias, zapaterias y codigos comerciales 46*, salvo casos donde el nombre indica claramente un proceso relevante como lavanderia.
-
-La categoria de relevancia ambiental potencial se asigna por palabras asociadas al tipo de actividad:
-
-- `alta_relevancia_ambiental`: lavado, lavanderia, tintoreria, tenido, acabado y procesos humedos.
-- `media_relevancia_ambiental`: confeccion, maquila, costura, prendas, ropa, pantalon, jeans y bordado.
-- `revisar`: coincidencias ambiguas que conviene validar manualmente.
-
-La proximidad ambiental se estima por distancia a la red hidrografica lineal. Los rangos `0-100 m`, `100-250 m`, `250-500 m`, `500-1000 m` y `>1000 m` son bandas de proximidad o cautela, no intervalos estadisticos de confianza. El resultado sirve para priorizacion preliminar, no para afirmar contaminacion directa.
-
-SAIC permite extraer indicadores comparativos municipales, por ejemplo unidades economicas, personal ocupado, tamano promedio, proporcion familiar/no remunerada, proporcion remunerada, ingresos por unidad economica y peso de ingresos por maquila. Estos indicadores ayudan a discutir estructura productiva o posible presencia de unidades pequenas/familiares, pero no prueban informalidad por si solos.
-
-## Scripts
-
-- `scripts/01_prepare_geodata.py`: unico importador; normaliza las capas de `data/raw/` y genera GeoPackage en `data/processed/`.
-- `scripts/run_santa_ana_pipeline.py`: ejecuta SAIC, clasificacion DENUE, filtro estricto, comparaciones, mapas y validacion.
-- `scripts/santa_ana_filter_rules.py`: catalogo unico de reglas auditables.
-- `scripts/santa_ana_audit_utils.py`: lectura, exportacion, mapas y LaTeX.
-- `scripts/common.py`: utilidades generales de rutas, texto y GeoPackage.
-- `scripts/legacy/`: scripts experimentales conservados como historial; no forman parte del flujo vigente.
-
-## Como correr
-
-Instala dependencias en tu ambiente de Python:
-
-```bash
+```powershell
 pip install -r requirements.txt
-```
-
-Cuando cambian las fuentes:
-
-```bash
-python scripts/01_prepare_geodata.py
-```
-
-Para producir el analisis de Santa Ana:
-
-```bash
 python scripts/run_santa_ana_pipeline.py
 ```
 
-## Outputs principales
+También se pueden ejecutar las etapas por separado:
 
-- `data/processed/denue2026_raw.gpkg`: DENUE 2026 preparado, sin filtros experimentales.
-- `outputs/santa_ana_xalmimilulco/`: unica carpeta vigente de la localidad.
-- `outputs/santa_ana_xalmimilulco/capas_qgis/denue_textil_candidatos.gpkg`: candidatos derivados de SAIC y texto DENUE.
-- `outputs/santa_ana_xalmimilulco/capas_qgis/universo_relevante_filtro_explicito.gpkg`: resultado relevante del filtro explícito.
-- `outputs/santa_ana_xalmimilulco/tablas/saic_actividades_textiles.csv`: actividades SAIC usadas.
-- `outputs/santa_ana_xalmimilulco/tablas/validacion_trazabilidad.csv`: controles del proceso.
-- `outputs/legacy/`: resultados experimentales anteriores.
+```powershell
+python scripts/02_classify_independent_universe.py
+python scripts/03_refine_and_prioritize.py
+python scripts/05_apply_special_audit.py
+python scripts/06_prepare_maquila_review.py
+python scripts/08_compare_and_report.py
+```
 
-La guia vigente esta en `docs/santa_ana_xalmimilulco/guia_pipeline.md`.
+## Flujo
 
-## QGIS
+```text
+denue_raw.gpkg + localidades.gpkg + catálogos CSV
+                         ↓
+       universo productivo amplio
+                         ↓
+          314 registros + revisión
+                         ↓
+       refinamiento y priorización
+                         ↓
+        312 retenidos + exclusiones
+                         ↓  (resultado congelado)
+              MH + canónico histórico
+                         ↓
+             comparación y reporte
+```
 
-Los scripts de `qgis_scripts/` son opcionales y deben ejecutarse desde el Python de QGIS:
+`01_prepare_geodata.py` importa y normaliza las fuentes geográficas cuando estas cambian.
+`02_classify_independent_universe.py` recorta las tres localidades y clasifica los registros.
+`03_refine_and_prioritize.py` afina el alcance y asigna prioridades sin buscar nuevos registros.
+`05_apply_special_audit.py` aplica la auditoría documentada de los seis casos prioritarios.
+`06_prepare_maquila_review.py` genera la cola manual de maquilas con URLs ya llenas.
+`08_compare_and_report.py` abre las referencias, compara y documenta los resultados.
+La etapa de refinamiento genera `cola_revision_manual_314.csv` y
+`cola_revision_manual_20.csv`, con enlaces de Google Maps y OpenStreetMap que no requieren API,
+además de campos vacíos para registrar evidencia y decisiones humanas.
+`run_santa_ana_pipeline.py` ejecuta las etapas en orden.
 
-- `load_processed_layers.py`: carga los GeoPackage procesados.
-- `style_layers_basic.py`: aplica estilos basicos.
-- `export_qgis_layout.py`: prepara y exporta un layout preliminar.
+## Configuración externa editable
+
+Los filtros están en `config/filtros_textiles_santa_ana/versiones/v1/`:
+
+- `palabras_clave.csv`: términos, grupos y función metodológica.
+- `codigos_scian.csv`: códigos exactos y prefijos.
+- `reglas_clasificacion.csv`: catálogo legible de reglas.
+- `matriz_decision.csv`: precedencia ejecutable, condiciones y decisiones.
+- `politica_categorias.csv`: significado de las categorías.
+- `politica_refinamiento.csv`: exclusiones de alcance y prioridades de la segunda etapa.
+- `localidades.csv`: polígonos y método de recorte.
+- `referencias_comparacion.csv`: referencias usadas después de clasificar.
+- `version.json`: versión y alcance.
+
+Para cambiar el método sin perder reproducibilidad, copie `v1` a una versión nueva, edite
+los CSV y actualice la ruta `CONFIG_DIR` de los scripts. No edite manualmente las capas
+generadas.
+
+## Resultados
+
+- `outputs/universo_independiente_3_localidades/`: clasificación, capas y manifiesto.
+- `outputs/universo_refinado_santa_ana/`: refinamiento, prioridades y exclusiones de alcance.
+- `outputs/comparacion_3_localidades/`: comparación, mapa y reporte metodológico.
+- `outputs/comparacion_3_localidades/reporte_metodologico.md`: procedimiento completo,
+  reglas, conteos, comparación y limitaciones.
+
+La comparación MH/canónica se limita a Santa Ana porque no existen referencias equivalentes
+para Huejotzingo y San Martín. Estas localidades se etiquetan como
+`sin_referencia_disponible`.

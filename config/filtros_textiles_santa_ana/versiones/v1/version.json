@@ -11,7 +11,12 @@
     "palabras_clave.csv",
     "codigos_scian.csv",
     "politica_categorias.csv",
-    "reglas_clasificacion.csv"
+    "reglas_clasificacion.csv",
+    "matriz_decision.csv",
+    "localidades.csv",
+    "referencias_comparacion.csv"
+    ,"politica_refinamiento.csv"
+    ,"auditoria_6_especiales.csv"
   ],
   "method_note": "Las senales representan prioridad de revision y no evidencia de contaminacion."
 }

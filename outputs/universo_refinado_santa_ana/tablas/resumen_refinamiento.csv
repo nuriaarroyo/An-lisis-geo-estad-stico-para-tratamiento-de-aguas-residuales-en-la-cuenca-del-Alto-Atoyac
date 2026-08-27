@@ -1,0 +1,4 @@
+﻿decision_refinada,prioridad_refinada,regla_refinamiento,registros
+EXCLUIR_ALCANCE,excluir,excluir_tintoreria_comercial,2
+RETENER,alta,prioridad_hidrica_original,6
+RETENER,media,conservar_universo_productivo,306

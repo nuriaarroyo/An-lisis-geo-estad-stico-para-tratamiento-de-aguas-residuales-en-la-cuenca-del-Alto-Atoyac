@@ -1,0 +1,52 @@
+{
+  "pipeline": "clasificacion_independiente_3_localidades",
+  "created_at": "2026-08-20T20:58:36-06:00",
+  "filter_version": "v1",
+  "independence_statement": "No se leyó ninguna capa MH ni canónica durante la clasificación.",
+  "inputs": [
+    {
+      "path": "data\\raw\\denue2026\\Denue26 area estudio.shp",
+      "sha256": "67583f9c5ac9952cfa62b7b807cc2896d7b74d31c7abe188e2ebe01ce8ea1aed"
+    },
+    {
+      "path": "data\\processed\\localidades.gpkg",
+      "sha256": "b4cc35e203369600f161985aa78fb740bebadf390234a06500836c133bfc71d6"
+    },
+    {
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\version.json",
+      "sha256": "5905ded3107d20a8854f615d9b0053762072739ce377aaa21dd2b3e7ffedd05c"
+    },
+    {
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\localidades.csv",
+      "sha256": "7548def08c30e1dbe0d84d537263d1cad60a186b107bb3c40c7f85b3be73b2d2"
+    },
+    {
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\palabras_clave.csv",
+      "sha256": "b71f572d4fffec71fccfce743a06a9308667bd45994a33805b862e748b6b18bd"
+    },
+    {
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\codigos_scian.csv",
+      "sha256": "52bd879ecd7972e3a95fad67aa3ba9c5f0f3cf11f30f0880beed30267e914700"
+    },
+    {
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\reglas_clasificacion.csv",
+      "sha256": "412b369ead94d94bce6c6089804fe35f1403a8af6334990914a7a1abbd35c24a"
+    },
+    {
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\politica_categorias.csv",
+      "sha256": "d54cc2eb3ed2107ffc568c7140e2367af649437a8e9ccfe2fb5fdb0136d2450f"
+    },
+    {
+      "path": "config\\filtros_textiles_santa_ana\\versiones\\v1\\matriz_decision.csv",
+      "sha256": "7ea28617c14ebf7276d6d3bc69316993492cb5e9af4ebb01c2701ffefb0ca023"
+    }
+  ],
+  "counts": [
+    {
+      "etapa": "base_territorial",
+      "localidad_id": "santa_ana_xalmimilulco",
+      "registros": 1732
+    }
+  ],
+  "total_classified": 1732
+}

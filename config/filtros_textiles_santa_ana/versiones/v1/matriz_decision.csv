@@ -1,0 +1,13 @@
+priority,decision_rule,all_flags,any_flags,none_flags,category,decision,relevance,decisive_rule,explanation
+100,exclusion_fuerte,strong_exclusion,,,excluir_actividad_no_objetivo,EXCLUIR,excluir,exc_actividad_no_objetivo,Giro no textil o exclusión inequívoca
+98,exclusion_generica_no_textil,generic_nontextile_only,,,excluir_coincidencia_generica_no_textil,EXCLUIR,excluir,exc_coincidencia_generica_no_textil,Palabra genérica como elaboración o industrial sin código ni evidencia textil
+95,contradiccion_servicio_bodega,service_storage_contradiction,,,revisar_contradiccion_scian_texto,REVISAR,revisar,rev_contradiccion_scian_texto,SCIAN de lavandería contradicho por bodega o desperdicio; requiere revisión humana
+90,exclusion_condicional,conditional_exclusion,,commerce_overridden,excluir_comercio,EXCLUIR,excluir,exc_comercio_o_giro_no_textil,Comercio o nombre excluido sin evidencia productiva que lo supere
+80,proceso_humedo,,wet_text|wet_code,strong_exclusion,lavado_acabado_textil,INCLUIR_ALTA,alta,inc_humedo_texto,Proceso húmedo textual o SCIAN específico
+70,maquila_textil,maquila,textile_text|denim,strong_exclusion,maquila_textil,INCLUIR_MEDIA,media,base_texto_textil,Maquila combinada con evidencia textil
+60,produccion_mezclilla,,denim,strong_exclusion,produccion_textil,INCLUIR_MEDIA,media,inc_mezclilla_texto,Evidencia explícita de mezclilla o jeans
+50,produccion_textil,,textile_code|production_and_textile,strong_exclusion,produccion_textil,INCLUIR_MEDIA,media,base_saic_textil,Manufactura textil por SCIAN o texto productivo
+40,revision_lavado,generic_wash,,,revisar_lavado_generico,REVISAR,revisar,base_servicio_textil,Lavado o servicio genérico sin contexto suficiente
+30,revision_maquila,maquila,,,revisar_maquila_sola,REVISAR,revisar,base_texto_textil,Maquila sin evidencia textil suficiente
+20,revision_textil,,textile_text|has_alert_role,,revisar_textil_ambiguo,REVISAR,revisar,base_texto_textil,Señal textil ambigua
+0,sin_evidencia,,,,fuera_filtro,FUERA,fuera,sin_regla_suficiente,Sin evidencia suficiente

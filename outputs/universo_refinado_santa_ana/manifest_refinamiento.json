@@ -1,0 +1,12 @@
+{
+  "pipeline": "refinamiento_y_priorizacion_santa_ana",
+  "created_at": "2026-08-20T23:05:09-06:00",
+  "stage1_manifest_sha256": "3fc3c4c502bfd4f9c7aa73518c63cded37366d50d241fe8905eb454d7cbeb7a3",
+  "policy_sha256": "d84d6d796ae5969cdc300649a5646c19ea8b71de04a71bc98f396e60a434d05c",
+  "input_universe": 314,
+  "retained_from_broad": 312,
+  "included_from_mh_review": 2,
+  "retained_final_before_special_audit": 314,
+  "review": 0,
+  "excluded_scope": 2
+}

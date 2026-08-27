@@ -9,3 +9,5 @@ inc_humedo_texto,inclusion_estricta,nombre razon social y actividad,Palabra del 
 inc_humedo_scian,inclusion_estricta,codigo SCIAN,Codigo marcado como wet_process,Actividad compatible con lavanderia tintoreria o acabado textil.
 inc_mezclilla_texto,inclusion_estricta,nombre razon social y actividad,Palabra del grupo denim,Senal explicita de trabajo con mezclilla o jeans.
 inc_material_textil,inclusion_estricta,codigo SCIAN y texto,SCIAN 313 mas palabra material sin exclusion,Incluye produccion de material textil y evita productos terminados no objetivo.
+rev_contradiccion_scian_texto,revision,codigo SCIAN y texto,SCIAN 8122 combinado con bodega o desperdicio,Evita excluir automáticamente un servicio de lavandería cuando el nombre sugiere almacenamiento o residuos.
+exc_coincidencia_generica_no_textil,depuracion,codigo SCIAN y texto,Solo aparecen palabras generales como elaboracion industria o industrial y el SCIAN no pertenece al universo textil,Elimina falsos positivos de alimentos construccion quimica acero y otros sectores no textiles.

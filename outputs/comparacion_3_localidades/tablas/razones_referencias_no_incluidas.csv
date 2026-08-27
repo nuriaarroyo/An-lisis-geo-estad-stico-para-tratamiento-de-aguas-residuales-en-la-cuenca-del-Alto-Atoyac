@@ -1,0 +1,24 @@
+﻿id_denue,nombre,en_mh,en_canonico,estado_fuente,razon_no_inclusion
+3327188,13,True,False,ausente_denue_2026,AUSENTE_DENUE_2026: el ID de referencia no existe en la fuente DENUE 2026
+6272576,LAVADOS NACIONALES,True,False,fuera_localidad_administrativa,"FUERA_AREA: localidad=Los Encinos, cve_loc=0093; Santa Ana usa cve_loc=0029"
+10086701,LAVANDERIA MEXICO,False,True,clasificado_no_incluido,:  / 
+10451408,STONE LAV,False,True,clasificado_no_incluido,INCLUIR_ALTA: lavado_acabado_textil / inc_humedo_texto
+10801837,LAVANDERIA SIN NOMBRE,False,True,clasificado_no_incluido,:  / 
+10876257,LAVANDERIA MA & MA,False,True,clasificado_no_incluido,:  / 
+11081907,BODEGA SIN NOMBRE,False,True,clasificado_no_incluido,:  / 
+11096797,LAVADOS Y PROCESOS FLORES,False,True,ausente_denue_2026,AUSENTE_DENUE_2026: el ID de referencia no existe en la fuente DENUE 2026
+11149643,LAVANDERIA LOS SOLARES,False,True,clasificado_no_incluido,:  / 
+11183668,BODEGA DE DESPERDICIO,False,True,clasificado_no_incluido,:  / 
+3326066,LAVANDERIA LAVAPLUS,False,True,clasificado_no_incluido,:  / 
+3427213,LAVANDERIA MAGALY,False,True,clasificado_no_incluido,:  / 
+3427228,TINTORERIA LIZ,False,True,clasificado_no_incluido,EXCLUIR_ALCANCE: excluir_tintoreria_comercial / Servicio comercial de tintorería sobre prendas terminadas; fuera del foco productivo y de procesamiento de mezclilla
+3427244,TINTORERIA LIZ,False,True,clasificado_no_incluido,EXCLUIR_ALCANCE: excluir_tintoreria_comercial / Servicio comercial de tintorería sobre prendas terminadas; fuera del foco productivo y de procesamiento de mezclilla
+3427993,LAVANDERIA SIN NOMBRE,False,True,clasificado_no_incluido,:  / 
+3428103,LAVANDERIA NOVALAV,False,True,clasificado_no_incluido,:  / 
+3428125,LAVANDERIA SANTA CECILIA,False,True,clasificado_no_incluido,:  / 
+3428174,LAVANDERIA ALEX,False,True,clasificado_no_incluido,:  / 
+3428283,LAVANDERIA LAVAMEXXAL,False,True,clasificado_no_incluido,:  / 
+8089261,LAVANDERIA REY,False,True,clasificado_no_incluido,:  / 
+8089562,LAVANDERIA SANTY,False,True,clasificado_no_incluido,:  / 
+8111334,VAQUIMTEX PRODUCTOS PARA LAVANDERIA,False,True,clasificado_no_incluido,:  / 
+8776900,LAVANDERIA MARY,False,True,clasificado_no_incluido,:  / 

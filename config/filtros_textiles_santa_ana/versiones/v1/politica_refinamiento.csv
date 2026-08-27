@@ -1,0 +1,5 @@
+priority,refinement_rule,all_flags,any_flags,none_flags,refined_decision,refined_priority,reason
+100,excluir_tintoreria_comercial,is_scian_812210|name_tintoreria,,name_industrial|name_proceso_productivo,EXCLUIR_ALCANCE,excluir,Servicio comercial de tintorería sobre prendas terminadas; fuera del foco productivo y de procesamiento de mezclilla
+90,revisar_tintoreria_industrial,is_scian_812210|name_tintoreria,name_industrial|name_proceso_productivo,,REVISAR,revision,Tintorería con señal productiva o industrial que requiere comprobación
+80,prioridad_hidrica_original,original_incluir_alta,,,RETENER,alta,Proceso húmedo explícito conservado desde la clasificación de giro
+0,conservar_universo_productivo,,,,RETENER,media,Actividad perteneciente al universo productivo amplio sin señal húmeda prioritaria

@@ -1,0 +1,4 @@
+localidad_id,nombre_salida,poligono_id,metodo_seleccion,campo_seleccion,valor_seleccion,activa,nota
+huejotzingo,Huejotzingo,210740001,atributo,cve_loc,0001,false,Localidad desactivada temporalmente
+santa_ana_xalmimilulco,Santa Ana Xalmimilulco,210740029,atributo,cve_loc,0029,true,Selección administrativa DENUE; evita pérdidas por desacuerdo con el polígono
+san_martin_texmelucan,San Martín Texmelucan,211320001,atributo,cve_loc,0001,false,Localidad desactivada temporalmente

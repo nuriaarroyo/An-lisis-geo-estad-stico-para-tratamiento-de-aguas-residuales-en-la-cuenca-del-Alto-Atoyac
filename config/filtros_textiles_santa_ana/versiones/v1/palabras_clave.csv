@@ -200,3 +200,18 @@ kw198,computadoras,non_textile|excluded_activity,electronica,exclusion,alta,excl
 kw199,servilletas,material_exclusion|excluded_name,producto_terminado,exclusion,media,exclusion,Evita falso positivo de material textil
 kw200,recuerdos,material_exclusion|excluded_name,producto_terminado,exclusion,media,exclusion,Evita falso positivo de material textil
 kw201,bodegas,excluded_name,almacenamiento,exclusion,media,exclusion,Almacen sin proceso declarado
+kw202,blanqueo,candidate_textile|wash_generic|wet_specific,acabado_textil,principal,alta,inclusion,Proceso humedo oxidante explicito
+kw203,blanqueamiento,candidate_textile|wash_generic|wet_specific,acabado_textil,principal,alta,inclusion,Proceso humedo oxidante explicito
+kw204,mercerizado,candidate_textile|wash_generic|wet_specific,mercerizado,principal,alta,inclusion,Proceso humedo textil con sosa caustica y lavados
+kw205,mercerizacion,candidate_textile|wash_generic|wet_specific,mercerizado,principal,alta,inclusion,Proceso humedo textil con sosa caustica y lavados
+kw206,proceso enzimatico,candidate_textile|wash_generic|wet_specific,acabado_quimico,principal,alta,inclusion,Acabado humedo con enzimas
+kw207,enzimas,candidate_textile|wash_generic|wet_specific,acabado_quimico,principal,alta,inclusion,Insumo caracteristico de acabado humedo
+kw208,sosa caustica,candidate_textile|wash_generic|wet_specific,acabado_quimico,principal,alta,inclusion,Reactivo fuerte de proceso humedo textil
+kw209,colorante,candidate_textile|wash_generic|wet_specific,tenido,principal,alta,inclusion,Insumo explicito de tenido textil
+kw210,bano quimico,candidate_textile|wash_generic|wet_specific,acabado_quimico,principal,alta,inclusion,Bano de proceso quimico textil
+kw211,acabado quimico,candidate_textile|wash_generic|wet_specific,acabado_quimico,principal,alta,inclusion,Acabado quimico explicito
+kw212,suavizado quimico,candidate_textile|wash_generic|wet_specific,acabado_quimico,principal,alta,inclusion,Acabado humedo con auxiliares quimicos
+kw213,neutralizado,candidate_textile|wash_generic|wet_specific,acabado_quimico,principal,alta,inclusion,Etapa humeda posterior a tratamiento quimico
+kw214,centrifugado,candidate_textile|wash_generic|wet_specific,acabado_humedo,principal,alta,inclusion,Extraccion de agua posterior a proceso humedo
+kw215,enjuague,candidate_textile|wash_generic|wet_specific,acabado_humedo,principal,alta,inclusion,Etapa de lavado posterior a tratamiento
+kw216,oxidante,candidate_textile|wash_generic|wet_specific,acabado_quimico,principal,alta,inclusion,Reactivo de blanqueo o acabado humedo

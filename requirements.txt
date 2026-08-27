@@ -1,9 +1,6 @@
-pandas
 geopandas
-shapely
-pyogrio
-fiona
 matplotlib
 numpy
-openpyxl
-plotly
+pandas
+pyogrio
+shapely

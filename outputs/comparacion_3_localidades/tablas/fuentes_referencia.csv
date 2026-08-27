@@ -1,0 +1,3 @@
+﻿referencia_id,nombre,localidad_id,ruta,campo_id,filtro_columna,filtro_valor,activa,nota,estado,registros
+mh_filtrado,MH filtrado,santa_ana_xalmimilulco,data/processed/capa_maryhelen/capa MH.shp,ID DENUE,,,true,Capa de referencia disponible únicamente para Santa Ana,DISPONIBLE,43
+canonico_original,Universo canónico original,santa_ana_xalmimilulco,outputs/santa_ana_xalmimilulco/capas_qgis/comparacion_3_universos.gpkg,_id_key,en_universo_canonico_original,true,true,Se extrae la membresía canónica conservada en la comparación histórica,DISPONIBLE,38
