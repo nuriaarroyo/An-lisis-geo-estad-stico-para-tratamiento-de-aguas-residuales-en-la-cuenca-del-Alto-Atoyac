@@ -33,3 +33,4 @@ docs/*.synctex.gz
 .DS_Store
 Thumbs.db
 .vscode/
+atoyac/.edge_test_cluster_map/

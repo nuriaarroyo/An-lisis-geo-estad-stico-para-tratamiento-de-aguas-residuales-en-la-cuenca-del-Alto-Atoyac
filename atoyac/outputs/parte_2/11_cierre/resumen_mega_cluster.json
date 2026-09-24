@@ -1,0 +1,14 @@
+{
+  "cluster_principal": 20,
+  "n_total": 1997,
+  "n_dentro_cuenca": 1997,
+  "n_municipios": 6,
+  "n_localidades": 14,
+  "persistencia_media": 0.9985978968452679,
+  "probabilidad_media": 0.990121590438606,
+  "subnucleos_diagnosticos": 18,
+  "pct_ruido_diagnostico_interno": 44.51677516274412,
+  "hexagonos_ocupados_250m": 867,
+  "max_establecimientos_hexagono": 13,
+  "nota": "Los subnúcleos son diagnósticos y no sustituyen la membresía territorial principal."
+}

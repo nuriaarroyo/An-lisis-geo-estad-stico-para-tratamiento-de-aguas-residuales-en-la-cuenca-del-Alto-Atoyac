@@ -1,0 +1,11 @@
+﻿metrica,valor
+registros_municipales_deteccion,4365
+registros_dentro_cuenca,4010
+registros_fuera_cuenca,355
+ids_duplicados_municipal,0
+ids_duplicados_cuenca,0
+coordenadas_validas,4365
+municipios_deteccion,24
+localidades_deteccion,94
+municipios_dentro_cuenca,20
+localidades_dentro_cuenca,86

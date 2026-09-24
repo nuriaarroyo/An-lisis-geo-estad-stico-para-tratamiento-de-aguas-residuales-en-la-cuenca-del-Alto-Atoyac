@@ -1,0 +1,12 @@
+{
+  "solucion_principal": "hdbscan__min_cluster_size-10__min_samples-20__cluster_selection_method-eom",
+  "referencia_dbscan": "dbscan__eps_m-1600__min_samples-25",
+  "sensibilidad": [
+    "hdbscan__min_cluster_size-20__min_samples-20__cluster_selection_method-eom",
+    "hdbscan__min_cluster_size-30__min_samples-20__cluster_selection_method-eom",
+    "hdbscan__min_cluster_size-20__min_samples-10__cluster_selection_method-eom",
+    "hdbscan__min_cluster_size-30__min_samples-10__cluster_selection_method-eom"
+  ],
+  "criterio": "Puntaje reproducible construido sólo con estabilidad de partición, pertenencia, ruido, mega-clusters, número de clusters y chaining proxy.",
+  "advertencia": "La solución principal es operativa y no se interpreta como una partición territorial verdadera única."
+}

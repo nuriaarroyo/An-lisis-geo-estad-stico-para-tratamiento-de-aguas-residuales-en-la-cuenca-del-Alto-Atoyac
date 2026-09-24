@@ -1,0 +1,12 @@
+﻿metrica,valor,alerta
+registros_legacy_observados,78.0,
+registros_legacy_esperados,78.0,
+diferencia_legacy_esperado_observado,0.0,
+registros_actuales,68.0,
+presentes_en_ambos,28.0,
+solo_legacy,50.0,
+solo_actual,40.0,
+union_de_ids,118.0,
+porcentaje_legacy_recuperado,35.9,
+porcentaje_actual_ya_en_legacy,41.18,
+similitud_jaccard_porcentaje,23.73,

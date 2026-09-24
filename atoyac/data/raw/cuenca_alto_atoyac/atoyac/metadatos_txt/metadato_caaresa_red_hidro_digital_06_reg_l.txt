@@ -1,0 +1,147 @@
+Metadato estructurado conforme a la Norma Técnica Mexicana para la Elaboración de Metadatos Geográficos 
+
+
+* SECCIÓN 1. Identificación del conjunto de datos espaciales o producto 
+
+* SUBSECCIÓN 1.1. Identificación del conjunto de datos espaciales o producto
+- Ecosistema Nacional Informático (ENI): Agentes Tóxicos y Procesos Contaminantes.
+- Capítulo ENI: Región de Emergencia Sanitaria y Ambiental: Cuenca del Alto Atoyac.
+- Subcapítulo ENI: no aplica.
+- Título del conjunto de datos espaciales o producto: Red hidrográfica de la Cuenca del Alto Atoyac y su área de influencia 2006.
+- Descripción del conjunto de datos espaciales o producto: el archivo contiene la red hidrográfica de la Cuenca del Alto Atoyac (CAA), así como para su área de influencia, conformada por las cuencas Bajo Atoyac, Nexapa y Río Salado. Datos de origen Instituto Nacional de Estadística y Geografía (INEGI), 2006.
+- Nombre de archivo: caaresa_red_hidro_digital_06_reg_l
+
+* SUBSECCIÓN 1.2. Enfoque específico del conjunto de datos o producto
+- Propósito y uso específico: promover el acceso libre a datos geoespaciales estructurados con estándares de calidad e interoperabilidad, para contribuir a la generación e intercambio de conocimiento mediante su uso en temas de recursos, agua y políticas públicas. El propósito y uso específico de este producto se exponen de forma enunciativa, más no limitativa.
+- Tema principal del conjunto de datos espaciales o producto: aguas interiores.
+- Grupo de datos del conjunto de datos espaciales o producto: recursos naturales y clima.
+- Palabras clave: red hidrográfica, hidrografía, hidrología, arroyos, canal, drenajes, ríos, corrientes hidrológicas, cuenca, Alto Atoyac, recursos, INEGI, Instituto Nacional de Estadística y Geografía.
+
+* SUBSECCIÓN 1.3. Parámetros del conjunto de datos o producto
+- Idioma del conjunto de datos espaciales o producto: español.
+- Forma de presentación de los datos espaciales: mapa digital.
+- URL del recurso: https://gema.conahcyt.mx/
+- Frecuencia de mantenimiento y actualización: no programado.
+- Codificación: UTF-8.
+- Estructura de datos: vectorial.
+- Tipo de geometría: líneas.
+- Tamaño de archivo: 4.79 Mb.
+- Formato: gpkg y geojson (complementario csv y xlsx).
+
+
+* SECCIÓN 2. Fechas relacionadas con el conjunto de datos espaciales o productos 
+
+- Fecha de referencia del conjunto de datos espaciales o producto: 09-2023.
+- Tipo de fecha: revisión - identificador de la fecha que especifica cuándo el recurso fue examinado o reexaminado y mejorado o corregido.
+- Fecha de creación de los insumos: 2006.
+- Nombre del insumo: Red Hidrográfica Digital de México escala 1:250,000, Edición 1.0.
+
+
+* SECCIÓN 3. Unidad del estado responsable del conjunto de datos espaciales o productos 
+
+- Nombre de la organización: Consejo Nacional de Humanidades, Ciencias y Tecnologías (Conahcyt).
+- Enlace en línea: https://conahcyt.mx/
+
+
+* SECCIÓN 4. Localización geográfica del conjunto de datos espaciales o productos 
+
+- Coordenadas máximas y mínimas: (-99.524687746825, -96.9600060394701, 17.4071885909207, 19.7069281388322).
+
+
+* SECCIÓN 5. Sistema de referencia 
+
+- Unidades de coordenadas: grados decimales.
+- Sistema de referencia de coordenadas: EPSG:4326.
+
+
+* SECCIÓN 6. Calidad de la información (linaje) 
+
+- Linaje: la capa original de información se descargó del sitio del INEGI. Posteriormente, se seleccionaron y extrajeron las geometrías que se sobreponen con la Cuenca del Alto Atoyac y su área de influencia.
+- Pasos del proceso: (A) Se descargó la capa "Red Hidrográfica Digital 2006" del INEGI. (B) Se realizó un corte de la red a partir de la cuenca del Alto Atoyac y su área de influencia. (C) Se generó el campo 'g_id'. (D) Los valores nulos se llenaron con "-999" con fines de visualización.
+- Fuente: INEGI - https://www.inegi.org.mx/app/biblioteca/ficha.html?upc=889463598428
+
+
+* SECCIÓN 7. Entidades y atributos 
+
+- Detalle de entidades y atributos: el conjunto de datos cuenta con 11 campos y 3,136 objetos geográficos.
+
+
+* SECCIÓN 8. Distribución 
+
+- Tipo de licenciamiento: bajo los términos de libre uso MX de los Datos Abiertos del gobierno de México, ver https://datos.gob.mx/libreusomx
+
+
+* SECCIÓN 9. Información del contacto para los metadatos 
+
+- Nombre de la organización: Consejo Nacional de Humanidades, Ciencias y Tecnologías
+			     Coordinación de Repositorios, Investigación y Prospectiva
+- Correo electrónico de contacto: dadsig@conahcyt.mx
+
+- Fecha de los metadatos: 27-09-2023.
+
+
+################################################################ 
+
+Notas u observaciones: los registros con 'g_id' 867 y 3136 representan canales subterráneos, estos se digitalizaron mediante fotointerpretación y conocimiento de la zona de estudio. Por lo tanto, no están incluidos en la Red Hidrográfica Digital de INEGI.
+                       Esta capa forma parte de los resultados obtenidos en el estudio realizado para la Cuenca del Alto Atoyac. Para saber más se puede consultar el apartado referente al análisis geoespacial en el informe estratégico disponible en: https://toxicologia.conahcyt.mx/resa-atoyac/
+                       El análisis de la Cuenca del Alto Atoyac se extendió hacia las tres cuencas contiguas en el estado de Puebla y a esta región se le llamó "Cuenca del Alto Atoyac (CAA) y su área de influencia", considerando la conectividad hidráulica que las une y por lo tanto la extensión que llega a tener la contaminación transportada por el río Atoyac. Las tres cuencas contiguas son: Bajo Atoyac, Nexapa y Río Salado.
+                       Los registros con valor "0" en el campo 'orden' corresponden a canales, mientras que aquellos con valor del 1 al 7 representan a los ríos. Esta columna se puede considerar para una clasificación general de ríos y canales.
+	               Los archivos complementarios csv y xlsx cuentan con información sobre la red hidrográfica por cuenca, por lo que las variables son distintas a las de los archivos geoespaciales (geojson y gpkg). Los descriptores de campos y los pasos del proceso de los dos archivos tabulares se encuentran al final del presente metadato.
+
+################################################################ 
+
+--------------------------------------------
+DICCIONARIO DE CAMPOS O VARIABLES
+
+campo: 'g_id'
+descripción: identificador único consecutivo
+
+campo: 'f_node'
+descripción: identificador de nodo inicial
+
+campo: 't_node'
+descripción: identificador de nodo final
+
+campo: 'longitud'
+descripción: longitud de la línea en metros
+
+campo: 'red_hidro'
+descripción: sin referencia
+
+campo: 'fc'
+descripción: código de rasgo
+
+campo: 'nombre'
+descripción: designación con que se identifica la corriente
+
+campo: 'orden'
+descripción: magnitud de orden (clasificación de Strahler)
+
+campo: 'c_desapa'
+descripción: sin referencia
+
+campo: 'tipo'
+descripción: indica si la corriente es real o es un flujo modelado
+
+campo: 'ter_gen'
+descripción: término general (arroyo, canal y río)
+
+--------------------------------------------
+ARCHIVOS COMPLEMENTARIOS CSV Y XLSX
+
+- Pasos del proceso (A) Las geometrías de la capa se cortaron con base en los límites de las cuencas de la capa "Cuenca del Alto Atoyac y su área de influencia 2021" (también disponible en Gema), con el fin de identificar las corrientes que pertenecen a cada cuenca. Se organizaron los datos haciendo una sumatoria de los valores del campo 'longitud' por cada valor distinto del campo 'nom_cuenca' para obtener el total de metros de corrientes de agua por cuenca hidrológica. (B) Se filtraron los resultados por el campo 'tipo' para obtener el total de metros de corrientes de agua por tipo (real y virtual) y cuenca hidrológica. (C) Para el registro con 'g_id'=3136, que se digitalizó manualmente, se obtuvo su longitud utilizando la función "$length" del software QGIS 3.22.8 en el sistema de referencia EPSG:4326. Esto se realizó tanto para el segmento de línea dentro de la cuenca del Río Nexapa como para la del Alto Atoyac. Luego, ambas longitudes se sumaron al total de corrientes de la cuenca correspondiente. (D) Los valores resultantes se transformaron de metros a kilómetros. (E) Se agregó el campo 'g_id'
+
+- Diccionario de campos y variables
+
+campo: 'g_id'
+descripción: identificador único consecutivo
+
+campo: 'nom_cuenca'
+descripción: nombre de la cuenca
+
+campo: 'tipo_real'
+descripción: longitud total de corrientes de tipo real por cuenca, expresada en kilómetros
+
+campo: 'tipo_virtual'
+descripción: longitud total de corrientes de tipo virtual o modelada por cuenca, expresada en kilómetros
+

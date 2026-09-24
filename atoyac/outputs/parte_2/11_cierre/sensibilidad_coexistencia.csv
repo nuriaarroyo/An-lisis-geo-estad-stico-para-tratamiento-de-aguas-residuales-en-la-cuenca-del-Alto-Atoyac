@@ -1,0 +1,7 @@
+﻿escenario_id,rol,n_clusters_interiores,max_pct_lavanderias,clusters_lavanderias_80pct,clusters_manufactura_80pct,clusters_coexistencia_mixta
+hdbscan__min_cluster_size-10__min_samples-20__cluster_selection_method-eom,PRINCIPAL,18,59.339008512769155,0,12,6
+dbscan__eps_m-1600__min_samples-25,REFERENCIA_DBSCAN,9,58.21854912764004,0,5,4
+hdbscan__min_cluster_size-20__min_samples-20__cluster_selection_method-eom,SENSIBILIDAD,17,59.339008512769155,0,12,5
+hdbscan__min_cluster_size-30__min_samples-20__cluster_selection_method-eom,SENSIBILIDAD,15,59.339008512769155,0,10,5
+hdbscan__min_cluster_size-20__min_samples-10__cluster_selection_method-eom,SENSIBILIDAD,20,58.93462469733656,0,13,7
+hdbscan__min_cluster_size-30__min_samples-10__cluster_selection_method-eom,SENSIBILIDAD,17,58.93462469733656,0,10,7

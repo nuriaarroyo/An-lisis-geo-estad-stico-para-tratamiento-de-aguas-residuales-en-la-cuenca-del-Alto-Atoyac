@@ -1,0 +1,281 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usetheme{default}
+\definecolor{AtoyacBlue}{HTML}{2166AC}
+\definecolor{AtoyacRed}{HTML}{B2182B}
+\setbeamercolor{structure}{fg=AtoyacBlue}
+\setbeamercolor{frametitle}{fg=white,bg=AtoyacBlue}
+\setbeamertemplate{navigation symbols}{}
+\title{Establecimientos textiles con relevancia hídrica}
+\subtitle{Regla estricta de lavanderías — sólo DENUE}
+\author{Procesamiento reproducible con DENUE 2026}
+\date{11 de septiembre de 2026}
+\begin{document}
+\begin{frame}\titlepage\end{frame}
+\begin{frame}{Universos construidos}
+\centering
+\begin{tabular}{lr}\toprule
+Producto & Registros\\\midrule
+DENUE estatal descargado & 15,956\\
+Universo textil en municipios solicitados & 4,365\\
+Universo hídrico en municipios solicitados & 476\\
+Universo hídrico dentro de la cuenca & 469\\
+Evidencia explícita SI dentro de cuenca & 41\\
+Evidencia REVISAR dentro de cuenca & 428\\
+Registros MH revisados & 0\\
+Registros agregados gracias a MH & 0\\
+\bottomrule\end{tabular}
+\vfill
+Los mapas muestran el recorte espacial real por el polígono de cuenca. Los HTML homónimos conservan hover y navegación interactiva.
+\end{frame}
+\begin{frame}{Criterio metodológico}
+\begin{itemize}
+\item Inclusión sectorial estructurada: SCIAN 313, 314 y 315.
+\item SCIAN 812210 sólo entra con una señal adicional de actividad textil, mezclilla, proceso húmedo, producción o maquila.
+\item Señales positivas: nombre y razón social; descripción SCIAN sólo para exclusiones.
+\item Los registros MH son SI por trabajo de campo y tienen prioridad sobre la decisión automática.
+\item Los demás registros usan SI, REVISAR o SIN EVIDENCIA según reglas DENUE auditables.
+\item La distancia se calcula en metros a la red hidrográfica recortada por la cuenca.
+\item La agregación por localidad usa el centro medio de sus establecimientos porque no se proporcionaron polígonos de localidad.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Estructura de las unidades pequeñas}
+\begin{itemize}
+\item De los 469 establecimientos del universo hídrico,
+419 (89.3\%) reportan de 0 a 5 personas.
+\item Otros 28 (6.0\%) reportan de 6 a 10 personas.
+\item La estructura observada está dominada por microunidades; el conteo no representa empleo total ni volumen de agua.
+\item Los registros MH sin estrato DENUE se conservan, pero no se asignan artificialmente a un tamaño.
+\end{itemize}
+\end{frame}
+\begin{frame}{Municipios con mayor número de establecimientos}
+\centering\small
+\begin{tabular}{lr}\toprule Municipio & Establecimientos\\\midrule
+Puebla & 283\\
+Huejotzingo & 57\\
+San Andrés Cholula & 32\\
+San Pedro Cholula & 29\\
+San Matías Tlalancaleca & 21\\
+Cuautlancingo & 12\\
+San Martín Texmelucan & 11\\
+Amozoc & 10\\
+Tlahuapan & 4\\
+Coronango & 3\\
+\bottomrule\end{tabular}
+\end{frame}
+\begin{frame}{Localidades con mayor número de establecimientos}
+\centering\scriptsize
+\begin{tabular}{lr}\toprule Localidad (municipio) & Establecimientos\\\midrule
+Heroica Puebla de Zaragoza (Puebla) & 282\\
+Santa Ana Xalmimilulco (Huejotzingo) & 48\\
+Cholula de Rivadavia (San Pedro Cholula) & 22\\
+San Matías Tlalancaleca (San Matías Tlalancaleca) & 21\\
+San Bernardino Tlaxcalancingo (San Andrés Cholula) & 21\\
+San Andrés Cholula (San Andrés Cholula) & 11\\
+San Martín Texmelucan de Labastida (San Martín Texmelucan) & 9\\
+Huejotzingo (Huejotzingo) & 8\\
+Santiago Momoxpan (San Pedro Cholula) & 6\\
+San Juan Cuautlancingo (Cuautlancingo) & 6\\
+\bottomrule\end{tabular}
+\end{frame}
+\begin{frame}{Dónde se localizan los establecimientos SI}
+\centering\scriptsize
+\begin{tabular}{lr}\toprule Localidad (municipio) & Casos SI\\\midrule
+Heroica Puebla de Zaragoza (Puebla) & 19\\
+Santa Ana Xalmimilulco (Huejotzingo) & 6\\
+Santiago Momoxpan (San Pedro Cholula) & 3\\
+Santa María Moyotzingo (San Martín Texmelucan) & 2\\
+San Matías Tlalancaleca (San Matías Tlalancaleca) & 2\\
+Cholula de Rivadavia (San Pedro Cholula) & 2\\
+Sanctorum (Cuautlancingo) & 1\\
+Casa Blanca (Amozoc) & 1\\
+Los Encinos (Huejotzingo) & 1\\
+Analco de Ponciano Arriaga (Santa Cruz Analco) (San Salvador el Verde) & 1\\
+San Lucas el Grande (San Salvador el Verde) & 1\\
+San Miguel Tianguistenco (Tlahuapan) & 1\\
+San Rafael Ixtapalucan (Tlahuapan) & 1\\
+\bottomrule\end{tabular}
+\vfill
+De los 41 casos SI, 0 provienen de trabajo de campo MH y
+41 de evidencia explícita en DENUE. La fuente queda identificada por registro.
+\end{frame}
+\begin{frame}{Casos SI más cercanos a la red hidrográfica}
+\centering\scriptsize
+\begin{tabular}{p{0.48\textwidth}p{0.27\textwidth}r}\toprule
+Establecimiento & Localidad & Distancia\\\midrule
+ALILTEX & Heroica Puebla de Zaragoza & 29 m\\
+HABILITACIONES TEXTILES & Heroica Puebla de Zaragoza & 39 m\\
+LAVANDERIA DE REYES & San Lucas el Grande & 45 m\\
+ACABADOS ANUAR & Heroica Puebla de Zaragoza & 47 m\\
+ACABADOS ANUAR & Heroica Puebla de Zaragoza & 52 m\\
+COMPAÑIA TEXTIL SANTA BARBARA & Heroica Puebla de Zaragoza & 104 m\\
+ACABADOS RIO TEJO & Heroica Puebla de Zaragoza & 260 m\\
+SERVICIO DE LAVADO DE ROPA MR CLEAN & Cholula de Rivadavia & 292 m\\
+\bottomrule\end{tabular}
+\vfill
+La cercanía es un indicador espacial de atención, no evidencia de descarga al cauce.
+\end{frame}
+\begin{frame}{Cuenca e información hídrica}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/01_cuenca_informacion_hidrica.png}
+\end{frame}
+
+\begin{frame}{Universo hídrico dentro de la cuenca}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/02_cuenca_establecimientos_hidricos.png}
+\end{frame}
+
+\begin{frame}{Cercanía de establecimientos a la red}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/03_establecimientos_distancia_rio.png}
+\end{frame}
+
+\begin{frame}{Confirmación de campo MH y evidencia DENUE}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/04_establecimientos_confirmados_si.png}
+\end{frame}
+
+\begin{frame}{Concentración por municipio}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/05_conteo_municipal.png}
+\end{frame}
+
+\begin{frame}{Concentración por localidad}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/06_conteo_localidad.png}
+\end{frame}
+
+\begin{frame}{07 01 0 A 5 Personas Municipio}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/07_01_0_a_5_personas_municipio.png}
+\end{frame}
+
+\begin{frame}{07 01 0 A 5 Personas Localidad}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/07_01_0_a_5_personas_localidad.png}
+\end{frame}
+
+\begin{frame}{07 02 6 A 10 Personas Municipio}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/07_02_6_a_10_personas_municipio.png}
+\end{frame}
+
+\begin{frame}{07 02 6 A 10 Personas Localidad}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/07_02_6_a_10_personas_localidad.png}
+\end{frame}
+
+\begin{frame}{08 01 Municipio Amozoc}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_01_municipio_amozoc.png}
+\end{frame}
+
+\begin{frame}{08 02 Municipio Calpan}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_02_municipio_calpan.png}
+\end{frame}
+
+\begin{frame}{08 03 Municipio Chiautzingo}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_03_municipio_chiautzingo.png}
+\end{frame}
+
+\begin{frame}{08 04 Municipio Coronango}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_04_municipio_coronango.png}
+\end{frame}
+
+\begin{frame}{08 05 Municipio Cuautlancingo}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_05_municipio_cuautlancingo.png}
+\end{frame}
+
+\begin{frame}{08 06 Municipio Domingo Arenas}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_06_municipio_domingo_arenas.png}
+\end{frame}
+
+\begin{frame}{08 07 Municipio Huejotzingo}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_07_municipio_huejotzingo.png}
+\end{frame}
+
+\begin{frame}{08 08 Municipio Juan C Bonilla}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_08_municipio_juan_c_bonilla.png}
+\end{frame}
+
+\begin{frame}{08 09 Municipio Ocoyucan}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_09_municipio_ocoyucan.png}
+\end{frame}
+
+\begin{frame}{08 10 Municipio Puebla}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_10_municipio_puebla.png}
+\end{frame}
+
+\begin{frame}{08 11 Municipio San Andres Cholula}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_11_municipio_san_andres_cholula.png}
+\end{frame}
+
+\begin{frame}{08 12 Municipio San Felipe Teotlalcingo}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_12_municipio_san_felipe_teotlalcingo.png}
+\end{frame}
+
+\begin{frame}{08 13 Municipio San Gregorio Atzompa}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_13_municipio_san_gregorio_atzompa.png}
+\end{frame}
+
+\begin{frame}{08 14 Municipio San Martin Texmelucan}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_14_municipio_san_martin_texmelucan.png}
+\end{frame}
+
+\begin{frame}{08 15 Municipio San Matias Tlalancaleca}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_15_municipio_san_matias_tlalancaleca.png}
+\end{frame}
+
+\begin{frame}{08 16 Municipio San Miguel Xoxtla}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_16_municipio_san_miguel_xoxtla.png}
+\end{frame}
+
+\begin{frame}{08 17 Municipio San Pedro Cholula}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_17_municipio_san_pedro_cholula.png}
+\end{frame}
+
+\begin{frame}{08 18 Municipio San Salvador El Verde}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_18_municipio_san_salvador_el_verde.png}
+\end{frame}
+
+\begin{frame}{08 19 Municipio Tlahuapan}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_19_municipio_tlahuapan.png}
+\end{frame}
+
+\begin{frame}{08 20 Municipio Tlaltenango}
+\centering
+\includegraphics[width=0.96\textwidth,height=0.82\textheight,keepaspectratio]{../outputs/cuenca_alto_atoyac_puebla_estricto_sin_mh/maps/png/08_20_municipio_tlaltenango.png}
+\end{frame}
+
+\begin{frame}{Notas de interpretación}
+\begin{itemize}
+\item La concentración representa conteos DENUE, no tasas ni intensidad de descarga.
+\item Cercanía a un río no demuestra conexión hidráulica, descarga o causalidad ambiental.
+\item El tamaño corresponde al estrato de personal ocupado reportado por DENUE.
+\item Los mapas municipales usan polígonos recortados por la cuenca; los de localidad son agregaciones puntuales.
+\end{itemize}
+\end{frame}
+\end{document}

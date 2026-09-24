@@ -1,0 +1,12 @@
+﻿metrica,valor,alerta
+registros_legacy_observados,55.0,"Se esperaban 78, pero el archivo contiene 55."
+registros_legacy_esperados,78.0,
+diferencia_legacy_esperado_observado,23.0,
+registros_actuales,73.0,
+presentes_en_ambos,31.0,
+solo_legacy,24.0,
+solo_actual,42.0,
+union_de_ids,97.0,
+porcentaje_legacy_recuperado,56.36,
+porcentaje_actual_ya_en_legacy,42.47,
+similitud_jaccard_porcentaje,31.96,

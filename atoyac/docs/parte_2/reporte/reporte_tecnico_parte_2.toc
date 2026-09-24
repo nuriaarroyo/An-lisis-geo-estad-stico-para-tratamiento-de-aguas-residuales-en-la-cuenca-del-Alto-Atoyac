@@ -1,0 +1,24 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Hallazgo de auditoría y criterio de no modificación}{2}{section.1}%
+\contentsline {section}{\numberline {2}Diseño metodológico paso a paso}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Preparación espacial}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Diagnósticos preliminares}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Grillas completas}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Evaluación y referencia}{2}{subsection.2.4}%
+\contentsline {section}{\numberline {3}ARI: definición, comparaciones y sensibilidad a grupos grandes}{3}{section.3}%
+\contentsline {section}{\numberline {4}Estabilidad de membresía entre especificaciones}{3}{section.4}%
+\contentsline {section}{\numberline {5}Mega-cluster 20 y 18 subnúcleos exploratorios}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Geometría}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Perfilado económico posterior}{6}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Composición multilabel y diccionario analítico}{7}{section.6}%
+\contentsline {section}{\numberline {7}Sobrerrepresentación}{8}{section.7}%
+\contentsline {section}{\numberline {8}Lavanderías frente a manufactura}{8}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Sensibilidad en seis escenarios}{10}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Tipología y espacio métrico}{11}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Por qué son similares los pares principales}{14}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Explorador interactivo}{15}{section.10}%
+\contentsline {section}{\numberline {11}Actividad dispersa, limitaciones y cierre}{15}{section.11}%
+\contentsline {section}{\numberline {12}Glosario metodológico permanente}{15}{section.12}%
+\contentsline {section}{\numberline {A}Las 57 configuraciones exploradas}{17}{appendix.Alph1}%
+\contentsline {section}{\numberline {B}Diccionario de variables analíticas}{20}{appendix.Alph2}%
+\contentsline {section}{\numberline {C}Índice de resultados completos}{23}{appendix.Alph3}%

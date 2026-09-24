@@ -1,0 +1,1177 @@
+\documentclass[11pt,letterpaper]{article}
+
+% ============================================================
+% REPORTE MAESTRO DE TRAZABILIDAD - PROYECTO ALTO ATOYAC
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.25cm}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[most]{tcolorbox}
+\usepackage{lastpage}
+\usepackage{float}
+\usepackage{pdflscape}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[authoryear,round]{natbib}
+
+\definecolor{AtoyacBlue}{HTML}{244B5A}
+\definecolor{AtoyacGreen}{HTML}{4F6F52}
+\definecolor{AtoyacLight}{HTML}{F3F6F4}
+\definecolor{AtoyacGray}{HTML}{5B6570}
+\definecolor{AtoyacOrange}{HTML}{B56A2A}
+\definecolor{AtoyacRed}{HTML}{9C3B35}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=AtoyacBlue,
+    urlcolor=AtoyacBlue,
+    citecolor=AtoyacGreen,
+    pdftitle={Diagnostico preliminar de unidades economicas y concentracion espacial - Alto Atoyac},
+    pdfauthor={Proyecto Atoyac}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Proyecto Alto Atoyac}
+\rhead{Reporte maestro de trazabilidad}
+\cfoot{\thepage\ de \pageref{LastPage}}
+\setlength{\headheight}{14pt}
+
+\titleformat{\section}{\Large\bfseries\color{AtoyacBlue}}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\large\bfseries\color{AtoyacGreen}}{\thesubsection}{0.7em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{AtoyacGray}}{\thesubsubsection}{0.7em}{}
+
+\setlist[itemize]{leftmargin=1.6em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.8em,itemsep=2pt,topsep=3pt}
+\renewcommand{\arraystretch}{1.25}
+
+% ---------- Cajas de trabajo ----------
+\newtcolorbox{preguntas}{
+  colback=AtoyacLight,
+  colframe=AtoyacBlue,
+  title=Preguntas guia,
+  fonttitle=\bfseries,
+  breakable
+}
+
+\newtcolorbox{evidencia}{
+  colback=white,
+  colframe=AtoyacGreen,
+  title=Informacion y evidencia minima requerida,
+  fonttitle=\bfseries,
+  breakable
+}
+
+\newtcolorbox{trazabilidad}{
+  colback=white,
+  colframe=AtoyacOrange,
+  title=Requisitos de trazabilidad,
+  fonttitle=\bfseries,
+  breakable
+}
+
+\newtcolorbox{alerta}{
+  colback=red!3,
+  colframe=AtoyacRed,
+  title=Limite de interpretacion,
+  fonttitle=\bfseries,
+  breakable
+}
+
+\newtcolorbox{hechos}{
+  colback=blue!2,
+  colframe=AtoyacGray,
+  title=Hechos ya identificados en el repositorio,
+  fonttitle=\bfseries,
+  breakable
+}
+
+\newcommand{\pendiente}{\textcolor{AtoyacRed}{\textbf{[PENDIENTE]}}}
+\newcommand{\verificar}{\textcolor{AtoyacOrange}{\textbf{[VERIFICAR]}}}
+\newcommand{\completo}{\textcolor{AtoyacGreen}{\textbf{[COMPLETO]}}}
+\newcommand{\ruta}[1]{\texttt{#1}}
+
+\begin{document}
+
+% ============================================================
+% PORTADA
+% ============================================================
+\begin{titlepage}
+\centering
+\vspace*{2.0cm}
+{\Huge\bfseries\color{AtoyacBlue} Diagnostico preliminar de unidades economicas y concentracion espacial\\[0.5em]}
+{\LARGE para la planeacion de infraestructura de colectores\\[1.0em]}
+{\Large Cuenca del Alto Atoyac}\par
+\vspace{1.8cm}
+
+\begin{tcolorbox}[colback=AtoyacLight,colframe=AtoyacGreen,width=0.9\textwidth]
+\centering
+\textbf{Naturaleza del documento:} reporte tecnico maestro de trazabilidad\\[0.4em]
+\textbf{Funcion:} documentar el diagnostico preliminar de unidades economicas, el analisis espacial realizado y su alcance como insumo de preseleccion para estudios posteriores de colectores.\\[0.4em]
+\textbf{No sustituye:} aforo de descargas, muestreo de calidad, levantamiento de red, modelacion hidraulica, estudio de factibilidad ni proyecto ejecutivo.
+\end{tcolorbox}
+
+\vfill
+\begin{tabular}{ll}
+Autor/a: & \pendiente \\
+Institucion: & \pendiente \\
+Version: & 0.1 -- estructura maestra \\
+Fecha de corte: & 24 de septiembre de 2026 \\
+Repositorio/directorio: & \pendiente \\
+Responsable de revision: & \pendiente \\
+\end{tabular}
+\vfill
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\begin{abstract}
+
+Este proyecto desarrolla un diagnóstico territorial y económico de las unidades productivas potencialmente relacionadas con actividades textiles, de confección, lavandería y tintorería dentro de la cuenca del Alto Atoyac, Puebla. El objetivo es identificar patrones de concentración espacial y caracterizar zonas donde existe una presencia relevante de establecimientos cuya actividad declarada puede estar asociada con procesos de consumo de agua o generación de descargas. El análisis se plantea como una herramienta de priorización: busca reducir y ordenar el universo de observación para orientar verificaciones en campo, monitoreo ambiental y análisis posteriores de infraestructura, sin interpretar la información económica disponible como evidencia directa de contaminación o de la existencia, magnitud o destino de una descarga.
+
+La construcción del universo parte del Directorio Estadístico Nacional de Unidades Económicas (DENUE), complementado con información territorial de la cuenca, límites municipales, red hidrográfica y fuentes auxiliares e históricas. A partir de estos insumos se desarrolló un proceso auditable de selección basado en recortes territoriales, códigos SCIAN y reglas textuales aplicadas a nombres, razones sociales y descripciones de actividad. Para estudiar la sensibilidad de esta delimitación se construyeron cinco modalidades con distintos niveles de restricción, incluyendo criterios amplios y estrictos, con y sin fuentes complementarias, además de un universo sectorial ampliado que conserva todos los establecimientos pertenecientes a las actividades seleccionadas. Este último comprende 4,365 unidades económicas dentro de los municipios utilizados para el análisis espacial, de las cuales 4,010 se localizan dentro de la cuenca.
+
+Sobre este universo se realizó una exploración sistemática de métodos de clustering espacial por densidad mediante DBSCAN, HDBSCAN y OPTICS. La construcción de los agrupamientos utilizó exclusivamente las coordenadas de los establecimientos proyectadas en un sistema métrico, manteniendo fuera del proceso de clustering las variables económicas y productivas. Esta separación permite que la estructura espacial sea identificada primero y que su interpretación sectorial ocurra únicamente después. Se evaluaron 57 configuraciones considerando número y tamaño de clusters, proporción de ruido, continuidad espacial, sensibilidad al efecto de borde, similitud entre particiones y estabilidad frente a perturbaciones posicionales. A partir de esta comparación se seleccionó como solución principal una configuración HDBSCAN que identifica 22 agrupamientos y conserva 584 establecimientos como actividad espacialmente dispersa.
+
+Una vez fijada la solución espacial, los clusters fueron caracterizados según su composición municipal y local, actividad SCIAN, tamaño de los establecimientos, señales textuales asociadas con procesos potencialmente hídricos y coexistencia de actividades manufactureras con servicios de lavandería o tintorería. El análisis se complementó con medidas de sobrerrepresentación, similitud entre perfiles productivos, persistencia de membresía y una exploración de la estructura interna del agrupamiento de mayor tamaño. Los resultados fueron organizados en tablas auditables, capas geográficas, mapas estáticos e interactivos, un atlas de clusters y productos documentales reproducibles.
+
+En conjunto, el proyecto construye una base trazable para reconocer concentraciones territoriales de actividad económica potencialmente relevantes dentro de la problemática ambiental del Alto Atoyac. Sus resultados no identifican por sí mismos establecimientos contaminantes ni sustituyen aforos, muestreos, inspecciones o estudios hidráulicos. Su principal aportación consiste en pasar de un universo amplio y heterogéneo de unidades económicas a una estructura territorial interpretable, que permite reconocer dónde se concentra la actividad, qué tipos de procesos aparecen juntos y qué zonas requieren una revisión más profunda. Con ello se genera una base preliminar para priorizar trabajo de campo y análisis posteriores sobre descargas, colectores, tratamiento y gestión ambiental.
+
+\end{abstract}
+
+
+
+% ============================================================
+\section{Resumen ejecutivo }
+% ============================================================
+
+\textbf{Objetivo de esta seccion:} permitir que una persona que no lea el resto del documento entienda que se hizo, que se encontro, que tan confiable es y que decision puede apoyar.
+
+
+\begin{enumerate}
+    \item \textbf{¿Cual fue el problema operativo que motivo el analisis?}
+    La informacion disponible no permitia saber con suficiente precision donde se concentran territorialmente las unidades economicas textiles, de confeccion, lavanderia y tintoreria potencialmente relevantes para la problematica del Alto Atoyac. Antes de realizar verificaciones de campo o discutir infraestructura era necesario construir un universo consistente y auditable, separar la actividad declarada de la evidencia de procesos humedos y reducir el territorio a zonas de observacion defendibles.
+
+    \item \textbf{¿Que universo de unidades economicas se estudio y por que?}
+    Se partio de 15,956 registros de la descarga estatal DENUE acotada a las actividades SCIAN seleccionadas. De ellos se definio un universo sectorial ampliado de 4,365 establecimientos ubicados en 26 municipios de referencia. Este universo se utilizo para detectar concentraciones sin cortar artificialmente los agrupamientos en el limite de la cuenca y reducir el efecto de borde. Para la interpretacion sustantiva se conservaron los 4,010 establecimientos que intersectan el poligono de la cuenca del Alto Atoyac. Esta delimitacion incluye actividades textiles, confeccion y servicios de lavanderia o tintoreria potencialmente relevantes, pero no supone que todos los establecimientos utilicen procesos humedos o descarguen contaminantes.
+
+    \item \textbf{¿Que metodos se usaron para clasificar, mapear y detectar concentraciones?}
+    La clasificacion combino recorte territorial, codigos SCIAN, normalizacion y busqueda de expresiones en nombre, razon social y descripcion de actividad, reglas auditables de inclusion y evidencia hidrica, y comparaciones con fuentes MH y universos historicos. El mapeo se realizo mediante intersecciones espaciales con la cuenca y los municipios, calculo metrico de distancias a la red hidrografica y produccion de capas GeoPackage, mapas PNG y mapas HTML. Para detectar concentraciones se exploraron 57 configuraciones de DBSCAN, HDBSCAN y OPTICS utilizando exclusivamente coordenadas proyectadas en EPSG:32614. La seleccion considero estructura de la particion, ruido, continuidad, efecto de borde, ARI, Jaccard, persistencia y sensibilidad a perturbaciones posicionales. Las caracteristicas economicas se incorporaron solamente despues de fijar la solucion espacial.
+
+    \item \textbf{¿Cuales son los hallazgos que cambian la comprension territorial del problema?}
+    \begin{itemize}
+        \item La actividad potencialmente relevante no se distribuye de manera uniforme: presenta nucleos locales y corredores diferenciados, junto con actividad dispersa que no debe eliminarse del diagnostico.
+        \item De los 4,365 establecimientos usados para la deteccion, 4,010 se encuentran dentro de la cuenca; el contexto exterior inmediato resulta necesario para controlar el efecto de borde.
+        \item La solucion principal identifica 22 clusters en el universo ampliado; 18 intersectan la cuenca y se documentan como concentraciones interiores.
+        \item Un mega-cluster de 1,997 establecimientos articula principalmente Puebla y el continuo urbano asociado con Cholula y Cuautlancingo. Su escala exige interpretarlo como una estructura heterogenea y no como una unica zona operativa.
+        \item Existen concentraciones claramente localizadas fuera del nucleo metropolitano, entre ellas Santa Ana Xalmimilulco, Huejotzingo, San Matias Tlalancaleca, San Rafael Ixtapalucan, San Rafael Tlanalapan, Santa Maria Moyotzingo, San Martin Texmelucan, San Miguel Xoxtla y Amozoc de Mota.
+        \item Santa Ana Xalmimilulco forma un cluster de 337 establecimientos, mientras San Matias Tlalancaleca registra otro de 224 y San Rafael Ixtapalucan uno de 142; por tanto, la concentracion sectorial no se explica solamente por Puebla capital.
+        \item Los perfiles productivos difieren entre clusters: algunos se asocian principalmente con confeccion o manufactura textil y otros presentan mayor participacion de lavanderias y tintorerias. La cercania espacial no implica homogeneidad productiva.
+        \item Ninguno de los seis escenarios principal, de referencia o de sensibilidad genera un cluster interior compuesto por al menos 80\% de lavanderias; la problematica territorial es de coexistencia de actividades, no de enclaves exclusivamente dedicados a ese servicio.
+        \item La solucion conserva 584 registros como ruido espacial, equivalentes al 13.38\% del universo de deteccion. Estos representan actividad dispersa y no establecimientos irrelevantes.
+        \item La estabilidad de las concentraciones no es uniforme; por ello la priorizacion debe combinar tamaño, composicion, persistencia y verificacion territorial, y no depender solamente de la etiqueta de cluster.
+    \end{itemize}
+
+    \item \textbf{¿Que zonas aparecen como candidatas para una segunda etapa de validacion?}
+    Por tamaño, persistencia o perfil economico aparecen como candidatas el continuo Puebla--Cholula--Cuautlancingo; Santa Ana Xalmimilulco y Huejotzingo; San Matias Tlalancaleca; las concentraciones de Tlahuapan, particularmente San Rafael Ixtapalucan; el corredor de San Martin Texmelucan, San Rafael Tlanalapan y Santa Maria Moyotzingo; San Miguel Xoxtla--Coronango; y Amozoc de Mota. La candidatura significa prioridad para contrastar el directorio con procesos reales, descargas e infraestructura; no constituye una declaracion de contaminacion ni una recomendacion directa de obra.
+
+    \item \textbf{¿Que no puede concluirse a partir de DENUE, proximidad a rios o clustering?}
+    DENUE informa ubicacion y actividad economica declarada, pero no demuestra que un establecimiento se encuentre activo, ejecute procesos humedos, consuma determinado volumen de agua, genere una descarga, vierta contaminantes o incumpla una norma. La proximidad cartografica a un rio no demuestra conexion hidraulica, ruta de descarga ni afectacion del cauce. Un cluster expresa densidad y continuidad espacial bajo parametros especificos; no equivale a una cuenca sanitaria, zona de servicio, red de colectores, fuente causal de contaminacion ni prioridad automatica de inversion. Tampoco pueden inferirse caudales, cargas contaminantes, capacidad de tratamiento o costos de infraestructura a partir de estos resultados.
+
+    \item \textbf{¿Cuales son los siguientes estudios indispensables antes de hablar de inversion en colectores?}
+    DUDA
+\end{enumerate}
+
+\begin{table}[H]
+\centering
+\caption{Sintesis ejecutiva del universo, la solucion espacial y su uso recomendado}
+\label{tab:sintesis-ejecutiva}
+\small
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.27\textwidth}X}
+\toprule
+Indicador & Resultado e interpretacion \\
+\midrule
+Universo inicial & 15,956 registros de la descarga estatal DENUE acotada a las actividades SCIAN consideradas. \\
+Universo sectorial & 4,365 establecimientos en 26 municipios; universo ampliado empleado para detectar concentraciones y reducir el efecto de borde. \\
+Universo dentro de cuenca & 4,010 establecimientos usados para interpretar los perfiles y resultados dentro del poligono del Alto Atoyac. \\
+Escenarios de clustering & 57 configuraciones de DBSCAN, HDBSCAN y OPTICS evaluadas exclusivamente con coordenadas metricas. \\
+Solucion seleccionada & HDBSCAN con \texttt{min\_cluster\_size=10}, \texttt{min\_samples=20} y seleccion \texttt{eom}. \\
+Numero de clusters & 22 en el universo ampliado; 18 intersectan la cuenca y se documentan como concentraciones interiores. \\
+Ruido & 584 establecimientos, 13.38\% del universo de deteccion; se interpretan como actividad espacialmente dispersa y se conservan en el analisis. \\
+Principales zonas de concentracion & Puebla--Cholula--Cuautlancingo; Santa Ana Xalmimilulco y Huejotzingo; San Matias Tlalancaleca; Tlahuapan; corredor de San Martin Texmelucan--San Rafael Tlanalapan--Santa Maria Moyotzingo; San Miguel Xoxtla--Coronango; y Amozoc de Mota. \\
+Nivel de incertidumbre & Medio--alto para inferir procesos, descargas o necesidades de infraestructura; menor para describir localizacion y densidad de establecimientos registrados. Depende de cobertura y vigencia de DENUE, precision posicional, reglas sectoriales, parametros y efecto de borde. \\
+Siguiente paso recomendado & Validacion territorial priorizada: censo y entrevistas, verificacion de procesos y descargas, aforos y muestreo, catastro y capacidad de la red, topografia y analisis tecnico--economico de alternativas antes de proponer colectores. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+
+
+% ============================================================
+\section{Contexto de decision, proposito y alcance}
+% ============================================================
+
+\subsection{Problema de decision: Alcance del diagnóstico y relación con decisiones posteriores}
+
+El presente análisis corresponde a una etapa diagnóstica y de priorización preliminar. Su objetivo inmediato es localizar actividad económica potencialmente relevante, reconocer concentraciones espaciales y corredores productivos, y ordenar territorialmente aquellas zonas que requieren una revisión más profunda. En este sentido, los resultados buscan reducir un universo amplio de unidades económicas a un conjunto de áreas y patrones que puedan ser estudiados con mayor detalle mediante visitas de campo, censos, entrevistas, aforos y muestreos.
+
+El análisis no pretende determinar directamente necesidades de infraestructura ni definir trazos de colectores. Las fuentes utilizadas permiten conocer la localización y actividad declarada de los establecimientos, así como estudiar la forma en que éstos se concentran en el territorio, pero no contienen información suficiente sobre consumo de agua, puntos efectivos de descarga, caudales, cargas contaminantes o condiciones de conexión a la infraestructura existente. Por esta razón, la presencia de una concentración de unidades económicas debe interpretarse como un criterio para priorizar investigación adicional y no como evidencia suficiente para justificar una intervención hidráulica.
+
+Dentro de esta etapa, los clusters funcionan como unidades exploratorias que permiten organizar y comparar concentraciones de establecimientos. Su utilidad consiste en identificar estructuras espaciales que no necesariamente son evidentes al observar cada unidad económica de manera independiente. Sin embargo, estos agrupamientos no constituyen por sí mismos unidades de planeación de infraestructura. Conforme avance la validación, será necesario trasladar el análisis hacia escalas compatibles con el comportamiento real del sistema de saneamiento. Dependiendo de la evidencia disponible, éstas podrán corresponder a localidades o corredores productivos para organizar el trabajo de campo, áreas de aportación o subcuencas para comprender los flujos territoriales, y posteriormente tramos de drenaje, sistemas de saneamiento o alternativas específicas de conducción para la evaluación técnica.
+
+De la misma manera, en esta fase no se establece un horizonte temporal formal de diseño o inversión. Antes de definirlo será necesario contar con una línea base territorial e hidráulica validada y considerar variables que actualmente se encuentran fuera del alcance del diagnóstico, como crecimiento urbano y productivo, variación temporal de los caudales, capacidad disponible y futura de las redes y sistemas de tratamiento, vida útil de la infraestructura, requerimientos de mantenimiento y escenarios de demanda.
+
+En consecuencia, cualquier evaluación posterior de inversión requerirá integrar evidencia adicional sobre la localización y estado de la infraestructura existente, conexiones y descargas verificadas, caudales y cargas contaminantes, capacidad residual de redes y plantas de tratamiento, topografía, población beneficiada y expuesta, restricciones territoriales, costos de ciclo de vida y viabilidad jurídica y social. También será necesario comparar alternativas que no se limiten a la construcción de infraestructura de conducción, sino que consideren opciones de prevención, pretratamiento, tratamiento, reúso y manejo localizado de las descargas.
+
+La función de esta etapa es, por tanto, anterior a la evaluación de infraestructura. Primero se busca establecer dónde se concentra la actividad económica potencialmente relevante y qué características presentan dichas concentraciones; posteriormente deberá verificarse qué ocurre realmente en esos territorios y cómo se relacionan las unidades productivas con el sistema hídrico y sanitario. Sólo a partir de esa evidencia será posible avanzar hacia la comparación de alternativas técnicas y, eventualmente, hacia decisiones de inversión.
+
+
+
+\subsubsection*{Posible conexion con etapas posteriores}
+
+La conexion inmediata de este diagnostico con una etapa posterior consiste en transformar las concentraciones identificadas en una estrategia de levantamiento territorial. Los clusters, sus perfiles productivos, su estabilidad y la actividad dispersa permiten decidir donde iniciar verificaciones, pero la siguiente unidad de trabajo debe construirse mediante evidencia de campo. Al contrastar los establecimientos registrados con procesos reales, puntos de descarga, volúmenes, calidad del agua, redes existentes y condiciones topograficas, sera posible determinar si las concentraciones economicas coinciden o no con areas funcionales de aportacion y con problemas de saneamiento observables.
+
+Solo despues de esa validacion podra establecerse una conexion justificable con la planeacion de infraestructura. Los resultados economicos y espaciales podrian incorporarse como una capa de demanda potencial dentro de estudios de subcuencas, modelacion hidraulica y evaluacion multicriterio de alternativas. Esa integracion permitiria comparar intervenciones como control en la fuente, pretratamiento industrial, rehabilitacion de redes, ampliacion de tratamiento, soluciones descentralizadas o nuevos colectores. Por tanto, el proyecto aporta un criterio para ordenar la investigacion posterior, pero no define trazos, dimensiones, costos ni decisiones de inversion.
+
+\subsection{Objetivo general}
+
+Construir un diagnóstico territorial, económico y espacial auditable de las unidades económicas potencialmente relevantes para la problemática hídrica de la cuenca del Alto Atoyac, con el fin de identificar concentraciones y priorizar zonas para su validación en campo y estudios posteriores, sin asumir que sus resultados constituyen evidencia directa de descargas ni una propuesta de infraestructura.
+
+\subsection{Objetivos especificos}
+\begin{enumerate}
+    \item Construir un universo auditable de unidades economicas potencialmente relevantes.
+    \item Caracterizar su distribucion territorial y su relacion espacial con la cuenca y la red hidrografica.
+    \item Detectar concentraciones espaciales sin utilizar variables productivas para forzar los grupos.
+    \item Perfilar la composicion economica de los agrupamientos una vez fijada la solucion espacial.
+    \item Identificar zonas que ameriten validacion de campo y estudios hidraulicos posteriores.
+    \item Documentar incertidumbres, sesgos, decisiones y productos para garantizar reproducibilidad.
+\end{enumerate}
+
+
+% ============================================================
+\section{Antecedentes ambientales y territoriales}
+% ============================================================
+\label{sec:antecedentes}
+
+La problemática ambiental de la Cuenca del Alto Atoyac no puede entenderse como el resultado de una única fuente de contaminación ni como un fenómeno localizado únicamente en el cauce principal del río. La configuración actual de la cuenca es producto de varias décadas de crecimiento urbano, expansión industrial, transformación del uso de suelo y desarrollo de infraestructura que han modificado simultáneamente la ocupación del territorio y la relación entre los centros de población, las unidades productivas y la red hídrica. Por esta razón, cualquier aproximación al problema requiere una lectura territorial que permita relacionar la distribución de la actividad económica con los sistemas urbanos, los cauces y las localidades donde se concentra la producción.
+
+\subsection{Transformación territorial e industrialización de la cuenca}
+
+Los antecedentes recopilados para la Cuenca del Alto Atoyac sitúan un punto importante de transformación territorial a partir de la segunda mitad del siglo XX. Pérez Castresana et al. describen el inicio del proceso de deterioro socioambiental durante la década de 1960, asociado con la construcción de la autopista México--Puebla y el establecimiento de corredores industriales. Posteriormente, durante la década de 1990, la expansión de la actividad industrial se aceleró y con ella se profundizaron las presiones ambientales sobre el territorio \cite{perezcastresana2023}. En paralelo, la urbanización ocupó progresivamente superficies anteriormente agrícolas o con cobertura natural, generando una estructura territorial en la que zonas industriales, localidades, áreas agrícolas y cuerpos de agua se encuentran estrechamente vinculados.
+
+Esta transformación ocurrió sobre una cuenca que actualmente concentra una parte importante de la población y de la actividad económica de Puebla y Tlaxcala. El diagnóstico de salud ambiental elaborado por la Universidad Iberoamericana Puebla señala que las principales zonas metropolitanas de ambos estados se encuentran dentro de la cuenca y que, para 2020, alrededor de 3.86 millones de habitantes residían en ella \cite{perezcastresana2023}. El mismo trabajo identifica a Puebla, Cuautlancingo, Huejotzingo, San Pedro Cholula, San Andrés Cholula, Amozoc, San Martín Texmelucan, San Gregorio Atzompa y Coronango entre los municipios con mayor presencia industrial de la región poblana. Esta coincidencia entre concentración de población, expansión urbana y actividad industrial es relevante porque las presiones sobre el sistema hídrico no se distribuyen de manera homogénea, sino que se acumulan en corredores y localidades específicas.
+
+La degradación de los ríos constituye una de las expresiones más visibles de este proceso. La Declaratoria de Clasificación de los ríos Atoyac y Xochiac o Hueyapan, publicada en el Diario Oficial de la Federación en 2011, reconoce que la calidad de estos cuerpos de agua ha sido modificada por descargas procedentes tanto de procesos industriales como de asentamientos humanos. La declaratoria estimó aportaciones diarias de materia orgánica, sólidos suspendidos, nutrientes, metales pesados, compuestos orgánicos tóxicos y contaminación microbiológica, y concluyó que el cumplimiento de los límites generales de descarga existentes en ese momento no era suficiente por sí solo para alcanzar la calidad requerida en estos cuerpos de agua \cite{dof2011atoyac}.
+
+Los antecedentes muestran, por tanto, un problema de carácter acumulativo. A las descargas industriales se suman las aguas residuales municipales, el crecimiento urbano, las actividades agrícolas y otras fuentes de presión ambiental. El reporte \textit{Salud ambiental en la Cuenca del Alto Atoyac} señala que una proporción importante de municipios descargaba aguas residuales sin tratamiento previo y que menos del 30\% de las industrias medianas y grandes reportaban emisiones al Registro de Emisiones y Transferencia de Contaminantes (RETC) en el periodo analizado \cite{perezcastresana2023}. Estas cifras deben entenderse como antecedentes correspondientes a las fuentes y fechas utilizadas por dicho estudio y no como una estimación actual generada en el presente proyecto.
+
+\subsection{Industria textil y procesos asociados con la mezclilla}
+
+Dentro de la diversidad productiva de la cuenca, la industria textil resulta especialmente relevante para el presente estudio. Los antecedentes disponibles la identifican tanto por su importancia económica como por las características de algunos de sus procesos productivos. El diagnóstico de la Universidad Iberoamericana Puebla señala que las actividades textiles se encuentran entre los giros industriales más numerosos de la cuenca y ubica al sector textil, junto con los sectores químico, metalúrgico, automotriz y de plásticos, entre aquellos de mayor relevancia para la problemática de contaminación industrial \cite{perezcastresana2023}.
+
+Sin embargo, ``industria textil'' comprende procesos con requerimientos y perfiles ambientales muy diferentes. Actividades como corte, costura, confección, bordado o planchado pueden realizarse principalmente como procesos secos, mientras que el descrude, blanqueo, teñido, lavado, acabado y ciertos tratamientos de la tela requieren agua y pueden incorporar detergentes, colorantes, agentes de fijación y otras sustancias químicas. La literatura resumida en \textit{Salud ambiental en la Cuenca del Alto Atoyac} destaca precisamente el uso de sustancias para blanquear, teñir, impermeabilizar y fijar colores en la producción textil, así como la posible presencia de colorantes, metales y otros compuestos en los efluentes asociados con estos procesos \cite{perezcastresana2023}. Esta diferencia entre actividades textiles es fundamental para el presente diagnóstico, ya que la pertenencia al sector textil no implica automáticamente el mismo consumo de agua ni el mismo potencial de descarga.
+
+La producción de mezclilla introduce un antecedente todavía más específico. La Recomendación 10/2017 de la Comisión Nacional de los Derechos Humanos documentó la presencia de más de treinta maquiladoras textiles descritas como \textit{lavanderías de mezclilla} en localidades de la zona del Alto Atoyac, principalmente San Rafael Tenanyecac, Villa Alta, San Mateo Ayecac y Santa Ana Xalmimilulco. El documento señala que, en los antecedentes analizados por la Comisión, varios de estos establecimientos descargaban sus aguas residuales directamente al río o a la red de alcantarillado sin tratamiento previo \cite{cndh2017atoyac}. La misma recomendación documentó talleres familiares relacionados con confección y tratamiento de mezclilla y discutió de manera específica las descargas procedentes de pequeños establecimientos dedicados al proceso de teñido.
+
+Este antecedente es central para la delimitación del problema abordado en este trabajo. La actividad relacionada con mezclilla no necesariamente ocurre en grandes instalaciones industriales claramente identificables. Parte de la cadena puede encontrarse fragmentada entre fábricas, maquilas, talleres, lavanderías y establecimientos de menor tamaño, algunos de los cuales pueden aparecer registrados bajo distintas actividades económicas. Como consecuencia, un inventario basado únicamente en grandes empresas o en registros de emisiones puede dejar fuera una parte del tejido productivo territorial que resulta relevante para comprender dónde se realizan los procesos.
+
+La relevancia institucional del sector textil tampoco se limita a antecedentes históricos. En 2022, la Comisión Nacional del Agua y el Gobierno de Puebla establecieron un convenio de colaboración con empresas textiles para contribuir al mejoramiento de la calidad del agua del río Atoyac, reconociendo al ramo textil como un sector que históricamente ha realizado descargas al cuerpo de agua \cite{conagua2022textil}. Esto refuerza la necesidad de estudiar no solamente instalaciones individuales, sino la distribución territorial del conjunto de actividades que componen la cadena textil.
+
+\subsection{Territorios de interés dentro de la cuenca}
+
+Los antecedentes revisados tampoco distribuyen la problemática de forma homogénea sobre la cuenca. Determinados municipios y localidades aparecen reiteradamente asociados con concentración industrial, descargas, infraestructura de saneamiento insuficiente o presencia de actividades textiles.
+
+En la región poblana, Huejotzingo y San Martín Texmelucan aparecen de manera recurrente entre los municipios de elevada presencia industrial. Esta relevancia no surge únicamente de indicadores generales de actividad económica. La Recomendación 10/2017 de la CNDH se refiere específicamente a afectaciones relacionadas con la contaminación de los ríos Atoyac, Xochiac y sus afluentes para habitantes de San Martín Texmelucan y Huejotzingo, en Puebla, así como Tepetitla de Lardizábal, Nativitas e Ixtacuixtla de Mariano Matamoros, en Tlaxcala \cite{cndh2017atoyac}.
+
+Dentro de este corredor territorial, Santa Ana Xalmimilulco adquiere especial interés para el estudio de la cadena de mezclilla. La CNDH identificó el corredor industrial de Huejotzingo al este de esta localidad y documentó la presencia de lavanderías de mezclilla en la propia Xalmimilulco y en localidades próximas. También registró antecedentes relacionados con infraestructura de tratamiento de aguas residuales en la comunidad y con las condiciones de operación de plantas existentes en el municipio. Estos elementos hacen que Xalmimilulco no constituya únicamente un punto con presencia económica textil, sino parte de un territorio donde coinciden antecedentes de actividad productiva, procesos húmedos, red de drenaje, cuerpos de agua y problemas históricos de saneamiento.
+
+San Martín Texmelucan constituye otro punto relevante dentro de esta estructura. Además de su carácter industrial, el municipio se encuentra conectado territorialmente con corredores productivos que continúan hacia Tlaxcala y presenta antecedentes tanto de industria textil como química y petroquímica. Estudios recientes que utilizan información del RETC continúan identificando emisiones a cuerpos de agua asociadas con actividades textiles en San Martín Texmelucan, incluyendo compuestos de níquel, cromo y plomo \cite{percepcionriesgo2025}. Estos registros no permiten atribuir las emisiones al conjunto del sector ni localizar todas las unidades productivas involucradas, pero muestran que la relación entre actividad textil y presión sobre el sistema hídrico continúa siendo un objeto pertinente de investigación.
+
+En conjunto, estos antecedentes sugieren que el problema tiene una estructura territorial más amplia que la de establecimientos individuales. Las cadenas de producción pueden distribuirse entre localidades; las unidades pequeñas pueden encontrarse próximas a otras actividades complementarias; las descargas pueden incorporarse al alcantarillado antes de llegar a un cuerpo receptor; y los cauces conectan espacios productivos que administrativamente pertenecen a municipios distintos. Por ello, estudiar exclusivamente una lista de empresas previamente identificadas resulta insuficiente para reconocer la organización territorial de la actividad.
+
+\subsection{Vacío de información y posición del presente diagnóstico}
+
+Los antecedentes descritos permiten establecer que existe una problemática histórica de contaminación en el Alto Atoyac, que las descargas industriales forman parte de ella y que la industria textil, incluyendo actividades relacionadas con lavado y tratamiento de mezclilla, ha sido señalada de manera específica en documentos técnicos, institucionales y académicos. Sin embargo, estos antecedentes no resuelven una pregunta operativa necesaria para las etapas posteriores del proyecto: \textit{¿cómo se distribuye actualmente en el territorio el universo de unidades económicas potencialmente relacionadas con esta cadena productiva y dónde se forman concentraciones que justifiquen una investigación más detallada?}
+
+Los registros de emisiones como el RETC permiten documentar determinadas sustancias y establecimientos sujetos a reporte, pero no constituyen un censo completo de la actividad productiva. Los documentos de saneamiento y las investigaciones previas, por su parte, identifican industrias, localidades y problemas específicos, pero fueron elaborados con distintos objetivos, periodos, escalas territoriales y criterios de selección. Esto dificulta utilizarlos directamente para construir un universo espacial homogéneo de establecimientos que incluya tanto unidades grandes como pequeñas y permita analizar su distribución conjunta.
+
+El presente trabajo se ubica en ese vacío. Su propósito no es volver a demostrar que el río Atoyac se encuentra contaminado ni atribuir contaminación a una unidad económica a partir de su giro. Parte de esos antecedentes para formular una pregunta diferente: dónde se localizan las actividades potencialmente relacionadas con la cadena textil y de mezclilla, qué tan concentradas se encuentran, qué combinaciones de actividades aparecen en un mismo territorio y qué zonas requieren ser estudiadas con mayor detalle.
+
+Para ello se utiliza al DENUE como punto de partida para construir un universo territorial amplio, complementado posteriormente con información adicional y reglas de clasificación. La decisión de conservar inicialmente actividades textiles que no pueden identificarse de manera directa como procesos húmedos responde precisamente a la fragmentación de la cadena productiva: una unidad registrada como confección, maquila o fabricación no permite inferir por sí sola qué procesos ocurren dentro del establecimiento, si parte de ellos se subcontrata o cómo se manejan los residuos y aguas generados durante la producción. La clasificación económica funciona entonces como evidencia de actividad, no como evidencia de descarga.
+
+De manera análoga, la cercanía a un río, la pertenencia a un cluster o la coincidencia con un territorio previamente señalado tampoco constituyen pruebas de contaminación. Estas variables se utilizan para organizar espacialmente la información y reconocer zonas donde la combinación de antecedentes y concentración económica hace razonable profundizar la investigación.
+
+En este sentido, los resultados presentados en las secciones posteriores deben distinguirse de los antecedentes aquí expuestos. Los datos históricos de contaminación, las observaciones sobre lavanderías de mezclilla, los registros del RETC y los señalamientos sobre municipios prioritarios provienen de literatura y documentos anteriores. Los conteos de establecimientos, su clasificación, los clusters, las medidas de concentración y los perfiles territoriales que se presentan posteriormente corresponden al análisis desarrollado específicamente para este proyecto.
+
+Esta separación es necesaria porque el objetivo del diagnóstico no es convertir los antecedentes ambientales en una presunción sobre cada establecimiento, sino utilizarlos para formular y ordenar una investigación territorial reproducible. El resultado esperado de esta etapa es identificar dónde conviene mirar con mayor detalle. La confirmación de procesos productivos, puntos de descarga, volúmenes, cargas contaminantes y conexiones con la infraestructura sanitaria requiere una segunda etapa de verificación en campo, aforos, muestreos y análisis hidráulico.
+% ============================================================
+\section{Area de estudio y unidades territoriales}
+% ============================================================
+
+\subsection{Delimitacion de la cuenca}
+\begin{preguntas}
+\begin{itemize}
+    \item ¿De que fuente proviene el poligono de cuenca y cual es su fecha/escala?
+    \item ¿Que definicion de ``Alto Atoyac'' se utiliza y coincide con otras instituciones?
+    \item ¿Que municipios intersectan la cuenca y cuales se incorporan solo como apoyo para controlar borde?
+    \item ¿Como se tratan unidades economicas justo fuera del poligono pero potencialmente conectadas hidrologica o urbanamente?
+\end{itemize}
+\end{preguntas}
+
+\subsubsection*{Respuesta a las preguntas guia}
+
+\begin{enumerate}
+    \item \textbf{¿De que fuente proviene el poligono de cuenca y cual es su fecha y escala?}
+    El poligono utilizado corresponde al conjunto \textit{Cuenca del Alto Atoyac 2021}, preparado en el marco del Ecosistema Nacional Informatico de Agentes Toxicos y Procesos Contaminantes. De acuerdo con sus metadatos, el insumo original procede del Sistema Nacional de Informacion del Agua de la Comision Nacional del Agua y corresponde a la capa de disponibilidad de cuencas hidrologicas 2021. El recurso fue creado como producto geoespacial en 2023 mediante la seleccion de la cuenca con identificador 1801, denominada Rio Alto Atoyac. Los metadatos disponibles no consignan una escala cartografica nominal para este poligono; por ello no se atribuye una precision superior a la documentada por la fuente.
+
+    \item \textbf{¿Que definicion de ``Alto Atoyac'' se utiliza y coincide con otras instituciones?}
+    El proyecto adopta la delimitacion hidrologica contenida en la capa de Conagua/SINA, retomada y distribuida por el ENI. Sus metadatos señalan que la organizacion espacial de la cuenca sigue la propuesta de Conagua empleada en la Declaratoria de Clasificacion de los rios Atoyac y Xochiac o Hueyapan de 2011. Esta coincidencia proporciona continuidad con una referencia institucional federal, pero no significa que todas las dependencias, estudios ambientales, organismos operadores o delimitaciones sanitarias utilicen exactamente el mismo limite. Cualquier comparacion con otra fuente debe revisar definicion, fecha, escala y proposito antes de combinar geometrías.
+
+    \item \textbf{¿Que municipios intersectan la cuenca y cuales se incorporan solo como apoyo para controlar borde?}
+    El universo de deteccion considera 26 municipios solicitados. La matriz maestra contiene establecimientos en 24 de ellos: 19 aportan al menos un registro dentro del poligono y cinco aparecen exclusivamente como apoyo exterior en los datos observados: Chignahuapan, Ixtacamaxtitlan, Domingo Arenas, Tepatlaxco de Hidalgo y Tzicatlacoyan. Cuautinchan y San Jeronimo Tecuanipan forman parte de la lista territorial solicitada, pero no aportan registros al universo sectorial construido. Amozoc, Ocoyucan y San Pedro Cholula presentan establecimientos tanto dentro como fuera del limite; los demas municipios con registros interiores quedan representados por los puntos que intersectan la cuenca. Esta clasificacion describe la relacion de los establecimientos con el poligono, no sustituye una tabla oficial de municipios pertenecientes a la cuenca.
+
+    \item \textbf{¿Como se tratan las unidades economicas justo fuera del poligono?}
+    Las unidades exteriores no se descartan durante la deteccion. Los 4,365 establecimientos de los municipios de referencia se utilizan para ajustar el clustering y evitar que el limite de la cuenca corte artificialmente concentraciones continuas. Una vez fijada la solucion espacial, la interpretacion principal se restringe a los 4,010 establecimientos que intersectan el poligono. La permanencia de puntos exteriores permite medir el efecto de borde y reconocer continuidades urbanas o productivas, pero no se interpreta como prueba de conectividad hidrologica. Una posible conexion mediante drenaje, canales, escurrimiento o infraestructura debe comprobarse posteriormente con informacion de redes, topografia y trabajo de campo.
+\end{enumerate}
+
+\subsection{Red hidrografica y contexto territorial}
+
+\subsubsection*{Fuente, cobertura y contenido}
+
+La red utilizada corresponde al conjunto \textit{Red hidrografica de la Cuenca del Alto Atoyac y su area de influencia 2006}. El insumo de origen es la Red Hidrografica Digital de Mexico, escala 1:250,000, edicion 1.0, elaborada por el INEGI en 2006. El producto fue revisado en 2023 y distribuido por el Ecosistema Nacional Informatico en formatos GeoPackage y GeoJSON. Su cobertura no se limita al poligono estricto del Alto Atoyac: tambien incorpora su area de influencia, formada por las cuencas contiguas Bajo Atoyac, Nexapa y Rio Salado. La capa contiene 3,136 objetos lineales y se publica originalmente en coordenadas geograficas EPSG:4326.
+
+La capa representa una mezcla de rios, corrientes y canales. El campo \texttt{orden} permite una clasificacion general: el valor cero corresponde a canales y los valores uno a siete representan ordenes de corrientes fluviales. Tambien contiene identificadores de nodo inicial y final, longitud, nombre de la corriente, codigo de rasgo y atributos de desaparicion o continuidad. Los metadatos advierten que los objetos con \texttt{g\_id} 867 y 3136 corresponden a canales subterraneos digitalizados mediante fotointerpretacion y conocimiento local, por lo que no proceden directamente de la red hidrografica original del INEGI.
+
+\subsubsection*{Uso dentro del proyecto}
+
+En la primera fase, la red se recorta al contexto de la cuenca y se utiliza para representar la relacion espacial entre establecimientos y elementos hidrograficos, asi como para calcular la distancia geometrica minima de cada punto a la linea mas cercana. Para ese calculo la informacion se transforma a un sistema metrico. La distancia resultante es una medida de proximidad cartografica: no incorpora direccion del flujo, conectividad de alcantarillado, parteaguas locales, barreras, elevacion, capacidad de conduccion ni ruta real de una descarga.
+
+\subsubsection*{Limitaciones de interpretacion}
+
+La escala 1:250,000 es adecuada para contexto regional, pero no para inventariar con detalle drenajes menores, conexiones privadas, colectores, atarjeas o descargas puntuales. La antigüedad del insumo base y la frecuencia de actualizacion no programada tambien obligan a verificar cambios, rectificaciones y obras posteriores. Aunque existen campos de nodos y orden, este proyecto no realizo una validacion topologica integral ni una modelacion de conectividad hidraulica. Tampoco se dispone en esta capa de una clasificacion completa y validada de permanencia para distinguir sistematicamente corrientes perennes e intermitentes. Por estas razones, la red sirve para contextualizacion y priorizacion preliminar, no para diseñar trazos ni atribuir descargas a un cauce.
+
+\subsection{Sistemas de referencia}
+\begin{evidencia}
+Registrar CRS geografico de publicacion y CRS metrico de analisis. El pipeline actual identifica EPSG:4326 y EPSG:32614. Verificar que todas las distancias y algoritmos de densidad se ejecuten en coordenadas metricas.
+\end{evidencia}
+
+\subsubsection*{CRS de publicacion e intercambio}
+
+Las capas fuente de cuenca, municipios y red hidrografica, asi como las coordenadas de los establecimientos DENUE, se armonizan en \textbf{EPSG:4326 (WGS 84)}. Este sistema expresa longitud y latitud en grados y se utiliza para intercambio, almacenamiento de productos de publicacion y visualizacion en mapas web. No se emplea para calcular distancias, densidades o vecindades, porque una diferencia angular no representa una distancia constante sobre el territorio.
+
+\subsubsection*{CRS metrico de analisis}
+
+Para las operaciones espaciales cuantitativas se utiliza \textbf{EPSG:32614 (WGS 84 / UTM zona 14N)}, cuyas unidades son metros y cuya zona cubre el area de estudio. Los 4,365 puntos de la matriz maestra fueron transformados a este CRS antes del diagnostico de vecinos, KDE, mallas hexagonales, perturbaciones posicionales y ejecucion de DBSCAN, HDBSCAN y OPTICS. El archivo de control de geometrías registra coordenadas finitas para todos los puntos y limites UTM entre 543,299.88 y 624,121.21 metros al Este, y entre 2,082,873.65 y 2,197,531.96 metros al Norte.
+
+\subsubsection*{Verificacion y regla de uso}
+
+La separacion entre ambos sistemas esta implementada en la configuracion comun del pipeline: EPSG:4326 se declara como CRS geografico y EPSG:32614 como CRS metrico. Las capas analiticas se materializan en ambos sistemas y los scripts de diagnostico y clustering leen expresamente la geometria UTM. La auditoria final confirma que los pasos 204 y 205 utilizan exclusivamente coordenadas \texttt{x/y} en EPSG:32614; por tanto, parametros como radios, distancias de vecinos, \texttt{eps} y perturbaciones de 25 m se interpretan en metros. Como regla de reproducibilidad, cualquier analisis adicional de distancia o densidad debe transformar primero sus insumos a EPSG:32614 y registrar el CRS en la salida.
+
+% ============================================================
+\section{Fuentes de datos y gobierno de informacion}
+% ============================================================
+
+\subsection{Inventario maestro de fuentes}
+
+El inventario maestro identifica los insumos que sostienen cada etapa del analisis y separa las fuentes institucionales de los materiales complementarios y derivados historicos. Su funcion no es solamente enumerar archivos, sino registrar para cada uno su procedencia, temporalidad, cobertura, uso analitico y principal limite de interpretacion. Esta distincion permite reconstruir la cadena que va desde los registros económicos y las geometrías territoriales hasta la matriz maestra, y evita tratar como equivalentes fuentes que fueron producidas con objetivos, escalas y niveles de verificacion diferentes.
+
+\begin{landscape}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.15\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.12\linewidth}>{\raggedright\arraybackslash}p{0.14\linewidth}>{\raggedright\arraybackslash}p{0.29\linewidth}}
+\toprule
+\textbf{Fuente} & \textbf{Archivo/ID} & \textbf{Fecha} & \textbf{Cobertura} & \textbf{Uso y limitacion principal} \\
+\midrule
+DENUE estatal, INEGI & \path{INEGI_DENUE_11092026.*} & Archivo/descarga: 11-09-2026 & Puebla; SCIAN 313, 314, 315 y 812210 & Base de 15,956 unidades economicas. Aporta ID, actividad declarada, ubicacion, personal y coordenadas; no demuestra operacion actual, procesos reales ni descargas. \\
+DENUE local, INEGI & \path{INEGI_DENUE_04092026.*} & Archivo/descarga: 04-09-2026 & Huejotzingo y Santa Ana Xalmimilulco & Fuente del trabajo local inicial, auditables y comparaciones. Sus fechas identifican el corte del archivo, no la fecha de verificacion de cada establecimiento. \\
+Cuenca, SINA--Conagua / ENI & \path{caaresa_cuenca_alto_atoyac_21_reg_a.gpkg} & Insumo 2021; producto 2023 & Cuenca Rio Alto Atoyac, ID 1801 & Delimitacion para interseccion y contexto. EPSG:4326; libre uso MX. No equivale a una cuenca sanitaria ni define conexiones de drenaje. \\
+Municipios, INEGI / ENI & \path{caaresa_division_municipal_20_mun_a.gpkg} & Insumo 2020; producto 09-2023 & Alto Atoyac y contexto regional & Limites del Marco Geoestadistico 2020 para agregacion y cartografia. EPSG:4326; libre uso MX. Los limites administrativos no representan areas de aportacion hidraulica. \\
+Red hidrografica, INEGI / ENI & \path{caaresa_red_hidro_digital_06_reg_l.gpkg} & Insumo 2006; revision 09-2023 & Alto Atoyac y area de influencia & Red 1:250,000 de 3,136 lineas, rios y canales. EPSG:4326; libre uso MX. Se usa para proximidad regional; no prueba conectividad ni incluye toda la infraestructura sanitaria. \\
+MH, procedencia local & \path{data/processed/mh/} & Sin fecha documentada en el repositorio & Huejotzingo y Xalmimilulco & Fuente complementaria incorporada con campos de procedencia y auditoria. Origen, responsable, metodo de levantamiento, fecha y licencia deben confirmarse antes de publicacion. \\
+Universos legacy & \path{data/processed/legacy/} & Historico; fecha no documentada & Cobertura variable & Universos preliminares y cola de revision usados solo para comparacion y trazabilidad. No se consideran autoridad vigente ni se mezclan sin registrar diferencias de reglas y cobertura. \\
+\bottomrule
+\end{longtable}
+\normalsize
+\end{landscape}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Quien produjo cada fuente, con que metodo y con que licencia?
+    \item ¿Que fecha representa: descarga, levantamiento o vigencia?
+    \item ¿Que campos se usan y cuales se descartan?
+    \item ¿Que errores posicionales o de geocodificacion son esperables?
+    \item ¿Como se identifican duplicados, establecimientos cerrados o cambios de giro?
+    \item ¿Que fuente es ``autoridad'' cuando dos registros se contradicen?
+\end{itemize}
+\end{preguntas}
+
+\subsubsection*{Respuesta a las preguntas guia}
+
+\begin{enumerate}
+    \item \textbf{¿Quien produjo cada fuente, con que metodo y con que licencia?}
+    El DENUE es producido por el INEGI como directorio estadistico de establecimientos y se obtuvo en formatos tabular y vectorial; su uso en este proyecto se limita a los atributos publicados y a la localizacion registrada. El poligono de cuenca proviene del SINA de Conagua y fue seleccionado y redistribuido por el ENI; la division municipal procede del Marco Geoestadistico del INEGI; y la red hidrografica procede de la Red Hidrografica Digital de Mexico del INEGI y fue recortada por el ENI al Alto Atoyac y su area de influencia. Los metadatos de las tres capas territoriales declaran licencia de libre uso MX. Las fuentes MH son insumos locales ya procesados, pero el repositorio no conserva una ficha suficiente para identificar responsable, protocolo, fecha y licencia. Los archivos legacy son derivados historicos internos y se usan solamente para comparacion.
+
+    \item \textbf{¿Que fecha representa cada registro de la tabla?}
+    En los archivos DENUE, las fechas 04-09-2026 y 11-09-2026 se interpretan como fecha o corte identificado en el nombre de la descarga, no como visita individual ni garantia de vigencia de cada unidad. Para la cuenca, 2021 corresponde al insumo de disponibilidad hidrologica y 2023 a la creacion del producto distribuido. En municipios, 2020 corresponde al Marco Geoestadistico y septiembre de 2023 al producto preparado. En la red, 2006 es la fecha del insumo cartografico y septiembre de 2023 la revision. MH y legacy no cuentan con fecha documental suficiente y quedan señalados expresamente como pendientes de procedencia, no como fechas inferidas.
+
+    \item \textbf{¿Que campos se usan y cuales se descartan?}
+    Del DENUE se utilizan principalmente el identificador \texttt{d\_llave}, CLEE, nombre del establecimiento, razon social, codigo y descripcion SCIAN, entidad, municipio, localidad, estrato de personal, latitud y longitud. A partir de nombre, razon social y descripcion se construyen señales textuales; el codigo SCIAN alimenta la clasificacion sectorial, y las coordenadas generan la geometria. Los demas campos de domicilio y contacto se conservan en tablas auditables cuando estan disponibles, pero no intervienen en el clustering. De la cuenca se usa la geometria y su identificacion; de municipios, geometria, claves y nombres; de la red, geometria y atributos como nombre, orden, nodos y tipo de rasgo para contexto. Los valores auxiliares sin funcion analitica no se usan para definir grupos. Ninguna variable productiva, textual, hidrica o de personal entra en el clustering espacial.
+
+    \item \textbf{¿Que errores posicionales o de geocodificacion son esperables?}
+    Las coordenadas DENUE representan la ubicacion publicada del establecimiento, pero pueden corresponder al acceso, centroide del predio, domicilio administrativo o una posicion geocodificada con precision variable. Tambien pueden existir desplazamientos por actualizacion incompleta, errores de captura o cambios de domicilio. En las capas territoriales, la escala, generalizacion y fecha de cada insumo introducen diferencias de borde; la red 1:250,000 no representa todos los cauces menores ni redes sanitarias. Por ello, una interseccion cercana al limite o una distancia corta a una linea debe interpretarse con tolerancia y verificarse en campo, no como coincidencia fisica exacta.
+
+    \item \textbf{¿Como se identifican duplicados, establecimientos cerrados o cambios de giro?}
+    Los scripts verifican que \texttt{d\_llave} no este duplicado en cada descarga DENUE y detienen la ejecucion si encuentran duplicados. La integracion se realiza por identificador y, para MH, mediante una auditoria que distingue coincidencias, revisiones y registros agregados, conservando la fuente. Sin embargo, el proyecto no cuenta con una serie temporal DENUE ni con una verificacion censal que permita identificar de manera concluyente cierres, reaperturas o cambios de giro. Esos estados deben confirmarse mediante una descarga posterior, consulta individual y validacion en campo; la ausencia de un registro en una comparacion no se clasifica automaticamente como cierre.
+
+    \item \textbf{¿Que fuente es autoridad cuando dos registros se contradicen?}
+    No se aplica una autoridad unica para todos los atributos. El DENUE se toma como referencia primaria para identificadores y actividad economica oficialmente publicada; la capa de Conagua/SINA para la delimitacion hidrologica adoptada; el Marco Geoestadistico del INEGI para limites administrativos; y la Red Hidrografica Digital del INEGI para el contexto fluvial regional. MH puede complementar o cuestionar un registro, pero no lo sustituye silenciosamente: la discrepancia debe conservarse con procedencia, fecha y nota de auditoria. Para estado operativo, proceso productivo, consumo de agua o descarga, ninguna de estas fuentes es concluyente; prevalece la evidencia primaria obtenida mediante verificacion documentada y trabajo de campo.
+\end{enumerate}
+
+\begin{trazabilidad}
+Para cada fuente conservar: ruta relativa, nombre original, URL o mecanismo de obtencion, fecha, tamaño, hash, CRS, numero de registros, campos clave, responsable de descarga y notas de transformacion.
+\end{trazabilidad}
+
+% ============================================================
+\section{Construccion del universo economico}
+% ============================================================
+
+\subsection{Universo de partida}
+La descarga estatal acotada a los SCIAN 313, 314, 315 y 812210 constituye el punto de partida porque reúne, bajo un criterio reproducible, la fabricacion de insumos y productos textiles, la confeccion de prendas y los servicios de lavanderia y tintoreria que pueden estar relacionados con la cadena productiva estudiada. Este recorte permite construir un universo amplio antes de aplicar señales textuales o criterios de evidencia hidrica y evita seleccionar establecimientos a partir de una presuncion previa de descarga. Su cobertura, sin embargo, depende de la clasificacion declarada en DENUE: pueden quedar fuera establecimientos registrados bajo otros codigos, actividades informales, unidades sin registro vigente, procesos auxiliares realizados por terceros y comercios o servicios que oculten en su nombre o clase una operacion productiva relevante. Por ello, el universo debe entenderse como una base sectorial auditable y no como un censo exhaustivo de generadores de aguas residuales.
+
+\subsection{Filtro SCIAN}
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que codigos completos y prefijos se incluyen?
+    \item ¿Que logica sustantiva justifica cada codigo?
+    \item ¿Que codigos son de manufactura, servicios, acabado, lavado o comercio?
+    \item ¿Que codigos generan mayor riesgo de falsos positivos?
+    \item ¿Como se documentan cambios de SCIAN entre versiones?
+\end{itemize}
+\end{preguntas}
+
+El filtro SCIAN incluye por prefijo las familias 313, 314 y 315, además del codigo completo 812210. El prefijo 313 incorpora la fabricacion de insumos textiles y el acabado de productos textiles; dentro de este grupo, el codigo 313310 se identifica de manera especifica como señal de acabado humedo. El prefijo 314 comprende la fabricacion de productos textiles distintos de prendas, mientras que 315 reúne la fabricacion de prendas y actividades de confeccion. El codigo 812210 incorpora lavanderias y tintorerias como servicios potencialmente relacionados con lavado o tratamiento de prendas. Esta seleccion responde a una logica de cobertura de la cadena textil: manufactura de insumos, fabricacion de productos, confeccion y servicios de lavado. El filtro se implementa con coincidencia por prefijo para 313, 314 y 315, y con coincidencia exacta para 812210 al construir las señales analiticas; el comercio de prendas no forma parte del filtro SCIAN sectorial. Los codigos 313--315 se interpretan como actividad manufacturera, 313310 como señal particularmente vinculada con acabado, y 812210 como servicio. Ninguno de ellos demuestra por si solo uso de agua o descarga.
+
+El mayor riesgo de falsos positivos se concentra en 812210, porque incluye lavanderias y tintorerias de distinta escala y finalidad, incluidas actividades de servicio que no necesariamente realizan procesos textiles industriales; por esa razon el proyecto conserva una modalidad amplia y otra estricta que exige señales textuales o productivas adicionales. Tambien pueden producirse inclusiones demasiado amplias en 314 y 315 cuando la actividad corresponde a productos textiles o confeccion mediante procesos principalmente secos, así como falsos negativos cuando un establecimiento con proceso humedo aparece registrado bajo una clase general o una descripcion poco informativa. La version actual normaliza el codigo como texto, elimina terminaciones decimales espurias y registra por establecimiento las banderas \texttt{scian\_textil}, \texttt{scian\_acabado\_humedo} y \texttt{scian\_lavanderia}, lo que permite auditar el motivo de inclusion. El repositorio no contiene todavía una tabla de correspondencia entre versiones del SCIAN; por ello, cualquier actualización deberá congelar la version empleada, comparar altas, bajas y reclasificaciones mediante una tabla oficial de equivalencias y conservar tanto el codigo original como el armonizado, sin reemplazar silenciosamente la clasificación usada en esta corrida.
+
+\subsection{Filtro textual y diccionarios}
+El filtro textual se ejecuta sobre una cadena formada por \texttt{nom\_est} y \texttt{raz\_soc}. Aunque \texttt{desc\_scian} se valida como columna requerida, la implementacion actual no incorpora su contenido a \texttt{texto\_filtro}; las lineas correspondientes se encuentran desactivadas en el script. Cada valor se convierte a minusculas, se eliminan espacios exteriores y diacriticos mediante normalizacion Unicode NFKD, y las secuencias de espacios se reducen a uno. Los terminos del catalogo tambien se normalizan, se eliminan duplicados y se ordenan de mayor a menor longitud antes de construir expresiones regulares. Las frases permiten uno o mas espacios entre palabras y se rodean de limites negativos alfanumericos para evitar coincidencias dentro de otras palabras.
+
+El archivo \path{data/processed/catalogs/giro_textil.csv} contiene pares \texttt{palabra--senal}. Las señales positivas se organizan en \texttt{textil}, \texttt{mezclilla}, \texttt{humedo\_explicito}, \texttt{lavado\_generico}, \texttt{produccion} y \texttt{maquila}; adicionalmente se conserva \texttt{proceso\_seco\_explicito} para distinguir expresiones como costura, corte, confeccion, bordado, deshebrado y planchado. La categoria \texttt{no\_textil\_explicito} contiene expresiones de actividades ajenas, como autolavado, agua potable, alimentos, herreria, muebles y comercio simple, y tiene prioridad negativa dentro del filtro textual. Una expresion ambigua no produce por si sola evidencia hidrica: señales generales como lavado, tratamiento, pantalon o mezclilla se interpretan en combinacion con el contexto textil y productivo.
+
+El filtro devuelve solamente registros con al menos una señal positiva y sin evidencia no textil explicita. Para cada candidato conserva el texto normalizado y columnas booleanas que permiten reconstruir las coincidencias. El catalogo actual es el archivo operativo efectivamente utilizado, pero no incluye campos de version, fecha de alta, justificacion o ambigüedad por termino. En consecuencia, debe preservarse junto con cada corrida y complementarse en el anexo con una version fechada; cualquier modificacion futura debe registrar terminos añadidos, eliminados o reclasificados y volver a ejecutar la comparacion de universos.
+
+\begin{evidencia}
+Adjuntar como anexo los diccionarios completos, no solo ejemplos. Cada termino deberia tener: categoria, significado, razon de inclusion, posible ambiguedad y version de alta/modificacion.
+\end{evidencia}
+
+\subsection{Separacion entre sector textil y evidencia de proceso humedo}
+\begin{alerta}
+El universo sectorial debe distinguirse de la evidencia de proceso humedo. Una empresa puede pertenecer al sector textil y no mostrar en DENUE evidencia explicita de lavado/teñido/acabado; a la inversa, la ausencia de palabras clave no demuestra ausencia de uso de agua.
+\end{alerta}
+
+La separacion se implementa mediante dos variables de decision distintas. \texttt{sector\_textil} determina si el establecimiento pertenece al universo economico y toma los valores \texttt{INCLUIR} o \texttt{REVISAR}; se apoya en los prefijos SCIAN textiles, en la combinacion de contexto productivo con señales textiles o de mezclilla, y en evidencia de acabado humedo. Por su parte, \texttt{evidencia\_hidrica} clasifica la fuerza de la señal relacionada con procesos potencialmente humedos como \texttt{SI}, \texttt{REVISAR} o \texttt{SIN\_EVIDENCIA}. De esta forma, un taller de confeccion puede pertenecer legitimamente al universo sectorial y, al mismo tiempo, quedar sin evidencia hidrica.
+
+La categoria \texttt{SI} se asigna al codigo 313310 o a una expresion de proceso humedo acompañada por contexto textil; \texttt{REVISAR} se asigna a lavanderias admisibles, lavado generico con contexto textil o mezclilla acompañada por lavado, proceso humedo, produccion o maquila. Las demas unidades sectoriales permanecen como \texttt{SIN\_EVIDENCIA}. Cuando coexisten señales secas y humedas, la evidencia humeda tiene prioridad, pero esto sigue siendo una clasificacion documental y no una confirmacion fisica. Los productos finales conservan el universo textil completo y generan por separado los subconjuntos \texttt{SI} y \texttt{SI+REVISAR}, lo que evita confundir pertenencia sectorial con evidencia de uso de agua.
+
+\subsection{Reglas de inclusion/exclusion}
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Como se excluye comercio simple de prendas?
+    \item ¿Como se tratan ``maquila'', ``pantalon'', ``mezclilla'', ``planchado'', ``deshebrado'', ``recta/presilla/formador'', ``fabrica de tela'' y lavanderias?
+    \item ¿Que condiciones producen Alta, Media, Revisar o No incluir?
+    \item ¿Que reglas son automaticas y cuales requieren revision humana?
+    \item ¿Como se registra el motivo exacto de cada decision?
+\end{itemize}
+\end{preguntas}
+
+\subsubsection*{Respuesta a las preguntas guia}
+
+\begin{enumerate}
+    \item \textbf{¿Como se excluye el comercio simple de prendas?}
+    El recorte SCIAN no incorpora codigos comerciales, sino manufactura textil, confeccion y el servicio 812210. En el filtro textual, expresiones como \textit{comercio al por menor de ropa}, \textit{comercio al por menor de telas} y \textit{comercio al por menor de articulos usados} se etiquetan como \texttt{no\_textil\_explicito} y anulan la candidatura obtenida solamente por texto. Esta exclusion depende de que la actividad comercial aparezca en los campos analizados; por ello los casos ambiguos deben conservarse para revision y no asumirse automaticamente como produccion.
+
+    \item \textbf{¿Como se tratan las expresiones productivas ambiguas?}
+    \textit{Maquila} se registra como contexto productivo y, cuando aparece con textil o mezclilla, favorece la inclusion sectorial. \textit{Pantalon} aporta señal textil, pero no demuestra por si solo produccion ni proceso humedo. \textit{Mezclilla} sola tampoco demuestra lavado: solo pasa a evidencia \texttt{REVISAR} cuando coexiste con lavado, proceso humedo, produccion o maquila. \textit{Planchado} se clasifica como proceso seco explicito. \textit{Deshebrado} aporta señales de mezclilla, produccion y textil, ademas de proceso seco, por lo que puede apoyar la inclusion sectorial sin convertirse automaticamente en evidencia confirmada de humedad. Las palabras \textit{recta}, \textit{presilla} y \textit{formador} no figuran en el catalogo operativo actual y no generan una señal automatica. \textit{Fabrica de tela} puede activar por separado \textit{fabrica} como produccion y \textit{tela} como textil. Las lavanderias 812210 se admiten directamente en la modalidad amplia; en la estricta requieren ademas una señal textil, de mezclilla, humedad, produccion o maquila.
+
+    \item \textbf{¿Que condiciones producen Alta, Media, Revisar o No incluir?}
+    La implementacion vigente no genera categorias denominadas \texttt{Alta}, \texttt{Media} o \texttt{No incluir}; utilizar esos nombres implicaria describir una regla que no existe en el codigo. Las salidas reales son \texttt{sector\_textil=INCLUIR/REVISAR} y \texttt{evidencia\_hidrica=SI/REVISAR/SIN\_EVIDENCIA}. \texttt{INCLUIR} se obtiene por SCIAN textil, por contexto productivo combinado con textil o mezclilla, o por evidencia humeda; los demas candidatos quedan en revision sectorial. \texttt{SI} corresponde a evidencia humeda explicita, \texttt{REVISAR} a señales compatibles pero ambiguas y \texttt{SIN\_EVIDENCIA} a pertenencia sectorial sin señal humeda observable. Los registros que no coinciden ni con el filtro SCIAN ni con el textual no entran al auditable candidato. Si se desean niveles Alta y Media, deberan definirse formalmente y programarse como una version nueva, sin reinterpretar retroactivamente estas salidas.
+
+    \item \textbf{¿Que reglas son automaticas y cuales requieren revision humana?}
+    La normalizacion, coincidencia por SCIAN, busqueda de patrones, combinacion de señales y asignacion de las dos variables de decision son automaticas y reproducibles. La revision humana se requiere para los casos clasificados como \texttt{REVISAR}, contradicciones entre fuentes, establecimientos MH, ambigüedades no cubiertas por el diccionario y cualquier inferencia sobre operacion real, escala, proceso, consumo o descarga. La regla automatica prioriza consistencia; la auditoria humana aporta evidencia externa y no debe sobrescribir el resultado sin registrar fuente, fecha y justificacion.
+
+    \item \textbf{¿Como se registra el motivo exacto de cada decision?}
+    Cada fila auditable conserva \texttt{coincide\_filtro\_scian}, \texttt{coincide\_filtro\_texto}, las señales textuales booleanas, las banderas \texttt{scian\_textil}, \texttt{scian\_acabado\_humedo} y \texttt{scian\_lavanderia}, y las decisiones finales \texttt{sector\_textil} y \texttt{evidencia\_hidrica}. Esta combinacion permite reconstruir la regla aplicada, aunque actualmente no existe una columna unica con una frase de motivo. Las integraciones MH añaden procedencia y una tabla de auditoria de acciones. Para una auditoria manual completa conviene agregar en la siguiente version un identificador de regla, evidencia consultada, URL, fecha, revisor y nota factual por establecimiento.
+\end{enumerate}
+
+% ============================================================
+\section{Auditoria manual y evidencia externa}
+% ============================================================
+
+Esta etapa corresponde al inicio preliminar y localizado del proyecto, cuando el area de estudio se concentro en Huejotzingo y, con mayor profundidad, en Santa Ana Xalmimilulco. La seleccion no fue arbitraria: de esta zona provenian las muestras de agua previstas para etapas posteriores del proyecto y, por ello, era necesario comprender con mayor detalle el tejido economico que podia guardar relacion con actividades textiles, productivas y potencialmente hidricas. El proposito era reunir y contrastar todas las señales disponibles para determinar con la mayor certeza documental posible si cada establecimiento pertenecia o no a un universo textil-productivo-hidrico. Esta pertenencia se entendia como una clasificacion para orientar la investigacion, no como prueba de que una unidad generara o descargara contaminantes.
+
+El trabajo local produjo tablas auditables con 100 registros para Huejotzingo y 359 para Santa Ana Xalmimilulco, ademas de universos hidricos preliminares y comparaciones con fuentes MH. En Xalmimilulco se obtuvieron 359 registros sectoriales, 68 con evidencia \texttt{SI} o \texttt{REVISAR} y seis con evidencia \texttt{SI}; en Huejotzingo se registraron 100 unidades sectoriales, 37 con evidencia \texttt{SI} o \texttt{REVISAR} y ninguna con evidencia \texttt{SI} bajo las reglas actuales. No obstante, la auditoria manual historica no quedo consolidada como una base final: \path{data/processed/legacy/cola_revision_manual_314.csv} conserva 314 registros preparados para revision, todos con estado \texttt{PENDIENTE} y sin decision o confianza manual registrada. Por ello, la integracion final de esta fase se observa principalmente en las tablas auditables y legacy, no en un expediente terminado de evidencia externa por establecimiento.
+
+\subsection{Protocolo de revision}
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que registros entran a auditoria manual y por que?
+    \item ¿Que fuentes externas se permiten: Google Maps, Street View, sitio web, Facebook, directorios, anuncios de empleo, imagen satelital?
+    \item ¿Que jerarquia de evidencia se aplica?
+    \item ¿Como se documenta un establecimiento no encontrado, clausurado, con coordenadas dudosas o sin Street View?
+    \item ¿Que fecha tiene la observacion y cuanto puede degradarse con el tiempo?
+\end{itemize}
+\end{preguntas}
+
+\subsubsection*{Respuesta a las preguntas guia}
+
+\begin{enumerate}
+    \item \textbf{¿Que registros entran a auditoria manual y por que?}
+    El protocolo prioriza los registros cuya pertenencia no puede resolverse de manera suficiente con el codigo SCIAN y las señales textuales: casos clasificados para revision, maquilas con descripciones generales, actividades de mezclilla sin evidencia clara de lavado, posibles procesos secos, contradicciones entre DENUE y MH, coordenadas dudosas y registros que aparecen solamente en el universo historico o solamente en la clasificacion actual. La cola legacy de 314 registros materializa esta necesidad de revision en la etapa local. Tambien deben revisarse de manera prioritaria los establecimientos asociados territorialmente con los sitios de muestreo, porque el objetivo inicial era conectar la caracterizacion economica de Huejotzingo y Xalmimilulco con la interpretacion posterior de las muestras de agua sin atribuirles anticipadamente un origen.
+
+    \item \textbf{¿Que fuentes externas se permiten?}
+    La estructura legacy contempla consultas a Google Maps por direccion y coordenadas, OpenStreetMap y el registro de las fuentes efectivamente consultadas. Como evidencia complementaria pueden emplearse Street View, sitio web oficial, perfiles empresariales o de redes sociales, directorios, anuncios de empleo, notas institucionales e imagen satelital, siempre que se guarden URL, fecha y una descripcion factual de lo observado. Estas fuentes sirven para verificar existencia, nombre, giro aparente, escala o indicios de actividad; no sustituyen una visita de campo ni demuestran procesos internos, consumo de agua o descarga.
+
+    \item \textbf{¿Que jerarquia de evidencia se aplica?}
+    La mayor fuerza corresponde a evidencia primaria y fechada: visita de campo, entrevista documentada, observacion directa autorizada, permisos, registros oficiales o documentos del propio establecimiento que describan el proceso. En un segundo nivel se ubican sitios empresariales, comunicaciones institucionales y materiales donde la unidad declara su actividad. En un tercer nivel se consideran fachadas y señalamientos visibles en cartografia de calle, directorios, redes sociales y anuncios de empleo; finalmente, la imagen satelital y la proximidad espacial funcionan solo como contexto. La coincidencia de varias fuentes independientes aumenta la confianza, mientras que una señal aislada o ambigua conserva el caso en revision. La ausencia de evidencia en internet nunca se interpreta como evidencia de ausencia.
+
+    \item \textbf{¿Como se documenta un establecimiento no encontrado, clausurado, con coordenadas dudosas o sin Street View?}
+    El registro debe conservarse y marcarse con un estado descriptivo, no eliminarse ni reclasificarse automaticamente. La tabla legacy ya dispone de campos para estado de revision, establecimiento encontrado, nombre y giro observado, evidencia de proceso humedo o mezclilla, decision, confianza, fuentes, fecha, revisor y notas. Un caso no encontrado debe indicar consultas realizadas y resultado; una posible clausura requiere fuente y fecha; una coordenada dudosa debe conservar tanto el punto original como la ubicacion alternativa y su justificacion; y la falta de Street View se registra como limitacion de la fuente. Si no existe evidencia suficiente, la decision correcta es \texttt{NO DETERMINADO} o \texttt{REVISAR}, no una exclusion definitiva.
+
+    \item \textbf{¿Que fecha tiene la observacion y cuanto puede degradarse con el tiempo?}
+    La fecha relevante es la de consulta o levantamiento de cada evidencia y debe distinguirse de la fecha de incorporacion al DENUE, de la captura de la imagen y del corte del archivo. La informacion web, los directorios, la rotulacion y Street View pueden quedar obsoletos cuando un negocio cambia de nombre, giro, domicilio, escala o estado operativo; incluso una observacion de campo representa solamente el momento en que fue realizada. Por ello, cada conclusion debe asociarse con su fecha y nivel de confianza, y los casos prioritarios deben revalidarse antes de relacionarlos con muestras, campañas de monitoreo o decisiones posteriores.
+\end{enumerate}
+
+\subsubsection*{Alcance alcanzado y transicion al analisis regional}
+
+La intencion de esta fase era llegar, mediante la acumulacion de señales SCIAN, textuales, territoriales, MH y evidencia externa, a un dictamen defendible de pertenencia al universo textil-productivo-hidrico para Huejotzingo y Xalmimilulco. Sin embargo, el estado conservado en el repositorio muestra una diferencia entre el diseño del protocolo y su ejecucion completa: existen campos, reglas, enlaces preparados y tablas de comparacion, pero la cola manual permanece pendiente. En consecuencia, las etiquetas locales representan una clasificacion preliminar auditable y no una verificacion concluyente de todos los establecimientos. Los archivos \path{universo_hidrico_preliminar.csv}, \path{universo_combinado_tentativo_mh.csv} y \path{cola_revision_manual_314.csv} deben leerse como memoria metodologica de esa etapa.
+
+Posteriormente, el proyecto cambio de escala y se concentro en todos los municipios poblanos seleccionados en relacion con la cuenca. Ese desplazamiento no invalida el trabajo local: Huejotzingo y Xalmimilulco funcionaron como laboratorio para construir las reglas, reconocer ambigüedades y separar pertenencia textil de evidencia hidrica. No obstante, el analisis regional posterior utiliza un universo sectorial ampliado y procedimientos reproducibles de clasificacion y clustering, por lo que no incorpora las decisiones legacy como si fueran una verdad manual definitiva. La fase local queda integrada mediante su trazabilidad, sus comparaciones y sus lecciones metodologicas; la fase regional pasa a ser el marco principal para estudiar la distribucion y concentracion espacial en la cuenca poblana.
+
+\begin{evidencia}
+Cada revision manual debe conservar, cuando sea posible: ID DENUE, nombre, coordenadas, fecha de consulta, URL, tipo de evidencia, captura/archivo, observacion normalizada, decision, nivel de confianza, revisor y segunda revision si existe conflicto.
+\end{evidencia}
+
+\begin{trazabilidad}
+La auditoria humana debe ser reproducible en el sentido documental aunque una pagina web cambie. Conviene guardar evidencias permitidas, fecha de consulta y una nota factual separada de la interpretacion.
+\end{trazabilidad}
+
+% ============================================================
+\section{Integracion de fuentes complementarias y comparacion historica}
+% ============================================================
+
+\subsection{Integracion MH}
+Explicar procedencia, criterio de matching, manejo de coincidencias, filas sinteticas y campos de procedencia.
+
+\subsection{Universos legacy}
+Describir para que se conservan los universos historicos y por que no deben mezclarse silenciosamente con la version actual.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que registros se agregaron solo por MH?
+    \item ¿Que porcentaje de la seleccion depende de fuentes no DENUE?
+    \item ¿Que diferencias entre versiones son altas reales, bajas, cambios de criterio o cambios de fuente?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{Modalidades analiticas de la primera fase}
+% ============================================================
+
+\begin{hechos}
+El inventario documenta cinco modalidades: amplia + MH; amplia sin MH; estricta + MH; estricta sin MH; y todos los SCIAN. La ultima contiene 4,365 establecimientos en el universo municipal y 4,010 dentro de cuenca, y es la base de la Parte 2.
+\end{hechos}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que pregunta responde cada modalidad?
+    \item ¿Por que es metodologicamente importante mantenerlas separadas?
+    \item ¿Cuales son los cambios de conteo y distribucion entre ellas?
+    \item ¿Que resultados son robustos a la modalidad y cuales dependen fuertemente del filtro?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Incluir una tabla comparativa con: definicion formal, N municipal, N dentro de cuenca, MH agregados, ventajas, sesgos esperados y uso recomendado de cada modalidad.
+\end{evidencia}
+
+% ============================================================
+\section{Analisis espacial descriptivo de unidades economicas}
+% ============================================================
+
+\subsection{Distribucion territorial}
+Mapas de puntos, conteos por municipio/localidad, densidad simple, estratos de personal, composicion sectorial y distancia a red hidrografica.
+
+\subsection{Distancia a hidrografia}
+\begin{alerta}
+La distancia geometrica a un cauce es un criterio de priorizacion espacial, no evidencia de que exista una descarga a ese cauce. Sin red de drenaje, topografia, punto de descarga y conectividad hidraulica no puede inferirse la ruta del agua residual.
+\end{alerta}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que estadistico de distancia se reporta y en que CRS?
+    \item ¿Se mide a cualquier linea hidrografica o se diferencian cauces principales/secundarios?
+    \item ¿Que umbrales se usan y por que?
+    \item ¿Como afectan errores posicionales del DENUE a distancias cortas?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{Diagnostico previo de estructura espacial}
+% ============================================================
+
+\textbf{Principio:} explorar la geometria de los puntos antes de elegir un algoritmo o usar atributos economicos.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que muestran las distancias a k vecinos sobre escalas espaciales naturales?
+    \item ¿Que patrones aparecen en KDE y malla hexagonal?
+    \item ¿Hay heterogeneidad de densidad suficiente para preferir HDBSCAN/OPTICS sobre DBSCAN?
+    \item ¿Como se detecta el efecto de borde de la cuenca?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Documentar $k$, bandwidths, tamaño de hexagonos, unidades, reglas de visualizacion y como estos diagnosticos informaron el espacio de parametros sin ``optimizar'' con variables productivas.
+\end{evidencia}
+
+% ============================================================
+\section{Clustering espacial: diseño de experimentos}
+% ============================================================
+
+\subsection{Universo de deteccion vs. universo de interpretacion}
+Explicar por que se usan 4,365 puntos para detectar agrupamientos y 4,010 dentro de cuenca para interpretarlos.
+
+\subsection{Algoritmos evaluados}
+DBSCAN, HDBSCAN y OPTICS, usando exclusivamente coordenadas metricas.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que parametros se recorrieron para cada algoritmo?
+    \item ¿Por que esos rangos son plausibles dadas las distancias observadas?
+    \item ¿Cuantos escenarios se evaluaron y con la misma semilla/configuracion?
+    \item ¿Como se almacenan las membresias de todos los escenarios?
+    \item ¿Como se garantiza que SCIAN, proceso, municipio o evidencia hidrica no influyan en la formacion de clusters?
+\end{itemize}
+\end{preguntas}
+
+\begin{hechos}
+El inventario registra 57 escenarios y una semilla comun \texttt{20260921}. La solucion principal reportada es HDBSCAN con \texttt{min\_cluster\_size=10}, \texttt{min\_samples=20} y \texttt{cluster\_selection\_method=eom}.
+\end{hechos}
+
+% ============================================================
+\section{Seleccion de la solucion espacial y robustez}
+% ============================================================
+
+\subsection{Criterios de seleccion}
+La solucion principal debe justificarse por estabilidad y coherencia espacial, no porque produzca perfiles economicos ``atractivos''.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Como se utilizaron ARI, Jaccard, continuidad, efecto de borde y perturbaciones espaciales?
+    \item ¿Que mide cada metrica y cual es su limitacion?
+    \item ¿Que escenarios se consideran principal, sensibilidad y referencia?
+    \item ¿Que establecimientos cambian frecuentemente de cluster o ruido?
+    \item ¿Cuales clusters son estables y cuales dependen del escenario?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Incluir: matriz ARI entre escenarios seleccionados; Jaccard de correspondencia de clusters; persistencia por establecimiento; sensibilidad al ruido posicional; y tabla de justificacion de la solucion elegida.
+\end{evidencia}
+
+\subsection{Glosario minimo de metricas}
+\begin{longtable}{p{0.18\textwidth}p{0.34\textwidth}p{0.38\textwidth}}
+\toprule
+\textbf{Metrica} & \textbf{Que responde} & \textbf{Precaucion interpretativa} \\
+\midrule
+ARI & ¿Que tan similares son dos particiones completas, corrigiendo coincidencias esperadas por azar? & No dice que particion sea ``verdadera'' ni explica por si sola donde cambian las membresias. \\
+Jaccard & ¿Que tanto se solapan dos conjuntos/clusters comparables? & Requiere criterio de emparejamiento entre etiquetas arbitrarias. \\
+Persistencia de membresia & ¿Con que frecuencia un punto conserva una asignacion equivalente? & Depende del conjunto de escenarios comparados. \\
+Proporcion de ruido & ¿Que fraccion no es asignada a clusters bajo un escenario? & Mas ruido no es necesariamente peor; puede reflejar dispersion real. \\
+Continuidad/compacidad & ¿Que tan coherente es el cluster en el espacio? & Debe definirse exactamente la formula utilizada. \\
+Efecto de borde & ¿Cuanto cambia la estructura cerca del limite de estudio? & Un limite administrativo/hidrologico puede cortar una concentracion real. \\
+\bottomrule
+\end{longtable}
+
+% ============================================================
+\section{Materializacion de clusters, borde y ruido}
+% ============================================================
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Cuantos clusters existen en el universo ampliado y cuantos intersectan/estan dentro de cuenca?
+    \item ¿Como se definen las envolventes de cluster y que implicaciones tiene usar convex hull?
+    \item ¿Cuantos establecimientos del mismo cluster quedan fuera de cuenca?
+    \item ¿Donde se concentra el ruido y presenta patrones territoriales propios?
+\end{itemize}
+\end{preguntas}
+
+\begin{alerta}
+Un poligono envolvente de cluster es una abstraccion geometrica para visualizar concentracion; no representa una zona de servicio, una subcuenca de drenaje ni un area juridica.
+\end{alerta}
+
+% ============================================================
+\section{Perfil economico y productivo posterior al clustering}
+% ============================================================
+
+\textbf{Principio:} primero se fija la geografia; despues se pregunta que contiene cada agrupamiento.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Como se distribuyen SCIAN, municipios, localidades y estratos de personal por cluster?
+    \item ¿Que señales productivas aparecen: confeccion, lavanderia, acabado, tela, mezclilla, otros?
+    \item ¿Que porcentaje de cada cluster tiene evidencia hidrica SI, REVISAR o ausencia de evidencia explicita?
+    \item ¿Que clusters parecen especializados y cuales diversificados?
+    \item ¿Que diferencias existen entre cluster y ruido disperso?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Para cada cluster publicar una ficha estandar: N, superficie/envolvente, municipio/localidad dominante, top SCIAN, distribucion de personal, señales productivas, evidencia hidrica, distancia a red hidrografica, estabilidad y notas de incertidumbre.
+\end{evidencia}
+
+% ============================================================
+\section{Sobrerrepresentacion de señales}
+% ============================================================
+
+\subsection{Base comparativa}
+Definir explicitamente contra que universo se compara cada cluster: idealmente los 4,010 establecimientos dentro de cuenca, salvo analisis particular debidamente justificado.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que significa que una señal este sobrerrepresentada?
+    \item ¿Cual es la proporcion dentro del cluster y cual la proporcion base?
+    \item ¿Cual es el lift y el odds ratio?
+    \item ¿La diferencia es estadisticamente compatible con algo mas que fluctuacion muestral segun Fisher?
+    \item ¿Se corrigio por multiples pruebas mediante Benjamini--Hochberg?
+    \item ¿Cual es el tamaño absoluto? Un lift grande con muy pocos casos puede ser poco operativo.
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Nunca presentar solo significancia. Reportar para cada señal: $n$ cluster, $n$ señal, proporcion cluster, proporcion base, diferencia absoluta, lift, odds ratio, intervalo si se calcula, $p$, $q$ ajustado y una nota de relevancia practica.
+\end{evidencia}
+
+% ============================================================
+\section{Similitud entre clusters y tipologias productivas}
+% ============================================================
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que variables entran al vector de perfil?
+    \item ¿Como se escalan o ponderan variables con naturalezas distintas?
+    \item ¿Que distancia se usa y por que?
+    \item ¿La tipologia jerarquica representa similitud productiva, no proximidad espacial?
+    \item ¿Que pares de clusters son mas parecidos y en que dimensiones?
+\end{itemize}
+\end{preguntas}
+
+\begin{trazabilidad}
+Conservar matrices de distancia por familia de variables y una matriz combinada. Asi puede auditarse si la similitud es impulsada por SCIAN, señales, personal o composicion territorial.
+\end{trazabilidad}
+
+% ============================================================
+\section{Mega-cluster y subnucleos exploratorios}
+% ============================================================
+
+\begin{hechos}
+El inventario reporta un cluster mayor de 1,997 establecimientos. La segunda pasada estudia subnucleos de forma diagnostica, sin reemplazar la membresia principal congelada.
+\end{hechos}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Por que el mega-cluster aparece como una sola estructura con la configuracion principal?
+    \item ¿Que subnucleos espaciales se observan internamente y cuantos establecimientos contiene cada uno?
+    \item ¿Cuales son sus municipios/localidades, composicion productiva y señales hídricas?
+    \item ¿Son los subnucleos estables a parametros razonables o solo una particion ilustrativa?
+    \item ¿Alguno coincide con barreras/continuidades urbanas o hidrologicas que deban estudiarse posteriormente?
+\end{itemize}
+\end{preguntas}
+
+\begin{alerta}
+Los subnucleos diagnosticos no deben convertirse automaticamente en ``proyectos de colector''. Son hipotesis de concentracion que necesitan contrastarse con topografia, drenaje existente, puntos de descarga y caudales.
+\end{alerta}
+
+% ============================================================
+\section{Resultados principales por territorio}
+% ============================================================
+
+Esta seccion debe traducir el pipeline a hallazgos espaciales concretos, evitando repetir metodologia.
+
+\subsection{Resultados a escala de cuenca}
+\pendiente\; mapas y tabla de concentraciones principales.
+
+\subsection{Resultados por municipio}
+\pendiente\; ranking con N, densidad, clusters, señales, evidencia hidrica y estabilidad.
+
+\subsection{Resultados por localidad/corredor}
+\pendiente\; fichas territoriales donde exista suficiente concentracion o interes operativo.
+
+\subsection{Huejotzingo y Santa Ana Xalmimilulco}
+Incluir como caso detallado porque fueron parte de la primera fase de auditoria y cartografia local.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que hallazgos sobreviven a cambios de filtro y parametros?
+    \item ¿Cuales dependen de registros dudosos o revisiones manuales?
+    \item ¿Que concentraciones tienen evidencia suficiente para visita de campo prioritaria?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{De diagnostico economico a priorizacion preliminar de colectores}
+% ============================================================
+
+\textbf{Objetivo:} especificar exactamente como este trabajo puede alimentar una siguiente etapa de ingenieria sin saltarse pasos de validacion.
+
+\subsection{Lo que este analisis si puede aportar}
+\begin{itemize}
+    \item Localizar concentraciones de actividad economica potencialmente relevante.
+    \item Identificar zonas donde conviene concentrar inspeccion, entrevistas, aforos o muestreo.
+    \item Comparar sensibilidad de una prioridad territorial ante definiciones amplias/estrictas.
+    \item Señalar concentraciones robustas que merecen cruzarse con red sanitaria, topografia y descargas.
+    \item Generar una base georreferenciada auditable para incorporar nueva evidencia.
+\end{itemize}
+
+\subsection{Lo que falta antes de justificar inversion}
+\begin{enumerate}
+    \item \textbf{Validacion de establecimientos:} operacion actual, proceso real, horarios, volumen de produccion.
+    \item \textbf{Caracterizacion de agua residual:} caudal medio/maximo, variabilidad, DQO/DBO, SST, color, temperatura, pH, sales, metales u otros parametros pertinentes al proceso.
+    \item \textbf{Puntos y forma de descarga:} alcantarillado, descarga directa, infiltracion, transporte, recirculacion, tratamiento propio.
+    \item \textbf{Infraestructura existente:} colectores, atarjeas, diametros, pendientes, capacidad residual, condiciones fisicas, plantas de tratamiento.
+    \item \textbf{Topografia e hidraulica:} cotas, subcuencas de drenaje, bombeo, cruces, servidumbres, riesgos.
+    \item \textbf{Demanda futura:} crecimiento urbano/industrial y escenarios de conexion.
+    \item \textbf{Compatibilidad de tratamiento:} efecto del efluente industrial sobre el tren de tratamiento previsto/existente.
+    \item \textbf{Factibilidad economica:} CAPEX, OPEX, costo por m$^3$, costo por usuario/establecimiento atendido, alternativas.
+    \item \textbf{Marco regulatorio e institucional:} competencias, permisos, responsabilidades, descarga y pretratamiento.
+    \item \textbf{Dimension social y ambiental:} poblacion beneficiada, exposicion, conflictos, equidad, impactos de obra.
+\end{enumerate}
+
+\subsection{Matriz de priorizacion de siguiente etapa}
+\begin{longtable}{p{0.24\textwidth}p{0.12\textwidth}p{0.20\textwidth}p{0.34\textwidth}}
+\toprule
+\textbf{Criterio} & \textbf{Estado} & \textbf{Fuente prevista} & \textbf{Uso} \\
+\midrule
+Concentracion espacial de unidades & Disponible & Clustering & Priorizar zonas, no diseñar trazo. \\
+Señal de proceso humedo & Parcial & DENUE + auditoria & Priorizar validacion. \\
+Tamaño/personal & Parcial & DENUE & Proxy debil de escala; no equivale a caudal. \\
+Distancia a hidrografia & Disponible & GIS & Contexto/priorizacion, no conectividad. \\
+Red sanitaria existente & \pendiente & Organismo operador/levantamiento & Determinar posibilidad de conexion. \\
+Topografia & \pendiente & DEM/levantamiento & Delimitar drenaje por gravedad. \\
+Caudal real & \pendiente & Aforo & Dimensionamiento. \\
+Calidad de descarga & \pendiente & Muestreo & Diseño de pretratamiento/tratamiento. \\
+Poblacion beneficiada/expuesta & \pendiente & INEGI/salud/territorio & Beneficio social y prioridad. \\
+Costo de alternativa & \pendiente & Ingenieria conceptual & Comparacion economica. \\
+\bottomrule
+\end{longtable}
+
+% ============================================================
+\section{Marco de priorizacion multicriterio: propuesta para etapa posterior}
+% ============================================================
+
+\begin{alerta}
+No asignar pesos ni producir un ranking de inversion hasta que los criterios faltantes tengan datos comparables y exista una gobernanza explicita de la decision. El analisis actual puede producir un ranking de \textit{prioridad de investigacion/validacion}, no de inversion definitiva.
+\end{alerta}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que resultado se quiere priorizar: visita, muestreo, anteproyecto, obra?
+    \item ¿Quien define pesos: equipo tecnico, organismo operador, autoridad, comunidad?
+    \item ¿Que criterios son de beneficio, costo, riesgo o restriccion dura?
+    \item ¿Como se incorporara incertidumbre y sensibilidad a pesos?
+    \item ¿Que umbrales descalifican una alternativa independientemente del puntaje?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{Validacion, control de calidad y pruebas de integridad}
+% ============================================================
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Los IDs DENUE son unicos en cada universo esperado?
+    \item ¿Se conserva el conteo al hacer joins que no deberian multiplicar filas?
+    \item ¿Hay geometrias nulas, invalidas o fuera de rango?
+    \item ¿Las capas estan en el CRS esperado antes de medir distancias?
+    \item ¿Los perfiles se calculan exactamente sobre 4,010 registros dentro de cuenca?
+    \item ¿Las variables productivas estan ausentes del paso de clustering?
+    \item ¿Los PDFs/figuras corresponden al ultimo estado de datos y codigo?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Adjuntar la validacion automatizada, manifiesto de archivos y hashes. El inventario actual señala que \ruta{218\_validar\_cierre\_parte2.py} genera \ruta{validacion\_final.csv} e \ruta{inventario\_cierre.csv}.
+\end{evidencia}
+
+% ============================================================
+\section{Incertidumbre, sesgos y limitaciones}
+% ============================================================
+
+\subsection{Registro de incertidumbres}
+\begin{longtable}{p{0.21\textwidth}p{0.25\textwidth}p{0.18\textwidth}p{0.27\textwidth}}
+\toprule
+\textbf{Fuente} & \textbf{Posible efecto} & \textbf{Severidad} & \textbf{Mitigacion/documentacion} \\
+\midrule
+Cobertura DENUE & Omision de informales/no registrados & Alta & Fuentes complementarias y campo. \\
+Giro declarado & No refleja todos los procesos internos & Alta & Auditoria y entrevistas. \\
+Coordenada & Error posicional afecta distancias/cluster local & Media/Alta & Validar casos sensibles y perturbacion espacial. \\
+Fecha de registro & Cierres/cambios de actividad & Media & Fecha de consulta y verificacion. \\
+Filtro textual & Falsos positivos/negativos & Media & Diccionarios versionados y auditoria. \\
+Limite de cuenca & Efecto de borde & Media & Universo ampliado de deteccion. \\
+Clustering & Sensibilidad a parametros y densidad & Media & Escenarios, ARI/Jaccard/persistencia. \\
+Proxy personal & No equivale a produccion ni caudal & Alta para ingenieria & No usar para dimensionamiento. \\
+Distancia a rio & No equivale a ruta de descarga & Alta & Requiere red/topografia/descarga. \\
+\bottomrule
+\end{longtable}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que incertidumbres pueden cambiar una prioridad territorial?
+    \item ¿Cuales solo afectan detalle, no la conclusion general?
+    \item ¿Que incertidumbre puede reducirse barato mediante una visita o una nueva fuente?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{Reproducibilidad computacional}
+% ============================================================
+
+\subsection{Estructura del pipeline}
+Documentar scripts 00--10, 99, 100--102 y 200--222 por fase, entradas, salidas y dependencias.
+
+\subsection{Orden de ejecucion}
+\begin{verbatim}
+python scripts/101_main_cuenca_puebla.py --todos-scian
+python scripts/219_ejecutar_parte2_completa.py
+python scripts/220_segunda_pasada_analitica.py
+python scripts/221_figuras_interactivo_segunda_pasada.py
+python scripts/222_documentar_segunda_pasada.py
+python scripts/217_compilar_documentos_parte2.py
+\end{verbatim}
+
+\subsection{Entorno}
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Version exacta de Python?
+    \item ¿Versiones de pandas, geopandas, shapely, scikit-learn, scipy, matplotlib, plotly y HDBSCAN utilizado?
+    \item ¿Sistema operativo y versiones de GDAL/PROJ?
+    \item ¿Existe \ruta{requirements.txt}, \ruta{pyproject.toml} o \ruta{environment.yml}?
+    \item ¿Puede reconstruirse el reporte desde una maquina limpia?
+\end{itemize}
+\end{preguntas}
+
+\begin{alerta}
+El inventario actual indica que no se encontro archivo explicito de entorno ni repositorio Git en la raiz. Para una cadena de decision de inversion, conviene corregir ambos puntos antes de congelar el reporte final.
+\end{alerta}
+
+% ============================================================
+\section{Matriz maestra de trazabilidad de afirmaciones}
+% ============================================================
+
+\textbf{Uso:} cada afirmacion relevante del resumen ejecutivo y conclusiones debe poder seguirse hasta su evidencia.
+
+\begin{landscape}
+\small
+\begin{longtable}{p{0.24\textwidth}p{0.15\textwidth}p{0.15\textwidth}p{0.17\textwidth}p{0.12\textwidth}p{0.13\textwidth}}
+\toprule
+\textbf{Afirmacion} & \textbf{Fuente primaria} & \textbf{Transformacion/script} & \textbf{Salida que la demuestra} & \textbf{Validacion} & \textbf{Caveat} \\
+\midrule
+El universo ampliado contiene 4,365 establecimientos & DENUE + regla sectorial & 101/201 & resumen de universo / matriz maestra & conteo + unicidad & Depende de cobertura y criterio sectorial. \\
+4,010 se ubican dentro de cuenca & capa cuenca + puntos & 101/201/202 & matriz/geopackage & interseccion espacial & Depende de delimitacion y precision posicional. \\
+La solucion principal tiene 22 clusters & matriz XY & 204--206 & resumen escenario + membresia & reproducibilidad parametros & No equivale a zonas de servicio. \\
+\pendiente & \pendiente & \pendiente & \pendiente & \pendiente & \pendiente \\
+\bottomrule
+\end{longtable}
+\normalsize
+\end{landscape}
+
+% ============================================================
+\section{Conclusiones}
+% ============================================================
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que aprendimos sobre la distribucion del sector que no era visible antes?
+    \item ¿Que patrones son robustos y cuales permanecen inciertos?
+    \item ¿Que territorios justifican una segunda etapa de verificacion?
+    \item ¿Que evidencia adicional es la mas valiosa para reducir incertidumbre?
+    \item ¿Cual es la decision concreta que se recomienda tomar ahora, y cual aun no?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Las conclusiones deben estar clasificadas como: \textbf{resultado observado}, \textbf{inferencia razonable}, \textbf{hipotesis de trabajo} o \textbf{recomendacion}. Evitar mezclar categorias.
+\end{evidencia}
+
+% ============================================================
+\section{Plan de siguientes pasos}
+% ============================================================
+
+\begin{enumerate}
+    \item Congelar y versionar el repositorio actual.
+    \item Crear archivo de entorno reproducible.
+    \item Cerrar diccionarios y reglas de clasificacion con version.
+    \item Completar auditoria manual de registros prioritarios.
+    \item Generar fichas por cluster/subnucleo con incertidumbre.
+    \item Cruzar zonas prioritarias con red sanitaria y topografia.
+    \item Diseñar campaña de campo: verificacion, aforo y muestreo.
+    \item Construir balance preliminar de caudales/cargas por zona validada.
+    \item Desarrollar alternativas conceptuales de colectores.
+    \item Evaluar tecnica, economica, ambiental y socialmente las alternativas.
+\end{enumerate}
+
+% ============================================================
+\appendix
+\section{Anexo A. Inventario de scripts y productos}
+% ============================================================
+
+Incorporar el inventario completo del repositorio con, al menos: script, version/hash, objetivo, entradas, salidas, parametros, dependencia anterior, uso actual y estatus (activo/historico/deprecado).
+
+\begin{evidencia}
+El inventario actual documenta 38 scripts Python y 15 carpetas/etapas de resultados en \ruta{outputs/parte\_2/}. Conviene convertir ese inventario en una tabla generada automaticamente para que no quede obsoleta.
+\end{evidencia}
+
+% ============================================================
+\section{Anexo B. Diccionario de datos de la matriz maestra}
+% ============================================================
+
+Para cada variable: nombre, tipo, unidad, fuente, transformacion, valores validos, nulos, significado, version y uso en analisis. Marcar explicitamente si la variable entra al clustering, al perfilado o solo a visualizacion.
+
+% ============================================================
+\section{Anexo C. Diccionarios SCIAN y texto}
+% ============================================================
+
+La tabla siguiente reproduce el diccionario operativo contenido en \path{data/processed/catalogs/giro_textil.csv}, agrupado por el tipo de señal que genera cada termino. Los terminos se presentan en su forma normalizada, sin acentos y en minusculas, tal como son comparados por el filtro. Una misma expresion puede pertenecer a varias etiquetas porque cada columna representa una dimension analitica distinta; por ejemplo, \textit{deshebrado} puede indicar contexto textil, produccion, mezclilla y proceso seco. El numero entre parentesis corresponde a las entradas registradas para cada etiqueta.
+
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.23\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.45\textwidth}}
+\toprule
+\textbf{Etiqueta} & \textbf{Funcion dentro del filtro} & \textbf{Terminos asociados} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Etiqueta} & \textbf{Funcion dentro del filtro} & \textbf{Terminos asociados} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+
+\texttt{humedo\_explicito} (49) & Identifica palabras que describen directamente lavado, teñido, acabado quimico u otro tratamiento potencialmente humedo. En contexto textil puede producir \texttt{evidencia\_hidrica=SI}. & acabado; acabado de prendas; acabado quimico; acabado textil; acid wash; bano quimico; blanqueado; blanqueamiento; blanqueo; centrifugado; colorante; decolorado; deslavado; deslave; enjuague; enzimas; lavado de jeans; lavado de mezclilla; lavado de prendas; lavado de ropa; lavado industrial; lavado textil; lavanderia de prendas; lavanderia industrial; lavanderia y tintoreria; mercerizacion; mercerizado; neutralizado; oxidante; pigmentado; poliproceso; prelavado; procesamiento de ropa; proceso enzimatico; procesos humedos; sosa caustica; stone lav; stone wash; stonewashed; suavizado; suavizado quimico; tenido; tenido de prendas; tinte; tintoreria; tintoreria industrial; tintura; tratamiento de prendas; tratamiento textil. \\
+\addlinespace
+
+\texttt{lavado\_generico} (6) & Registra referencias amplias a lavado o tratamiento que necesitan contexto textil para interpretarse y normalmente conducen a revision. & clean clothes; laundry; lavado; lavanderia; tratamiento; tratamiento especial. \\
+\addlinespace
+
+\texttt{maquila} (11) & Señala organizacion productiva por encargo o taller; apoya la inclusion cuando coincide con señales textiles o de mezclilla. & confeccion en serie; ensamble de prendas; maquila; maquila de mezclilla; maquila de prendas; maquila de ropa; maquila textil; maquilado; maquiladora; taller de mezclilla; taller textil. \\
+\addlinespace
+
+\texttt{mezclilla} (20) & Identifica denim, mezclilla y procesos o prendas relacionados. No demuestra por si sola un proceso humedo. & acid wash; denim; desebrado; deshebrado; fosil; jean; jeans; lavado de jeans; lavado de mezclilla; maquila de mezclilla; mesclilla; mezclilla; pantalon de mezclilla; pantalones de mezclilla; prendas de mezclilla; stone lav; stone wash; stonewashed; taller de mezclilla; transformacion de mezclilla. \\
+\addlinespace
+
+\texttt{no\_textil\_explicito} (22) & Etiqueta negativa con prioridad sobre la candidatura textual; evita interpretar como textiles actividades claramente ajenas o comercio simple. & agua potable y alcantarillado; auto lavado; autolavado; captacion, tratamiento y suministro de agua; comercio al por mayor de madera; comercio al por menor de articulos usados; comercio al por menor de ropa; comercio al por menor de telas; elaboracion de derivados y fermentos lacteos; elaboracion de helados y paletas; elaboracion de sidra; elaboracion de tortillas; estructuras metalicas; fabricacion de muebles; lavado de botellas; lavado y lubricado de automoviles y camiones; molienda de nixtamal; productos de carton y papel; productos de herreria; productos de hierro y acero; productos de madera para la construccion; purificacion y embotellado de agua. \\
+\addlinespace
+
+\texttt{proceso\_seco\_explicito} (10) & Distingue operaciones textiles que pueden realizarse principalmente sin proceso humedo; se conserva para perfilado y cautela interpretativa. & bordado; bordados; confeccion; confecciones; corte; corte y confeccion; costura; desebrado; deshebrado; planchado. \\
+\addlinespace
+
+\texttt{produccion} (37) & Identifica expresiones de fabricacion, transformacion o actividad productiva y aporta contexto para decidir inclusion sectorial. & bordado; bordados; confeccion; confeccion en serie; confecciones; corte; corte industrial; desebrado; deshebrado; elaboracion; elaboracion de ropa; ensamble de prendas; estampado; fabrica; fabricacion; fabricacion de ropa; hilado; hilatura; impresion textil; industria; industrial; lavado industrial; lavanderia industrial; manufactura; maquiladora; procesamiento; procesamiento de ropa; produccion; serigrafia; sublimacion; tejeduria; tejido; telar; textilera; tintoreria industrial; transformacion; transformacion de mezclilla. \\
+\addlinespace
+
+\texttt{textil} (48) & Registra referencias generales a materiales, prendas, oficios y operaciones de la cadena textil; aporta contexto sectorial, pero no prueba humedad. & acabado textil; bordado; bordados; confeccion; confecciones; costura; costurera; denim; desebrado; deshebrado; elaboracion de ropa; ensamble de prendas; estampado; fabricacion de ropa; fibra textil; hilado; hilatura; hilo; impresion textil; jean; jeans; maquila de mezclilla; maquila de prendas; maquila de ropa; maquila textil; mesclilla; mezclilla; pantalon; pantalon de mezclilla; pantalones de mezclilla; pasamaneria; prenda; prendas de mezclilla; prendas de vestir; ropa; ropa de trabajo; taller de mezclilla; taller textil; tejeduria; tejido; tela; telar; telas; textil; textilera; transformacion de mezclilla; tratamiento textil; uniforme industrial. \\
+
+\bottomrule
+\end{longtable}
+\normalsize
+
+En total, el archivo contiene 203 asociaciones termino--etiqueta y 143 terminos unicos. La diferencia se debe a que varios terminos producen mas de una señal. Esta tabla documenta el diccionario utilizado en la corrida actual; no sustituye el archivo CSV, que permanece como fuente operativa y debe conservarse con su hash y fecha en cada version reproducible.
+
+% ============================================================
+\section{Anexo D. Bitacora de auditoria manual}
+% ============================================================
+
+Tabla por establecimiento con evidencia, URL, fecha, revisor, nota factual, interpretacion, decision y confianza.
+
+% ============================================================
+\section{Anexo E. Catalogo de figuras, mapas y tablas}
+% ============================================================
+
+Registrar titulo, archivo, script generador, fuente, fecha de creacion, universo, CRS y mensaje analitico. Incluir tanto mapas PNG como HTML interactivos.
+
+% ============================================================
+\section{Anexo F. Glosario metodologico}
+% ============================================================
+
+Incluir como minimo: SCIAN, DENUE, universo sectorial ampliado, evidencia hidrica, proceso humedo, CRS, UTM, efecto de borde, DBSCAN, HDBSCAN, OPTICS, ruido, min\_cluster\_size, min\_samples, EOM, ARI, Jaccard, persistencia, KDE, k-NN, lift, odds ratio, Fisher exacta, Benjamini--Hochberg, distancia de perfiles, linkage y subnucleo diagnostico.
+
+% ============================================================
+\section{Anexo G. Registro de decisiones metodologicas}
+% ============================================================
+
+Para cada decision: ID, fecha, pregunta, opciones consideradas, decision, justificacion, evidencia, responsable, consecuencias, archivos afectados y condicion que obligaria a revisarla.
+
+% ============================================================
+\section{Anexo H. Registro de cambios}
+% ============================================================
+
+\begin{longtable}{p{0.12\textwidth}p{0.16\textwidth}p{0.18\textwidth}p{0.44\textwidth}}
+\toprule
+\textbf{Version} & \textbf{Fecha} & \textbf{Responsable} & \textbf{Cambio} \\
+\midrule
+0.1 & \today & \pendiente & Estructura maestra y guia de evidencia. \\
+\bottomrule
+\end{longtable}
+
+% ============================================================
+\section{Anexo I. Checklist previo a publicacion}
+% ============================================================
+
+\begin{itemize}
+    \item[$\square$] Todas las cifras del resumen ejecutivo se reproducen desde salidas finales.
+    \item[$\square$] Todas las figuras indican universo, fuente, fecha y CRS cuando aplica.
+    \item[$\square$] Ninguna distancia geografica fue calculada en grados.
+    \item[$\square$] El clustering usa exclusivamente variables espaciales declaradas.
+    \item[$\square$] Se conserva el ruido y se explica su interpretacion.
+    \item[$\square$] Sobrerrepresentacion reporta base, tamaño absoluto y correccion multiple.
+    \item[$\square$] El mega-cluster no fue reemplazado silenciosamente por subclusters exploratorios.
+    \item[$\square$] El reporte distingue presencia economica de evidencia de descarga.
+    \item[$\square$] El reporte distingue prioridad de investigacion de prioridad de inversion.
+    \item[$\square$] Existen entorno reproducible y version congelada del codigo.
+    \item[$\square$] Los hashes de fuentes y productos finales estan archivados.
+    \item[$\square$] Existe una ruta de trazabilidad para cada conclusion principal.
+\end{itemize}
+
+% ============================================================
+\section{Anexo J. Fuentes y antecedentes a incorporar}
+% ============================================================
+
+\begin{itemize}
+    \item INEGI -- DENUE y diccionario de datos de la version utilizada.
+    \item Fuente oficial de poligono de cuenca, division municipal y red hidrografica.
+    \item Informes tecnicos de CONAGUA/SEMARNAT/autoridades estatales pertinentes.
+    \item Registros de emisiones/transferencias y descargas cuando sean aplicables.
+    \item Literatura academica y tecnica sobre contaminacion, actividad textil y salud ambiental en la Cuenca del Alto Atoyac.
+    \item \textit{Salud ambiental en la Cuenca del Alto Atoyac: situacion, peligros ambientales y acciones para reducir el riesgo de enfermedades cronicas no transmisibles}, como antecedente contextual a revisar y citar formalmente en la version final.
+\end{itemize}
+
+% ============================================================
+\bibliographystyle{plainnat}
+\bibliography{repote_completo}
+
+\end{document}

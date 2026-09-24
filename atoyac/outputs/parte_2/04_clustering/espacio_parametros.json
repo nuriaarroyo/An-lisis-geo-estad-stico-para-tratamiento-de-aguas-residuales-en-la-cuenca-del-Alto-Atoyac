@@ -1,0 +1,54 @@
+{
+  "DBSCAN": {
+    "eps_m": [
+      250,
+      400,
+      600,
+      800,
+      1200,
+      1600
+    ],
+    "min_samples": [
+      5,
+      10,
+      15,
+      25
+    ]
+  },
+  "HDBSCAN": {
+    "min_cluster_size": [
+      10,
+      20,
+      30,
+      50,
+      75
+    ],
+    "min_samples": [
+      5,
+      10,
+      20
+    ],
+    "cluster_selection_method": [
+      "eom",
+      "leaf"
+    ]
+  },
+  "OPTICS": {
+    "min_samples": [
+      10,
+      20,
+      30
+    ],
+    "xi": [
+      0.05
+    ],
+    "min_cluster_size_frac": [
+      0.01
+    ]
+  },
+  "variables_usadas": [
+    "x_utm14n",
+    "y_utm14n"
+  ],
+  "variables_excluidas": "Todas las variables económicas, textuales, hídricas y de tamaño"
+}

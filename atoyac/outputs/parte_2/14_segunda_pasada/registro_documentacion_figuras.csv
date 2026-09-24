@@ -1,0 +1,7 @@
+﻿figura,datos,metrica,calculo,lectura,conclusion,resultados_completos,limitacion
+01_robustez_ari_documentada,57 escenarios espaciales; panel sin OPTICS para ARI perturbado,ARI global,Comparación de particiones completas; media top-5 y 3 perturbaciones,Alto=particiones similares,Principal en región alta-alta,diagnostico_ari_variantes.csv,ARI global sensible a categorías grandes
+02_estabilidad_membresia,"4,010 puntos interiores",Fracción de 5 especificaciones,Acuerdo individual con cluster emparejado por Jaccard,1=conserva membresía siempre,Predominan núcleos robustos,componentes_estabilidad_por_cluster.csv,No es cohesión ni persistencia HDBSCAN
+03_subnucleos_mega_etiquetados,"1,997 puntos del cluster 20",HDBSCAN leaf espacial,"mcs=30,min_samples=10",Etiqueta>=0=subnúcleo; -1=no asignado,"18 subnúcleos, 44.5% no asignado",subnucleos_mega_cluster_documentados.csv,Diagnóstico posterior; no cambia solución
+04/05_heatmap,18 clusters interiores,Prevalencia multilabel,media de indicadores booleanos,"Alto=mayor fracción, columnas no suman 100",Composición heterogénea,diccionario_variables_analiticas.csv,Etiquetas correlacionadas/no exclusivas
+06/07_distancias,18 perfiles,"coseno, JS y combinación",0.5 d_cos+0.5 d_JS,0=perfiles iguales,Pares similares documentados,explicacion_pares_similares.csv,"Perfil posterior, no proximidad geográfica"
+08_ranking_lavanderia,18 clusters,prevalencia lavandería,conteo/n,80% es umbral descriptivo,ninguno alcanza 80%,perfiles_clusters.csv,No prueba vínculo productivo/hídrico

@@ -1,0 +1,9 @@
+{
+  "solucion_principal_inmutable": "hdbscan__min_cluster_size-10__min_samples-20__cluster_selection_method-eom",
+  "semilla": 20260921,
+  "perturbacion": "ruido gaussiano independiente N(0,25 m) en x e y; 3 repeticiones; se reajusta HDBSCAN completo",
+  "aclaracion_top5": "media de las cinco particiones del mismo metodo con mayor ARI; no son vecinas parametricas",
+  "estabilidad_membresia": "fraccion no ponderada de 5 especificaciones alternativas en que cada punto permanece en el cluster emparejado por maximo Jaccard; peso 0.2 cada una",
+  "umbrales": "SENSIBLE 0-0.49; ESTABLE 0.50-0.79; NUCLEO_ROBUSTO 0.80-1.00",
+  "mega": "HDBSCAN espacial mcs=30, min_samples=10, leaf; exploratorio, no redefine membresia principal"
+}

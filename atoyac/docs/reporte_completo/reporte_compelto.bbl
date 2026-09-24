@@ -1,0 +1,59 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Comisi{\'o}n Nacional de los Derechos Humanos}(2017)]{cndh2017atoyac}
+{Comisi{\'o}n Nacional de los Derechos Humanos}.
+\newblock Recomendaci{\'o}n no. 10/2017 sobre la violaci{\'o}n a los derechos
+  humanos a un medio ambiente sano, saneamiento del agua y acceso a la
+  informaci{\'o}n, en relaci{\'o}n con la contaminaci{\'o}n de los r{\'i}os
+  atoyac, xochiac y sus afluentes.
+\newblock Technical report, Comisi{\'o}n Nacional de los Derechos Humanos,
+  Ciudad de M{\'e}xico, M{\'e}xico, March 2017.
+\newblock URL
+  \url{https://hist.cndh.org.mx/sites/default/files/doc/Recomendaciones/2017/Rec_2017_010.pdf}.
+
+\bibitem[{Comisi{\'o}n Nacional del Agua}(2011)]{dof2011atoyac}
+{Comisi{\'o}n Nacional del Agua}.
+\newblock Declaratoria de clasificaci{\'o}n de los r{\'i}os atoyac y xochiac o
+  hueyapan, y sus afluentes.
+\newblock Diario Oficial de la Federaci{\'o}n, 2011.
+\newblock URL \url{https://dof.gob.mx/nota_detalle_popup.php?codigo=5199672}.
+\newblock Publicada el 6 de julio de 2011.
+
+\bibitem[{Comisi{\'o}n Nacional del Agua}(2022)]{conagua2022textil}
+{Comisi{\'o}n Nacional del Agua}.
+\newblock Firman gobiernos de m{\'e}xico y de puebla convenio con industrias
+  textiles para mejorar la calidad del agua del r{\'i}o atoyac.
+\newblock Comunicado de prensa, November 2022.
+\newblock URL
+  \url{https://www.gob.mx/conagua/prensa/firman-gobiernos-de-mexico-y-de-puebla-convenio-con-industrias-textiles-para-mejorar-la-calidad-del-agua-del-rio-atoyac?idiom=es-MX}.
+
+\bibitem[P{\'e}rez~Castresana et~al.(2023)P{\'e}rez~Castresana, Romero~Natale,
+  Camacho~Sanabria, S{\'a}nchez~Porras, and
+  Ortu{\~n}o~Vilchis]{perezcastresana2023}
+Gabriela P{\'e}rez~Castresana, Aline Romero~Natale, Ra{\'u}l Camacho~Sanabria,
+  Arturo S{\'a}nchez~Porras, and Matilde Ortu{\~n}o~Vilchis.
+\newblock \emph{Salud ambiental en la Cuenca del Alto Atoyac: Situaci{\'o}n,
+  peligros ambientales y acciones para reducir el riesgo de enfermedades
+  cr{\'o}nicas no transmisibles (ECNT)}.
+\newblock Universidad Iberoamericana Puebla, Instituto de Investigaciones en
+  Medio Ambiente Xabier Gorostiaga, SJ, Puebla, M{\'e}xico, 2023.
+\newblock URL \url{https://repo.iberopuebla.mx/IIMA/saludAmbiental/}.
+
+\bibitem[Svarch~P{\'e}rez et~al.(2025)Svarch~P{\'e}rez, Su{\'a}rez-Rienda,
+  de~la Sierra de~la Vega, and Alcocer~Varela]{percepcionriesgo2025}
+Alejandro~Ernesto Svarch~P{\'e}rez, Ver{\'o}nica Su{\'a}rez-Rienda,
+  Luz~Ang{\'e}lica de~la Sierra de~la Vega, and Jorge~Carlos Alcocer~Varela.
+\newblock Percepci{\'o}n de riesgos a la salud por contaminaci{\'o}n industrial
+  en la cuenca del alto atoyac: aportaciones para la regulaci{\'o}n sanitaria.
+\newblock \emph{Revista Internacional de Contaminaci{\'o}n Ambiental},
+  41:\penalty0 581--597, 2025.
+\newblock \doi{10.20937/rica.55301}.
+\newblock URL
+  \url{https://www.scielo.org.mx/scielo.php?pid=S0188-49992025000100146&script=sci_arttext}.
+
+\end{thebibliography}

@@ -1,0 +1,11 @@
+﻿verificacion,cumple,detalle
+solucion_principal_unica,True,
+solucion_principal_fija,True,
+matriz_4365,True,
+matriz_ids_unicos,True,
+cuenca_4010,True,
+membresia_4365,True,
+membresia_ids_unicos,True,
+perfilado_4010,True,
+perfilado_ids_unicos,True,
+variables_productivas_no_usadas_en_clustering,True,204 y 205 usan exclusivamente x/y en EPSG:32614; verificación de código y espacio_parametros.json

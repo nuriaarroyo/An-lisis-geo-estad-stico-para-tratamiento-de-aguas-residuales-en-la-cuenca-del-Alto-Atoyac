@@ -1,0 +1,31 @@
+{
+  "concentraciones": "La solución fija detecta 22 clusters municipales; 18 intersectan la cuenca. El cluster 20 concentra 1,997 establecimientos.",
+  "robustez": "La solución principal conserva ARI alto frente a configuraciones vecinas y perturbaciones de 25 m; la persistencia se reporta por establecimiento y cluster.",
+  "composicion": "Los perfiles completos se documentan por SCIAN, señales multilabel, personal, municipio y localidad.",
+  "sobrerrepresentacion": "Se identificaron 46 rasgos defendibles entre los cinco primeros por grupo bajo criterios conservadores.",
+  "lavanderias_manufactura": "Ninguno de los 6 escenarios principal/referencia/sensibilidad produce un cluster interior con al menos 80% de lavanderías.",
+  "similitud": "Los pares productivamente más similares se registran sin incorporar proximidad geográfica.",
+  "ruido": "La comparación formal con actividad agrupada usa prevalencias, diferencias, odds ratio, Fisher y ajuste BH.",
+  "variables_ruido_mayor_diferencia": [
+    {
+      "senal": "proceso_seco_explicito",
+      "diferencia_agrupado_menos_ruido": -0.07918955323799615
+    },
+    {
+      "senal": "scian_textil",
+      "diferencia_agrupado_menos_ruido": -0.07197574628370473
+    },
+    {
+      "senal": "scian_lavanderia",
+      "diferencia_agrupado_menos_ruido": 0.07197574628370473
+    },
+    {
+      "senal": "actividad_lavanderia_tintoreria",
+      "diferencia_agrupado_menos_ruido": 0.07197574628370473
+    },
+    {
+      "senal": "textil",
+      "diferencia_agrupado_menos_ruido": -0.05546313548043649
+    }
+  ]
+}

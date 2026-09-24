@@ -1,0 +1,68 @@
+g_id,cve_ent,nom_ent,cve_mun,cvegeomun,nom_mun
+1,21,Puebla,015,21015,Amozoc
+2,21,Puebla,026,21026,Calpan
+3,21,Puebla,034,21034,Coronango
+4,21,Puebla,041,21041,Cuautlancingo
+5,21,Puebla,048,21048,Chiautzingo
+6,21,Puebla,060,21060,Domingo Arenas
+7,21,Puebla,074,21074,Huejotzingo
+8,21,Puebla,090,21090,Juan C. Bonilla
+9,21,Puebla,106,21106,Ocoyucan
+10,21,Puebla,114,21114,Puebla
+11,21,Puebla,119,21119,San Andrés Cholula
+12,21,Puebla,122,21122,San Felipe Teotlalcingo
+13,21,Puebla,125,21125,San Gregorio Atzompa
+14,21,Puebla,132,21132,San Martín Texmelucan
+15,21,Puebla,134,21134,San Matías Tlalancaleca
+16,21,Puebla,136,21136,San Miguel Xoxtla
+17,21,Puebla,140,21140,San Pedro Cholula
+18,21,Puebla,143,21143,San Salvador el Verde
+19,21,Puebla,180,21180,Tlahuapan
+20,21,Puebla,181,21181,Tlaltenango
+21,29,Tlaxcala,001,29001,Amaxac de Guerrero
+22,29,Tlaxcala,002,29002,Apetatitlán de Antonio Carvajal
+23,29,Tlaxcala,003,29003,Atlangatepec
+24,29,Tlaxcala,005,29005,Apizaco
+25,29,Tlaxcala,009,29009,Cuaxomulco
+26,29,Tlaxcala,010,29010,Chiautempan
+27,29,Tlaxcala,011,29011,Muñoz de Domingo Arenas
+28,29,Tlaxcala,012,29012,Españita
+29,29,Tlaxcala,014,29014,Hueyotlipan
+30,29,Tlaxcala,015,29015,Ixtacuixtla de Mariano Matamoros
+31,29,Tlaxcala,017,29017,Mazatecochco de José María Morelos
+32,29,Tlaxcala,018,29018,Contla de Juan Cuamatzi
+33,29,Tlaxcala,019,29019,Tepetitla de Lardizábal
+34,29,Tlaxcala,022,29022,Acuamanala de Miguel Hidalgo
+35,29,Tlaxcala,023,29023,Natívitas
+36,29,Tlaxcala,024,29024,Panotla
+37,29,Tlaxcala,025,29025,San Pablo del Monte
+38,29,Tlaxcala,026,29026,Santa Cruz Tlaxcala
+39,29,Tlaxcala,027,29027,Tenancingo
+40,29,Tlaxcala,028,29028,Teolocholco
+41,29,Tlaxcala,029,29029,Tepeyanco
+42,29,Tlaxcala,031,29031,Tetla de la Solidaridad
+43,29,Tlaxcala,032,29032,Tetlatlahuca
+44,29,Tlaxcala,033,29033,Tlaxcala
+45,29,Tlaxcala,034,29034,Tlaxco
+46,29,Tlaxcala,035,29035,Tocatlán
+47,29,Tlaxcala,036,29036,Totolac
+48,29,Tlaxcala,038,29038,Tzompantepec
+49,29,Tlaxcala,039,29039,Xaloztoc
+50,29,Tlaxcala,040,29040,Xaltocan
+51,29,Tlaxcala,041,29041,Papalotla de Xicohténcatl
+52,29,Tlaxcala,042,29042,Xicohtzinco
+53,29,Tlaxcala,043,29043,Yauhquemehcan
+54,29,Tlaxcala,044,29044,Zacatelco
+55,29,Tlaxcala,048,29048,La Magdalena Tlaltelulco
+56,29,Tlaxcala,049,29049,San Damián Texóloc
+57,29,Tlaxcala,050,29050,San Francisco Tetlanohcan
+58,29,Tlaxcala,051,29051,San Jerónimo Zacualpan
+59,29,Tlaxcala,052,29052,San José Teacalco
+60,29,Tlaxcala,053,29053,San Juan Huactzinco
+61,29,Tlaxcala,054,29054,San Lorenzo Axocomanitla
+62,29,Tlaxcala,055,29055,San Lucas Tecopilco
+63,29,Tlaxcala,056,29056,Santa Ana Nopalucan
+64,29,Tlaxcala,057,29057,Santa Apolonia Teacalco
+65,29,Tlaxcala,058,29058,Santa Catarina Ayometla
+66,29,Tlaxcala,059,29059,Santa Cruz Quilehtla
+67,29,Tlaxcala,060,29060,Santa Isabel Xiloxoxtla

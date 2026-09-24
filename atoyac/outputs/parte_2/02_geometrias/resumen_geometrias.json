@@ -1,0 +1,12 @@
+{
+  "crs_origen": "EPSG:4326",
+  "crs_analisis": "EPSG:32614",
+  "n_puntos": 4365,
+  "bounds_utm": [
+    543299.8794922323,
+    2082873.6536603097,
+    624121.2133780736,
+    2197531.962939188
+  ],
+  "coordenadas_finitas": true
+}

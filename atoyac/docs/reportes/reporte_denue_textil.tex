@@ -1,0 +1,484 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\geometry{margin=2.3cm}
+\graphicspath{{../outputs/xalmimilulco/figures/}{../outputs/huejotzingo/figures/}}
+\hypersetup{colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!55!black}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlength{\headheight}{14pt}
+\renewcommand{\arraystretch}{1.18}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{DENUE textil y evidencia hídrica}
+\rhead{Huejotzingo y Santa Ana Xalmimilulco}
+\cfoot{\thepage}
+
+\title{\textbf{Identificación preliminar de establecimientos textiles\\
+y de posibles procesos con componente hídrico}\\[0.5em]
+\large Localidades de Huejotzingo y Santa Ana Xalmimilulco, Puebla}
+\author{Reporte técnico reproducible a partir del DENUE 2026}
+\date{Actualizado el 11 de septiembre de 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Este documento presenta el procedimiento utilizado para localizar establecimientos potencialmente vinculados con la actividad textil y, dentro de ese conjunto, identificar señales de procesos con posible componente hídrico. El análisis parte del Directorio Estadístico Nacional de Unidades Económicas (DENUE), realiza un recorte por localidad, aplica en paralelo un filtro por códigos SCIAN y un filtro textual auditable, combina los candidatos mediante un identificador único y recupera finalmente su geometría original. El resultado es \emph{preliminar}: distingue inclusiones con evidencia sectorial relativamente sólida, registros que requieren revisión y casos con o sin evidencia hídrica textual. No sustituye la verificación en campo ni permite inferir consumo de agua, volumen de descarga o cumplimiento ambiental.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Resumen ejecutivo}
+
+Se analizaron 1,732 establecimientos ubicados en Santa Ana Xalmimilulco y 3,093 en la localidad de Huejotzingo. Después de aplicar los filtros y las exclusiones explícitas de actividades no textiles, se obtuvieron 359 candidatos en Santa Ana Xalmimilulco y 100 en Huejotzingo.
+
+La diferencia principal entre ambas localidades es la fortaleza de la evidencia sectorial. Santa Ana Xalmimilulco contiene 313 inclusiones preliminares, dominadas por confección en serie; Huejotzingo contiene 38. En materia hídrica, Santa Ana presenta seis casos con evidencia explícita y 62 que requieren revisión. Huejotzingo no presenta casos automáticos con evidencia hídrica fuerte y conserva 37 para revisión, de los cuales 34 son lavanderías y tintorerías clasificadas bajo SCIAN 812210.
+
+\begin{table}[H]
+\centering
+\caption{Resultados principales del proceso automático}
+\begin{tabular}{lrrrrrr}
+\toprule
+Localidad & DENUE & Candidatos & Incluir & Rev. sector & Hídrico Sí & Rev. hídrica\\
+\midrule
+Santa Ana Xalmimilulco & 1,732 & 359 & 313 & 46 & 6 & 62\\
+Huejotzingo             & 3,093 & 100 & 38  & 62 & 0 & 37\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Los 359 candidatos de Santa Ana equivalen al 20.7\% de su DENUE local y las 313 inclusiones preliminares al 18.1\%. En Huejotzingo, los 100 candidatos equivalen al 3.2\% y las 38 inclusiones al 1.2\%. Estas proporciones describen el resultado del método, no una estimación estadística definitiva del tejido productivo.
+
+\section{Objetivo y alcance}
+
+El objetivo operativo es construir un universo trazable de unidades económicas que permita responder dos preguntas distintas:
+
+\begin{enumerate}[label=\arabic*.]
+  \item ¿Existe evidencia suficiente para considerar que el establecimiento pertenece al sector textil o participa en la producción y transformación de textiles y prendas?
+  \item Entre los establecimientos candidatos, ¿existe evidencia de lavado, teñido, acabado u otro proceso potencialmente asociado con el uso de agua?
+\end{enumerate}
+
+Las preguntas se mantienen separadas deliberadamente. Una unidad puede tener una señal hídrica sin ser textil ---por ejemplo, un autolavado--- y puede ser claramente textil sin presentar evidencia de un proceso húmedo ---por ejemplo, un taller de corte o confección---. Por ello se utilizan dos decisiones: \texttt{sector\_textil} y \texttt{evidencia\_hidrica}.
+
+El estudio cubre exclusivamente los registros cuya columna \texttt{Localidad} corresponde a Santa Ana Xalmimilulco o Huejotzingo. No representa automáticamente todo el municipio, otras localidades cercanas ni establecimientos informales ausentes del DENUE.
+
+\section{Fuentes, estructura y trazabilidad}
+
+\subsection{Archivos de entrada}
+
+La fuente principal es el conjunto \texttt{INEGI\_DENUE\_04092026}, integrado por:
+
+\begin{itemize}
+  \item un CSV con atributos descriptivos, actividad SCIAN, domicilio, localidad, latitud y longitud;
+  \item un Shapefile con la geometría puntual;
+  \item el DBF de atributos, el índice SHX, la proyección PRJ y archivos auxiliares de índice;
+  \item el catálogo \texttt{giro\_textil.csv}, que asigna palabras y frases a señales analíticas.
+\end{itemize}
+
+Se verificaron 6,015 registros únicos tanto en el CSV original como en la capa. Los archivos no tienen el mismo orden de filas, por lo que nunca se vinculan por posición. La unión se realiza mediante:
+
+\begin{center}
+\texttt{CSV.d\_llave = capa.id}
+\end{center}
+
+La geometría del Shapefile coincide con los campos de longitud y latitud del CSV. Todos los productos geográficos conservan la referencia espacial WGS84 de la fuente.
+
+\subsection{Campos normalizados}
+
+Para simplificar el código se normalizan los encabezados del CSV:
+
+\begin{longtable}{>{\ttfamily}p{0.32\textwidth}>{\ttfamily}p{0.24\textwidth}p{0.34\textwidth}}
+\toprule
+Campo DENUE & Campo de trabajo & Uso\\
+\midrule
+\endhead
+ID & d\_llave & Identificador único para uniones y recuperación geométrica\\
+Clee & clee & Clave estadística complementaria\\
+Nombre de la Unidad Económica & nom\_est & Texto analizado\\
+Razón social & raz\_soc & Texto analizado\\
+Código de la clase SCIAN & cve\_scian & Clasificación sectorial\\
+Nombre de clase de actividad & desc\_scian & Apoyo exclusivo para exclusiones textuales\\
+Clave localidad & cve\_loc & Referencia territorial\\
+Localidad & localidad & Recorte territorial\\
+\bottomrule
+\end{longtable}
+
+Los identificadores se leen como texto para evitar pérdida de ceros o conversiones numéricas. Los productos tabulares se escriben en UTF-8 con marca BOM para facilitar su apertura en hojas de cálculo.
+
+\section{Proceso metodológico detallado}
+
+\subsection{Paso 1: recorte territorial}
+
+Se normalizan espacios y se seleccionan exactamente los registros de cada localidad. El recorte produjo 1,732 registros para Santa Ana Xalmimilulco y 3,093 para Huejotzingo. Esta operación ocurre antes de cualquier clasificación sectorial.
+
+\subsection{Paso 2: filtro SCIAN}
+
+El filtro estructurado selecciona códigos que comienzan con 313, 314 o 315, además del código 812210:
+
+\begin{itemize}
+  \item \textbf{313}: fabricación de insumos textiles y acabado de textiles;
+  \item \textbf{314}: fabricación de productos textiles, excepto prendas de vestir;
+  \item \textbf{315}: fabricación de prendas de vestir;
+  \item \textbf{812210}: lavanderías y tintorerías, retenidas para investigar si prestan servicios a la industria de prendas.
+\end{itemize}
+
+El código 812210 no demuestra por sí mismo que exista actividad textil industrial. Por ello entra como candidato, normalmente con decisión sectorial o hídrica de revisión.
+
+\subsection{Paso 3: filtro textual}
+
+Las señales positivas se buscan exclusivamente en el nombre del establecimiento y la razón social. La descripción SCIAN se reserva para las exclusiones: puede impedir una inclusión textual cuando describe inequívocamente comercio minorista, alimentos, autolavado u otra actividad fuera del alcance, pero nunca genera por sí sola una señal positiva. Esta separación evita duplicar la información ya evaluada por el código SCIAN y reduce falsos positivos producidos por palabras generales como \emph{fabricación}, \emph{elaboración} o \emph{industrial}. Todo el texto se convierte a minúsculas, se eliminan acentos y se normalizan espacios.
+
+El catálogo produce siete señales positivas:
+
+\begin{description}
+  \item[\texttt{textil}] referencias generales a textiles, prendas, tela, ropa o actividades afines;
+  \item[\texttt{mezclilla}] referencias a mezclilla, denim, jeans y variantes ortográficas;
+  \item[\texttt{humedo\_explicito}] lavado textil, teñido, blanqueo, acabado químico, procesos enzimáticos y expresiones equivalentes;
+  \item[\texttt{lavado\_generico}] términos de lavado, lavandería o tratamiento que requieren contexto adicional;
+  \item[\texttt{produccion}] fabricación, elaboración, transformación y otros términos productivos;
+  \item[\texttt{maquila}] maquila, ensamble o referencias equivalentes;
+  \item[\texttt{proceso\_seco\_explicito}] corte, confección, bordado, deshebrado y planchado.
+\end{description}
+
+Se agregó una octava señal negativa, \texttt{no\_textil\_explicito}. Contiene frases que corresponden claramente a agua potable, autolavados, lavado de botellas, alimentos, herrería, madera, muebles, papel y comercio minorista. Después de identificar cualquier señal positiva se aplica:
+
+\begin{center}
+\texttt{candidato\_texto = tiene\_senal\_positiva AND NOT no\_textil\_explicito}
+\end{center}
+
+La señal negativa bloquea la rama textual, pero no invalida por sí sola un SCIAN 313--315. Esta precedencia protege registros con clasificación sectorial sólida ante una coincidencia textual accidental.
+
+Con las reglas vigentes, el universo candidato contiene 359 registros en Santa Ana y 100 en Huejotzingo. Estos conjuntos deben denominarse universos ampliados de candidatos porque reúnen tanto decisiones \texttt{INCLUIR} como decisiones \texttt{REVISAR}.
+
+\subsection{Paso 4: unión de candidatos}
+
+Los candidatos del SCIAN y del texto se unen mediante \texttt{d\_llave}. Cada establecimiento aparece una sola vez y se conservan dos columnas de procedencia: \texttt{coincide\_filtro\_scian} y \texttt{coincide\_filtro\_texto}.
+
+\begin{table}[H]
+\centering
+\caption{Procedencia de los candidatos después de las exclusiones}
+\begin{tabular}{lrr}
+\toprule
+Procedencia & Santa Ana & Huejotzingo\\
+\midrule
+Solo texto & 22 & 29\\
+Solo SCIAN & 49 & 19\\
+SCIAN y texto & 288 & 52\\
+\midrule
+Total & 359 & 100\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Paso 5: decisión sectorial preliminar}
+
+La variable \texttt{sector\_textil} toma dos valores en el universo candidato:
+
+\begin{itemize}
+  \item \textbf{INCLUIR}: el SCIAN corresponde a 313--315, o existe una combinación suficientemente informativa de contexto textil con producción o maquila, o evidencia de proceso húmedo textil;
+  \item \textbf{REVISAR}: existe alguna señal que justificó conservar el registro, pero no es suficiente para declarar automáticamente que pertenece a la actividad textil productiva.
+\end{itemize}
+
+\texttt{REVISAR} no significa ``textil confirmado''. Es una bandeja de auditoría. Puede contener establecimientos pertinentes, negocios mal clasificados por el DENUE o falsos positivos todavía no incluidos en la lista negativa.
+
+\subsection{Paso 6: decisión hídrica preliminar}
+
+La variable \texttt{evidencia\_hidrica} se calcula dentro del universo sectorial candidato y toma tres valores:
+
+\begin{itemize}
+  \item \textbf{SI}: aparece evidencia húmeda explícita dentro de un contexto textil o el SCIAN es 313310, correspondiente a acabado de productos textiles;
+  \item \textbf{REVISAR}: el SCIAN es 812210, aparece lavado genérico con contexto textil, o la mezclilla se combina con lavado, proceso húmedo, producción o maquila;
+  \item \textbf{SIN\_EVIDENCIA}: el registro puede ser textil, pero el DENUE no proporciona señales de proceso húmedo.
+\end{itemize}
+
+Esta variable indica evidencia nominal o clasificatoria, no medición. No demuestra extracción, consumo, descarga, tratamiento de aguas residuales ni impacto ambiental.
+
+\subsection{Paso 7: productos tabulares y geográficos}
+
+Por localidad se generan cuatro tablas de trabajo:
+
+\begin{enumerate}
+  \item un CSV preliminar auditable con todas las señales y decisiones;
+  \item \texttt{universo\_textil}, que contiene \texttt{INCLUIR} y \texttt{REVISAR};
+  \item \texttt{textil\_hidrico\_si\_revisar};
+  \item \texttt{textil\_hidrico\_si}.
+\end{enumerate}
+
+Los tres subconjuntos finales se unen con la capa fuente mediante \texttt{d\_llave=id} y se exportan como GeoPackage. Se valida que no existan identificadores duplicados, registros sin correspondencia o geometrías nulas.
+
+\section{Matriz completa de decisiones vigentes}
+
+Esta secci\'on constituye la especificaci\'on operativa del filtro al 11 de septiembre de 2026. Las decisiones se aplican en el orden indicado y cada registro conserva su identificador \texttt{d\_llave} y las columnas booleanas que permiten reconstruir la decisi\'on.
+
+\subsection{Inclusi\'on y exclusi\'on como candidato}
+
+\begin{enumerate}[label=\arabic*.]
+  \item Se conserva por la rama SCIAN todo registro cuyo c\'odigo comienza con 313, 314 o 315, adem\'as de 812210. Esta rama no depende del nombre comercial.
+  \item En paralelo se buscan se\~nales positivas solamente en \texttt{nom\_est} y \texttt{raz\_soc}: contexto textil, mezclilla, proceso h\'umedo, lavado gen\'erico, producci\'on, maquila o proceso seco.
+  \item Para la exclusi\'on textual se analizan \texttt{nom\_est}, \texttt{raz\_soc} y \texttt{desc\_scian}. Si aparece \texttt{no\_textil\_explicito}, se bloquea la rama textual.
+  \item Una exclusi\'on textual no elimina un registro respaldado por SCIAN 313--315 o 812210. El universo candidato es la uni\'on de la rama SCIAN y la rama textual no excluida.
+  \item Un registro fuera de ambas ramas no entra al universo. No se interpreta como actividad inexistente, sino como ausencia de evidencia suficiente en DENUE bajo las reglas vigentes.
+\end{enumerate}
+
+\subsection{Decisi\'on sectorial}
+
+\begin{longtable}{p{0.20\textwidth}p{0.68\textwidth}}
+\toprule
+Decisi\'on & Regla exacta\\
+\midrule
+\endhead
+\texttt{INCLUIR} & SCIAN 313--315; o combinaci\'on de producci\'on/maquila con contexto textil o mezclilla; o evidencia h\'umeda con contexto textil.\\
+\texttt{REVISAR} & El registro sobrevivi\'o por SCIAN 812210 o por alguna se\~nal textual, pero no cumple una regla de inclusi\'on sectorial.\\
+Fuera del universo & No coincide con SCIAN objetivo ni con texto positivo no excluido.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Decisi\'on h\'idrica}
+
+\begin{longtable}{p{0.20\textwidth}p{0.68\textwidth}}
+\toprule
+Decisi\'on & Regla exacta e interpretaci\'on\\
+\midrule
+\endhead
+\texttt{SI} & SCIAN 313310, o se\~nal \texttt{humedo\_explicito} acompa\~nada de contexto textil. La evidencia h\'umeda prevalece si tambi\'en existe proceso seco.\\
+\texttt{REVISAR} & SCIAN 812210; o \texttt{lavado\_generico} con contexto textil; o mezclilla combinada con lavado, proceso h\'umedo, producci\'on o maquila.\\
+\texttt{SIN\_EVIDENCIA} & El establecimiento permanece en el universo textil, pero DENUE no aporta una combinaci\'on suficiente para sostener relevancia h\'idrica. Mezclilla sola, costura, corte o confecci\'on seca no bastan.\\
+\bottomrule
+\end{longtable}
+
+\texttt{SI} significa evidencia expl\'icita disponible en DENUE y \texttt{REVISAR} significa relevancia potencial. Ninguna categor\'ia prueba consumo, descarga o impacto. La salida amplia de establecimientos potencialmente relevantes es \texttt{SI+REVISAR}; la salida conservadora contiene solamente \texttt{SI}.
+
+\section{Bit\'acora de cambios del 11 de septiembre de 2026}
+
+\begin{enumerate}[label=\arabic*.]
+  \item Se retir\'o \texttt{desc\_scian} de las se\~nales textuales positivas para no duplicar el filtro estructurado ni incluir actividades ajenas por vocabulario gen\'erico.
+  \item Se conserv\'o \texttt{desc\_scian} exclusivamente en \texttt{no\_textil\_explicito}, recuperando exclusiones como comercio minorista de ropa, alimentos y autolavados.
+  \item Se dej\'o de considerar la mezclilla aislada como evidencia h\'idrica. Ahora requiere lavado, proceso h\'umedo, producci\'on o maquila.
+  \item El lavado gen\'erico dej\'o de ser suficiente por s\'olo texto y ahora requiere contexto textil; SCIAN 812210 se conserva en revisi\'on para evitar falsos negativos.
+  \item Se regeneraron CSV, GeoPackage, figuras y comparaciones con las mismas reglas para ambas localidades.
+\end{enumerate}
+
+\begin{table}[H]
+\centering
+\caption{Efecto acumulado de los cambios del 11 de septiembre de 2026}
+\begin{tabular}{lrrrr}
+\toprule
+Escenario & Santa Ana textil & Santa Ana h\'idrico & Huejotzingo textil & Huejotzingo h\'idrico\\
+\midrule
+Descripci\'on SCIAN en todo el texto & 369 & 73 & 126 & 38\\
+Descripci\'on fuera de todo el texto & 401 & 74 & 157 & 41\\
+Descripci\'on s\'olo para exclusi\'on & 359 & 73 & 100 & 38\\
+Regla h\'idrica final & 359 & 68 & 100 & 37\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+En Santa Ana, la cola hist\'orica de 314 registros coincide con 313 del universo actual de 359: uno queda s\'olo en la cola, 46 s\'olo en el universo actual y la similitud de Jaccard es 86.94\%. La salida h\'idrica final de 68 coincide en 28 registros con el combinado tentativo de 78; quedan 40 s\'olo en la salida actual, 50 s\'olo en el combinado y la similitud de Jaccard es 23.73\%. La menor coincidencia h\'idrica responde a una definici\'on actual m\'as estricta y no debe interpretarse autom\'aticamente como p\'erdida de calidad.
+
+La regla final retir\'o de la salida h\'idrica de Santa Ana cuatro nombres con mezclilla sin se\~nal adicional y un comercio de productos para lavander\'ia sin proceso h\'umedo propio. En Huejotzingo retir\'o \textit{Taller Bombon Jeans}, que permanece en el universo textil pero carece de evidencia h\'idrica en DENUE.
+
+\section{Resultados de Santa Ana Xalmimilulco}
+
+\subsection{Estructura del universo candidato}
+
+El proceso produjo 359 candidatos: 313 inclusiones preliminares y 46 registros de revisión sectorial. La mayor parte de la inclusión está respaldada por SCIAN textil y por términos de confección o maquila.
+
+\begin{table}[H]
+\centering
+\caption{Cruce de decisión sectorial e hídrica: Santa Ana Xalmimilulco}
+\begin{tabular}{lrrrr}
+\toprule
+Sector & Hídrico Sí & Hídrico Revisar & Sin evidencia & Total\\
+\midrule
+INCLUIR & 6 & 37 & 270 & 313\\
+REVISAR & 0 & 25 & 21 & 46\\
+\midrule
+Total & 6 & 62 & 291 & 359\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Las actividades incluidas más frecuentes son: confección en serie de otra ropa exterior (256), confección de uniformes (32), confección, bordado y deshilado (8), ropa exterior de tejido de punto (6) y acabado de productos textiles (4). Esta composición muestra una concentración clara en confección de prendas.
+
+Se activaron 157 señales de contexto textil, 43 de mezclilla, 5 de proceso húmedo explícito, 19 de lavado genérico, 64 de producción, 192 de maquila y 55 de proceso seco. Una misma unidad puede activar varias señales, por lo que estas cifras no deben sumarse. La reducción respecto de versiones anteriores se debe a que la descripción SCIAN ya no genera señales positivas.
+
+Los seis casos con evidencia hídrica \textbf{SI} constituyen el subconjunto automático más sólido. Incluyen cuatro registros bajo SCIAN 313310 y dos lavanderías con denominaciones como \emph{Stone Lav} y referencias explícitas a mezclilla o procesos de lavado. Aun estos casos requieren confirmación operativa porque el nombre y el SCIAN no cuantifican el uso de agua.
+
+Entre los 62 casos para revisión hídrica se encuentran 27 lavanderías y tintorerías y establecimientos donde lavado o mezclilla aparecen con contexto adicional. El deshebrado, la costura y la mezclilla aislada no se consideran evidencia hídrica bajo la regla final.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{xalmimilulco_resumen_subconjuntos.png}
+\caption{Distribución de los subconjuntos preliminares en Santa Ana Xalmimilulco. Los puntos grises representan el DENUE de la localidad.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{xalmimilulco_universo_textil.png}
+\caption{Universo candidato textil de Santa Ana Xalmimilulco, diferenciado entre inclusión y revisión sectorial.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{xalmimilulco_textil_hidrico_si_revisar.png}
+\caption{Candidatos con evidencia hídrica explícita o pendiente de revisión en Santa Ana Xalmimilulco.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{xalmimilulco_textil_hidrico_si.png}
+\caption{Seis establecimientos con evidencia hídrica explícita en Santa Ana Xalmimilulco.}
+\end{figure}
+
+\section{Resultados de Huejotzingo}
+
+\subsection{Estructura del universo candidato}
+
+El proceso produjo 100 candidatos: 38 inclusiones preliminares y 62 registros de revisión. Por tanto, el método sí localizó actividad textil en Huejotzingo, pero la evidencia automática es mucho menor que en Santa Ana Xalmimilulco y se concentra en confección y procesos presumiblemente secos.
+
+\begin{table}[H]
+\centering
+\caption{Cruce de decisión sectorial e hídrica: Huejotzingo}
+\begin{tabular}{lrrrr}
+\toprule
+Sector & Hídrico Sí & Hídrico Revisar & Sin evidencia & Total\\
+\midrule
+INCLUIR & 0 & 3 & 35 & 38\\
+REVISAR & 0 & 34 & 28 & 62\\
+\midrule
+Total & 0 & 37 & 63 & 100\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Las inclusiones se componen principalmente de confección en serie de ropa exterior (10), confección sobre medida (8), disfraces y trajes típicos (8), confección, bordado y deshilado (5), y uniformes (3). Se identificaron además casos aislados de hilado, cortinas y sombreros.
+
+Se activaron 25 señales de contexto textil, 4 de mezclilla, 5 de proceso húmedo explícito, 27 de lavado genérico, 32 de producción, 3 de maquila y 11 de proceso seco. Aunque aparecen cinco coincidencias de términos húmedos, ninguna cumplió conjuntamente el contexto requerido para la categoría hídrica \textbf{SI}. Esto evita que un término húmedo en una actividad no textil se interprete como proceso textil confirmado.
+
+Los 37 casos hídricos pendientes incluyen 34 lavanderías y tintorerías y tres unidades de confección con combinación suficiente de señales. Con la información del DENUE no se puede distinguir automáticamente si las lavanderías atienden hogares o realizan acabado y lavado industrial para talleres y fabricantes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{huejotzingo_resumen_subconjuntos.png}
+\caption{Distribución de los subconjuntos preliminares en Huejotzingo.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{huejotzingo_universo_textil.png}
+\caption{Universo candidato textil de Huejotzingo, diferenciado entre inclusión y revisión sectorial.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{huejotzingo_textil_hidrico_si_revisar.png}
+\caption{Candidatos con señal hídrica pendiente de verificación en Huejotzingo.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{huejotzingo_textil_hidrico_si.png}
+\caption{Subconjunto de evidencia hídrica explícita en Huejotzingo. El resultado es vacío; el mapa documenta la ausencia de casos bajo las reglas vigentes.}
+\end{figure}
+
+\section{Interpretación comparativa}
+
+Santa Ana Xalmimilulco presenta una concentración mucho mayor de unidades clasificadas en actividades textiles y de confección. El patrón espacial también muestra una presencia distribuida en buena parte de la trama local. Huejotzingo posee actividad de confección identificable, pero en menor cantidad y con menor evidencia nominal de acabados húmedos.
+
+No encontrar evidencia hídrica \textbf{SI} en Huejotzingo no equivale a demostrar ausencia de consumo de agua en el sector. Puede reflejar ausencia real de procesos de acabado húmedo, descripciones insuficientes en el DENUE, unidades registradas bajo clases genéricas o procesos realizados fuera de la localidad.
+
+Tampoco debe interpretarse que las 34 lavanderías de Huejotzingo formen parte de la industria textil. Permanecen como una hipótesis de revisión debido al SCIAN 812210. Su incorporación definitiva exige información adicional sobre clientes, escala y tipo de proceso.
+
+\section{Protocolo recomendado de revisión manual}
+
+La revisión debe realizarse sobre el CSV auditable, sin borrar registros ni modificar \texttt{d\_llave}. Se recomienda agregar \texttt{decision\_manual}, \texttt{fuente\_revision}, \texttt{fecha\_revision} y \texttt{observaciones}.
+
+\begin{longtable}{p{0.18\textwidth}p{0.31\textwidth}p{0.39\textwidth}}
+\toprule
+Prioridad & Grupo & Acción recomendada\\
+\midrule
+\endhead
+1 & Sector INCLUIR + hídrico SI & Confirmar proceso, escala, insumos, uso de agua y situación actual\\
+2 & SCIAN 812210 & Separar lavandería doméstica, tintorería y lavado/acabado industrial de prendas\\
+3 & Sector INCLUIR + hídrico REVISAR & Verificar si mezclilla implica solamente confección seca o también lavado/acabado\\
+4 & Sector REVISAR + hídrico REVISAR & Resolver primero pertenencia sectorial; no presentar como textil confirmado\\
+5 & Sector REVISAR + sin evidencia & Buscar nombre, actividad observable, directorio, sitio web o verificación de campo\\
+\bottomrule
+\end{longtable}
+
+Para cada registro conviene aplicar las siguientes preguntas:
+
+\begin{enumerate}
+  \item ¿Produce, transforma, confecciona o termina textiles/prendas, o solamente vende productos?
+  \item ¿La actividad está vigente y ocurre en la ubicación registrada?
+  \item ¿Realiza lavado, teñido, blanqueo, suavizado, acabado químico o enzimático?
+  \item ¿El lavado es doméstico/comercial o forma parte de una cadena industrial de prendas?
+  \item ¿Existe evidencia externa verificable y cuál es su fecha?
+\end{enumerate}
+
+La capa validada final debería incluir únicamente \texttt{decision\_manual=INCLUIR}. Los registros pendientes deben conservarse en un producto separado para mantener la trazabilidad.
+
+\section{Controles de calidad y limitaciones}
+
+\subsection{Controles realizados}
+
+\begin{itemize}
+  \item coincidencia de los 6,015 ID entre CSV y capa fuente;
+  \item unicidad de \texttt{d\_llave} en cada tabla;
+  \item unión uno a uno entre tabla filtrada y geometría;
+  \item ausencia de geometrías nulas en las capas producidas;
+  \item igualdad de conteos e identificadores entre cada CSV y GeoPackage;
+  \item conservación de la referencia espacial de la capa original;
+  \item regeneración completa mediante un único programa principal.
+\end{itemize}
+
+\subsection{Limitaciones}
+
+\begin{itemize}
+  \item El DENUE describe unidades económicas, no procesos industriales con detalle técnico.
+  \item Los nombres comerciales pueden ser ambiguos y las clases SCIAN pueden ser generales o no reflejar actividades secundarias.
+  \item Las palabras \emph{fabricación}, \emph{elaboración}, \emph{industrial}, \emph{lavado} y \emph{tratamiento} producen falsos positivos si se interpretan sin contexto.
+  \item La lista negativa reduce ruido conocido, pero puede requerir ampliaciones controladas; una exclusión demasiado amplia podría eliminar establecimientos mal clasificados que el filtro textual pretende descubrir.
+  \item Las coordenadas indican ubicación declarada, no delimitan instalaciones, áreas de influencia, cuencas o puntos de descarga.
+  \item La evidencia hídrica no cuantifica caudales ni impactos y no debe emplearse por sí sola como conclusión ambiental.
+\end{itemize}
+
+\section{Reproducibilidad y productos}
+
+El flujo completo se ejecuta desde la raíz del proyecto con:
+
+\begin{verbatim}
+python scripts/100_main.py
+\end{verbatim}
+
+El programa lee el DENUE y el catálogo, procesa ambas localidades y vuelve a escribir:
+
+\begin{itemize}
+  \item auditables en \texttt{data/processed/auditables};
+  \item CSV finales en \texttt{outputs/<localidad>/tables};
+  \item capas GeoPackage en \texttt{outputs/<localidad>/layers};
+  \item figuras PNG a 300 dpi en \texttt{outputs/<localidad>/figures}.
+\end{itemize}
+
+Los módulos separan recorte territorial, filtro SCIAN, filtro textual, decisiones, exportación tabular, recuperación geométrica y elaboración cartográfica. Esta división permite modificar el catálogo o una regla y regenerar todos los resultados de manera consistente.
+
+\section{Conclusiones}
+
+El procedimiento construye un conjunto auditable y espacialmente trazable, pero mantiene explícita la incertidumbre. Santa Ana Xalmimilulco presenta evidencia robusta de concentración de actividades de confección y seis casos prioritarios con señales de proceso húmedo. Huejotzingo contiene actividad textil identificada, principalmente de confección, pero ninguna evidencia automática fuerte de proceso húmedo bajo las reglas actuales.
+
+El siguiente paso no es ampliar indiscriminadamente las palabras positivas, sino revisar los casos prioritarios, documentar las decisiones y retroalimentar el catálogo con frases negativas o positivas suficientemente específicas. Solo después de esa revisión debe denominarse al resultado \emph{universo textil validado} y producirse la capa geográfica definitiva.
+
+\end{document}

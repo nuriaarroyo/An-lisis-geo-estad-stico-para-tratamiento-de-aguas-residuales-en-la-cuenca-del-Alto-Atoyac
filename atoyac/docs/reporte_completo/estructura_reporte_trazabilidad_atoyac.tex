@@ -1,0 +1,944 @@
+\documentclass[11pt,letterpaper]{article}
+
+% ============================================================
+% REPORTE MAESTRO DE TRAZABILIDAD - PROYECTO ALTO ATOYAC
+% Plantilla de estructura + preguntas guia + requisitos de evidencia
+% Corte de referencia: 24 septiembre 2026
+% ============================================================
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.25cm}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[most]{tcolorbox}
+\usepackage{lastpage}
+\usepackage{float}
+\usepackage{pdflscape}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\definecolor{AtoyacBlue}{HTML}{244B5A}
+\definecolor{AtoyacGreen}{HTML}{4F6F52}
+\definecolor{AtoyacLight}{HTML}{F3F6F4}
+\definecolor{AtoyacGray}{HTML}{5B6570}
+\definecolor{AtoyacOrange}{HTML}{B56A2A}
+\definecolor{AtoyacRed}{HTML}{9C3B35}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=AtoyacBlue,
+    urlcolor=AtoyacBlue,
+    citecolor=AtoyacGreen,
+    pdftitle={Diagnostico preliminar de unidades economicas y concentracion espacial - Alto Atoyac},
+    pdfauthor={Proyecto Atoyac}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Proyecto Alto Atoyac}
+\rhead{Reporte maestro de trazabilidad}
+\cfoot{\thepage\ de \pageref{LastPage}}
+\setlength{\headheight}{14pt}
+
+\titleformat{\section}{\Large\bfseries\color{AtoyacBlue}}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\large\bfseries\color{AtoyacGreen}}{\thesubsection}{0.7em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{AtoyacGray}}{\thesubsubsection}{0.7em}{}
+
+\setlist[itemize]{leftmargin=1.6em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.8em,itemsep=2pt,topsep=3pt}
+\renewcommand{\arraystretch}{1.25}
+
+% ---------- Cajas de trabajo ----------
+\newtcolorbox{preguntas}{
+  colback=AtoyacLight,
+  colframe=AtoyacBlue,
+  title=Preguntas guia,
+  fonttitle=\bfseries,
+  breakable
+}
+
+\newtcolorbox{evidencia}{
+  colback=white,
+  colframe=AtoyacGreen,
+  title=Informacion y evidencia minima requerida,
+  fonttitle=\bfseries,
+  breakable
+}
+
+\newtcolorbox{trazabilidad}{
+  colback=white,
+  colframe=AtoyacOrange,
+  title=Requisitos de trazabilidad,
+  fonttitle=\bfseries,
+  breakable
+}
+
+\newtcolorbox{alerta}{
+  colback=red!3,
+  colframe=AtoyacRed,
+  title=Limite de interpretacion,
+  fonttitle=\bfseries,
+  breakable
+}
+
+\newtcolorbox{hechos}{
+  colback=blue!2,
+  colframe=AtoyacGray,
+  title=Hechos ya identificados en el repositorio,
+  fonttitle=\bfseries,
+  breakable
+}
+
+\newcommand{\pendiente}{\textcolor{AtoyacRed}{\textbf{[PENDIENTE]}}}
+\newcommand{\verificar}{\textcolor{AtoyacOrange}{\textbf{[VERIFICAR]}}}
+\newcommand{\completo}{\textcolor{AtoyacGreen}{\textbf{[COMPLETO]}}}
+\newcommand{\ruta}[1]{\texttt{#1}}
+
+\begin{document}
+
+% ============================================================
+% PORTADA
+% ============================================================
+\begin{titlepage}
+\centering
+\vspace*{2.0cm}
+{\Huge\bfseries\color{AtoyacBlue} Diagnostico preliminar de unidades economicas y concentracion espacial\\[0.5em]}
+{\LARGE para la planeacion de infraestructura de colectores\\[1.0em]}
+{\Large Cuenca del Alto Atoyac}\par
+\vspace{1.8cm}
+
+\begin{tcolorbox}[colback=AtoyacLight,colframe=AtoyacGreen,width=0.9\textwidth]
+\centering
+\textbf{Naturaleza del documento:} reporte tecnico maestro de trazabilidad\\[0.4em]
+\textbf{Funcion:} documentar el diagnostico preliminar de unidades economicas, el analisis espacial realizado y su alcance como insumo de preseleccion para estudios posteriores de colectores.\\[0.4em]
+\textbf{No sustituye:} aforo de descargas, muestreo de calidad, levantamiento de red, modelacion hidraulica, estudio de factibilidad ni proyecto ejecutivo.
+\end{tcolorbox}
+
+\vfill
+\begin{tabular}{ll}
+Autor/a: & \pendiente \\
+Institucion: & \pendiente \\
+Version: & 0.1 -- estructura maestra \\
+Fecha de corte: & 24 de septiembre de 2026 \\
+Repositorio/directorio: & \pendiente \\
+Responsable de revision: & \pendiente \\
+\end{tabular}
+\vfill
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% ============================================================
+\section{Control documental y trazabilidad de versiones}
+% ============================================================
+
+\subsection{Ficha de control}
+\begin{longtable}{p{0.22\textwidth}p{0.70\textwidth}}
+\toprule
+\textbf{Campo} & \textbf{Contenido} \\
+\midrule
+Titulo oficial & \pendiente \\
+Identificador del documento & \pendiente \\
+Version & 0.1 \\
+Fecha de corte de datos & \pendiente \\
+Fecha de generacion & \today \\
+Responsable tecnico & \pendiente \\
+Revisor metodologico & \pendiente \\
+Ruta del repositorio & \pendiente \\
+Commit/tag de Git & \pendiente\; (actualmente no identificado en el inventario) \\
+Ejecutor reproducible & \ruta{scripts/219\_ejecutar\_parte2\_completa.py} + \ruta{220--222} + recompilacion \\
+Estado & Borrador estructural \\
+\bottomrule
+\end{longtable}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Quien puede reproducir, revisar y aprobar formalmente cada version?
+    \item ¿Cual es la fecha exacta de corte de DENUE, capas territoriales y fuentes complementarias?
+    \item ¿Existe una version congelada del repositorio asociada al reporte?
+    \item ¿Que productos quedan invalidados si cambia el universo, la geometria de cuenca o los diccionarios de clasificacion?
+\end{itemize}
+\end{preguntas}
+
+\begin{trazabilidad}
+Cada version publicada deberia conservar: (1) copia de fuentes o identificadores de descarga; (2) hash SHA-256; (3) entorno de software; (4) parametros; (5) scripts ejecutados; (6) manifiesto de salidas; (7) fecha y responsable; y (8) lista de cambios respecto de la version anterior.
+\end{trazabilidad}
+
+% ============================================================
+\section{Resumen ejecutivo}
+% ============================================================
+
+\textbf{Objetivo de esta seccion:} permitir que una persona que no lea el resto del documento entienda que se hizo, que se encontro, que tan confiable es y que decision puede apoyar.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Cual fue el problema operativo que motivo el analisis?
+    \item ¿Que universo de unidades economicas se estudio y por que?
+    \item ¿Que metodos se usaron para clasificar, mapear y detectar concentraciones?
+    \item ¿Cuales son los 5--10 hallazgos que cambian la comprension territorial del problema?
+    \item ¿Que zonas aparecen como candidatas para una segunda etapa de validacion?
+    \item ¿Que no puede concluirse a partir de DENUE, proximidad a rios o clustering?
+    \item ¿Cuales son los siguientes estudios indispensables antes de hablar de inversion en colectores?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Incluir una tabla de una pagina con: universo inicial, universo sectorial, universo dentro de cuenca, numero de escenarios de clustering, solucion seleccionada, numero de clusters, ruido, principales zonas de concentracion, nivel de incertidumbre y recomendacion de siguiente paso.
+\end{evidencia}
+
+\begin{hechos}
+El inventario actual reporta: 15,956 registros estatales en la descarga acotada; 4,365 establecimientos en el universo sectorial ampliado de deteccion; 4,010 dentro de cuenca para interpretacion; 57 escenarios de clustering; solucion principal HDBSCAN; 22 clusters sobre el universo ampliado; 584 registros de ruido; y un cluster mayor de 1,997 registros. Estas cifras deben verificarse contra los archivos finales antes de publicarse.
+\end{hechos}
+
+% ============================================================
+\section{Contexto de decision, proposito y alcance}
+% ============================================================
+
+\subsection{Problema de decision}
+Explicar la cadena de decision que conecta este diagnostico con etapas posteriores de infraestructura:
+
+\begin{center}
+\fbox{\parbox{0.94\textwidth}{
+\centering
+Unidades economicas $\rightarrow$ concentraciones espaciales $\rightarrow$ hipotesis de generacion/descarga $\rightarrow$ validacion en campo $\rightarrow$ delimitacion de subcuencas/redes $\rightarrow$ aforos y calidad $\rightarrow$ modelacion hidraulica $\rightarrow$ alternativas de colectores $\rightarrow$ factibilidad tecnica/economica/social $\rightarrow$ priorizacion de inversion.
+}}
+\end{center}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Quien tomara la decision final de inversion y que necesita saber?
+    \item ¿El objetivo inmediato es ubicar actividad potencialmente relevante, priorizar visitas, identificar corredores, estimar demanda de saneamiento o preseleccionar trazos?
+    \item ¿Cual es la unidad de decision futura: cluster, localidad, municipio, subcuenca, tramo de drenaje o colector?
+    \item ¿Que horizonte temporal de planeacion se contempla?
+\end{itemize}
+\end{preguntas}
+
+\subsection{Objetivo general}
+\pendiente\; Redactar en una sola frase, distinguiendo claramente \textit{diagnostico preliminar} de \textit{diseño de infraestructura}.
+
+\subsection{Objetivos especificos}
+\begin{enumerate}
+    \item Construir un universo auditable de unidades economicas potencialmente relevantes.
+    \item Caracterizar su distribucion territorial y su relacion espacial con la cuenca y la red hidrografica.
+    \item Detectar concentraciones espaciales sin utilizar variables productivas para forzar los grupos.
+    \item Perfilar la composicion economica de los agrupamientos una vez fijada la solucion espacial.
+    \item Identificar zonas que ameriten validacion de campo y estudios hidraulicos posteriores.
+    \item Documentar incertidumbres, sesgos, decisiones y productos para garantizar reproducibilidad.
+\end{enumerate}
+
+\subsection{Alcance y exclusiones}
+\begin{alerta}
+Este reporte no debe presentar la presencia de una unidad economica, su giro, su cercania a un cauce o su pertenencia a un cluster como prueba de descarga, incumplimiento, contaminacion o caudal generado. Tampoco debe interpretar el clustering como una red de drenaje existente ni como un trazo de colector.
+\end{alerta}
+
+% ============================================================
+\section{Antecedentes ambientales y territoriales}
+% ============================================================
+
+\textbf{Funcion:} establecer por que la Cuenca del Alto Atoyac requiere una lectura territorial integrada y como el presente diagnostico se inserta en trabajos previos sobre degradacion ambiental, descargas y salud ambiental.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Cuales son los principales procesos historicos de urbanizacion, industrializacion y deterioro hidrico documentados para la cuenca?
+    \item ¿Que sectores productivos han sido señalados en literatura o registros oficiales como relevantes para cargas contaminantes?
+    \item ¿Que antecedentes existen especificamente para textiles, confeccion, lavanderias, acabado, teñido u otros procesos humedos?
+    \item ¿Que municipios/localidades han sido priorizados en estudios anteriores y por que?
+    \item ¿Que vacio de informacion busca cubrir este trabajo respecto de esos antecedentes?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Separar siempre: \textbf{antecedentes documentados} (literatura, informes, RETC, CONAGUA, INEGI, academia) de \textbf{resultados propios}. El libro \textit{Salud ambiental en la Cuenca del Alto Atoyac} puede usarse como referencia contextual y para identificar temas/territorios a documentar, pero no sustituye la verificacion de fuentes oficiales o tecnicas para una decision de infraestructura.
+\end{evidencia}
+
+% ============================================================
+\section{Area de estudio y unidades territoriales}
+% ============================================================
+
+\subsection{Delimitacion de la cuenca}
+\begin{preguntas}
+\begin{itemize}
+    \item ¿De que fuente proviene el poligono de cuenca y cual es su fecha/escala?
+    \item ¿Que definicion de ``Alto Atoyac'' se utiliza y coincide con otras instituciones?
+    \item ¿Que municipios intersectan la cuenca y cuales se incorporan solo como apoyo para controlar borde?
+    \item ¿Como se tratan unidades economicas justo fuera del poligono pero potencialmente conectadas hidrologica o urbanamente?
+\end{itemize}
+\end{preguntas}
+
+\subsection{Red hidrografica y contexto territorial}
+Documentar fuente, escala, CRS, fecha, topologia conocida, atributos, limitaciones y si la capa representa cauces, corrientes perennes/intermitentes, barrancas, canales o una mezcla.
+
+\subsection{Sistemas de referencia}
+\begin{evidencia}
+Registrar CRS geografico de publicacion y CRS metrico de analisis. El pipeline actual identifica EPSG:4326 y EPSG:32614. Verificar que todas las distancias y algoritmos de densidad se ejecuten en coordenadas metricas.
+\end{evidencia}
+
+% ============================================================
+\section{Fuentes de datos y gobierno de informacion}
+% ============================================================
+
+\subsection{Inventario maestro de fuentes}
+\begin{longtable}{p{0.16\textwidth}p{0.20\textwidth}p{0.12\textwidth}p{0.14\textwidth}p{0.28\textwidth}}
+\toprule
+\textbf{Fuente} & \textbf{Archivo/ID} & \textbf{Fecha} & \textbf{Cobertura} & \textbf{Uso y limitacion principal} \\
+\midrule
+DENUE & \ruta{INEGI\_DENUE\_11092026.*} & \pendiente & Puebla / SCIAN seleccionados & Base de unidades economicas; no prueba procesos reales ni descargas. \\
+DENUE local & \ruta{INEGI\_DENUE\_04092026.*} & \pendiente & Huejotzingo/Xalmimilulco & Trabajo local inicial. \\
+Cuenca & \ruta{caaresa\_cuenca\_alto\_atoyac\_21\_reg\_a.gpkg} & \pendiente & Cuenca & Delimitacion espacial. \\
+Municipios & \ruta{caaresa\_division\_municipal\_20\_mun\_a.gpkg} & \pendiente & Regional & Contexto administrativo. \\
+Red hidrografica & \ruta{caaresa\_red\_hidro\_digital\_06\_reg\_l.gpkg} & \pendiente & Regional & Distancia/priorizacion; no implica conectividad de descarga. \\
+MH & \ruta{data/processed/mh/} & \pendiente & Local & Fuente complementaria; documentar origen, metodo y confianza. \\
+Legacy & \ruta{data/processed/legacy/} & historico & Variable & Comparacion/trazabilidad; no mezclar sin documentar diferencias. \\
+\bottomrule
+\end{longtable}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Quien produjo cada fuente, con que metodo y con que licencia?
+    \item ¿Que fecha representa: descarga, levantamiento o vigencia?
+    \item ¿Que campos se usan y cuales se descartan?
+    \item ¿Que errores posicionales o de geocodificacion son esperables?
+    \item ¿Como se identifican duplicados, establecimientos cerrados o cambios de giro?
+    \item ¿Que fuente es ``autoridad'' cuando dos registros se contradicen?
+\end{itemize}
+\end{preguntas}
+
+\begin{trazabilidad}
+Para cada fuente conservar: ruta relativa, nombre original, URL o mecanismo de obtencion, fecha, tamaño, hash, CRS, numero de registros, campos clave, responsable de descarga y notas de transformacion.
+\end{trazabilidad}
+
+% ============================================================
+\section{Construccion del universo economico}
+% ============================================================
+
+\subsection{Universo de partida}
+Explicar por que la descarga estatal acotada a SCIAN 313, 314, 315 y 81 es el punto de partida y que actividades quedan potencialmente fuera.
+
+\subsection{Filtro SCIAN}
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que codigos completos y prefijos se incluyen?
+    \item ¿Que logica sustantiva justifica cada codigo?
+    \item ¿Que codigos son de manufactura, servicios, acabado, lavado o comercio?
+    \item ¿Que codigos generan mayor riesgo de falsos positivos?
+    \item ¿Como se documentan cambios de SCIAN entre versiones?
+\end{itemize}
+\end{preguntas}
+
+\subsection{Filtro textual y diccionarios}
+Documentar normalizacion, campos explorados, expresiones regulares, prioridad de frases largas, terminos positivos, negativos y ambiguos, asi como version del diccionario.
+
+\begin{evidencia}
+Adjuntar como anexo los diccionarios completos, no solo ejemplos. Cada termino deberia tener: categoria, significado, razon de inclusion, posible ambiguedad y version de alta/modificacion.
+\end{evidencia}
+
+\subsection{Separacion entre sector textil y evidencia de proceso humedo}
+\begin{alerta}
+El universo sectorial debe distinguirse de la evidencia de proceso humedo. Una empresa puede pertenecer al sector textil y no mostrar en DENUE evidencia explicita de lavado/teñido/acabado; a la inversa, la ausencia de palabras clave no demuestra ausencia de uso de agua.
+\end{alerta}
+
+\subsection{Reglas de inclusion/exclusion}
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Como se excluye comercio simple de prendas?
+    \item ¿Como se tratan ``maquila'', ``pantalon'', ``mezclilla'', ``planchado'', ``deshebrado'', ``recta/presilla/formador'', ``fabrica de tela'' y lavanderias?
+    \item ¿Que condiciones producen Alta, Media, Revisar o No incluir?
+    \item ¿Que reglas son automaticas y cuales requieren revision humana?
+    \item ¿Como se registra el motivo exacto de cada decision?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{Auditoria manual y evidencia externa}
+% ============================================================
+
+\subsection{Protocolo de revision}
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que registros entran a auditoria manual y por que?
+    \item ¿Que fuentes externas se permiten: Google Maps, Street View, sitio web, Facebook, directorios, anuncios de empleo, imagen satelital?
+    \item ¿Que jerarquia de evidencia se aplica?
+    \item ¿Como se documenta un establecimiento no encontrado, clausurado, con coordenadas dudosas o sin Street View?
+    \item ¿Que fecha tiene la observacion y cuanto puede degradarse con el tiempo?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Cada revision manual debe conservar, cuando sea posible: ID DENUE, nombre, coordenadas, fecha de consulta, URL, tipo de evidencia, captura/archivo, observacion normalizada, decision, nivel de confianza, revisor y segunda revision si existe conflicto.
+\end{evidencia}
+
+\begin{trazabilidad}
+La auditoria humana debe ser reproducible en el sentido documental aunque una pagina web cambie. Conviene guardar evidencias permitidas, fecha de consulta y una nota factual separada de la interpretacion.
+\end{trazabilidad}
+
+% ============================================================
+\section{Integracion de fuentes complementarias y comparacion historica}
+% ============================================================
+
+\subsection{Integracion MH}
+Explicar procedencia, criterio de matching, manejo de coincidencias, filas sinteticas y campos de procedencia.
+
+\subsection{Universos legacy}
+Describir para que se conservan los universos historicos y por que no deben mezclarse silenciosamente con la version actual.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que registros se agregaron solo por MH?
+    \item ¿Que porcentaje de la seleccion depende de fuentes no DENUE?
+    \item ¿Que diferencias entre versiones son altas reales, bajas, cambios de criterio o cambios de fuente?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{Modalidades analiticas de la primera fase}
+% ============================================================
+
+\begin{hechos}
+El inventario documenta cinco modalidades: amplia + MH; amplia sin MH; estricta + MH; estricta sin MH; y todos los SCIAN. La ultima contiene 4,365 establecimientos en el universo municipal y 4,010 dentro de cuenca, y es la base de la Parte 2.
+\end{hechos}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que pregunta responde cada modalidad?
+    \item ¿Por que es metodologicamente importante mantenerlas separadas?
+    \item ¿Cuales son los cambios de conteo y distribucion entre ellas?
+    \item ¿Que resultados son robustos a la modalidad y cuales dependen fuertemente del filtro?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Incluir una tabla comparativa con: definicion formal, N municipal, N dentro de cuenca, MH agregados, ventajas, sesgos esperados y uso recomendado de cada modalidad.
+\end{evidencia}
+
+% ============================================================
+\section{Analisis espacial descriptivo de unidades economicas}
+% ============================================================
+
+\subsection{Distribucion territorial}
+Mapas de puntos, conteos por municipio/localidad, densidad simple, estratos de personal, composicion sectorial y distancia a red hidrografica.
+
+\subsection{Distancia a hidrografia}
+\begin{alerta}
+La distancia geometrica a un cauce es un criterio de priorizacion espacial, no evidencia de que exista una descarga a ese cauce. Sin red de drenaje, topografia, punto de descarga y conectividad hidraulica no puede inferirse la ruta del agua residual.
+\end{alerta}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que estadistico de distancia se reporta y en que CRS?
+    \item ¿Se mide a cualquier linea hidrografica o se diferencian cauces principales/secundarios?
+    \item ¿Que umbrales se usan y por que?
+    \item ¿Como afectan errores posicionales del DENUE a distancias cortas?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{Diagnostico previo de estructura espacial}
+% ============================================================
+
+\textbf{Principio:} explorar la geometria de los puntos antes de elegir un algoritmo o usar atributos economicos.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que muestran las distancias a k vecinos sobre escalas espaciales naturales?
+    \item ¿Que patrones aparecen en KDE y malla hexagonal?
+    \item ¿Hay heterogeneidad de densidad suficiente para preferir HDBSCAN/OPTICS sobre DBSCAN?
+    \item ¿Como se detecta el efecto de borde de la cuenca?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Documentar $k$, bandwidths, tamaño de hexagonos, unidades, reglas de visualizacion y como estos diagnosticos informaron el espacio de parametros sin ``optimizar'' con variables productivas.
+\end{evidencia}
+
+% ============================================================
+\section{Clustering espacial: diseño de experimentos}
+% ============================================================
+
+\subsection{Universo de deteccion vs. universo de interpretacion}
+Explicar por que se usan 4,365 puntos para detectar agrupamientos y 4,010 dentro de cuenca para interpretarlos.
+
+\subsection{Algoritmos evaluados}
+DBSCAN, HDBSCAN y OPTICS, usando exclusivamente coordenadas metricas.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que parametros se recorrieron para cada algoritmo?
+    \item ¿Por que esos rangos son plausibles dadas las distancias observadas?
+    \item ¿Cuantos escenarios se evaluaron y con la misma semilla/configuracion?
+    \item ¿Como se almacenan las membresias de todos los escenarios?
+    \item ¿Como se garantiza que SCIAN, proceso, municipio o evidencia hidrica no influyan en la formacion de clusters?
+\end{itemize}
+\end{preguntas}
+
+\begin{hechos}
+El inventario registra 57 escenarios y una semilla comun \texttt{20260921}. La solucion principal reportada es HDBSCAN con \texttt{min\_cluster\_size=10}, \texttt{min\_samples=20} y \texttt{cluster\_selection\_method=eom}.
+\end{hechos}
+
+% ============================================================
+\section{Seleccion de la solucion espacial y robustez}
+% ============================================================
+
+\subsection{Criterios de seleccion}
+La solucion principal debe justificarse por estabilidad y coherencia espacial, no porque produzca perfiles economicos ``atractivos''.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Como se utilizaron ARI, Jaccard, continuidad, efecto de borde y perturbaciones espaciales?
+    \item ¿Que mide cada metrica y cual es su limitacion?
+    \item ¿Que escenarios se consideran principal, sensibilidad y referencia?
+    \item ¿Que establecimientos cambian frecuentemente de cluster o ruido?
+    \item ¿Cuales clusters son estables y cuales dependen del escenario?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Incluir: matriz ARI entre escenarios seleccionados; Jaccard de correspondencia de clusters; persistencia por establecimiento; sensibilidad al ruido posicional; y tabla de justificacion de la solucion elegida.
+\end{evidencia}
+
+\subsection{Glosario minimo de metricas}
+\begin{longtable}{p{0.18\textwidth}p{0.34\textwidth}p{0.38\textwidth}}
+\toprule
+\textbf{Metrica} & \textbf{Que responde} & \textbf{Precaucion interpretativa} \\
+\midrule
+ARI & ¿Que tan similares son dos particiones completas, corrigiendo coincidencias esperadas por azar? & No dice que particion sea ``verdadera'' ni explica por si sola donde cambian las membresias. \\
+Jaccard & ¿Que tanto se solapan dos conjuntos/clusters comparables? & Requiere criterio de emparejamiento entre etiquetas arbitrarias. \\
+Persistencia de membresia & ¿Con que frecuencia un punto conserva una asignacion equivalente? & Depende del conjunto de escenarios comparados. \\
+Proporcion de ruido & ¿Que fraccion no es asignada a clusters bajo un escenario? & Mas ruido no es necesariamente peor; puede reflejar dispersion real. \\
+Continuidad/compacidad & ¿Que tan coherente es el cluster en el espacio? & Debe definirse exactamente la formula utilizada. \\
+Efecto de borde & ¿Cuanto cambia la estructura cerca del limite de estudio? & Un limite administrativo/hidrologico puede cortar una concentracion real. \\
+\bottomrule
+\end{longtable}
+
+% ============================================================
+\section{Materializacion de clusters, borde y ruido}
+% ============================================================
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Cuantos clusters existen en el universo ampliado y cuantos intersectan/estan dentro de cuenca?
+    \item ¿Como se definen las envolventes de cluster y que implicaciones tiene usar convex hull?
+    \item ¿Cuantos establecimientos del mismo cluster quedan fuera de cuenca?
+    \item ¿Donde se concentra el ruido y presenta patrones territoriales propios?
+\end{itemize}
+\end{preguntas}
+
+\begin{alerta}
+Un poligono envolvente de cluster es una abstraccion geometrica para visualizar concentracion; no representa una zona de servicio, una subcuenca de drenaje ni un area juridica.
+\end{alerta}
+
+% ============================================================
+\section{Perfil economico y productivo posterior al clustering}
+% ============================================================
+
+\textbf{Principio:} primero se fija la geografia; despues se pregunta que contiene cada agrupamiento.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Como se distribuyen SCIAN, municipios, localidades y estratos de personal por cluster?
+    \item ¿Que señales productivas aparecen: confeccion, lavanderia, acabado, tela, mezclilla, otros?
+    \item ¿Que porcentaje de cada cluster tiene evidencia hidrica SI, REVISAR o ausencia de evidencia explicita?
+    \item ¿Que clusters parecen especializados y cuales diversificados?
+    \item ¿Que diferencias existen entre cluster y ruido disperso?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Para cada cluster publicar una ficha estandar: N, superficie/envolvente, municipio/localidad dominante, top SCIAN, distribucion de personal, señales productivas, evidencia hidrica, distancia a red hidrografica, estabilidad y notas de incertidumbre.
+\end{evidencia}
+
+% ============================================================
+\section{Sobrerrepresentacion de señales}
+% ============================================================
+
+\subsection{Base comparativa}
+Definir explicitamente contra que universo se compara cada cluster: idealmente los 4,010 establecimientos dentro de cuenca, salvo analisis particular debidamente justificado.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que significa que una señal este sobrerrepresentada?
+    \item ¿Cual es la proporcion dentro del cluster y cual la proporcion base?
+    \item ¿Cual es el lift y el odds ratio?
+    \item ¿La diferencia es estadisticamente compatible con algo mas que fluctuacion muestral segun Fisher?
+    \item ¿Se corrigio por multiples pruebas mediante Benjamini--Hochberg?
+    \item ¿Cual es el tamaño absoluto? Un lift grande con muy pocos casos puede ser poco operativo.
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Nunca presentar solo significancia. Reportar para cada señal: $n$ cluster, $n$ señal, proporcion cluster, proporcion base, diferencia absoluta, lift, odds ratio, intervalo si se calcula, $p$, $q$ ajustado y una nota de relevancia practica.
+\end{evidencia}
+
+% ============================================================
+\section{Similitud entre clusters y tipologias productivas}
+% ============================================================
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que variables entran al vector de perfil?
+    \item ¿Como se escalan o ponderan variables con naturalezas distintas?
+    \item ¿Que distancia se usa y por que?
+    \item ¿La tipologia jerarquica representa similitud productiva, no proximidad espacial?
+    \item ¿Que pares de clusters son mas parecidos y en que dimensiones?
+\end{itemize}
+\end{preguntas}
+
+\begin{trazabilidad}
+Conservar matrices de distancia por familia de variables y una matriz combinada. Asi puede auditarse si la similitud es impulsada por SCIAN, señales, personal o composicion territorial.
+\end{trazabilidad}
+
+% ============================================================
+\section{Mega-cluster y subnucleos exploratorios}
+% ============================================================
+
+\begin{hechos}
+El inventario reporta un cluster mayor de 1,997 establecimientos. La segunda pasada estudia subnucleos de forma diagnostica, sin reemplazar la membresia principal congelada.
+\end{hechos}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Por que el mega-cluster aparece como una sola estructura con la configuracion principal?
+    \item ¿Que subnucleos espaciales se observan internamente y cuantos establecimientos contiene cada uno?
+    \item ¿Cuales son sus municipios/localidades, composicion productiva y señales hídricas?
+    \item ¿Son los subnucleos estables a parametros razonables o solo una particion ilustrativa?
+    \item ¿Alguno coincide con barreras/continuidades urbanas o hidrologicas que deban estudiarse posteriormente?
+\end{itemize}
+\end{preguntas}
+
+\begin{alerta}
+Los subnucleos diagnosticos no deben convertirse automaticamente en ``proyectos de colector''. Son hipotesis de concentracion que necesitan contrastarse con topografia, drenaje existente, puntos de descarga y caudales.
+\end{alerta}
+
+% ============================================================
+\section{Resultados principales por territorio}
+% ============================================================
+
+Esta seccion debe traducir el pipeline a hallazgos espaciales concretos, evitando repetir metodologia.
+
+\subsection{Resultados a escala de cuenca}
+\pendiente\; mapas y tabla de concentraciones principales.
+
+\subsection{Resultados por municipio}
+\pendiente\; ranking con N, densidad, clusters, señales, evidencia hidrica y estabilidad.
+
+\subsection{Resultados por localidad/corredor}
+\pendiente\; fichas territoriales donde exista suficiente concentracion o interes operativo.
+
+\subsection{Huejotzingo y Santa Ana Xalmimilulco}
+Incluir como caso detallado porque fueron parte de la primera fase de auditoria y cartografia local.
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que hallazgos sobreviven a cambios de filtro y parametros?
+    \item ¿Cuales dependen de registros dudosos o revisiones manuales?
+    \item ¿Que concentraciones tienen evidencia suficiente para visita de campo prioritaria?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{De diagnostico economico a priorizacion preliminar de colectores}
+% ============================================================
+
+\textbf{Objetivo:} especificar exactamente como este trabajo puede alimentar una siguiente etapa de ingenieria sin saltarse pasos de validacion.
+
+\subsection{Lo que este analisis si puede aportar}
+\begin{itemize}
+    \item Localizar concentraciones de actividad economica potencialmente relevante.
+    \item Identificar zonas donde conviene concentrar inspeccion, entrevistas, aforos o muestreo.
+    \item Comparar sensibilidad de una prioridad territorial ante definiciones amplias/estrictas.
+    \item Señalar concentraciones robustas que merecen cruzarse con red sanitaria, topografia y descargas.
+    \item Generar una base georreferenciada auditable para incorporar nueva evidencia.
+\end{itemize}
+
+\subsection{Lo que falta antes de justificar inversion}
+\begin{enumerate}
+    \item \textbf{Validacion de establecimientos:} operacion actual, proceso real, horarios, volumen de produccion.
+    \item \textbf{Caracterizacion de agua residual:} caudal medio/maximo, variabilidad, DQO/DBO, SST, color, temperatura, pH, sales, metales u otros parametros pertinentes al proceso.
+    \item \textbf{Puntos y forma de descarga:} alcantarillado, descarga directa, infiltracion, transporte, recirculacion, tratamiento propio.
+    \item \textbf{Infraestructura existente:} colectores, atarjeas, diametros, pendientes, capacidad residual, condiciones fisicas, plantas de tratamiento.
+    \item \textbf{Topografia e hidraulica:} cotas, subcuencas de drenaje, bombeo, cruces, servidumbres, riesgos.
+    \item \textbf{Demanda futura:} crecimiento urbano/industrial y escenarios de conexion.
+    \item \textbf{Compatibilidad de tratamiento:} efecto del efluente industrial sobre el tren de tratamiento previsto/existente.
+    \item \textbf{Factibilidad economica:} CAPEX, OPEX, costo por m$^3$, costo por usuario/establecimiento atendido, alternativas.
+    \item \textbf{Marco regulatorio e institucional:} competencias, permisos, responsabilidades, descarga y pretratamiento.
+    \item \textbf{Dimension social y ambiental:} poblacion beneficiada, exposicion, conflictos, equidad, impactos de obra.
+\end{enumerate}
+
+\subsection{Matriz de priorizacion de siguiente etapa}
+\begin{longtable}{p{0.24\textwidth}p{0.12\textwidth}p{0.20\textwidth}p{0.34\textwidth}}
+\toprule
+\textbf{Criterio} & \textbf{Estado} & \textbf{Fuente prevista} & \textbf{Uso} \\
+\midrule
+Concentracion espacial de unidades & Disponible & Clustering & Priorizar zonas, no diseñar trazo. \\
+Señal de proceso humedo & Parcial & DENUE + auditoria & Priorizar validacion. \\
+Tamaño/personal & Parcial & DENUE & Proxy debil de escala; no equivale a caudal. \\
+Distancia a hidrografia & Disponible & GIS & Contexto/priorizacion, no conectividad. \\
+Red sanitaria existente & \pendiente & Organismo operador/levantamiento & Determinar posibilidad de conexion. \\
+Topografia & \pendiente & DEM/levantamiento & Delimitar drenaje por gravedad. \\
+Caudal real & \pendiente & Aforo & Dimensionamiento. \\
+Calidad de descarga & \pendiente & Muestreo & Diseño de pretratamiento/tratamiento. \\
+Poblacion beneficiada/expuesta & \pendiente & INEGI/salud/territorio & Beneficio social y prioridad. \\
+Costo de alternativa & \pendiente & Ingenieria conceptual & Comparacion economica. \\
+\bottomrule
+\end{longtable}
+
+% ============================================================
+\section{Marco de priorizacion multicriterio: propuesta para etapa posterior}
+% ============================================================
+
+\begin{alerta}
+No asignar pesos ni producir un ranking de inversion hasta que los criterios faltantes tengan datos comparables y exista una gobernanza explicita de la decision. El analisis actual puede producir un ranking de \textit{prioridad de investigacion/validacion}, no de inversion definitiva.
+\end{alerta}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que resultado se quiere priorizar: visita, muestreo, anteproyecto, obra?
+    \item ¿Quien define pesos: equipo tecnico, organismo operador, autoridad, comunidad?
+    \item ¿Que criterios son de beneficio, costo, riesgo o restriccion dura?
+    \item ¿Como se incorporara incertidumbre y sensibilidad a pesos?
+    \item ¿Que umbrales descalifican una alternativa independientemente del puntaje?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{Validacion, control de calidad y pruebas de integridad}
+% ============================================================
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Los IDs DENUE son unicos en cada universo esperado?
+    \item ¿Se conserva el conteo al hacer joins que no deberian multiplicar filas?
+    \item ¿Hay geometrias nulas, invalidas o fuera de rango?
+    \item ¿Las capas estan en el CRS esperado antes de medir distancias?
+    \item ¿Los perfiles se calculan exactamente sobre 4,010 registros dentro de cuenca?
+    \item ¿Las variables productivas estan ausentes del paso de clustering?
+    \item ¿Los PDFs/figuras corresponden al ultimo estado de datos y codigo?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Adjuntar la validacion automatizada, manifiesto de archivos y hashes. El inventario actual señala que \ruta{218\_validar\_cierre\_parte2.py} genera \ruta{validacion\_final.csv} e \ruta{inventario\_cierre.csv}.
+\end{evidencia}
+
+% ============================================================
+\section{Incertidumbre, sesgos y limitaciones}
+% ============================================================
+
+\subsection{Registro de incertidumbres}
+\begin{longtable}{p{0.21\textwidth}p{0.25\textwidth}p{0.18\textwidth}p{0.27\textwidth}}
+\toprule
+\textbf{Fuente} & \textbf{Posible efecto} & \textbf{Severidad} & \textbf{Mitigacion/documentacion} \\
+\midrule
+Cobertura DENUE & Omision de informales/no registrados & Alta & Fuentes complementarias y campo. \\
+Giro declarado & No refleja todos los procesos internos & Alta & Auditoria y entrevistas. \\
+Coordenada & Error posicional afecta distancias/cluster local & Media/Alta & Validar casos sensibles y perturbacion espacial. \\
+Fecha de registro & Cierres/cambios de actividad & Media & Fecha de consulta y verificacion. \\
+Filtro textual & Falsos positivos/negativos & Media & Diccionarios versionados y auditoria. \\
+Limite de cuenca & Efecto de borde & Media & Universo ampliado de deteccion. \\
+Clustering & Sensibilidad a parametros y densidad & Media & Escenarios, ARI/Jaccard/persistencia. \\
+Proxy personal & No equivale a produccion ni caudal & Alta para ingenieria & No usar para dimensionamiento. \\
+Distancia a rio & No equivale a ruta de descarga & Alta & Requiere red/topografia/descarga. \\
+\bottomrule
+\end{longtable}
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que incertidumbres pueden cambiar una prioridad territorial?
+    \item ¿Cuales solo afectan detalle, no la conclusion general?
+    \item ¿Que incertidumbre puede reducirse barato mediante una visita o una nueva fuente?
+\end{itemize}
+\end{preguntas}
+
+% ============================================================
+\section{Reproducibilidad computacional}
+% ============================================================
+
+\subsection{Estructura del pipeline}
+Documentar scripts 00--10, 99, 100--102 y 200--222 por fase, entradas, salidas y dependencias.
+
+\subsection{Orden de ejecucion}
+\begin{verbatim}
+python scripts/101_main_cuenca_puebla.py --todos-scian
+python scripts/219_ejecutar_parte2_completa.py
+python scripts/220_segunda_pasada_analitica.py
+python scripts/221_figuras_interactivo_segunda_pasada.py
+python scripts/222_documentar_segunda_pasada.py
+python scripts/217_compilar_documentos_parte2.py
+\end{verbatim}
+
+\subsection{Entorno}
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Version exacta de Python?
+    \item ¿Versiones de pandas, geopandas, shapely, scikit-learn, scipy, matplotlib, plotly y HDBSCAN utilizado?
+    \item ¿Sistema operativo y versiones de GDAL/PROJ?
+    \item ¿Existe \ruta{requirements.txt}, \ruta{pyproject.toml} o \ruta{environment.yml}?
+    \item ¿Puede reconstruirse el reporte desde una maquina limpia?
+\end{itemize}
+\end{preguntas}
+
+\begin{alerta}
+El inventario actual indica que no se encontro archivo explicito de entorno ni repositorio Git en la raiz. Para una cadena de decision de inversion, conviene corregir ambos puntos antes de congelar el reporte final.
+\end{alerta}
+
+% ============================================================
+\section{Matriz maestra de trazabilidad de afirmaciones}
+% ============================================================
+
+\textbf{Uso:} cada afirmacion relevante del resumen ejecutivo y conclusiones debe poder seguirse hasta su evidencia.
+
+\begin{landscape}
+\small
+\begin{longtable}{p{0.24\textwidth}p{0.15\textwidth}p{0.15\textwidth}p{0.17\textwidth}p{0.12\textwidth}p{0.13\textwidth}}
+\toprule
+\textbf{Afirmacion} & \textbf{Fuente primaria} & \textbf{Transformacion/script} & \textbf{Salida que la demuestra} & \textbf{Validacion} & \textbf{Caveat} \\
+\midrule
+El universo ampliado contiene 4,365 establecimientos & DENUE + regla sectorial & 101/201 & resumen de universo / matriz maestra & conteo + unicidad & Depende de cobertura y criterio sectorial. \\
+4,010 se ubican dentro de cuenca & capa cuenca + puntos & 101/201/202 & matriz/geopackage & interseccion espacial & Depende de delimitacion y precision posicional. \\
+La solucion principal tiene 22 clusters & matriz XY & 204--206 & resumen escenario + membresia & reproducibilidad parametros & No equivale a zonas de servicio. \\
+\pendiente & \pendiente & \pendiente & \pendiente & \pendiente & \pendiente \\
+\bottomrule
+\end{longtable}
+\normalsize
+\end{landscape}
+
+% ============================================================
+\section{Conclusiones}
+% ============================================================
+
+\begin{preguntas}
+\begin{itemize}
+    \item ¿Que aprendimos sobre la distribucion del sector que no era visible antes?
+    \item ¿Que patrones son robustos y cuales permanecen inciertos?
+    \item ¿Que territorios justifican una segunda etapa de verificacion?
+    \item ¿Que evidencia adicional es la mas valiosa para reducir incertidumbre?
+    \item ¿Cual es la decision concreta que se recomienda tomar ahora, y cual aun no?
+\end{itemize}
+\end{preguntas}
+
+\begin{evidencia}
+Las conclusiones deben estar clasificadas como: \textbf{resultado observado}, \textbf{inferencia razonable}, \textbf{hipotesis de trabajo} o \textbf{recomendacion}. Evitar mezclar categorias.
+\end{evidencia}
+
+% ============================================================
+\section{Plan de siguientes pasos}
+% ============================================================
+
+\begin{enumerate}
+    \item Congelar y versionar el repositorio actual.
+    \item Crear archivo de entorno reproducible.
+    \item Cerrar diccionarios y reglas de clasificacion con version.
+    \item Completar auditoria manual de registros prioritarios.
+    \item Generar fichas por cluster/subnucleo con incertidumbre.
+    \item Cruzar zonas prioritarias con red sanitaria y topografia.
+    \item Diseñar campaña de campo: verificacion, aforo y muestreo.
+    \item Construir balance preliminar de caudales/cargas por zona validada.
+    \item Desarrollar alternativas conceptuales de colectores.
+    \item Evaluar tecnica, economica, ambiental y socialmente las alternativas.
+\end{enumerate}
+
+% ============================================================
+\appendix
+\section{Anexo A. Inventario de scripts y productos}
+% ============================================================
+
+Incorporar el inventario completo del repositorio con, al menos: script, version/hash, objetivo, entradas, salidas, parametros, dependencia anterior, uso actual y estatus (activo/historico/deprecado).
+
+\begin{evidencia}
+El inventario actual documenta 38 scripts Python y 15 carpetas/etapas de resultados en \ruta{outputs/parte\_2/}. Conviene convertir ese inventario en una tabla generada automaticamente para que no quede obsoleta.
+\end{evidencia}
+
+% ============================================================
+\section{Anexo B. Diccionario de datos de la matriz maestra}
+% ============================================================
+
+Para cada variable: nombre, tipo, unidad, fuente, transformacion, valores validos, nulos, significado, version y uso en analisis. Marcar explicitamente si la variable entra al clustering, al perfilado o solo a visualizacion.
+
+% ============================================================
+\section{Anexo C. Diccionarios SCIAN y texto}
+% ============================================================
+
+Publicar los catalogos completos utilizados en cada version, incluyendo terminos positivos, negativos, ambiguos, categorias de proceso y justificacion.
+
+% ============================================================
+\section{Anexo D. Bitacora de auditoria manual}
+% ============================================================
+
+Tabla por establecimiento con evidencia, URL, fecha, revisor, nota factual, interpretacion, decision y confianza.
+
+% ============================================================
+\section{Anexo E. Catalogo de figuras, mapas y tablas}
+% ============================================================
+
+Registrar titulo, archivo, script generador, fuente, fecha de creacion, universo, CRS y mensaje analitico. Incluir tanto mapas PNG como HTML interactivos.
+
+% ============================================================
+\section{Anexo F. Glosario metodologico}
+% ============================================================
+
+Incluir como minimo: SCIAN, DENUE, universo sectorial ampliado, evidencia hidrica, proceso humedo, CRS, UTM, efecto de borde, DBSCAN, HDBSCAN, OPTICS, ruido, min\_cluster\_size, min\_samples, EOM, ARI, Jaccard, persistencia, KDE, k-NN, lift, odds ratio, Fisher exacta, Benjamini--Hochberg, distancia de perfiles, linkage y subnucleo diagnostico.
+
+% ============================================================
+\section{Anexo G. Registro de decisiones metodologicas}
+% ============================================================
+
+Para cada decision: ID, fecha, pregunta, opciones consideradas, decision, justificacion, evidencia, responsable, consecuencias, archivos afectados y condicion que obligaria a revisarla.
+
+% ============================================================
+\section{Anexo H. Registro de cambios}
+% ============================================================
+
+\begin{longtable}{p{0.12\textwidth}p{0.16\textwidth}p{0.18\textwidth}p{0.44\textwidth}}
+\toprule
+\textbf{Version} & \textbf{Fecha} & \textbf{Responsable} & \textbf{Cambio} \\
+\midrule
+0.1 & \today & \pendiente & Estructura maestra y guia de evidencia. \\
+\bottomrule
+\end{longtable}
+
+% ============================================================
+\section{Anexo I. Checklist previo a publicacion}
+% ============================================================
+
+\begin{itemize}
+    \item[$\square$] Todas las cifras del resumen ejecutivo se reproducen desde salidas finales.
+    \item[$\square$] Todas las figuras indican universo, fuente, fecha y CRS cuando aplica.
+    \item[$\square$] Ninguna distancia geografica fue calculada en grados.
+    \item[$\square$] El clustering usa exclusivamente variables espaciales declaradas.
+    \item[$\square$] Se conserva el ruido y se explica su interpretacion.
+    \item[$\square$] Sobrerrepresentacion reporta base, tamaño absoluto y correccion multiple.
+    \item[$\square$] El mega-cluster no fue reemplazado silenciosamente por subclusters exploratorios.
+    \item[$\square$] El reporte distingue presencia economica de evidencia de descarga.
+    \item[$\square$] El reporte distingue prioridad de investigacion de prioridad de inversion.
+    \item[$\square$] Existen entorno reproducible y version congelada del codigo.
+    \item[$\square$] Los hashes de fuentes y productos finales estan archivados.
+    \item[$\square$] Existe una ruta de trazabilidad para cada conclusion principal.
+\end{itemize}
+
+% ============================================================
+\section{Anexo J. Fuentes y antecedentes a incorporar}
+% ============================================================
+
+\begin{itemize}
+    \item INEGI -- DENUE y diccionario de datos de la version utilizada.
+    \item Fuente oficial de poligono de cuenca, division municipal y red hidrografica.
+    \item Informes tecnicos de CONAGUA/SEMARNAT/autoridades estatales pertinentes.
+    \item Registros de emisiones/transferencias y descargas cuando sean aplicables.
+    \item Literatura academica y tecnica sobre contaminacion, actividad textil y salud ambiental en la Cuenca del Alto Atoyac.
+    \item \textit{Salud ambiental en la Cuenca del Alto Atoyac: situacion, peligros ambientales y acciones para reducir el riesgo de enfermedades cronicas no transmisibles}, como antecedente contextual a revisar y citar formalmente en la version final.
+\end{itemize}
+
+\end{document}

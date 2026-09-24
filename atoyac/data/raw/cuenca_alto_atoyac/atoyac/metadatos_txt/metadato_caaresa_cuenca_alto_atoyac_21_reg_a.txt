@@ -1,0 +1,113 @@
+Metadato estructurado conforme a la Norma Técnica Mexicana para la Elaboración de Metadatos Geográficos 
+
+
+* SECCIÓN 1. Identificación del conjunto de datos espaciales o producto 
+
+* SUBSECCIÓN 1.1. Identificación del conjunto de datos espaciales o producto
+- Ecosistema Nacional Informático (ENI): Agentes Tóxicos y Procesos Contaminantes.
+- Capítulo ENI: Región de Emergencia Sanitaria y Ambiental: Cuenca del Alto Atoyac.
+- Subcapítulo ENI: no aplica.
+- Título del conjunto de datos espaciales o producto: Cuenca del Alto Atoyac 2021.
+- Descripción del conjunto de datos espaciales o producto: el archivo contiene la delimitación de la cuenca del Alto Atoyac, así como el volumen de agua superficial disponible. Datos de origen del Sistema Nacional de Información del Agua (SINA) de la Comisión Nacional del Agua (Conagua), 2021.
+- Nombre de archivo: caaresa_cuenca_alto_atoyac_21_reg_a
+
+* SUBSECCIÓN 1.2. Enfoque específico del conjunto de datos o producto
+- Propósito y uso específico: promover el acceso libre a datos geoespaciales estructurados con estándares de calidad e interoperabilidad, para contribuir a la generación e intercambio de conocimiento mediante su uso en temas de recursos, agua y políticas públicas. El propósito y uso específico de este producto se exponen de forma enunciativa, más no limitativa.
+- Tema principal del conjunto de datos espaciales o producto: medio ambiente.
+- Grupo de datos del conjunto de datos espaciales o producto: recursos naturales y clima.
+- Palabras clave: cuenca, río, Alto Atoyac, región hidrológica, límite, agua, disponibilidad, recursos, Sistema Nacional de Información del Agua, SINA, Comisión Nacional del Agua, Conagua.
+
+* SUBSECCIÓN 1.3. Parámetros del conjunto de datos o producto
+- Idioma del conjunto de datos espaciales o producto: español.
+- Forma de presentación de los datos espaciales: mapa digital.
+- URL del recurso: https://gema.conahcyt.mx/
+- Frecuencia de mantenimiento y actualización: no programado.
+- Codificación: UTF-8.
+- Estructura de datos: vectorial.
+- Tipo de geometría: polígonos.
+- Tamaño de archivo: 0.18 Mb.
+- Formato: gpkg y geojson (complementario csv y xlsx).
+
+
+* SECCIÓN 2. Fechas relacionadas con el conjunto de datos espaciales o productos 
+
+- Fecha de referencia del conjunto de datos espaciales o producto: 2023.
+- Tipo de fecha: creación - indicador de la fecha que especifica cuándo fue creado el recurso.
+- Fecha de creación de los insumos: 2021.
+- Nombre del insumo: Capa "Disponibilidad de cuencas hidrológicas 2021".
+
+
+* SECCIÓN 3. Unidad del estado responsable del conjunto de datos espaciales o productos 
+
+- Nombre de la organización: Consejo Nacional de Humanidades, Ciencias y Tecnologías (Conahcyt).
+- Enlace en línea: https://conahcyt.mx/
+
+
+* SECCIÓN 4. Localización geográfica del conjunto de datos espaciales o productos 
+
+- Coordenadas máximas y mínimas: (-98.7213164308764, -97.9594652363641, 18.8617417491949, 19.7030061306248).
+
+
+* SECCIÓN 5. Sistema de referencia 
+
+- Unidades de coordenadas: grados decimales.
+- Sistema de referencia de coordenadas: EPSG:4326.
+
+
+* SECCIÓN 6. Calidad de la información (linaje) 
+
+- Linaje: la capa de datos original se descargó del Sistema Nacional de Información del Agua (SINA) de la Comisión Nacional del Agua (Conagua).
+- Pasos del proceso: (A) Se descargaron los datos. (B) Se seleccionó la cuenca con el id "1801" correspondiente a la del Río Alto Atoyac y se exportó como una nueva capa. (C) Se creó el campo 'g_id'.
+- Fuente: Conagua, Disponibilidad de cuencas hidrológicas 2021 - http://sina.conagua.gob.mx/sina/tema.php?tema=cuencas&ver=mapa&o=0&n=nacional (fecha de consulta: 08-2022).
+
+
+* SECCIÓN 7. Entidades y atributos 
+
+- Detalle de entidades y atributos: el conjunto de datos cuenta con 7 campos y 1 objeto geográfico.
+
+
+* SECCIÓN 8. Distribución 
+
+- Tipo de licenciamiento: bajo los términos de libre uso MX de los Datos Abiertos del gobierno de México, ver https://datos.gob.mx/libreusomx
+
+
+* SECCIÓN 9. Información del contacto para los metadatos 
+
+- Nombre de la organización: Consejo Nacional de Humanidades, Ciencias y Tecnologías
+			     Coordinación de Repositorios, Investigación y Prospectiva
+- Correo electrónico de contacto: dadsig@conahcyt.mx
+
+- Fecha de los metadatos: 27-09-23.
+
+
+################################################################ 
+
+Notas u observaciones: esta capa forma parte de los resultados obtenidos en el estudio realizado para la Cuenca del Alto Atoyac. Para saber más se puede consultar el apartado referente al análisis geoespacial en el informe estratégico disponible en: https://toxicologia.conahcyt.mx/resa-atoyac/
+                       La organización del espacio de la cuenca del Alto Atoyac (CAA) usada en este análisis sigue la propuesta de la Comisión Nacional del Agua (Conagua) en la Declaratoria de Clasificación publicada en el Diario Oficial de la Federación en 2011 (Conagua, 2011).
+
+################################################################ 
+
+--------------------------------------------
+DICCIONARIO DE CAMPOS O VARIABLES
+
+campo: 'g_id'
+descripción: identificador único consecutivo
+
+campo: 'id_cuenca'
+descripción: identificador de la cuenca hidrológica
+
+campo: 'nom_cuenca'
+descripción: nombre de la cuenca hidrológica
+
+campo: 'id_rha'
+descripción: identificador de la Región hidrológico-administrativa
+
+campo: 'nom_rha'
+descripción: nombre de la Región hidrológico-administrativa
+
+campo: 'clasif'
+descripción: clasificación de acuerdo al volumen disponible de agua superficial
+
+campo: 'vol_dispo'
+descripción: volumen de disponibilidad de agua superficial en hectómetros cúbicos (hm3)
+
