@@ -103,7 +103,16 @@
 \newcommand{\pendiente}{\textcolor{AtoyacRed}{\textbf{[PENDIENTE]}}}
 \newcommand{\verificar}{\textcolor{AtoyacOrange}{\textbf{[VERIFICAR]}}}
 \newcommand{\completo}{\textcolor{AtoyacGreen}{\textbf{[COMPLETO]}}}
-\newcommand{\ruta}[1]{\texttt{#1}}
+% Rutas monoespaciadas con cortes permitidos en diagonales y guiones bajos.
+% Se normalizan los \_ heredados antes de entregarlos al formateador de URL.
+\ExplSyntaxOn
+\NewDocumentCommand{\ruta}{m}
+  {
+    \tl_set:Nn \l_tmpa_tl {#1}
+    \tl_replace_all:Nnn \l_tmpa_tl {\_} {_}
+    \exp_args:NV \path \l_tmpa_tl
+  }
+\ExplSyntaxOff
 
 \begin{document}
 
@@ -403,7 +412,7 @@ DENUE local, INEGI & \path{INEGI_DENUE_04092026.*} & Archivo/descarga: 04-09-202
 Cuenca, SINA--Conagua / ENI & \path{caaresa_cuenca_alto_atoyac_21_reg_a.gpkg} & Insumo 2021; producto 2023 & Cuenca Rio Alto Atoyac, ID 1801 & Delimitacion para interseccion y contexto. EPSG:4326; libre uso MX. No equivale a una cuenca sanitaria ni define conexiones de drenaje. \\
 Municipios, INEGI / ENI & \path{caaresa_division_municipal_20_mun_a.gpkg} & Insumo 2020; producto 09-2023 & Alto Atoyac y contexto regional & Limites del Marco Geoestadistico 2020 para agregacion y cartografia. EPSG:4326; libre uso MX. Los limites administrativos no representan areas de aportacion hidraulica. \\
 Red hidrografica, INEGI / ENI & \path{caaresa_red_hidro_digital_06_reg_l.gpkg} & Insumo 2006; revision 09-2023 & Alto Atoyac y area de influencia & Red 1:250,000 de 3,136 lineas, rios y canales. EPSG:4326; libre uso MX. Se usa para proximidad regional; no prueba conectividad ni incluye toda la infraestructura sanitaria. \\
-MH, procedencia local & \path{data/processed/mh/} & Sin fecha documentada en el repositorio & Huejotzingo y Xalmimilulco & Fuente complementaria incorporada con campos de procedencia y auditoria. Origen, responsable, metodo de levantamiento, fecha y licencia deben confirmarse antes de publicacion. \\
+MH, investigacion de campo & \path{data/processed/mh/} & Fecha formal no documentada & Huejotzingo y Xalmimilulco & Fuente independiente producida por Mary Helen Figueroa y Mayra Jaqueline Ramirez mediante investigacion de campo. Sus hallazgos se enlazaron, cuando fue posible, con IDs unicos DENUE; fecha, protocolo detallado y condiciones de uso deben incorporarse a su ficha de fuente. \\
 Universos legacy & \path{data/processed/legacy/} & Historico; fecha no documentada & Cobertura variable & Universos preliminares y cola de revision usados solo para comparacion y trazabilidad. No se consideran autoridad vigente ni se mezclan sin registrar diferencias de reglas y cobertura. \\
 \bottomrule
 \end{longtable}
@@ -425,7 +434,7 @@ Universos legacy & \path{data/processed/legacy/} & Historico; fecha no documenta
 
 \begin{enumerate}
     \item \textbf{¿Quien produjo cada fuente, con que metodo y con que licencia?}
-    El DENUE es producido por el INEGI como directorio estadistico de establecimientos y se obtuvo en formatos tabular y vectorial; su uso en este proyecto se limita a los atributos publicados y a la localizacion registrada. El poligono de cuenca proviene del SINA de Conagua y fue seleccionado y redistribuido por el ENI; la division municipal procede del Marco Geoestadistico del INEGI; y la red hidrografica procede de la Red Hidrografica Digital de Mexico del INEGI y fue recortada por el ENI al Alto Atoyac y su area de influencia. Los metadatos de las tres capas territoriales declaran licencia de libre uso MX. Las fuentes MH son insumos locales ya procesados, pero el repositorio no conserva una ficha suficiente para identificar responsable, protocolo, fecha y licencia. Los archivos legacy son derivados historicos internos y se usan solamente para comparacion.
+    El DENUE es producido por el INEGI como directorio estadistico de establecimientos y se obtuvo en formatos tabular y vectorial; su uso en este proyecto se limita a los atributos publicados y a la localizacion registrada. El poligono de cuenca proviene del SINA de Conagua y fue seleccionado y redistribuido por el ENI; la division municipal procede del Marco Geoestadistico del INEGI; y la red hidrografica procede de la Red Hidrografica Digital de Mexico del INEGI y fue recortada por el ENI al Alto Atoyac y su area de influencia. Los metadatos de las tres capas territoriales declaran licencia de libre uso MX. MH constituye una fuente distinta de DENUE: proviene de la investigacion de campo realizada por las compañeras del proyecto Mary Helen Figueroa y Mayra Jaqueline Ramirez. Al entregar sus resultados, ellas asociaron sus hallazgos, en la medida de lo posible, con los identificadores unicos de los establecimientos en DENUE. Ese enlace facilita la integracion y evita duplicados, pero no convierte MH en un derivado de DENUE: conserva procedencia, metodo y valor evidencial propios. El repositorio debe completar para esta fuente su fecha, protocolo detallado y condiciones de uso. Los archivos legacy son derivados historicos internos y se usan solamente para comparacion.
 
     \item \textbf{¿Que fecha representa cada registro de la tabla?}
     En los archivos DENUE, las fechas 04-09-2026 y 11-09-2026 se interpretan como fecha o corte identificado en el nombre de la descarga, no como visita individual ni garantia de vigencia de cada unidad. Para la cuenca, 2021 corresponde al insumo de disponibilidad hidrologica y 2023 a la creacion del producto distribuido. En municipios, 2020 corresponde al Marco Geoestadistico y septiembre de 2023 al producto preparado. En la red, 2006 es la fecha del insumo cartografico y septiembre de 2023 la revision. MH y legacy no cuentan con fecha documental suficiente y quedan señalados expresamente como pendientes de procedencia, no como fechas inferidas.
@@ -525,7 +534,7 @@ La categoria \texttt{SI} se asigna al codigo 313310 o a una expresion de proceso
 
 Esta etapa corresponde al inicio preliminar y localizado del proyecto, cuando el area de estudio se concentro en Huejotzingo y, con mayor profundidad, en Santa Ana Xalmimilulco. La seleccion no fue arbitraria: de esta zona provenian las muestras de agua previstas para etapas posteriores del proyecto y, por ello, era necesario comprender con mayor detalle el tejido economico que podia guardar relacion con actividades textiles, productivas y potencialmente hidricas. El proposito era reunir y contrastar todas las señales disponibles para determinar con la mayor certeza documental posible si cada establecimiento pertenecia o no a un universo textil-productivo-hidrico. Esta pertenencia se entendia como una clasificacion para orientar la investigacion, no como prueba de que una unidad generara o descargara contaminantes.
 
-El trabajo local produjo tablas auditables con 100 registros para Huejotzingo y 359 para Santa Ana Xalmimilulco, ademas de universos hidricos preliminares y comparaciones con fuentes MH. En Xalmimilulco se obtuvieron 359 registros sectoriales, 68 con evidencia \texttt{SI} o \texttt{REVISAR} y seis con evidencia \texttt{SI}; en Huejotzingo se registraron 100 unidades sectoriales, 37 con evidencia \texttt{SI} o \texttt{REVISAR} y ninguna con evidencia \texttt{SI} bajo las reglas actuales. No obstante, la auditoria manual historica no quedo consolidada como una base final: \path{data/processed/legacy/cola_revision_manual_314.csv} conserva 314 registros preparados para revision, todos con estado \texttt{PENDIENTE} y sin decision o confianza manual registrada. Por ello, la integracion final de esta fase se observa principalmente en las tablas auditables y legacy, no en un expediente terminado de evidencia externa por establecimiento.
+El trabajo local produjo tablas auditables con 100 registros para Huejotzingo y 359 para Santa Ana Xalmimilulco, ademas de universos hidricos preliminares y comparaciones con MH. En Xalmimilulco se obtuvieron 359 registros sectoriales, 68 con evidencia \texttt{SI} o \texttt{REVISAR} y seis con evidencia \texttt{SI}; en Huejotzingo se registraron 100 unidades sectoriales, 37 con evidencia \texttt{SI} o \texttt{REVISAR} y ninguna con evidencia \texttt{SI} bajo las reglas actuales. En la version 1, el desarrollo llego hasta la implementacion de las tablas auditables y se realizo manualmente la auditoria de Xalmimilulco. El archivo legacy \path{universo_hidrico_preliminar.csv} conserva 55 registros seleccionados: 33 atribuidos a rutas de auditoria manual y 22 a reglas automaticas de maquila, produccion de mezclilla o proceso humedo confirmado. La posterior \path{cola_revision_manual_314.csv}, cuyos 314 registros aparecen como \texttt{PENDIENTE}, corresponde a una ampliacion o reorganizacion posterior de casos por revisar y no debe utilizarse para negar la auditoria manual efectivamente realizada en la version 1.
 
 \subsection{Protocolo de revision}
 \begin{preguntas}
@@ -542,7 +551,7 @@ El trabajo local produjo tablas auditables con 100 registros para Huejotzingo y 
 
 \begin{enumerate}
     \item \textbf{¿Que registros entran a auditoria manual y por que?}
-    El protocolo prioriza los registros cuya pertenencia no puede resolverse de manera suficiente con el codigo SCIAN y las señales textuales: casos clasificados para revision, maquilas con descripciones generales, actividades de mezclilla sin evidencia clara de lavado, posibles procesos secos, contradicciones entre DENUE y MH, coordenadas dudosas y registros que aparecen solamente en el universo historico o solamente en la clasificacion actual. La cola legacy de 314 registros materializa esta necesidad de revision en la etapa local. Tambien deben revisarse de manera prioritaria los establecimientos asociados territorialmente con los sitios de muestreo, porque el objetivo inicial era conectar la caracterizacion economica de Huejotzingo y Xalmimilulco con la interpretacion posterior de las muestras de agua sin atribuirles anticipadamente un origen.
+    En la version 1 entraron a auditoria manual los registros de Xalmimilulco cuya pertenencia al universo textil-productivo-hidrico no podia resolverse suficientemente mediante el codigo SCIAN y las señales textuales, en particular maquilas con descripciones generales, actividades de mezclilla sin evidencia clara de lavado, posibles procesos secos, contradicciones entre DENUE y MH y unidades cercanas al contexto territorial de las muestras de agua. La revision manual no buscaba atribuir contaminacion, sino decidir si existia evidencia suficiente para retener o descartar la pertenencia al universo de investigacion. La cola posterior de 314 casos conserva una agenda ampliada de revision, pero es distinta del conjunto efectivamente auditado para construir el universo preliminar de la version 1.
 
     \item \textbf{¿Que fuentes externas se permiten?}
     La estructura legacy contempla consultas a Google Maps por direccion y coordenadas, OpenStreetMap y el registro de las fuentes efectivamente consultadas. Como evidencia complementaria pueden emplearse Street View, sitio web oficial, perfiles empresariales o de redes sociales, directorios, anuncios de empleo, notas institucionales e imagen satelital, siempre que se guarden URL, fecha y una descripcion factual de lo observado. Estas fuentes sirven para verificar existencia, nombre, giro aparente, escala o indicios de actividad; no sustituyen una visita de campo ni demuestran procesos internos, consumo de agua o descarga.
@@ -559,9 +568,9 @@ El trabajo local produjo tablas auditables con 100 registros para Huejotzingo y 
 
 \subsubsection*{Alcance alcanzado y transicion al analisis regional}
 
-La intencion de esta fase era llegar, mediante la acumulacion de señales SCIAN, textuales, territoriales, MH y evidencia externa, a un dictamen defendible de pertenencia al universo textil-productivo-hidrico para Huejotzingo y Xalmimilulco. Sin embargo, el estado conservado en el repositorio muestra una diferencia entre el diseño del protocolo y su ejecucion completa: existen campos, reglas, enlaces preparados y tablas de comparacion, pero la cola manual permanece pendiente. En consecuencia, las etiquetas locales representan una clasificacion preliminar auditable y no una verificacion concluyente de todos los establecimientos. Los archivos \path{universo_hidrico_preliminar.csv}, \path{universo_combinado_tentativo_mh.csv} y \path{cola_revision_manual_314.csv} deben leerse como memoria metodologica de esa etapa.
+La intencion de esta fase era llegar, mediante la acumulacion de señales SCIAN, textuales, territoriales, MH y evidencia externa, a un dictamen defendible de pertenencia al universo textil-productivo-hidrico para Huejotzingo y Xalmimilulco. En la version 1 ese objetivo se concreto para Xalmimilulco mediante la implementacion de tablas auditables y una revision manual realizada por el responsable de este analisis. El resultado se conserva en \path{universo_hidrico_preliminar.csv}, donde las rutas de inclusion distinguen decisiones apoyadas por auditoria manual de inclusiones obtenidas automaticamente. \path{universo_combinado_tentativo_mh.csv} registra despues la comparacion e integracion tentativa con los hallazgos de campo de Mary Helen Figueroa y Mayra Jaqueline Ramirez. La existencia de una cola posterior de 314 casos pendientes muestra que el universo de revision se amplio, no que la auditoria de version 1 no se hubiera realizado.
 
-Posteriormente, el proyecto cambio de escala y se concentro en todos los municipios poblanos seleccionados en relacion con la cuenca. Ese desplazamiento no invalida el trabajo local: Huejotzingo y Xalmimilulco funcionaron como laboratorio para construir las reglas, reconocer ambigüedades y separar pertenencia textil de evidencia hidrica. No obstante, el analisis regional posterior utiliza un universo sectorial ampliado y procedimientos reproducibles de clasificacion y clustering, por lo que no incorpora las decisiones legacy como si fueran una verdad manual definitiva. La fase local queda integrada mediante su trazabilidad, sus comparaciones y sus lecciones metodologicas; la fase regional pasa a ser el marco principal para estudiar la distribucion y concentracion espacial en la cuenca poblana.
+Posteriormente, el proyecto cambio de escala y se concentro en todos los municipios poblanos seleccionados en relacion con la cuenca. Ese desplazamiento no invalida el trabajo local: Huejotzingo y Xalmimilulco funcionaron como laboratorio para construir las reglas, reconocer ambigüedades, realizar la primera auditoria manual y separar pertenencia textil de evidencia hidrica. No obstante, el analisis regional posterior utiliza un universo sectorial ampliado y procedimientos homogeneos de clasificacion y clustering, por lo que conserva las decisiones de version 1 como antecedente y trazabilidad, no como regla manual extrapolada automaticamente a todos los municipios. La fase local aporta la experiencia metodologica y el enlace con las futuras muestras de agua; la fase regional pasa a ser el marco principal para estudiar la distribucion y concentracion espacial en la cuenca poblana.
 
 \begin{evidencia}
 Cada revision manual debe conservar, cuando sea posible: ID DENUE, nombre, coordenadas, fecha de consulta, URL, tipo de evidencia, captura/archivo, observacion normalizada, decision, nivel de confianza, revisor y segunda revision si existe conflicto.
@@ -572,128 +581,589 @@ La auditoria humana debe ser reproducible en el sentido documental aunque una pa
 \end{trazabilidad}
 
 % ============================================================
-\section{Integracion de fuentes complementarias y comparacion historica}
+\section{Alcance inicial y transicion al analisis regional}
 % ============================================================
 
-\subsection{Integracion MH}
-Explicar procedencia, criterio de matching, manejo de coincidencias, filas sinteticas y campos de procedencia.
+Esta seccion documenta, en cambio, el cambio de escala entre la version 1, intensiva y localizada, y la Parte 1 regional, automatizada para los municipios poblanos seleccionados en relacion con la cuenca. Los universos legacy se conservan precisamente para reconstruir esa transicion y no deben mezclarse silenciosamente con las salidas regionales, porque responden a coberturas, reglas y grados de intervencion manual diferentes.
 
-\subsection{Universos legacy}
-Describir para que se conservan los universos historicos y por que no deben mezclarse silenciosamente con la version actual.
+\subsection{Version 1: Huejotzingo y Santa Ana Xalmimilulco}
 
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Que registros se agregaron solo por MH?
-    \item ¿Que porcentaje de la seleccion depende de fuentes no DENUE?
-    \item ¿Que diferencias entre versiones son altas reales, bajas, cambios de criterio o cambios de fuente?
-\end{itemize}
-\end{preguntas}
+La version 1 se desarrollo con un alcance territorial preliminar en Huejotzingo y Santa Ana Xalmimilulco. En estas localidades se buscaba comprender a profundidad el universo economico asociado con el contexto de las muestras de agua que se utilizarian posteriormente. El procedimiento combinaba el recorte local de DENUE, reglas SCIAN y textuales, revision manual de Xalmimilulco y contraste con la investigacion de campo de Mary Helen Figueroa y Mayra Jaqueline Ramirez. MH se trato como fuente independiente: cuando sus hallazgos contaban con una correspondencia razonable se vincularon mediante ID DENUE; cuando no existia equivalencia directa se conservaron con su propia procedencia para evitar perder evidencia de campo.
+
+Esta fase tenia una meta de clasificacion intensiva: decidir, despues de acumular señales, si cada caso podia pertenecer al universo textil-productivo-hidrico. El resultado no era una afirmacion de descarga, sino una seleccion razonada para relacionar posteriormente la actividad territorial con las muestras y orientar nuevas verificaciones. La version 1 culmino en tablas auditables locales y en un universo legacy construido manualmente para Xalmimilulco, con apoyo del contraste de campo. Este universo manual es distinto del universo hidrico preliminar automatizado: el segundo resulta de aplicar en la localidad el filtro estricto que posteriormente se utilizaria, de manera homogenea, en el nivel regional. Los archivos legacy conservan la primera historia de decision y permiten compararla con la aplicacion posterior de las reglas automaticas.
+
+\begin{center}
+\begin{tcolorbox}[
+  width=0.92\textwidth,
+  colback=AtoyacLight,
+  colframe=AtoyacBlue,
+  title={Diagrama 1. Flujo de la version 1: estudio local e intensivo},
+  fonttitle=\bfseries
+]
+\centering
+\textbf{Muestras y pregunta territorial inicial}\par
+$\Downarrow$\par
+\textbf{Delimitacion preliminar: Huejotzingo y Santa Ana Xalmimilulco}\par
+$\Downarrow$\par
+\textbf{Recorte DENUE local}\par
+$\Downarrow$\par
+\textbf{Filtro SCIAN + diccionario textual + reglas de inclusion}\par
+$\Downarrow$\par
+\textbf{Tablas auditables por establecimiento}\par
+$\Downarrow$\par
+\textbf{Auditoria manual de Xalmimilulco}\par
+$\Downarrow$\par
+\textbf{Contraste con MH: investigacion de campo independiente}\par
+$\Downarrow$\par
+\textbf{Enlace por ID DENUE cuando fue posible + conservacion de procedencia}\par
+$\Downarrow$\par
+\textbf{Universo legacy manual + base para contrastar el filtro estricto posterior}
+\end{tcolorbox}
+\end{center}
+
+\subsection{Transicion metodologica}
+
+La experiencia local permitio reconocer tres problemas que debian resolverse antes de ampliar la escala: las palabras asociadas con actividad textil no equivalen necesariamente a procesos humedos; las fuentes de campo y DENUE pueden coincidir, complementarse o contradecirse; y una auditoria manual exhaustiva no puede trasladarse sin cambios a miles de establecimientos. Por ello se conservaron las lecciones de la version 1, pero se reemplazo la dependencia de decisiones caso por caso por reglas explicitas, columnas auditables y modalidades comparables. El cambio regional no consistio solamente en agregar municipios: implico pasar de una investigacion local de alta profundidad a una clasificacion automatica y homogenea, capaz de reproducirse sobre toda la base seleccionada.
+
+La Figura~\ref{fig:comparacion-legacy-xalmi} muestra precisamente ese cambio de metodo. El conjunto denominado \emph{legacy observado} corresponde al universo manual construido durante la version 1; no debe confundirse con una ejecucion temprana del filtro regional. El conjunto \emph{actual} corresponde al universo hidrico preliminar obtenido al aplicar el filtro estricto sobre Santa Ana Xalmimilulco como localidad. Esta aplicacion local funciono como prueba del criterio que despues se automatizo y extendio al conjunto de municipios del analisis regional.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{../../outputs/xalmimilulco/comparacion_legacy/comparacion_legacy_actual.png}
+  \caption{Comparacion entre el universo legacy manual de la version 1 y el universo hidrico preliminar generado mediante el filtro estricto en Santa Ana Xalmimilulco. El archivo legacy disponible contiene 55 registros, frente a 73 del universo automatizado: 31 identificadores aparecen en ambos, 24 solo en el legacy y 42 solo en el resultado del filtro. La diferencia expresa un cambio de procedimiento y no altas o bajas de establecimientos.}
+  \label{fig:comparacion-legacy-xalmi}
+\end{figure}
+
+La coincidencia parcial confirma que ambos productos responden a logicas distintas. El universo manual incorporo juicio de auditoria y evidencia disponible caso por caso; el universo hidrico preliminar aplico reglas reproducibles sobre la base de la localidad. Por ello, los 24 registros exclusivos del legacy y los 42 exclusivos del filtro deben revisarse como diferencias de clasificacion y cobertura. Esta comparacion sirvio para reconocer que se perdia o incorporaba al automatizar el procedimiento antes de trasladarlo a la escala regional.
+
+La integracion MH se mantuvo como una modalidad separada para medir su efecto sin confundirla con la fuente DENUE. En la modalidad amplia, la fuente de campo agrego 38 registros a un universo municipal final de 1,756; en la modalidad estricta agrego 41 a un total de 517. Estas diferencias no deben interpretarse automaticamente como altas o bajas temporales: pueden provenir de cobertura de campo, ausencia de correspondencia DENUE, cambios de criterio, reglas distintas o diferencias de fecha. Por esa razon existen resultados con y sin MH y se conserva una auditoria especifica de la integracion.
+
+\subsection{Parte 1 regional: flujo automatico para los municipios de la cuenca}
+
+El flujo regional parte de la descarga estatal de 15,956 registros acotada a los SCIAN seleccionados. Las mismas funciones normalizan campos, verifican IDs, aplican filtros y generan señales para todos los establecimientos, sin utilizar decisiones manuales locales como regla general. Despues se seleccionan los 26 municipios de referencia, se materializa un universo sectorial de 4,365 establecimientos y se intersecta con el poligono de la cuenca, donde permanecen 4,010. La automatizacion produce tablas, capas, distancias, mapas y resúmenes bajo cinco modalidades que conservan por separado el efecto de la regla amplia o estricta, la inclusion de MH y el universo completo de los SCIAN descargados.
+
+Este flujo constituye la Parte 1 regional del proyecto Alto Atoyac. Su finalidad es establecer universos comparables y cartografia territorial antes del analisis de concentraciones. La seccion 9 examina las cinco modalidades y sus cambios de conteo y distribucion; posteriormente, la modalidad de todos los SCIAN funciona como universo sectorial ampliado para el clustering y el perfilado de concentraciones.
+
+\begin{center}
+\begin{tcolorbox}[
+  width=0.92\textwidth,
+  colback=blue!2,
+  colframe=AtoyacGreen,
+  title={Diagrama 2. Flujo automatico de la Parte 1 regional},
+  fonttitle=\bfseries
+]
+\centering
+\textbf{DENUE estatal acotado: 15,956 registros}\par
+$\Downarrow$\par
+\textbf{Normalizacion + validacion de identificadores y coordenadas}\par
+$\Downarrow$\par
+\textbf{Filtro SCIAN + filtro textual + señales auditables}\par
+$\Downarrow$\par
+\textbf{Seleccion de 26 municipios de referencia}\par
+$\Downarrow$\par
+\textbf{Universo sectorial municipal: 4,365 establecimientos}\par
+$\Downarrow$\par
+\textbf{Cinco modalidades: amplia/estricta, con/sin MH y todos los SCIAN}\par
+$\Downarrow$\par
+\textbf{Interseccion con cuenca + distancia a red hidrografica}\par
+$\Downarrow$\par
+\textbf{Tablas + GeoPackage + mapas HTML/PNG + resumen de ejecucion}\par
+$\Downarrow$\par
+\textbf{Comparacion de modalidades en la seccion 9}\par
+$\Downarrow$\par
+\textbf{Base regional para el analisis posterior de concentraciones}
+\end{tcolorbox}
+\end{center}
 
 % ============================================================
 \section{Modalidades analiticas de la primera fase}
 % ============================================================
 
-\begin{hechos}
-El inventario documenta cinco modalidades: amplia + MH; amplia sin MH; estricta + MH; estricta sin MH; y todos los SCIAN. La ultima contiene 4,365 establecimientos en el universo municipal y 4,010 dentro de cuenca, y es la base de la Parte 2.
-\end{hechos}
+Esta seccion presenta las cinco modalidades construidas sobre un mismo marco territorial: sectorial, amplia DENUE, amplia + MH, estricta DENUE y estricta + MH. Su comparacion permite separar el efecto de tres decisiones: conservar todo el contexto economico seleccionado, exigir distintos grados de evidencia hidrica e incorporar una fuente de campo localizada. La modalidad sectorial contiene 4,365 establecimientos en los municipios seleccionados y 4,010 dentro de la cuenca; funciona como denominador contextual y como base de la Parte 2. Las demas modalidades son escenarios metodologicos para observar cuanto cambian el tamaño y la distribucion del universo al modificar las reglas, no estimaciones rivales de una poblacion verdadera.
 
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Que pregunta responde cada modalidad?
-    \item ¿Por que es metodologicamente importante mantenerlas separadas?
-    \item ¿Cuales son los cambios de conteo y distribucion entre ellas?
-    \item ¿Que resultados son robustos a la modalidad y cuales dependen fuertemente del filtro?
-\end{itemize}
-\end{preguntas}
+\subsection{Decisiones comunes y denominadores}
 
-\begin{evidencia}
-Incluir una tabla comparativa con: definicion formal, N municipal, N dentro de cuenca, MH agregados, ventajas, sesgos esperados y uso recomendado de cada modalidad.
-\end{evidencia}
+Las cinco corridas parten de la misma descarga sectorial de DENUE, normalizan nombres municipales y retienen los 26 municipios solicitados. En las tablas de cobertura, 24 presentan candidatos. Primero se construye el universo sectorial mediante la union de los identificadores recuperados por SCIAN y por texto; despues se aplican las reglas de evidencia hidrica y, cuando corresponde, se integra MH. Finalmente, los puntos se intersectan con el poligono de cuenca. Esta secuencia obliga a distinguir el universo municipal del universo dentro de cuenca: las comparaciones principales utilizan siempre el segundo.
+
+La modalidad denominada \emph{sectorial} conserva los 4,365 candidatos de los municipios, incluidos los casos clasificados como \texttt{SIN\_EVIDENCIA}; \emph{todos los SCIAN} no significa un censo de todas las actividades economicas, sino todos los registros recuperados dentro de la descarga sectorial trabajada. En cambio, las modalidades amplia y estricta conservan solamente \texttt{SI} y \texttt{REVISAR}. La asignacion \texttt{SI} tiene precedencia sobre \texttt{REVISAR}, pero ninguna de las dos acredita descarga, consumo de agua o caracter industrial.
+
+\subsection{Regla amplia, regla estricta y efecto de la decision}
+
+La diferencia decisiva se concentra en el SCIAN 812210. La regla amplia admite toda lavanderia con ese codigo como caso por revisar, aunque su nombre o razon social no aporte otra señal. La regla estricta exige, ademas, una señal textual de contexto textil, mezclilla, proceso humedo, produccion o maquila. En ambas modalidades permanecen las demas vias de admision: evidencia humeda explicita, lavado generico con contexto textil y mezclilla relevante. Por tanto, el modo estricto modifica una via concreta de entrada y no sustituye todo el clasificador.
+
+Conceptualmente, la modalidad amplia puede entenderse como una primera separacion entre candidatos con alguna señal de posible relacion hidrica y actividades exclusivamente secas: un registro cuya unica señal es \texttt{proceso\_seco\_explicito} permanece como \texttt{SIN\_EVIDENCIA} y no entra al universo hidrico. Sin embargo, el codigo no utiliza la señal seca como exclusion absoluta; si el mismo establecimiento presenta evidencia humeda, lavado contextualizado o cumple la regla de lavanderia, permanece en el universo. De forma semejante, la modalidad estricta se aproxima a un universo de mayor plausibilidad hidrica, pero no contiene solamente casos con proceso humedo explicito. En las lavanderias 812210 tambien acepta como señal adicional el contexto textil, la mezclilla, la produccion o la maquila. Esta precision es importante: describirla como ``solo explicitamente hidrica'' seria mas restrictivo que la regla realmente aplicada y no corresponderia con los conteos reportados.
+
+La eleccion produce el mayor efecto cuantitativo de esta fase. Dentro de la cuenca, el universo amplio DENUE contiene 1,679 registros y el estricto DENUE 469: la diferencia es de 1,210 establecimientos, equivalente al 72.1\% del universo amplio. Estos casos son principalmente lavanderias 812210 sin señal adicional suficiente. Se les trata como \emph{posibles comerciales} para diagnosticar la sensibilidad del filtro, pero la ausencia de palabras industriales no demuestra que su operacion sea comercial. El modo amplio favorece cobertura frente a nombres poco descriptivos; el estricto reduce ambigüedad, a costa de posibles falsos negativos.
+
+\subsection{Integracion de MH como variante separada}
+
+MH procede de la investigacion de campo de Mary Helen Figueroa y Mayra Jaqueline Ramirez y se integra como fuente independiente, no como una propiedad derivada de DENUE. El procedimiento conserva \texttt{evidencia\_hidrica\_original}, \texttt{fuente\_universo\_hidrico}, \texttt{fuente\_evidencia\_hidrica} e \texttt{id\_denue\_origen\_mh}. Se procesan 53 registros: 46 de Xalmimilulco y siete de Huejotzingo. Cuando existe correspondencia se mantiene o recupera la fila DENUE; cuando no existe en el conjunto auditable se crea un registro suplementario con procedencia MH y campos DENUE desconocidos vacios.
+
+En Xalmimilulco la correspondencia aprovecha el ID DENUE proporcionado. En Huejotzingo el identificador de la fuente es local, por lo que se busca el candidato DENUE mas cercano y se exige una distancia no mayor a 35 m y similitud de nombre no menor a 0.45. Esta regla solo evalua el vecino mas cercano y sus umbrales no cuentan con validacion estadistica; por ello la tabla de auditoria conserva distancia, similitud, accion e identificador de salida.
+
+MH no se suma mecanicamente al universo previo. En la modalidad amplia, 15 de sus 53 registros ya estaban presentes, 31 se recuperaron desde DENUE y siete fueron suplementarios: el incremento neto fue 38. En la estricta, 12 ya estaban presentes, 34 se recuperaron y siete fueron suplementarios: el incremento neto fue 41. Ademas, los casos coincidentes se reclasifican como \texttt{SI}. Por eso el total \texttt{SI} pasa de 41 a 91 y no a 94: tres de los 41 \texttt{SI} automaticos tambien aparecen en MH y cambian de procedencia.
+
+\subsection{Lectura individual de cada modalidad}
+
+\textbf{Modalidad sectorial.} Este filtro conserva la union de los establecimientos recuperados por los prefijos SCIAN seleccionados y por el diccionario textual, sin exigir que presenten evidencia hidrica. Entran los registros clasificados como \texttt{SI}, \texttt{REVISAR} y \texttt{SIN\_EVIDENCIA}. Se mantiene porque ofrece el contexto completo de las actividades textiles, de confeccion, lavanderia y actividades relacionadas disponibles en la descarga; permite conocer el denominador economico y evita que el clustering posterior dependa de una clasificacion hidrica previa.
+
+\textbf{Modalidad amplia DENUE.} Parte del universo sectorial y filtra los registros para conservar solamente \texttt{SI} y \texttt{REVISAR}. Los casos cuya unica evidencia es un proceso seco quedan fuera, pero no existe un veto general contra lo seco cuando coexiste con otra señal admisible. Entran todas las lavanderias con SCIAN 812210, incluso cuando el nombre o la razon social no contienen otra señal, ademas de los establecimientos con evidencia humeda explicita, lavado con contexto textil o mezclilla relevante. Se conserva para proteger cobertura frente a nombres poco informativos y para mostrar el limite superior operativo de candidatos obtenidos solo con DENUE; su costo es incluir numerosas lavanderias posiblemente comerciales.
+
+\textbf{Modalidad amplia + MH.} Primero aplica exactamente el filtro amplio y despues incorpora la investigacion de campo MH. Entran los registros ya seleccionados por DENUE, los casos MH que coinciden con ellos, los registros recuperados desde la tabla auditable y los suplementarios sin correspondencia suficiente. Se genera para medir cuanto cambia el escenario de cobertura amplia al añadir una fuente independiente. No debe interpretarse como una simple suma, porque MH tambien reclasifica como \texttt{SI} casos que ya estaban presentes.
+
+\textbf{Modalidad estricta DENUE.} Parte del mismo universo sectorial, pero una lavanderia SCIAN 812210 solo entra por esa via cuando presenta una señal adicional de contexto textil, mezclilla, proceso humedo, produccion o maquila. Por ello es mas selectiva que la amplia, aunque no equivale a conservar exclusivamente procesos hidricos explicitos. Tambien entran los casos admitidos por las otras reglas de evidencia humeda, lavado contextualizado o mezclilla relevante. Se utiliza para reducir la ambigüedad introducida por lavanderias de posible orientacion comercial y producir una lista regional de priorizacion mas acotada; puede excluir operaciones industriales reales cuyo nombre no describe el proceso.
+
+\textbf{Modalidad estricta + MH.} Aplica el filtro estricto y posteriormente integra MH mediante correspondencias y registros suplementarios auditables. Entran los candidatos estrictos de DENUE y los casos aportados o reclasificados por el trabajo de campo. Se adopta como escenario principal de priorizacion porque combina una regla automatica conservadora con evidencia localizada que recupera omisiones. Sin embargo, su distribucion esta influida por la cobertura de MH en Huejotzingo y Xalmimilulco, por lo que debe presentarse junto con la modalidad estricta sin MH y con la procedencia de cada registro.
+
+\begin{landscape}
+\begin{table}[H]
+\centering
+\small
+\caption{Definicion, efecto y uso recomendado de las cinco modalidades.}
+\begin{tabularx}{\linewidth}{p{2.4cm}rrrrp{4.0cm}p{4.2cm}X}
+\toprule
+\textbf{Modalidad} & \textbf{N mun.} & \textbf{En cuenca} & \textbf{SI} & \textbf{REVISAR} & \textbf{Definicion y pregunta} & \textbf{Ventaja y sesgo esperado} & \textbf{Uso recomendado} \\
+\midrule
+Sectorial & 4,365 & 4,010 & 41 & 1,638 & Union SCIAN/texto; incluye 2,331 sin evidencia. ¿Como se distribuye el contexto economico seleccionado? & Maxima cobertura sectorial; incluye numerosos casos sin señal hidrica y no representa toda la economia. & Denominador territorial, contexto y base del clustering. \\
+Amplia DENUE & 1,718 & 1,679 & 41 & 1,638 & Admite \texttt{SI}/\texttt{REVISAR}; toda lavanderia 812210 entra por revisar. & Recupera nombres genericos, pero mezcla lavanderias comerciales y potencialmente industriales. & Contraste de cobertura y cota operativa amplia. \\
+Amplia + MH & 1,756 & 1,717 & 91 & 1,626 & Regla amplia seguida de integracion MH. & Añade evidencia localizada; puede aumentar desproporcionadamente las zonas cubiertas por trabajo de campo. & Sensibilidad conjunta a regla amplia y fuente complementaria. \\
+Estricto DENUE & 476 & 469 & 41 & 428 & Lavanderia 812210 requiere señal adicional. & Reduce ambigüedad, pero puede perder industrias con nombres poco descriptivos. & Escenario reproducible de priorizacion sin evidencia de campo. \\
+Estricto + MH & 517 & 510 & 91 & 419 & Regla estricta seguida de integracion MH auditable. & Recupera casos de campo y concentra su efecto en Huejotzingo; la cobertura MH no es regionalmente uniforme. & Escenario principal de priorizacion, siempre acompañado del amplio y de la procedencia. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{landscape}
+
+\subsection{Consecuencias para la interpretacion}
+
+Los resultados robustos son la persistencia de Puebla y Huejotzingo como espacios relevantes y el predominio de establecimientos con bajo estrato de personal ocupado. Sin embargo, el tamaño total, el peso relativo de Huejotzingo y la jerarquia de municipios cambian con la regla y con MH. En estricto + MH, Huejotzingo pasa de 57 a 98 registros debido a los 41 casos añadidos por MH; su participacion alcanza 19.2\%, frente a 9.0\% en amplio + MH. Este aumento no prueba mayor presion ambiental: demuestra que la cobertura de campo se concentra territorialmente.
+
+La decision metodologica recomendada es utilizar estricto + MH para priorizar revision, presentar el amplio como analisis de sensibilidad y conservar el sectorial como contexto. Cada cifra debe acompañarse de territorio, modalidad, denominador y fuente. No se dispone todavia de una estimacion validada de sensibilidad o precision del clasificador, por lo que ninguna modalidad debe presentarse como conteo real verificado de industrias contaminantes.
 
 % ============================================================
 \section{Analisis espacial descriptivo de unidades economicas}
 % ============================================================
 
-\subsection{Distribucion territorial}
-Mapas de puntos, conteos por municipio/localidad, densidad simple, estratos de personal, composicion sectorial y distancia a red hidrografica.
+\subsection{Tamaño y sensibilidad del universo}
+
+La comparacion de tamaños confirma que la regla de lavanderias domina la incertidumbre clasificatoria. La Figura~\ref{fig:modalidades-direccion} mantiene constante el recorte espacial y muestra que integrar MH modifica el universo en decenas de casos, mientras pasar de amplio a estricto lo modifica en 1,210. En consecuencia, cualquier resultado territorial debe leerse junto con la modalidad que lo produjo.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\textwidth]{../dir1/direccion_imagenes/modalidades.png}
+\caption{Sensibilidad del tamaño del universo a la regla amplia, la regla estricta y la integracion MH. Fuente: presentacion a direccion.}
+\label{fig:modalidades-direccion}
+\end{figure}
+
+\subsection{Concentracion municipal y participacion territorial}
+
+La concentracion municipal se obtuvo contando puntos dentro de los poligonos municipales recortados por la cuenca. Todos los mapas de conteo usan la misma extension y una escala comun de 0 a 1,762 registros; de este modo, una modalidad pequeña no parece artificialmente tan intensa como la sectorial. El panel de participacion utiliza como denominador el total dentro de cuenca de cada modalidad. Esta segunda lectura permite comparar estructura relativa, pero no representa densidad por kilometro cuadrado.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../dir1/direccion_imagenes/panel_conteos.png}
+\caption{Concentracion municipal absoluta de las cinco modalidades con escala comun. Los colores representan conteos, no intensidad hidrica.}
+\label{fig:panel-conteos}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../dir1/direccion_imagenes/panel_participacion.png}
+\caption{Participacion municipal dentro de cada modalidad. El denominador cambia entre columnas y corresponde al total de la modalidad dentro de cuenca.}
+\label{fig:panel-participacion}
+\end{figure}
+
+La matriz de la Figura~\ref{fig:matriz-municipal} presenta los conteos observados y usa $\log(1+n)$ solamente para el color, de modo que los municipios pequeños sean visibles. Puebla conserva el mayor conteo: 1,762 en el sectorial, 1,004 en las dos modalidades amplias y 283 en las dos estrictas. Huejotzingo registra 450, 117, 155, 57 y 98, respectivamente. San Martin Texmelucan conserva 460 casos sectoriales, pero cae a 99 en amplio y 11 en estricto. Esto muestra que una alta presencia sectorial no implica igual presencia bajo criterios hidricos.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\textwidth]{../dir1/direccion_imagenes/matriz_municipal.png}
+\caption{Matriz comparativa por municipio y modalidad. Las cifras son conteos; la transformacion logaritmica se utiliza solo en la escala cromatica.}
+\label{fig:matriz-municipal}
+\end{figure}
+
+\subsection{Efecto espacial de MH}
+
+La integracion MH introduce 53 registros con evidencia atribuida al trabajo de campo, pero su incremento neto depende de la modalidad: 38 en amplio y 41 en estricto. De los 91 registros \texttt{SI} finales, 53 tienen como fuente \texttt{MH\_TRABAJO\_CAMPO} y 38 conservan como fuente las reglas DENUE. La superposicion explica por que no deben sumarse 41 automaticos y 53 MH como si fueran unidades diferentes.
+
+El efecto es espacialmente concentrado. Los 41 registros añadidos por MH al escenario estricto se encuentran en el municipio de Huejotzingo, que incluye Santa Ana Xalmimilulco: el conteo pasa de 57 a 98. En la modalidad amplia pasa de 117 a 155. Por ello MH eleva el peso relativo de Huejotzingo, pero no puede extrapolarse como una tasa de omision de DENUE para los demas municipios. Las Figuras~\ref{fig:mapas-mh} y \ref{fig:municipios-mh} muestran, respectivamente, la localizacion de los aportes y el cambio en conteos municipales.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../dir1/direccion_imagenes/mapas_comparables.png}
+\caption{Distribucion comparable entre escenarios con la misma extension y simbologia; los aportes MH se distinguen en rojo.}
+\label{fig:mapas-mh}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\textwidth]{../dir1/direccion_imagenes/municipios.png}
+\caption{Cambio de los conteos municipales por modalidad e integracion MH. Son cantidades de registros, no tasas ni volumenes de descarga.}
+\label{fig:municipios-mh}
+\end{figure}
+
+\subsection{Lavanderias sensibles al criterio estricto}
+
+Para aislar el efecto de la regla se compararon las modalidades DENUE sin MH. Los 1,210 registros SCIAN 812210 presentes en amplio y ausentes en estricto constituyen el grupo operativo de posibles lavanderias comerciales. Puebla concentra 721, equivalentes al 59.6\% del grupo. La etiqueta es una aproximacion por falta de señal adicional: puede incluir operaciones industriales con nombres genericos y no constituye verificacion del tipo de establecimiento.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\textwidth]{../dir1/direccion_imagenes/posibles_comerciales.png}
+\caption{Concentracion territorial de lavanderias 812210 admitidas por la regla amplia y excluidas por la estricta.}
+\label{fig:comerciales-mapa}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{../dir1/direccion_imagenes/ranking_comerciales.png}
+\caption{Municipios con mayor numero de registros sensibles a la regla de lavanderias.}
+\label{fig:comerciales-ranking}
+\end{figure}
+
+\subsection{Estratos de personal ocupado}
+
+Los estratos DENUE muestran que el universo esta compuesto principalmente por establecimientos pequeños. Dentro de cuenca, el grupo de 0 a 5 personas representa 3,332 de 4,010 registros sectoriales (83.1\%), 1,595 de 1,679 en amplio DENUE (95.0\%) y 441 de 510 en estricto + MH (86.5\%). En el estrato de 6 a 10 personas aparecen 333, 55 y 35, respectivamente. Los registros MH sin personal reportado permanecen como desconocidos; no se imputan como pequeños.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../dir1/direccion_imagenes/pequenas_panel_0.png}
+\caption{Distribucion municipal de establecimientos con estrato reportado de 0 a 5 personas en las cinco modalidades.}
+\label{fig:pequenas-cero-cinco}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../dir1/direccion_imagenes/pequenas_panel_1.png}
+\caption{Distribucion municipal de establecimientos con estrato reportado de 6 a 10 personas en las cinco modalidades.}
+\label{fig:pequenas-seis-diez}
+\end{figure}
+
+La predominancia de estratos bajos describe una estructura de muchas unidades con poca ocupacion reportada, pero no mide capacidad productiva, formalidad, consumo o descarga. Un establecimiento pequeño puede ejecutar procesos intensivos y uno grande puede carecer de proceso humedo. Los mapas sirven para localizar zonas donde conviene investigar servicios compartidos o articulaciones productivas, no para dar esos vinculos por demostrados.
 
 \subsection{Distancia a hidrografia}
+La distancia se calculo despues de reproyectar puntos y red hidrografica recortada a UTM zona 14N (EPSG:32614). Para cada establecimiento se obtuvo la distancia euclidiana minima a cualquier linea de la red suministrada y se agrupo en cinco intervalos: 0--250 m, 250--500 m, 500--1,000 m, 1--2 km y mas de 2 km. Los limites superiores se incluyen en cada intervalo. No se diferenciaron cauces principales y secundarios, por lo que la metrica expresa proximidad a cualquier linea disponible.
+
+Los errores posicionales de DENUE afectan especialmente los intervalos cortos: una coordenada desplazada respecto al predio o acceso puede cambiar de categoria sin que cambie la relacion real con el sistema hidrico. Ademas, el calculo no incorpora topografia, drenaje, colectores, tuberias, direccion de flujo ni punto efectivo de descarga. Su uso admisible es priorizar verificacion adicional y describir contexto cartografico.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\textwidth]{../../outputs/cuenca_alto_atoyac_puebla_estricto_mh/maps/png/03_establecimientos_distancia_rio.png}
+\caption{Proximidad geometrica a la red hidrografica en el escenario estricto + MH. La distancia no demuestra conectividad ni descarga.}
+\label{fig:distancia-rio-estricto}
+\end{figure}
+
 \begin{alerta}
 La distancia geometrica a un cauce es un criterio de priorizacion espacial, no evidencia de que exista una descarga a ese cauce. Sin red de drenaje, topografia, punto de descarga y conectividad hidraulica no puede inferirse la ruta del agua residual.
 \end{alerta}
 
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Que estadistico de distancia se reporta y en que CRS?
-    \item ¿Se mide a cualquier linea hidrografica o se diferencian cauces principales/secundarios?
-    \item ¿Que umbrales se usan y por que?
-    \item ¿Como afectan errores posicionales del DENUE a distancias cortas?
-\end{itemize}
-\end{preguntas}
+Como cierre de esta fase, la principal desventaja del escenario estricto es que puede excluir numerosas lavanderias industriales o unidades dedicadas al deslavado de mezclilla cuya operacion es pequeña y cuyo nombre no contiene las señales adicionales requeridas. En el sector textil, clasificar una actividad como seca o descartarla por falta de evidencia humeda explicita puede no representar por completo la generacion potencial de residuos: aun cuando el proceso productivo principal sea corte, confeccion, bordado o deshebrado, la limpieza de equipos, prendas, superficies o recipientes puede utilizar agua y movilizar colorantes, fibras, detergentes u otros contaminantes de interes. Esta posibilidad no demuestra que cada establecimiento genere o descargue dichos residuos, pero impide considerar la ausencia de señales textuales como evidencia suficiente de ausencia de impacto. Por ello, la etapa siguiente utilizara el universo sectorial completo como universo de deteccion, sin formar agrupamientos a partir de las etiquetas hidricas. Primero se identificaran concentraciones territoriales exclusivamente por la geometria de los establecimientos y, despues, se analizaran sus perfiles sectoriales y productivos para reconocer donde coinciden actividades, escalas y señales que ameriten validacion ambiental mas detallada.
 
 % ============================================================
 \section{Diagnostico previo de estructura espacial}
 % ============================================================
 
-\textbf{Principio:} explorar la geometria de los puntos antes de elegir un algoritmo o usar atributos economicos.
+El diagnostico previo explora exclusivamente la geometria de los 4,365 establecimientos del universo sectorial ampliado. Los puntos se proyectaron a EPSG:32614, por lo que todas las distancias, anchos de banda y tamaños de celda se expresan en metros. En esta etapa no se utilizaron SCIAN, municipio, tamaño, evidencia hidrica ni señales productivas para elegir escalas o formar grupos. El objetivo fue reconocer si existia una sola escala territorial plausible o una combinacion de nucleos locales, corredores urbanos y actividad dispersa que exigiera algoritmos sensibles a densidades variables.
 
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Que muestran las distancias a k vecinos sobre escalas espaciales naturales?
-    \item ¿Que patrones aparecen en KDE y malla hexagonal?
-    \item ¿Hay heterogeneidad de densidad suficiente para preferir HDBSCAN/OPTICS sobre DBSCAN?
-    \item ¿Como se detecta el efecto de borde de la cuenca?
-\end{itemize}
-\end{preguntas}
+\subsection{Distancias a vecinos y escalas espaciales}
 
-\begin{evidencia}
-Documentar $k$, bandwidths, tamaño de hexagonos, unidades, reglas de visualizacion y como estos diagnosticos informaron el espacio de parametros sin ``optimizar'' con variables productivas.
-\end{evidencia}
+Se calcularon las distancias desde cada punto hasta sus vecinos de orden $k=2,3,5,10,15,20,30$ y $50$. Para cada $k$ se conservaron los cuantiles 0.10, 0.25, 0.50, 0.75, 0.90, 0.95 y 0.99. La distancia al segundo vecino tiene una mediana de 83 m y un percentil 90 de 280 m; para el quinto vecino estos valores aumentan a 254 y 572 m; para el décimo, a 421 y 971 m; y para el vigesimo, a 656 y 1,587 m. Esta expansion no es uniforme: las colas altas crecen mucho mas rapido que las medianas, hasta alcanzar 4.61 km en el percentil 99 del vecino 20 y 22.95 km para el vecino 50.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Distancias seleccionadas al vecino de orden $k$ en el universo de deteccion (metros).}
+\begin{tabular}{rrrrrrr}
+\toprule
+$k$ & P10 & P25 & P50 & P75 & P90 & P99 \\
+\midrule
+2  & 12  & 32  & 83   & 166  & 280   & 727 \\
+5  & 74  & 138 & 254  & 384  & 572   & 1,571 \\
+10 & 130 & 233 & 421  & 596  & 971   & 2,843 \\
+20 & 208 & 395 & 656  & 928  & 1,587 & 4,611 \\
+30 & 270 & 520 & 860  & 1,186 & 2,013 & 6,739 \\
+50 & 369 & 783 & 1,172 & 1,677 & 3,042 & 22,947 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La Figura~\ref{fig:curvas-k-distancia} ordena, para cada valor de $k$, las 4,365 distancias de menor a mayor y expresa la posicion horizontal como percentil de establecimientos. Si el territorio respondiera a una escala aproximadamente uniforme, se esperaria un cambio de pendiente dominante y relativamente consistente entre curvas. En cambio, se observan inflexiones sucesivas: una primera transicion asociada con los nucleos muy compactos, un crecimiento gradual en las zonas de densidad intermedia y una aceleracion fuerte entre los percentiles 90 y 99, correspondiente a establecimientos perifericos o aislados. Ademas, el nivel vertical del cambio aumenta sistematicamente con $k$, desde cientos de metros para vecinos cercanos hasta varios kilometros cuando se exige reunir 30 o 50 vecinos.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../../outputs/parte_2/03_diagnosticos/figuras/03_curvas_k_distancia.png}
+\caption{Curvas k-distancia ordenadas para $k=2,5,10,20,30$ y $50$. Las lineas verticales marcan los percentiles 90 y 95 como referencias descriptivas, no como umbrales optimizados. La presencia de cambios de pendiente en niveles distintos sustenta una exploracion multiescala.}
+\label{fig:curvas-k-distancia}
+\end{figure}
+
+Estos resultados muestran simultaneamente proximidad muy alta en los nucleos urbanos y separaciones de kilometros en zonas perifericas. No aparece un unico ``codo'' que pueda traducirse sin ambigüedad en un radio universal. Las escalas observadas justificaron explorar DBSCAN con \texttt{eps} de 250, 400, 600, 800, 1,200 y 1,600 m y distintos valores de \texttt{min\_samples}; los valores pequeños representan vecindades inmediatas, mientras 1,200--1,600 m examinan continuidad territorial mas amplia. Los ordenes 10, 20 y 30 tambien sustentaron la exploracion de \texttt{min\_samples} en HDBSCAN y OPTICS. Los parametros no se ``optimizaron'' contra atributos economicos: se definieron como una bateria multiescala basada en la separacion geometrica observada.
+
+\subsection{KDE y malla hexagonal en la cuenca}
+
+Antes de construir agrupamientos discretos, se examinó cómo se distribuyen espacialmente los establecimientos y cómo cambia esa estructura al observarla a distintas escalas. Para ello se utilizaron dos diagnósticos complementarios: una estimación de densidad por kernel (\emph{Kernel Density Estimation}, KDE), que genera una superficie continua y suavizada de intensidad espacial, y una malla hexagonal, que conserva un conteo directo de establecimientos dentro de celdas de tamaño fijo.
+
+\subsubsection{Estimación de densidad por kernel}
+
+El KDE gaussiano se calculó sobre una grilla regular con separación de 250 m entre nodos y con anchos de banda de 500, 1,000 y 2,000 m. La separación de 250 m determina la resolución con la que se evalúa y representa la superficie, mientras que el ancho de banda $h$ determina la escala espacial del suavizado.
+
+Para una ubicación bidimensional $\mathbf{s}$, la densidad estimada es
+
+\[
+\widehat f_h(\mathbf{s})=
+\frac{1}{n h^2}\sum_{i=1}^{n}
+K\left(\frac{\mathbf{s}-\mathbf{s}_i}{h}\right),
+\qquad
+K(\mathbf{u})=
+\frac{1}{2\pi}
+\exp\left(-\frac{\lVert\mathbf{u}\rVert^2}{2}\right),
+\]
+
+donde $n$ es el número de establecimientos, $\mathbf{s}_i$ corresponde a la coordenada UTM del establecimiento $i$ y $h$ es el \emph{bandwidth}. En términos prácticos, cada establecimiento aporta una superficie de influencia cuyo valor es máximo cerca de su ubicación y disminuye gradualmente con la distancia. Cuando varios establecimientos se encuentran próximos, sus contribuciones se superponen y producen zonas de mayor intensidad.
+
+El ancho de banda determina cuánto se extiende esta contribución. Con valores pequeños de $h$ se preservan variaciones locales y aparecen focos más definidos; al aumentar $h$, cada establecimiento distribuye su contribución sobre un área mayor, disminuyen los máximos locales y pueden integrarse estructuras que a escalas menores aparecen separadas. Por esta razón, los tres anchos de banda no representan alternativas entre las que deba elegirse necesariamente una sola, sino diferentes escalas desde las cuales observar la misma distribución espacial.
+
+La implementación utiliza \texttt{KernelDensity} con kernel gaussiano. La log-densidad se evalúa en cada nodo de la grilla, se transforma nuevamente mediante la función exponencial y se multiplica por $10^6$ para expresar la densidad espacial normalizada tomando el km$^2$ como unidad de superficie en lugar del m$^2$. Debido al factor $1/n$, los valores resultantes representan una distribución espacial relativa normalizada y no deben interpretarse directamente como un número estimado de establecimientos por km$^2$.
+
+El kernel gaussiano tiene soporte infinito: su contribución disminuye rápidamente conforme aumenta la distancia, pero matemáticamente nunca se vuelve exactamente cero. Por esta razón, el límite de la cuenca no constituye un límite natural de la superficie estimada. En versiones preliminares de la figura, la representación se encontraba recortada gráficamente al polígono de la cuenca, lo que producía la impresión de que la densidad terminaba de manera abrupta en su límite. En la versión utilizada en este reporte, la superficie se representa de forma continua a ambos lados del polígono y el límite de la cuenca se muestra mediante una línea de referencia.
+
+Esta decisión permite conservar el contexto espacial exterior utilizado en la construcción del diagnóstico y reduce la distorsión visual asociada al efecto de borde. La interpretación sustantiva de los resultados, sin embargo, permanece restringida al interior de la cuenca.
+
+Los mapas KDE deben interpretarse como superficies de \textbf{intensidad espacial relativa suavizada}. No representan conteos directos ni asignan establecimientos a un cluster. Además, cada panel utiliza su propia escala visual, ya que el valor máximo de la superficie disminuye conforme aumenta el ancho de banda. Los colores permiten comparar posiciones de mayor y menor intensidad dentro de cada panel, pero los valores cromáticos no deben compararse directamente entre paneles como magnitudes absolutas equivalentes.
+
+Las tres escalas permiten observar distintos niveles de organización territorial. Con $h=500$ m se distinguen principalmente focos locales de concentración. Con $h=1{,}000$ m comienza a observarse la proximidad entre esos focos y aparecen bandas de intensidad de escala intermedia. Con $h=2{,}000$ m se hacen visibles estructuras regionales más amplias y algunas concentraciones previamente separadas forman superficies continuas de intensidad. Entre ellas destaca el continuo urbano Puebla--Cholula--Cuautlancingo y, hacia el norponiente, una banda de mayor intensidad coincidente con municipios donde existe una presencia importante de actividades textiles. Esta continuidad debe entenderse como un resultado dependiente de la escala de suavizado y no, por sí sola, como evidencia de un corredor productivo formal.
+
+\subsubsection{Malla hexagonal}
+
+Como complemento al KDE se construyeron mallas hexagonales con radios $r$ de 250, 500 y 1,000 m. A diferencia del KDE, esta representación no suaviza la distribución espacial: cada establecimiento es asignado directamente al hexágono que contiene su coordenada y posteriormente se contabiliza el número de establecimientos presentes en cada celda.
+
+El área de un hexágono regular de radio $r$ es
+
+\[
+A_h=\frac{3\sqrt{3}}{2}r^2,
+\]
+
+lo que equivale aproximadamente a 0.162, 0.650 y 2.598 km$^2$ para radios de 250, 500 y 1,000 m, respectivamente.
+
+Para cada establecimiento se realiza una unión espacial mediante el predicado \texttt{within} y, para cada hexágono $h$, se calcula
+
+\[
+n_h=\sum_i I(\mathbf{s}_i\in h),
+\]
+
+donde $n_h$ corresponde al número de establecimientos localizados dentro de la celda. Los hexágonos sin establecimientos ($n_h=0$) no se representan.
+
+En este caso, el valor mostrado es un \textbf{conteo directo} y no una estimación de densidad. Dentro de cada panel todas las celdas poseen la misma superficie, por lo que sus conteos pueden compararse espacialmente. Sin embargo, los valores obtenidos para radios distintos no son directamente comparables, ya que el área de los hexágonos aumenta considerablemente con la escala.
+
+La malla de 250 m conserva la heterogeneidad espacial más fina y muestra numerosos hexágonos aislados o con pocos establecimientos. Con 500 m, los puntos próximos comienzan a integrarse en conjuntos locales de mayor tamaño. Con 1,000 m se consolidan las principales masas de concentración territorial y se vuelve más evidente la diferencia entre las grandes áreas urbanas y productivas y las zonas de ocupación más dispersa.
+
+Para mejorar la lectura de los mapas, los conteos se representan mediante una normalización logarítmica. Esta transformación modifica únicamente la escala visual: permite distinguir simultáneamente hexágonos con pocos establecimientos y celdas con conteos elevados, evitando que los valores máximos dominen completamente la representación. No modifica los conteos originales ni la asignación espacial de los establecimientos.
+
+\begin{landscape}
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[width=0.98\linewidth]{../../outputs/parte_2/03_diagnosticos/figuras/01_kde_hex_cuenca.png}
+
+\caption{Diagnóstico espacial multiescala del universo sectorial. 
+En la parte correspondiente al KDE se muestran superficies continuas de intensidad espacial relativa con anchos de banda de 500, 1,000 y 2,000 m. 
+Las mallas hexagonales presentan conteos directos de establecimientos utilizando radios de 250, 500 y 1,000 m. 
+La línea de la cuenca indica el límite utilizado para la interpretación y no constituye un recorte matemático del kernel.}
+
+\label{fig:kde-hex-cuenca}
+
+\end{figure}
+
+\end{landscape}
+
+Los dos diagnósticos muestran una estructura territorial consistente, aunque representan el fenómeno de forma distinta. Las zonas donde el KDE presenta máximos de intensidad corresponden, en general, con áreas donde la malla hexagonal registra mayores concentraciones de establecimientos. A escalas finas, las zonas menos ocupadas permanecen fragmentadas, mientras que las principales áreas urbanas y productivas conservan concentraciones reconocibles en ambos métodos.
+
+La zona metropolitana del sur no se comporta como un único punto de concentración, sino como una superficie extensa formada por varios máximos locales próximos entre sí. Hacia el norponiente se observan concentraciones de menor tamaño, separadas por espacios de menor ocupación y por discontinuidades que se vuelven más o menos visibles dependiendo de la escala empleada.
+
+Este diagnóstico no define todavía los clusters utilizados en etapas posteriores. Su función es describir la geometría general del universo y mostrar que la distribución presenta simultáneamente núcleos locales, concentraciones de escala intermedia y grandes estructuras urbanas. Esta combinación anticipa que un método de clustering espacial deberá ser capaz tanto de reconocer agrupamientos compactos como de enfrentar zonas de alta continuidad espacial donde diferentes núcleos pueden integrarse en agrupamientos de gran tamaño.
+
+
+\subsection{Heterogeneidad de densidad y eleccion de familia algoritmica}
+
+La dispersion de las distancias k-NN y la persistencia de patrones diferentes entre escalas confirman heterogeneidad suficiente para no depender solamente de DBSCAN. DBSCAN aplica un unico \texttt{eps} a todo el territorio: un radio apropiado para Puebla puede unir estructuras por encadenamiento, mientras ese mismo radio puede tratar como ruido concentraciones rurales legitimas; un radio menor puede separar adecuadamente los nucleos urbanos, pero fragmentar las zonas menos densas. Por eso DBSCAN se mantuvo como referencia interpretable, no como unica opcion.
+
+HDBSCAN y OPTICS permiten examinar una jerarquia o un ordenamiento de densidades y son mas adecuados cuando los grupos no comparten una escala unica. HDBSCAN fue especialmente pertinente porque combina tamaño minimo, densidad local y seleccion jerarquica EOM o \emph{leaf}; OPTICS se utilizo como contraste de estructura sin fijar un solo radio. Esta preferencia surgio antes del perfilado productivo y no implica que cualquier salida de esos algoritmos sea correcta: las soluciones se compararon posteriormente por ruido, continuidad, tamaño del mayor cluster, estabilidad, borde y perturbaciones espaciales.
+
+\subsection{Lectura multiescala del mega-cluster}
+
+El mega-cluster 20 contiene 1,997 establecimientos y articula seis municipios y 14 localidades. Su persistencia media es 0.999, pero su gran tamaño no significa homogeneidad interna. Para visualizarla sin modificar la solucion principal se repitieron los diagnosticos dentro de su envolvente: KDE con anchos de 250, 500 y 1,000 m y hexagonos de 250, 500 y 1,000 m. A 250 m aparecen numerosos maximos locales y vacios internos; a 500 m se observan ramas conectadas; a 1,000 m esas ramas se funden en una estructura urbana continua. La malla de 250 m contiene 867 hexagonos ocupados y un maximo de 13 establecimientos por celda.
+
+\begin{landscape}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\linewidth]{../../outputs/parte_2/03_diagnosticos/figuras/02_kde_hex_mega_cluster.png}
+\caption{Diagnostico multiescala interno del mega-cluster 20. Los subpatrones de KDE y ocupacion hexagonal describen heterogeneidad interna, pero no sustituyen su membresia principal.}
+\label{fig:kde-hex-mega}
+\end{figure}
+\end{landscape}
+
+La figura explica por que la configuracion principal puede reconocer una sola estructura: entre los maximos locales existe suficiente continuidad de puntos a escalas intermedias para enlazarlos bajo la seleccion EOM. A la vez, justifica una lectura posterior por subnucleos exploratorios. Esa exploracion interna identifico 18 ramas con HDBSCAN \texttt{leaf}, pero dejo 44.5\% de los puntos sin rama local bajo esa especificacion; todos continúan siendo miembros del mega-cluster principal. Los subnucleos son una herramienta descriptiva para orientar lectura territorial, no una reclasificacion silenciosa.
+
+\subsection{Efecto de borde de la cuenca}
+
+El efecto de borde se detecto comparando dos universos. El clustering utiliza los 4,365 establecimientos de los municipios seleccionados, incluidos 355 situados fuera del poligono; la interpretacion se restringe despues a los 4,010 interiores. Así se evita que el limite hidrologico elimine vecinos necesarios o corte artificialmente una concentracion que continua fuera del area de interpretacion. Para cada cluster se registraron \texttt{n\_dentro\_cuenca}, \texttt{n\_fuera\_cuenca}, sus porcentajes y el indicador \texttt{cruza\_limite\_cuenca}.
+
+El control distingue tres situaciones. Los clusters 0--3 se encuentran completamente fuera de la cuenca y no se interpretan como concentraciones interiores. La mayor parte de los clusters analizados esta completamente dentro. El cluster 11 cruza el limite: contiene 48 establecimientos, ocho dentro y 40 fuera, por lo que una deteccion restringida previamente al poligono habria observado solo el 16.7\% de su estructura. Los puntos exteriores no prueban conectividad hidrologica; sirven exclusivamente para estabilizar la geometria de vecindad y hacer visible la continuidad espacial.
+
+En conjunto, el diagnostico previo establecio cuatro decisiones: trabajar en metros con EPSG:32614; explorar escalas locales y regionales en vez de fijar un unico radio; preferir HDBSCAN y OPTICS como familias capaces de representar densidad variable, conservando DBSCAN como referencia; y detectar sobre el universo municipal ampliado antes de interpretar dentro de la cuenca. Estas decisiones se tomaron sin utilizar etiquetas productivas y delimitan el espacio de experimentos descrito en la seccion siguiente.
 
 % ============================================================
 \section{Clustering espacial: diseño de experimentos}
 % ============================================================
 
 \subsection{Universo de deteccion vs. universo de interpretacion}
-Explicar por que se usan 4,365 puntos para detectar agrupamientos y 4,010 dentro de cuenca para interpretarlos.
+La deteccion se ejecuto sobre los 4,365 establecimientos del universo sectorial ubicados en los municipios de referencia. De ellos, 4,010 intersectan la cuenca y 355 quedan fuera. Mantener el contexto exterior durante el ajuste evita que el poligono hidrologico actue como una frontera artificial: un establecimiento interior conserva vecinos exteriores que forman parte de la misma continuidad urbana o productiva. Una vez calculada la membresia completa, la interpretacion sustantiva se restringe a los puntos interiores y se registra, para cada cluster, cuantos miembros quedan dentro y fuera.
+
+La unidad analitica es el establecimiento y la matriz de clustering contiene solamente dos columnas: $x$ y $y$ en EPSG:32614. Todas las distancias son euclidianas y estan expresadas en metros. No se estandarizaron las coordenadas porque comparten unidad y escala; tampoco se agregaron puntos por municipio, localidad o celda. De esta manera, la particion representa proximidad entre ubicaciones registradas y no similitud economica.
 
 \subsection{Algoritmos evaluados}
-DBSCAN, HDBSCAN y OPTICS, usando exclusivamente coordenadas metricas.
 
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Que parametros se recorrieron para cada algoritmo?
-    \item ¿Por que esos rangos son plausibles dadas las distancias observadas?
-    \item ¿Cuantos escenarios se evaluaron y con la misma semilla/configuracion?
-    \item ¿Como se almacenan las membresias de todos los escenarios?
-    \item ¿Como se garantiza que SCIAN, proceso, municipio o evidencia hidrica no influyan en la formacion de clusters?
-\end{itemize}
-\end{preguntas}
+Se evaluaron tres familias de clustering por densidad. DBSCAN define como nucleo un punto con al menos \texttt{min\_samples} observaciones dentro de un radio fijo $\varepsilon$ y expande componentes conectados desde esos nucleos. Es transparente y facilita relacionar el resultado con las curvas k-distancia, pero obliga a usar el mismo radio en zonas de densidad diferente. HDBSCAN reemplaza el radio unico por una jerarquia construida a partir de distancias de alcanzabilidad mutua; \texttt{min\_samples} controla cuan conservadora es la densidad local y \texttt{min\_cluster\_size} el tamaño minimo persistente. OPTICS ordena los puntos por alcanzabilidad y permite observar estructura a traves de densidades variables; en esta bateria se extrajeron clusters mediante $\xi=0.05$.
 
-\begin{hechos}
-El inventario registra 57 escenarios y una semilla comun \texttt{20260921}. La solucion principal reportada es HDBSCAN con \texttt{min\_cluster\_size=10}, \texttt{min\_samples=20} y \texttt{cluster\_selection\_method=eom}.
-\end{hechos}
+\begin{table}[H]
+\centering
+\small
+\caption{Espacio de parametros del experimento de clustering espacial.}
+\begin{tabularx}{\textwidth}{p{2.2cm}p{5.6cm}p{1.7cm}X}
+\toprule
+\textbf{Metodo} & \textbf{Parametros recorridos} & \textbf{Escenarios} & \textbf{Relacion con el diagnostico} \\
+\midrule
+DBSCAN & $\varepsilon=$ 250, 400, 600, 800, 1,200, 1,600 m; \texttt{min\_samples}=5, 10, 15, 25 & 24 & Recorre desde vecindades locales hasta continuidades regionales observadas en k-NN, KDE y hexagonos. \\
+HDBSCAN & \texttt{min\_cluster\_size}=10, 20, 30, 50, 75; \texttt{min\_samples}=5, 10, 20; seleccion EOM y \emph{leaf} & 30 & Contrasta tamaños minimos y conservadurismo local sin imponer un solo radio; EOM favorece ramas persistentes y \emph{leaf} particiones mas finas. \\
+OPTICS & \texttt{min\_samples}=10, 20, 30; $\xi=0.05$; tamaño minimo $=1\%$ de los puntos & 3 & Funciona como contraste de densidad variable mediante el ordenamiento de alcanzabilidad. \\
+\midrule
+Total & Solo coordenadas \texttt{x\_utm14n}, \texttt{y\_utm14n} & 57 & Misma matriz espacial y mismo universo de 4,365 establecimientos. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Los radios DBSCAN cubren el intervalo sugerido por las distancias al quinto, decimo y vigesimo vecino: 250--600 m representan nucleos compactos; 800--1,200 m examinan tejido urbano intermedio; y 1,600 m prueba continuidad amplia. Los tamaños HDBSCAN permiten detectar desde concentraciones pequeñas de diez establecimientos hasta estructuras que requieren al menos 75 miembros. No se eligio un unico valor desde el diagnostico: se construyo una bateria capaz de revelar que resultados sobreviven a cambios razonables de escala.
+
+\subsection{Configuracion reproducible y almacenamiento}
+
+Los 57 escenarios usan exactamente el mismo orden de puntos y la misma metrica euclidiana. DBSCAN, HDBSCAN y OPTICS son deterministas para estas entradas; la semilla comun \texttt{20260921} se utiliza en las pruebas posteriores que añaden desplazamientos gaussianos. Para cada ejecucion se almacenan metodo, parametros, numero de clusters, ruido, tamaños minimo, mediano, medio y maximo, peso del cluster mayor y, cuando existe, probabilidad de pertenencia.
+
+Las membresias completas se guardan en \texttt{membresias\_escenarios.csv.gz}: una fila por combinacion establecimiento--escenario, identificada por \texttt{d\_llave}, \texttt{escenario\_id} y etiqueta de cluster. Esto produce 248,805 asignaciones ($4,365\times57$) y permite reconstruir cualquier particion sin volver a ajustar el algoritmo. La etiqueta $-1$ se conserva como ruido y no se convierte en un cluster adicional. El archivo \texttt{resumen\_escenarios.csv} concentra las metricas de cada corrida y \texttt{espacio\_parametros.json} registra la bateria exacta.
+
+La separacion entre deteccion e interpretacion se garantiza en el codigo: el arreglo entregado a los algoritmos se construye exclusivamente con las coordenadas de la geometria UTM. SCIAN, nombre, señales textuales, evidencia hidrica, municipio, localidad y estrato de personal permanecen en la tabla maestra, pero no ingresan al ajuste ni al puntaje de seleccion. Esos atributos se reincorporan solamente despues de fijar la solucion principal.
 
 % ============================================================
 \section{Seleccion de la solucion espacial y robustez}
 % ============================================================
 
 \subsection{Criterios de seleccion}
-La solucion principal debe justificarse por estabilidad y coherencia espacial, no porque produzca perfiles economicos ``atractivos''.
+La seleccion se realizo sin inspeccionar la composicion economica de los clusters. Primero se excluyeron soluciones degeneradas: menos de tres o mas de 80 clusters, menos de 1\% o mas de 75\% de ruido, o un cluster mayor superior al 60\% del universo. Sobre los escenarios elegibles se calculo un puntaje espacial reproducible que combina estabilidad frente a configuraciones proximas, estabilidad frente a error posicional, probabilidad de pertenencia HDBSCAN, balance de ruido, control del mega-cluster y penalizaciones por particiones extremas o encadenamiento.
 
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Como se utilizaron ARI, Jaccard, continuidad, efecto de borde y perturbaciones espaciales?
-    \item ¿Que mide cada metrica y cual es su limitacion?
-    \item ¿Que escenarios se consideran principal, sensibilidad y referencia?
-    \item ¿Que establecimientos cambian frecuentemente de cluster o ruido?
-    \item ¿Cuales clusters son estables y cuales dependen del escenario?
-\end{itemize}
-\end{preguntas}
+En forma abreviada, el puntaje utilizado fue
+\[
+S=0.40A_5+0.15A_{25}+0.20P+0.15(1-R)+0.15(1-M)-0.10E-0.10C,
+\]
+donde $A_5$ es el ARI medio de las cinco particiones mas similares del mismo metodo; $A_{25}$, el ARI medio tras tres perturbaciones gaussianas de 25 m; $P$, la probabilidad media de pertenencia o un valor neutral para metodos sin ella; $R$, una penalizacion por alejarse de 25\% de ruido; $M$, la penalizacion por la fraccion del cluster mayor que excede 35\%; $E$, la penalizacion por un numero extremo de clusters; y $C$, la penalizacion de encadenamiento basada en la diagonal de la caja envolvente por raiz del tamaño. El puntaje es una regla operativa documentada, no una demostracion de verdad territorial.
 
-\begin{evidencia}
-Incluir: matriz ARI entre escenarios seleccionados; Jaccard de correspondencia de clusters; persistencia por establecimiento; sensibilidad al ruido posicional; y tabla de justificacion de la solucion elegida.
-\end{evidencia}
+\begin{landscape}
+\begin{figure}[H]
+\centering
+\includegraphics[width=.94\linewidth]{../../outputs/parte_2/10_figuras/02_comparacion_escenarios.png}
+\caption{Comparacion de los 57 escenarios por proporcion de ruido, peso del cluster mayor y numero de clusters. La estrella identifica la solucion principal.}
+\label{fig:comparacion-escenarios}
+\end{figure}
+\end{landscape}
+
+La Figura~\ref{fig:comparacion-escenarios} muestra por que no se eligio simplemente el escenario con menos ruido. Las configuraciones con ruido minimo suelen concentrar cerca de la mitad o mas del universo en una sola estructura y pueden favorecer encadenamiento; las configuraciones con radios o exigencias muy estrictas elevan el ruido hasta 40--80\%. La solucion principal ocupa una zona intermedia: 13.4\% de ruido, 22 clusters y 45.8\% en el cluster mayor. Conserva concentraciones pequeñas sin fragmentar excesivamente el territorio y reconoce como dispersos los casos que no alcanzan soporte local suficiente.
+
+\subsection{Escenarios seleccionados e identificacion de la particion}
+
+La solucion principal es HDBSCAN con \texttt{min\_cluster\_size=10}, \texttt{min\_samples=20} y seleccion EOM. Se conservaron cuatro HDBSCAN cercanos para sensibilidad y el mejor DBSCAN elegible como referencia externa. La Tabla~\ref{tab:escenarios-seleccionados} permite identificarlos y reproducir la comparacion.
+
+\begin{landscape}
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Solucion principal, escenarios de sensibilidad y referencia DBSCAN.}
+\label{tab:escenarios-seleccionados}
+\begin{tabular}{p{2.2cm}p{5.4cm}rrrrrrrrr}
+\toprule
+\textbf{Rol} & \textbf{Configuracion} & \textbf{Clusters} & \textbf{Ruido} & \textbf{Ruido \%} & \textbf{Mediana} & \textbf{Max.} & \textbf{Mega \%} & \textbf{Prob.} & \textbf{ARI 25 m} & \textbf{Puntaje} \\
+\midrule
+Principal & HDBSCAN; mcs=10; ms=20; EOM & 22 & 584 & 13.38 & 46.5 & 1,997 & 45.75 & 0.914 & 0.926 & 0.963 \\
+Sensibilidad & HDBSCAN; mcs=20; ms=20; EOM & 21 & 598 & 13.70 & 48.0 & 1,997 & 45.75 & 0.909 & 0.926 & 0.962 \\
+Sensibilidad & HDBSCAN; mcs=30; ms=20; EOM & 18 & 646 & 14.80 & 72.5 & 1,997 & 45.75 & 0.911 & 0.921 & 0.962 \\
+Sensibilidad & HDBSCAN; mcs=20; ms=10; EOM & 24 & 450 & 10.31 & 43.5 & 2,065 & 47.31 & 0.937 & 0.972 & 0.957 \\
+Sensibilidad & HDBSCAN; mcs=30; ms=10; EOM & 20 & 440 & 10.08 & 68.5 & 2,065 & 47.31 & 0.932 & 0.973 & 0.956 \\
+Referencia & DBSCAN; $\varepsilon=1,600$ m; ms=25 & 13 & 329 & 7.54 & 95.0 & 2,178 & 49.90 & --- & 0.996 & 0.924 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{landscape}
+
+\subsection{Por que la solucion principal es superior para este estudio}
+
+La superioridad es comparativa y operacional, no absoluta. La principal obtiene el mayor puntaje espacial entre los HDBSCAN elegibles (0.963) porque mantiene simultaneamente cinco propiedades. Primero, su ARI medio frente a las cinco configuraciones HDBSCAN mas proximas es 0.937, señal de que la estructura no depende de un unico punto aislado del espacio de parametros. Segundo, su ARI medio ante desplazamientos gaussianos de 25 m es 0.926, por lo que pequeñas imprecisiones posicionales no destruyen la particion. Tercero, la probabilidad media de pertenencia es 0.914 y 84.0\% de los puntos agrupados alcanza probabilidad al menos 0.8. Cuarto, conserva 22 grupos, mas resolucion territorial que la referencia DBSCAN de 13 grupos. Quinto, limita el cluster mayor a 45.75\%, frente a 49.90\% en la referencia, sin elevar el ruido a niveles extremos.
+
+DBSCAN presenta un ARI de perturbacion mayor (0.996) y menos ruido (7.54\%), pero esto no lo hace globalmente preferible: utiliza un radio fijo de 1,600 m, forma solo 13 grupos, eleva la mediana de tamaño a 95 y concentra 2,178 establecimientos en el mayor cluster. Su proxy maximo de encadenamiento es 0.908 frente a 1.222 en la principal, pero su menor resolucion y mayor mega-cluster muestran que la estabilidad se obtiene, en parte, fusionando estructuras. Se conserva como referencia precisamente porque ofrece una lectura mas agregada y estable con la cual contrastar HDBSCAN.
+
+Los escenarios de sensibilidad confirman que la seleccion no es fragil. Con \texttt{min\_samples}=20, elevar \texttt{min\_cluster\_size} de 10 a 20 o 30 mantiene intacto el mega-cluster de 1,997 casos y produce ARI de 0.998 y 0.989 frente a la principal. Reducir \texttt{min\_samples} a 10 aumenta la inclusion, cambia el mega-cluster a 2,065 casos y aun conserva ARI de 0.925 y 0.922. Por tanto, la principal representa el extremo mas detallado de una familia estable con \texttt{min\_samples}=20, sin depender de grupos menores que diez.
+
+\begin{landscape}
+\begin{figure}[H]
+\centering
+\includegraphics[width=.97\linewidth]{../../outputs/parte_2/13_figuras_finales/05_robustez_escenarios.png}
+\caption{Robustez de las configuraciones. Izquierda: equilibrio entre ruido y peso del cluster mayor. Derecha: estabilidad frente a parametros proximos y perturbaciones de 25 m.}
+\label{fig:robustez-escenarios}
+\end{figure}
+\end{landscape}
+
+\subsection{ARI entre particiones seleccionadas}
+
+El ARI compara pares de asignaciones completas y corrige la coincidencia esperada por azar. Toma valor 1 cuando las particiones son equivalentes, aunque sus etiquetas numericas sean distintas. La matriz confirma dos bloques HDBSCAN estrechamente relacionados y una referencia DBSCAN mas distante.
+
+\begin{table}[H]
+\centering
+\small
+\caption{ARI entre la principal (P), referencia DBSCAN (D) y cuatro escenarios de sensibilidad (S1--S4).}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & P & D & S1 & S2 & S3 & S4 \\
+\midrule
+P  & 1.000 & 0.807 & 0.998 & 0.989 & 0.925 & 0.922 \\
+D  & 0.807 & 1.000 & 0.807 & 0.806 & 0.837 & 0.839 \\
+S1 & 0.998 & 0.807 & 1.000 & 0.992 & 0.923 & 0.920 \\
+S2 & 0.989 & 0.806 & 0.992 & 1.000 & 0.915 & 0.917 \\
+S3 & 0.925 & 0.837 & 0.923 & 0.915 & 1.000 & 0.992 \\
+S4 & 0.922 & 0.839 & 0.920 & 0.917 & 0.992 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Aqui S1 y S2 corresponden a \texttt{min\_samples}=20 con tamaños minimos 20 y 30; S3 y S4 a \texttt{min\_samples}=10 con tamaños minimos 20 y 30. El ARI alto demuestra estabilidad global, pero puede estar influido por el mega-cluster. Al excluirlo, los ARI frente a S1--S4 son 0.986, 0.936, 0.806 y 0.787: la estructura restante sigue siendo consistente, aunque muestra mayor sensibilidad cuando cambia \texttt{min\_samples}.
+
+\subsection{Jaccard, persistencia y establecimientos sensibles}
+
+Como las etiquetas de cluster son arbitrarias, cada cluster principal se emparejo con el cluster alternativo que maximiza
+\[
+J(A,B)=\frac{|A\cap B|}{|A\cup B|}.
+\]
+El Jaccard mide solapamiento local, complementando al ARI global. A partir de los cinco escenarios de contraste se calculo para cada establecimiento la proporcion de veces que permanecio en el cluster emparejado; para los puntos de ruido, la proporcion de veces que siguio siendo ruido. Se clasifico como \texttt{SENSIBLE} si la persistencia fue menor a 0.50, \texttt{ESTABLE} entre 0.50 y 0.79 y \texttt{NUCLEO\_ROBUSTO} entre 0.80 y 1.00.
+
+De los 4,365 establecimientos, 4,107 (94.1\%) son nucleos robustos, 94 (2.2\%) estables y 164 (3.8\%) sensibles. Los sensibles se concentran principalmente en bordes de agrupamientos, corredores de baja densidad y transiciones entre cluster y ruido. Esta localizacion es mas informativa que afirmar solamente un ARI alto: identifica los puntos cuya etiqueta debe tratarse con cautela en cualquier priorizacion posterior.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.78\textwidth]{../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.png}
+\caption{Persistencia de membresia entre la solucion principal, escenarios de sensibilidad y referencia DBSCAN.}
+\label{fig:persistencia-territorial}
+\end{figure}
+
+\subsection{Perturbacion posicional y limites de la seleccion}
+
+La prueba posicional genero tres replicas desplazando independientemente cada coordenada en $x$ y $y$ mediante ruido normal $N(0,25^2)$ m y volvio a ajustar el mismo modelo. Los ARI globales fueron 0.895, 0.892 y 0.989; al comparar solo puntos agrupados en ambas particiones aumentaron a 0.979, 0.979 y 1.000. Sin el mega-cluster fueron 0.864, 0.854 y 0.971. Esto indica que la mayor parte de los cambios inducidos por 25 m ocurre en la frontera entre ruido y cluster o en bordes locales, no en el nucleo de los grupos.
+
+La particion seleccionada es superior porque ofrece el mejor compromiso documentado dentro de la familia preferida, no porque sea una geografia unica o verdadera. El mega-cluster aporta estabilidad global y requiere diagnostico interno; 584 puntos quedan como actividad dispersa y no deben considerarse irrelevantes; y 164 establecimientos presentan membresia sensible. La solucion es adecuada como referencia operativa para perfilar concentraciones y comparar territorios, siempre conservando los escenarios alternativos y la persistencia por punto.
 
 \subsection{Glosario minimo de metricas}
 \begin{longtable}{p{0.18\textwidth}p{0.34\textwidth}p{0.38\textwidth}}
@@ -722,6 +1192,57 @@ Efecto de borde & ¿Cuanto cambia la estructura cerca del limite de estudio? & U
 \end{itemize}
 \end{preguntas}
 
+La solucion principal materializa \textbf{22 clusters} en el universo ampliado de 4,365 establecimientos. Cuatro de ellos (0--3) quedan completamente fuera de la cuenca y se conservan unicamente como contexto de deteccion; los \textbf{18 clusters 4--21} tienen al menos un integrante dentro del poligono y constituyen el conjunto interpretado. En el interior se asignaron 3,432 establecimientos a clusters y 578 quedaron como ruido: 85.6\% del universo interior fue agrupado y 14.4\% permanecio disperso. La Figura~\ref{fig:materializacion-clusters} muestra que ruido no equivale a ausencia de actividad, sino a unidades que no alcanzan la persistencia o densidad exigida por la configuracion principal.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.82\textwidth]{../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png}
+\caption{Materializacion territorial de la solucion principal dentro de la cuenca. Los numeros identifican los clusters 4--21 y los puntos grises corresponden a actividad dispersa.}
+\label{fig:materializacion-clusters}
+\end{figure}
+
+\subsection{Envolventes y efecto de borde}
+
+Para cada cluster se calculo una envolvente convexa o \emph{convex hull}: el poligono convexo de menor superficie que contiene todos sus puntos. Esta geometria resume extension y permite obtener una superficie descriptiva y una densidad bruta, pero puede incluir espacios sin establecimientos, unir brazos separados y atravesar municipios, cauces o infraestructura. En grupos casi lineales o con pocos puntos, superficie y densidad son especialmente sensibles a observaciones extremas; por ello el mapa de puntos y la ficha del atlas deben consultarse junto con la envolvente.
+
+El universo ampliado evita cortar vecindades antes de estimar los clusters. De los 355 establecimientos exteriores, 309 integran los cuatro clusters completamente externos, 40 pertenecen al cluster 11 y seis son ruido. El cluster 11 es el unico agrupamiento interpretado que cruza el limite: posee 48 miembros, pero solo ocho estan dentro de la cuenca y 40 fuera. Su porcion interior representa apenas 16.7\% de la estructura detectada y debe leerse como concentracion de borde. Los otros 17 clusters interpretados estan completamente dentro.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.72\textwidth]{../../outputs/parte_2/13_figuras_finales/01_universos_borde.png}
+\caption{Universo de deteccion (4,365 establecimientos) y universo de interpretacion (4,010 dentro de la cuenca). Los 355 puntos exteriores estabilizan relaciones de vecindad, pero no amplian el ambito sustantivo del estudio.}
+\label{fig:universos-borde-materializacion}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Descomposicion de la solucion principal respecto al limite de la cuenca.}
+\begin{tabularx}{\textwidth}{Xrrrr}
+\toprule
+\textbf{Componente} & \textbf{Clusters} & \textbf{Dentro} & \textbf{Fuera} & \textbf{Total} \\
+\midrule
+Clusters 0--3, completamente exteriores & 4 & 0 & 309 & 309 \\
+Cluster 11, que cruza el limite & 1 & 8 & 40 & 48 \\
+Clusters interiores restantes & 17 & 3,424 & 0 & 3,424 \\
+Ruido & --- & 578 & 6 & 584 \\
+\midrule
+Total & 22 & 4,010 & 355 & 4,365 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Distribucion territorial del ruido}
+
+El ruido interior comprende 578 establecimientos distribuidos en 18 municipios y 67 localidades. Su municipio y localidad modales son Puebla y Heroica Puebla de Zaragoza, pero el atlas muestra tambien una franja discontinua hacia el norponiente y puntos perifericos al sur. No conforma un unico vacio aleatorio: combina unidades aisladas, bordes de clusters, corredores demasiado tenues y establecimientos cuya membresia cambia con los parametros. Su persistencia media como ruido es 0.759, inferior a la de los nucleos mas robustos, por lo que una parte corresponde a transiciones cluster--ruido. No debe eliminarse del perfil economico ni interpretarse como actividad irrelevante.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.98\textwidth]{../../outputs/parte_2/12_atlas/ruido_disperso.png}
+\caption{Ficha del atlas para el ruido disperso. El mapa hace visible su patron territorial y el panel derecho confirma que conserva una composicion productiva interpretable.}
+\label{fig:atlas-ruido}
+\end{figure}
+
 \begin{alerta}
 Un poligono envolvente de cluster es una abstraccion geometrica para visualizar concentracion; no representa una zona de servicio, una subcuenca de drenaje ni un area juridica.
 \end{alerta}
@@ -742,6 +1263,87 @@ Un poligono envolvente de cluster es una abstraccion geometrica para visualizar 
 \end{itemize}
 \end{preguntas}
 
+El perfilado se aplico despues de congelar la membresia espacial. Para cada cluster y para el ruido se cruzaron actividad SCIAN, municipio, localidad, estrato de personal y etiquetas multilabel: lavanderia/tintoreria, confeccion, fabricacion de telas, tejido/hilado, acabado, maquila, mezclilla o pantalon, proceso humedo explicito y proceso seco explicito. Las etiquetas no son mutuamente excluyentes; un establecimiento puede aportar a varias columnas. Los porcentajes son prevalencias de señales y no deben sumarse como una particion exhaustiva.
+
+\subsection{Lectura territorial de los perfiles}
+
+El mapa posterior al clustering separa dos patrones dominantes. Doce clusters (4, 5, 6, 8, 9, 10, 11, 12, 13, 16, 17 y 19) se describen como concentraciones de manufactura. Seis (7, 14, 15, 18, 20 y 21) presentan coexistencia mixta entre manufactura y lavanderias. La clasificacion no intervino en la formacion de los grupos: se asigno al observar su contenido una vez fijada la geografia. El corredor norponiente contiene multiples nucleos manufactureros, mientras el sur metropolitano esta dominado por el gran cluster mixto 20.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.80\textwidth]{../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.png}
+\caption{Tipologia productiva asignada despues del clustering. Azul: concentraciones de manufactura; morado: coexistencia de manufactura y lavanderias.}
+\label{fig:mapa-tipos-productivos}
+\end{figure}
+
+Los clusters mas grandes no son equivalentes. El cluster 8 concentra 337 establecimientos en Santa Ana Xalmimilulco: 92.0\% corresponde a manufactura textil, 85.8\% presenta señal de confeccion, 55.8\% de maquila y 40.7\% de mezclilla o pantalon. Es un nucleo especializado de confeccion y maquila asociado a prendas de mezclilla, aunque solo 8.0\% aparece como lavanderia/tintoreria. El cluster 20 contiene 1,997 establecimientos en seis municipios y 14 localidades: 59.3\% son lavanderias/tintorerias, 40.7\% manufactura y 15.7\% tiene evidencia humeda explicita. Su extension y mezcla justifican tratarlo como sistema metropolitano diversificado, no como un perfil uniforme.
+
+Los clusters 7 y 15 muestran el equilibrio mixto con mayor claridad: en el 7, 44.4\% son lavanderias y 55.6\% manufactura; en el 15, 48.9\% y 51.1\%. Los clusters 18 y 21 tambien son mixtos, aunque menores. En contraste, 8, 12, 13, 17 y 19 superan 76\% en confeccion, mientras 9 y 10 se distinguen por tejido/hilado. La Figura~\ref{fig:composicion-multilabel-14-15} compara estas especializaciones sin reducir cada cluster a una sola etiqueta.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.98\textwidth]{../../outputs/parte_2/13_figuras_finales/06_composicion_multilabel.png}
+\caption{Composicion multilabel de clusters interiores y ruido. Cada celda es el porcentaje del grupo que presenta la señal indicada; las columnas no son excluyentes.}
+\label{fig:composicion-multilabel-14-15}
+\end{figure}
+
+\subsection{Evidencia hidrica y escala laboral}
+
+La evidencia hidrica se reporta como variable descriptiva, no como criterio de clustering. En el cluster 20, 1.10\% queda en \texttt{SI}, 59.24\% en \texttt{REVISAR} y 39.66\% en \texttt{SIN\_EVIDENCIA}; en el cluster 8 los valores son 1.78\%, 18.40\% y 79.82\%. Los clusters mixtos 7, 15, 18 y 21 presentan, respectivamente, 48.5\%, 48.9\%, 40.6\% y 41.9\% al combinar \texttt{SI} y \texttt{REVISAR}. En cambio, 6 y 9 tienen 100\% sin evidencia explicita y el 10 alcanza 95.8\%. ``Sin evidencia'' significa que las fuentes disponibles no contienen una señal textual o codificada suficiente; no demuestra ausencia de uso de agua ni de descarga.
+
+En todos los grupos domina el estrato de 0 a 5 personas. Su participacion va de 51.4\% en el cluster 10 a 100\% en el cluster 6; alcanza 79.5\% en el cluster 8, 84.5\% en el 20 y 80.3\% en el ruido. Una concentracion grande puede estar compuesta principalmente por microunidades. Los estratos del DENUE son intervalos, no caudales, capacidad instalada ni volumen de produccion, por lo que no permiten convertir establecimientos en carga contaminante.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Perfiles seleccionados dentro de la cuenca.}
+\begin{tabularx}{\textwidth}{lrrXrrr}
+\toprule
+\textbf{Grupo} & \textbf{$n$} & \textbf{0--5 pers.} & \textbf{Perfil territorial-productivo} & \textbf{Lav./tint.} & \textbf{Confec.} & \textbf{SI+REV.} \\
+\midrule
+C7 Huejotzingo & 99 & 75.8\% & Mixto local & 44.4\% & 31.3\% & 48.5\% \\
+C8 Xalmimilulco & 337 & 79.5\% & Confeccion--maquila--mezclilla & 8.0\% & 85.8\% & 20.2\% \\
+C10 Ixtapalucan & 142 & 51.4\% & Tejido/hilado & 3.5\% & 0.7\% & 4.2\% \\
+C12 Tlalancaleca & 224 & 88.8\% & Manufactura y confeccion & 7.1\% & 83.9\% & 15.2\% \\
+C13 Tlanalapan & 149 & 87.9\% & Manufactura y confeccion & 8.1\% & 81.2\% & 8.1\% \\
+C15 Texmelucan & 92 & 92.4\% & Coexistencia casi equilibrada & 48.9\% & 40.2\% & 48.9\% \\
+C20 zona metropolitana & 1,997 & 84.5\% & Mixto, extenso y diversificado & 59.3\% & 20.9\% & 60.3\% \\
+Ruido disperso & 578 & 80.3\% & Manufactura dispersa heterogenea & 33.4\% & 41.0\% & 34.3\% \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Atlas: contraste de casos representativos}
+
+El atlas es la unidad de consulta detallada: publica una ficha homogenea para cada cluster 4--21 y otra para el ruido, combinando mapa local, tamaño dentro y total, municipio/localidad dominante, persistencia, tipologia y prevalencia de señales. Las Figuras~\ref{fig:atlas-c8} y~\ref{fig:atlas-c20} muestran dos extremos. Xalmimilulco es compacto y especializado; el cluster 20 es extenso, de alta continuidad urbana y composicion mixta. La comparacion evita interpretar tamaño como sinonimo de homogeneidad.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.98\textwidth]{../../outputs/parte_2/12_atlas/cluster_008.png}
+\caption{Ficha del atlas del cluster 8, Santa Ana Xalmimilulco: concentracion compacta y perfil manufacturero de confeccion y maquila.}
+\label{fig:atlas-c8}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.98\textwidth]{../../outputs/parte_2/12_atlas/cluster_020.png}
+\caption{Ficha del atlas del cluster 20: estructura metropolitana extensa y coexistencia entre lavanderias y manufactura.}
+\label{fig:atlas-c20}
+\end{figure}
+
+\subsection{Clusters frente a actividad dispersa}
+
+El ruido tiene perfil propio y no es el negativo de los clusters. Frente a las unidades dispersas, la actividad agrupada registra aproximadamente 7.2 puntos porcentuales mas de lavanderia/tintoreria y 4.7 puntos mas de señal humeda explicita; tambien aumenta la presencia de mezclilla o pantalon. En el ruido son relativamente mas frecuentes el proceso seco explicito (cerca de 7.9 puntos), el SCIAN textil general y la señal amplia de textil. La concentracion selecciona con mayor frecuencia actividades de lavado y señales potencialmente hidricas, pero deja fuera numerosas microunidades manufactureras dispersas. Esto no autoriza a concluir que todo cluster descarga ni que el ruido carece de relevancia ambiental.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.88\textwidth]{../../outputs/parte_2/13_figuras_finales/08_clusters_vs_ruido.png}
+\caption{Diferencia de prevalencia entre establecimientos agrupados y actividad dispersa. Positivo indica mayor frecuencia en clusters; negativo, mayor frecuencia en ruido.}
+\label{fig:clusters-vs-ruido-14-15}
+\end{figure}
+
+En sintesis, las concentraciones mas especializadas se localizan en el corredor norponiente, con Xalmimilulco como caso destacado de confeccion, maquila y mezclilla; el cluster 20 constituye la mayor concentracion mixta de lavanderias y manufactura. Los clusters 7 y 15 ofrecen escalas intermedias de coexistencia potencialmente abordables para validacion de campo. El ruido conserva 578 establecimientos y un perfil manufacturero relevante, por lo que debe incorporarse mediante muestreo estratificado. Estas conclusiones describen estructura territorial y productiva registrada: para priorizar infraestructura todavia se requieren verificacion de giros, consumo y descarga de agua, red de drenaje, topografia, caudales y calidad del efluente.
+
 \begin{evidencia}
 Para cada cluster publicar una ficha estandar: N, superficie/envolvente, municipio/localidad dominante, top SCIAN, distribucion de personal, señales productivas, evidencia hidrica, distancia a red hidrografica, estabilidad y notas de incertidumbre.
 \end{evidencia}
@@ -751,7 +1353,11 @@ Para cada cluster publicar una ficha estandar: N, superficie/envolvente, municip
 % ============================================================
 
 \subsection{Base comparativa}
-Definir explicitamente contra que universo se compara cada cluster: idealmente los 4,010 establecimientos dentro de cuenca, salvo analisis particular debidamente justificado.
+Cada cluster se compara contra el \textbf{universo completo de 4,010 establecimientos dentro de la cuenca}, incluyendo unidades agrupadas y ruido. Para una señal $s$ y un cluster $g$ se calculan la prevalencia interna $p_{g,s}=n_{g,s}/n_g$, la prevalencia base $p_s=n_s/4{,}010$, la diferencia absoluta $p_{g,s}-p_s$ y el \emph{lift}
+\[
+L_{g,s}=\frac{p_{g,s}}{p_s}.
+\]
+Un lift superior a uno significa que la señal es relativamente mas frecuente en el cluster que en el universo interior; no significa que sea exclusiva del grupo ni que explique su formacion. Su lectura es multiplicativa: $L=1$ indica la misma prevalencia que la base, $L=1.5$ indica una frecuencia 1.5 veces mayor, $L=2$ el doble y $L=10$ diez veces la prevalencia base. Por ejemplo, el lift de 10.62 para tejido/hilado en el cluster 10 significa que esa señal aparece aproximadamente 10.6 veces con mayor frecuencia relativa que en el conjunto de la cuenca: 95.1\% frente a 9.0\%. Un lift menor que uno indica subrepresentacion. Como la base incluye al propio cluster, la comparacion es conservadora para los grupos grandes, especialmente el cluster 20. El lift siempre debe leerse junto con el numero de casos y la diferencia en puntos porcentuales: una razon grande con pocos registros puede ser menos relevante que una razon moderada sostenida por cientos de establecimientos.
 
 \begin{preguntas}
 \begin{itemize}
@@ -763,6 +1369,54 @@ Definir explicitamente contra que universo se compara cada cluster: idealmente l
     \item ¿Cual es el tamaño absoluto? Un lift grande con muy pocos casos puede ser poco operativo.
 \end{itemize}
 \end{preguntas}
+
+\subsection{Prueba estadistica y criterio de reporte}
+
+Para cada par cluster--señal se construyo una tabla $2\times2$: presencia/ausencia de la señal dentro del cluster y presencia/ausencia en el resto del universo. La prueba exacta bilateral de Fisher evalua si la distribucion observada es compatible con independencia y produce un \emph{odds ratio} (OR). Un OR mayor que uno indica mayores momios dentro del cluster; su intervalo de confianza al 95\% se calculo con correccion de Haldane--Anscombe de 0.5 para mantener estimaciones finitas cuando existen celdas con cero. El lift compara prevalencias y el OR compara momios: ambos expresan asociacion relativa, pero no causalidad.
+
+Como se prueban simultaneamente 19 grupos ---18 clusters y ruido--- contra 18 señales, se realizaron \textbf{342 comparaciones}. Los valores $p$ se ajustaron en conjunto mediante Benjamini--Hochberg para controlar la tasa esperada de falsos descubrimientos. Un rasgo se conserva como evidencia descriptiva suficiente solamente si cumple simultaneamente: al menos cinco casos, prevalencia interna de 5\% o mas, lift de al menos 1.25 y $q\leq0.05$. El filtro evita destacar asociaciones significativas pero diminutas, o lifts extremos sostenidos por uno o dos registros.
+
+\subsection{Resultados de sobrerrepresentacion}
+
+Los resultados separan perfiles territoriales con significado productivo. El \textbf{cluster 8 es la concentracion de Santa Ana Xalmimilulco, municipio de Huejotzingo}, integrada por 337 establecimientos. Combina confeccion (85.8\% frente a 39.0\% en la cuenca; lift 2.20), maquila (55.8\% frente a 14.7\%; lift 3.80) y mezclilla o pantalon (40.7\% frente a 4.6\%; lift 8.91). En terminos directos, la señal de mezclilla o pantalon es casi nueve veces mas frecuente en este cluster que en el universo interior. La coexistencia de diferencias absolutas grandes, 137--289 casos por señal y valores $q$ extremadamente pequeños muestra que Xalmimilulco no es solamente una acumulacion espacial: es una concentracion especializada en confeccion, maquila y prendas asociadas con mezclilla.
+
+Los \textbf{clusters 9 y 10 se localizan en el municipio de Tlahuapan}. El cluster 9 corresponde principalmente a \textbf{San Miguel Tianguistenco} y contiene 30 establecimientos; el cluster 10 corresponde a \textbf{San Rafael Ixtapalucan} y contiene 142. Ambos muestran especializacion en tejido/hilado: la señal aparece en 80.0\% del cluster 9 y 95.1\% del cluster 10, frente a 9.0\% en la cuenca. Sus lifts de 8.94 y 10.62 indican que tejido/hilado es aproximadamente nueve y once veces mas frecuente, respectivamente, que en la base regional. El resultado no significa que produzcan nueve u once veces mas volumen, sino que la \emph{proporcion de establecimientos etiquetados} con esa actividad es mucho mayor.
+
+El \textbf{cluster 6 corresponde a Santiago Coltzingo, municipio de Tlahuapan}, y contiene 20 establecimientos. Dieciseis presentan señal de maquila: 80.0\% frente a 14.7\% en la cuenca, con lift 5.45. Esto significa que la prevalencia relativa de maquila es alrededor de 5.5 veces la regional. Es una especializacion estadisticamente clara, pero su base absoluta es pequeña; por ello representa una hipotesis focal para verificacion de campo y no, por si sola, una justificacion de infraestructura. Los clusters 4 y 5 tambien muestran maquila y confeccion, aunque sus tamaños reducidos exigen la misma cautela.
+
+Los clusters 12, 13, 17 y 19 comparten sobrerrepresentacion de confeccion; 12 y 13 agregan proceso seco explicito, mientras 19 incorpora produccion y maquila. En el cluster 20 se sobrerrepresentan lavanderia/tintoreria (59.3\% frente a 39.6\%), lavado generico (43.6\% frente a 29.9\%) y humedo explicito (15.7\% frente a 9.2\%). Sus lifts son mas moderados que los del tejido o la mezclilla, pero se apoyan en cientos de casos: 1,185 lavanderias, 871 señales de lavado y 313 de proceso humedo. Esta escala absoluta le confiere mayor importancia operativa que un lift alto basado en pocos establecimientos.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Rasgos representativos que superan los criterios conservadores de sobrerrepresentacion.}
+\begin{tabularx}{\textwidth}{llrrrrrr}
+\toprule
+\textbf{Cluster} & \textbf{Señal} & \textbf{Casos} & \textbf{Cluster} & \textbf{Base} & \textbf{Dif. pp} & \textbf{Lift} & \textbf{OR} \\
+\midrule
+C10 & Tejido/hilado & 135 & 95.1\% & 9.0\% & 86.1 & 10.62 & 313.74 \\
+C9 & Tejido/hilado & 24 & 80.0\% & 9.0\% & 71.0 & 8.94 & 43.52 \\
+C6 & Maquila & 16 & 80.0\% & 14.7\% & 65.3 & 5.45 & 23.85 \\
+C8 & Confeccion & 289 & 85.8\% & 39.0\% & 46.8 & 2.20 & 11.35 \\
+C8 & Maquila & 188 & 55.8\% & 14.7\% & 41.1 & 3.80 & 10.30 \\
+C8 & Mezclilla/pantalon & 137 & 40.7\% & 4.6\% & 36.1 & 8.91 & 54.01 \\
+C12 & Confeccion & 188 & 83.9\% & 39.0\% & 45.0 & 2.15 & 9.17 \\
+C13 & Proceso seco & 71 & 47.7\% & 16.1\% & 31.6 & 2.97 & 5.22 \\
+C19 & Confeccion & 76 & 76.0\% & 39.0\% & 37.0 & 1.95 & 5.17 \\
+C20 & Lavanderia/tintoreria & 1,185 & 59.3\% & 39.6\% & 19.8 & 1.50 & 5.87 \\
+C20 & Humedo explicito & 313 & 15.7\% & 9.2\% & 6.4 & 1.70 & 6.38 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.98\textwidth]{../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png}
+\caption{Rasgos sobrerrepresentados que cumplen tamaño minimo, prevalencia, lift y correccion por pruebas multiples. El color representa $\log_2(\mathrm{lift})$: un valor de 1 equivale a dos veces la prevalencia base y un valor de 2 a cuatro veces. Las celdas blancas no satisfacen todos los criterios.}
+\label{fig:rasgos-distintivos-16}
+\end{figure}
+
+La significancia no sustituye la relevancia practica. Por ejemplo, los clusters 6 y 9 exhiben asociaciones muy fuertes, pero contienen solo 20 y 30 establecimientos; son buenos candidatos para una inspeccion focalizada, no evidencia suficiente para dimensionar infraestructura. El cluster 20 tiene lifts menores porque su propio tamaño eleva la prevalencia base, pero concentra el mayor numero absoluto de señales hidricas. Finalmente, una señal sobrerrepresentada proviene de SCIAN o texto comercial: identifica una hipotesis productiva y no verifica proceso real, consumo, descarga ni contaminante.
 
 \begin{evidencia}
 Nunca presentar solo significancia. Reportar para cada señal: $n$ cluster, $n$ señal, proporcion cluster, proporcion base, diferencia absoluta, lift, odds ratio, intervalo si se calcula, $p$, $q$ ajustado y una nota de relevancia practica.
@@ -781,6 +1435,51 @@ Nunca presentar solo significancia. Reportar para cada señal: $n$ cluster, $n$ 
     \item ¿Que pares de clusters son mas parecidos y en que dimensiones?
 \end{itemize}
 \end{preguntas}
+
+\subsection{Construccion del vector y distancia combinada}
+
+La comparacion se realiza despues del clustering y excluye el ruido: cada uno de los 18 clusters interiores se representa mediante prevalencias entre cero y uno. El archivo auditable de vectores contiene 18 señales multilabel, cuatro proporciones SCIAN a tres digitos (313, 314, 315 y 812) y siete estratos de personal. Sin embargo, la distancia utilizada en la tipologia actual incorpora solamente dos familias: señales y SCIAN. Los estratos de personal se conservaron para auditoria y descripcion, pero \textbf{no entran en la distancia combinada}; esto evita afirmar que la tipologia resume una dimension que el codigo no pondero.
+
+Para las señales se utiliza distancia coseno,
+\[
+d_{\mathrm{cos}}(i,j)=1-\frac{\mathbf{s}_i\cdot\mathbf{s}_j}{\lVert\mathbf{s}_i\rVert\lVert\mathbf{s}_j\rVert},
+\]
+que compara el patron relativo de prevalencias y reduce la influencia de la magnitud total. Para la composicion SCIAN se usa la distancia de Jensen--Shannon entre distribuciones, una medida simetrica y acotada basada en divergencia informativa. Se añade $10^{-12}$ a cada categoria para evitar problemas numericos con ceros. Como ambas familias ya son proporciones, no se aplica estandarizacion z; la distancia final les asigna el mismo peso:
+\[
+d(i,j)=0.5\,d_{\mathrm{cos}}(\mathbf{s}_i,\mathbf{s}_j)+0.5\,d_{\mathrm{JS}}(\mathbf{c}_i,\mathbf{c}_j).
+\]
+Por tanto, el resultado depende explicitamente de una decision normativa: señales textuales/codificadas y estructura SCIAN aportan la mitad cada una.
+
+\subsection{Tipologia jerarquica y resultados}
+
+La matriz combinada se agrupo mediante enlace promedio. Con 18 clusters se definieron cuatro tipos exploratorios, siguiendo $k=\mathrm{round}(\sqrt{18})=4$. Las etiquetas 1--4 son identificadores sin orden sustantivo. Esta tipologia expresa \textbf{similitud productiva entre clusters espacialmente distintos}; no fusiona membresias, no mide proximidad geografica y no modifica la solucion HDBSCAN.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Tipologia exploratoria derivada de los perfiles combinados.}
+\begin{tabularx}{\textwidth}{p{1.4cm}p{4.7cm}X}
+\toprule
+\textbf{Tipo} & \textbf{Clusters} & \textbf{Lectura dominante} \\
+\midrule
+1 & 7, 14, 15, 18, 20, 21 & Coexistencia de lavanderias y manufactura; incluye el sistema metropolitano y nucleos mixtos menores. \\
+2 & 9, 10 & Especializacion muy marcada en tejido e hilado. \\
+3 & 4, 5, 8, 11, 12, 13, 16, 17, 19 & Manufactura orientada a confeccion y, en varios casos, maquila, mezclilla o proceso seco. \\
+4 & 6 & Perfil singular de maquila con 100\% SCIAN textil y tamaño reducido; queda separado de los otros grupos bajo el corte elegido. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Los pares mas cercanos confirman la coherencia de estos tipos. Los clusters 14 y 18 tienen la menor distancia (0.029) y comparten perfiles mixtos pequeños; 4 y 13 alcanzan 0.042 y 12 y 13, 0.045, todos dentro del bloque manufacturero. Los clusters 16 y 19 tienen distancia 0.055 y 7 y 21, tambien 0.055. Xalmimilulco (8) se aproxima a 12 (0.060), seguido de 4 (0.076) y 19 (0.087), por la combinacion de confeccion, maquila y estructura SCIAN. Los clusters 9 y 10 forman su propio par especializado (0.091). En el tipo mixto, el cluster 20 es mas semejante a 7 (0.082) que a los nucleos manufactureros; ello muestra que la composicion puede relacionar territorios alejados.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.96\textwidth]{../../outputs/parte_2/13_figuras_finales/09_similitud_perfiles.png}
+\caption{Matriz de distancia productiva combinada entre clusters. Los tonos claros indican mayor similitud; la diagonal vale cero. La matriz compara perfiles posteriores y no distancias geograficas.}
+\label{fig:similitud-perfiles-17}
+\end{figure}
+
+La lectura por familias evita confundir mecanismos. Dos clusters pueden ser similares porque comparten señales aunque difieran en SCIAN, o viceversa; por eso se conservaron la matriz combinada, los vectores originales y el enlace jerarquico. La tipologia es descriptiva y sensible al peso 50/50, al corte en cuatro tipos y a la exclusion actual del personal. Antes de convertirla en estratos de muestreo definitivos conviene repetirla variando pesos, incorporando personal como tercera familia y comprobando si los pares principales permanecen estables.
 
 \begin{trazabilidad}
 Conservar matrices de distancia por familia de variables y una matriz combinada. Asi puede auditarse si la similitud es impulsada por SCIAN, señales, personal o composicion territorial.
@@ -804,6 +1503,64 @@ El inventario reporta un cluster mayor de 1,997 establecimientos. La segunda pas
 \end{itemize}
 \end{preguntas}
 
+\subsection{Por que aparece una sola estructura}
+
+El cluster 20 contiene 1,997 establecimientos, todos dentro de la cuenca, distribuidos en seis municipios y 14 localidades. Su probabilidad media de pertenencia es 0.990 y su persistencia media frente a escenarios alternativos es 0.999. Aparece como una sola estructura porque la solucion principal HDBSCAN con seleccion EOM privilegia ramas densas que mantienen suficiente continuidad espacial a una escala regional. En Puebla, Cholula y Cuautlancingo existen maximos locales, pero entre ellos permanecen cadenas y bandas de establecimientos que impiden una separacion estable bajo la configuracion principal. Los diagnosticos KDE y hexagonales de la Seccion~11 mostraron el mismo fenomeno: a escala fina existen focos y vacios, mientras a 1,000--2,000 m se integran en un continuo metropolitano.
+
+La gran extension no significa homogeneidad. La envolvente convexa alcanza 265.29 km$^2$, el cluster abarca Puebla, San Andres Cholula, San Pedro Cholula, Cuautlancingo, Amozoc y Coronango, y su perfil combina 59.3\% de lavanderias/tintorerias con 40.7\% de manufactura. Por ello se realizo una segunda pasada exclusivamente diagnostica sobre sus coordenadas, sin alterar la etiqueta 20 de la solucion congelada.
+
+\subsection{Segunda pasada y subnucleos observados}
+
+La exploracion interna utilizo HDBSCAN con \texttt{min\_cluster\_size=30}, \texttt{min\_samples=10} y seleccion \emph{leaf}. Esta configuracion favorece ramas locales mas finas que EOM. Identifico 18 subnucleos con 1,108 establecimientos; 889 puntos, equivalentes a 44.5\% del cluster, no alcanzaron la densidad local necesaria y quedaron como ruido \emph{solo en esta segunda pasada}. Los 1,997 continúan perteneciendo al cluster 20 principal.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.84\textwidth]{../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etiquetados.png}
+\caption{Dieciocho subnucleos exploratorios del cluster 20. Los puntos grises no se asignan a una rama local bajo la especificacion \emph{leaf}, pero conservan su membresia en el mega-cluster principal.}
+\label{fig:subnucleos-mega-18}
+\end{figure}
+
+Los subnucleos 0--5 describen principalmente el sistema Cholula--Tlaxcalancingo--Momoxpan y los subnucleos 6--17 distintos focos de Heroica Puebla de Zaragoza. Sus tamaños varian entre 30 y 112 establecimientos; ninguno concentra por si solo mas de 5.7\% del mega-cluster. Esta fragmentacion, junto con el 44.5\% no asignado internamente, indica heterogeneidad local, pero tambien ausencia de una particion exhaustiva y naturalmente separada.
+
+\begin{longtable}{rrrrlrr}
+\caption{Geografia y señales seleccionadas de los 18 subnucleos diagnosticos.}\\
+\toprule
+\textbf{ID} & \textbf{$n$} & \textbf{\% mega} & \textbf{km$^2$} & \textbf{Localidad dominante} & \textbf{Lav. \%} & \textbf{Hum. \%} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{$n$} & \textbf{\% mega} & \textbf{km$^2$} & \textbf{Localidad dominante} & \textbf{Lav. \%} & \textbf{Hum. \%} \\
+\midrule
+\endhead
+0 & 31 & 1.6 & 0.89 & San Andres Cholula & 83.9 & 16.1 \\
+1 & 76 & 3.8 & 4.38 & Cholula de Rivadavia & 59.2 & 19.7 \\
+2 & 46 & 2.3 & 4.14 & Heroica Puebla de Zaragoza & 80.4 & 23.9 \\
+3 & 57 & 2.9 & 2.91 & San Bernardino Tlaxcalancingo & 75.4 & 19.3 \\
+4 & 92 & 4.6 & 9.94 & Heroica Puebla de Zaragoza & 58.7 & 6.5 \\
+5 & 93 & 4.7 & 8.37 & Santiago Momoxpan & 57.0 & 12.9 \\
+6 & 58 & 2.9 & 4.51 & Heroica Puebla de Zaragoza & 60.3 & 15.5 \\
+7 & 41 & 2.1 & 2.02 & Heroica Puebla de Zaragoza & 58.5 & 14.6 \\
+8 & 36 & 1.8 & 1.74 & Heroica Puebla de Zaragoza & 50.0 & 5.6 \\
+9 & 65 & 3.3 & 2.86 & Heroica Puebla de Zaragoza & 53.8 & 10.8 \\
+10 & 33 & 1.7 & 1.65 & Heroica Puebla de Zaragoza & 57.6 & 24.2 \\
+11 & 74 & 3.7 & 3.75 & Heroica Puebla de Zaragoza & 59.5 & 16.2 \\
+12 & 112 & 5.6 & 6.56 & Heroica Puebla de Zaragoza & 60.7 & 16.1 \\
+13 & 97 & 4.9 & 4.69 & Heroica Puebla de Zaragoza & 44.3 & 14.4 \\
+14 & 78 & 3.9 & 3.19 & Heroica Puebla de Zaragoza & 39.7 & 19.2 \\
+15 & 54 & 2.7 & 2.16 & Heroica Puebla de Zaragoza & 70.4 & 13.0 \\
+16 & 30 & 1.5 & 1.18 & Heroica Puebla de Zaragoza & 30.0 & 10.0 \\
+17 & 35 & 1.8 & 1.33 & Heroica Puebla de Zaragoza & 62.9 & 14.3 \\
+\bottomrule
+\end{longtable}
+
+El perfilado posterior confirma diferencias internas. Los subnucleos 0, 2 y 3 superan 75\% en lavanderia/tintoreria; 10 alcanza la mayor señal humeda explicita (24.2\%), seguido de 2 (23.9\%). Los subnucleos 14 y 16 muestran mayor peso relativo de confeccion, con 37.2\% y 36.7\%, y menor lavanderia que el promedio del cluster. Estas diferencias sirven para diseñar recorridos y estratos de muestreo, no para inferir descargas verificadas.
+
+\subsection{Estabilidad y relacion con barreras territoriales}
+
+La membresia del cluster 20 principal es muy estable, pero \textbf{los 18 subnucleos no cuentan todavia con una prueba equivalente de estabilidad}. Provienen de una sola especificacion \emph{leaf}; no se compararon sistematicamente otros tamaños minimos, valores de \texttt{min\_samples} ni perturbaciones posicionales para cada rama. Por tanto deben considerarse una particion ilustrativa de la heterogeneidad interna. El porcentaje no asignado de 44.5\% refuerza esta cautela.
+
+El mapa sugiere continuidades urbanas entre Puebla, Cholula, Cuautlancingo y Amozoc, pero este analisis no incorporo vialidades, relieve, colectores, parteaguas urbanos ni cauces como variables de separacion. En consecuencia, no puede afirmarse que los limites entre subnucleos coincidan con barreras hidrologicas o de drenaje. La siguiente validacion debe superponer medoides y envolventes con topografia, red sanitaria, cruces de cauce, puntos de descarga y capacidad de conduccion antes de proponer unidades operativas.
+
 \begin{alerta}
 Los subnucleos diagnosticos no deben convertirse automaticamente en ``proyectos de colector''. Son hipotesis de concentracion que necesitan contrastarse con topografia, drenaje existente, puntos de descarga y caudales.
 \end{alerta}
@@ -812,19 +1569,82 @@ Los subnucleos diagnosticos no deben convertirse automaticamente en ``proyectos 
 \section{Resultados principales por territorio}
 % ============================================================
 
-Esta seccion debe traducir el pipeline a hallazgos espaciales concretos, evitando repetir metodologia.
+Esta seccion traduce el pipeline a hallazgos espaciales concretos. Los conteos se refieren al universo sectorial dentro de la cuenca y las prevalencias productivas son etiquetas posteriores al clustering. La prioridad que se presenta es de \textbf{validacion territorial}; no es un ranking de inversion.
 
 \subsection{Resultados a escala de cuenca}
-\pendiente\; mapas y tabla de concentraciones principales.
+
+De los 4,010 establecimientos interiores, 3,432 (85.6\%) pertenecen a 18 clusters y 578 (14.4\%) permanecen dispersos. La estructura regional tiene tres niveles: un continuo metropolitano dominante de 1,997 establecimientos; un corredor norponiente fragmentado en nucleos manufactureros y mixtos; y actividad dispersa en 18 municipios. Los mapas de las Figuras~\ref{fig:materializacion-clusters} y~\ref{fig:mapa-tipos-productivos} muestran que el tamaño no determina el perfil: el cluster 20 es mixto y dominado por lavanderias, mientras Xalmimilulco, Tlalancaleca, Tlanalapan e Ixtapalucan presentan especializaciones manufactureras diferentes.
+
+Las concentraciones principales por tamaño son: cluster 20 (1,997), Xalmimilulco/cluster 8 (337), Tlalancaleca/cluster 12 (224), Tlanalapan/cluster 13 (149) e Ixtapalucan/cluster 10 (142). Por señal hidrica y coexistencia destacan 20, 15, 7, 21 y 18. Por especializacion productiva destacan 8 en confeccion--maquila--mezclilla, 9--10 en tejido/hilado y 12--13 en confeccion y proceso seco. Estas categorias responden preguntas distintas: tamaño identifica volumen de unidades para investigar; prevalencia hidrica orienta verificacion de procesos; especializacion ayuda a diseñar instrumentos de campo y muestreo.
 
 \subsection{Resultados por municipio}
-\pendiente\; ranking con N, densidad, clusters, señales, evidencia hidrica y estabilidad.
+
+Puebla contiene 1,762 establecimientos, 43.9\% del universo interior, y 1,610 agrupados en el cluster 20. Huejotzingo reúne 451 unidades y la mayor proporcion agrupada entre los municipios grandes (96.7\%), repartida principalmente entre el cluster mixto 7 y Xalmimilulco/cluster 8. San Martin Texmelucan contiene 459 unidades y cuatro clusters, lo que lo convierte en el territorio con mayor diversidad de nucleos interpretados. Tlalancaleca e Ixtapalucan/Tlahuapan representan especializaciones manufactureras compactas.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Municipios principales del universo sectorial dentro de la cuenca.}
+\begin{tabularx}{\textwidth}{Xrrrrrrr}
+\toprule
+\textbf{Municipio} & \textbf{$n$} & \textbf{Agr. \%} & \textbf{Clusters} & \textbf{Lav. \%} & \textbf{Conf. \%} & \textbf{SI+REV. \%} & \textbf{Persist. \%} \\
+\midrule
+Puebla & 1,762 & 91.4 & 1 & 56.0 & 23.2 & 57.0 & 97.5 \\
+San Martin Texmelucan & 459 & 68.8 & 4 & 21.1 & 68.8 & 21.6 & 89.8 \\
+Huejotzingo & 451 & 96.7 & 2 & 16.0 & 71.6 & 25.9 & 98.8 \\
+San Matias Tlalancaleca & 247 & 100.0 & 2 & 6.9 & 83.4 & 13.8 & 100.0 \\
+Tlahuapan & 228 & 88.2 & 4 & 4.4 & 11.4 & 5.3 & 93.9 \\
+San Andres Cholula & 199 & 71.9 & 1 & 68.8 & 12.6 & 68.8 & 92.6 \\
+San Pedro Cholula & 160 & 82.5 & 1 & 58.1 & 18.8 & 60.6 & 98.8 \\
+Cuautlancingo & 132 & 81.8 & 2 & 62.9 & 20.5 & 63.6 & 86.7 \\
+Amozoc & 96 & 81.2 & 3 & 39.6 & 29.2 & 40.6 & 94.0 \\
+San Miguel Xoxtla & 68 & 100.0 & 1 & 10.3 & 70.6 & 10.3 & 99.4 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+No se reporta aqui una ``densidad municipal'' porque el denominador territorial pertinente no se definio: dividir por toda la superficie administrativa penalizaria municipios extensos y no representaria suelo urbano o industrial disponible. Las densidades convexas se mantienen a escala de cluster y tambien son descriptivas. Para comparacion municipal futura debe definirse un denominador comun, como superficie urbanizada, corredor industrial o area efectivamente servida por drenaje.
 
 \subsection{Resultados por localidad/corredor}
-\pendiente\; fichas territoriales donde exista suficiente concentracion o interes operativo.
+
+La escala de localidad revela prioridades que el total municipal oculta. Heroica Puebla de Zaragoza domina por tamaño y perfil de lavanderia; Santa Ana Xalmimilulco es el nucleo manufacturero especializado mas grande; San Matias Tlalancaleca y San Rafael Tlanalapan concentran confeccion; San Rafael Ixtapalucan concentra tejido/hilado. Huejotzingo cabecera y San Martin Texmelucan presentan coexistencia mas equilibrada entre manufactura y lavanderias.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Localidades principales para lectura territorial y validacion.}
+\begin{tabularx}{\textwidth}{Xrrrrrr}
+\toprule
+\textbf{Localidad} & \textbf{$n$} & \textbf{Agr. \%} & \textbf{Lav. \%} & \textbf{Conf. \%} & \textbf{Hum. \%} & \textbf{SI+REV. \%} \\
+\midrule
+Heroica Puebla de Zaragoza & 1,696 & 94.8 & 57.1 & 22.4 & 15.5 & 58.1 \\
+Santa Ana Xalmimilulco & 337 & 100.0 & 8.0 & 85.8 & 1.5 & 20.2 \\
+San Matias Tlalancaleca & 223 & 100.0 & 7.2 & 84.3 & 0.0 & 14.8 \\
+San Martin Texmelucan de Labastida & 195 & 70.8 & 35.9 & 54.4 & 4.1 & 35.9 \\
+San Rafael Tlanalapan & 143 & 88.8 & 9.8 & 79.7 & 0.0 & 9.8 \\
+San Rafael Ixtapalucan & 142 & 100.0 & 3.5 & 0.7 & 2.1 & 4.2 \\
+Cholula de Rivadavia & 118 & 79.7 & 64.4 & 17.8 & 17.8 & 65.3 \\
+San Bernardino Tlaxcalancingo & 112 & 68.8 & 68.8 & 14.3 & 18.8 & 68.8 \\
+Santa Maria Moyotzingo & 90 & 56.7 & 14.4 & 73.3 & 1.1 & 16.7 \\
+Huejotzingo & 71 & 100.0 & 47.9 & 40.8 & 7.0 & 52.1 \\
+San Miguel Xoxtla & 68 & 100.0 & 10.3 & 70.6 & 1.5 & 10.3 \\
+San Juan Cuautlancingo & 54 & 100.0 & 79.6 & 13.0 & 11.1 & 79.6 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.90\textwidth]{../../outputs/parte_2/14_segunda_pasada/figuras/08_ranking_lavanderia.png}
+\caption{Prevalencia de lavanderia/tintoreria en los 18 clusters interiores. El umbral de 80\% es descriptivo; ningun cluster lo alcanza, aunque el cluster 20 lidera por prevalencia y, sobre todo, por 1,185 casos.}
+\label{fig:ranking-lavanderia-territorios}
+\end{figure}
 
 \subsection{Huejotzingo y Santa Ana Xalmimilulco}
-Incluir como caso detallado porque fueron parte de la primera fase de auditoria y cartografia local.
+
+Huejotzingo y Santa Ana Xalmimilulco se mantienen como caso detallado porque fueron el punto de partida de la version 1, donde se realizo auditoria manual y se construyeron tablas trazables para relacionar observaciones de campo, MH y claves DENUE cuando existia correspondencia. En el analisis regional actual, Huejotzingo contiene 451 establecimientos sectoriales: 436 se agrupan en dos clusters. El cluster 7 reúne 99 unidades y representa coexistencia mixta en la cabecera y localidades proximas; el cluster 8 contiene los 337 establecimientos de Santa Ana Xalmimilulco y constituye una concentracion manufacturera compacta.
+
+Xalmimilulco conserva una señal territorial fuerte bajo la definicion sectorial regional: 100\% de sus 337 unidades queda agrupado, su persistencia es 1.00 y se sobrerrepresentan confeccion, maquila y mezclilla/pantalon. Lo que no puede afirmarse es que los mismos 337 establecimientos pertenezcan al universo hidrico estricto. La comparacion legacy--estricto y la fuente MH responden otra pregunta: identificar unidades con evidencia mas directa o con validacion de campo. El clustering regional utiliza deliberadamente el universo sectorial para no excluir pequeñas lavanderias industriales o talleres cuyo uso de agua no aparece en el nombre o SCIAN.
 
 \begin{preguntas}
 \begin{itemize}
@@ -834,214 +1654,145 @@ Incluir como caso detallado porque fueron parte de la primera fase de auditoria 
 \end{itemize}
 \end{preguntas}
 
-% ============================================================
-\section{De diagnostico economico a priorizacion preliminar de colectores}
-% ============================================================
+Los hallazgos que sobreviven a cambios razonables de parametros son la existencia de una concentracion compacta en Xalmimilulco, el predominio manufacturero del corredor norponiente y la continuidad metropolitana del cluster 20. En Xalmimilulco, la membresia territorial completa y la sobrerrepresentacion productiva son robustas dentro del universo sectorial. En cambio, la clasificacion individual como proceso hidrico depende de texto, SCIAN, MH y auditoria manual; los registros sin evidencia explicita y las coincidencias no enlazadas a un ID DENUE requieren revision y no deben contarse como descarga confirmada.
 
-\textbf{Objetivo:} especificar exactamente como este trabajo puede alimentar una siguiente etapa de ingenieria sin saltarse pasos de validacion.
-
-\subsection{Lo que este analisis si puede aportar}
-\begin{itemize}
-    \item Localizar concentraciones de actividad economica potencialmente relevante.
-    \item Identificar zonas donde conviene concentrar inspeccion, entrevistas, aforos o muestreo.
-    \item Comparar sensibilidad de una prioridad territorial ante definiciones amplias/estrictas.
-    \item Señalar concentraciones robustas que merecen cruzarse con red sanitaria, topografia y descargas.
-    \item Generar una base georreferenciada auditable para incorporar nueva evidencia.
-\end{itemize}
-
-\subsection{Lo que falta antes de justificar inversion}
-\begin{enumerate}
-    \item \textbf{Validacion de establecimientos:} operacion actual, proceso real, horarios, volumen de produccion.
-    \item \textbf{Caracterizacion de agua residual:} caudal medio/maximo, variabilidad, DQO/DBO, SST, color, temperatura, pH, sales, metales u otros parametros pertinentes al proceso.
-    \item \textbf{Puntos y forma de descarga:} alcantarillado, descarga directa, infiltracion, transporte, recirculacion, tratamiento propio.
-    \item \textbf{Infraestructura existente:} colectores, atarjeas, diametros, pendientes, capacidad residual, condiciones fisicas, plantas de tratamiento.
-    \item \textbf{Topografia e hidraulica:} cotas, subcuencas de drenaje, bombeo, cruces, servidumbres, riesgos.
-    \item \textbf{Demanda futura:} crecimiento urbano/industrial y escenarios de conexion.
-    \item \textbf{Compatibilidad de tratamiento:} efecto del efluente industrial sobre el tren de tratamiento previsto/existente.
-    \item \textbf{Factibilidad economica:} CAPEX, OPEX, costo por m$^3$, costo por usuario/establecimiento atendido, alternativas.
-    \item \textbf{Marco regulatorio e institucional:} competencias, permisos, responsabilidades, descarga y pretratamiento.
-    \item \textbf{Dimension social y ambiental:} poblacion beneficiada, exposicion, conflictos, equidad, impactos de obra.
-\end{enumerate}
-
-\subsection{Matriz de priorizacion de siguiente etapa}
-\begin{longtable}{p{0.24\textwidth}p{0.12\textwidth}p{0.20\textwidth}p{0.34\textwidth}}
-\toprule
-\textbf{Criterio} & \textbf{Estado} & \textbf{Fuente prevista} & \textbf{Uso} \\
-\midrule
-Concentracion espacial de unidades & Disponible & Clustering & Priorizar zonas, no diseñar trazo. \\
-Señal de proceso humedo & Parcial & DENUE + auditoria & Priorizar validacion. \\
-Tamaño/personal & Parcial & DENUE & Proxy debil de escala; no equivale a caudal. \\
-Distancia a hidrografia & Disponible & GIS & Contexto/priorizacion, no conectividad. \\
-Red sanitaria existente & \pendiente & Organismo operador/levantamiento & Determinar posibilidad de conexion. \\
-Topografia & \pendiente & DEM/levantamiento & Delimitar drenaje por gravedad. \\
-Caudal real & \pendiente & Aforo & Dimensionamiento. \\
-Calidad de descarga & \pendiente & Muestreo & Diseño de pretratamiento/tratamiento. \\
-Poblacion beneficiada/expuesta & \pendiente & INEGI/salud/territorio & Beneficio social y prioridad. \\
-Costo de alternativa & \pendiente & Ingenieria conceptual & Comparacion economica. \\
-\bottomrule
-\end{longtable}
+La visita de campo debe priorizar preguntas diferentes por territorio. En Xalmimilulco/cluster 8 debe verificarse el eslabon entre confeccion, maquila, mezclilla y operaciones de lavado o limpieza no registradas. En San Rafael Ixtapalucan y San Miguel Tianguistenco (clusters 10 y 9) debe comprobarse el proceso real asociado con tejido/hilado. En Santiago Coltzingo/cluster 6 debe validarse la señal de maquila pese a su reducido tamaño. Para procesos potencialmente humedos deben estratificarse el cluster 20 por sus subnucleos, Huejotzingo/cluster 7 y Texmelucan/cluster 15. Esta priorizacion organiza recorridos, entrevistas, aforos y muestreo; no selecciona todavia trazos de colector.
 
 % ============================================================
-\section{Marco de priorizacion multicriterio: propuesta para etapa posterior}
+\section{Siguientes pasos y aportaciones}
 % ============================================================
 
-\begin{alerta}
-No asignar pesos ni producir un ranking de inversion hasta que los criterios faltantes tengan datos comparables y exista una gobernanza explicita de la decision. El analisis actual puede producir un ranking de \textit{prioridad de investigacion/validacion}, no de inversion definitiva.
-\end{alerta}
+Este proyecto convierte un directorio de establecimientos en una base territorial auditable para decidir \textbf{donde investigar primero}. La aportacion principal no es un trazo de colector, sino una forma reproducible de pasar del universo economico a concentraciones espaciales, describir el perfil productivo de cada concentracion y reconocer que resultados son robustos, sensibles o todavia inciertos. El resultado reduce un territorio regional amplio a zonas y preguntas de campo concretas, sin confundir proximidad, actividad registrada o cercania a rios con una descarga comprobada.
 
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Que resultado se quiere priorizar: visita, muestreo, anteproyecto, obra?
-    \item ¿Quien define pesos: equipo tecnico, organismo operador, autoridad, comunidad?
-    \item ¿Que criterios son de beneficio, costo, riesgo o restriccion dura?
-    \item ¿Como se incorporara incertidumbre y sensibilidad a pesos?
-    \item ¿Que umbrales descalifican una alternativa independientemente del puntaje?
-\end{itemize}
-\end{preguntas}
+\subsection{Que se gana con el analisis}
 
-% ============================================================
-\section{Validacion, control de calidad y pruebas de integridad}
-% ============================================================
+Se obtiene, primero, un \textbf{denominador conocido}: 4,365 establecimientos para deteccion y 4,010 para interpretacion dentro de la cuenca. Segundo, se obtiene una geografia comparable de 18 concentraciones interiores y 578 unidades dispersas. Tercero, cada concentracion deja de ser solamente un conjunto de puntos: se caracteriza por SCIAN, municipio, localidad, tamaño laboral, confeccion, tejido, maquila, mezclilla, lavanderia y evidencia hidrica. Cuarto, se cuantifica incertidumbre mediante escenarios alternativos, ARI, Jaccard, persistencia, perturbacion posicional, efecto de borde, ruido y pruebas de sobrerrepresentacion.
 
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Los IDs DENUE son unicos en cada universo esperado?
-    \item ¿Se conserva el conteo al hacer joins que no deberian multiplicar filas?
-    \item ¿Hay geometrias nulas, invalidas o fuera de rango?
-    \item ¿Las capas estan en el CRS esperado antes de medir distancias?
-    \item ¿Los perfiles se calculan exactamente sobre 4,010 registros dentro de cuenca?
-    \item ¿Las variables productivas estan ausentes del paso de clustering?
-    \item ¿Los PDFs/figuras corresponden al ultimo estado de datos y codigo?
-\end{itemize}
-\end{preguntas}
+Esto cambia la capacidad de decision. Antes se conocian establecimientos individuales y algunos casos locales; ahora pueden reconocerse sistemas territoriales distintos: Xalmimilulco como concentracion de confeccion--maquila--mezclilla; Ixtapalucan y Tianguistenco como nucleos de tejido/hilado; Huejotzingo y Texmelucan como zonas de coexistencia; y el cluster metropolitano 20 como una estructura extensa con predominio de lavanderias y subnucleos internos. La actividad dispersa tambien queda documentada y puede incorporarse a un muestreo estratificado.
 
-\begin{evidencia}
-Adjuntar la validacion automatizada, manifiesto de archivos y hashes. El inventario actual señala que \ruta{218\_validar\_cierre\_parte2.py} genera \ruta{validacion\_final.csv} e \ruta{inventario\_cierre.csv}.
-\end{evidencia}
+\subsection{Como acceder a los resultados en este reporte}
 
-% ============================================================
-\section{Incertidumbre, sesgos y limitaciones}
-% ============================================================
-
-\subsection{Registro de incertidumbres}
-\begin{longtable}{p{0.21\textwidth}p{0.25\textwidth}p{0.18\textwidth}p{0.27\textwidth}}
-\toprule
-\textbf{Fuente} & \textbf{Posible efecto} & \textbf{Severidad} & \textbf{Mitigacion/documentacion} \\
-\midrule
-Cobertura DENUE & Omision de informales/no registrados & Alta & Fuentes complementarias y campo. \\
-Giro declarado & No refleja todos los procesos internos & Alta & Auditoria y entrevistas. \\
-Coordenada & Error posicional afecta distancias/cluster local & Media/Alta & Validar casos sensibles y perturbacion espacial. \\
-Fecha de registro & Cierres/cambios de actividad & Media & Fecha de consulta y verificacion. \\
-Filtro textual & Falsos positivos/negativos & Media & Diccionarios versionados y auditoria. \\
-Limite de cuenca & Efecto de borde & Media & Universo ampliado de deteccion. \\
-Clustering & Sensibilidad a parametros y densidad & Media & Escenarios, ARI/Jaccard/persistencia. \\
-Proxy personal & No equivale a produccion ni caudal & Alta para ingenieria & No usar para dimensionamiento. \\
-Distancia a rio & No equivale a ruta de descarga & Alta & Requiere red/topografia/descarga. \\
-\bottomrule
-\end{longtable}
-
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Que incertidumbres pueden cambiar una prioridad territorial?
-    \item ¿Cuales solo afectan detalle, no la conclusion general?
-    \item ¿Que incertidumbre puede reducirse barato mediante una visita o una nueva fuente?
-\end{itemize}
-\end{preguntas}
-
-% ============================================================
-\section{Reproducibilidad computacional}
-% ============================================================
-
-\subsection{Estructura del pipeline}
-Documentar scripts 00--10, 99, 100--102 y 200--222 por fase, entradas, salidas y dependencias.
-
-\subsection{Orden de ejecucion}
-\begin{verbatim}
-python scripts/101_main_cuenca_puebla.py --todos-scian
-python scripts/219_ejecutar_parte2_completa.py
-python scripts/220_segunda_pasada_analitica.py
-python scripts/221_figuras_interactivo_segunda_pasada.py
-python scripts/222_documentar_segunda_pasada.py
-python scripts/217_compilar_documentos_parte2.py
-\end{verbatim}
-
-\subsection{Entorno}
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Version exacta de Python?
-    \item ¿Versiones de pandas, geopandas, shapely, scikit-learn, scipy, matplotlib, plotly y HDBSCAN utilizado?
-    \item ¿Sistema operativo y versiones de GDAL/PROJ?
-    \item ¿Existe \ruta{requirements.txt}, \ruta{pyproject.toml} o \ruta{environment.yml}?
-    \item ¿Puede reconstruirse el reporte desde una maquina limpia?
-\end{itemize}
-\end{preguntas}
-
-\begin{alerta}
-El inventario actual indica que no se encontro archivo explicito de entorno ni repositorio Git en la raiz. Para una cadena de decision de inversion, conviene corregir ambos puntos antes de congelar el reporte final.
-\end{alerta}
-
-% ============================================================
-\section{Matriz maestra de trazabilidad de afirmaciones}
-% ============================================================
-
-\textbf{Uso:} cada afirmacion relevante del resumen ejecutivo y conclusiones debe poder seguirse hasta su evidencia.
-
-\begin{landscape}
+\begin{table}[H]
+\centering
 \small
-\begin{longtable}{p{0.24\textwidth}p{0.15\textwidth}p{0.15\textwidth}p{0.17\textwidth}p{0.12\textwidth}p{0.13\textwidth}}
+\caption{Guia de lectura y localizacion de resultados.}
+\begin{tabularx}{\textwidth}{p{2.0cm}p{4.4cm}X}
 \toprule
-\textbf{Afirmacion} & \textbf{Fuente primaria} & \textbf{Transformacion/script} & \textbf{Salida que la demuestra} & \textbf{Validacion} & \textbf{Caveat} \\
+\textbf{Secciones} & \textbf{Contenido} & \textbf{Uso en la siguiente etapa} \\
 \midrule
-El universo ampliado contiene 4,365 establecimientos & DENUE + regla sectorial & 101/201 & resumen de universo / matriz maestra & conteo + unicidad & Depende de cobertura y criterio sectorial. \\
-4,010 se ubican dentro de cuenca & capa cuenca + puntos & 101/201/202 & matriz/geopackage & interseccion espacial & Depende de delimitacion y precision posicional. \\
-La solucion principal tiene 22 clusters & matriz XY & 204--206 & resumen escenario + membresia & reproducibilidad parametros & No equivale a zonas de servicio. \\
-\pendiente & \pendiente & \pendiente & \pendiente & \pendiente & \pendiente \\
+4--10 & Universos, filtros, auditoria legacy, MH y transicion regional & Saber que entra, que se excluye y con que nivel de evidencia. \\
+11 & Diagnostico espacial, k-NN, KDE, hexagonos y borde & Reconocer escalas de concentracion y heterogeneidad territorial. \\
+12--13 & Experimentos, seleccion y estabilidad del clustering & Elegir una particion reproducible y localizar membresias sensibles. \\
+14 & Clusters, envolventes, borde y ruido & Ubicar concentraciones y actividad dispersa sin tratarlas como zonas de servicio. \\
+15 & Perfil economico y productivo & Saber que actividades contiene cada concentracion. \\
+16 & Sobrerrepresentacion & Identificar especializaciones relativas y su soporte estadistico. \\
+17 & Similitud y tipologias & Comparar territorios alejados con perfiles productivos semejantes. \\
+18 & Mega-cluster y subnucleos & Diseñar estratos de recorrido dentro del continuo metropolitano. \\
+19 & Resultados por cuenca, municipio y localidad & Seleccionar zonas y preguntas prioritarias para verificacion. \\
+20 & Aportaciones, archivos y secuencia siguiente & Conectar el diagnostico con hidrologia, drenaje, tratamiento y decision. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Donde estan guardados los datos relevantes}
+
+Todas las rutas siguientes son relativas a la raiz del repositorio. Los CSV pueden abrirse en una hoja de calculo o en Python/R; los GPKG en QGIS/ArcGIS o mediante GeoPandas; los JSON en un editor de texto; y el HTML interactivo en un navegador. El archivo \ruta{docs/INVENTARIO\_GENERAL\_PROYECTO.md} ofrece una entrada general, mientras \ruta{docs/parte\_2/trazabilidad/} documenta scripts y productos de la fase de clustering.
+
+\begin{longtable}{p{0.29\textwidth}p{0.28\textwidth}p{0.34\textwidth}}
+\caption{Productos del repositorio para las proximas etapas.}\\
+\toprule
+\textbf{Ruta} & \textbf{Contenido} & \textbf{Uso siguiente} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Ruta} & \textbf{Contenido} & \textbf{Uso siguiente} \\
+\midrule
+\endhead
+\ruta{outputs/parte\_2/01\_matriz/matriz\_maestra\_establecimientos.csv} & Universo analitico integrado, IDs, coordenadas y señales & Base para campo, nuevas variables y cruces institucionales. \\
+\ruta{outputs/parte\_2/02\_geometrias/establecimientos\_parte2.gpkg} & Establecimientos georreferenciados & Cruce GIS con hidrologia, drenaje, relieve y plantas. \\
+\ruta{outputs/parte\_2/02\_geometrias/contexto\_parte2.gpkg} & Cuenca y contexto territorial utilizado & Mantener limites y CRS consistentes. \\
+\ruta{outputs/parte\_2/05\_seleccion/persistencia\_establecimientos.csv} & Estabilidad por establecimiento & Separar nucleos robustos de puntos sensibles en campo. \\
+\ruta{outputs/parte\_2/06\_clusters/solucion\_principal.gpkg} & Membresias y geometria de la solucion elegida & Unidad principal para superposiciones espaciales. \\
+\ruta{outputs/parte\_2/06\_clusters/resumen\_clusters\_borde.csv} & Conteos dentro/fuera y cruce del limite & Controlar efecto de borde en nuevas capas. \\
+\ruta{outputs/parte\_2/07\_perfiles/establecimientos\_perfilados\_cuenca.csv} & Registro interior con cluster y perfil productivo & Preparar directorios de visita y estratos de muestreo. \\
+\ruta{outputs/parte\_2/07\_perfiles/perfiles\_clusters.csv} & Resumen productivo de clusters & Comparar necesidades de verificacion por zona. \\
+\ruta{outputs/parte\_2/07\_perfiles/composicion\_municipal.csv} y \ruta{composicion\_localidad.csv} & Distribucion territorial & Enlace con autoridades y planeacion local. \\
+\ruta{outputs/parte\_2/08\_sobrerrepresentacion/sobrerrepresentacion\_senales.csv} & Lift, OR, Fisher y BH & Seleccionar especializaciones que requieren instrumentos de campo distintos. \\
+\ruta{outputs/parte\_2/11\_cierre/fichas\_resumen\_clusters.csv} & Ficha compacta por cluster & Tabla de entrada para priorizacion de validacion. \\
+\ruta{outputs/parte\_2/11\_cierre/diagnostico\_mega\_cluster.gpkg} & Puntos, subnucleos y hexagonos del cluster 20 & Planear recorridos metropolitanos sin redefinir membresia. \\
+\ruta{outputs/parte\_2/11\_cierre/validacion\_final.csv} y \ruta{inventario\_cierre.csv} & Pruebas e hashes de productos & Verificar integridad antes de entregar o actualizar. \\
+\ruta{outputs/parte\_2/12\_atlas/} & Fichas PNG por cluster y ruido & Consulta visual rapida y comunicacion con campo. \\
+\ruta{outputs/parte\_2/14\_segunda\_pasada/subnucleos\_mega\_cluster\_documentados.csv} & Geometria y perfil de 18 subnucleos & Estratificacion exploratoria de visitas en el cluster 20. \\
+\ruta{outputs/parte\_2/14\_segunda\_pasada/explorador\_interactivo\_clusters.html} & Explorador interactivo & Revision visual de establecimientos y agrupamientos. \\
+\ruta{outputs/cuenca\_alto\_atoyac\_puebla\_estricto\_mh/tables/} & Universo estricto con integracion MH y auditoria & Contrastar evidencia hidrica y observaciones de campo. \\
+\ruta{outputs/xalmimilulco/} y \ruta{outputs/huejotzingo/} & Productos locales y comparaciones legacy & Conservar la trazabilidad de la fase inicial. \\
 \bottomrule
 \end{longtable}
-\normalsize
-\end{landscape}
 
-% ============================================================
-\section{Conclusiones}
-% ============================================================
+\subsection{Integracion con hidrologia, drenaje y plantas de tratamiento}
 
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Que aprendimos sobre la distribucion del sector que no era visible antes?
-    \item ¿Que patrones son robustos y cuales permanecen inciertos?
-    \item ¿Que territorios justifican una segunda etapa de verificacion?
-    \item ¿Que evidencia adicional es la mas valiosa para reducir incertidumbre?
-    \item ¿Cual es la decision concreta que se recomienda tomar ahora, y cual aun no?
-\end{itemize}
-\end{preguntas}
+El valor de las concentraciones surge al combinarlas con la infraestructura y el funcionamiento real del agua. La membresia espacial indica donde hay proximidad entre establecimientos; el perfil productivo indica que procesos conviene verificar; la hidrologia aporta cauces, subcuencas y receptores; la topografia y la red de drenaje determinan rutas posibles, pendientes, bombeo y conectividad; las plantas de tratamiento aportan ubicacion, capacidad disponible, tecnologia y compatibilidad con efluentes textiles. Ninguna de estas capas sustituye a las otras.
 
-\begin{evidencia}
-Las conclusiones deben estar clasificadas como: \textbf{resultado observado}, \textbf{inferencia razonable}, \textbf{hipotesis de trabajo} o \textbf{recomendacion}. Evitar mezclar categorias.
-\end{evidencia}
-
-% ============================================================
-\section{Plan de siguientes pasos}
-% ============================================================
-
+La integracion recomendada sigue esta secuencia:
 \begin{enumerate}
-    \item Congelar y versionar el repositorio actual.
-    \item Crear archivo de entorno reproducible.
-    \item Cerrar diccionarios y reglas de clasificacion con version.
-    \item Completar auditoria manual de registros prioritarios.
-    \item Generar fichas por cluster/subnucleo con incertidumbre.
-    \item Cruzar zonas prioritarias con red sanitaria y topografia.
-    \item Diseñar campaña de campo: verificacion, aforo y muestreo.
-    \item Construir balance preliminar de caudales/cargas por zona validada.
-    \item Desarrollar alternativas conceptuales de colectores.
-    \item Evaluar tecnica, economica, ambiental y socialmente las alternativas.
+    \item Superponer \ruta{solucion\_principal.gpkg} con red sanitaria, colectores, atarjeas, pozos de visita, plantas, cauces, modelo de elevacion y limites operativos.
+    \item Delimitar areas realmente tributarias por gravedad y separar establecimientos cercanos en linea recta pero desconectados hidraulicamente.
+    \item Verificar en campo actividad, proceso, punto y forma de descarga, horario, produccion, pretratamiento y estado operativo.
+    \item Aforar y muestrear por estratos productivos: lavanderia/acabado, confeccion--maquila--mezclilla, tejido/hilado y actividad dispersa.
+    \item Estimar caudales y cargas por zona validada, con incertidumbre y escenarios de conexion.
+    \item Comparar capacidad y compatibilidad de las plantas existentes antes de plantear ampliacion, pretratamiento o nueva infraestructura.
+    \item Formular alternativas de conduccion y tratamiento; evaluar CAPEX, OPEX, riesgo, beneficio ambiental, poblacion expuesta, permisos y gobernanza.
 \end{enumerate}
 
-% ============================================================
+El producto final de esa integracion sera una estrategia territorial: que zonas requieren inspeccion inmediata, donde conviene muestrear, que concentraciones pueden compartir una solucion, cuales necesitan pretratamiento, que planta podria recibirlas y que alternativas son inviables por topografia o capacidad. Solo entonces corresponde pasar de \emph{prioridad de validacion} a \emph{prioridad de anteproyecto} y despues a una decision de inversion.
+
+\subsection{Siguientes pasos inmediatos}
+
+\begin{enumerate}
+    \item Congelar una version reproducible de datos, diccionarios, scripts, hashes y entorno de software.
+    \item Preparar directorios de campo desde \ruta{establecimientos\_perfilados\_cuenca.csv}, conservando ID DENUE, cluster, persistencia, evidencia y fuente MH cuando aplique.
+    \item Priorizar recorridos diferenciados en Xalmimilulco, Ixtapalucan, Tianguistenco, Coltzingo, Huejotzingo, Texmelucan y subnucleos seleccionados del cluster 20.
+    \item Solicitar al organismo operador capas de drenaje y plantas con diametro, material, cota, sentido, capacidad y estado.
+    \item Integrar DEM/topografia, hidrografia validada, descargas registradas y permisos en el mismo CRS metrico EPSG:32614.
+    \item Diseñar campaña de aforo y calidad del agua: caudal medio y maximo, DQO/DBO, SST, color, temperatura, pH, sales, metales y parametros asociados al proceso.
+    \item Construir balances preliminares de caudal y carga por zona hidraulicamente conectada.
+    \item Desarrollar y comparar alternativas conceptuales de colector, pretratamiento y tratamiento mediante criterios tecnicos, economicos, ambientales y sociales.
+\end{enumerate}
+
+\begin{alerta}
+El analisis actual permite decidir donde validar y que medir. No permite todavia definir trazos, diametros, capacidad de planta ni monto de inversion. Esas decisiones requieren conectividad hidraulica, caudales, calidad de descarga, topografia, infraestructura existente y evaluacion de alternativas.
+\end{alerta}
+
 \appendix
 \section{Anexo A. Inventario de scripts y productos}
 % ============================================================
 
-Incorporar el inventario completo del repositorio con, al menos: script, version/hash, objetivo, entradas, salidas, parametros, dependencia anterior, uso actual y estatus (activo/historico/deprecado).
+El inventario general se consulta en \ruta{docs/INVENTARIO\_GENERAL\_PROYECTO.md}. Para la Parte 2 existen dos indices especializados: \ruta{docs/parte\_2/trazabilidad/inventario\_scripts\_200.md} y \ruta{inventario\_outputs\_cierre.md}. El primero describe responsabilidades y dependencias de los scripts; el segundo enumera productos analiticos. Los hashes y tamaños del cierre se encuentran en \ruta{outputs/parte\_2/11\_cierre/inventario\_cierre.csv}.
+
+\begin{longtable}{p{0.20\textwidth}p{0.33\textwidth}p{0.37\textwidth}}
+\caption{Inventario funcional resumido de scripts activos.}\\
+\toprule
+\textbf{Scripts} & \textbf{Funcion} & \textbf{Producto principal} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Scripts} & \textbf{Funcion} & \textbf{Producto principal} \\
+\midrule
+\endhead
+\ruta{00--10} & Flujo legacy de Xalmimilulco/Huejotzingo: carga, normalizacion, filtros, auditoria y mapas & \ruta{outputs/xalmimilulco/}, \ruta{outputs/huejotzingo/} y tablas legacy. \\
+\ruta{100--102} & Construccion regional de universos amplio, estricto, con/sin MH y todos SCIAN & \ruta{outputs/cuenca\_alto\_atoyac\_puebla*/}. \\
+\ruta{200\_parte2\_comun.py} & Rutas, constantes, señales y utilidades compartidas & Configuracion comun de toda la Parte 2. \\
+\ruta{201--203} & Auditoria, matriz maestra, geometrias y diagnostico k-NN & Etapas \ruta{00\_auditoria} a \ruta{03\_diagnosticos}. \\
+\ruta{204--206} & Bateria DBSCAN/HDBSCAN/OPTICS, seleccion y materializacion & Escenarios, ARI/Jaccard, persistencia y \ruta{solucion\_principal.gpkg}. \\
+\ruta{207--210} & Perfilado, sobrerrepresentacion, similitud y figuras & Etapas \ruta{07\_perfiles} a \ruta{10\_figuras}. \\
+\ruta{211--218} & Auditoria de cierre, atlas, documentos y validacion & Etapas \ruta{11\_cierre}, \ruta{12\_atlas}, \ruta{13\_figuras\_finales}. \\
+\ruta{219\_ejecutar\_parte2\_completa.py} & Orquestacion reproducible del pipeline principal & Reconstruccion ordenada de la Parte 2. \\
+\ruta{220--222} & Segunda pasada: estabilidad, subnucleos, matrices y documentacion & \ruta{outputs/parte\_2/14\_segunda\_pasada/}. \\
+\ruta{223\_figuras\_diagnostico\_kde\_hex.py} & KDE, mallas hexagonales y curvas k-distancia & \ruta{outputs/parte\_2/03\_diagnosticos/figuras/}. \\
+\bottomrule
+\end{longtable}
+
+Los scripts 00--10 deben considerarse historicos pero vigentes para trazabilidad local; 100--102 y 200--223 constituyen el flujo regional activo. Un script no debe eliminarse solo por haber sido reemplazado: primero debe marcarse como historico y conservarse la salida con la que se utilizo en el reporte.
 
 \begin{evidencia}
 El inventario actual documenta 38 scripts Python y 15 carpetas/etapas de resultados en \ruta{outputs/parte\_2/}. Conviene convertir ese inventario en una tabla generada automaticamente para que no quede obsoleta.
@@ -1051,7 +1802,40 @@ El inventario actual documenta 38 scripts Python y 15 carpetas/etapas de resulta
 \section{Anexo B. Diccionario de datos de la matriz maestra}
 % ============================================================
 
-Para cada variable: nombre, tipo, unidad, fuente, transformacion, valores validos, nulos, significado, version y uso en analisis. Marcar explicitamente si la variable entra al clustering, al perfilado o solo a visualizacion.
+La fuente operativa mas amplia es \ruta{outputs/parte\_2/01\_matriz/matriz\_maestra\_establecimientos.csv}. El diccionario de señales de la segunda pasada se conserva en \ruta{outputs/parte\_2/14\_segunda\_pasada/diccionario\_variables\_analiticas.csv}. La siguiente tabla identifica las variables necesarias para reutilizar la matriz sin introducir atributos productivos en el clustering.
+
+\begin{longtable}{p{0.22\textwidth}p{0.13\textwidth}p{0.27\textwidth}p{0.28\textwidth}}
+\caption{Diccionario minimo de variables analiticas.}\\
+\toprule
+\textbf{Variable/familia} & \textbf{Tipo/unidad} & \textbf{Significado y fuente} & \textbf{Uso} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Variable/familia} & \textbf{Tipo/unidad} & \textbf{Significado y fuente} & \textbf{Uso} \\
+\midrule
+\endhead
+\texttt{d\_llave} & texto & Identificador analitico estable derivado de la integracion & Joins, auditoria y trazabilidad; no define clusters. \\
+\texttt{clee} & texto & Clave unica DENUE cuando esta disponible & Enlace con DENUE y fuentes externas. \\
+\texttt{nom\_est}, \texttt{raz\_soc} & texto & Nombre comercial y razon social DENUE/MH & Auditoria y señales textuales; no clustering. \\
+\texttt{cve\_scian}, \texttt{desc\_scian} & codigo/texto & Actividad economica declarada & Universo y perfilado posterior. \\
+\texttt{Longitud}, \texttt{Latitud} & grados & Coordenadas originales & Control y construccion geometrica. \\
+\texttt{x\_utm14n}, \texttt{y\_utm14n} & metros & Coordenadas EPSG:32614 & Unicas variables que entran al clustering espacial. \\
+\texttt{dentro\_cuenca} & booleano & Interseccion con poligono de cuenca & Separa deteccion e interpretacion. \\
+\texttt{Municipio}, \texttt{localidad} & categoria & Adscripcion territorial DENUE & Perfilado y resultados territoriales. \\
+\texttt{evidencia\_hidrica} & categoria & \texttt{SI}, \texttt{REVISAR}, \texttt{SIN\_EVIDENCIA} & Prioridad de validacion; nunca entra al clustering. \\
+\texttt{textil}, \texttt{mezclilla}, \texttt{maquila} & booleano & Señales multilabel de diccionario & Perfil, lift y tipologias. \\
+\texttt{humedo\_explicito}, \texttt{lavado\_generico} & booleano & Evidencia textual directa o ambigua de proceso humedo & Estratificacion de campo, no confirmacion de descarga. \\
+\texttt{proceso\_seco\_explicito} & booleano & Confeccion, corte, costura, bordado u operaciones secas declaradas & Cautela y perfil productivo. \\
+\texttt{actividad\_*} & booleano & Familias posteriores: lavanderia, acabado, confeccion, telas, tejido/hilado, bordado & Perfilado, sobrerrepresentacion y similitud. \\
+\texttt{cluster} & entero & $-1$ ruido; $0$--$21$ cluster principal & Resultado espacial, no atributo de entrada. \\
+\texttt{probabilidad} & 0--1 & Fuerza de membresia HDBSCAN & Incertidumbre local. \\
+\texttt{persistencia\_territorial} & 0--1 & Fraccion de escenarios donde se conserva asignacion equivalente & Robustez por establecimiento. \\
+\texttt{grupo\_espacial} & categoria & \texttt{CLUSTER\_NNN} o \texttt{RUIDO\_DISPERSO} & Agregacion de perfiles y tablas. \\
+\texttt{Descripcion estrato personal ocupado} & categoria & Intervalo DENUE de personal & Proxy descriptivo; no caudal ni produccion. \\
+\bottomrule
+\end{longtable}
+
+Los nulos son admisibles en campos administrativos o de contacto, pero no en identificador analitico, coordenadas usadas, bandera de cuenca o membresia final. Antes de un nuevo cruce deben comprobarse unicidad de \texttt{d\_llave}, conteos y CRS.
 
 % ============================================================
 \section{Anexo C. Diccionarios SCIAN y texto}
@@ -1106,60 +1890,123 @@ En total, el archivo contiene 203 asociaciones termino--etiqueta y 143 terminos 
 \section{Anexo D. Bitacora de auditoria manual}
 % ============================================================
 
-Tabla por establecimiento con evidencia, URL, fecha, revisor, nota factual, interpretacion, decision y confianza.
+La auditoria manual de version 1 se conserva en los productos legacy de Xalmimilulco y Huejotzingo. La integracion regional de la fuente MH se documenta en \ruta{outputs/cuenca\_alto\_atoyac\_puebla\_estricto\_mh/tables/auditoria\_integracion\_mh.csv}; esta fuente procede del trabajo de campo de Mary Helen Figueroa y Mayra Jaqueline Ramirez y se mantiene separada de DENUE, aunque sus registros se enlazan con claves DENUE cuando es posible.
+
+Para nuevas visitas debe añadirse una fila por establecimiento sin sobrescribir la evidencia previa. El esquema minimo es:
+
+\begin{longtable}{p{0.20\textwidth}p{0.18\textwidth}p{0.52\textwidth}}
+\toprule
+\textbf{Campo} & \textbf{Tipo} & \textbf{Contenido} \\
+\midrule
+\texttt{d\_llave}, \texttt{clee} & texto & Identificadores interno y DENUE para enlazar la visita. \\
+\texttt{fuente}, \texttt{revisor} & categoria/texto & DENUE, MH, visita, autoridad u otra fuente; persona responsable. \\
+\texttt{fecha\_observacion} & fecha & Fecha efectiva de consulta o visita. \\
+\texttt{url/documento} & texto & Evidencia verificable o referencia al archivo resguardado. \\
+\texttt{operacion\_actual} & categoria & Activo, cerrado, traslado, no localizado, por confirmar. \\
+\texttt{proceso\_observado} & texto controlado & Lavado, teñido, acabado, confeccion, tejido, maquila u otro. \\
+\texttt{uso\_agua} & categoria & Confirmado, declarado, indicio, no observado, desconocido. \\
+\texttt{forma\_descarga} & categoria & Alcantarillado, cauce, infiltracion, reuso, transporte, desconocida. \\
+\texttt{nota\_factual} & texto & Observacion separada de la interpretacion analitica. \\
+\texttt{decision} & categoria & Incluir, revisar, excluir o mantener sin evidencia. \\
+\texttt{confianza} & ordinal & Alta, media o baja, con justificacion. \\
+\bottomrule
+\end{longtable}
+
+Las fotografias, entrevistas y coordenadas corregidas deben almacenarse fuera del CSV con un nombre estable referenciado por \texttt{d\_llave}; cualquier dato personal o sensible requiere controles de acceso y una politica de resguardo.
 
 % ============================================================
 \section{Anexo E. Catalogo de figuras, mapas y tablas}
 % ============================================================
 
-Registrar titulo, archivo, script generador, fuente, fecha de creacion, universo, CRS y mensaje analitico. Incluir tanto mapas PNG como HTML interactivos.
+El atlas se encuentra en \ruta{outputs/parte\_2/12\_atlas/}; las figuras de cierre en \ruta{outputs/parte\_2/13\_figuras\_finales/}; los diagnosticos KDE/hexagonales en \ruta{outputs/parte\_2/03\_diagnosticos/figuras/}; y las figuras de segunda pasada en \ruta{outputs/parte\_2/14\_segunda\_pasada/figuras/}. El registro machine-readable de estas ultimas esta en \ruta{registro\_documentacion\_figuras.csv}.
+
+\begin{longtable}{p{0.25\textwidth}p{0.23\textwidth}p{0.42\textwidth}}
+\toprule
+\textbf{Producto} & \textbf{Generador/origen} & \textbf{Mensaje y uso} \\
+\midrule
+\ruta{01\_kde\_hex\_cuenca.png} & \ruta{223\_figuras\_diagnostico\_kde\_hex.py} & Intensidad y conteos multiescala; no asigna clusters. \\
+\ruta{03\_curvas\_k\_distancia.png} & Script 223 & Sustenta exploracion de escalas, no un umbral unico. \\
+\ruta{02\_clusters\_principales.png} & Script 215 & Localiza clusters interiores y ruido. \\
+\ruta{03\_persistencia\_territorial.png} & Script 215 & Distingue nucleos robustos y puntos sensibles. \\
+\ruta{04\_tipos\_productivos\_clusters.png} & Script 215 & Muestra perfiles asignados despues del clustering. \\
+\ruta{07\_rasgos\_distintivos.png} & Script 215 & Resume señales con lift y evidencia suficiente. \\
+\ruta{09\_similitud\_perfiles.png} & Script 215 & Compara perfiles productivos, no proximidad espacial. \\
+\ruta{cluster\_004.png--cluster\_021.png} & Script 215 & Fichas visuales estandar de cada cluster interior. \\
+\ruta{ruido\_disperso.png} & Script 215 & Perfil y geografia de unidades no agrupadas. \\
+\ruta{03\_subnucleos\_mega\_etiquetados.png} & Script 221 & Particion exploratoria interna del cluster 20. \\
+\ruta{explorador\_interactivo\_clusters.html} & Scripts 220--221 & Consulta interactiva de puntos y agrupamientos. \\
+\bottomrule
+\end{longtable}
+
+Todos los mapas metricos de Parte 2 utilizan EPSG:32614 durante mediciones. Una exportacion puede ocultar el CRS; para analisis debe utilizarse el GPKG de origen y no georreferenciar el PNG.
 
 % ============================================================
 \section{Anexo F. Glosario metodologico}
 % ============================================================
 
-Incluir como minimo: SCIAN, DENUE, universo sectorial ampliado, evidencia hidrica, proceso humedo, CRS, UTM, efecto de borde, DBSCAN, HDBSCAN, OPTICS, ruido, min\_cluster\_size, min\_samples, EOM, ARI, Jaccard, persistencia, KDE, k-NN, lift, odds ratio, Fisher exacta, Benjamini--Hochberg, distancia de perfiles, linkage y subnucleo diagnostico.
+\begin{longtable}{p{0.23\textwidth}p{0.67\textwidth}}
+\toprule
+\textbf{Termino} & \textbf{Definicion en este proyecto} \\
+\midrule
+DENUE & Directorio Estadistico Nacional de Unidades Economicas; fuente registral, no censo de descargas. \\
+SCIAN & Sistema de clasificacion de actividad economica utilizado para construir y perfilar universos. \\
+Universo sectorial & Establecimientos textiles/manufactureros y lavanderias definidos para detectar concentraciones sin exigir evidencia hidrica explicita. \\
+Evidencia hidrica & Etiqueta \texttt{SI}, \texttt{REVISAR} o \texttt{SIN\_EVIDENCIA}; orienta auditoria, no prueba descarga. \\
+Proceso humedo & Operacion cuyo texto o clasificacion sugiere lavado, teñido, acabado u otro uso directo de agua. \\
+CRS/UTM & Sistema de referencia; EPSG:32614 expresa coordenadas y distancias en metros. \\
+Efecto de borde & Distorsion causada al cortar vecinos en el limite de la cuenca; se reduce detectando sobre universo ampliado. \\
+DBSCAN & Clustering por densidad con radio $\varepsilon$ fijo y \texttt{min\_samples}. \\
+HDBSCAN & Extension jerarquica para densidad variable; genera clusters, ruido y probabilidad de membresia. \\
+OPTICS & Ordenamiento por alcanzabilidad usado como contraste de densidades variables. \\
+Ruido & Punto no asignado a un cluster bajo una especificacion; no significa error ni irrelevancia. \\
+\texttt{min\_cluster\_size} & Tamaño minimo de una rama persistente en HDBSCAN. \\
+\texttt{min\_samples} & Parametro de conservadurismo de densidad local. \\
+EOM/\emph{leaf} & EOM favorece ramas persistentes amplias; \emph{leaf} revela ramas locales mas finas. \\
+ARI & Similitud entre particiones completa, corregida por coincidencia esperada al azar. \\
+Jaccard & Solapamiento entre dos conjuntos: interseccion dividida por union. \\
+Persistencia & Frecuencia con la que un establecimiento conserva asignacion equivalente entre escenarios. \\
+KDE & Superficie suavizada de intensidad espacial dependiente del ancho de banda. \\
+k-NN/k-distancia & Distancia al vecino de orden $k$; diagnostica escalas y heterogeneidad de densidad. \\
+Lift & Prevalencia del cluster dividida por prevalencia base; 2 significa el doble de frecuencia relativa. \\
+Odds ratio & Razon de momios dentro del cluster frente al resto del universo. \\
+Fisher exacta & Prueba de asociacion para tabla $2\times2$, valida aun con conteos pequeños. \\
+Benjamini--Hochberg & Ajuste que controla la tasa esperada de falsos descubrimientos en pruebas multiples. \\
+Distancia de perfiles & Combinacion 50/50 de distancia coseno de señales y Jensen--Shannon de SCIAN. \\
+\emph{Linkage} & Regla para fusionar perfiles en la jerarquia; se utilizo enlace promedio. \\
+Subnucleo diagnostico & Rama local del cluster 20 usada para exploracion; no reemplaza la membresia principal. \\
+\bottomrule
+\end{longtable}
 
 % ============================================================
 \section{Anexo G. Registro de decisiones metodologicas}
 % ============================================================
 
-Para cada decision: ID, fecha, pregunta, opciones consideradas, decision, justificacion, evidencia, responsable, consecuencias, archivos afectados y condicion que obligaria a revisarla.
+Las decisiones formales de Parte 2 se encuentran en \ruta{docs/parte\_2/decisiones/}. Cada archivo conserva contexto, decision, justificacion, consecuencias y condiciones de revision.
 
-% ============================================================
-\section{Anexo H. Registro de cambios}
-% ============================================================
-
-\begin{longtable}{p{0.12\textwidth}p{0.16\textwidth}p{0.18\textwidth}p{0.44\textwidth}}
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{p{1cm}p{4.6cm}X}
 \toprule
-\textbf{Version} & \textbf{Fecha} & \textbf{Responsable} & \textbf{Cambio} \\
+\textbf{ID} & \textbf{Archivo} & \textbf{Decision principal} \\
 \midrule
-0.1 & \today & \pendiente & Estructura maestra y guia de evidencia. \\
+001 & \ruta{001\_definicion\_universo.md} & Separar universo sectorial de evidencia hidrica y conservar reglas auditables. \\
+002 & \ruta{002\_borde\_crs\_y\_distancia.md} & Detectar sobre universo ampliado y medir en EPSG:32614. \\
+003 & \ruta{003\_metodos\_y\_seleccion.md} & Comparar DBSCAN, HDBSCAN y OPTICS; seleccionar por multiples criterios. \\
+004 & \ruta{004\_ruido\_perfiles\_y\_sobrerrepresentacion.md} & Conservar ruido y perfilar solo despues de fijar la geografia. \\
+005 & \ruta{005\_cierre\_y\_transicion\_parte\_3.md} & Congelar resultados y definir requisitos antes de la etapa hidraulica. \\
 \bottomrule
-\end{longtable}
+\end{tabularx}
+\end{table}
 
-% ============================================================
-\section{Anexo I. Checklist previo a publicacion}
-% ============================================================
+Una nueva decision debe registrar fecha, responsable, alternativas, evidencia, archivos afectados y condicion de revision. Cambios en universo, CRS, parametros principales o diccionarios requieren una nueva version y no deben modificar silenciosamente los registros anteriores.
 
-\begin{itemize}
-    \item[$\square$] Todas las cifras del resumen ejecutivo se reproducen desde salidas finales.
-    \item[$\square$] Todas las figuras indican universo, fuente, fecha y CRS cuando aplica.
-    \item[$\square$] Ninguna distancia geografica fue calculada en grados.
-    \item[$\square$] El clustering usa exclusivamente variables espaciales declaradas.
-    \item[$\square$] Se conserva el ruido y se explica su interpretacion.
-    \item[$\square$] Sobrerrepresentacion reporta base, tamaño absoluto y correccion multiple.
-    \item[$\square$] El mega-cluster no fue reemplazado silenciosamente por subclusters exploratorios.
-    \item[$\square$] El reporte distingue presencia economica de evidencia de descarga.
-    \item[$\square$] El reporte distingue prioridad de investigacion de prioridad de inversion.
-    \item[$\square$] Existen entorno reproducible y version congelada del codigo.
-    \item[$\square$] Los hashes de fuentes y productos finales estan archivados.
-    \item[$\square$] Existe una ruta de trazabilidad para cada conclusion principal.
-\end{itemize}
 
 % ============================================================
 \section{Anexo J. Fuentes y antecedentes a incorporar}
 % ============================================================
+
+La bibliografia utilizada por el reporte se administra en \ruta{docs/reporte\_completo/repote\_completo.bib}. Las fuentes registrales y espaciales efectivamente consumidas por el pipeline se inventarian en \ruta{outputs/parte\_2/00\_auditoria/inventario\_fuentes.csv}. Para una entrega final, cada capa debe conservar institucion, titulo oficial, version o fecha de corte, URL de descarga, CRS, licencia y hash del archivo recibido.
 
 \begin{itemize}
     \item INEGI -- DENUE y diccionario de datos de la version utilizada.
@@ -1169,6 +2016,8 @@ Para cada decision: ID, fecha, pregunta, opciones consideradas, decision, justif
     \item Literatura academica y tecnica sobre contaminacion, actividad textil y salud ambiental en la Cuenca del Alto Atoyac.
     \item \textit{Salud ambiental en la Cuenca del Alto Atoyac: situacion, peligros ambientales y acciones para reducir el riesgo de enfermedades cronicas no transmisibles}, como antecedente contextual a revisar y citar formalmente en la version final.
 \end{itemize}
+
+La siguiente etapa debe añadir de manera prioritaria planos o bases del organismo operador sobre drenaje y plantas; modelos de elevacion y topografia; registros de descargas y permisos; resultados de aforo y laboratorio; y documentacion tecnica de capacidad y proceso de cada planta de tratamiento. Estas fuentes no deben mezclarse con DENUE sin conservar identificador, fecha, responsable y regla de enlace.
 
 % ============================================================
 \bibliographystyle{plainnat}
