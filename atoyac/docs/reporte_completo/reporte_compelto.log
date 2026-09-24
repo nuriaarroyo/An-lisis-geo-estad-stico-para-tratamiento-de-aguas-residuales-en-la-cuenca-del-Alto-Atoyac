@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2026.2.25)  24 SEP 2026 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2026.2.25)  24 SEP 2026 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1164,7 +1164,7 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 45.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-7.
+6.
 
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1181,33 +1181,33 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `reporte_compelto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
-LaTeX Info: Redefining \microtypecontext on input line 117.
-Package microtype Info: Applying patch `item' on input line 117.
-Package microtype Info: Applying patch `toc' on input line 117.
-Package microtype Info: Applying patch `eqnum' on input line 117.
-Package microtype Info: Applying patch `footnote' on input line 117.
-Package microtype Info: Applying patch `verbatim' on input line 117.
-LaTeX Info: Redefining \microtypesetup on input line 117.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
+LaTeX Info: Redefining \microtypecontext on input line 116.
+Package microtype Info: Applying patch `item' on input line 116.
+Package microtype Info: Applying patch `toc' on input line 116.
+Package microtype Info: Applying patch `eqnum' on input line 116.
+Package microtype Info: Applying patch `footnote' on input line 116.
+Package microtype Info: Applying patch `verbatim' on input line 116.
+LaTeX Info: Redefining \microtypesetup on input line 116.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1291,43 +1291,43 @@ G,.JBIG2,.JB2,.eps]
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 117.
+Package hyperref Info: Link coloring ON on input line 116.
  (reporte_compelto.out) (reporte_compelto.out)
 \@outlinefile=\write4
 \openout4 = `reporte_compelto.out'.
 
 \c@lstlisting=\count375
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-38.
+37.
 
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-38.
+37.
 
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-138.
+137.
 
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-138.
+137.
 
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 138.
+(Font)              <10.95> on input line 137.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 138.
+(Font)              <8> on input line 137.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 138.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 138
+(Font)              <6> on input line 137.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 137
 .
 
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -1336,7 +1336,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 138
+LaTeX Font Info:    Trying to load font information for U+msb on input line 137
 .
 
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1369,16 +1369,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.246 
+l.245 
       ] [8] [9] [10] [11] [12] [13] [14] [15]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 410.
+(Font)              <9> on input line 409.
  [16
 
 ] [17
 
 ] [18] [19] [20]
-Overfull \hbox (8.8461pt too wide) in paragraph at lines 527--529
+Overfull \hbox (8.8461pt too wide) in paragraph at lines 526--528
 \T1/lmtt/m/n/10.95 scian_textil\T1/lmr/m/n/10.95 (-20) , \T1/lmtt/m/n/10.95 sci
 an_acabado_humedo \T1/lmr/m/n/10.95 (-20) y \T1/lmtt/m/n/10.95 scian_lavanderia
 \T1/lmr/m/n/10.95 (-20) , y las de-ci-sio-nes fi-na-les \T1/lmtt/m/n/10.95 sect
@@ -1393,7 +1393,7 @@ ng Graphic file (type png)
 <use ../../outputs/xalmimilulco/comparacion_legacy/comparacion_legacy_actual.pn
 g>
 Package pdftex.def Info: ../../outputs/xalmimilulco/comparacion_legacy/comparac
-ion_legacy_actual.png  used on input line 632.
+ion_legacy_actual.png  used on input line 631.
 (pdftex.def)             Requested size: 486.25761pt x 223.18527pt.
  [25{C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.
 enc}] [26
@@ -1401,25 +1401,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.676 \end{center}
+l.675 \end{center}
                    <../../outputs/xalmimilulco/comparacion_legacy/comparacion_l
 egacy_actual.png>] [27] [28] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 733--733
+Underfull \hbox (badness 10000) in paragraph at lines 732--732
 []|\T1/lmr/m/n/10 (+20) Denominador te-rri-to-rial,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--733
+Underfull \hbox (badness 10000) in paragraph at lines 732--732
 []|\T1/lmr/m/n/10 (+20) Amplia DE-
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 733--733
+Underfull \hbox (badness 1478) in paragraph at lines 732--732
 \T1/lmr/m/n/10 (+20) la-van-de-ria 812210 en-tra
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--733
+Underfull \hbox (badness 10000) in paragraph at lines 732--732
 []|\T1/lmr/m/n/10 (+20) Estricto DE-
  []
 
@@ -1430,20 +1430,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.735 \end{landscape}
+l.734 \end{landscape}
                      ]
 <../dir1/direccion_imagenes/modalidades.png, id=776, 744.7825pt x 271.0125pt>
 File: ../dir1/direccion_imagenes/modalidades.png Graphic file (type png)
 <use ../dir1/direccion_imagenes/modalidades.png>
 Package pdftex.def Info: ../dir1/direccion_imagenes/modalidades.png  used on in
-put line 753.
+put line 752.
 (pdftex.def)             Requested size: 457.08334pt x 166.33052pt.
 <../dir1/direccion_imagenes/panel_conteos.png, id=777, 886.1105pt x 216.4085pt>
 
 File: ../dir1/direccion_imagenes/panel_conteos.png Graphic file (type png)
 <use ../dir1/direccion_imagenes/panel_conteos.png>
 Package pdftex.def Info: ../dir1/direccion_imagenes/panel_conteos.png  used on 
-input line 764.
+input line 763.
 (pdftex.def)             Requested size: 486.25761pt x 118.75424pt.
  [31
 
@@ -1452,7 +1452,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.768 
+l.767 
        <../dir1/direccion_imagenes/modalidades.png>]
 <../dir1/direccion_imagenes/panel_participacion.png, id=785, 870.8535pt x 216.4
 085pt>
@@ -1460,27 +1460,27 @@ File: ../dir1/direccion_imagenes/panel_participacion.png Graphic file (type png
 )
 <use ../dir1/direccion_imagenes/panel_participacion.png>
 Package pdftex.def Info: ../dir1/direccion_imagenes/panel_participacion.png  us
-ed on input line 771.
+ed on input line 770.
 (pdftex.def)             Requested size: 486.25761pt x 120.83458pt.
 <../dir1/direccion_imagenes/matriz_municipal.png, id=787, 787.743pt x 463.331pt
 >
 File: ../dir1/direccion_imagenes/matriz_municipal.png Graphic file (type png)
 <use ../dir1/direccion_imagenes/matriz_municipal.png>
 Package pdftex.def Info: ../dir1/direccion_imagenes/matriz_municipal.png  used 
-on input line 780.
+on input line 779.
 (pdftex.def)             Requested size: 457.08334pt x 268.85234pt.
  [32
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.784 
+l.783 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.784 
+l.783 
       {C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.en
 c}{C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
 c} <../dir1/direccion_imagenes/panel_conteos.png> <../dir1/direccion_imagenes/p
@@ -1490,20 +1490,20 @@ t>
 File: ../dir1/direccion_imagenes/mapas_comparables.png Graphic file (type png)
 <use ../dir1/direccion_imagenes/mapas_comparables.png>
 Package pdftex.def Info: ../dir1/direccion_imagenes/mapas_comparables.png  used
- on input line 793.
+ on input line 792.
 (pdftex.def)             Requested size: 486.25761pt x 266.27634pt.
  [33
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.797 
+l.796 
        <../dir1/direccion_imagenes/matriz_municipal.png>]
 <../dir1/direccion_imagenes/municipios.png, id=811, 777.7055pt x 271.0125pt>
 File: ../dir1/direccion_imagenes/municipios.png Graphic file (type png)
 <use ../dir1/direccion_imagenes/municipios.png>
 Package pdftex.def Info: ../dir1/direccion_imagenes/municipios.png  used on inp
-ut line 800.
+ut line 799.
 (pdftex.def)             Requested size: 457.08334pt x 159.28395pt.
 <../dir1/direccion_imagenes/posibles_comerciales.png, id=812, 717.4805pt x 353.
 7215pt>
@@ -1511,20 +1511,20 @@ File: ../dir1/direccion_imagenes/posibles_comerciales.png Graphic file (type pn
 g)
 <use ../dir1/direccion_imagenes/posibles_comerciales.png>
 Package pdftex.def Info: ../dir1/direccion_imagenes/posibles_comerciales.png  u
-sed on input line 811.
+sed on input line 810.
 (pdftex.def)             Requested size: 457.08334pt x 225.34468pt.
  [34
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.815 
+l.814 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.815 
+l.814 
        <../dir1/direccion_imagenes/mapas_comparables.png> <../dir1/direccion_im
 agenes/municipios.png>]
 <../dir1/direccion_imagenes/ranking_comerciales.png, id=820, 782.5235pt x 271.4
@@ -1533,27 +1533,27 @@ File: ../dir1/direccion_imagenes/ranking_comerciales.png Graphic file (type png
 )
 <use ../dir1/direccion_imagenes/ranking_comerciales.png>
 Package pdftex.def Info: ../dir1/direccion_imagenes/ranking_comerciales.png  us
-ed on input line 818.
+ed on input line 817.
 (pdftex.def)             Requested size: 447.35611pt x 155.16728pt.
 <../dir1/direccion_imagenes/pequenas_panel_0.png, id=821, 886.1105pt x 216.4085
 pt>
 File: ../dir1/direccion_imagenes/pequenas_panel_0.png Graphic file (type png)
 <use ../dir1/direccion_imagenes/pequenas_panel_0.png>
 Package pdftex.def Info: ../dir1/direccion_imagenes/pequenas_panel_0.png  used 
-on input line 829.
+on input line 828.
 (pdftex.def)             Requested size: 486.25761pt x 118.75424pt.
  [35
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.833 
+l.832 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.833 
+l.832 
        <../dir1/direccion_imagenes/posibles_comerciales.png> <../dir1/direccion
 _imagenes/ranking_comerciales.png>]
 <../dir1/direccion_imagenes/pequenas_panel_1.png, id=831, 878.482pt x 216.4085p
@@ -1561,7 +1561,7 @@ t>
 File: ../dir1/direccion_imagenes/pequenas_panel_1.png Graphic file (type png)
 <use ../dir1/direccion_imagenes/pequenas_panel_1.png>
 Package pdftex.def Info: ../dir1/direccion_imagenes/pequenas_panel_1.png  used 
-on input line 836.
+on input line 835.
 (pdftex.def)             Requested size: 486.25761pt x 119.78781pt.
 <../../outputs/cuenca_alto_atoyac_puebla_estricto_mh/maps/png/03_establecimient
 os_distancia_rio.png, id=832, 2107.875pt x 1430.34375pt>
@@ -1570,27 +1570,27 @@ mientos_distancia_rio.png Graphic file (type png)
 <use ../../outputs/cuenca_alto_atoyac_puebla_estricto_mh/maps/png/03_establecim
 ientos_distancia_rio.png>
 Package pdftex.def Info: ../../outputs/cuenca_alto_atoyac_puebla_estricto_mh/ma
-ps/png/03_establecimientos_distancia_rio.png  used on input line 850.
+ps/png/03_establecimientos_distancia_rio.png  used on input line 849.
 (pdftex.def)             Requested size: 457.08334pt x 310.15877pt.
  [36
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.854 
+l.853 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.854 
+l.853 
        <../dir1/direccion_imagenes/pequenas_panel_0.png> <../dir1/direccion_ima
 genes/pequenas_panel_1.png>] [37
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.866 
+l.865 
        <../../outputs/cuenca_alto_atoyac_puebla_estricto_mh/maps/png/03_estable
 cimientos_distancia_rio.png>]
 <../../outputs/parte_2/03_diagnosticos/figuras/03_curvas_k_distancia.png, id=85
@@ -1599,20 +1599,20 @@ File: ../../outputs/parte_2/03_diagnosticos/figuras/03_curvas_k_distancia.png G
 raphic file (type png)
 <use ../../outputs/parte_2/03_diagnosticos/figuras/03_curvas_k_distancia.png>
 Package pdftex.def Info: ../../outputs/parte_2/03_diagnosticos/figuras/03_curva
-s_k_distancia.png  used on input line 893.
+s_k_distancia.png  used on input line 892.
 (pdftex.def)             Requested size: 486.25761pt x 200.0098pt.
  [38
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.897 
+l.896 
       ] [39
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.921 
+l.920 
       {C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathe
 x.enc} <../../outputs/parte_2/03_diagnosticos/figuras/03_curvas_k_distancia.png
 >] [40] [41]
@@ -1622,7 +1622,7 @@ File: ../../outputs/parte_2/03_diagnosticos/figuras/01_kde_hex_cuenca.png Graph
 ic file (type png)
 <use ../../outputs/parte_2/03_diagnosticos/figuras/01_kde_hex_cuenca.png>
 Package pdftex.def Info: ../../outputs/parte_2/03_diagnosticos/figuras/01_kde_h
-ex_cuenca.png  used on input line 966.
+ex_cuenca.png  used on input line 965.
 (pdftex.def)             Requested size: 653.5911pt x 420.00447pt.
  [42
 
@@ -1631,7 +1631,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.977 \end{landscape}
+l.976 \end{landscape}
                       <../../outputs/parte_2/03_diagnosticos/figuras/01_kde_hex
 _cuenca.png>] [43
 
@@ -1643,7 +1643,7 @@ File: ../../outputs/parte_2/03_diagnosticos/figuras/02_kde_hex_mega_cluster.png
 <use ../../outputs/parte_2/03_diagnosticos/figuras/02_kde_hex_mega_cluster.png>
 
 Package pdftex.def Info: ../../outputs/parte_2/03_diagnosticos/figuras/02_kde_h
-ex_mega_cluster.png  used on input line 999.
+ex_mega_cluster.png  used on input line 998.
 (pdftex.def)             Requested size: 653.5911pt x 406.0798pt.
  [44
 
@@ -1652,17 +1652,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1003 \end{landscape}
+l.1002 \end{landscape}
                        <../../outputs/parte_2/03_diagnosticos/figuras/02_kde_he
 x_mega_cluster.png>] [45
 
 ]
-Overfull \hbox (3.24597pt too wide) in paragraph at lines 1042--1042
+Overfull \hbox (3.24597pt too wide) in paragraph at lines 1041--1041
 []|\T1/lmr/bx/n/10 (-20) Escenarios| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1041
 []|\T1/lmr/m/n/10 (+20) Solo coor-de-na-das \T1/lmtt/m/n/10 x_utm14n\T1/lmr/m/n
 /10 (+20) ,
  []
@@ -1672,7 +1672,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1059 \subsection{Criterios de seleccion}
+l.1058 \subsection{Criterios de seleccion}
                                           ] [47]
 <../../outputs/parte_2/10_figuras/02_comparacion_escenarios.png, id=917, 638.78
 65pt x 422.378pt>
@@ -1680,7 +1680,7 @@ File: ../../outputs/parte_2/10_figuras/02_comparacion_escenarios.png Graphic fi
 le (type png)
 <use ../../outputs/parte_2/10_figuras/02_comparacion_escenarios.png>
 Package pdftex.def Info: ../../outputs/parte_2/10_figuras/02_comparacion_escena
-rios.png  used on input line 1071.
+rios.png  used on input line 1070.
 (pdftex.def)             Requested size: 626.91827pt x 414.55278pt.
  [48
 
@@ -1689,7 +1689,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1075 \end{landscape}
+l.1074 \end{landscape}
                        <../../outputs/parte_2/10_figuras/02_comparacion_escenar
 ios.png>] [49
 
@@ -1700,7 +1700,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1102 \end{landscape}
+l.1101 \end{landscape}
                       ] [51
 
 ]
@@ -1710,7 +1710,7 @@ File: ../../outputs/parte_2/13_figuras_finales/05_robustez_escenarios.png Graph
 ic file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/05_robustez_escenarios.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/05_robustez_e
-scenarios.png  used on input line 1115.
+scenarios.png  used on input line 1114.
 (pdftex.def)             Requested size: 646.92543pt x 272.74026pt.
  [52
 
@@ -1719,10 +1719,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1119 \end{landscape}
+l.1118 \end{landscape}
                        <../../outputs/parte_2/13_figuras_finales/05_robustez_es
 cenarios.png>]
-Overfull \hbox (13.26193pt too wide) in paragraph at lines 1143--1144
+Overfull \hbox (13.26193pt too wide) in paragraph at lines 1142--1143
 []\T1/lmr/m/n/10.95 (-20) Aqui S1 y S2 co-rres-pon-den a \T1/lmtt/m/n/10.95 min
 _samples\T1/lmr/m/n/10.95 (-20) =20 con ta-ma-ños mi-ni-mos 20 y 30; S3 y S4 a 
 \T1/lmtt/m/n/10.95 min_samples\T1/lmr/m/n/10.95 (-20) =10
@@ -1734,7 +1734,7 @@ File: ../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.png
 Graphic file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/03_persistenc
-ia_territorial.png  used on input line 1157.
+ia_territorial.png  used on input line 1156.
 (pdftex.def)             Requested size: 379.28033pt x 457.28175pt.
 [53
 
@@ -1743,21 +1743,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1161 
+l.1160 
        ] [54
 pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1167 
+l.1166 
         <../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.p
 ng>]
-Underfull \hbox (badness 10000) in paragraph at lines 1175--1175
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
 []|\T1/lmr/m/n/10.95 (+20) Persistencia de
  []
 
 
-Overfull \hbox (31.10107pt too wide) in paragraph at lines 1177--1177
+Overfull \hbox (31.10107pt too wide) in paragraph at lines 1176--1176
 []|\T1/lmr/m/n/10.95 (-20) Continuidad/compacidad| 
  []
 
@@ -1767,14 +1767,14 @@ File: ../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png Grap
 hic file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/02_clusters_p
-rincipales.png  used on input line 1199.
+rincipales.png  used on input line 1198.
 (pdftex.def)             Requested size: 398.7348pt x 507.11618pt.
 [55] [56
 pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1209 
+l.1208 
         <../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png>]
 <../../outputs/parte_2/13_figuras_finales/01_universos_borde.png, id=984, 474.6
 825pt x 592.9425pt>
@@ -1782,14 +1782,14 @@ File: ../../outputs/parte_2/13_figuras_finales/01_universos_borde.png Graphic f
 ile (type png)
 <use ../../outputs/parte_2/13_figuras_finales/01_universos_borde.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/01_universos_
-borde.png  used on input line 1212.
+borde.png  used on input line 1211.
 (pdftex.def)             Requested size: 350.10606pt x 437.35011pt.
 [57
 pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1234 
+l.1233 
         <../../outputs/parte_2/13_figuras_finales/01_universos_borde.png>]
 <../../outputs/parte_2/12_atlas/ruido_disperso.png, id=992, 794.2473pt x 430.72
 92pt>
@@ -1797,7 +1797,7 @@ File: ../../outputs/parte_2/12_atlas/ruido_disperso.png Graphic file (type png)
 
 <use ../../outputs/parte_2/12_atlas/ruido_disperso.png>
 Package pdftex.def Info: ../../outputs/parte_2/12_atlas/ruido_disperso.png  use
-d on input line 1241.
+d on input line 1240.
 (pdftex.def)             Requested size: 476.53038pt x 258.43294pt.
 
 [58
@@ -1805,13 +1805,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1264 \end{preguntas}
+l.1263 \end{preguntas}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1264 \end{preguntas}
+l.1263 \end{preguntas}
                        <../../outputs/parte_2/12_atlas/ruido_disperso.png>]
 <../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.png, id
 =1001, 492.093pt x 593.271pt>
@@ -1820,7 +1820,7 @@ g Graphic file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.png
 >
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/04_tipos_prod
-uctivos_clusters.png  used on input line 1274.
+uctivos_clusters.png  used on input line 1273.
 (pdftex.def)             Requested size: 389.00757pt x 469.0139pt.
 
 [59]
@@ -1830,21 +1830,21 @@ File: ../../outputs/parte_2/13_figuras_finales/06_composicion_multilabel.png Gr
 aphic file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/06_composicion_multilabel.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/06_composicio
-n_multilabel.png  used on input line 1285.
+n_multilabel.png  used on input line 1284.
 (pdftex.def)             Requested size: 476.53038pt x 375.90115pt.
  [60
 pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1288 \end{figure}
+l.1287 \end{figure}
                     <../../outputs/parte_2/13_figuras_finales/04_tipos_producti
 vos_clusters.png>] [61
 pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1315 
+l.1314 
         <../../outputs/parte_2/13_figuras_finales/06_composicion_multilabel.png
 >]
 <../../outputs/parte_2/12_atlas/cluster_008.png, id=1026, 802.55835pt x 430.729
@@ -1852,27 +1852,27 @@ l.1315
 File: ../../outputs/parte_2/12_atlas/cluster_008.png Graphic file (type png)
 <use ../../outputs/parte_2/12_atlas/cluster_008.png>
 Package pdftex.def Info: ../../outputs/parte_2/12_atlas/cluster_008.png  used o
-n input line 1322.
+n input line 1321.
 (pdftex.def)             Requested size: 476.53038pt x 255.75798pt.
 <../../outputs/parte_2/12_atlas/cluster_020.png, id=1027, 841.2228pt x 430.7292
 pt>
 File: ../../outputs/parte_2/12_atlas/cluster_020.png Graphic file (type png)
 <use ../../outputs/parte_2/12_atlas/cluster_020.png>
 Package pdftex.def Info: ../../outputs/parte_2/12_atlas/cluster_020.png  used o
-n input line 1329.
+n input line 1328.
 (pdftex.def)             Requested size: 476.53038pt x 243.9934pt.
  [62
 pdfTeX warning (ext4): destination with the same identifier (name{table.10}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1333 
+l.1332 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.24}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1333 
+l.1332 
         <../../outputs/parte_2/12_atlas/cluster_008.png>]
 <../../outputs/parte_2/13_figuras_finales/08_clusters_vs_ruido.png, id=1037, 71
 1.2025pt x 494.721pt>
@@ -1880,586 +1880,586 @@ File: ../../outputs/parte_2/13_figuras_finales/08_clusters_vs_ruido.png Graphic
  file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/08_clusters_vs_ruido.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/08_clusters_v
-s_ruido.png  used on input line 1340.
+s_ruido.png  used on input line 1339.
 (pdftex.def)             Requested size: 427.90907pt x 297.6577pt.
  [63
 pdfTeX warning (ext4): destination with the same identifier (name{figure.25}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1344 
+l.1343 
         <../../outputs/parte_2/12_atlas/cluster_020.png>] [64
 pdfTeX warning (ext4): destination with the same identifier (name{figure.26}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1359 \]
+l.1358 \]
           <../../outputs/parte_2/13_figuras_finales/08_clusters_vs_ruido.png>]
-[65]
-Underfull \hbox (badness 10000) in alignment at lines 1409--1409
-[][][][][][][][] 
- []
+[65] [66] [67
 
-<../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png, id=1056, 8
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.11}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1405 \end{landscape}
+                      ]
+<../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png, id=1076, 8
 03.8395pt x 633.6765pt>
 File: ../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png Graphi
 c file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/07_rasgos_dis
-tintivos.png  used on input line 1414.
+tintivos.png  used on input line 1409.
 (pdftex.def)             Requested size: 476.53038pt x 375.66435pt.
-[66
-pdfTeX warning (ext4): destination with the same identifier (name{table.11}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1418 
-       ] [67
+ [68
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{figure.27}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1437 \end{preguntas}
+l.1432 \end{preguntas}
                        <../../outputs/parte_2/13_figuras_finales/07_rasgos_dist
-intivos.png>] [68]
-<../../outputs/parte_2/13_figuras_finales/09_similitud_perfiles.png, id=1077, 6
+intivos.png>] [69]
+<../../outputs/parte_2/13_figuras_finales/09_similitud_perfiles.png, id=1090, 6
 39.918pt x 563.049pt>
 File: ../../outputs/parte_2/13_figuras_finales/09_similitud_perfiles.png Graphi
 c file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/09_similitud_perfiles.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/09_similitud_
-perfiles.png  used on input line 1477.
+perfiles.png  used on input line 1472.
 (pdftex.def)             Requested size: 466.81056pt x 410.73883pt.
- [69
+ [70
 pdfTeX warning (ext4): destination with the same identifier (name{table.12}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1481 
-       ] [70
+l.1476 
+       ] [71
 pdfTeX warning (ext4): destination with the same identifier (name{figure.28}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1494 \end{hechos}
+l.1489 \end{hechos}
                     <../../outputs/parte_2/13_figuras_finales/09_similitud_perf
 iles.png>]
 <../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etiquetados
-.png, id=1091, 574.218pt x 492.4215pt>
+.png, id=1104, 574.218pt x 492.4215pt>
 File: ../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etique
 tados.png Graphic file (type png)
 <use ../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etiquet
 ados.png>
 Package pdftex.def Info: ../../outputs/parte_2/14_segunda_pasada/figuras/03_sub
-nucleos_mega_etiquetados.png  used on input line 1518.
+nucleos_mega_etiquetados.png  used on input line 1513.
 (pdftex.def)             Requested size: 408.4546pt x 350.28291pt.
- [71]
-ignored error: Infinite glue shrinkage found in box being split [72
+ [72]
+ignored error: Infinite glue shrinkage found in box being split [73
 pdfTeX warning (ext4): destination with the same identifier (name{figure.29}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1554 \end{longtable}
+l.1549 \end{longtable}
                        <../../outputs/parte_2/14_segunda_pasada/figuras/03_subn
-ucleos_mega_etiquetados.png>] [73] [74
+ucleos_mega_etiquetados.png>] [74] [75
 pdfTeX warning (ext4): destination with the same identifier (name{table.14}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1635 
+l.1630 
        ]
 <../../outputs/parte_2/14_segunda_pasada/figuras/08_ranking_lavanderia.png, id=
-1119, 604.1115pt x 453.6585pt>
+1132, 604.1115pt x 453.6585pt>
 File: ../../outputs/parte_2/14_segunda_pasada/figuras/08_ranking_lavanderia.png
  Graphic file (type png)
 <use ../../outputs/parte_2/14_segunda_pasada/figuras/08_ranking_lavanderia.png>
 
 Package pdftex.def Info: ../../outputs/parte_2/14_segunda_pasada/figuras/08_ran
-king_lavanderia.png  used on input line 1638.
+king_lavanderia.png  used on input line 1633.
 (pdftex.def)             Requested size: 437.62888pt x 328.64131pt.
- [75
+ [76
 pdfTeX warning (ext4): destination with the same identifier (name{table.15}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1646 
+l.1641 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.30}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1646 
+l.1641 
         <../../outputs/parte_2/14_segunda_pasada/figuras/08_ranking_lavanderia.
-png>] [76]
-Underfull \hbox (badness 10000) in paragraph at lines 1711--1711
+png>] [77]
+Underfull \hbox (badness 10000) in paragraph at lines 1706--1706
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 01 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1711--1711
+Underfull \hbox (badness 10000) in paragraph at lines 1706--1706
 \T1/lmtt/m/n/10.95 matriz / matriz _ maestra _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1712--1712
+Underfull \hbox (badness 10000) in paragraph at lines 1707--1707
 []|$\T1/lmtt/m/n/10.95 outputs / parte _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1712--1712
+Underfull \hbox (badness 10000) in paragraph at lines 1707--1707
 \T1/lmtt/m/n/10.95 2 / 02 _ geometrias /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1712--1712
+Underfull \hbox (badness 10000) in paragraph at lines 1707--1707
 \T1/lmtt/m/n/10.95 establecimientos _ parte2 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1713--1713
+Underfull \hbox (badness 10000) in paragraph at lines 1708--1708
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 02 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1713--1713
+Underfull \hbox (badness 10000) in paragraph at lines 1708--1708
 \T1/lmtt/m/n/10.95 geometrias / contexto _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1714--1714
+Underfull \hbox (badness 10000) in paragraph at lines 1709--1709
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 05 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1714--1714
+Underfull \hbox (badness 10000) in paragraph at lines 1709--1709
 \T1/lmtt/m/n/10.95 seleccion / persistencia _
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 1714--1714
+Underfull \hbox (badness 4954) in paragraph at lines 1709--1709
 []|\T1/lmr/m/n/10.95 (+20) Estabilidad por es-ta-ble-ci-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1715--1715
+Underfull \hbox (badness 10000) in paragraph at lines 1710--1710
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 06 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1715--1715
+Underfull \hbox (badness 10000) in paragraph at lines 1710--1710
 \T1/lmtt/m/n/10.95 clusters / solucion _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1716--1716
+Underfull \hbox (badness 10000) in paragraph at lines 1711--1711
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 06 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1716--1716
+Underfull \hbox (badness 10000) in paragraph at lines 1711--1711
 \T1/lmtt/m/n/10.95 clusters / resumen _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1717--1717
+Underfull \hbox (badness 10000) in paragraph at lines 1712--1712
 []|$\T1/lmtt/m/n/10.95 outputs / parte _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1717--1717
+Underfull \hbox (badness 10000) in paragraph at lines 1712--1712
 \T1/lmtt/m/n/10.95 2 / 07 _ perfiles /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1717--1717
+Underfull \hbox (badness 10000) in paragraph at lines 1712--1712
 \T1/lmtt/m/n/10.95 establecimientos _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1718--1718
+Underfull \hbox (badness 10000) in paragraph at lines 1713--1713
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 07 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1718--1718
+Underfull \hbox (badness 10000) in paragraph at lines 1713--1713
 \T1/lmtt/m/n/10.95 perfiles / perfiles _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1719--1719
+Underfull \hbox (badness 10000) in paragraph at lines 1714--1714
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 07 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1719--1719
+Underfull \hbox (badness 10000) in paragraph at lines 1714--1714
 \T1/lmtt/m/n/10.95 perfiles / composicion _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1719--1719
+Underfull \hbox (badness 10000) in paragraph at lines 1714--1714
 \T1/lmtt/m/n/10.95 municipal . csv$ \T1/lmr/m/n/10.95 (+20) y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1719--1719
+Underfull \hbox (badness 10000) in paragraph at lines 1714--1714
 \T1/lmtt/m/n/10.95 composicion _ localidad .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1720--1720
+Underfull \hbox (badness 10000) in paragraph at lines 1715--1715
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 08 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1720--1720
+Underfull \hbox (badness 10000) in paragraph at lines 1715--1715
 \T1/lmtt/m/n/10.95 sobrerrepresentacion /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1720--1720
+Underfull \hbox (badness 10000) in paragraph at lines 1715--1715
 \T1/lmtt/m/n/10.95 sobrerrepresentacion _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1721--1721
+Underfull \hbox (badness 10000) in paragraph at lines 1716--1716
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 11 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1721--1721
+Underfull \hbox (badness 10000) in paragraph at lines 1716--1716
 \T1/lmtt/m/n/10.95 cierre / fichas _ resumen _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1722--1722
+Underfull \hbox (badness 10000) in paragraph at lines 1717--1717
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 11 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1722--1722
+Underfull \hbox (badness 10000) in paragraph at lines 1717--1717
 \T1/lmtt/m/n/10.95 cierre / diagnostico _ mega _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1723--1723
+Underfull \hbox (badness 10000) in paragraph at lines 1718--1718
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 11 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1723--1723
+Underfull \hbox (badness 10000) in paragraph at lines 1718--1718
 \T1/lmtt/m/n/10.95 cierre / validacion _ final .
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 1723--1723
+Underfull \hbox (badness 2818) in paragraph at lines 1718--1718
 \T1/lmtt/m/n/10.95 csv$ \T1/lmr/m/n/10.95 (+20) y $\T1/lmtt/m/n/10.95 inventari
 o _ cierre .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1724--1724
+Underfull \hbox (badness 10000) in paragraph at lines 1719--1719
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 12 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1725--1725
+Underfull \hbox (badness 10000) in paragraph at lines 1720--1720
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1725--1725
+Underfull \hbox (badness 10000) in paragraph at lines 1720--1720
 \T1/lmtt/m/n/10.95 14 _ segunda _ pasada /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1725--1725
+Underfull \hbox (badness 10000) in paragraph at lines 1720--1720
 \T1/lmtt/m/n/10.95 subnucleos _ mega _ cluster _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1726--1726
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1721
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1726--1726
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1721
 \T1/lmtt/m/n/10.95 14 _ segunda _ pasada /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1726--1726
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1721
 \T1/lmtt/m/n/10.95 explorador _ interactivo _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1727--1727
+Underfull \hbox (badness 10000) in paragraph at lines 1722--1722
 []|$\T1/lmtt/m/n/10.95 outputs / cuenca _ alto _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1727--1727
+Underfull \hbox (badness 10000) in paragraph at lines 1722--1722
 \T1/lmtt/m/n/10.95 atoyac _ puebla _ estricto _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1728--1728
+Underfull \hbox (badness 10000) in paragraph at lines 1723--1723
 []|$\T1/lmtt/m/n/10.95 outputs / xalmimilulco/$ \T1/lmr/m/n/10.95 (+20) y
  []
 
-[77
+[78
 pdfTeX warning (ext4): destination with the same identifier (name{table.16}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1730 \end{longtable}
+l.1725 \end{longtable}
                       ]
-ignored error: Infinite glue shrinkage found in box being split [78] [79]
-Underfull \hbox (badness 10000) in paragraph at lines 1782--1782
+ignored error: Infinite glue shrinkage found in box being split [79] [80]
+Underfull \hbox (badness 10000) in paragraph at lines 1777--1777
 []|\T1/lmr/m/n/10.95 (+20) Flujo le-gacy de Xal-mi-mi-lul-
  []
 
 
-Underfull \hbox (badness 4967) in paragraph at lines 1782--1782
+Underfull \hbox (badness 4967) in paragraph at lines 1777--1777
 \T1/lmr/m/n/10.95 (+20) co/Huejotzingo: car-ga, nor-ma-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1782--1782
+Underfull \hbox (badness 10000) in paragraph at lines 1777--1777
 \T1/lmr/m/n/10.95 (+20) li-za-cion, fil-tros, au-di-to-ria y
  []
 
 
-Underfull \hbox (badness 7186) in paragraph at lines 1782--1783
+Underfull \hbox (badness 7186) in paragraph at lines 1777--1778
 []|$\T1/lmtt/m/n/10.95 outputs / xalmimilulco/$\T1/lmr/m/n/10.95 (+20) , $\T1/l
 mtt/m/n/10.95 outputs /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1783--1784
+Underfull \hbox (badness 10000) in paragraph at lines 1778--1779
 []|$\T1/lmtt/m/n/10.95 outputs / cuenca _ alto _ atoyac _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1784--1784
+Underfull \hbox (badness 10000) in paragraph at lines 1779--1779
 []|$\T1/lmtt/m/n/10.95 200 _ parte2 _ comun .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1785--1786
+Underfull \hbox (badness 10000) in paragraph at lines 1780--1781
 []|\T1/lmr/m/n/10.95 (+20) Etapas $\T1/lmtt/m/n/10.95 00 _ auditoria$ \T1/lmr/m
 /n/10.95 (+20) a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1786--1786
+Underfull \hbox (badness 10000) in paragraph at lines 1781--1781
 []|\T1/lmr/m/n/10.95 (+20) Bateria DBS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1786--1786
+Underfull \hbox (badness 10000) in paragraph at lines 1781--1781
 \T1/lmr/m/n/10.95 (+20) CAN/HDBSCAN/OPTICS,
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 1788--1789
+Underfull \hbox (badness 1902) in paragraph at lines 1783--1784
 []|\T1/lmr/m/n/10.95 (+20) Etapas $\T1/lmtt/m/n/10.95 11 _ cierre$\T1/lmr/m/n/1
 0.95 (+20) , $\T1/lmtt/m/n/10.95 12 _ atlas$\T1/lmr/m/n/10.95 (+20) , $\T1/lmtt
 /m/n/10.95 13 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1789--1789
+Underfull \hbox (badness 10000) in paragraph at lines 1784--1784
 []|$\T1/lmtt/m/n/10.95 219 _ ejecutar _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1789--1789
+Underfull \hbox (badness 10000) in paragraph at lines 1784--1784
 \T1/lmtt/m/n/10.95 parte2 _ completa .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1790--1791
+Underfull \hbox (badness 10000) in paragraph at lines 1785--1786
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 14 _ segunda _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1791--1791
+Underfull \hbox (badness 10000) in paragraph at lines 1786--1786
 []|$\T1/lmtt/m/n/10.95 223 _ figuras _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1791--1791
+Underfull \hbox (badness 10000) in paragraph at lines 1786--1786
 \T1/lmtt/m/n/10.95 diagnostico _ kde _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1791--1792
+Underfull \hbox (badness 10000) in paragraph at lines 1786--1787
 []|$\T1/lmtt/m/n/10.95 outputs / parte _ 2 / 03 _
  []
 
-[80]
-Overfull \hbox (18.11026pt too wide) in paragraph at lines 1805--1806
+[81]
+Overfull \hbox (18.11026pt too wide) in paragraph at lines 1800--1801
 []\T1/lmr/m/n/10.95 (-20) La fuen-te ope-ra-ti-va mas am-plia es $\T1/lmtt/m/n/
 10.95 outputs / parte _ 2 / 01 _ matriz / matriz _ maestra _ establecimientos .
 
  []
 
 
-Overfull \hbox (5.19414pt too wide) in paragraph at lines 1810--1810
+Overfull \hbox (5.19414pt too wide) in paragraph at lines 1805--1805
 []|\T1/lmr/bx/n/10.95 (-20) Tipo/unidad| 
  []
 
 
-Overfull \hbox (5.19414pt too wide) in paragraph at lines 1814--1814
+Overfull \hbox (5.19414pt too wide) in paragraph at lines 1809--1809
 []|\T1/lmr/bx/n/10.95 (-20) Tipo/unidad| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1820--1820
+Underfull \hbox (badness 10000) in paragraph at lines 1815--1815
 []|\T1/lmtt/m/n/10.95 cve_scian\T1/lmr/m/n/10.95 (+20) ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1824--1824
+Underfull \hbox (badness 10000) in paragraph at lines 1819--1819
 []|\T1/lmtt/m/n/10.95 Municipio\T1/lmr/m/n/10.95 (+20) ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1825--1825
+Underfull \hbox (badness 10000) in paragraph at lines 1820--1820
 []|\T1/lmtt/m/n/10.95 SI\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10.95 REVISAR\T1
 /lmr/m/n/10.95 (+20) ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1826--1826
+Underfull \hbox (badness 10000) in paragraph at lines 1821--1821
 []|\T1/lmtt/m/n/10.95 textil\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10.95 mezcli
 lla\T1/lmr/m/n/10.95 (+20) ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1827--1827
+Underfull \hbox (badness 10000) in paragraph at lines 1822--1822
 []|\T1/lmtt/m/n/10.95 humedo_explicito\T1/lmr/m/n/10.95 (+20) ,
  []
 
 
-Overfull \hbox (19.49487pt too wide) in paragraph at lines 1828--1828
+Overfull \hbox (19.49487pt too wide) in paragraph at lines 1823--1823
 []|\T1/lmtt/m/n/10.95 proceso_seco_explicito| 
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 1829--1830
+Underfull \hbox (badness 1210) in paragraph at lines 1824--1825
 []|\T1/lmr/m/n/10.95 (+20) Perfilado, so-bre-rre-pre-sen-ta-
  []
 
 
-Overfull \hbox (30.99234pt too wide) in paragraph at lines 1832--1832
+Overfull \hbox (30.99234pt too wide) in paragraph at lines 1827--1827
 []|\T1/lmtt/m/n/10.95 persistencia_territorial| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1833--1833
+Underfull \hbox (badness 10000) in paragraph at lines 1828--1828
 []|\T1/lmtt/m/n/10.95 CLUSTER_NNN \T1/lmr/m/n/10.95 (+20) o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1834--1834
+Underfull \hbox (badness 10000) in paragraph at lines 1829--1829
 []|\T1/lmtt/m/n/10.95 Descripcion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1834--1834
+Underfull \hbox (badness 10000) in paragraph at lines 1829--1829
 \T1/lmtt/m/n/10.95 estrato personal
  []
 
-[81]
-ignored error: Infinite glue shrinkage found in box being split [82]
-ignored error: Infinite glue shrinkage found in box being split [83] [84]
-Underfull \hbox (badness 10000) in paragraph at lines 1927--1927
+[82]
+ignored error: Infinite glue shrinkage found in box being split [83]
+ignored error: Infinite glue shrinkage found in box being split [84] [85]
+Underfull \hbox (badness 10000) in paragraph at lines 1922--1922
 []|$\T1/lmtt/m/n/10.95 223 _ figuras _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1927--1927
+Underfull \hbox (badness 10000) in paragraph at lines 1922--1922
 \T1/lmtt/m/n/10.95 diagnostico _ kde _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1928--1928
+Underfull \hbox (badness 10000) in paragraph at lines 1923--1923
 []|$\T1/lmtt/m/n/10.95 03 _ curvas _ k _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1929--1929
+Underfull \hbox (badness 10000) in paragraph at lines 1924--1924
 []|$\T1/lmtt/m/n/10.95 02 _ clusters _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1930--1930
+Underfull \hbox (badness 10000) in paragraph at lines 1925--1925
 []|$\T1/lmtt/m/n/10.95 03 _ persistencia _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1931--1931
+Underfull \hbox (badness 10000) in paragraph at lines 1926--1926
 []|$\T1/lmtt/m/n/10.95 04 _ tipos _ productivos _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1932--1932
+Underfull \hbox (badness 10000) in paragraph at lines 1927--1927
 []|$\T1/lmtt/m/n/10.95 07 _ rasgos _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1933--1933
+Underfull \hbox (badness 10000) in paragraph at lines 1928--1928
 []|$\T1/lmtt/m/n/10.95 09 _ similitud _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1934--1934
+Underfull \hbox (badness 10000) in paragraph at lines 1929--1929
 []|$\T1/lmtt/m/n/10.95 cluster _ 004 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1936--1936
+Underfull \hbox (badness 10000) in paragraph at lines 1931--1931
 []|$\T1/lmtt/m/n/10.95 03 _ subnucleos _ mega _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1937--1937
+Underfull \hbox (badness 10000) in paragraph at lines 1932--1932
 []|$\T1/lmtt/m/n/10.95 explorador _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1937--1937
+Underfull \hbox (badness 10000) in paragraph at lines 1932--1932
 \T1/lmtt/m/n/10.95 interactivo _ clusters .
  []
 
-ignored error: Infinite glue shrinkage found in box being split [85]
 ignored error: Infinite glue shrinkage found in box being split [86]
-Underfull \hbox (badness 10000) in paragraph at lines 1999--1999
+ignored error: Infinite glue shrinkage found in box being split [87]
+Underfull \hbox (badness 10000) in paragraph at lines 1994--1994
 []|$\T1/lmtt/m/n/10 001 _ definicion _ universo .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1999--1999
+Underfull \hbox (badness 10000) in paragraph at lines 1994--1994
 []|$\T1/lmtt/m/n/10 002 _ borde _ crs _ y _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1999--1999
+Underfull \hbox (badness 10000) in paragraph at lines 1994--1994
 []|$\T1/lmtt/m/n/10 003 _ metodos _ y _ seleccion .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1999--1999
+Underfull \hbox (badness 10000) in paragraph at lines 1994--1994
 []|$\T1/lmtt/m/n/10 004 _ ruido _ perfiles _ y _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1999--1999
+Underfull \hbox (badness 10000) in paragraph at lines 1994--1994
 []|$\T1/lmtt/m/n/10 005 _ cierre _ y _ transicion _
  []
 
-[87] (reporte_compelto.bbl [88]
+[88] (reporte_compelto.bbl [89]
 Underfull \hbox (badness 6608) in paragraph at lines 28--34
 []\T1/lmr/m/n/10.95 (+20) Comisión Na-cio-nal del Agua.  Fir-man go-bier-nos de
  mé-xi-co y de pue-bla con-ve-nio
@@ -2484,7 +2484,7 @@ o-[]con-[]industrias-[]textiles-[]para-[]mejorar-[]la-[]calidad-[]del-[]agua-[]
 del-[]rio-[]atoyac ?
  []
 
-) [89] 
+) [90] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (reporte_compelto.aux
 LaTeX Info: Redefining \. on input line 11.
@@ -2495,36 +2495,43 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
 Package rerunfilecheck Info: File `reporte_compelto.out' has not changed.
-(rerunfilecheck)             Checksum: 89F8011C80E1DF578F1A6DD85A6F3930;25632.
+(rerunfilecheck)             Checksum: 1E6543929BC84C9A2B6D91DEB1E8D095;25527.
  ) 
 Here is how much of TeX's memory you used:
- 33939 strings out of 467871
- 677321 string characters out of 5418376
- 1148005 words of memory out of 5000000
- 61583 multiletter control sequences out of 15000+600000
- 746152 words of font info for 289 fonts, out of 8000000 for 9000
+ 33958 strings out of 467871
+ 677550 string characters out of 5418376
+ 1147975 words of memory out of 5000000
+ 61587 multiletter control sequences out of 15000+600000
+ 752610 words of font info for 297 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,108p,1383b,1006s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb
-><C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb>
-<C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb>
-<C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb>
-<C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><
-C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C
-:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:
-/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/
-Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Us
-ers/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/User
-s/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/User
-s/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/User
-s/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users
-/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users
-/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on reporte_compelto.pdf (90 pages, 7971022 bytes).
+b><C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx6.pfb
+><C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb>
+<C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><
+C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><
+C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><
+C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C
+:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:
+/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/
+Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/U
+sers/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Us
+ers/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Use
+rs/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users
+/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/n
+arro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/nar
+ro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/narro
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/narro
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/narro
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/narro/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/narro/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/narro/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/narro/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
+Output written on reporte_compelto.pdf (91 pages, 8071640 bytes).
 PDF statistics:
- 1380 PDF objects out of 1440 (max. 8388607)
- 295 named destinations out of 1000 (max. 500000)
- 64075 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1424 PDF objects out of 1440 (max. 8388607)
+ 296 named destinations out of 1000 (max. 500000)
+ 68171 words of extra memory for PDF output out of 74296 (max. 10000000)
 

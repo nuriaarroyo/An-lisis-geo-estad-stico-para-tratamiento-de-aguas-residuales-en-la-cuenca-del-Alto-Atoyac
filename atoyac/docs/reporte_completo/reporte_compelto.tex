@@ -100,7 +100,6 @@
   breakable
 }
 
-\newcommand{\pendiente}{\textcolor{AtoyacRed}{\textbf{[PENDIENTE]}}}
 \newcommand{\verificar}{\textcolor{AtoyacOrange}{\textbf{[VERIFICAR]}}}
 \newcommand{\completo}{\textcolor{AtoyacGreen}{\textbf{[COMPLETO]}}}
 % Rutas monoespaciadas con cortes permitidos en diagonales y guiones bajos.
@@ -136,12 +135,12 @@
 
 \vfill
 \begin{tabular}{ll}
-Autor/a: & \pendiente \\
-Institucion: & \pendiente \\
+Autor/a: & No consignado en los metadatos del documento \\
+Institucion: & No consignada en los metadatos del documento \\
 Version: & 0.1 -- estructura maestra \\
 Fecha de corte: & 24 de septiembre de 2026 \\
-Repositorio/directorio: & \pendiente \\
-Responsable de revision: & \pendiente \\
+Repositorio/directorio: & Repositorio del proyecto Alto Atoyac \\
+Responsable de revision: & Por designar antes de la entrega institucional \\
 \end{tabular}
 \vfill
 \end{titlepage}
@@ -203,7 +202,7 @@ En conjunto, el proyecto construye una base trazable para reconocer concentracio
     DENUE informa ubicacion y actividad economica declarada, pero no demuestra que un establecimiento se encuentre activo, ejecute procesos humedos, consuma determinado volumen de agua, genere una descarga, vierta contaminantes o incumpla una norma. La proximidad cartografica a un rio no demuestra conexion hidraulica, ruta de descarga ni afectacion del cauce. Un cluster expresa densidad y continuidad espacial bajo parametros especificos; no equivale a una cuenca sanitaria, zona de servicio, red de colectores, fuente causal de contaminacion ni prioridad automatica de inversion. Tampoco pueden inferirse caudales, cargas contaminantes, capacidad de tratamiento o costos de infraestructura a partir de estos resultados.
 
     \item \textbf{¿Cuales son los siguientes estudios indispensables antes de hablar de inversion en colectores?}
-    DUDA
+    Se requieren verificacion de actividad y proceso en campo; identificacion de puntos, horarios y rutas reales de descarga; aforos y muestreo fisicoquimico por estratos productivos; inventario georreferenciado de atarjeas, colectores, pozos de visita y conexiones; delimitacion de areas realmente tributarias con topografia y modelos de elevacion; evaluacion de capacidad, tecnologia y compatibilidad de las plantas de tratamiento existentes; y estimaciones de caudal, carga, CAPEX, OPEX, riesgo, permisos y gobernanza para alternativas comparables. Solo al integrar estas evidencias puede pasarse de una priorizacion territorial a escenarios de conduccion y tratamiento.
 \end{enumerate}
 
 \begin{table}[H]
@@ -980,7 +979,7 @@ Los dos diagnósticos muestran una estructura territorial consistente, aunque re
 
 La zona metropolitana del sur no se comporta como un único punto de concentración, sino como una superficie extensa formada por varios máximos locales próximos entre sí. Hacia el norponiente se observan concentraciones de menor tamaño, separadas por espacios de menor ocupación y por discontinuidades que se vuelven más o menos visibles dependiendo de la escala empleada.
 
-Este diagnóstico no define todavía los clusters utilizados en etapas posteriores. Su función es describir la geometría general del universo y mostrar que la distribución presenta simultáneamente núcleos locales, concentraciones de escala intermedia y grandes estructuras urbanas. Esta combinación anticipa que un método de clustering espacial deberá ser capaz tanto de reconocer agrupamientos compactos como de enfrentar zonas de alta continuidad espacial donde diferentes núcleos pueden integrarse en agrupamientos de gran tamaño.
+Este diagnóstico no define todavía los clusters utilizados en etapas posteriores. Su función es describir la geometría general del universo. El diagnóstico muestra que el universo combina concentraciones compactas con zonas de mayor continuidad espacial. Esta característica motiva evaluar métodos capaces de representar densidades variables y debe considerarse posteriormente al interpretar agrupamientos de gran extensión.
 
 
 \subsection{Heterogeneidad de densidad y eleccion de familia algoritmica}
@@ -1101,13 +1100,13 @@ Referencia & DBSCAN; $\varepsilon=1,600$ m; ms=25 & 13 & 329 & 7.54 & 95.0 & 2,1
 \end{table}
 \end{landscape}
 
-\subsection{Por que la solucion principal es superior para este estudio}
+\subsection{Justificacion de la solucion seleccionada}
 
-La superioridad es comparativa y operacional, no absoluta. La principal obtiene el mayor puntaje espacial entre los HDBSCAN elegibles (0.963) porque mantiene simultaneamente cinco propiedades. Primero, su ARI medio frente a las cinco configuraciones HDBSCAN mas proximas es 0.937, señal de que la estructura no depende de un unico punto aislado del espacio de parametros. Segundo, su ARI medio ante desplazamientos gaussianos de 25 m es 0.926, por lo que pequeñas imprecisiones posicionales no destruyen la particion. Tercero, la probabilidad media de pertenencia es 0.914 y 84.0\% de los puntos agrupados alcanza probabilidad al menos 0.8. Cuarto, conserva 22 grupos, mas resolucion territorial que la referencia DBSCAN de 13 grupos. Quinto, limita el cluster mayor a 45.75\%, frente a 49.90\% en la referencia, sin elevar el ruido a niveles extremos.
+La configuracion principal fue la \textbf{mejor puntuada bajo la regla operativa definida} (0.963), no una geografia verdadera unica. Su seleccion responde al compromiso buscado entre estabilidad, resolucion territorial, ruido, pertenencia y control del cluster mayor. Primero, su ARI medio frente a las cinco configuraciones HDBSCAN mas proximas es 0.937. Segundo, su ARI medio ante desplazamientos gaussianos de 25 m es 0.926. Tercero, la probabilidad media de pertenencia es 0.914 y 84.0\% de los puntos agrupados alcanza probabilidad al menos 0.8. Cuarto, conserva 22 grupos, mas resolucion territorial que la referencia DBSCAN de 13 grupos. Quinto, limita el cluster mayor a 45.75\%, frente a 49.90\% en la referencia, sin elevar el ruido a niveles extremos.
 
 DBSCAN presenta un ARI de perturbacion mayor (0.996) y menos ruido (7.54\%), pero esto no lo hace globalmente preferible: utiliza un radio fijo de 1,600 m, forma solo 13 grupos, eleva la mediana de tamaño a 95 y concentra 2,178 establecimientos en el mayor cluster. Su proxy maximo de encadenamiento es 0.908 frente a 1.222 en la principal, pero su menor resolucion y mayor mega-cluster muestran que la estabilidad se obtiene, en parte, fusionando estructuras. Se conserva como referencia precisamente porque ofrece una lectura mas agregada y estable con la cual contrastar HDBSCAN.
 
-Los escenarios de sensibilidad confirman que la seleccion no es fragil. Con \texttt{min\_samples}=20, elevar \texttt{min\_cluster\_size} de 10 a 20 o 30 mantiene intacto el mega-cluster de 1,997 casos y produce ARI de 0.998 y 0.989 frente a la principal. Reducir \texttt{min\_samples} a 10 aumenta la inclusion, cambia el mega-cluster a 2,065 casos y aun conserva ARI de 0.925 y 0.922. Por tanto, la principal representa el extremo mas detallado de una familia estable con \texttt{min\_samples}=20, sin depender de grupos menores que diez.
+Los escenarios de sensibilidad confirman que la seleccion no es fragil y, al mismo tiempo, muestran que no es unica. Dos configuraciones HDBSCAN obtienen 0.962, apenas 0.001 menos que la seleccionada, y producen resultados practicamente equivalentes. Con \texttt{min\_samples}=20, elevar \texttt{min\_cluster\_size} de 10 a 20 o 30 mantiene intacto el mega-cluster de 1,997 casos y produce ARI de 0.998 y 0.989 frente a la principal. Reducir \texttt{min\_samples} a 10 aumenta la inclusion, cambia el mega-cluster a 2,065 casos y aun conserva ARI de 0.925 y 0.922. Por tanto, la solucion elegida funciona como referencia reproducible dentro de una familia de configuraciones HDBSCAN muy cercanas; no debe interpretarse como la unica particion territorial admisible.
 
 \begin{landscape}
 \begin{figure}[H]
@@ -1163,7 +1162,7 @@ De los 4,365 establecimientos, 4,107 (94.1\%) son nucleos robustos, 94 (2.2\%) e
 
 La prueba posicional genero tres replicas desplazando independientemente cada coordenada en $x$ y $y$ mediante ruido normal $N(0,25^2)$ m y volvio a ajustar el mismo modelo. Los ARI globales fueron 0.895, 0.892 y 0.989; al comparar solo puntos agrupados en ambas particiones aumentaron a 0.979, 0.979 y 1.000. Sin el mega-cluster fueron 0.864, 0.854 y 0.971. Esto indica que la mayor parte de los cambios inducidos por 25 m ocurre en la frontera entre ruido y cluster o en bordes locales, no en el nucleo de los grupos.
 
-La particion seleccionada es superior porque ofrece el mejor compromiso documentado dentro de la familia preferida, no porque sea una geografia unica o verdadera. El mega-cluster aporta estabilidad global y requiere diagnostico interno; 584 puntos quedan como actividad dispersa y no deben considerarse irrelevantes; y 164 establecimientos presentan membresia sensible. La solucion es adecuada como referencia operativa para perfilar concentraciones y comparar territorios, siempre conservando los escenarios alternativos y la persistencia por punto.
+La particion seleccionada ofrece el mejor compromiso documentado bajo la regla adoptada, con una ventaja de puntaje minima respecto de dos alternativas HDBSCAN. El mega-cluster aporta estabilidad global y requiere diagnostico interno; 584 puntos quedan como actividad dispersa y no deben considerarse irrelevantes; y 164 establecimientos presentan membresia sensible. La solucion es adecuada como referencia operativa para perfilar concentraciones y comparar territorios, siempre conservando los escenarios alternativos y la persistencia por punto.
 
 \subsection{Glosario minimo de metricas}
 \begin{longtable}{p{0.18\textwidth}p{0.34\textwidth}p{0.38\textwidth}}
@@ -1357,24 +1356,15 @@ Cada cluster se compara contra el \textbf{universo completo de 4,010 establecimi
 \[
 L_{g,s}=\frac{p_{g,s}}{p_s}.
 \]
-Un lift superior a uno significa que la señal es relativamente mas frecuente en el cluster que en el universo interior; no significa que sea exclusiva del grupo ni que explique su formacion. Su lectura es multiplicativa: $L=1$ indica la misma prevalencia que la base, $L=1.5$ indica una frecuencia 1.5 veces mayor, $L=2$ el doble y $L=10$ diez veces la prevalencia base. Por ejemplo, el lift de 10.62 para tejido/hilado en el cluster 10 significa que esa señal aparece aproximadamente 10.6 veces con mayor frecuencia relativa que en el conjunto de la cuenca: 95.1\% frente a 9.0\%. Un lift menor que uno indica subrepresentacion. Como la base incluye al propio cluster, la comparacion es conservadora para los grupos grandes, especialmente el cluster 20. El lift siempre debe leerse junto con el numero de casos y la diferencia en puntos porcentuales: una razon grande con pocos registros puede ser menos relevante que una razon moderada sostenida por cientos de establecimientos.
+Un lift superior a uno significa que la señal es relativamente mas frecuente en el cluster que en el universo interior; no significa que sea exclusiva del grupo ni que explique su formacion. Su lectura es multiplicativa: $L=1$ indica la misma prevalencia que la base, $L=1.5$ indica una frecuencia 1.5 veces mayor, $L=2$ el doble y $L=10$ diez veces la prevalencia base. Por ejemplo, el lift de 10.62 para tejido/hilado en el cluster 10 significa que esa señal aparece aproximadamente 10.6 veces con mayor frecuencia relativa que en el conjunto de la cuenca: 95.1\% frente a 9.0\%. Un lift menor que uno indica subrepresentacion.
 
-\begin{preguntas}
-\begin{itemize}
-    \item ¿Que significa que una señal este sobrerrepresentada?
-    \item ¿Cual es la proporcion dentro del cluster y cual la proporcion base?
-    \item ¿Cual es el lift y el odds ratio?
-    \item ¿La diferencia es estadisticamente compatible con algo mas que fluctuacion muestral segun Fisher?
-    \item ¿Se corrigio por multiples pruebas mediante Benjamini--Hochberg?
-    \item ¿Cual es el tamaño absoluto? Un lift grande con muy pocos casos puede ser poco operativo.
-\end{itemize}
-\end{preguntas}
+La base descriptiva del lift es siempre el universo completo de \textbf{4,010 establecimientos dentro de la cuenca}, por lo que incluye al cluster evaluado. En cambio, Fisher y el odds ratio construyen el contraste entre el cluster y \textbf{el resto del universo}, excluyendo de ese segundo grupo a los miembros del propio cluster. Son contrastes relacionados, pero no identicos: el lift compara la prevalencia interna con la prevalencia global, mientras el OR compara momios internos contra externos. Incluir al propio cluster en la base global reduce el lift de los grupos grandes y vuelve conservadora su lectura, especialmente para el cluster 20, que contiene casi la mitad de los establecimientos interiores. Por ello se reportan tambien conteos, diferencia en puntos porcentuales, OR, intervalo y $q$ ajustado.
 
 \subsection{Prueba estadistica y criterio de reporte}
 
-Para cada par cluster--señal se construyo una tabla $2\times2$: presencia/ausencia de la señal dentro del cluster y presencia/ausencia en el resto del universo. La prueba exacta bilateral de Fisher evalua si la distribucion observada es compatible con independencia y produce un \emph{odds ratio} (OR). Un OR mayor que uno indica mayores momios dentro del cluster; su intervalo de confianza al 95\% se calculo con correccion de Haldane--Anscombe de 0.5 para mantener estimaciones finitas cuando existen celdas con cero. El lift compara prevalencias y el OR compara momios: ambos expresan asociacion relativa, pero no causalidad.
+Para cada par cluster--señal se construyo una tabla $2\times2$: presencia/ausencia de la señal dentro del cluster y presencia/ausencia en el resto del universo. La prueba exacta bilateral de Fisher se usa como herramienta de contraste de asociacion dentro del universo observado y produce un \emph{odds ratio} (OR). Un OR mayor que uno indica mayores momios dentro del cluster; su intervalo de confianza al 95\% se calculo con correccion de Haldane--Anscombe de 0.5 para mantener estimaciones finitas cuando existen celdas con cero. El lift compara prevalencias globales y el OR compara momios cluster--resto: ambos describen asociacion relativa, pero no son identicos ni expresan causalidad.
 
-Como se prueban simultaneamente 19 grupos ---18 clusters y ruido--- contra 18 señales, se realizaron \textbf{342 comparaciones}. Los valores $p$ se ajustaron en conjunto mediante Benjamini--Hochberg para controlar la tasa esperada de falsos descubrimientos. Un rasgo se conserva como evidencia descriptiva suficiente solamente si cumple simultaneamente: al menos cinco casos, prevalencia interna de 5\% o mas, lift de al menos 1.25 y $q\leq0.05$. El filtro evita destacar asociaciones significativas pero diminutas, o lifts extremos sostenidos por uno o dos registros.
+Como se contrastan simultaneamente 19 grupos ---18 clusters y ruido--- contra 18 señales, se realizaron \textbf{342 comparaciones}. Los valores $p$ se ajustaron en conjunto mediante Benjamini--Hochberg (BH) para limitar la tasa esperada de falsos descubrimientos bajo este conjunto de contrastes. Un rasgo se conserva como evidencia descriptiva suficiente solamente si cumple simultaneamente: al menos cinco casos, prevalencia interna de 5\% o mas, lift de al menos 1.25 y $q\leq0.05$. Fisher y BH ayudan a ordenar asociaciones observadas, pero \textbf{DENUE no es una muestra probabilistica} y estas pruebas \textbf{no corrigen la dependencia espacial} entre establecimientos. En consecuencia, sus valores no autorizan inferencia poblacional general ni sustituyen relevancia practica, validacion de procesos o trabajo de campo.
 
 \subsection{Resultados de sobrerrepresentacion}
 
@@ -1384,30 +1374,35 @@ Los \textbf{clusters 9 y 10 se localizan en el municipio de Tlahuapan}. El clust
 
 El \textbf{cluster 6 corresponde a Santiago Coltzingo, municipio de Tlahuapan}, y contiene 20 establecimientos. Dieciseis presentan señal de maquila: 80.0\% frente a 14.7\% en la cuenca, con lift 5.45. Esto significa que la prevalencia relativa de maquila es alrededor de 5.5 veces la regional. Es una especializacion estadisticamente clara, pero su base absoluta es pequeña; por ello representa una hipotesis focal para verificacion de campo y no, por si sola, una justificacion de infraestructura. Los clusters 4 y 5 tambien muestran maquila y confeccion, aunque sus tamaños reducidos exigen la misma cautela.
 
-Los clusters 12, 13, 17 y 19 comparten sobrerrepresentacion de confeccion; 12 y 13 agregan proceso seco explicito, mientras 19 incorpora produccion y maquila. En el cluster 20 se sobrerrepresentan lavanderia/tintoreria (59.3\% frente a 39.6\%), lavado generico (43.6\% frente a 29.9\%) y humedo explicito (15.7\% frente a 9.2\%). Sus lifts son mas moderados que los del tejido o la mezclilla, pero se apoyan en cientos de casos: 1,185 lavanderias, 871 señales de lavado y 313 de proceso humedo. Esta escala absoluta le confiere mayor importancia operativa que un lift alto basado en pocos establecimientos.
+Los clusters 12, 13, 17 y 19 comparten sobrerrepresentacion de confeccion; 12 y 13 agregan proceso seco explicito, mientras 19 incorpora produccion y maquila. En el cluster 20 se sobrerrepresentan lavanderia/tintoreria (59.3\% frente a 39.6\%), lavado generico (43.6\% frente a 29.9\%) y humedo explicito (15.7\% frente a 9.2\%). Sus lifts son mas moderados que los del tejido o la mezclilla, pero se apoyan en cientos de casos: 1,185 registros sectoriales de lavanderia/tintoreria, 871 señales de lavado y 313 de proceso humedo. Esta escala absoluta le confiere importancia operativa, pero \textbf{lavanderia/tintoreria es una categoria sectorial/SCIAN y no equivale a lavanderia industrial verificada}.
 
+\paragraph{Sensibilidad interpretativa del cluster 20.} Sin modificar su membresia, se contrastaron etiquetas superpuestas ya existentes. De sus 1,997 establecimientos, 1,185 (59.3\%) pertenecen al SCIAN de lavanderia/tintoreria; 335 (16.8\%) sobreviven el universo estricto con MH; 22 (1.1\%) tienen \texttt{evidencia\_hidrica=SI}; 1,205 (60.3\%) tienen \texttt{SI} o \texttt{REVISAR}; 313 (15.7\%) presentan señal de humedo explicito; y 871 (43.6\%) lavado generico contextualizado. Las categorias no son excluyentes y sus conteos no deben sumarse. El contraste muestra que la señal sectorial amplia es mucho mayor que la evidencia humeda explicita o confirmada: sirve para priorizar verificacion, no para afirmar que existan 1,185 lavanderias industriales.
+
+\begin{landscape}
 \begin{table}[H]
 \centering
-\scriptsize
+\tiny
+\setlength{\tabcolsep}{3.5pt}
 \caption{Rasgos representativos que superan los criterios conservadores de sobrerrepresentacion.}
-\begin{tabularx}{\textwidth}{llrrrrrr}
+\begin{tabular}{llrrrrrrrrl}
 \toprule
-\textbf{Cluster} & \textbf{Señal} & \textbf{Casos} & \textbf{Cluster} & \textbf{Base} & \textbf{Dif. pp} & \textbf{Lift} & \textbf{OR} \\
+\textbf{Cluster} & \textbf{Señal} & \textbf{N cluster} & \textbf{N señal} & \textbf{\% cluster} & \textbf{\% base} & \textbf{Dif. pp} & \textbf{Lift} & \textbf{OR} & \textbf{IC 95\% OR} & \textbf{$q_{BH}$} \\
 \midrule
-C10 & Tejido/hilado & 135 & 95.1\% & 9.0\% & 86.1 & 10.62 & 313.74 \\
-C9 & Tejido/hilado & 24 & 80.0\% & 9.0\% & 71.0 & 8.94 & 43.52 \\
-C6 & Maquila & 16 & 80.0\% & 14.7\% & 65.3 & 5.45 & 23.85 \\
-C8 & Confeccion & 289 & 85.8\% & 39.0\% & 46.8 & 2.20 & 11.35 \\
-C8 & Maquila & 188 & 55.8\% & 14.7\% & 41.1 & 3.80 & 10.30 \\
-C8 & Mezclilla/pantalon & 137 & 40.7\% & 4.6\% & 36.1 & 8.91 & 54.01 \\
-C12 & Confeccion & 188 & 83.9\% & 39.0\% & 45.0 & 2.15 & 9.17 \\
-C13 & Proceso seco & 71 & 47.7\% & 16.1\% & 31.6 & 2.97 & 5.22 \\
-C19 & Confeccion & 76 & 76.0\% & 39.0\% & 37.0 & 1.95 & 5.17 \\
-C20 & Lavanderia/tintoreria & 1,185 & 59.3\% & 39.6\% & 19.8 & 1.50 & 5.87 \\
-C20 & Humedo explicito & 313 & 15.7\% & 9.2\% & 6.4 & 1.70 & 6.38 \\
+C10 & Tejido/hilado & 142 & 135 & 95.1 & 9.0 & 86.1 & 10.62 & 313.74 & [138.89, 619.34] & $8.18\times10^{-141}$ \\
+C9 & Tejido/hilado & 30 & 24 & 80.0 & 9.0 & 71.0 & 8.94 & 43.52 & [17.12, 97.95] & $1.27\times10^{-19}$ \\
+C6 & Maquila & 20 & 16 & 80.0 & 14.7 & 65.3 & 5.45 & 23.85 & [7.68, 62.20] & $6.89\times10^{-10}$ \\
+C8 & Confeccion & 337 & 289 & 85.8 & 39.0 & 46.8 & 2.20 & 11.35 & [8.24, 15.37] & $3.41\times10^{-75}$ \\
+C8 & Maquila & 337 & 188 & 55.8 & 14.7 & 41.1 & 3.80 & 10.30 & [8.10, 13.04] & $1.19\times10^{-76}$ \\
+C8 & Mezclilla/pantalon & 337 & 137 & 40.7 & 4.6 & 36.1 & 8.91 & 54.01 & [37.26, 76.81] & $7.65\times10^{-117}$ \\
+C12 & Confeccion & 224 & 188 & 83.9 & 39.0 & 45.0 & 2.15 & 9.17 & [6.32, 13.00] & $1.44\times10^{-44}$ \\
+C13 & Proceso seco & 149 & 71 & 47.7 & 16.1 & 31.6 & 2.97 & 5.22 & [3.75, 7.28] & $2.79\times10^{-19}$ \\
+C19 & Confeccion & 100 & 76 & 76.0 & 39.0 & 37.0 & 1.95 & 5.17 & [3.22, 8.06] & $3.62\times10^{-13}$ \\
+C20 & Lavanderia/tintoreria & 1,997 & 1,185 & 59.3 & 39.6 & 19.8 & 1.50 & 5.87 & [5.09, 6.75] & $2.18\times10^{-146}$ \\
+C20 & Humedo explicito & 1,997 & 313 & 15.7 & 9.2 & 6.4 & 1.70 & 6.38 & [4.74, 8.45] & $3.92\times10^{-47}$ \\
 \bottomrule
-\end{tabularx}
+\end{tabular}
 \end{table}
+\end{landscape}
 
 \begin{figure}[H]
 \centering

@@ -55,7 +55,7 @@
 \contentsline {section}{\numberline {13}Seleccion de la solucion espacial y robustez}{47}{section.13}%
 \contentsline {subsection}{\numberline {13.1}Criterios de seleccion}{47}{subsection.13.1}%
 \contentsline {subsection}{\numberline {13.2}Escenarios seleccionados e identificacion de la particion}{49}{subsection.13.2}%
-\contentsline {subsection}{\numberline {13.3}Por que la solucion principal es superior para este estudio}{51}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.3}Justificacion de la solucion seleccionada}{51}{subsection.13.3}%
 \contentsline {subsection}{\numberline {13.4}ARI entre particiones seleccionadas}{53}{subsection.13.4}%
 \contentsline {subsection}{\numberline {13.5}Jaccard, persistencia y establecimientos sensibles}{53}{subsection.13.5}%
 \contentsline {subsection}{\numberline {13.6}Perturbacion posicional y limites de la seleccion}{54}{subsection.13.6}%
@@ -72,29 +72,30 @@
 \contentsline {subsection}{\numberline {16.1}Base comparativa}{64}{subsection.16.1}%
 \contentsline {subsection}{\numberline {16.2}Prueba estadistica y criterio de reporte}{65}{subsection.16.2}%
 \contentsline {subsection}{\numberline {16.3}Resultados de sobrerrepresentacion}{65}{subsection.16.3}%
-\contentsline {section}{\numberline {17}Similitud entre clusters y tipologias productivas}{68}{section.17}%
-\contentsline {subsection}{\numberline {17.1}Construccion del vector y distancia combinada}{68}{subsection.17.1}%
-\contentsline {subsection}{\numberline {17.2}Tipologia jerarquica y resultados}{68}{subsection.17.2}%
-\contentsline {section}{\numberline {18}Mega-cluster y subnucleos exploratorios}{71}{section.18}%
-\contentsline {subsection}{\numberline {18.1}Por que aparece una sola estructura}{71}{subsection.18.1}%
-\contentsline {subsection}{\numberline {18.2}Segunda pasada y subnucleos observados}{71}{subsection.18.2}%
-\contentsline {subsection}{\numberline {18.3}Estabilidad y relacion con barreras territoriales}{73}{subsection.18.3}%
-\contentsline {section}{\numberline {19}Resultados principales por territorio}{73}{section.19}%
-\contentsline {subsection}{\numberline {19.1}Resultados a escala de cuenca}{74}{subsection.19.1}%
-\contentsline {subsection}{\numberline {19.2}Resultados por municipio}{74}{subsection.19.2}%
-\contentsline {subsection}{\numberline {19.3}Resultados por localidad/corredor}{74}{subsection.19.3}%
-\contentsline {subsection}{\numberline {19.4}Huejotzingo y Santa Ana Xalmimilulco}{75}{subsection.19.4}%
-\contentsline {section}{\numberline {20}Siguientes pasos y aportaciones}{76}{section.20}%
-\contentsline {subsection}{\numberline {20.1}Que se gana con el analisis}{76}{subsection.20.1}%
-\contentsline {subsection}{\numberline {20.2}Como acceder a los resultados en este reporte}{77}{subsection.20.2}%
-\contentsline {subsection}{\numberline {20.3}Donde estan guardados los datos relevantes}{77}{subsection.20.3}%
-\contentsline {subsection}{\numberline {20.4}Integracion con hidrologia, drenaje y plantas de tratamiento}{79}{subsection.20.4}%
-\contentsline {subsection}{\numberline {20.5}Siguientes pasos inmediatos}{80}{subsection.20.5}%
-\contentsline {section}{\numberline {A}Anexo A. Inventario de scripts y productos}{80}{appendix.Alph1}%
-\contentsline {section}{\numberline {B}Anexo B. Diccionario de datos de la matriz maestra}{81}{appendix.Alph2}%
-\contentsline {section}{\numberline {C}Anexo C. Diccionarios SCIAN y texto}{83}{appendix.Alph3}%
-\contentsline {section}{\numberline {D}Anexo D. Bitacora de auditoria manual}{85}{appendix.Alph4}%
-\contentsline {section}{\numberline {E}Anexo E. Catalogo de figuras, mapas y tablas}{85}{appendix.Alph5}%
-\contentsline {section}{\numberline {F}Anexo F. Glosario metodologico}{86}{appendix.Alph6}%
-\contentsline {section}{\numberline {G}Anexo G. Registro de decisiones metodologicas}{87}{appendix.Alph7}%
-\contentsline {section}{\numberline {H}Anexo J. Fuentes y antecedentes a incorporar}{88}{appendix.Alph8}%
+\contentsline {paragraph}{Sensibilidad interpretativa del cluster 20.}{66}{subsection.16.3}%
+\contentsline {section}{\numberline {17}Similitud entre clusters y tipologias productivas}{69}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Construccion del vector y distancia combinada}{69}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Tipologia jerarquica y resultados}{69}{subsection.17.2}%
+\contentsline {section}{\numberline {18}Mega-cluster y subnucleos exploratorios}{72}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Por que aparece una sola estructura}{72}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Segunda pasada y subnucleos observados}{72}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.3}Estabilidad y relacion con barreras territoriales}{74}{subsection.18.3}%
+\contentsline {section}{\numberline {19}Resultados principales por territorio}{74}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Resultados a escala de cuenca}{75}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Resultados por municipio}{75}{subsection.19.2}%
+\contentsline {subsection}{\numberline {19.3}Resultados por localidad/corredor}{75}{subsection.19.3}%
+\contentsline {subsection}{\numberline {19.4}Huejotzingo y Santa Ana Xalmimilulco}{76}{subsection.19.4}%
+\contentsline {section}{\numberline {20}Siguientes pasos y aportaciones}{77}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Que se gana con el analisis}{77}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Como acceder a los resultados en este reporte}{78}{subsection.20.2}%
+\contentsline {subsection}{\numberline {20.3}Donde estan guardados los datos relevantes}{78}{subsection.20.3}%
+\contentsline {subsection}{\numberline {20.4}Integracion con hidrologia, drenaje y plantas de tratamiento}{80}{subsection.20.4}%
+\contentsline {subsection}{\numberline {20.5}Siguientes pasos inmediatos}{81}{subsection.20.5}%
+\contentsline {section}{\numberline {A}Anexo A. Inventario de scripts y productos}{81}{appendix.Alph1}%
+\contentsline {section}{\numberline {B}Anexo B. Diccionario de datos de la matriz maestra}{82}{appendix.Alph2}%
+\contentsline {section}{\numberline {C}Anexo C. Diccionarios SCIAN y texto}{84}{appendix.Alph3}%
+\contentsline {section}{\numberline {D}Anexo D. Bitacora de auditoria manual}{86}{appendix.Alph4}%
+\contentsline {section}{\numberline {E}Anexo E. Catalogo de figuras, mapas y tablas}{86}{appendix.Alph5}%
+\contentsline {section}{\numberline {F}Anexo F. Glosario metodologico}{87}{appendix.Alph6}%
+\contentsline {section}{\numberline {G}Anexo G. Registro de decisiones metodologicas}{88}{appendix.Alph7}%
+\contentsline {section}{\numberline {H}Anexo J. Fuentes y antecedentes a incorporar}{89}{appendix.Alph8}%
