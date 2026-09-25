@@ -1,0 +1,1052 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  spanish,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\AtBeginEnvironment{longtable}{\footnotesize}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Bitácora de actividades de servicio social},
+  pdfauthor={Nuria Arroyo Bustamante --- 173605},
+  pdflang={es},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{\textbf{Bitácora de actividades de servicio social}\\[8pt]
+\large Análisis geo-estadístico para tratamiento de aguas residuales en la cuenca del Alto Atoyac}
+\author{Universidad de las Américas Puebla\\[10pt]
+Nuria Arroyo Bustamante\\173605}
+\date{24 de septiembre de 2026}
+
+\begin{document}
+\maketitle
+
+\subsection{Datos generales}\label{datos-generales}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.25\linewidth}p{0.68\linewidth}@{}}
+\toprule\noalign{}
+Campo & Información \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Proyecto & Análisis geo-estadístico para tratamiento de aguas residuales
+en la cuenca del Alto Atoyac \\
+Prestadora & Nuria Arroyo Bustamante \\
+Matrícula & 173605 \\
+Institución & Universidad de las Américas Puebla \\
+Periodo documentado en Git & 25 de mayo--24 de septiembre de 2026 \\
+Fecha de corte de la bitácora & 24 de septiembre de 2026 \\
+Repositorio & Proyecto Alto Atoyac: carpetas \texttt{version\_01/} y
+\texttt{atoyac/} \\
+\end{longtable}
+}
+
+\subsection{Propósito de la
+bitácora}\label{propuxf3sito-de-la-bituxe1cora}
+
+Esta bitácora registra las actividades realizadas durante el desarrollo
+del proyecto, desde la construcción inicial de un universo textil local
+hasta la consolidación de un análisis regional de concentraciones
+económicas dentro de la cuenca del Alto Atoyac. Incluye investigación de
+fuentes, programación, depuración y auditoría de datos, análisis
+geoespacial, exploración estadística, documentación metodológica y
+preparación de productos de comunicación.
+
+Las fechas proceden del historial de Git cuando existe un punto de
+control verificable. Muchas actividades se desarrollaron de manera
+continua entre commits; por ello la bitácora se organiza principalmente
+por etapas y productos, no como un registro diario de horas. Las horas
+incluidas en este documento son estimaciones retrospectivas basadas en
+el alcance, complejidad y productos de cada bloque de trabajo; deberán
+validarse con la coordinación institucional antes de emplearse como
+horas oficialmente acreditadas.
+
+\subsection{Resumen solicitado para seguimiento de servicio
+social}\label{resumen-solicitado-para-seguimiento-de-servicio-social}
+
+\subsubsection{1. Actividades en las que
+participa}\label{1-actividades-en-las-que-participa}
+
+La siguiente tabla reúne las actividades realizadas y las que continúan
+abiertas. El porcentaje indica avance del producto o tarea descrita, no
+porcentaje de horas del servicio social.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.04\linewidth}p{0.20\linewidth}p{0.11\linewidth}p{0.45\linewidth}p{0.10\linewidth}@{}}
+\toprule\noalign{}
+Núm. & Actividad & Estado & Evidencia principal & Avance \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Investigación y organización de fuentes DENUE, territoriales e
+hídricas & Realizada & Fuentes de versión 1 y fase regional
+& 100 \% \\
+2 & Definición de códigos SCIAN, palabras clave y reglas auditables &
+Realizada & Catálogos y scripts de clasificación & 100 \% \\
+3 & Construcción del universo textil independiente de Santa Ana
+Xalmimilulco & Realizada &
+Universo independiente de tres localidades &
+100 \% \\
+4 & Auditoría manual y refinamiento de casos de Xalmimilulco & Realizada
+& Auditables, colas y productos legacy & 100 \% \\
+5 & Comparación posterior con fuentes MH y canónicas & Realizada &
+Comparación documentada de tres localidades & 100 \% \\
+6 & Integración de la evidencia de campo MH con trazabilidad de fuente &
+Realizada & Integrador MH y auditorías regionales
+& 100 \% \\
+7 & Escalamiento a 26 municipios relacionados con la cuenca & Realizada
+& Ejecutor regional de cuenca & 100 \% \\
+8 & Construcción y comparación de cinco modalidades regionales &
+Realizada & Cinco carpetas regionales comparables & 100
+\% \\
+9 & Generación de capas, mapas PNG y mapas interactivos & Realizada &
+Capas, mapas estáticos e interactivos &
+100 \% \\
+10 & Construcción de matriz maestra y control del efecto de borde &
+Realizada & Auditoría, matriz y geometrías & 100 \% \\
+11 & Diagnóstico espacial con vecinos, KDE y mallas hexagonales &
+Realizada & Diagnósticos espaciales de Parte 2 & 100 \% \\
+12 & Exploración de 57 configuraciones DBSCAN, HDBSCAN y OPTICS &
+Realizada & Escenarios y membresías documentadas & 100 \% \\
+13 & Selección, estabilidad y sensibilidad de la solución espacial &
+Realizada & \texttt{outputs/parte\_2/05\_seleccion/} y
+\texttt{06\_clusters/} & 100 \% \\
+14 & Perfilado económico, territorial e hídrico de clusters y ruido &
+Realizada & \texttt{outputs/parte\_2/07\_perfiles/} & 100 \% \\
+15 & Sobrerrepresentación, similitud y tipologías productivas &
+Realizada & \texttt{08\_sobrerrepresentacion/} y
+\texttt{09\_comparacion/} & 100 \% \\
+16 & Diagnóstico del mega-cluster y subnúcleos exploratorios & Realizada
+& \texttt{11\_cierre/} y \texttt{14\_segunda\_pasada/} & 100 \% \\
+17 & Elaboración de atlas, figuras, presentación y explorador
+interactivo & Realizada & \texttt{12\_atlas/},
+\texttt{13\_figuras\_finales/} y HTML interactivo & 100 \% \\
+18 & Elaboración del reporte maestro y reporte sintético & Realizada &
+\texttt{docs/reporte\_completo/} y \texttt{docs/reporte\_sintetico/} &
+100 \% \\
+19 & Inventario, trazabilidad, README y documentación metodológica &
+Realizada, con mantenimiento continuo & \texttt{docs/}, README raíz y
+\texttt{atoyac/README.md} & 95 \% \\
+20 & Preparación conceptual de la integración hídrica futura & En
+desarrollo & Sección de siguientes pasos y diagrama de flujo & 35 \% \\
+21 & Obtención e integración de red de drenaje, captadores y plantas &
+Pendiente de datos institucionales & Pendiente de capas del organismo
+operador & 0 \% \\
+22 & Validación de campo, aforos, trazadores y muestreo & Pendiente de
+coordinación & Protocolo y campaña todavía no ejecutados & 0 \% \\
+23 & Modelación de rutas de residuos y escenarios de tratamiento &
+Pendiente de las actividades 21--22 & No existe todavía un resultado
+hidráulico validado & 0 \% \\
+\end{longtable}
+}
+
+\subsubsection{2. Horas realizadas}\label{2-horas-realizadas}
+
+El repositorio conserva fechas de commits y productos, pero \textbf{no
+registra automáticamente las horas trabajadas}. A partir del alcance
+verificable de los entregables producidos entre el 25 de mayo y el 24
+de septiembre de 2026 se estima una dedicación acumulada de
+\textbf{380 horas}. Esta cifra funciona como una reconstrucción razonada
+del esfuerzo y no sustituye la validación de una bitácora horaria o el
+visto bueno de la persona responsable del servicio social.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.70\linewidth}p{0.22\linewidth}@{}}
+\toprule\noalign{}
+Concepto & Horas \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Horas estimadas del periodo documentado & \textbf{380 h} \\
+Horas oficialmente validadas & \textbf{Pendientes de validación
+institucional} \\
+Total estimado acumulado a este corte & \textbf{380 h} \\
+Meta total del programa & \textbf{Por confirmar con la institución} \\
+\end{longtable}
+}
+
+\paragraph{Desglose estimado de horas por bloque de
+actividad}\label{desglose-estimado-de-horas-por-bloque-de-actividad}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.13\linewidth}p{0.22\linewidth}p{0.08\linewidth}p{0.34\linewidth}p{0.11\linewidth}@{}}
+\toprule\noalign{}
+Fecha o periodo & Actividad & Horas estimadas & Evidencia/entregable &
+Validación \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Mayo--septiembre de 2026 & Desarrollo y auditoría de la versión 1 & 70 h &
+Scripts, tablas y reporte local & Estimación \\
+Mayo--septiembre de 2026 & Construcción de universos regionales & 55 h &
+Cinco carpetas de resultados & Estimación \\
+Mayo--septiembre de 2026 & Cartografía y análisis espacial & 60 h & Mapas,
+capas y diagnósticos & Estimación \\
+Mayo--septiembre de 2026 & Clustering y evaluación de robustez & 80 h &
+Etapas 04--06 de Parte 2 & Estimación \\
+Mayo--septiembre de 2026 & Perfilado y análisis estadístico & 45 h & Etapas
+07--09 de Parte 2 & Estimación \\
+Mayo--septiembre de 2026 & Reportes, atlas y documentación & 70 h & PDF,
+README e inventarios & Estimación \\
+& \textbf{Total estimado} & \textbf{380 h} & & \textbf{Por validar} \\
+\end{longtable}
+}
+
+\subsubsection{3. Porcentaje de avance de las actividades
+solicitadas}\label{3-porcentaje-de-avance-de-las-actividades-solicitadas}
+
+Para resumir el avance se distinguen dos alcances. El primero es el
+\textbf{análisis geo-estadístico actualmente comprometido}, que llega
+hasta la identificación, perfilado y documentación de concentraciones.
+El segundo es la \textbf{ampliación hidráulica futura}, que depende de
+capas y validaciones externas.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.40\linewidth}p{0.40\linewidth}p{0.12\linewidth}@{}}
+\toprule\noalign{}
+Alcance evaluado & Criterio & Avance estimado \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Construcción y auditoría del universo & Fuentes, reglas, modalidades y
+matriz maestra terminadas & 100 \% \\
+Análisis territorial y cartografía & Capas y mapas
+estáticos/interactivos generados & 100 \% \\
+Clustering y robustez & Exploración, selección, sensibilidad y
+persistencia documentadas & 100 \% \\
+Perfilado e interpretación & Perfiles, sobrerrepresentación, similitud,
+ruido y mega-cluster terminados & 100 \% \\
+Comunicación y trazabilidad & Reportes, atlas, inventarios y README
+terminados; requieren mantenimiento al cambiar el proyecto & 95 \% \\
+\textbf{Avance del análisis geo-estadístico actual} & Promedio de los
+cinco componentes anteriores & \textbf{99 \%} \\
+Diseño conceptual de la fase hidráulica & Objetivos, capas necesarias,
+flujo y límites definidos & 35 \% \\
+Integración hidráulica aplicada & Drenaje, captadores, plantas, rutas y
+validación todavía no ejecutados & 0 \% \\
+\end{longtable}
+}
+
+El 99 \% no significa que el problema ambiental o de infraestructura
+esté resuelto. Significa que el alcance actual de construcción del
+universo, análisis de concentraciones y documentación está prácticamente
+cerrado, con mantenimiento editorial menor pendiente. La etapa
+hidráulica es un nuevo alcance y no debe mezclarse con el porcentaje de
+terminación del análisis geo-estadístico.
+
+\subsection{Resumen de aportaciones}\label{resumen-de-aportaciones}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Construcción de universos textiles e hídricos auditables a partir de
+  DENUE.
+\item
+  Desarrollo y documentación de filtros SCIAN y reglas textuales.
+\item
+  Auditoría manual de establecimientos de Santa Ana Xalmimilulco.
+\item
+  Integración diferenciada de evidencia de campo MH.
+\item
+  Escalamiento del análisis a 26 municipios relacionados con la cuenca.
+\item
+  Generación de cinco modalidades comparables del universo regional.
+\item
+  Construcción de cartografía estática e interactiva.
+\item
+  Exploración de clustering espacial con DBSCAN, HDBSCAN y OPTICS.
+\item
+  Selección y evaluación de robustez de una solución espacial
+  reproducible.
+\item
+  Perfilado productivo y territorial de clusters y actividad dispersa.
+\item
+  Análisis de sobrerrepresentación y similitud entre perfiles.
+\item
+  Diagnóstico interno del mega-cluster metropolitano.
+\item
+  Elaboración de atlas, presentaciones, reporte maestro y reporte
+  sintético.
+\item
+  Organización de trazabilidad, inventarios, decisiones y siguientes
+  pasos.
+\item
+  Preparación conceptual de la futura integración con hidrología,
+  relieve, drenaje y tratamiento.
+\end{enumerate}
+
+\subsection{Bitácora cronológica por
+etapas}\label{bituxe1cora-cronoluxf3gica-por-etapas}
+
+\subsubsection{Etapa 1. Preparación del análisis geoespacial
+reproducible}\label{etapa-1-preparaciuxf3n-del-anuxe1lisis-geoespacial-reproducible}
+
+\textbf{Periodo verificable:} mayo de 2026\\
+\textbf{Puntos de control Git:} \texttt{2eb2057}, \texttt{54d24f2}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Revisión inicial del problema & Se tradujo el problema general de
+actividad textil y agua en una secuencia de análisis territorial
+reproducible. & Estructura inicial de \texttt{version\_01/}. \\
+Organización de fuentes geográficas & Se prepararon insumos DENUE,
+localidades y capas territoriales para su lectura con herramientas
+geoespaciales. & \texttt{version\_01/data/} y scripts de preparación. \\
+Normalización de identificadores & Se definieron llaves y criterios para
+conservar correspondencia entre registros tabulares y geometrías. &
+Capas y tablas auditables. \\
+Definición de recortes territoriales & Se configuraron Santa Ana
+Xalmimilulco, Huejotzingo y San Martín Texmelucan como ámbitos de
+trabajo iniciales. & Configuración de localidades en
+\texttt{version\_01/}. \\
+Diseño de un flujo por etapas & Se separaron preparación, clasificación,
+refinamiento, auditoría y comparación. & Scripts numerados y ejecutor
+local. \\
+Primeras auditorías & Se incorporaron controles de conteos, campos y
+decisiones para evitar clasificaciones opacas. & Commit de auditoría y
+productos de control. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 2. Construcción del universo textil
+independiente}\label{etapa-2-construcciuxf3n-del-universo-textil-independiente}
+
+\textbf{Periodo verificable:} mayo--junio de 2026\\
+\textbf{Puntos de control Git:} \texttt{5fab10d}, \texttt{f961955}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Investigación de códigos SCIAN & Se identificaron actividades textiles,
+confección y servicios relacionados para construir el universo de
+interés. & \texttt{version\_01/config/} y catálogos. \\
+Construcción de catálogo de palabras & Se organizaron expresiones
+asociadas con textil, mezclilla, lavado, producción, maquila y procesos
+secos o húmedos. & \texttt{palabras\_clave.csv}. \\
+Diseño de reglas de clasificación & Se formalizó la precedencia entre
+señales SCIAN, coincidencias textuales, exclusiones y estados de
+revisión. & \texttt{reglas\_clasificacion.csv} y
+\texttt{matriz\_decision.csv}. \\
+Separación de categorías & Se distinguieron pertenencia sectorial,
+prioridad analítica y evidencia potencialmente hídrica. &
+\texttt{politica\_categorias.csv}. \\
+Programación del clasificador & Se implementaron las reglas en Python
+sin utilizar todavía MH o el universo canónico como entrada de
+clasificación. & Scripts de \texttt{version\_01/scripts/}. \\
+Construcción del universo amplio & Se produjeron conjuntos
+independientes de establecimientos con señales textiles. &
+\texttt{version\_01/outputs/universo\_independiente\_3\_localidades/}. \\
+Refinamiento de alcance & Se aplicaron exclusiones y prioridades sin
+buscar nuevos registros fuera del universo inicial. &
+\texttt{version\_01/outputs/universo\_refinado\_santa\_ana/}. \\
+Generación de colas manuales & Se prepararon casos de SCIAN 314 y
+maquila para revisión humana, con enlaces cartográficos y campos de
+decisión. & \texttt{cola\_revision\_manual\_314.csv} y
+\texttt{cola\_revision\_manual\_20.csv}. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 3. Auditoría manual de Santa Ana
+Xalmimilulco}\label{etapa-3-auditoruxeda-manual-de-santa-ana-xalmimilulco}
+
+\textbf{Periodo verificable:} junio--julio de 2026\\
+\textbf{Puntos de control Git:} \texttt{6b640de}, \texttt{44eb26d},
+\texttt{3f30762}, \texttt{f284fa6}, \texttt{86becfa}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Revisión establecimiento por establecimiento & Se realizó manualmente la
+auditoría de casos prioritarios de Santa Ana Xalmimilulco. & Tablas
+legacy y auditables locales. \\
+Registro de decisiones humanas & Se conservaron campos para evidencia,
+observaciones, inclusión y motivo de decisión. & Colas y tablas de
+auditoría. \\
+Verificación de maquilas & Se preparó y revisó un subconjunto específico
+de unidades asociadas con maquila. & Script y cola de revisión de
+maquila. \\
+Construcción del universo hídrico preliminar & Se combinaron reglas
+automáticas y decisiones manuales para un conjunto local preliminar. &
+\texttt{universo\_hidrico\_preliminar.csv}. \\
+Comparación con MH & Se incorporó una comparación posterior con la
+evidencia de campo disponible. & Commits ``comparacion mh'' y productos
+de comparación. \\
+Comparación con universo canónico & Se midieron coincidencias, altas y
+bajas sin usar el universo histórico para entrenar el clasificador
+independiente. &
+\texttt{version\_01/outputs/comparacion\_3\_localidades/}. \\
+Conservación de la trazabilidad legacy & Se organizaron los productos
+tempranos para impedir que fueran confundidos con el pipeline regional
+posterior. & \texttt{version\_01/outputs/legacy/}. \\
+Elaboración de reporte metodológico local & Se documentaron reglas,
+conteos, comparación y limitaciones de la fase. &
+\texttt{reporte\_metodologico.md}. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 4. Formalización de la versión
+1}\label{etapa-4-formalizaciuxf3n-de-la-versiuxf3n-1}
+
+\textbf{Periodo verificable:} julio--agosto de 2026\\
+\textbf{Puntos de control Git:} \texttt{b42c139}, \texttt{e5831b0}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Consolidación del pipeline local & Se creó un ejecutor que reproduce las
+etapas principales de Santa Ana en orden. &
+\texttt{run\_santa\_ana\_pipeline.py}. \\
+Externalización de configuración & Se trasladaron reglas y políticas a
+CSV y JSON para evitar decisiones ocultas en código. &
+\texttt{version\_01/config/filtros\_textiles\_santa\_ana/versiones/v1/}. \\
+Documentación del flujo & Se redactaron README para datos, scripts
+legacy, productos y filtros. & README internos de
+\texttt{version\_01/}. \\
+Control de resultados congelados & Se distinguieron resultados
+independientes de referencias abiertas posteriormente. & Manifiestos y
+reportes de comparación. \\
+Identificación de límites & Se documentó que la fase local no debía
+extrapolarse manualmente a toda la cuenca. & Reporte metodológico y
+decisiones posteriores. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 5. Reorganización y transición al análisis
+regional}\label{etapa-5-reorganizaciuxf3n-y-transiciuxf3n-al-anuxe1lisis-regional}
+
+\textbf{Fecha de consolidación:} 24 de septiembre de 2026\\
+\textbf{Puntos de control Git:} \texttt{528c019}, \texttt{3d69baf},
+\texttt{7cd11ab}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Revisión y limpieza de filtros & Se actualizaron filtros y se separaron
+productos legacy de resultados vigentes. & Commit \texttt{528c019}. \\
+Reorganización de la fase histórica & Se concentró el pipeline anterior
+bajo \texttt{version\_01/}. & Commit \texttt{3d69baf}. \\
+Creación de la fase moderna & Se integraron en \texttt{atoyac/} los
+flujos locales, regionales, scripts de clustering, documentación y
+outputs. & Commit \texttt{7cd11ab}. \\
+Inventario de fuentes & Se documentaron DENUE, cuenca, municipios,
+hidrografía, MH y archivos legacy. &
+\texttt{atoyac/docs/INVENTARIO\_GENERAL\_PROYECTO.md}. \\
+Distinción metodológica de MH & Se estableció que MH proviene de
+investigación de campo y no es un atributo original de DENUE. & Reporte
+maestro y auditorías de integración. \\
+Definición de transición de alcance & Se explicó el paso de
+Xalmimilulco/Huejotzingo al conjunto regional de municipios. & Secciones
+7--10 del reporte maestro. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 6. Construcción de universos regionales
+comparables}\label{etapa-6-construcciuxf3n-de-universos-regionales-comparables}
+
+\textbf{Fecha de consolidación:} 24 de septiembre de 2026
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Procesamiento de descarga estatal & Se trabajó con 15,956 registros
+acotados a actividades SCIAN seleccionadas. & Tablas regionales y
+resúmenes de ejecución. \\
+Selección de municipios & Se definió un ámbito de 26 municipios
+relacionado con la cuenca; se registró presencia de datos en 24. &
+Coberturas municipales. \\
+Construcción del universo sectorial & Se integraron 4,365
+establecimientos como denominador amplio de detección. &
+\texttt{outputs/cuenca\_alto\_atoyac\_puebla\_todos\_scian/}. \\
+Intersección con la cuenca & Se identificaron 4,010 establecimientos
+dentro del polígono para interpretación. & Tablas y capas dentro de
+cuenca. \\
+Modalidad amplia DENUE & Se construyó una selección de alta cobertura
+sin MH. & \texttt{outputs/cuenca\_alto\_atoyac\_puebla\_sin\_mh/}. \\
+Modalidad amplia + MH & Se integró MH manteniendo procedencia y enlaces
+de ID. & \texttt{outputs/cuenca\_alto\_atoyac\_puebla/}. \\
+Modalidad estricta DENUE & Se exigió señal adicional para lavanderías y
+se eliminaron procesos explícitamente secos cuando correspondía. &
+\texttt{outputs/cuenca\_alto\_atoyac\_puebla\_estricto\_sin\_mh/}. \\
+Modalidad estricta + MH & Se añadió evidencia de campo al escenario
+restrictivo. &
+\texttt{outputs/cuenca\_alto\_atoyac\_puebla\_estricto\_mh/}. \\
+Auditoría de integración MH & Se documentaron coincidencias, registros
+añadidos, fuente original e identificadores enlazados. &
+\texttt{auditoria\_integracion\_mh.csv}. \\
+Comparación entre modalidades & Se compararon conteos, composición
+municipal, unidades pequeñas y posibles lavanderías comerciales. &
+Presentación a dirección y tablas comparativas. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 7. Cartografía territorial y proximidad a
+hidrografía}\label{etapa-7-cartografuxeda-territorial-y-proximidad-a-hidrografuxeda}
+
+\textbf{Fecha de consolidación:} 24 de septiembre de 2026
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Preparación de capas & Se generaron GeoPackages de universos, cuenca,
+municipios y contexto territorial. & Carpetas \texttt{layers/} de cada
+modalidad. \\
+Reproyección métrica & Se utilizó EPSG:32614 para distancias y
+operaciones espaciales cuantitativas. & Scripts regionales y Parte 2. \\
+Distancia a red hidrográfica & Se calculó la distancia euclidiana mínima
+entre establecimientos y la red disponible. & Tablas y mapas de
+distancia. \\
+Clasificación por intervalos & Se resumieron distancias en 0--250 m,
+250--500 m, 500--1,000 m, 1--2 km y más de 2 km. & Productos
+territoriales. \\
+Mapas municipales y por localidad & Se generaron conteos,
+participaciones, estratos y distribuciones territoriales. & 30 PNG y 30
+HTML por corrida regional. \\
+Mapas interactivos & Se crearon productos HTML para inspección de
+establecimientos y contexto. & \texttt{maps/html/}. \\
+Documentación de limitaciones & Se aclaró que proximidad a una línea
+hídrica no prueba conexión ni descarga. & Reportes y pies de figura. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 8. Diagnóstico espacial previo al
+clustering}\label{etapa-8-diagnuxf3stico-espacial-previo-al-clustering}
+
+\textbf{Fecha de consolidación:} 24 de septiembre de 2026
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Construcción de matriz maestra & Se consolidaron IDs, coordenadas,
+señales y marca dentro/fuera de cuenca para 4,365 registros. &
+\texttt{outputs/parte\_2/01\_matriz/}. \\
+Auditoría de integridad & Se verificaron rutas, conteos, unicidad y
+hashes de fuentes. & \texttt{outputs/parte\_2/00\_auditoria/}. \\
+Preparación de geometrías & Se produjeron capas en EPSG:4326 y
+EPSG:32614. & \texttt{outputs/parte\_2/02\_geometrias/}. \\
+Diagnóstico k-NN & Se estudiaron distancias a vecinos para observar
+escalas y heterogeneidad. & Tablas y curvas k-distancia. \\
+Estimación KDE & Se generaron superficies gaussianas a varias escalas
+para observar intensidad relativa. & Figuras KDE de cuenca y
+mega-cluster. \\
+Mallas hexagonales & Se calcularon conteos directos en hexágonos de
+distintas escalas. & GeoPackages, tablas y figuras. \\
+Corrección de visualización & Se evitó interpretar el recorte de la
+superficie gaussiana como límite matemático de densidad. & Figuras
+finales y explicación técnica. \\
+Diagnóstico de densidad variable & Se concluyó que coexistían
+concentraciones compactas y zonas continuas, justificando comparar
+varias familias de clustering. & Sección 11 del reporte maestro. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 9. Exploración y selección del
+clustering}\label{etapa-9-exploraciuxf3n-y-selecciuxf3n-del-clustering}
+
+\textbf{Fecha de consolidación:} 24 de septiembre de 2026
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Definición experimental & Se estableció que el clustering usaría
+exclusivamente coordenadas, sin atributos productivos. & Decisiones
+metodológicas. \\
+Evaluación de DBSCAN & Se recorrieron configuraciones con radios fijos
+como referencia interpretable. &
+\texttt{outputs/parte\_2/04\_clustering/}. \\
+Evaluación de HDBSCAN & Se exploraron tamaños mínimos, vecinos y
+selección EOM/leaf. & Escenarios y membresías. \\
+Evaluación de OPTICS & Se utilizó como contraste para estructuras de
+densidad variable. & Resumen de escenarios. \\
+Comparación de 57 configuraciones & Se almacenaron clusters, ruido,
+tamaños, cluster mayor y probabilidades. &
+\texttt{resumen\_escenarios.csv}. \\
+Exclusión de soluciones degeneradas & Se aplicaron límites de clusters,
+ruido y dominio del grupo mayor. & Script de selección. \\
+Construcción de puntaje operativo & Se combinaron estabilidad,
+pertenencia, ruido, mega-cluster, resolución y encadenamiento. &
+Decisión JSON y tablas. \\
+Selección de solución principal & Se eligió HDBSCAN con
+\texttt{min\_cluster\_size=10}, \texttt{min\_samples=20}, EOM. &
+\texttt{solucion\_principal.gpkg}. \\
+Comparación con alternativas cercanas & Se documentó que dos HDBSCAN
+tienen puntajes 0.962 frente a 0.963 y son prácticamente equivalentes. &
+Reporte maestro, sección 13.3. \\
+Control del efecto de borde & Se detectó sobre 4,365 puntos y se
+interpretó sobre 4,010 interiores. & Resumen de borde. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 10. Robustez, persistencia y
+ruido}\label{etapa-10-robustez-persistencia-y-ruido}
+
+\textbf{Fecha de consolidación:} 24 de septiembre de 2026
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Comparación ARI & Se midió similitud global entre particiones
+seleccionadas. & Matrices ARI. \\
+Comparación Jaccard & Se emparejaron clusters para medir solapamiento
+local. & Tablas Jaccard. \\
+Perturbación posicional & Se desplazaron coordenadas 25 m para evaluar
+sensibilidad a imprecisión espacial. & Resúmenes de robustez. \\
+Persistencia por establecimiento & Se calculó la frecuencia con la que
+cada unidad conserva asignación equivalente. &
+\texttt{persistencia\_establecimientos.csv}. \\
+Clasificación de estabilidad & Se identificaron 4,107 núcleos robustos,
+94 estables y 164 sensibles. & Figuras y tablas. \\
+Conservación del ruido & Se mantuvieron 584 registros como actividad
+dispersa en detección, sin tratarlos como irrelevantes. & Capas y
+perfiles de ruido. \\
+Análisis clusters vs. ruido & Se comparó composición productiva de
+actividad agrupada y dispersa. & \texttt{08\_clusters\_vs\_ruido.png} y
+tablas. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 11. Perfil económico y productivo
+posterior}\label{etapa-11-perfil-econuxf3mico-y-productivo-posterior}
+
+\textbf{Fecha de consolidación:} 24 de septiembre de 2026
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Perfilado territorial & Se resumieron municipios, localidades y
+composición de cada cluster. &
+\texttt{outputs/parte\_2/07\_perfiles/}. \\
+Perfilado SCIAN & Se calcularon composiciones por nivel de actividad. &
+Tablas SCIAN. \\
+Perfil de tamaño laboral & Se analizaron estratos de personal ocupado
+sin convertirlos en producción o carga. & Tablas y gráficas. \\
+Perfil multilabel & Se describieron confección, maquila, mezclilla,
+tejido, lavado, procesos húmedos y secos. &
+\texttt{composicion\_multilabel.csv}. \\
+Sobrerrepresentación & Se calcularon prevalencia, diferencia, lift, OR,
+IC, Fisher y BH para 342 pares grupo--señal. &
+\texttt{sobrerrepresentacion\_senales.csv}. \\
+Limitación inferencial & Se aclaró que DENUE no es muestra
+probabilística y los contrastes no corrigen dependencia espacial. &
+Reporte maestro. \\
+Sensibilidad del cluster 20 & Se compararon lavandería sectorial,
+universo estricto, evidencia SI/SI+REVISAR, húmedo explícito y lavado
+contextualizado. & Sección 16.3 del reporte. \\
+Similitud entre perfiles & Se calcularon distancias y tipologías
+productivas exploratorias. &
+\texttt{outputs/parte\_2/09\_comparacion/}. \\
+Interpretación territorial & Se identificaron perfiles distintivos de
+Xalmimilulco, Huejotzingo, Tlahuapan, Texmelucan, Xoxtla, Amozoc y el
+sistema metropolitano. & Reportes y figuras. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 12. Segunda pasada y diagnóstico del
+mega-cluster}\label{etapa-12-segunda-pasada-y-diagnuxf3stico-del-mega-cluster}
+
+\textbf{Fecha de consolidación:} 24 de septiembre de 2026
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Congelamiento de membresía & Se mantuvo intacta la solución principal
+durante análisis posteriores. & Auditoría de cierre. \\
+Diagnóstico multiescala interno & Se repitieron KDE y hexágonos dentro
+del cluster 20. & Figuras del mega-cluster. \\
+Identificación de subnúcleos & Se documentaron 18 ramas exploratorias
+con HDBSCAN leaf. &
+\texttt{subnucleos\_mega\_cluster\_documentados.csv}. \\
+Conservación de no asignados internos & Se registró que 44.5 \% no
+pertenece a una rama local, pero conserva membresía principal. &
+Diagnóstico y mapas. \\
+Figuras de estabilidad & Se generaron visualizaciones de ARI,
+persistencia y distancias entre perfiles. &
+\texttt{outputs/parte\_2/14\_segunda\_pasada/figuras/}. \\
+Explorador interactivo & Se construyó un HTML autocontenido con
+establecimientos, clusters y filtros. &
+\texttt{explorador\_interactivo\_clusters.html}. \\
+Registro de documentación & Se inventariaron figuras y variables
+analíticas de la segunda pasada. & CSV y glosario de la etapa 14. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 13. Comunicación, reportes y
+trazabilidad}\label{etapa-13-comunicaciuxf3n-reportes-y-trazabilidad}
+
+\textbf{Fecha de consolidación:} 24 de septiembre de 2026\\
+\textbf{Puntos de control Git:} \texttt{a72c504}, \texttt{991d1ff},
+\texttt{985173c}, \texttt{e6c43c0}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad & Descripción & Evidencia o producto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Presentación a dirección & Se sintetizaron modalidades, conteos, mapas,
+diferencias municipales y límites. & \texttt{atoyac/docs/dir1/}. \\
+Atlas de clusters & Se produjeron fichas comparables para 18 clusters
+interiores y ruido. & \texttt{outputs/parte\_2/12\_atlas/}. \\
+Figuras finales & Se generaron mapas de universos, clusters,
+persistencia, perfiles, robustez, rasgos y mega-cluster. &
+\texttt{outputs/parte\_2/13\_figuras\_finales/}. \\
+Reporte maestro & Se estructuró la trazabilidad desde el problema de
+decisión hasta siguientes pasos y anexos. &
+\texttt{docs/reporte\_completo/}. \\
+Corrección metodológica & Se precisaron selección no única, bases de
+lift/OR, límites de Fisher/BH y sensibilidad del cluster 20. & Secciones
+11, 13 y 16. \\
+Reporte sintético & Se creó un documento de 17 páginas para público
+menos técnico. & \texttt{docs/reporte\_sintetico/}. \\
+Diagrama de flujo & Se representó la transición desde fuentes hasta
+integración hídrica futura. & Reporte sintético, sección 4. \\
+Diccionario de conceptos & Se agregó un anexo con términos
+metodológicos, territoriales e hidráulicos. & Reporte sintético, anexo
+A. \\
+Changelog y pendientes & Se documentaron cambios y decisiones que
+todavía requieren intervención humana. & Markdown del reporte
+sintético. \\
+Inventario del proyecto & Se creó un inventario general de scripts,
+fuentes, outputs y vacíos. &
+\texttt{docs/INVENTARIO\_GENERAL\_PROYECTO.md}. \\
+README de la fase regional & Se documentaron estado, resultados,
+ejecución y próxima etapa. & \texttt{atoyac/README.md}. \\
+README general & Se actualizó la portada del repositorio para explicar
+\texttt{version\_01/} y \texttt{atoyac/}. & README raíz. \\
+\end{longtable}
+}
+
+\subsubsection{Etapa 14. Preparación de la integración hídrica
+futura}\label{etapa-14-preparaciuxf3n-de-la-integraciuxf3n-huxeddrica-futura}
+
+\textbf{Estado:} propuesta metodológica; no constituye un análisis ya
+ejecutado.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Actividad realizada & Alcance alcanzado & Trabajo todavía requerido \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Definición conceptual de la siguiente fase & Se estableció que debe
+integrar concentraciones con hidrología, relieve y drenaje. & Conseguir
+y validar las capas operativas. \\
+Identificación de infraestructura necesaria & Se enumeraron atarjeas,
+colectores, pozos, cárcamos, captadores, interceptores y plantas. &
+Obtener trazos, cotas, capacidad y estado. \\
+Formulación de rutas potenciales & Se definió la necesidad de estudiar
+flujos por gravedad o bombeo hacia cuerpos de agua. & Modelar y
+verificar rutas con el organismo operador. \\
+Diseño de validación & Se propusieron inspección, aforos, trazadores y
+muestreo fisicoquímico. & Definir protocolo, laboratorio, cadena de
+custodia y muestra. \\
+Marco de decisión & Se señalaron caudal, carga, CAPEX, OPEX, riesgo,
+permisos y gobernanza. & Acordar criterios institucionales y escenarios
+de inversión. \\
+\end{longtable}
+}
+
+\subsection{Actividades técnicas
+transversales}\label{actividades-tuxe9cnicas-transversales}
+
+Además de las etapas anteriores, durante el proyecto se realizaron de
+manera recurrente:
+
+\begin{itemize}
+\tightlist
+\item
+  lectura, limpieza y normalización de CSV, GeoPackage, GeoJSON y
+  shapefiles;
+\item
+  homologación de campos, IDs, texto, fechas y valores booleanos;
+\item
+  control de duplicados, faltantes, geometrías y sistemas de referencia;
+\item
+  programación modular en Python;
+\item
+  generación y revisión de mapas con GeoPandas, Matplotlib y Folium;
+\item
+  preparación de tablas para hojas de cálculo, SIG y análisis
+  estadístico;
+\item
+  compilación de documentos LaTeX y revisión de tablas, figuras y
+  desbordamientos;
+\item
+  creación de manifiestos, hashes e inventarios de productos;
+\item
+  documentación de decisiones, limitaciones, sesgos y condiciones de
+  revisión;
+\item
+  control de versiones con Git y publicación de avances en GitHub;
+\item
+  preservación de productos legacy sin sobrescribir resultados
+  históricos;
+\item
+  revisión de consistencia entre texto, tablas, código y archivos de
+  salida.
+\end{itemize}
+
+\subsection{Productos consultables}\label{productos-consultables}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.25\linewidth}p{0.68\linewidth}@{}}
+\toprule\noalign{}
+Producto & Ruta \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+README general & \texttt{README.md} en la raíz del repositorio \\
+README regional & \texttt{atoyac/README.md} \\
+Inventario detallado &
+\texttt{atoyac/docs/INVENTARIO\_GENERAL\_PROYECTO.md} \\
+Reporte maestro &
+\texttt{atoyac/docs/reporte\_completo/reporte\_compelto.pdf} \\
+Reporte sintético &
+\texttt{atoyac/docs/reporte\_sintetico/reporte\_sintetico.pdf} \\
+Matriz maestra &
+\texttt{atoyac/outputs/parte\_2/01\_matriz/matriz\_maestra\_establecimientos.csv} \\
+Solución espacial &
+\texttt{atoyac/outputs/parte\_2/06\_clusters/solucion\_principal.gpkg} \\
+Perfiles & \texttt{atoyac/outputs/parte\_2/07\_perfiles/} \\
+Sobrerrepresentación &
+\texttt{atoyac/outputs/parte\_2/08\_sobrerrepresentacion/} \\
+Auditoría de cierre & \texttt{atoyac/outputs/parte\_2/11\_cierre/} \\
+Atlas & \texttt{atoyac/outputs/parte\_2/12\_atlas/} \\
+Figuras finales &
+\texttt{atoyac/outputs/parte\_2/13\_figuras\_finales/} \\
+Segunda pasada &
+\texttt{atoyac/outputs/parte\_2/14\_segunda\_pasada/} \\
+\end{longtable}
+}
+
+\subsection{Competencias desarrolladas y
+aplicadas}\label{competencias-desarrolladas-y-aplicadas}
+
+\begin{itemize}
+\tightlist
+\item
+  Gestión y documentación de datos públicos.
+\item
+  Diseño de reglas de clasificación auditables.
+\item
+  Análisis espacial y sistemas de información geográfica.
+\item
+  Programación y automatización con Python.
+\item
+  Clustering por densidad y evaluación de sensibilidad.
+\item
+  Estadística descriptiva y contraste de asociaciones.
+\item
+  Visualización cartográfica y comunicación de resultados.
+\item
+  Trazabilidad, reproducibilidad y control de versiones.
+\item
+  Traducción de resultados técnicos a preguntas operativas.
+\item
+  Identificación responsable de límites antes de decisiones de
+  infraestructura.
+\end{itemize}
+
+\subsection{Pendientes que requieren coordinación humana o
+institucional}\label{pendientes-que-requieren-coordinaciuxf3n-humana-o-institucional}
+
+\begin{itemize}
+\tightlist
+\item
+  Confirmar responsable formal, asesoría, periodo y horas reconocidas
+  del servicio social.
+\item
+  Completar metadatos, fecha, protocolo y condiciones de uso de la
+  fuente MH.
+\item
+  Obtener cartografía actualizada de drenaje y tratamiento del organismo
+  operador.
+\item
+  Definir una campaña de verificación de establecimientos y descargas.
+\item
+  Acordar protocolo de aforo, muestreo, laboratorio y cadena de
+  custodia.
+\item
+  Validar qué registros sectoriales corresponden a lavanderías
+  industriales reales.
+\item
+  Definir criterios de evaluación económica, ambiental y de gobernanza.
+\item
+  Crear un entorno de software fijado para reproducir todo el
+  repositorio en otro equipo.
+\end{itemize}
+
+\subsection{Registro resumido de hitos
+Git}\label{registro-resumido-de-hitos-git}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.44\linewidth}p{0.28\linewidth}@{}}
+\toprule\noalign{}
+Fecha & Commit & Hito \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+25 mayo 2026 & \texttt{2eb2057} & Inicio del análisis geoespacial
+reproducible. \\
+25 mayo 2026 & \texttt{54d24f2} & Incorporación de auditoría. \\
+11 junio 2026 & \texttt{5fab10d} & Avance de controles auditables. \\
+25 junio 2026 & \texttt{6b640de} & Comparación con MH. \\
+2 julio 2026 & \texttt{f284fa6} & Organización de productos legacy. \\
+27 agosto 2026 & \texttt{e5831b0} & Pipeline textil e hídrico auditable
+de Santa Ana. \\
+24 septiembre 2026 & \texttt{3d69baf} & Reorganización de la fase
+histórica en \texttt{version\_01}. \\
+24 septiembre 2026 & \texttt{7cd11ab} & Integración de la fase moderna
+regional. \\
+24 septiembre 2026 & \texttt{a72c504} & Reporte metodológico y
+siguientes pasos. \\
+24 septiembre 2026 & \texttt{991d1ff} & Reporte sintético y ajustes
+metodológicos. \\
+24 septiembre 2026 & \texttt{e6c43c0} & README general del
+repositorio. \\
+\end{longtable}
+}
+
+\subsection{Nota para entrega
+institucional}\label{nota-para-entrega-institucional}
+
+Esta bitácora describe actividades y productos comprobables en el
+repositorio. Para convertirla en un formato oficial de servicio social
+deben validarse las 380 horas estimadas y agregarse, cuando la institución
+lo requiera, las fechas exactas por jornada, firma o visto bueno,
+objetivos del programa y relación de cada actividad con las competencias
+o metas oficiales.
+
+\end{document}
