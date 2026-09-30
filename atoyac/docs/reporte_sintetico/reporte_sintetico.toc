@@ -1,12 +1,14 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Resumen ejecutivo}{3}{section.1}%
-\contentsline {section}{\numberline {2}Antecedentes y pregunta del estudio}{3}{section.2}%
-\contentsline {section}{\numberline {3}Construcción del universo}{4}{section.3}%
-\contentsline {section}{\numberline {4}Cómo se detectaron las concentraciones}{6}{section.4}%
-\contentsline {section}{\numberline {5}Principales concentraciones territoriales}{9}{section.5}%
-\contentsline {section}{\numberline {6}Diferencias productivas entre clusters}{10}{section.6}%
-\contentsline {section}{\numberline {7}Robustez e incertidumbre}{12}{section.7}%
-\contentsline {section}{\numberline {8}Zonas prioritarias para validación}{14}{section.8}%
-\contentsline {section}{\numberline {9}Qué no concluye el estudio}{14}{section.9}%
-\contentsline {section}{\numberline {10}Siguientes pasos}{15}{section.10}%
-\contentsline {section}{\numberline {A}Diccionario de palabras y conceptos clave}{16}{appendix.Alph1}%
+\contentsline {section}{Glosario metodológico}{2}{section*.1}%
+\contentsline {section}{\numberline {1}Resumen ejecutivo}{4}{section.1}%
+\contentsline {section}{\numberline {2}Antecedentes y pregunta del estudio}{4}{section.2}%
+\contentsline {section}{\numberline {3}Materiales y métodos}{5}{section.3}%
+\contentsline {section}{\numberline {4}Construcción del universo}{5}{section.4}%
+\contentsline {section}{\numberline {5}Cómo se detectaron las concentraciones}{7}{section.5}%
+\contentsline {section}{\numberline {6}Principales concentraciones territoriales}{9}{section.6}%
+\contentsline {section}{\numberline {7}Diferencias productivas entre clusters}{14}{section.7}%
+\contentsline {section}{\numberline {8}Robustez e incertidumbre}{16}{section.8}%
+\contentsline {section}{\numberline {9}Zonas prioritarias para validación}{18}{section.9}%
+\contentsline {section}{\numberline {10}Qué no concluye el estudio}{19}{section.10}%
+\contentsline {section}{\numberline {11}Siguientes pasos}{19}{section.11}%
+\contentsline {section}{Referencias}{20}{section*.9}%

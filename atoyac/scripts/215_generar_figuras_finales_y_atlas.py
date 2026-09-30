@@ -20,6 +20,11 @@ COLORES_TIPO = {
     "CONCENTRACION_LAVANDERIAS": "#b2182b",
 }
 
+CLUSTERS_INTERIORES = list(range(4, 22))
+PALETA_CLUSTERS = {cid: plt.get_cmap("tab20")((cid - 4) / 19) for cid in CLUSTERS_INTERIORES}
+# Evita confundir el cluster 19 con el gris reservado a la actividad dispersa.
+PALETA_CLUSTERS[19] = "#006d77"
+
 
 def escala_norte(ax, longitud_m=None):
     xmin, xmax = ax.get_xlim(); ymin, ymax = ax.get_ylim()
@@ -67,9 +72,10 @@ def main():
     puntos[~puntos.dentro_cuenca.astype(bool)].plot(ax=ax, color="#d95f02", marker="^", markersize=14, alpha=.65)
     puntos[puntos.dentro_cuenca.astype(bool)].plot(ax=ax, color="#1b9e77", markersize=5, alpha=.55)
     ax.legend(handles=[
+        Patch(facecolor="#eef5f9", edgecolor="#253746", label="Cuenca del Alto Atoyac"),
         Line2D([], [], marker="o", linestyle="", color="#1b9e77", label="Dentro de cuenca (4,010)"),
         Line2D([], [], marker="^", linestyle="", color="#d95f02", label="Apoyo exterior (355)"),
-    ], loc="lower left", frameon=True)
+    ], loc="upper left", frameon=True)
     configurar_mapa(ax, "Universos de detección e interpretación")
     guardar(fig, "01_universos_borde")
 
@@ -79,12 +85,14 @@ def main():
     municipios.boundary.plot(ax=ax, color="#cccccc", linewidth=.4)
     puntos[puntos.cluster.lt(0) & puntos.dentro_cuenca.astype(bool)].plot(ax=ax, color="#bdbdbd", markersize=5, alpha=.45)
     activos = puntos[puntos.cluster.ge(0) & puntos.dentro_cuenca.astype(bool)]
-    activos.plot(ax=ax, column="cluster", cmap="tab20", markersize=9, alpha=.78)
     for cid, parte in activos.groupby("cluster"):
-        p = parte.geometry.union_all().centroid
-        ax.text(p.x, p.y, str(int(cid)), fontsize=8, fontweight="bold", ha="center", va="center",
-                bbox=dict(boxstyle="circle,pad=.22", facecolor="white", edgecolor="#333", alpha=.85))
-    ax.legend(handles=[Line2D([], [], marker="o", linestyle="", color="#bdbdbd", label="Actividad dispersa")], loc="lower left")
+        parte.plot(ax=ax, color=PALETA_CLUSTERS[int(cid)], markersize=9, alpha=.80)
+    handles = [Line2D([], [], marker="o", linestyle="", color=PALETA_CLUSTERS[cid], label=f"Cluster {cid}")
+               for cid in CLUSTERS_INTERIORES]
+    handles += [Line2D([], [], marker="o", linestyle="", color="#bdbdbd", label="Actividad dispersa")]
+    ax.legend(handles=handles, loc="center left", bbox_to_anchor=(1.01, .5), ncol=2,
+              title="Membresía espacial", fontsize=7, frameon=True)
+    fig.subplots_adjust(right=.76)
     configurar_mapa(ax, "Solución espacial principal: clusters dentro de la cuenca")
     guardar(fig, "02_clusters_principales")
 
@@ -96,7 +104,9 @@ def main():
     for clase in ["SENSIBLE", "ESTABLE", "NUCLEO_ROBUSTO"]:
         parte = interior[interior.clase_persistencia.eq(clase)]
         parte.plot(ax=ax, color=pal[clase], markersize=7, alpha=.72, label=clase.replace("_", " ").title())
-    ax.legend(loc="lower left")
+    ax.legend(loc="center left", bbox_to_anchor=(1.01, .5), title="Persistencia",
+              frameon=True, fontsize=8)
+    fig.subplots_adjust(right=.78)
     configurar_mapa(ax, "Persistencia territorial entre especificaciones")
     guardar(fig, "03_persistencia_territorial")
 
@@ -140,10 +150,31 @@ def main():
 
     # 7. Rasgos distintivos conservadores.
     rasgos = pd.read_csv(comun.OUT / "11_cierre/rasgos_distintivos_clusters.csv")
+    etiquetas_senal = {
+        "actividad_lavanderia_tintoreria": "Lavandería/tintorería (SCIAN)",
+        "actividad_confeccion": "Confección (SCIAN)",
+        "actividad_fabricacion_telas": "Fabricación de telas (SCIAN)",
+        "actividad_acabado_textil": "Acabado textil (SCIAN)",
+        "lavado_generico": "Mención de lavado",
+        "senal_pantalon": "Mención de pantalón",
+        "senal_mezclilla_o_pantalon": "Mezclilla o pantalón",
+        "humedo_explicito": "Proceso húmedo explícito",
+        "proceso_seco_explicito": "Proceso seco explícito",
+        "maquila": "Mención de maquila",
+        "produccion": "Mención de producción",
+        "textil": "Mención textil",
+        "mezclilla": "Mención de mezclilla",
+        "scian_textil": "Manufactura textil (SCIAN)",
+        "scian_acabado_humedo": "Acabado húmedo (SCIAN)",
+        "scian_lavanderia": "Lavandería (SCIAN)",
+    }
     pivot = rasgos.pivot(index="grupo_espacial", columns="senal", values="log2_lift").fillna(0)
+    pivot.index = [x.replace("CLUSTER_", "Cluster ").replace("RUIDO_DISPERSO", "Actividad dispersa") for x in pivot.index]
+    pivot.columns = [etiquetas_senal.get(x, x.replace("_", " ").capitalize()) for x in pivot.columns]
     fig, ax = plt.subplots(figsize=(13, 8))
-    sns.heatmap(pivot, cmap="RdBu_r", center=0, linewidths=.3, ax=ax, cbar_kws={"label": "log2(lift)"})
-    ax.set(title="Rasgos sobrerrepresentados que superan criterios conservadores", xlabel="", ylabel="")
+    sns.heatmap(pivot, cmap="YlOrRd", vmin=0, linewidths=.3, ax=ax,
+                cbar_kws={"label": "log2(lift): contraste relativo, sin unidades"})
+    ax.set(title="Señales que cumplen los cuatro criterios conservadores", xlabel="Señal analítica", ylabel="Agrupamiento espacial")
     guardar(fig, "07_rasgos_distintivos")
 
     # 8. Agrupados contra ruido.

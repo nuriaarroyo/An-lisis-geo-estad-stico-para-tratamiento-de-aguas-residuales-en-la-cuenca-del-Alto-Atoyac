@@ -9,10 +9,20 @@ import seaborn as sns
 from scipy.cluster.hierarchy import dendrogram, linkage
 from scipy.spatial.distance import squareform
 import plotly
+from matplotlib.lines import Line2D
+from matplotlib.patches import Patch
 
 comun=import_module("200_parte2_comun"); perfil=import_module("207_perfilar_clusters")
 OUT=comun.OUT/"14_segunda_pasada"; FIG=OUT/"figuras"; FIG.mkdir(parents=True,exist_ok=True)
 def save(fig,n): fig.savefig(FIG/f"{n}.png",dpi=220,bbox_inches="tight",facecolor="white"); plt.close(fig)
+def escala_norte(ax,longitud_m=2000):
+ xmin,xmax=ax.get_xlim(); ymin,ymax=ax.get_ylim(); ancho=xmax-xmin; alto=ymax-ymin
+ x0=xmin+ancho*.07; y0=ymin+alto*.06
+ ax.plot([x0,x0+longitud_m],[y0,y0],color="black",lw=3,solid_capstyle="butt",zorder=20)
+ ax.plot([x0,x0],[y0-alto*.008,y0+alto*.008],color="black",lw=1,zorder=20)
+ ax.plot([x0+longitud_m,x0+longitud_m],[y0-alto*.008,y0+alto*.008],color="black",lw=1,zorder=20)
+ ax.text(x0+longitud_m/2,y0+alto*.015,f"{longitud_m/1000:g} km",ha="center",fontsize=9,zorder=20)
+ ax.annotate("N",xy=(xmin+ancho*.93,ymin+alto*.91),xytext=(xmin+ancho*.93,ymin+alto*.82),ha="center",fontweight="bold",arrowprops=dict(facecolor="black",width=2,headwidth=8),zorder=20)
 def main():
  sns.set_theme(style="whitegrid")
  # Robustez: etiqueta exacta y region visual superior derecha.
@@ -32,11 +42,13 @@ def main():
  xmin,xmax=ax.get_xlim(); ymin,ymax=ax.get_ylim(); L=5000; y=ymin+(ymax-ymin)*.04; xx=xmin+(xmax-xmin)*.06; ax.plot([xx,xx+L],[y,y],c="k",lw=3); ax.text(xx+L/2,y+(ymax-ymin)*.015,"5 km",ha="center",fontsize=9)
  fig.subplots_adjust(right=.78); save(fig,"02_estabilidad_membresia")
  # Mega-cluster etiquetado.
- mega=gpd.read_file(comun.OUT/"11_cierre/diagnostico_mega_cluster.gpkg",layer="establecimientos_subnucleos"); fig,ax=plt.subplots(figsize=(10,9)); noise=mega[mega.subnucleo_diagnostico.lt(0)]; noise.plot(ax=ax,c="#d0d0d0",markersize=4,alpha=.4,label="No asignado interno")
+ mega=gpd.read_file(comun.OUT/"11_cierre/diagnostico_mega_cluster.gpkg",layer="establecimientos_subnucleos"); fig,ax=plt.subplots(figsize=(10,9)); ax.set_facecolor("#fffde7"); noise=mega[mega.subnucleo_diagnostico.lt(0)]; noise.plot(ax=ax,c="#d0d0d0",markersize=4,alpha=.4)
  core=mega[mega.subnucleo_diagnostico.ge(0)]; core.plot(ax=ax,column="subnucleo_diagnostico",cmap="tab20",markersize=9,alpha=.8)
  for k,g in core.groupby("subnucleo_diagnostico"):
-  c=g.geometry.union_all().centroid; ax.text(c.x,c.y,str(int(k)),ha="center",va="center",fontsize=8,fontweight="bold",bbox=dict(boxstyle="circle,pad=.2",fc="white",ec="black",alpha=.85))
- ax.set_axis_off(); ax.set_title("18 subnúcleos exploratorios del mega-cluster 20",fontsize=15); ax.legend(loc="upper left"); save(fig,"03_subnucleos_mega_etiquetados")
+  c=g.geometry.union_all().centroid; ax.text(c.x,c.y,chr(65+int(k)),ha="center",va="center",fontsize=8,fontweight="bold",bbox=dict(boxstyle="circle,pad=.2",fc="white",ec="black",alpha=.85),zorder=10)
+ ax.set_axis_off(); ax.set_title("Estructura interna del cluster 20: 18 subnúcleos exploratorios",fontsize=15)
+ ax.legend(handles=[Patch(facecolor=plt.get_cmap("tab20")((20-4)/19),label="Cluster 20: marco de la segunda pasada"),Line2D([],[],marker="o",linestyle="",color="#d0d0d0",label="Sin rama local (permanece en cluster 20)"),Line2D([],[],marker="o",linestyle="",color="#4c78a8",label="Subnúcleo A–R (color e identificador)")],loc="upper left",frameon=True)
+ escala_norte(ax,2000); save(fig,"03_subnucleos_mega_etiquetados")
  # Heatmaps compacto/ampliado.
  pr=pd.read_csv(comun.OUT/"07_perfiles/perfiles_clusters.csv"); pr=pr[pr.cluster.ge(0)].set_index("grupo_espacial")
  compact=["actividad_lavanderia_tintoreria","actividad_confeccion","actividad_fabricacion_telas","actividad_acabado_textil","maquila","mezclilla","humedo_explicito","proceso_seco_explicito"]

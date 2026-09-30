@@ -4,7 +4,7 @@
 \usepackage[spanish,es-nodecimaldot]{babel}
 \usepackage{lmodern,microtype}
 \usepackage[margin=2.25cm]{geometry}
-\usepackage{xcolor,graphicx,booktabs,tabularx,array,longtable,float,xurl,hyperref,fancyhdr}
+\usepackage{xcolor,graphicx,booktabs,tabularx,array,longtable,float,xurl,hyperref,fancyhdr,pdflscape}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,shapes.geometric}
 \definecolor{AtoyacBlue}{HTML}{244E60}
@@ -31,6 +31,40 @@
 \vfill
 \begin{center}\small Documento sintético. Los resultados, métodos, tablas auditables y rutas de archivos se documentan en el reporte maestro.\end{center}
 \newpage
+
+\section*{Glosario metodológico}
+\addcontentsline{toc}{section}{Glosario metodológico}
+
+Las definiciones siguientes fijan el sentido específico de los términos usados en este documento; no sustituyen las advertencias de interpretación incluidas en cada sección.
+
+\footnotesize
+\begin{longtable}{>{\bfseries\raggedright\arraybackslash}p{.23\textwidth}>{\raggedright\arraybackslash}p{.70\textwidth}}
+\toprule
+Término & Definición y uso en este proyecto \\
+\midrule
+DENUE & Directorio Estadístico Nacional de Unidades Económicas del INEGI. Aporta identificación, actividad declarada y coordenadas; no es un censo de procesos, consumos o descargas. \\
+SCIAN & Sistema de Clasificación Industrial de América del Norte empleado para construir el universo sectorial y caracterizarlo después del clustering. \\
+MH & Fuente independiente generada mediante investigación de campo por Mary Helen Figueroa y Mayra Jaqueline Ramírez. Se enlazó con identificadores DENUE cuando fue posible, sin perder su procedencia. \\
+Universo sectorial & Conjunto amplio de actividades textiles, confección y lavandería/tintorería usado para detectar concentraciones sin exigir evidencia hídrica explícita. \\
+Evidencia hídrica & Etiqueta \texttt{SI}, \texttt{REVISAR} o \texttt{SIN\_EVIDENCIA} derivada de reglas textuales o MH; orienta auditoría y no confirma una descarga. \\
+Proceso húmedo & Operación cuyo texto o clasificación sugiere lavado, teñido, acabado u otro uso directo de agua; es una hipótesis registral hasta su verificación. \\
+DBSCAN & Método de densidad con un radio fijo $\varepsilon$ y un mínimo de vecinos; se utilizó como referencia espacial más agregada. \\
+HDBSCAN & Método jerárquico de densidad variable que asigna clusters, ruido y probabilidades de pertenencia; produjo la solución principal. \\
+OPTICS & Ordenamiento por alcanzabilidad empleado como contraste para estructuras de densidad variable. \\
+\texttt{min\_cluster\_size} & Tamaño mínimo de una rama persistente en HDBSCAN; en la solución principal fue 10. \\
+\texttt{min\_samples} & Parámetro que controla el conservadurismo de la densidad local; en la solución principal fue 20. \\
+EOM & Regla de selección de HDBSCAN que favorece ramas amplias y persistentes; se contrapone a \emph{leaf}, usada únicamente para explorar ramas internas más finas del cluster 20. \\
+Ruido & Establecimiento no asignado a un cluster bajo una especificación. Significa actividad espacialmente dispersa, no error o irrelevancia. \\
+ARI & Índice Rand ajustado: similitud global entre dos particiones, corregida por la coincidencia esperada al azar; 1 indica equivalencia. \\
+Jaccard & Solapamiento entre dos conjuntos, calculado como intersección dividida entre unión; complementa al ARI en la comparación local. \\
+Persistencia & Fracción de escenarios de contraste en los que un establecimiento conserva una asignación equivalente. \\
+Lift o sobrerrepresentación & Prevalencia de una señal dentro de un cluster dividida entre su prevalencia en los 4,010 establecimientos interiores. Un lift de 2 indica doble frecuencia relativa, no doble producción. \\
+CRS/UTM & Sistema de referencia proyectado. EPSG:32614 (WGS 84/UTM 14N) expresa coordenadas y distancias en metros y se utilizó para las operaciones espaciales. \\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\newpage
 \tableofcontents
 \newpage
 
@@ -48,15 +82,25 @@ La solución seleccionada fue la mejor puntuada bajo una regla documentada, pero
 
 \section{Antecedentes y pregunta del estudio}
 
-La cuenca del Alto Atoyac combina urbanización, actividad industrial, manufactura dispersa y una historia documentada de presión sobre el agua. En este contexto, la industria textil y de mezclilla importa porque puede incluir operaciones con necesidades y residuos muy distintos: confección y costura, tejido e hilado, acabado, teñido, lavado, deslavado, limpieza de equipo o servicios de lavandería. El directorio económico no registra de manera completa cuáles de esas operaciones ocurren realmente en cada domicilio ni cuánto agua utilizan.
+La cuenca del Alto Atoyac combina urbanización, actividad industrial, manufactura dispersa y una historia documentada de presión sobre el agua \cite{perezcastresana2023,dof2011atoyac,cndh2017atoyac}. En este contexto, la industria textil y de mezclilla importa porque puede incluir operaciones con necesidades y residuos muy distintos: confección y costura, tejido e hilado, acabado, teñido, lavado, deslavado, limpieza de equipo o servicios de lavandería. El directorio económico no registra de manera completa cuáles de esas operaciones ocurren realmente en cada domicilio ni cuánto agua utilizan.
 
 El problema operativo era doble. Primero, el territorio era demasiado amplio para visitar todas las unidades con la misma intensidad. Segundo, seleccionar únicamente negocios cuyo nombre menciona agua, lavado o teñido podía excluir talleres industriales reales con nombres poco informativos, mientras incluir toda lavandería podía mezclar servicios comerciales con operaciones industriales. El proyecto debía conservar esa incertidumbre y aun así producir una base útil para decidir dónde investigar primero.
 
 La pregunta se formuló en términos territoriales y no acusatorios: localizar concentraciones reproducibles, describir su composición y reconocer qué resultados sobreviven a cambios razonables de parámetros. El análisis no utilizó atributos productivos para formar los clusters; primero se agrupó por proximidad espacial y después se estudió qué actividades estaban presentes en cada grupo. Así se evitó construir de antemano los perfiles que luego se pretendía descubrir.
 
+\section{Materiales y métodos}
+
+Las fuentes principales fueron la descarga estatal DENUE del 11 de septiembre de 2026, acotada a los códigos SCIAN 313, 314, 315 y 812210, y la descarga local del 4 de septiembre usada en la fase inicial \cite{inegi2026denue}. La delimitación de la cuenca corresponde al producto \emph{Cuenca del Alto Atoyac 2021}, derivado del SINA de Conagua; los límites municipales proceden del Marco Geoestadístico 2020 del INEGI; y la red hidrográfica proviene de la Red Hidrográfica Digital de México 1:250,000 de 2006. Las tres capas fueron distribuidas por el Ecosistema Nacional Informático en GeoPackage/GeoJSON, con metadatos de 2023 y licencia de libre uso MX \cite{eni2023cuenca,eni2023municipios,eni2023red}. MH se trató como fuente de campo independiente, con enlace a claves DENUE cuando existía correspondencia.
+
+El universo se construyó mediante normalización, control de identificadores, recorte municipal, selección SCIAN y reglas textuales aplicadas a nombre, razón social y descripción de actividad. Se conservaron modalidades amplia y estricta para auditar el efecto de exigir señales hídricas, pero el clustering regional empleó el universo sectorial completo para no excluir talleres o lavanderías pequeñas cuyo uso de agua no fuera explícito en el registro.
+
+Las capas fuente se armonizaron en EPSG:4326 para intercambio y se proyectaron a \textbf{EPSG:32614 (WGS 84/UTM zona 14N)} para distancias, vecindades y agrupamiento. El clustering se realizó \textbf{exclusivamente con las coordenadas métricas de los establecimientos}. Las características económicas y productivas se incorporaron después para describir e interpretar los grupos, nunca para formarlos. Se compararon DBSCAN \cite{ester1996dbscan}, HDBSCAN \cite{campello2013hdbscan} y OPTICS \cite{ankerst1999optics} en 57 configuraciones, con análisis de sensibilidad, ARI, Jaccard, persistencia y perturbaciones posicionales.
+
+El procesamiento reproducible se ejecutó en Python. Los scripts y el archivo de requerimientos documentan el uso de pandas, NumPy, GeoPandas, Shapely, Pyogrio y Matplotlib; las etapas analíticas incorporan además scikit-learn, hdbscan, SciPy, Seaborn y Plotly. No se reportan versiones porque el repositorio no las fija. Los productos auditables se almacenaron como CSV, GeoPackage, PNG y HTML.
+
 \section{Construcción del universo}
 
-El punto de partida fue una descarga estatal del Directorio Estadístico Nacional de Unidades Económicas (DENUE) acotada a actividades SCIAN de interés. Tras normalización, control de identificadores y delimitación municipal, se construyó un universo sectorial de 4,365 establecimientos. De ellos, 4,010 se encuentran dentro del polígono de la cuenca. Los 355 puntos exteriores cercanos se conservaron durante la detección para que el límite cartográfico no cortara vecindades reales; después quedaron fuera de la interpretación sustantiva.
+El punto de partida fue una descarga estatal del Directorio Estadístico Nacional de Unidades Económicas (DENUE) acotada a actividades SCIAN de interés. Tras normalización, control de identificadores y delimitación municipal, se construyó un universo sectorial de 4,365 establecimientos. De ellos, 4,010 se encuentran dentro del polígono de la cuenca. Los 355 puntos de \textbf{apoyo exterior} son establecimientos de los municipios de referencia situados fuera del polígono; se conservaron durante la detección para que la frontera cartográfica no eliminara vecinos reales ni fragmentara clusters, y después quedaron fuera de la interpretación sustantiva.
 
 El universo sectorial es deliberadamente más amplio que el universo hídrico estricto. Incluye manufactura textil, confección y servicios de lavandería/tintorería potencialmente relevantes. En paralelo se generaron modalidades amplia y estricta, con y sin la fuente MH de trabajo de campo. La regla amplia protege cobertura; la estricta exige señales más directas y excluye lavanderías sin contexto adicional. Ninguna modalidad reemplaza a la otra: muestran el costo de priorizar sensibilidad o especificidad.
 
@@ -73,7 +117,25 @@ MH se conserva como fuente independiente de DENUE porque procede del trabajo de 
 
 Los establecimientos se proyectaron a un sistema métrico y se compararon 57 configuraciones de tres métodos de agrupamiento por densidad: DBSCAN, HDBSCAN y OPTICS. En lenguaje sencillo, estos métodos buscan conjuntos de puntos suficientemente próximos y separan como dispersos aquellos que no forman una concentración bajo la escala evaluada. Las variables económicas no participaron en esta etapa.
 
-La comparación consideró cuántos grupos se formaban, cuánto ruido quedaba, si un solo grupo absorbía demasiado territorio, qué tan estable era la partición frente a configuraciones vecinas y qué ocurría al desplazar ligeramente las coordenadas. La configuración elegida fue HDBSCAN con tamaño mínimo de cluster 10, mínimo de vecinos 20 y selección EOM. Alcanzó el mayor puntaje operativo, 0.963, pero dos alternativas alcanzaron 0.962. Por eso se usa como referencia reproducible y no como una geografía única o verdadera.
+La comparación consideró cuántos grupos se formaban, cuánto ruido quedaba, si un solo grupo absorbía demasiado territorio, qué tan estable era la partición frente a configuraciones vecinas y qué ocurría al desplazar ligeramente las coordenadas. Antes de puntuar se descartaron soluciones degeneradas: menos de 3 o más de 80 clusters, ruido menor a 1\% o mayor a 75\%, o un cluster mayor superior a 60\% del universo. La configuración HDBSCAN con \texttt{min\_cluster\_size=10}, \texttt{min\_samples=20} y selección EOM alcanzó el mayor puntaje operativo, 0.963. El tamaño mínimo de 10 conserva concentraciones locales; \texttt{min\_samples=20} exige soporte vecinal más conservador; y EOM favorece ramas persistentes, evitando convertir fluctuaciones finas en clusters principales.
+
+La selección representa un compromiso verificable: ARI medio de 0.937 frente a las cinco configuraciones HDBSCAN más próximas, ARI de 0.926 ante perturbaciones de 25 m, probabilidad media de pertenencia de 0.914, 22 clusters y un grupo mayor de 45.75\%. La referencia DBSCAN fue más estable ante perturbación (0.996) y dejó menos ruido (7.54\%), pero produjo solo 13 grupos y fusionó 2,178 establecimientos en el mayor. Dos alternativas HDBSCAN obtuvieron 0.962, apenas 0.001 menos, y ARI de 0.998 y 0.989 frente a la principal. Por ello la selección es una referencia reproducible y defendible dentro de una familia próxima, no una geografía única o verdadera.
+
+\begin{table}[H]
+\centering\small
+\caption{Criterios cuantitativos que se reutilizan en el reporte.}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{.25\textwidth}p{.30\textwidth}X}
+\toprule
+Clasificación & Regla visible & Origen y función \\
+\midrule
+Escenario elegible & 3--80 clusters; ruido 1--75\%; cluster mayor $\leq60\%$ & Selección de escenarios, reporte maestro §13.1; excluye particiones degeneradas. \\
+Persistencia sensible & $<0.50$ & Comparación de cinco escenarios; señala membresía inestable. \\
+Persistencia estable & 0.50--0.79 & Comparación de cinco escenarios; indica estabilidad intermedia. \\
+Núcleo robusto & 0.80--1.00 & Comparación de cinco escenarios; conserva asignación equivalente con alta frecuencia. \\
+Rasgo sobrerrepresentado conservador & $n\geq5$, prevalencia $\geq5\%$, lift $\geq1.25$ y $q\leq0.05$ & Contrastes de 18 señales en 18 clusters y ruido; evita destacar asociaciones con soporte mínimo o sin contraste suficiente. \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 Además de los clusters se conservaron las unidades dispersas. El ruido no significa error, irrelevancia o ausencia de impacto; indica que esos establecimientos no forman una concentración bajo la configuración seleccionada. Pueden requerir otra estrategia de inspección, especialmente cuando se encuentren cerca de infraestructura o receptores sensibles.
 
@@ -109,16 +171,53 @@ El diagrama resume la secuencia completa. Los atributos productivos se incorpora
 
 \begin{figure}[H]\centering
 \includegraphics[width=.94\textwidth]{../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png}
-\caption{Concentraciones interiores de la solución seleccionada y actividad dispersa. Los colores representan membresía espacial, no contaminación.}
+\caption{Concentraciones interiores de la solución seleccionada y actividad dispersa. La leyenda establece la correspondencia cluster--color; el cluster 20 es el continuo metropolitano amarillo que se examina internamente en la Figura 4. Los colores representan membresía espacial, no contaminación.}
 \end{figure}
 
 \section{Principales concentraciones territoriales}
+
+La Tabla~\ref{tab:clusters-resumen} vincula el identificador y color de la Figura 3 con su territorio y composición. Las actividades son etiquetas multilabel: un establecimiento puede pertenecer a más de una columna, por lo que los porcentajes no suman 100\%. ``Lav./tint.'' corresponde a actividad sectorial de lavandería/tintorería; no equivale a lavandería industrial verificada.
+
+\begin{landscape}
+\footnotesize
+\begin{longtable}{r p{6.0cm} r r r r r}
+\caption{Resumen auditable de los 18 clusters que intersectan la cuenca.}\label{tab:clusters-resumen}\\
+\toprule
+\textbf{Cluster} & \textbf{Municipios con integrantes} & \textbf{$n$} & \textbf{Lav./tint. \%} & \textbf{Confección \%} & \textbf{Fabr. telas \%} & \textbf{Acabado \%} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Cluster} & \textbf{Municipios con integrantes} & \textbf{$n$} & \textbf{Lav./tint. \%} & \textbf{Confección \%} & \textbf{Fabr. telas \%} & \textbf{Acabado \%} \\
+\midrule
+\endhead
+4 & Chiautzingo & 28 & 7.1 & 78.6 & 0.0 & 0.0 \\
+5 & San Matías Tlalancaleca; Tlahuapan & 33 & 6.1 & 78.8 & 6.1 & 0.0 \\
+6 & Tlahuapan & 20 & 0.0 & 40.0 & 0.0 & 0.0 \\
+7 & Huejotzingo & 99 & 44.4 & 31.3 & 7.1 & 1.0 \\
+8 & Huejotzingo & 337 & 8.0 & 85.8 & 1.5 & 1.2 \\
+9 & Tlahuapan & 30 & 0.0 & 16.7 & 0.0 & 0.0 \\
+10 & Tlahuapan & 142 & 3.5 & 0.7 & 0.7 & 0.7 \\
+11 & Ocoyucan & 8 & 12.5 & 37.5 & 0.0 & 0.0 \\
+12 & San Matías Tlalancaleca; San Salvador el Verde & 224 & 7.1 & 83.9 & 1.3 & 1.3 \\
+13 & San Martín Texmelucan; San Salvador el Verde & 149 & 8.1 & 81.2 & 0.0 & 0.0 \\
+14 & Cuautlancingo & 14 & 35.7 & 42.9 & 0.0 & 0.0 \\
+15 & San Martín Texmelucan & 92 & 48.9 & 40.2 & 1.1 & 0.0 \\
+16 & San Martín Texmelucan & 51 & 15.7 & 70.6 & 2.0 & 2.0 \\
+17 & San Martín Texmelucan & 45 & 13.3 & 84.4 & 0.0 & 0.0 \\
+18 & Amozoc & 32 & 40.6 & 40.6 & 0.0 & 0.0 \\
+19 & San Miguel Xoxtla; Coronango & 100 & 9.0 & 76.0 & 2.0 & 0.0 \\
+20 & Puebla; San Andrés Cholula; San Pedro Cholula; Cuautlancingo; Amozoc; Coronango & 1,997 & 59.3 & 20.9 & 5.3 & 1.0 \\
+21 & Amozoc & 31 & 41.9 & 25.8 & 9.7 & 0.0 \\
+\bottomrule
+\end{longtable}
+\normalsize
+\end{landscape}
 
 \subsection*{Santa Ana Xalmimilulco y Huejotzingo}
 
 Santa Ana Xalmimilulco corresponde al cluster 8 y reúne 337 establecimientos. Es una concentración manufacturera compacta: 85.8\% tiene señal de confección, 55.8\% de maquila y 40.7\% de mezclilla o pantalón. La evidencia sugiere una organización productiva especializada que amerita verificar si operaciones de lavado, limpieza o acabado ocurren dentro de talleres registrados principalmente como confección. No debe suponerse que todas las unidades pertenecen al universo hídrico estricto.
 
-La cabecera de Huejotzingo y localidades próximas forman el cluster 7, con 99 establecimientos dentro de la cuenca. Su perfil es más mixto y 44.4\% pertenece a lavandería/tintorería sectorial. Xalmimilulco y Huejotzingo deben tratarse como preguntas de campo distintas: el primero por cadenas de confección--maquila--mezclilla; el segundo por coexistencia de manufactura y servicios potencialmente húmedos.
+La cabecera de Huejotzingo y localidades próximas forman el cluster 7, con 99 establecimientos dentro de la cuenca. Su perfil es de \textbf{coexistencia mixta}: manufactura y lavandería/tintorería aparecen juntas sin que una categoría anule a la otra; 44.4\% pertenece a lavandería/tintorería sectorial. Xalmimilulco y Huejotzingo deben tratarse como preguntas de campo distintas: el primero por cadenas de confección--maquila--mezclilla; el segundo por coexistencia de manufactura y servicios potencialmente húmedos.
 
 \subsection*{Tlahuapan}
 
@@ -134,12 +233,49 @@ El cluster 19 reúne 100 establecimientos y se centra en San Miguel Xoxtla; 76\%
 
 \subsection*{Sistema Puebla--Cholula--Cuautlancingo}
 
-El cluster 20 contiene 1,997 establecimientos y articula seis municipios y 14 localidades. No es una sola zona industrial ni una futura zona de servicio. Es una estructura metropolitana continua, con máximos locales conectados por bandas de establecimientos. La exploración interna reconoce 18 subnúcleos descriptivos, pero deja 44.5\% de sus puntos sin rama local bajo esa especificación; por ello los subnúcleos sirven para planear recorridos, no para sustituir silenciosamente la membresía principal.
+El cluster 20 contiene 1,997 establecimientos y articula seis municipios y 14 localidades. No es una sola zona industrial ni una futura zona de servicio. Es una estructura metropolitana continua, con máximos locales conectados por bandas de establecimientos y un perfil mixto: 59.3\% pertenece a lavandería/tintorería sectorial y 20.9\% a confección. La exploración interna aplicó HDBSCAN \emph{leaf} con \texttt{min\_cluster\_size=30} y \texttt{min\_samples=10}: reconoce 18 subnúcleos descriptivos con 1,108 establecimientos, pero deja 889 (44.5\%) sin rama local bajo esa especificación. Los 1,997 conservan su membresía principal; la segunda pasada solo hace legible la heterogeneidad metropolitana y orienta recorridos, no crea 18 zonas de servicio ni demuestra conexiones hidráulicas o funcionales.
 
 \begin{figure}[H]\centering
 \includegraphics[width=.94\textwidth]{../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etiquetados.png}
-\caption{Subnúcleos exploratorios del sistema metropolitano. Son estratos de lectura y validación, no nuevas zonas de servicio.}
+\caption{Subnúcleos A--R exploratorios del cluster 20. El gris identifica puntos sin rama local en la segunda pasada, que permanecen dentro del cluster principal. Las letras son identificadores y los colores distinguen ramas; no representan categorías productivas ni zonas de servicio.}
 \end{figure}
+
+La Tabla~\ref{tab:subnucleos-resumen} reporta el municipio y localidad dominantes disponibles en el producto auditable; no debe leerse como lista exhaustiva del ámbito de cada rama. Las proporciones son multilabel y mantienen la misma definición que en la Tabla~\ref{tab:clusters-resumen}.
+
+\begin{landscape}
+\footnotesize
+\begin{longtable}{c p{6.5cm} r r r r r}
+\caption{Resumen de los 18 subnúcleos exploratorios del cluster 20.}\label{tab:subnucleos-resumen}\\
+\toprule
+\textbf{Sub.} & \textbf{Municipio / localidad dominante} & \textbf{$n$} & \textbf{Lav./tint. \%} & \textbf{Confección \%} & \textbf{Fabr. telas \%} & \textbf{Acabado \%} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Sub.} & \textbf{Municipio / localidad dominante} & \textbf{$n$} & \textbf{Lav./tint. \%} & \textbf{Confección \%} & \textbf{Fabr. telas \%} & \textbf{Acabado \%} \\
+\midrule
+\endhead
+A & San Andrés Cholula / San Andrés Cholula & 31 & 83.9 & 9.7 & 0.0 & 0.0 \\
+B & San Pedro Cholula / Cholula de Rivadavia & 76 & 59.2 & 15.8 & 3.9 & 1.3 \\
+C & Puebla / Heroica Puebla de Zaragoza & 46 & 80.4 & 6.5 & 0.0 & 0.0 \\
+D & San Andrés Cholula / San Bernardino Tlaxcalancingo & 57 & 75.4 & 14.0 & 3.5 & 0.0 \\
+E & Puebla / Heroica Puebla de Zaragoza & 92 & 58.7 & 30.4 & 1.1 & 0.0 \\
+F & San Pedro Cholula / Santiago Momoxpan & 93 & 57.0 & 17.2 & 7.5 & 3.2 \\
+G & Puebla / Heroica Puebla de Zaragoza & 58 & 60.3 & 25.9 & 0.0 & 0.0 \\
+H & Puebla / Heroica Puebla de Zaragoza & 41 & 58.5 & 24.4 & 0.0 & 0.0 \\
+I & Puebla / Heroica Puebla de Zaragoza & 36 & 50.0 & 8.3 & 19.4 & 5.6 \\
+J & Puebla / Heroica Puebla de Zaragoza & 65 & 53.8 & 18.5 & 7.7 & 0.0 \\
+K & Puebla / Heroica Puebla de Zaragoza & 33 & 57.6 & 30.3 & 3.0 & 0.0 \\
+L & Puebla / Heroica Puebla de Zaragoza & 74 & 59.5 & 33.8 & 1.4 & 0.0 \\
+M & Puebla / Heroica Puebla de Zaragoza & 112 & 60.7 & 14.3 & 5.4 & 0.9 \\
+N & Puebla / Heroica Puebla de Zaragoza & 97 & 44.3 & 19.6 & 10.3 & 2.1 \\
+O & Puebla / Heroica Puebla de Zaragoza & 78 & 39.7 & 37.2 & 1.3 & 0.0 \\
+P & Puebla / Heroica Puebla de Zaragoza & 54 & 70.4 & 25.9 & 1.9 & 1.9 \\
+Q & Puebla / Heroica Puebla de Zaragoza & 30 & 30.0 & 36.7 & 10.0 & 3.3 \\
+R & Puebla / Heroica Puebla de Zaragoza & 35 & 62.9 & 17.1 & 11.4 & 0.0 \\
+\bottomrule
+\end{longtable}
+\normalsize
+\end{landscape}
 
 \section{Diferencias productivas entre clusters}
 
@@ -152,18 +288,22 @@ En Xalmimilulco, la mezcla de confección, maquila y mezclilla apunta a relacion
 \caption{Tipos productivos de las concentraciones, asignados después de fijar la geografía.}
 \end{figure}
 
-La sobrerrepresentación compara la frecuencia de una señal dentro de un cluster con su frecuencia regional. Por ejemplo, tejido/hilado aparece 10.62 veces más frecuentemente en el cluster 10 que en el universo interior; esto no significa 10.62 veces más producción. En el cluster 20, lavandería/tintorería sectorial abarca 1,185 unidades, pero solo 313 tienen señal húmeda explícita y 22 están etiquetadas como evidencia hídrica \texttt{SI}. Las categorías se traslapan y ninguna confirma por sí sola una lavandería industrial.
+La sobrerrepresentación compara la frecuencia de una señal dentro de un cluster con su frecuencia en los 4,010 establecimientos del universo interior. En la Figura 6 el color representa $\log_2(\mathrm{lift})$, una transformación sin unidades: 0 equivale a lift 1, 1 al doble y 2 a cuatro veces la prevalencia base. Una celda solo se muestra como rasgo distintivo si cumple simultáneamente el \textbf{criterio conservador} documentado: al menos 5 establecimientos, prevalencia interna de 5\% o más, lift de al menos 1.25 y valor $q\leq0.05$ después del ajuste Benjamini--Hochberg de 342 contrastes. Este filtro evita destacar señales sostenidas por muy pocos casos, sin convertir el análisis en inferencia causal.
+
+``Mención de lavado'' significa que el texto comercial contiene vocabulario de lavado; ``mención de pantalón'' y ``mezclilla o pantalón'' son señales textuales de producto; las columnas marcadas SCIAN provienen de la actividad económica declarada. Por ejemplo, tejido/hilado aparece 10.62 veces más frecuentemente en el cluster 10 que en el universo interior, con 135 de 142 establecimientos, mientras en el cluster 9 aparece en 24 de 30; ambos tienen soporte absoluto suficiente, aunque el segundo es pequeño. El cluster 8 destaca por confección, maquila y mezclilla/pantalón con cientos de casos, y el cluster 20 presenta contrastes más moderados pero gran soporte absoluto: lavandería/tintorería sectorial abarca 1,185 unidades, 313 tienen señal húmeda explícita y 22 evidencia hídrica \texttt{SI}. Las categorías se traslapan y ninguna confirma por sí sola producción, uso de agua o una lavandería industrial.
 
 \begin{figure}[H]\centering
 \includegraphics[width=.92\textwidth]{../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png}
-\caption{Señales distintivas con suficiente tamaño y contraste dentro del universo observado.}
+\caption{Señales distintivas que cumplen simultáneamente $n\geq5$, prevalencia interna $\geq5\%$, lift $\geq1.25$ y $q\leq0.05$. El color es $\log_2(\mathrm{lift})$, sin unidades; las celdas claras sin contraste no satisfacen los cuatro filtros.}
 \end{figure}
 
 \section{Robustez e incertidumbre}
 
-La robustez se evaluó cambiando parámetros, comparando métodos y perturbando coordenadas 25 metros. La solución elegida obtiene el mayor puntaje, pero las alternativas HDBSCAN más cercanas producen particiones casi equivalentes. Este resultado es deseable: las concentraciones principales no dependen de un único ajuste, aunque la etiqueta exacta de algunos puntos sí cambia.
+En este estudio, \textbf{robustez} significa que la estructura territorial general reaparece cuando se cambian razonablemente los parámetros, se contrasta con otro método o se introduce un pequeño error posicional; \textbf{incertidumbre} significa que la membresía y los límites de algunos establecimientos no son invariantes. Variar parámetros cambia la escala mínima y la exigencia de densidad; comparar métodos permite comprobar si la lectura depende de una sola lógica algorítmica; y perturbar 25 m simula una imprecisión cartográfica pequeña mediante tres réplicas gaussianas independientes en $x$ y $y$.
 
-De los 4,365 establecimientos de detección, 4,107 son núcleos robustos, 94 tienen estabilidad intermedia y 164 son sensibles. Los cambios se concentran en bordes, corredores de baja densidad y transiciones entre cluster y ruido. Por eso cualquier directorio de visita debe incluir la persistencia de membresía y evitar tratar todos los puntos con la misma certeza.
+La solución elegida obtiene el mayor puntaje y un ARI medio de 0.937 con las cinco configuraciones HDBSCAN más similares. Las alternativas cercanas con \texttt{min\_samples=20} producen ARI de 0.998 y 0.989 frente a la principal, mientras las de \texttt{min\_samples=10} conservan ARI de 0.925 y 0.922. Ante las tres perturbaciones de 25 m, los ARI globales fueron 0.895, 0.892 y 0.989; al comparar solo establecimientos agrupados en ambas particiones aumentaron a 0.979, 0.979 y 1.000. Los cambios ocurren principalmente en transiciones entre cluster y ruido y en bordes locales, no en el núcleo de las concentraciones. Por eso una variación puntual no invalida automáticamente la estructura regional.
+
+De los 4,365 establecimientos de detección, 4,107 (94.1\%) son núcleos robustos, 94 (2.2\%) tienen estabilidad intermedia y 164 (3.8\%) son sensibles según los umbrales de la tabla de criterios. El cluster 20 es muy persistente y eleva la similitud global; al excluirlo, la concordancia frente a algunas alternativas disminuye, aunque la estructura restante continúa siendo reconocible. Por eso cualquier directorio de visita debe incluir la persistencia de membresía y evitar tratar todos los puntos con la misma certeza.
 
 \begin{figure}[H]\centering
 \includegraphics[width=.88\textwidth]{../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.png}
@@ -234,59 +374,18 @@ La integración permitirá pasar de una concentración de establecimientos a una
 
 La matriz maestra está en \path{outputs/parte_2/01_matriz/}; la solución espacial en \path{outputs/parte_2/06_clusters/}; los perfiles en \path{outputs/parte_2/07_perfiles/}; los contrastes en \path{outputs/parte_2/08_sobrerrepresentacion/}; el atlas en \path{outputs/parte_2/12_atlas/}; y los subnúcleos y el explorador interactivo en \path{outputs/parte_2/14_segunda_pasada/}. El reporte maestro documenta métodos, advertencias y trazabilidad completa.
 
-\appendix
-\section{Diccionario de palabras y conceptos clave}
-
-Este diccionario fija el sentido de los términos utilizados en el reporte. Las definiciones son operativas para este proyecto y deben leerse junto con los límites metodológicos señalados en el texto.
-
-\footnotesize
-\begin{longtable}{>{\bfseries\raggedright\arraybackslash}p{.25\textwidth}>{\raggedright\arraybackslash}p{.68\textwidth}}
-\toprule
-Término & Definición y uso en el reporte \\
-\midrule
-\endfirsthead
-\toprule
-Término & Definición y uso en el reporte \\
-\midrule
-\endhead
-Área tributaria & Superficie cuyos flujos llegan efectivamente a un punto de drenaje o tratamiento. Debe delimitarse con topografía e infraestructura; no coincide necesariamente con un cluster. \\
-Atarjea & Conducto local de la red sanitaria que recibe descargas y las conduce hacia colectores de mayor jerarquía. \\
-Captador o interceptor & Infraestructura que recibe, desvía o intercepta un flujo antes de su llegada a otro conducto o cuerpo receptor. Su existencia y funcionamiento deben verificarse con el operador. \\
-Cauce & Conducto natural o artificial por el que fluye agua. La cercanía de un establecimiento a un cauce no demuestra que descargue en él. \\
-Cluster & Agrupamiento de establecimientos próximos bajo una configuración del algoritmo. Es una unidad analítica, no una fuente comprobada de contaminación ni una zona de servicio. \\
-Colector & Conducto principal que reúne aguas de ramales o atarjeas. Para proponer conexiones se necesitan trazo, cota, diámetro, capacidad y estado operativo. \\
-Concentración espacial & Acumulación de establecimientos más próximos entre sí que bajo el patrón circundante. Describe geografía económica; no demuestra contaminación. \\
-Cuenca del Alto Atoyac & Polígono hidrológico adoptado como área principal de interpretación. El análisis conservó contexto exterior para controlar el efecto de borde. \\
-Cuerpo de agua & Río, arroyo, canal, presa u otro receptor superficial. Su relación con residuos requiere demostrar una ruta hidráulica. \\
-DENUE & Directorio Estadístico Nacional de Unidades Económicas del INEGI. Aporta identificación, actividad declarada y coordenadas; no documenta por sí solo procesos, consumos o descargas. \\
-Descarga & Salida efectiva de agua residual desde un establecimiento o infraestructura. Debe verificarse mediante inspección, registro o medición; no se deduce por proximidad. \\
-Drenaje & Red de conductos, conexiones, pozos, cárcamos y estructuras que transportan aguas residuales o pluviales. Su funcionamiento real puede diferir del trazo cartográfico. \\
-Efecto de borde & Distorsión causada al cortar vecinos en el límite de la cuenca. Se redujo detectando clusters con puntos municipales interiores y exteriores próximos. \\
-Evidencia hídrica & Etiqueta construida a partir de reglas textuales o fuente MH para priorizar revisión. Sus estados \texttt{SI} y \texttt{REVISAR} no equivalen a descarga confirmada. \\
-Fuente MH & Evidencia independiente derivada del trabajo de campo de Mary Helen Figueroa y Mayra Jaqueline Ramírez, enlazada con IDs DENUE cuando fue posible. \\
-HDBSCAN & Método de clustering por densidad capaz de representar agrupamientos con densidades variables y asignar probabilidades de pertenencia. \\
-Húmedo explícito & Señal textual que menciona operaciones potencialmente relacionadas con agua. Es evidencia registral, no verificación del proceso actual. \\
-Lavado genérico contextualizado & Mención de lavado interpretada junto con vocabulario textil u otras señales para reducir ambigüedad. \\
-Lavandería/tintorería sectorial & Clasificación basada en SCIAN o actividad registrada. Incluye posibles servicios comerciales y no equivale a lavandería industrial verificada. \\
-Lift & Razón entre la prevalencia de una señal en un cluster y su prevalencia en los 4,010 establecimientos interiores. Valores mayores que uno indican sobrerrepresentación descriptiva. \\
-Mega-cluster & Nombre descriptivo del cluster 20, con 1,997 establecimientos y continuidad metropolitana. No implica homogeneidad ni una solución hidráulica única. \\
-Membresía & Asignación de un establecimiento a un cluster o al ruido bajo la configuración seleccionada. \\
-MH & Abreviatura utilizada para la fuente de trabajo de campo descrita anteriormente; se conserva separada de DENUE. \\
-Planta de tratamiento & Instalación que recibe y trata aguas residuales. Para evaluar su utilidad se requieren capacidad real, tecnología, cargas admisibles, cobertura y estado operativo. \\
-Prevalencia & Proporción de establecimientos de un conjunto que presenta una señal determinada. No mide producción, caudal ni carga. \\
-Priorización territorial & Selección de zonas y preguntas para producir evidencia adicional. No constituye una recomendación automática de colector o inversión. \\
-Proceso seco explícito & Señal textual asociada con operaciones que no declaran uso de agua. No descarta limpieza húmeda u operaciones no registradas. \\
-Relieve & Forma y elevación del terreno. Permite estudiar pendientes y rutas gravitacionales, pero debe combinarse con la red construida y verificarse en campo. \\
-Residuo líquido o agua residual & Flujo resultante de una operación o uso del agua. Su volumen, composición y destino no se estiman a partir del número de establecimientos. \\
-Ruido o actividad dispersa & Establecimientos no asignados a un cluster bajo la configuración seleccionada. No significa error, irrelevancia ni ausencia de impacto ambiental. \\
-SCIAN & Sistema de Clasificación Industrial de América del Norte. Organiza actividades económicas declaradas y sirve para construir el universo y los perfiles. \\
-Señal productiva & Indicador derivado de SCIAN o texto comercial, como confección, maquila, mezclilla o tejido/hilado. Describe hipótesis de actividad. \\
-Subnúcleo & Partición exploratoria interna del mega-cluster utilizada para organizar recorridos. No reemplaza la membresía principal ni define áreas tributarias. \\
-Universo sectorial & Conjunto amplio de actividades textiles, confección y lavandería/tintorería usado como denominador principal del análisis regional. \\
-Universo estricto & Modalidad que exige evidencia más directa y excluye lavanderías sin señal adicional. Se usa como contraste de sensibilidad, no como verdad definitiva. \\
-Validación de campo & Comprobación directa de actividad, proceso, uso de agua, descarga, conexión e infraestructura mediante visita y evidencia documentada. \\
-\bottomrule
-\end{longtable}
-\normalsize
+\addcontentsline{toc}{section}{Referencias}
+\begin{thebibliography}{99}\small
+\bibitem{ankerst1999optics} Ankerst, M., Breunig, M. M., Kriegel, H.-P. y Sander, J. (1999). \emph{OPTICS: Ordering Points To Identify the Clustering Structure}. Proceedings of ACM SIGMOD, 49--60.
+\bibitem{campello2013hdbscan} Campello, R. J. G. B., Moulavi, D. y Sander, J. (2013). \emph{Density-Based Clustering Based on Hierarchical Density Estimates}. Advances in Knowledge Discovery and Data Mining, 160--172.
+\bibitem{cndh2017atoyac} Comisión Nacional de los Derechos Humanos (2017). \emph{Recomendación No. 10/2017 sobre los ríos Atoyac, Xochiac y sus afluentes}.
+\bibitem{dof2011atoyac} Comisión Nacional del Agua (2011). \emph{Declaratoria de clasificación de los ríos Atoyac y Xochiac o Hueyapan, y sus afluentes}. Diario Oficial de la Federación, 6 de julio de 2011.
+\bibitem{eni2023cuenca} Ecosistema Nacional Informático (2023). \emph{Cuenca del Alto Atoyac 2021}. Datos de origen: SINA--Conagua; GeoPackage/GeoJSON; libre uso MX.
+\bibitem{eni2023municipios} Ecosistema Nacional Informático (2023). \emph{División municipal de la cuenca del Alto Atoyac 2020}. Datos de origen: Marco Geoestadístico 2020, INEGI; libre uso MX.
+\bibitem{eni2023red} Ecosistema Nacional Informático (2023). \emph{Red hidrográfica de la Cuenca del Alto Atoyac y su área de influencia 2006}. Datos de origen: Red Hidrográfica Digital de México, INEGI; libre uso MX.
+\bibitem{ester1996dbscan} Ester, M., Kriegel, H.-P., Sander, J. y Xu, X. (1996). \emph{A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise}. Proceedings of KDD, 226--231.
+\bibitem{inegi2026denue} Instituto Nacional de Estadística y Geografía (2026). \emph{Directorio Estadístico Nacional de Unidades Económicas (DENUE)}, descargas del 4 y 11 de septiembre de 2026 y diccionario de datos conservados en el repositorio.
+\bibitem{perezcastresana2023} Pérez Castresana, G. et al. (2023). \emph{Salud ambiental en la Cuenca del Alto Atoyac: situación, peligros ambientales y acciones para reducir el riesgo de enfermedades crónicas no transmisibles}. Universidad Iberoamericana Puebla.
+\end{thebibliography}
 
 \end{document}

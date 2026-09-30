@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2026.2.25)  24 SEP 2026 17:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2026.2.25)  29 SEP 2026 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -436,6 +436,19 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthR=\skip72
 \@temptokenb=\toks29
 )
+(C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nom
+etadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
 sty
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
@@ -919,58 +932,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [1
 
 {C:/Users/narro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/narr
-o/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] (reporte_sinteti
-co.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@toc=\write5
-\openout5 = `reporte_sintetico.toc'.
-
- [2] [3{C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-math
-sy.enc}{C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.e
-nc}]
-<../../outputs/parte_2/13_figuras_finales/01_universos_borde.png, id=81, 474.68
-25pt x 592.9425pt>
-File: ../../outputs/parte_2/13_figuras_finales/01_universos_borde.png Graphic f
-ile (type png)
-<use ../../outputs/parte_2/13_figuras_finales/01_universos_borde.png>
-Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/01_universos_
-borde.png  used on input line 66.
-(pdftex.def)             Requested size: 461.94324pt x 577.05353pt.
- [4] [5 <../../outputs/parte_2/13_figuras_finales/01_universos_borde.png>] [6]
-<../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png, id=98, 4
-66.47pt x 593.271pt>
-File: ../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png Grap
-hic file (type png)
-<use ../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png>
-Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/02_clusters_p
-rincipales.png  used on input line 111.
-(pdftex.def)             Requested size: 457.08334pt x 581.3292pt.
- [7] [8 <../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png>]
-<../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etiquetados
-.png, id=111, 574.218pt x 492.4215pt>
-File: ../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etique
-tados.png Graphic file (type png)
-<use ../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etiquet
-ados.png>
-Package pdftex.def Info: ../../outputs/parte_2/14_segunda_pasada/figuras/03_sub
-nucleos_mega_etiquetados.png  used on input line 140.
-(pdftex.def)             Requested size: 457.08334pt x 391.99167pt.
- [9]
-<../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.png, id
-=121, 492.093pt x 593.271pt>
-File: ../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.pn
-g Graphic file (type png)
-<use ../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.png
->
-Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/04_tipos_prod
-uctivos_clusters.png  used on input line 151.
-(pdftex.def)             Requested size: 437.62888pt x 527.63837pt.
- [10 <../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etique
-tados.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-55.
+o/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+9.
 
 (C:\Users\narro\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -979,45 +943,107 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png, id=128, 80
-3.8395pt x 633.6765pt>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 51.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 51.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 54.
+ [2{C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.e
+nc}]
+(reporte_sintetico.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@toc=\write5
+\openout5 = `reporte_sintetico.toc'.
+
+ [3] [4{C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-math
+sy.enc}{C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.e
+nc}] [5]
+<../../outputs/parte_2/13_figuras_finales/01_universos_borde.png, id=127, 474.6
+825pt x 592.9425pt>
+File: ../../outputs/parte_2/13_figuras_finales/01_universos_borde.png Graphic f
+ile (type png)
+<use ../../outputs/parte_2/13_figuras_finales/01_universos_borde.png>
+Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/01_universos_
+borde.png  used on input line 110.
+(pdftex.def)             Requested size: 461.94324pt x 577.05353pt.
+ [6 <../../outputs/parte_2/13_figuras_finales/01_universos_borde.png>] [7]
+<../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png, id=143, 
+622.5075pt x 593.271pt>
+File: ../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png Grap
+hic file (type png)
+<use ../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png>
+Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/02_clusters_p
+rincipales.png  used on input line 173.
+(pdftex.def)             Requested size: 457.08334pt x 435.61894pt.
+ [8] [9 <../../outputs/parte_2/13_figuras_finales/02_clusters_principales.png>]
+ [10
+
+]
+<../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etiquetados
+.png, id=162, 574.218pt x 492.4215pt>
+File: ../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etique
+tados.png Graphic file (type png)
+<use ../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etiquet
+ados.png>
+Package pdftex.def Info: ../../outputs/parte_2/14_segunda_pasada/figuras/03_sub
+nucleos_mega_etiquetados.png  used on input line 239.
+(pdftex.def)             Requested size: 457.08334pt x 391.99167pt.
+ [11
+
+] [12 <../../outputs/parte_2/14_segunda_pasada/figuras/03_subnucleos_mega_etiqu
+etados.png>] [13
+
+]
+<../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.png, id
+=186, 492.093pt x 593.271pt>
+File: ../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.pn
+g Graphic file (type png)
+<use ../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.png
+>
+Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/04_tipos_prod
+uctivos_clusters.png  used on input line 287.
+(pdftex.def)             Requested size: 437.62888pt x 527.63837pt.
+ [14
+
+] [15 <../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.p
+ng>]
+<../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png, id=198, 80
+9.7525pt x 645.174pt>
 File: ../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png Graphi
 c file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/07_rasgos_dis
-tintivos.png  used on input line 158.
-(pdftex.def)             Requested size: 447.35611pt x 352.66153pt.
- [11 <../../outputs/parte_2/13_figuras_finales/04_tipos_productivos_clusters.pn
-g>]
-<../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.png, id=1
-36, 492.093pt x 593.271pt>
+tintivos.png  used on input line 296.
+(pdftex.def)             Requested size: 447.35611pt x 356.43176pt.
+ [16 <../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png>]
+<../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.png, id=2
+05, 582.4305pt x 588.3435pt>
 File: ../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.png 
 Graphic file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/03_persistenc
-ia_territorial.png  used on input line 169.
-(pdftex.def)             Requested size: 427.90907pt x 515.91528pt.
-
-[12 <../../outputs/parte_2/13_figuras_finales/07_rasgos_distintivos.png>]
-<../../outputs/parte_2/13_figuras_finales/05_robustez_escenarios.png, id=143, 9
+ia_territorial.png  used on input line 309.
+(pdftex.def)             Requested size: 427.90907pt x 432.27017pt.
+ [17 <../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.png>
+]
+<../../outputs/parte_2/13_figuras_finales/05_robustez_escenarios.png, id=212, 9
 28.0125pt x 391.2435pt>
 File: ../../outputs/parte_2/13_figuras_finales/05_robustez_escenarios.png Graph
 ic file (type png)
 <use ../../outputs/parte_2/13_figuras_finales/05_robustez_escenarios.png>
 Package pdftex.def Info: ../../outputs/parte_2/13_figuras_finales/05_robustez_e
-scenarios.png  used on input line 176.
+scenarios.png  used on input line 316.
 (pdftex.def)             Requested size: 437.62888pt x 184.49936pt.
 
-[13 <../../outputs/parte_2/13_figuras_finales/03_persistencia_territorial.png>]
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
 []|\T1/lmr/bx/n/10.95 (+20) Puebla--Cholula--
  []
 
-[14 <../../outputs/parte_2/13_figuras_finales/05_robustez_escenarios.png>]
-[15]
-ignored error: Infinite glue shrinkage found in box being split [16] [17]
-(reporte_sintetico.aux
+[18 <../../outputs/parte_2/13_figuras_finales/05_robustez_escenarios.png>]
+[19] [20] (reporte_sintetico.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -1026,28 +1052,34 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
 Package rerunfilecheck Info: File `reporte_sintetico.out' has not changed.
-(rerunfilecheck)             Checksum: 9BB5C44CDEE9C4D0F8D9EBC9CC670943;2261.
+(rerunfilecheck)             Checksum: 4E135F1A1C6BE2E519C95186E27CD9F9;2402.
  ) 
 Here is how much of TeX's memory you used:
- 25072 strings out of 467871
- 477203 string characters out of 5418376
- 933152 words of memory out of 5000000
- 53350 multiletter control sequences out of 15000+600000
- 683622 words of font info for 144 fonts, out of 8000000 for 9000
+ 25326 strings out of 467871
+ 481880 string characters out of 5418376
+ 923734 words of memory out of 5000000
+ 53485 multiletter control sequences out of 15000+600000
+ 718082 words of font info for 200 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,94p,1016b,833s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,94p,1016b,833s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb
-><C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb>
-<C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><
-C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:
-/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:
-/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:
-/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on reporte_sintetico.pdf (17 pages, 2091831 bytes).
+><C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb
+><C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb>
+<C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><
+C:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C
+:/Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/
+Users/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Us
+ers/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Us
+ers/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Use
+rs/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Use
+rs/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Use
+rs/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Use
+rs/narro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
+Output written on reporte_sintetico.pdf (20 pages, 2283853 bytes).
 PDF statistics:
- 238 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
- 31880 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 500000)
+ 48792 words of extra memory for PDF output out of 51595 (max. 10000000)
 
