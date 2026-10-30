@@ -1,0 +1,409 @@
+﻿establecimiento_id,d_llave,nombre,scian,actividad,localidad,prioridad_ambiental,proceso_hidrico,zona_analisis,longitud,latitud
+EST_00014,10122585,ALEJANDRO GARITA JUAREZ,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37746816,19.209000400000004
+EST_00035,11382766,ARTEMIO GARCIA SERRANO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38151913000002,19.211292010000005
+EST_00093,11155463,BODEGA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37576557,19.21128896
+EST_00115,11221708,BOLSA TRACERA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37426874,19.2130382
+EST_00130,9926222,BORDADO,314991,"Confección, bordado y deshilado de productos textiles",Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37573714,19.2169657
+EST_00132,9827043,BORDADO DE SERVILLETAS,314991,"Confección, bordado y deshilado de productos textiles",Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37465899,19.209574549999996
+EST_00141,10178860,BORDADORA SIN NOMBRE,314991,"Confección, bordado y deshilado de productos textiles",Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38520812,19.20481154
+EST_00152,11137575,BORDADOS,314991,"Confección, bordado y deshilado de productos textiles",Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37814439,19.211954050000003
+EST_00203,8559589,BORDADOS SOLIS,314991,"Confección, bordado y deshilado de productos textiles",Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.3850324,19.20792287
+EST_00431,11073004,CORTE DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38003737,19.21128246
+EST_00432,3326123,CORTE DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.3881916,19.213663589999996
+EST_00602,10939082,CREACIONES MARY,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38285654,19.211471720000002
+EST_00620,3326133,DESEBRADO DE BLUSA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38502297,19.2125903
+EST_00621,8089451,DESEBRADORA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38030722,19.204474160000004
+EST_00622,11539121,DESHEBRA PANTALONES,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38307406,19.219834289999994
+EST_00623,9645802,DESHEBRADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37946319,19.21790672
+EST_00624,11530961,DESHEBRADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37415935,19.213353699999992
+EST_00625,8118934,DESHEBRADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38357506,19.211841709999998
+EST_00626,11304210,DESHEBRADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37699365,19.20863774
+EST_00627,11031066,DESHEBRADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.36913525,19.213278599999995
+EST_00628,10965648,DESHEBRADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37231129,19.21811505
+EST_00629,7742908,DESHEBRADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37473248,19.219970809999996
+EST_00630,10966285,DESHEBRADO DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37519692,19.207614239999995
+EST_00631,10830903,DESHEBRADO DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.3856217,19.21134481
+EST_00632,9590208,DESHEBRADO DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.3777512,19.218738410000004
+EST_00633,9566007,DESHEBRADO DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37572813,19.207776129999996
+EST_00634,8776861,DESHEBRADO DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37602851,19.207871389999998
+EST_00636,8271528,DESHEBRADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38169434,19.20887583
+EST_00637,8088969,DESHEBRADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37541144,19.20847205999999
+EST_00638,10483301,DESHEBRADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38949209,19.20732028
+EST_00639,11197761,DESHEBRADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38502971000001,19.2046455
+EST_00640,8089385,DESHEBRADO SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38539493,19.208654419999995
+EST_00641,10947392,DESHEBRADORA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38317009,19.214871809999998
+EST_00647,3326283,DISEÑO DE ROPA A LA MEDIDA,315225,Confección de prendas de vestir sobre medida,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38722989000001,19.20923132
+EST_00832,10275055,ELABORACION DE FALDA ESCOLAR,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37722516,19.214272570000002
+EST_00839,11119679,ELABORACION DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37597872,19.210750000000004
+EST_00840,8776952,ELABORACION DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37712277,19.21459216
+EST_01068,10382850,GILCERJEANS,314991,"Confección, bordado y deshilado de productos textiles",Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38001572,19.211773679999997
+EST_01092,3538483,HERA APPAREL,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38726817,19.195424890000005
+EST_01132,10262715,IMPRESOS EN SERVILLETAS PARA RECUERDO,313310,Acabado de productos textiles,Santa Ana Xalmimilulco,alta,humedo,santa_ana,-98.38222036,19.212169139999997
+EST_01158,9706371,JAVIER SANDOVAL CORDERO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38189756,19.212115719999996
+EST_01187,3428321,LAVANDERIA Y TERMINADOS G C,313310,Acabado de productos textiles,Santa Ana Xalmimilulco,alta,humedo,santa_ana,-98.37981608,19.211767939999998
+EST_01189,10724349,LIDER CORDOBA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3815298,19.210186649999997
+EST_01229,9747796,MANUFACTURA DE ETIQUETA EN PIEL,313220,Fabricación de telas angostas de tejido de trama y pasamanería,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37372357,19.219582719999995
+EST_01235,11461415,MAQUILA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37449609,19.21672944
+EST_01239,10821911,MAQUILA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37394641,19.217495909999997
+EST_01242,11129024,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3746928,19.21470406
+EST_01244,10865960,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37688202,19.21425702
+EST_01246,10295902,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38276178,19.221123929999997
+EST_01248,11255997,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3816471,19.21789703
+EST_01250,11185488,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37890196,19.217399360000005
+EST_01252,11273664,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37688507,19.21484988
+EST_01254,11515213,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38184779,19.21438074
+EST_01255,10543399,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37415832,19.21698738
+EST_01256,10676987,MAQUILA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37701005,19.2124324
+EST_01257,11666606,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38252194,19.215465580000004
+EST_01258,10264760,MAQUILA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37533035,19.221515689999997
+EST_01259,11355400,MAQUILA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37421681,19.215084
+EST_01260,10381674,MAQUILA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37887255,19.21935823
+EST_01261,11230023,MAQUILA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37773064,19.210466469999997
+EST_01262,10676082,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37310141,19.214146999999997
+EST_01263,11676707,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38218431,19.21329958
+EST_01264,10494863,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38036617,19.216284189999996
+EST_01270,11528292,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38248143,19.215646249999995
+EST_01271,8089321,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37809192,19.216088489999997
+EST_01272,9890180,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38667684,19.215645639999995
+EST_01273,9655873,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37565683,19.214384989999996
+EST_01274,10016740,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38240939,19.215707310000003
+EST_01275,10151046,MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37718608,19.212255289999998
+EST_01285,10286307,MAQUILA A TERCEROS,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37901042,19.21836145
+EST_01354,11259950,MAQUILA DE FALDA SIN NOMBRE,315123,Fabricación de ropa exterior de tejido de punto,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38229339,19.20721255
+EST_01355,3427952,MAQUILA DE LAVANDERIA DE PANTALON,313310,Acabado de productos textiles,Santa Ana Xalmimilulco,alta,humedo,santa_ana,-98.37936835,19.210846099999998
+EST_01359,11229433,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37878722,19.219269079999997
+EST_01360,10800240,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37535984,19.20847896
+EST_01361,10855574,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38104442,19.21159953
+EST_01362,10590391,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3783816,19.219061800000002
+EST_01363,10626296,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37859808,19.21921864
+EST_01364,10707389,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37643883,19.207508289999996
+EST_01365,10780476,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37962658,19.213140309999993
+EST_01366,10782403,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37731155,19.208399599999993
+EST_01367,10883025,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37337339,19.215579779999995
+EST_01368,11294592,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38134194,19.20312613
+EST_01369,10832777,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37693164,19.209341689999995
+EST_01370,11443003,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38468808,19.213347190000004
+EST_01371,3326144,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38435472,19.212111829999994
+EST_01372,10609784,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37554215,19.215577309999997
+EST_01373,10568758,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37622166,19.216413380000002
+EST_01374,9935490,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38260983,19.20501169
+EST_01375,11311162,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37750069,19.21103255
+EST_01376,10322242,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37553356,19.20712503
+EST_01377,9989682,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37793122,19.21244735
+EST_01378,10109707,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38443606,19.208122950000003
+EST_01379,10209551,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37568023,19.209865599999997
+EST_01380,10229937,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37772445,19.212921259999998
+EST_01381,8559472,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.375061,19.205880709999995
+EST_01382,9603576,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3776692,19.2183944
+EST_01383,9878240,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38017958,19.217754299999992
+EST_01384,9953332,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37763139,19.21867649
+EST_01385,9720001,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37789695,19.208967480000002
+EST_01386,9677908,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38719605,19.20573727
+EST_01387,11564756,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37283998,19.215976709999996
+EST_01388,3427964,MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38030054,19.211876339999996
+EST_01389,3428151,MAQUILA DE PANTALON DE MESCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38392209,19.213102099999993
+EST_01390,3428204,MAQUILA DE PANTALON DE MESCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38287639,19.21390585
+EST_01391,3326083,MAQUILA DE PANTALON DE MESCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37712002,19.214272400000002
+EST_01393,3326339,MAQUILA DE PANTALON DE MEZCLILLA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37807708,19.20577329
+EST_01394,10099363,MAQUILA DE PANTALON DE MEZCLILLA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38004211,19.204412569999995
+EST_01395,3326137,MAQUILA DE PANTALON FOSIL JEANS,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38308957000001,19.211807469999997
+EST_01397,3427211,MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38225532000001,19.20783852
+EST_01398,10601053,MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38851917,19.20921951
+EST_01399,10332270,MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38293756,19.205645100000005
+EST_01400,11119423,MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38821535,19.20732084
+EST_01401,11541569,MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38433142,19.20739716
+EST_01402,10498672,MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38465467,19.20764246
+EST_01403,7742857,MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38573989,19.214056799999998
+EST_01404,11252324,MAQUILA DE PANTALON SIN NOMBRE,315123,Fabricación de ropa exterior de tejido de punto,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38587376,19.20680384
+EST_01405,10388706,MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38268607,19.205031200000004
+EST_01406,8090633,MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38729587,19.20991627
+EST_01407,9811213,MAQUILA DE PANTALONES,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38094548,19.21121359
+EST_01408,3427190,MAQUILA DE PANTALONES SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37937063,19.20763327
+EST_01409,8559575,MAQUILA DE PANTALONES SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37678859,19.208747059999997
+EST_01451,8777526,MAQUILA DESHEBRADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38360262,19.211873
+EST_01452,11133786,MAQUILA DESHEBRADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38149947,19.206872490000002
+EST_01455,11564564,MAQUILA ELIOM,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37843486,19.21287767
+EST_01461,3427188,MAQUILA J-RING-O,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38004855,19.20766774
+EST_01464,10380905,MAQUILA OVER Y RECTA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37292543000001,19.20629519
+EST_01465,10182979,MAQUILA PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37308715,19.210834769999995
+EST_01466,9938752,MAQUILA PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38189756,19.212115719999996
+EST_01467,11580764,MAQUILA PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37545951,19.207100429999997
+EST_01468,9832799,MAQUILA PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37781866,19.218773279999997
+EST_01469,11169870,MAQUILA PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37863979,19.217263809999995
+EST_01470,10228391,MAQUILA PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37424312,19.20945381
+EST_01472,11615691,MAQUILA PAP RAPTOR,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38235876,19.215933149999998
+EST_01498,10642697,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38755634,19.20903451
+EST_01502,10749897,MAQUILA SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37964854,19.206235999999997
+EST_01505,10398573,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38333904,19.212432009999993
+EST_01509,9758856,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38182725,19.213359760000003
+EST_01513,10170954,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38140886,19.21079064
+EST_01517,10217042,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3797113,19.20433688
+EST_01521,10786863,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37207344,19.20602370999999
+EST_01523,11289661,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38573146,19.20853757
+EST_01526,10655916,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38918447,19.214555199999992
+EST_01529,11537868,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38222086,19.212551519999998
+EST_01531,8089214,MAQUILA SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3731408,19.20636198
+EST_01533,11290346,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38130892,19.21773323
+EST_01535,11492967,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3728198,19.20626139
+EST_01537,11218866,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38170851,19.21209557
+EST_01539,6450047,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38765488,19.20830831
+EST_01541,11450697,MAQUILA SIN NOMBRE,315123,Fabricación de ropa exterior de tejido de punto,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3848471,19.20941491
+EST_01543,11359086,MAQUILA SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37851665,19.206653679999995
+EST_01545,10855925,MAQUILA SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3762992,19.207379379999995
+EST_01547,8089267,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37876508,19.207836800000003
+EST_01549,8090624,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38599798,19.21072001
+EST_01551,9737328,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38736446,19.21597
+EST_01553,9552490,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37642321000001,19.20806336
+EST_01555,9577301,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3759053,19.21471689
+EST_01557,10381013,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37853561,19.212991360000004
+EST_01559,10318667,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38169548,19.205398010000003
+EST_01561,8718752,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37304316,19.2109414
+EST_01563,3428048,MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3860345,19.20901077
+EST_01589,9894257,MAQUILA SON NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38205586,19.213486960000004
+EST_01590,11310014,MAQUILA SON NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38706936,19.204031579999995
+EST_01593,10267780,MAQUILA UNIFORMES,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37560939,19.21574674
+EST_01601,11303687,MAQUILADORA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38236538,19.218297179999993
+EST_01603,10394844,MAQUILADORA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3837314,19.219983900000003
+EST_01605,9890969,MAQUILADORA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38203417,19.21669813999999
+EST_01606,9496523,MAQUILADORA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38136076,19.219470709999996
+EST_01610,10579458,MAQUILADORA BRESKA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38342412,19.214995619999993
+EST_01621,8088968,MAQUILADORA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37523652000002,19.20904837
+EST_01622,8088970,MAQUILADORA DE PANTALONES DE MEZCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37831876000001,19.208940469999998
+EST_01636,9629047,MAQUILADORA RAQUEL,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38150436,19.20824719
+EST_01640,8777006,MAQUILADORA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38129706,19.203109699999995
+EST_01641,9627768,MAQUILADORA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38576025,19.21521278
+EST_01642,8089455,MAQUILADORA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38323307,19.203818269999996
+EST_01643,9834409,MAQUILADORA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38143386,19.208436169999995
+EST_01674,3428228,MAQUILAR PANTALON DE MEZCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37822862,19.208752929999996
+EST_01678,9877804,MAQUILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38213862,19.213435950000004
+EST_01679,10029125,MAQUILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38306201,19.21284349999999
+EST_01680,10500192,MAQUILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38297451,19.213992230000002
+EST_01681,9650425,MAQUILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38573989,19.214056799999998
+EST_01682,11352441,MAQUILLA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38198394,19.21213001
+EST_01683,11467703,MAQUILLA JUAREZ,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38440646,19.213844529999996
+EST_01684,9804661,MAQUILLA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38261209,19.21433021
+EST_01685,10541104,MAQUILLA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38405092,19.21509667
+EST_01686,10687795,MAQUILLA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38784587,19.214369839999996
+EST_01687,10516759,MAQUILLA V SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38534479000002,19.21551587
+EST_01688,11521781,MAQUILLADORA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38111473,19.21535967
+EST_01689,10328922,MAQUILLADORA LOS HERMANOS,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37809667,19.213041870000005
+EST_01690,10416578,MAQUILLADORA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38173764,19.21669662
+EST_01691,11084020,MAQUILLADORA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38252041,19.21521207
+EST_01692,10122074,MAQUILLADORA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38328084000001,19.21349943
+EST_01693,10815242,MAQUILLADORA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38327724000001,19.212630010000005
+EST_01694,11313187,MAQUILLADORA SOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38622131,19.213396070000005
+EST_01698,9800677,MARQUILLA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38702133,19.21545438
+EST_01720,10105987,MONICA SANDOVAL JUAREZ,314120,"Confección de cortinas, blancos y similares",Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3812411,19.212053819999998
+EST_01749,10401755,PASIFIC BRASH,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38101726,19.21007941
+EST_01750,3427871,PEGADO DE PRESILLA SIN NOMBRE,315123,Fabricación de ropa exterior de tejido de punto,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38532579,19.212216749999996
+EST_01758,8089023,PLANCAHADO DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37768985,19.208898200000004
+EST_01766,3428329,POLIPROCESO,313310,Acabado de productos textiles,Santa Ana Xalmimilulco,alta,humedo,santa_ana,-98.37624609,19.210095669999998
+EST_01768,8559579,PRECILLADORA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38292272,19.208498899999995
+EST_01773,9858680,PREPARADO DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37739171,19.215896389999997
+EST_01774,10860435,PREPARADO DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37601468,19.21066196
+EST_01775,10623693,PRESILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37430582,19.21687474
+EST_01776,3427200,PRETINA Y PRESILLA DE PANTALON DE MEZCLILLA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37806532,19.20630768
+EST_01777,11198278,PRETINADOR,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37729157,19.209940349999993
+EST_01972,11293300,TALER DE COSTURA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38448934,19.210230619999997
+EST_01989,8089083,TALLER DE BORDADO,314991,"Confección, bordado y deshilado de productos textiles",Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37830178,19.211098150000005
+EST_01990,3326365,TALLER DE BORDADO,314991,"Confección, bordado y deshilado de productos textiles",Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38162361000002,19.20312208
+EST_02112,11483581,TALLER DE COSTURA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38562612,19.211299809999996
+EST_02114,3428120,TALLER DE COSTURA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.3782744,19.21605447
+EST_02116,11339946,TALLER DE COSTURA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38383694,19.211428649999995
+EST_02159,3428080,TALLER DE COSTURA DE PANTALON DE MESCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37527847,19.214657829999997
+EST_02160,3326075,TALLER DE COSTURA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37524051,19.2146852
+EST_02216,8692051,TALLER DE COSTURA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37338647,19.210109219999996
+EST_02217,8089209,TALLER DE COSTURA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37959034,19.207574450000003
+EST_02219,8090510,TALLER DE COSTURA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38500324,19.212654389999997
+EST_02220,8089324,TALLER DE COSTURA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38358155,19.20799173999999
+EST_02221,8089442,TALLER DE COSTURA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38807479,19.20829801
+EST_02222,10532361,TALLER DE COSTURA SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38487655,19.21073845
+EST_02223,10567965,TALLER DE COSTURA SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38382593,19.21150092
+EST_02224,10980534,TALLER DE COSTURA SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38811707,19.211332659999993
+EST_02225,11166293,TALLER DE COSTURA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38727581,19.20823349
+EST_02226,10363670,TALLER DE COSTURA SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38585056,19.21221125
+EST_02338,9637988,TALLER DE DESHEBRADO DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.3875958,19.205833120000005
+EST_02339,11573367,TALLER DE DESHEBRADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38672241,19.208209450000002
+EST_02340,9605960,TALLER DE DESHEBRADO SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.3839219,19.208060139999997
+EST_02345,11085300,TALLER DE HECHURA DE OJAL SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38657235,19.20813037
+EST_02367,11239535,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38162529,19.22018696
+EST_02368,8118994,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37998508,19.21141678
+EST_02369,10740318,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3766939,19.208717899999993
+EST_02370,8090460,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38377927,19.21294341
+EST_02371,8089256,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37771843,19.215676419999998
+EST_02372,10730020,TALLER DE MAQUILA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37070933,19.21895019
+EST_02373,3427899,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38389696,19.210850929999996
+EST_02374,8089254,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38015382,19.217800900000004
+EST_02375,9970863,TALLER DE MAQUILA,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37556766000002,19.221592560000005
+EST_02376,8776906,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37838622,19.214496049999997
+EST_02377,10110594,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37098939,19.21678607
+EST_02378,3427858,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38802293,19.21038837
+EST_02379,9607623,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37688884,19.21360385
+EST_02380,8090635,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38553018,19.211367039999995
+EST_02381,8090636,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3867939,19.210131860000004
+EST_02382,9819742,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37500711,19.216339209999997
+EST_02383,9888228,TALLER DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37988644,19.21813499
+EST_02386,8090628,TALLER DE MAQUILA DE CAMISA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38600645,19.21134527
+EST_02387,8090455,TALLER DE MAQUILA DE MEZCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38432234,19.214405039999995
+EST_02388,8949535,TALLER DE MAQUILA DE MEZCLILLA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38554393,19.21556529
+EST_02389,3428342,TALLER DE MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37712855,19.21212898
+EST_02390,7742903,TALLER DE MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38745398,19.213680810000003
+EST_02391,3428312,TALLER DE MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37795268000002,19.21260075
+EST_02392,3428340,TALLER DE MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37623497,19.21158174
+EST_02393,3428202,TALLER DE MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38287639,19.21390585
+EST_02394,3428278,TALLER DE MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37736777,19.211790839999995
+EST_02395,10666717,TALLER DE MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37957927,19.213121349999998
+EST_02396,10299932,TALLER DE MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38131778,19.212067099999995
+EST_02397,3427268,TALLER DE MAQUILA DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38071348,19.204628259999996
+EST_02399,9725562,TALLER DE MAQUILA DE PANTALON DE MEZCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38108514,19.20750066
+EST_02400,3326348,TALLER DE MAQUILA DE PANTALON DE MEZCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38106673,19.206153780000005
+EST_02403,9880349,TALLER DE MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38759037,19.20895496
+EST_02404,10935752,TALLER DE MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38446172,19.205281570000004
+EST_02405,10149604,TALLER DE MAQUILA DE PANTALON SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38686956,19.20917425
+EST_02406,10768303,TALLER DE MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38451946,19.20455733
+EST_02407,10385075,TALLER DE MAQUILA DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37938112,19.207009150000005
+EST_02417,8089131,TALLER DE MAQUILA DON JORGE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38081166,19.22068904
+EST_02418,11109263,TALLER DE MAQUILA FAMILIAR,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38507096,19.20792905
+EST_02419,11162051,TALLER DE MAQUILA FAMILIAR,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37162305,19.218708189999994
+EST_02420,3427887,TALLER DE MAQUILA HOJALEADORA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38439888,19.21084323
+EST_02430,3427182,TALLER DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38135073000001,19.207569039999996
+EST_02432,3428168,TALLER DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38482768,19.21384111
+EST_02433,3326347,TALLER DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38074741,19.20660052
+EST_02434,8089132,TALLER DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38388626,19.218898689999996
+EST_02435,9655787,TALLER DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38868908,19.206374959999994
+EST_02436,11699604,TALLER DE MAQUILA SIN NOMBRE,314120,"Confección de cortinas, blancos y similares",Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38858939000002,19.206988819999996
+EST_02437,8090625,TALLER DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38619675,19.20946472
+EST_02438,8090456,TALLER DE MAQUILA SIN NOMBRE,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38434036,19.214347979999996
+EST_02439,7742904,TALLER DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38730363,19.21009941
+EST_02440,10708110,TALLER DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38452215,19.207423469999995
+EST_02487,7742787,TALLER DE MAQUILA Y PANTALONES DE MEZCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38036918,19.21474593
+EST_02492,11173772,TALLER DE PANTALLA DE MEZCLILLA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38154658,19.21173695
+EST_02493,11112789,TALLER DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37830135,19.211813059999994
+EST_02494,10975166,TALLER DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37741546,19.20843827
+EST_02495,10772582,TALLER DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38220444,19.21027785
+EST_02496,3428137,TALLER DE PANTALON DE CABALLERO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3877805,19.214539240000004
+EST_02506,10530864,TALLER DE ROPA POR PARA NIÑO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38156842,19.211728149999995
+EST_02510,11179294,TALLER DE TERMINADO,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3916904,19.210533259999995
+EST_02511,10764782,TALLER DE TERMINADO,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38489934,19.21100183
+EST_02512,10732616,TALLER DE TERMINADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38355316,19.206084599999997
+EST_02514,8090459,TALLER DE TERMINADO SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38485357,19.213965519999995
+EST_02521,9948104,TALLER FAMILIAR,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37268318,19.21619758
+EST_02522,11633655,TALLER FAMILIAR,315223,Confección en serie de uniformes,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37199454,19.21546775
+EST_02523,9910704,TALLER FAMILIAR,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3741164,19.219372239999995
+EST_02524,9825379,TALLER FAMILIAR DE MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37150149,19.218819149999998
+EST_02529,10773335,TALLER MAQUILA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37969544,19.21805433
+EST_02541,11023311,TALLER SIN NOMBRE,315123,Fabricación de ropa exterior de tejido de punto,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3902572,19.210380340000004
+EST_02573,9730300,TERMINADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3786737,19.214301800000005
+EST_02574,8089248,TERMINADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37765433,19.214406
+EST_02588,11119257,TERMINADO DE COSTURA SIN NOMBRE,315123,Fabricación de ropa exterior de tejido de punto,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.38525960000001,19.21296732
+EST_02589,8777005,TERMINADO DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38094082,19.20467983
+EST_02590,10591920,TERMINADO DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3764247,19.211269999999995
+EST_02591,3428078,TERMINADO DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37481352,19.21499311
+EST_02592,8089208,TERMINADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37952605,19.2077122
+EST_02593,10295653,TERMINADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38204038,19.204932579999994
+EST_02594,10211267,TERMINADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38141503000001,19.206850450000005
+EST_02595,8089265,TERMINADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37489035,19.20581503
+EST_02596,8777012,TERMINADO DE PANTALONES,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.3797894,19.19991659
+EST_02597,8119047,TERMINADO DE PANTALONES,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38497668000001,19.209536209999996
+EST_02606,10752985,TERMINADO O PREPARADO,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37686215,19.212811099999993
+EST_02664,11332144,TRABAJO DE OVER,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.37540259,19.207081530000004
+EST_02665,11666621,TRAILER DE PANTALON,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,revisar,santa_ana,-98.38407357,19.213150569999996
+EST_02731,9811409,VICTORIA LIRA LIRA,315229,Confección en serie de otra ropa exterior de materiales textiles,Santa Ana Xalmimilulco,por_revisar,seco_explicito,santa_ana,-98.37730833,19.208915689999998
+EST_02754,11183668,BODEGA DE DESPERDICIO,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.37746045,19.2111932
+EST_02755,11081907,BODEGA SIN NOMBRE,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.37489147,19.21328833999999
+EST_02933,3428174,LAVANDERIA ALEX,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.38544865,19.21501731
+EST_03388,3428283,LAVANDERIA LAVAMEXXAL,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.3780799,19.2112318
+EST_03394,3326066,LAVANDERIA LAVAPLUS,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.3819366,19.218614580000004
+EST_03441,11149643,LAVANDERIA LOS SOLARES,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.36887278,19.20557939
+EST_03461,10876257,LAVANDERIA MA & MA,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.38497712,19.211365789999995
+EST_03463,3427213,LAVANDERIA MAGALY,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.37919106,19.206459510000002
+EST_03493,8776900,LAVANDERIA MARY,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.37742389,19.20780984
+EST_03508,10086701,LAVANDERIA MEXICO,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.38564064,19.21429934
+EST_03538,3428103,LAVANDERIA NOVALAV,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.38075285,19.21681889
+EST_03589,8089261,LAVANDERIA REY,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.37655998,19.21125165
+EST_03604,8089452,LAVANDERIA RUGLAS,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.3807764,19.20291914
+EST_03634,3428125,LAVANDERIA SANTA CECILIA,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.38284012,19.21684215
+EST_03637,3428134,LAVANDERIA SANTA MONICA,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.38863919,19.21429432
+EST_03639,8089562,LAVANDERIA SANTY,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.38492676,19.20207742
+EST_03748,10801837,LAVANDERIA SIN NOMBRE,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.37428614,19.206721509999998
+EST_03749,3427993,LAVANDERIA SIN NOMBRE,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.386831,19.20916814999999
+EST_04026,10344313,PLANCHA DE PANTALON,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.37592313,19.20788768
+EST_04029,3326130,PLANCHADO DE PANTALON,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,seco_explicito,santa_ana,-98.38540714,19.2118204
+EST_04030,11297294,PLANCHADO DE PANTALON SIN NOMBRE,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,seco_explicito,santa_ana,-98.38441686,19.20740894
+EST_04032,9920113,PLANCHADO SIN NOMBRE,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,seco_explicito,santa_ana,-98.39010957,19.210440989999995
+EST_04047,11099113,PLANCHAS JOCA,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,media,revisar,santa_ana,-98.38926716,19.207237690000003
+EST_04071,6861846,STONE LAV,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,alta,humedo,santa_ana,-98.37347932,19.21707715999999
+EST_04072,10451408,STONE LAV,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,alta,humedo,santa_ana,-98.37353551,19.217036479999994
+EST_04188,3427228,TINTORERIA LIZ,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,alta,humedo,santa_ana,-98.38274798,19.207660020000002
+EST_04189,3427244,TINTORERIA LIZ,812210,Lavanderías y tintorerías,Santa Ana Xalmimilulco,alta,humedo,santa_ana,-98.38143472,19.20685794
+EST_00063,11620168,ARTESANIAS PARA CARNAVAL SIN NOMBRE,315224,Confección en serie de disfraces y trajes típicos,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40361347,19.167397130000005
+EST_00166,9682319,BORDADOS COMPUTARIZADOS,314991,"Confección, bordado y deshilado de productos textiles",Huejotzingo,por_revisar,seco_explicito,huejotzingo,-98.41213947,19.161592720000005
+EST_00198,10819893,BORDADOS SIN NOMBRE,314991,"Confección, bordado y deshilado de productos textiles",Huejotzingo,por_revisar,seco_explicito,huejotzingo,-98.40534525,19.159900250000003
+EST_00214,10066057,BORDARTE,314991,"Confección, bordado y deshilado de productos textiles",Huejotzingo,por_revisar,revisar,huejotzingo,-98.40799474,19.160107999999997
+EST_00221,10788794,BOUTIQUE ADORA,315225,Confección de prendas de vestir sobre medida,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40535238,19.168438079999994
+EST_00258,11484735,CASA OLIVER,313111,Preparación e hilado de fibras duras naturales,Huejotzingo,por_revisar,revisar,huejotzingo,-98.4070651,19.160973589999994
+EST_00285,9734956,COLMEX CONFECCIONES,315229,Confección en serie de otra ropa exterior de materiales textiles,Huejotzingo,por_revisar,seco_explicito,huejotzingo,-98.40723685,19.1523526
+EST_00393,10940394,CONFECCIONES DE ROPA PALACIOS,315225,Confección de prendas de vestir sobre medida,Huejotzingo,por_revisar,seco_explicito,huejotzingo,-98.4088014,19.153042199999998
+EST_00603,8271641,CREACIONES MAYRA,315224,Confección en serie de disfraces y trajes típicos,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40650601,19.165291239999995
+EST_00635,8089749,DESHEBRADO DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Huejotzingo,por_revisar,seco_explicito,huejotzingo,-98.40741127,19.170984469999997
+EST_00818,8089809,ELABORACION DE ARTESANIAS SIN NOMBRE,315224,Confección en serie de disfraces y trajes típicos,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40574792,19.16883834
+EST_00838,10414011,ELABORACION DE MASCARAS ARTESANALES,315224,Confección en serie de disfraces y trajes típicos,Huejotzingo,por_revisar,revisar,huejotzingo,-98.39986232,19.162034359999996
+EST_00898,8111993,ELABORACION DE ROPA SIN NOMBRE,315225,Confección de prendas de vestir sobre medida,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40909877,19.1711945
+EST_00903,10587198,ELABORACION DE SOMBREROS PARA CARNAVAL SIN NOMBRE,315991,Confección de sombreros y gorras,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40740097,19.16514076
+EST_00915,3426943,ELABORACION DE UNIFORMES ESCOLARES MICHELLE,315223,Confección en serie de uniformes,Huejotzingo,por_revisar,revisar,huejotzingo,-98.41181733,19.164221759999997
+EST_01065,9844272,GEMINIS TEXTIL,314991,"Confección, bordado y deshilado de productos textiles",Huejotzingo,por_revisar,revisar,huejotzingo,-98.41286449,19.155485269999996
+EST_01630,9347738,MAQUILADORA ESTYR BLUE MICHELLE JEANS,315229,Confección en serie de otra ropa exterior de materiales textiles,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40027993,19.15536543
+EST_01701,11095597,MASCARAS DE CARNAVAL,315224,Confección en serie de disfraces y trajes típicos,Huejotzingo,por_revisar,revisar,huejotzingo,-98.41094181,19.15676224
+EST_01714,8121067,MODISTA LUCIA,315225,Confección de prendas de vestir sobre medida,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40603197,19.147232619999993
+EST_01872,8120898,SASTRERIA MORALES,315225,Confección de prendas de vestir sobre medida,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40643859,19.155376979999996
+EST_01882,11315354,SASTRERIA SIN NOMBRE,315225,Confección de prendas de vestir sobre medida,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40374347,19.15143593
+EST_01966,3325963,SONIA MENDEZ NOVIAS,315225,Confección de prendas de vestir sobre medida,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40408051,19.163965019999996
+EST_01973,7872777,TALLER BOMBON JEANS,315229,Confección en serie de otra ropa exterior de materiales textiles,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40166978000002,19.16102632
+EST_02140,10985716,TALLER DE COSTURA,314120,"Confección de cortinas, blancos y similares",Huejotzingo,por_revisar,seco_explicito,huejotzingo,-98.42062574,19.158607230000005
+EST_02192,11484003,TALLER DE COSTURA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Huejotzingo,por_revisar,seco_explicito,huejotzingo,-98.41191436,19.162946399999996
+EST_02331,10183338,TALLER DE COSTURA Y VENTA DE HUARACHES SIN NOMBRE,315225,Confección de prendas de vestir sobre medida,Huejotzingo,por_revisar,seco_explicito,huejotzingo,-98.40969749,19.160375229999993
+EST_02452,11054153,TALLER DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40507247,19.16289243
+EST_02454,11530114,TALLER DE MAQUILA SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40489814,19.163785359999995
+EST_02497,8089412,TALLER DE PANTALON SIN NOMBRE,315229,Confección en serie de otra ropa exterior de materiales textiles,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40383744,19.161099580000002
+EST_02616,3325807,TEXTILERA DE PANTALON JEANS EMOCIONES,315229,Confección en serie de otra ropa exterior de materiales textiles,Huejotzingo,por_revisar,revisar,huejotzingo,-98.42045081,19.164382879999998
+EST_02651,3426890,TIENDA DE ROPA UNIFORMES MENDIETA,315223,Confección en serie de uniformes,Huejotzingo,por_revisar,revisar,huejotzingo,-98.41137991,19.160858919999992
+EST_02667,8271868,TRAJES DE CARNAVAL LA CASA DEL CARNAVAL,315224,Confección en serie de disfraces y trajes típicos,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40712901,19.16042259
+EST_02668,8272057,TRAJES DE CARNAVAL SIN NOMBRE,315224,Confección en serie de disfraces y trajes típicos,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40523461,19.16808812
+EST_02709,8089578,VENTA DE GAZNE SIN NOMBRE,314991,"Confección, bordado y deshilado de productos textiles",Huejotzingo,por_revisar,revisar,huejotzingo,-98.40859238,19.161689550000002
+EST_02717,8120601,VENTA DE UNIFORMES ESCOLARES GORZO,315223,Confección en serie de uniformes,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40985321,19.158321810000004
+EST_02720,8088978,VENTA DE VESTIDOS DE NIÑO DIOS,315229,Confección en serie de otra ropa exterior de materiales textiles,Huejotzingo,por_revisar,revisar,huejotzingo,-98.4083703,19.164076409999996
+EST_02722,8088976,VENTA Y RENTA DE TRAJES DE CARNAVAL SIN NOMBRE,315224,Confección en serie de disfraces y trajes típicos,Huejotzingo,por_revisar,revisar,huejotzingo,-98.40888636,19.16451039
+EST_02777,10118182,CLEAN CLOTHES,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40590617,19.148389290000004
+EST_02876,11684425,LAVANDERIA,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40656672,19.16136267
+EST_02963,11499902,LAVANDERIA ATENDERTE ES UN PLACER,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40893172,19.151949580000004
+EST_03059,8089588,LAVANDERIA CONE ESPUMA,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.4093101,19.160008230000003
+EST_03109,11495272,LAVANDERIA EASY WASH,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40752147,19.1634221
+EST_03127,3419521,LAVANDERIA EL CHINO,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40311639000001,19.156911699999995
+EST_03146,8279928,LAVANDERIA EL REHILETE,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40040422,19.16077465
+EST_03181,10732265,LAVANDERIA EXPRESES,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40451301,19.1524422
+EST_03193,11446479,LAVANDERIA FAST & CLEAN,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.4095095,19.161403689999997
+EST_03229,8271822,LAVANDERIA HUEJOTZINGO,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.41208304,19.161926529999995
+EST_03252,10070109,LAVANDERIA JUQUILITA,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.41176424,19.16464599
+EST_03260,10042837,LAVANDERIA KARAMELOS,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40382575,19.146368159999998
+EST_03269,8776988,LAVANDERIA LA BURBUJA,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40708683,19.153554509999996
+EST_03279,10816501,LAVANDERIA LA BURBUJA LOCA,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.41232509,19.15965814
+EST_03300,10152379,LAVANDERIA LA ESTRELLA,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40013346,19.159975030000002
+EST_03427,8089409,LAVANDERIA LONDRY CLOTHER,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40508793,19.162132139999997
+EST_03457,8121076,LAVANDERIA LUPITA,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40352832,19.147876599999996
+EST_03564,11580049,LAVANDERIA PLANCHADO Y TINTORERIA BUDY 24,812210,Lavanderías y tintorerías,Huejotzingo,alta,humedo,huejotzingo,-98.40434779,19.161724269999997
+EST_03581,10501043,LAVANDERIA RAPIDI WUASH,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40921251,19.149600629999995
+EST_03582,10664588,LAVANDERIA RAPIDIWASH,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40785828,19.15452388
+EST_03613,10866423,LAVANDERIA SAN JOSE,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40465013,19.17149897
+EST_03628,3326451,LAVANDERIA SAN MIGUEL,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.41079496,19.158462290000003
+EST_03629,10772217,LAVANDERIA SAN MIGUELITO,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.41156165,19.16578262
+EST_03678,9492182,LAVANDERIA SIN NOMBRE,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40430462,19.14598604
+EST_03780,8592165,LAVANDERIA SUNNY CLEAN,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40865163,19.15472382999999
+EST_03781,3325844,LAVANDERIA SUNY CLEAN,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40450336,19.16115304
+EST_03815,10408987,LAVANDERIA TORRES,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.4175128,19.160144309999996
+EST_04014,10978442,MAGIC WASH SERVICIOS,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40537115,19.14958454
+EST_04147,8271825,TINTORERIA HIGIENICA,812210,Lavanderías y tintorerías,Huejotzingo,alta,humedo,huejotzingo,-98.41133705,19.16117536
+EST_04194,3419622,TINTORERIA LUCY,812210,Lavanderías y tintorerías,Huejotzingo,alta,humedo,huejotzingo,-98.40422707,19.15379417
+EST_04232,8803988,TINTORERIA SANTIAGO,812210,Lavanderías y tintorerías,Huejotzingo,alta,humedo,huejotzingo,-98.40856363,19.15485774
+EST_04233,8089467,TINTORERIA SANTIAGO JACOBO,812210,Lavanderías y tintorerías,Huejotzingo,alta,humedo,huejotzingo,-98.40769441,19.16274612
+EST_04352,10340864,TINTOWASH,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40864821,19.161238379999997
+EST_04353,9522648,TINTOWASH,812210,Lavanderías y tintorerías,Huejotzingo,media,revisar,huejotzingo,-98.40553468,19.165992979999995

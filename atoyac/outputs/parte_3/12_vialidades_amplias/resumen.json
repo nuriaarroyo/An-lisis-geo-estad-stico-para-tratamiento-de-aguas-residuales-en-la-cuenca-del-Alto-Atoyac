@@ -1,0 +1,21 @@
+{
+  "tramos_fuente": 3805,
+  "nodos_grafo_original": 7345,
+  "aristas_grafo_original": 8199,
+  "componentes_sin_nodar_cruces": 83,
+  "componentes_nodando_cruces": 83,
+  "nodos_con_accesos": 7747,
+  "aristas_con_accesos": 8601,
+  "origenes_prioritarios": 65,
+  "pares_origen_destino": 195,
+  "rutas_conectadas": 102,
+  "rutas_perfil_completo": 68,
+  "componentes_origenes": [
+    0,
+    1
+  ],
+  "componentes_ptar": [
+    0
+  ],
+  "validacion_rutas": "todas sobre aristas existentes y longitudes consistentes"
+}

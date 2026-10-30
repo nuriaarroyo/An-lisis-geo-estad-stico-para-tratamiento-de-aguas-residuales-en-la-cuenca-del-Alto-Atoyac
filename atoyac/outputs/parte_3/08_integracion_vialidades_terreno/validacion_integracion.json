@@ -1,0 +1,72 @@
+[
+  {
+    "capa": "vialidades_regionales",
+    "objetos": 18707,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "cobertura_rasters",
+    "objetos": 4,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "santa_ana_establecimientos",
+    "objetos": 337,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "santa_ana_ptar_10km",
+    "objetos": 8,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "santa_ana_vialidades",
+    "objetos": 1283,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "santa_ana_zona_operativa",
+    "objetos": 1,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "huejotzingo_establecimientos",
+    "objetos": 71,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "huejotzingo_ptar_10km",
+    "objetos": 7,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "huejotzingo_vialidades",
+    "objetos": 2001,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "huejotzingo_zona_operativa",
+    "objetos": 1,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  }
+]

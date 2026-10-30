@@ -1,0 +1,67 @@
+[
+  {
+    "capa": "nodos_grafo",
+    "filas": 7747,
+    "invalidas": 0
+  },
+  {
+    "capa": "aristas_con_accesos",
+    "filas": 8601,
+    "invalidas": 0
+  },
+  {
+    "capa": "hidrografia_contexto",
+    "filas": 100,
+    "invalidas": 0
+  },
+  {
+    "capa": "vialidades_fuente",
+    "filas": 3805,
+    "invalidas": 0
+  },
+  {
+    "capa": "aristas_grafo",
+    "filas": 8199,
+    "invalidas": 0
+  },
+  {
+    "capa": "puntos_enlace",
+    "filas": 411,
+    "invalidas": 0
+  },
+  {
+    "capa": "accesos_geometricos",
+    "filas": 411,
+    "invalidas": 0
+  },
+  {
+    "capa": "establecimientos_prioritarios",
+    "filas": 65,
+    "invalidas": 0
+  },
+  {
+    "capa": "ptar_destinos",
+    "filas": 3,
+    "invalidas": 0
+  },
+  {
+    "capa": "rutas_minimas",
+    "filas": 102,
+    "invalidas": 0
+  },
+  {
+    "capa": "corredores_compartidos",
+    "filas": 877,
+    "invalidas": 0
+  },
+  {
+    "capa": "alternativas",
+    "filas": 6,
+    "invalidas": 0
+  },
+  {
+    "capa": "brechas_no_conectadas",
+    "filas": 1,
+    "invalidas": 0
+  }
+]

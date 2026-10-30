@@ -1,4 +1,4 @@
-# Python
+﻿# Python y entornos locales
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -7,30 +7,38 @@ __pycache__/
 .venv/
 venv/
 env/
-
-# Jupyter
 .ipynb_checkpoints/
 
-# Local geospatial data.
-# These inputs/derivatives are large and should be regenerated or downloaded from the cited public sources.
-data/raw/
-data/processed/
+# Fuentes geograficas locales (con manifiesto fuera de estos directorios)
+**/data/raw/
+**/data/processed/
 
-# QGIS/local project files
+# Proyectos y archivos de trabajo QGIS
 *.qgz
 *.qgs~
+*.gpkg-wal
+*.gpkg-shm
 
-# LaTeX build artifacts
-docs/*.aux
-docs/*.log
-docs/*.out
-docs/*.toc
-docs/*.fls
-docs/*.fdb_latexmk
-docs/*.synctex.gz
+# Compilacion LaTeX; conservar PDF, TEX, BIB y figuras
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
 
-# OS/editor noise
+# Metadatos de sistema/editor y caches de navegador
 .DS_Store
 Thumbs.db
+__MACOSX/
+._*
 .vscode/
 atoyac/.edge_test_cluster_map/
+
+# Respaldo reversible y paquetes generados
+/archivo_local/
+/dist/

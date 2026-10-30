@@ -1,0 +1,33 @@
+﻿origen_id,tipo_origen,establecimiento_subnucleo,n_establecimientos,alta_relevancia,media_relevancia,proceso_humedo,x_utm,y_utm,nivel_confianza,justificacion
+ORI_001,establecimiento,EST_01132,1,1,0,1,564939.3794851797,2124418.977527095,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_002,establecimiento,EST_01187,1,1,0,1,565192.2770146584,2124375.4810846667,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_003,establecimiento,EST_01355,1,1,0,1,565239.7063912065,2124273.642171723,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_004,establecimiento,EST_01766,1,1,0,1,565568.2205350077,2124191.775803568,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_005,establecimiento,EST_02754,1,0,1,0,565440.1303716106,2124312.7666646456,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_006,establecimiento,EST_02755,1,0,1,0,565709.3525380507,2124545.57305059,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_007,establecimiento,EST_02933,1,0,1,0,564598.9072777217,2124732.941872895,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_008,establecimiento,EST_03388,1,0,1,0,565374.9977339149,2124316.8052607435,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_009,establecimiento,EST_03394,1,0,1,0,564966.6762502906,2125132.3065010314,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_010,establecimiento,EST_03441,1,0,1,0,566345.1292819347,2123694.817154908,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_011,establecimiento,EST_03461,1,0,1,0,564649.9012940158,2124329.0565832774,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_012,establecimiento,EST_03463,1,0,1,0,565260.0738347266,2123788.308643199,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_013,establecimiento,EST_03493,1,0,1,0,565445.3121567983,2123938.3931446886,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_014,establecimiento,EST_03508,1,0,1,0,564579.0059036872,2124653.4233898115,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_015,establecimiento,EST_03538,1,0,1,0,565091.8148390782,2124934.0458002994,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_016,establecimiento,EST_03589,1,0,1,0,565534.7657891765,2124319.573165794,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_017,establecimiento,EST_03604,1,0,1,0,565094.8089270066,2123395.954454303,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_018,establecimiento,EST_03634,1,0,1,0,564872.3968011999,2124935.8404157325,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_019,establecimiento,EST_03637,1,0,1,0,564263.8027780681,2124651.758266201,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_020,establecimiento,EST_03639,1,0,1,0,564658.8251271676,2123301.267871075,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_021,establecimiento,EST_03748,1,0,1,0,565775.5960125164,2123819.1456510914,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_022,establecimiento,EST_03749,1,0,1,0,564455.8758217291,2124085.188699178,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_023,establecimiento,EST_04026,1,0,1,0,565603.0463652981,2123947.5712573957,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_024,establecimiento,EST_04029,1,0,1,0,564604.5195669559,2124379.2019971274,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_025,establecimiento,EST_04030,1,0,1,0,564710.3442680442,2123891.4181098994,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_026,establecimiento,EST_04032,1,0,1,0,564110.7313347573,2124224.824787058,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_027,establecimiento,EST_04047,1,0,1,0,564200.5299651737,2123870.673185586,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_028,establecimiento,EST_04071,1,1,0,1,565856.2888715666,2124965.3607800878,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_029,establecimiento,EST_04072,1,1,0,1,565850.3985136662,2124960.83805093,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_030,establecimiento,EST_04188,1,1,0,1,564885.684468886,2123919.822432623,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_031,establecimiento,EST_04189,1,1,0,1,565024.0541553359,2123831.5578163574,B_localizacion_C_generacion,Prioridad alta/media; caudal individual desconocido
+ORI_032,concentracion_cluster,CLU_008_XALMIMILULCO,337,8,23,8,565105.4531437889,2124359.2446500836,B_concentracion_C_generacion,Representa concentración completa; no equivale a punto hidráulico

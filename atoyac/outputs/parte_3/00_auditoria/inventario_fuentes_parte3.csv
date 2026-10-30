@@ -1,0 +1,7 @@
+﻿fuente_id,ruta,origen,contenido,uso_parte3,existe
+P2_EST,outputs\parte_2\06_clusters\solucion_principal.gpkg,Parte 2,DENUE y clustering,reutilizar,True
+P2_SUB,outputs\parte_2\11_cierre\diagnostico_mega_cluster.gpkg,Parte 2,subnúcleos diagnósticos,reutilizar,True
+P2_SUBDOC,outputs\parte_2\14_segunda_pasada\subnucleos_mega_cluster_documentados.csv,Parte 2,atributos de subnúcleos,reutilizar,True
+P3_BASE,outputs\parte_3\01_insumos_organizados\parte_3_insumos_base.gpkg,Lesly/INEGI/RH18,infraestructura organizada,reutilizar,True
+LESLY_PDF,data\processed\lesly\Reporte_Río_Atoyac_colectores_lesly.pdf,Lesly,documentación,referencia,True
+LESLY_QGZ,data\processed\lesly\FINAL_ATOYAC.qgz,Lesly,proyecto QGIS,referencia parcial,True

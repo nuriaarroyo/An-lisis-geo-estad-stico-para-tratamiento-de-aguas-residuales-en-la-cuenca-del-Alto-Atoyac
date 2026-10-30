@@ -1,0 +1,50 @@
+{
+  "python": "3.13.0",
+  "networkx": "3.6.1",
+  "geopandas": "1.1.3",
+  "rasterio": "1.5.2",
+  "scripts": [
+    {
+      "ruta": "scripts\\307_grafos_corredores_exploratorios.py",
+      "sha256": "87890dc0069c97ae64d7069c4f2adc4369d77751bf865fe4caf04a6c3605f714"
+    },
+    {
+      "ruta": "scripts\\310_actualizar_vialidades_amplias.py",
+      "sha256": "b91277a6c78612d1f831b4633d75f49c926b95faf34d53deb05c5285531dcb08"
+    },
+    {
+      "ruta": "scripts\\311_territorio_pendientes_locales.py",
+      "sha256": "1cfa52408adb7ee61131eb760a03a28dd54ea72f99fc707344bc864f188e25b6"
+    },
+    {
+      "ruta": "scripts\\312_documentar_red_amplia.py",
+      "sha256": "e9aa376f481aa7e510dfb760bed5bf77e5ef8189e74349c061052fb64573b053"
+    }
+  ],
+  "mdt": [
+    {
+      "fuente": "data\\raw\\terreno\\huejotzingo\\1\\conjunto_de_datos\\e14b42c3_mt.bil",
+      "resolucion_original_m": 1.5,
+      "crs_original": "PROJCS[\"MEXICO_ITRF_2008_UTM_Zone_14N\",GEOGCS[\"ITRF2008\",DATUM[\"International_Terrestrial_Reference_Frame_2008\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"1061\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-99],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "crs_cartografia": "EPSG:32614",
+      "resolucion_cartografia_m": 15,
+      "sha256": "9e9cae1b2b459bfcf0c6ba7813f2cdc477234128f681cbc0055ef8c8ffdc47aa"
+    },
+    {
+      "fuente": "data\\raw\\terreno\\santa ana\\2\\794551177266_b\\conjunto_de_datos\\e14b42c2_mt.bil",
+      "resolucion_original_m": 1.5,
+      "crs_original": "PROJCS[\"MEXICO_ITRF_2008_UTM_Zone_14N\",GEOGCS[\"ITRF2008\",DATUM[\"International_Terrestrial_Reference_Frame_2008\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"1061\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-99],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "crs_cartografia": "EPSG:32614",
+      "resolucion_cartografia_m": 15,
+      "sha256": "2ba5facfb07664b86422aee4123d7f49fcd926b8cc6ed8c1930f18df84628993"
+    }
+  ],
+  "validaciones": {
+    "pares_origen_ptar": 195,
+    "rutas_hacia_ptar": 102,
+    "rutas_locales_santa_ana": 62,
+    "geometrias_validas": true,
+    "nodata_rasters_validado": true
+  },
+  "foco_09_sha256": "19ffc1a8d2442d4ff2195f8369d88fc95d78b9c6df34c4aa6a10582b9ae3664b"
+}

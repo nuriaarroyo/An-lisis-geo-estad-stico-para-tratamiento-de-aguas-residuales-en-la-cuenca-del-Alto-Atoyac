@@ -1,0 +1,241 @@
+{
+  "corte": "2026-10-23",
+  "autora": "Nuria Arroyo Bustamante",
+  "revision_analitica": "atoyac/outputs/parte_3/12_vialidades_amplias",
+  "fuentes_y_transformaciones": [
+    {
+      "origen": "atoyac/docs/reporte_sintetico/reporte_sintetico.pdf",
+      "destino": "reportes/01_resumen_regional.pdf",
+      "sha256_origen": "97774cd935a5cf5ffc4acc54085a8ce8bad4419f0eab48c0a4aaaa6bf2bd5f1b",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/docs/parte_3/explicacion_caminos_minimos/explicacion_caminos_minimos.pdf",
+      "destino": "reportes/02_explicacion_caminos.pdf",
+      "sha256_origen": "e061baf1421488faf5fdbda4706e5450cab495aba21b55a031adc5d14d05d825",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/docs/parte_2/reporte/reporte_tecnico_parte_2.pdf",
+      "destino": "reportes/04_reporte_tecnico_parte2.pdf",
+      "sha256_origen": "59c48d80bf35c6fd56c8a6bb69c97fae25d1130ea5b96757d2a09af129621ee5",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_2/13_figuras_finales/02_clusters_principales.png",
+      "destino": "figuras/00_clusters_regionales.png",
+      "sha256_origen": "335b969469a8aefa8b1f94e6be3d2e606d232abeb0f2596a635172ede686e165",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/05_santa_ana_elevacion.png",
+      "destino": "figuras/05_santa_ana_elevacion.png",
+      "sha256_origen": "3b9147d375c6fc45d484a0e5569acdaf462f05eab85c567e33b199b8ffca5a70",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/05_santa_ana_pendiente.png",
+      "destino": "figuras/05_santa_ana_pendiente.png",
+      "sha256_origen": "ba1b76769c44a252fed44354affcc4bbb56db39103580b52c77b1d73d60590a6",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/05_huejotzingo_elevacion.png",
+      "destino": "figuras/05_huejotzingo_elevacion.png",
+      "sha256_origen": "740e745bab8bb47bc55e9fbfdbed39171458d982c5e4dbe336bf66372121e598",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/05_huejotzingo_pendiente.png",
+      "destino": "figuras/05_huejotzingo_pendiente.png",
+      "sha256_origen": "2653b57ee905fada9e147068da105b3ed28c482fdc20b1280e4e4ee6346fbedc",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/06_santa_ana_corredores.png",
+      "destino": "figuras/06_santa_ana_corredores.png",
+      "sha256_origen": "99a4c09c437ecb5bebc56708efd88fdd3471635c9442aba30bca5c2b84af5ca7",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/06_huejotzingo_corredores.png",
+      "destino": "figuras/06_huejotzingo_corredores.png",
+      "sha256_origen": "d86d38a47f5e76cb0e6fe99203c1270c35b5b747019ebe8e78edf855eb603e87",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/07_santa_ana_perfiles.png",
+      "destino": "figuras/07_santa_ana_perfiles.png",
+      "sha256_origen": "c76022ad932edebd3bedbc5be8c06eeca524fdfb5c53bb85ad631cb5d7ea492d",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/07_huejotzingo_perfiles.png",
+      "destino": "figuras/07_huejotzingo_perfiles.png",
+      "sha256_origen": "1498256c57a49955366e7d1922287c0d6dd2d3e4b908cfe18473e674d8e9c0f5",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/explorador_territorio_grafos.html",
+      "destino": "explorador.html",
+      "sha256_origen": "0b9575a94b42bdc04d583e815906ef71a92aafdecaea17afeb0441a4cb6a0206",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/reporte_red_amplia_territorio.md",
+      "destino": "reportes/03_resultados_parte3.md",
+      "sha256_origen": "a78cbcf0f5b3c1ef1614abe0b31273540f967cceccaa1f273204f67519f860ae",
+      "transformacion": "reubicar enlaces a imágenes y explorador dentro de entrega"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/cobertura_territorial.csv",
+      "destino": "datos/cobertura_territorial.csv",
+      "sha256_origen": "f4ff0d1104893c94a8f2fe5f0b4b95f2aa2170320c847b2e2a33a6c514fc21c8",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/resumen_cobertura_pendientes.csv",
+      "destino": "datos/resumen_cobertura_pendientes.csv",
+      "sha256_origen": "2bc09c73f7d52eeac8ea82bdced84404e2dc162a3fc5a160e56f68f29ef3ba2f",
+      "transformacion": "copia sin cambios"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/09_foco_santa_ana_huejotzingo/foco_santa_ana_huejotzingo.gpkg",
+      "destino": "datos/establecimientos.csv;datos/capas_seleccionadas.gpkg",
+      "sha256_origen": "19ffc1a8d2442d4ff2195f8369d88fc95d78b9c6df34c4aa6a10582b9ae3664b",
+      "transformacion": "selección de campos, preservar IDs y geometrías; añadir lon/lat"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/grafo_corredores_exploratorios.gpkg",
+      "destino": "datos/capas_seleccionadas.gpkg;datos/caminos_minimos.csv",
+      "sha256_origen": "56c09eb2ced8202a52d434aa6610b7b7bc914fd48316bced7ce957742700701a",
+      "transformacion": "selección de capas/campos de lectura; sin recalcular caminos"
+    },
+    {
+      "origen": "atoyac/outputs/parte_3/12_vialidades_amplias/matriz_origen_destino.csv",
+      "destino": "datos/caminos_minimos.csv",
+      "sha256_origen": "8eaf27dba2f6d51a14668273ed81624449404e9e60595a550357789ae8b7ea95",
+      "transformacion": "sólo rutas conectadas, añadir cobertura y recorridos internos; 164 filas"
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "datos/caminos_minimos.csv",
+      "bytes": 26784,
+      "sha256": "aeb10ce0425cb7a820a3577f5ace74412732c44c7bbf274627fa05963a35dee6"
+    },
+    {
+      "ruta": "datos/capas_seleccionadas.gpkg",
+      "bytes": 1830912,
+      "sha256": "4f6aed802b6b44a2effe0a047e453a5ad64d99bcf54c2901fe529956aa5f9ad8"
+    },
+    {
+      "ruta": "datos/cobertura_territorial.csv",
+      "bytes": 209,
+      "sha256": "f4ff0d1104893c94a8f2fe5f0b4b95f2aa2170320c847b2e2a33a6c514fc21c8"
+    },
+    {
+      "ruta": "datos/DICCIONARIO.csv",
+      "bytes": 1431,
+      "sha256": "0c67e32d6e3295d2c3d7553b5902722efc9fe01e04fa9585fca4be0e6d14e634"
+    },
+    {
+      "ruta": "datos/establecimientos.csv",
+      "bytes": 75697,
+      "sha256": "d290fbe10e34670d1f84dfee6b5275f5c02dc4f6f29de95c0a7b13ee21f5b9ba"
+    },
+    {
+      "ruta": "datos/ptar_candidatas.csv",
+      "bytes": 619,
+      "sha256": "c16c4fffcae8273ee2c19c931a630e6ae303c2dd419c56514ce6fe3b8d0a7594"
+    },
+    {
+      "ruta": "datos/resumen_cobertura_pendientes.csv",
+      "bytes": 817,
+      "sha256": "2bc09c73f7d52eeac8ea82bdced84404e2dc162a3fc5a160e56f68f29ef3ba2f"
+    },
+    {
+      "ruta": "explorador.html",
+      "bytes": 5928666,
+      "sha256": "0b9575a94b42bdc04d583e815906ef71a92aafdecaea17afeb0441a4cb6a0206"
+    },
+    {
+      "ruta": "figuras/00_clusters_regionales.png",
+      "bytes": 532091,
+      "sha256": "335b969469a8aefa8b1f94e6be3d2e606d232abeb0f2596a635172ede686e165"
+    },
+    {
+      "ruta": "figuras/05_huejotzingo_elevacion.png",
+      "bytes": 668163,
+      "sha256": "740e745bab8bb47bc55e9fbfdbed39171458d982c5e4dbe336bf66372121e598"
+    },
+    {
+      "ruta": "figuras/05_huejotzingo_pendiente.png",
+      "bytes": 1003303,
+      "sha256": "2653b57ee905fada9e147068da105b3ed28c482fdc20b1280e4e4ee6346fbedc"
+    },
+    {
+      "ruta": "figuras/05_santa_ana_elevacion.png",
+      "bytes": 517222,
+      "sha256": "3b9147d375c6fc45d484a0e5569acdaf462f05eab85c567e33b199b8ffca5a70"
+    },
+    {
+      "ruta": "figuras/05_santa_ana_pendiente.png",
+      "bytes": 775253,
+      "sha256": "ba1b76769c44a252fed44354affcc4bbb56db39103580b52c77b1d73d60590a6"
+    },
+    {
+      "ruta": "figuras/06_huejotzingo_corredores.png",
+      "bytes": 878320,
+      "sha256": "d86d38a47f5e76cb0e6fe99203c1270c35b5b747019ebe8e78edf855eb603e87"
+    },
+    {
+      "ruta": "figuras/06_santa_ana_corredores.png",
+      "bytes": 497345,
+      "sha256": "99a4c09c437ecb5bebc56708efd88fdd3471635c9442aba30bca5c2b84af5ca7"
+    },
+    {
+      "ruta": "figuras/07_huejotzingo_perfiles.png",
+      "bytes": 117438,
+      "sha256": "1498256c57a49955366e7d1922287c0d6dd2d3e4b908cfe18473e674d8e9c0f5"
+    },
+    {
+      "ruta": "figuras/07_santa_ana_perfiles.png",
+      "bytes": 106516,
+      "sha256": "c76022ad932edebd3bedbc5be8c06eeca524fdfb5c53bb85ad631cb5d7ea492d"
+    },
+    {
+      "ruta": "LEEME.md",
+      "bytes": 3710,
+      "sha256": "cfd596c98879d95758bc9ef45615a7372e2fa49574cd0442e52f73d6ae738396"
+    },
+    {
+      "ruta": "reportes/01_resumen_regional.pdf",
+      "bytes": 2283853,
+      "sha256": "97774cd935a5cf5ffc4acc54085a8ce8bad4419f0eab48c0a4aaaa6bf2bd5f1b"
+    },
+    {
+      "ruta": "reportes/02_explicacion_caminos.pdf",
+      "bytes": 322013,
+      "sha256": "e061baf1421488faf5fdbda4706e5450cab495aba21b55a031adc5d14d05d825"
+    },
+    {
+      "ruta": "reportes/03_resultados_parte3.md",
+      "bytes": 10436,
+      "sha256": "f274ca3fc2fbf5174689179a3fe98e5647378405ce7301834efa65298c33feb2"
+    },
+    {
+      "ruta": "reportes/04_reporte_tecnico_parte2.pdf",
+      "bytes": 2111979,
+      "sha256": "59c48d80bf35c6fd56c8a6bb69c97fae25d1130ea5b96757d2a09af129621ee5"
+    }
+  ],
+  "conteos": {
+    "establecimientos": 408,
+    "ptar_nucleo": 3,
+    "rutas_ptar": 102,
+    "recorridos_internos": 62,
+    "caminos_tabla": 164
+  },
+  "generador_sha256": "279aaee7c93e4e2393648d4649259dc765de7b5f8269f86849945f9351f4d549"
+}

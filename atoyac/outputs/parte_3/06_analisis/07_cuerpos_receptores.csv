@@ -1,0 +1,372 @@
+﻿elemento_id,nombre,cuerpo_receptor,fuente,anio,tipo,cauce_conciliado,nivel_evidencia_asociacion
+PTAR_001,PLANTA DE TRATAMIENTO DE AGUA RESIDUAL ATOYAC SUR,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_002,PLANTA DE TRATAMIENTO DE AGUA RESIDUAL SAN FRANCISCO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_003,PLANTA DE TRATAMIENTO DOMINGO ARENAS,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_004,DOMINGO ARENAS,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_005,PLANTA DE LA CABECERA MUNICIPAL,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_006,PLANTA TRATADORA DE AGUAS RESIDUALES CHIAUTZINGO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_007,SAN SIMON ATZITZINTLA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_008,PLANTA DE TRATAMIENTO DE AGUA RESIDUAL BARRANCA DEL CONDE,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_009,SIN NOMBRE,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_010,PLANTA MALINTZI,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_011,PLANTA DE TRATATMIENTO TEPEYANCO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_012,PLANTA TRATADORA DE AGUAS RESIDUALES DE SAN JUAN HUACTZINCO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_013,"PLANTA TRATADORA DE AGUAS RESIDUALES ""SAN ANDRES CUAMILPA""",,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_014,PLANTA DE TRATAMIENTO TRES BESANAS,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_015,SAN LUCAS ATOYATENCO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_016,PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES DE SANTA MARIA TEXMELUCAN,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_017,PLANTA SAN RAFAEL IXTAPALUCAN,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_018,VILLA ALTA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_019,PLANTA TLAXCALA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_020,PLANTA PANOTLA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_021,PLANTA TRATADORA DE AGUAS RESIDUALES DE IXTACUIXTLA DE MARIANO MATAMOROS,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_022,PLANTA DE TRATAMIENTO DE AGUAS RESIDUALES DE SANTA RITA TLAHUAPAN,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_023,SANTA CRUZ OTLATLA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_024,PLANTA DE TRATAMIENTO DE SANTIAGO COLTZINGO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_025,PLANTA DE TRATAMIENTO DE CUAUHTEMOC,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_026,PLANTA DE TRATAMIENTO DE VICENTE GUERRERO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_027,PLANTA DE LAS CARROZAS,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_028,PLANTA TRATADORA CABECERA MUNICIPAL,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_029,PLANTA DE TRATAMIENTO EL CARMEN,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_030,PLANTA DE TRATAMIENTO DE SAN DIEGO RECOBA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_031,LOMA ESCONDIDA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_032,LAS CAÃADAS,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_033,PLANTA 2,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_034,PLANTA DE BENITO JUAREZ TEZOYO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_035,PLANTA DE TRATAMIENTO DE AGUA RESIDUAL ALSESECA SUR,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_036,PLANTA DE TRATAMIENTO DE AGUA RESIDUAL PARQUE ECOLOGICO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_037,PLANTA DE TRATAMIENTO NO. 1,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_038,PLANTA DE TRATAMIENTO 1,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_039,PLANTA DE TRATAMIENTO DE AGUA RESIDUAL GALAXIA LA CALERA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_040,PLANTA DE TRATAMIENTO DE AGUA RESIDUAL BOSQUES DE CHAPULTEPEC,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_041,ACUAPUE,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_042,PLANTA TRATADORA DE SAN ISIDRO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_043,PLANTA DE TRATAMIENTO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_044,PLANTA DE TRATAMIENTO DE TLATEMPAN,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_045,PLANTA TRATAMIENTO TOCATLAN,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_046,APIZACO A,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_047,Plnta de tratamiento de Atlihutzian,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_048,"PLANTA APIZACO ""B""",,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_049,PLANTA 1,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_050,PLANTA DE TRATAMIENTO DE SAN PEDRO ECATEPEC,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_051,PLANTA DE LA TRASQUILA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_052,PLANTA DE SANTA CLARA OZUMBA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_053,PLANTA DE TRATAMIENTO LOMA BONITA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_054,PLANTA DE TRATAMIENTO ATLANGATEPEC,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_055,PLANTA DE TRATAMIENTO DE ZUMPANGO PARTE ALTA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_056,LAGUNA DE OXIDACION,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_057,ACTIPAC,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_058,FOSA DE OXIDACION VELAZCO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_059,PLANTA TETLA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_060,PLANTA DE TRATAMIENTO DE ATEXCATZINCO,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_061,PLANTA 1 SAN PEDRO ECATEPEC,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_062,FOSA VILLA DE LAS FLORES,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_063,CAPULAC,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_064,FOSA SANTAMARIA TEPETZALA,,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_065,"LA VEGA, COL. SAN JUAN, TLAXCO",,INEGI CNGMD 2021 (descarga 2023),2021.0,PTAR,,D_sin_dato
+PTAR_066,PLANTA DE LA CABECERA MUNICIPAL,,PTAR_Final.csv,2021.0,PTAR,,D_sin_dato
+PTAR_067,PASEO DE LOS SAUCES,,PTAR_Final.csv,2022.0,PTAR,,D_sin_dato
+PTAR_068,REAL SEGOVIA,,PTAR_Final.csv,2022.0,PTAR,,D_sin_dato
+PTAR_069,SAN LUCAS ATOYATENCO,,PTAR_Final.csv,2021.0,PTAR,,D_sin_dato
+DES_001,,BARRANCA ALMOLOYA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_002,,BARRANCA ALAMO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_003,,FID 230,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_004,,FID 171,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_005,,FID 158,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_006,,FID 51,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_007,,FID 219,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_008,,FID 183,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_009,,RIO ZAPATERO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_010,,PROGRESO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_011,,SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_012,,SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_013,,SANTIAGO COLTZINGO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_014,,SANTIAGO COLTZINGO 2,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_015,,SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_016,,CUENCA ATENCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_017,,6 ORIENTE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_018,,COLECTOR MARGINAL RIO METLALPANAPA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_019,,PARAJE  CUATRO CAMINOS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_020,,BARRANCA CUACHITA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_021,,DESCARGA DOS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_022,,COMPUERTA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_023,,RIO TLAPALAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_024,,CANAL PORTALES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_025,,CARCAMO SANTIAGO MICHAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_026,,DESCARGA 2 SAN MIGUEL ANALCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_027,,DESCARGA MUNICIPAL NUMERO 1,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_028,,DESCARGA DE SANTIAGO MICHAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_029,,DESCARGA 9 JESUS TEPACTEPEC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_030,,LA REGADERA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_031,,RIO ZAHUAPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_032,,BARRANCA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_033,,RIO ZOPILOCALCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_034,,FID 5,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_035,,PILARES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_036,,RIO ZAHUAPAN (EL VALOR),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_037,,CANAL DEL VALOR,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_038,,CANAL DE PANZACOLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_039,,PRIVADA AVENIDA DEL TRABAJO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_040,,ATOYAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_041,,SAN BUENA VENTURA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_042,,COMPUERTA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_043,,DESCARGA  TETLATLAHUCA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_044,,UNO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_045,,DOS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_046,,BARRANCA BRIONES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_047,,ATLALTENCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_048,,DESCARGA AQUIAHUAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_049,,BARRANCA EL METRO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_050,,TETLATLAHUCA 6,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_051,,DESCARGA RIO ATOYAC CARCAMO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_052,,DESCARGA XOCHITECATITLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_053,,DESCARGA SAN RAFAEL,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_054,,TETLATLAHUCA 4,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_055,,TETLATLAHUCA 9,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_056,,TETLATLAHUCA 8,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_057,,RIO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_058,,CALLE 20 DE NOVIEMBRE SAN RAFAEL TENANYECAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_059,,DESCARGA 3 Y 5 SAN JOSE ATOYATENCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_060,,PUNTO DE DESCARGA 5,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_061,,PUERTA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_062,,PUNTO DE DESCARGA 6,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_063,,GUADALUPE VICTORIA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_064,,CANAL SAN IGNACIO TECUEXCOMAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_065,,ZANJA XILOXOTITLA Y TENEXYECAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_066,,EL RANCHO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_067,,BUENOS AIRES 5,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_068,,DESCARGA 1 SAN VICENTE XILOXOCHITLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_069,,CANAL SAN VICENTE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_070,,BUENOS AIRES 2,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_071,,1A. DE PORFIRIO DIAZ,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_072,,TECUEXCOMAC ZANJA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_073,,DESCARGA SANTA INES TECUEXCOMAC V,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_074,,RIO ATOYAC SAN MATEO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_075,,DESCARGA SANTA INES TECUEXCOMAC VI,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_076,,SAN IGNACIO 1,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_077,,DESCARGA SANTA INES TECUEXCOMAC II,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_078,,VILLA ALTA 2,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_079,,EL TORITO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_080,,DESCARGA SANTA INES TECUEXCOMAC III,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_081,,LA CIENEGA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_082,,DESCARGA SANTA JUSTINA ECATEPEC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_083,,CANAL BUENOS AIRES TIZOSTOC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_084,,CANAL BUENOS AIRES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_085,,DESCARGA 1 TECHACHALCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_086,,DESCARGA 1 ACATITLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_087,,DESCARGA TRINIDAD TENEXYECAC-ANALCO II,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_088,,DESCARGA NO.2,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_089,,BARRANCA DE MONTERREY,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_090,,DESCARGA EL PUENTE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_091,,LA CAÃADA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_092,,DESCARGA 1 PANOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_093,,CANAL,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_094,,BARRANCA SN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_095,,BARRANCA SN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_096,,DESCARGA VIVEROS DE PANOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_097,,CAMPO DE FUTBOL ZARAGOZA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_098,,CAMPO DE FUTBOL SAN JUAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_099,,DESCARGA 2 TEMETZONTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_100,,DESCARGA 6 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_101,,DESCARGA 4 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_102,,DESCARGA 7 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_103,,DESCARGA 1 HUILOAPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_104,,DESCARGA 1 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_105,,DESCARGA 2 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_106,,BARRANCA EL POTRERO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_107,,FOSA 1 SAN SIMON,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_108,,DESCARGA 1RA.,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_109,,FOSA 2 ACUICUIZCATEPEC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_110,,DESCARGA DEL PANTEON,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_111,,PRIVADA ZARAGOZA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_112,,CALLE REFORMA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_113,,FOSA SEPTICA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_114,,DESCARGA 16 SAN SIMEON,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_115,,CANAL BUENOS AIRES EL PORVENIR,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_116,,RIO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_117,,FOSA SEPTICA DE PANTANOS ARTIFICIALES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_118,,FOSA SEPTICA SAN MIGUEL LA PRESA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_119,,RIO ATOTONILCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_120,,CHICHICAZAC TENEXYECAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_121,,CHICAZAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_122,,FOSA SEPTICA SAN JOSE ESCANDONA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_123,,FOSA SEPTICA OXTOTLAPANGO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_124,,LAGUNA DE OXIDACION,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_125,,BARRANCA DEL TECHCALADO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_126,,DESCARGA 1 TEMETZONTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_127,,DESCARGA 5 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_128,,DESCARGA 3 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_129,,DESCARGA 18 IXCOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_130,,DESCARGA 19 IXCOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_131,,DESCARGA 17 IXCOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_132,,DESCARGA ALPOTZONGA DE LIRA Y ORTEGA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_133,,FOSA SEPTICA SAN MIGUEL PIPIYOLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_134,,JAGÃEY DE SAN MIGUEL PIPIYOLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_135,,DESCARGA EL DESMONTE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_136,,SAN FRANCISCO MITEPEC PLANTA 1,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_137,,SAN FRANCISCO MITEPEC PLANTA3													,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_138,,EL PIÃON - BARRANCA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_139,,FINAL DE LA LAGUNA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_140,,PUENTE LA CAÃADA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_141,,DESCARGA 3,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_142,,JAGÃEY SAN JUAN MITEPEC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_143,,SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_144,,DESCARGA 6 TLALPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_145,,DESCARGA 10 SAN SIMEON,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_146,,FOSA SEPTICA LA MAGDALENA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_147,,DESCARGA TORRES BARRANCA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_148,,PRESA RECOBA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_149,,MELCHOR OCAMPO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_150,,BARRANCA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_151,,PASO BLANCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_152,,LA LOMA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_153,,BARRANCA SN 1,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_154,,DESCARGA DEL RIO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_155,,LA JOYA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_156,,ZACATZINGO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_157,,DESCARGA A BARRANCA UNIDAD HABITACIONAL LOS PILARES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_158,,DESCARGA 1 SAN PABLO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_159,,SAN PABLO DEL MONTE (CANAL),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_160,,SAN PABLO DEL MONTE (SAN SEBASTIAN) 2,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_161,,SAN PABLO DEL MONTE (SAN ISIDRO),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_162,,RIO ATOYAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_163,,BARRANCA SIN NOMBRE NUMERO 5,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_164,,MICHAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_165,,ECOLOGICA CUATLAPANGA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_166,,DESCARGA 9 SECCION 5,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_167,,DESCARGA 10 SECCION 5,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_168,,XICOHTENCATL,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_169,,REFORMA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_170,,DESCARGA 8 SECCION 5,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_171,,05 DE FEBRERO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_172,,DESCARGA DE LA SECUNDARIA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_173,,DESCARGA DE LA REFORMA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_174,,PUNTO DE DESCARGA DE LA TERCERA SECCION,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_175,,SAN MARCOS CONTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_176,,BARRANCA TLEPTZAL,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_177,,20 DE NOVIEMBRE Y AQUILES SERDAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_178,,DS25,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_179,,DS22,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_180,,BARRANCA TECOLOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_181,,CALLE DE LA CRUZ,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_182,,DEL MERCADO NUEVO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_183,,CANAL BELEN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_184,,SAN MATIAS (ZAHUAPAN),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_185,,TECOLOTLA (ZAHUAPAN),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_186,,BARRANCA RAMONTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_187,,RIO DE LOS NEGROS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_188,,SAN MATIAS 2 (ZAHUAPAN),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_189,,SAN DAMIAN TLACOCALPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_190,,BARRIO DEL ALTO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_191,,"DESCARGA 5 A BARRANCA XICOYOTLA, BARRIO DEL ALTO",INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_192,,DESCARGA PRIVADA EMILIO CARRANZA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_193,,EL CRUCERO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_194,,EL LLANO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_195,,DESCARGA RANCHO SANTA CRUZ,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_196,,DESCARGA PUENTE EL TESORO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_197,,DESCARGA ASILAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_198,,CANAL DE TEPETLALZINGO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_199,,DESCARGA PRIVADA DEL CARMEN Y BENITO JUAREZ,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_200,,DESCARGA 1RO. DE MAYO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_201,,DESCARGA PUENTE DEL FERROCARRIL Y AV. DEL TRABAJO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_202,,DESCARGA PUENTE SAN MIGUEL,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_203,,LA MOJONERA 2,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_204,,ENCINAL,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_205,,ZACAMOLPA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_206,,PIRULES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_207,,BUENAVISTA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_208,,COLONIA TORRES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_209,,RIO TEQUIXQUIATL SAN MIGUEL CONTLA (3),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_210,,RIO TEQUIXQUIATL SAN MIGUEL CONTLA (4),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_211,,DESCARGA EL TESORO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_212,,DESCARGA SAN MIGUEL 1 Y 2,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_213,,ESCUELA EMSAD,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_214,,CABECERA MUNICIPAL,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_215,,ATENCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_216,,PARADATLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_217,,SAN SALVADOR,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_218,,SAN ANDRES III,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_219,,SAN ANDRES II,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_220,,DESCARGA 15 AL RIO TEQUISQUIAC PROVENIENTE DE CARRETRA SANTA CRUZ - APIZACO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_221,,FOSA SEPTICA XALTIANQUISCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_222,,FOSA SEPTICA SAN MATEO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_223,,FOSA SEPTICA BARRANQUILLA XALTIANQUISCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_224,,FOSA SAN JUAN QUETZALCOAPAN (LEONA VICARIO),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_225,,FOSA SEPTICA BARRANCA SIN NOMBRE ( SAN JUAN),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_226,,BARRANCA DE SAN PEDRO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_227,,BARRANCA TLACHA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_228,,DESCARGA 16 AL RIO TEQUISQUIAC PROVENIENTE DE CANAL SOBRE CARRETRA SANTA CRUZ - APIZACO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_229,,SAN ANDRES I,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_230,,DESCARGA 17 AL COLECTOR DE AGUAS RESIDUALES DEL MUNICIPIO DE APIZACO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_231,,DESCARGA 1 SAN LUIS APIZAQUITO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_232,,DESCARGA VISTA HERMOSA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_233,,DESCARGA DOS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_234,,DESCARGA 1,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_235,,DESCARGA TRES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_236,,DESCARGA 5 CALLE VICENTE GUERRERO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_237,,DESCARGA 4 CALLE LEONA VICARIO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_238,,FOSA DE ATLIHUETZIAN CAMINO A AMAXAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_239,,RIO ZAHUAPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_240,,RIO ZAHUAPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_241,,SANTA MARIA ATLIHUETZIA 3,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_242,,DESCARGA AL PUENTE DE LA CONQUISTA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_243,,DESCARGA DE AGUA RESIDUAL BARRANCA COYOATLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_244,,DESCARGA DE CALLE LOS MUSICOS A COYOATLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_245,,SAN LORENZO TLACUALOYAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_246,,FOSA 2 SAN SIMON,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_247,,BARRANCA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_248,,RIO ZAHUAPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_249,,BARRANCA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_250,,CALLE CAMINO REAL Y 2 DE ENERO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_251,,FOSA SEPTICA SAN BENITO XALTOCAN DELANTE DE LA IGLESIA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_252,,FOSA SEPTICA DEL BALNEARIO DE SAN BENITO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_253,,FOSA SEPTICA JUNTO A LA MOJONERA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_254,,FOSA AL LIMITE CON EL ROSARIO OCOTOXCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_255,,DESCARGA OCOTOXCO A BARRANCA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_256,,FOSA SEPTICA OCOTOXCO PANTEON,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_257,,DESCARGA 3,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_258,,PRIVADA GUADALUPE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_259,,BARRANCA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_260,,AVENIDA DEL TRABAJO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_261,,AVENIDA DEL TRABAJO 1,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_262,,SAN DIONISIO YAUHQUEMEHCAN 2,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_263,,FOSA SEPTICA FUENTE DE RIELES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_264,,FOSA 2 SAN LUIS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_265,,LAGUNA DE OXIDACION CHIPILA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_266,,FOSA 3 SAN LUIS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_267,,FOSA DE SANTA CLARA OZUMBA (NUEVA),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_268,,FOSA DE ZUMPANGO (NUEVA),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_269,,SANTA MARIA TEXCALAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_270,,ZOLTEPETZI,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_271,,APIZAQUITO 1,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_272,,APIZAQUITO 4,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_273,,COLONIA FERROCARRILERA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_274,,CARRETERA A TETLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_275,,SANTA MARIA TEXCALAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_276,,SANTA MARIA TEXCALAC,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_277,,BV. CIENEGA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_278,,DESCARGA TETEL-HOVOMEX,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_279,,DESCARGA CERCA DEL OCOTAL,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_280,,"3RA SECCION, CALLE CANCUN Y OAXACA",INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_281,,FOSA LA QUEBRADORA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_282,,AVENIDA DEL TRABAJO FRACC. LOS ARCOS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_283,,FOSA DE OXIDACION,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_284,,FOSA SEPTICA PIEDRAS NEGRAS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_285,,BARRANCA SIN NOMBRE CALLE PUENTE GRANDE,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_286,,COLONIA JOSE MARIA MORELOS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_287,,FOSA 4 SAN PEDRO ECATEPEC (NUEVA),INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_288,,DESCARGA DE VILLA DE LAS FLORES,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_289,,LAGUNA DE OXIDACION,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_290,,BARRANCA S/N,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_291,,FOSA DE OXIDACION,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_292,,DESCARGA A LA BARRANQUILLA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_293,,DESCARGA DE SANTA ELENA BARRANCA EL SALTERIO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_294,,FOSA MAXIMO ROJAS,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_295,,PRESA DE OXIDACION ATOTONILCO,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_296,,FOSA TECOMALUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_297,,HUEXOTITLA FOSA SEPTICA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_298,,FOSA DE N.C.P. LA HERRADURA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_299,,DESCARGA 2,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_300,,DESCARGA 3 DE SANTA CLARA OZUMBA BARRANCA LA HERRADURA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_301,,SANTA CLARA OZUMBA,INEGI CNGMD 2021 (descarga 2023),2021.0,descarga,,A_atributo_declarado_sin_conciliar_geometria
+DES_302,Global Denim S.A. de C.V.,Río Atoyac,PTAR_Final.csv,,descarga,,A_atributo_declarado_sin_conciliar_geometria

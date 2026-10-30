@@ -1,0 +1,195 @@
+﻿capa,campo,tipo,descripcion,origen
+establecimientos_textiles,establecimiento_id,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,d_llave,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,clee,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,nom_est,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,raz_soc,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,cve_scian,int64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,desc_scian,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Descripcion estrato personal ocupado,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Tipo de vialidad,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Nombre de la vialidad,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Tipo de entre vialidad 1,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Nombre de entre vialidad 1,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Tipo de entre vialidad 2,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Nombre de entre vialidad 2,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Tipo de entre vialidad 3,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Nombre de entre vialidad 3,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Numero exterior o kilometro,float64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Letra exterior,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Edificio,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Edificio Piso,float64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Numero interior,float64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Letra interior,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Tipo de asentamiento humano,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Nombre de asentamiento humano,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Tipo centro comercial,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,"Corredor industrial, centro comercial o mercado publico",object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Numero de local,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Codigo Postal,int64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Clave entidad,int64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Entidad federativa,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Clave municipio,int64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Municipio,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,cve_loc,int64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,localidad,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Area geoestadistica basica,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Manzana,int64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Numero de telefono,float64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Correo electronico,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Sitio en Internet,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Tipo de establecimiento,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Latitud,float64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Longitud,float64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,Fecha de incorporacion al DENUE,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,coincide_filtro_scian,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,coincide_filtro_texto,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,textil,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,mezclilla,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,humedo_explicito,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,lavado_generico,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,produccion,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,maquila,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,proceso_seco_explicito,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,scian_textil,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,scian_acabado_humedo,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,scian_lavanderia,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,sector_textil,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,evidencia_hidrica,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,dentro_cuenca,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,scian_3,int64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,scian_4,int64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,scian_6,int64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,actividad_lavanderia_tintoreria,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,actividad_acabado_textil,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,actividad_confeccion,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,actividad_fabricacion_telas,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,actividad_tejido_hilado,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,actividad_bordado_deshilado,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,senal_pantalon,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,senal_mezclilla_o_pantalon,bool,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,universo_conceptual,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,cluster,int64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,probabilidad,float64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,persistencia_territorial,float64,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,clase_persistencia,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,tipo_resultado_espacial,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,geometry,geometry,Geometría EPSG:32614,Parte 2
+establecimientos_textiles,nombre,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,scian,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,actividad,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,clasificacion,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,prioridad_ambiental,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,proceso_hidrico,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,cluster_id,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,subnucleo_id,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,fuente,object,Atributo homologado o preservado de la fuente,Parte 2
+establecimientos_textiles,estado_verificacion,object,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,cluster_id,object,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,cluster,int64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,escenario_id,object,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,n_total_cluster,int64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,n_dentro_cuenca,int64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,n_fuera_cuenca,int64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,pct_cluster_dentro_cuenca,float64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,pct_cluster_fuera_cuenca,float64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,cruza_limite_cuenca,bool,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,area_convexa_km2,float64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,area_buffer_150m_km2,float64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,densidad_convexa_est_km2,float64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,n_municipios,int64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,n_localidades,int64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,persistencia_media,float64,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,geometry,geometry,Geometría EPSG:32614,Parte 2
+clusters_parte2,fuente,object,Atributo homologado o preservado de la fuente,Parte 2
+clusters_parte2,estado_verificacion,object,Atributo homologado o preservado de la fuente,Parte 2
+subnucleos_parte2,subnucleo_id,object,Atributo homologado o preservado de la fuente,Parte 2
+subnucleos_parte2,n_establecimientos,int64,Atributo homologado o preservado de la fuente,Parte 2
+subnucleos_parte2,fuente,object,Atributo homologado o preservado de la fuente,Parte 2
+subnucleos_parte2,estado_verificacion,object,Atributo homologado o preservado de la fuente,Parte 2
+subnucleos_parte2,geometry,geometry,Geometría EPSG:32614,Parte 2
+colectores,colector_id,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+colectores,nombre,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+colectores,municipio,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+colectores,tipo,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+colectores,estatus_geometria,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+colectores,fuente,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+colectores,anio,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+colectores,verificacion,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+colectores,observaciones,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+colectores,geometry,geometry,Geometría EPSG:32614,Integración Parte 3
+descargas,descarga_id,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+descargas,tipo_descarga,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+descargas,municipio,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+descargas,nombre_sistema,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+descargas,cuerpo_receptor,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+descargas,fuente,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+descargas,anio,float64,Atributo homologado o preservado de la fuente,Integración Parte 3
+descargas,estado_verificacion,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+descargas,observaciones,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+descargas,geometry,geometry,Geometría EPSG:32614,Integración Parte 3
+ptar,ptar_id,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,nombre_normalizado,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,nombre_fuente,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,municipio,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,localidad,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,tipo_ptar,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,tipo_usuario,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,proceso,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,capacidad_ls,float64,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,caudal_tratado_ls,float64,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,cuerpo_receptor,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,responsable_operacion,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,estado_operativo_reportado,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,anio_fuente,float64,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,fuente,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,fecha_consulta,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,estado_verificacion,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,observaciones,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+ptar,geometry,geometry,Geometría EPSG:32614,Integración Parte 3
+hidrografia,hidrografia_id,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,ID,int64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,CVE_SUBC,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,CLAVE50K,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,TIPO,int64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,ENTIDAD,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,FC,int64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,CONDICION,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,EDICION,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,FECHA,datetime64[ms],Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,LENGTHM,float64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,ID_DRENA,int32,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,FLOWDIR,int64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,ENABLED,int32,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,DESC_ENABL,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,CALI_REPR,int64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,SEQUENCEID,float64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,ORDER_1,int64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,LEVEL_1,int64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,ARBSUM_1,float64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,PATHL_1,float64,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,hoja_fuente,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,geometry,geometry,Geometría EPSG:32614,Integración Parte 3
+hidrografia,fuente,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+hidrografia,estado_verificacion,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+cuerpos_receptores,cuerpo_receptor_id,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+cuerpos_receptores,nombre,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+cuerpos_receptores,tipo,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+cuerpos_receptores,fuente,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+cuerpos_receptores,estado_verificacion,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+cuerpos_receptores,geometry,geometry,Geometría EPSG:32614,Integración Parte 3
+municipios,g_id,int32,Atributo homologado o preservado de la fuente,Integración Parte 3
+municipios,cve_ent,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+municipios,nom_ent,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+municipios,cve_mun,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+municipios,cvegeomun,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+municipios,nom_mun,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+municipios,geometry,geometry,Geometría EPSG:32614,Integración Parte 3
+limite_cuenca,g_id,int32,Atributo homologado o preservado de la fuente,Integración Parte 3
+limite_cuenca,id_cuenca,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+limite_cuenca,nom_cuenca,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+limite_cuenca,id_rha,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+limite_cuenca,nom_rha,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+limite_cuenca,clasif,object,Atributo homologado o preservado de la fuente,Integración Parte 3
+limite_cuenca,vol_dispo,float64,Atributo homologado o preservado de la fuente,Integración Parte 3
+limite_cuenca,geometry,geometry,Geometría EPSG:32614,Integración Parte 3

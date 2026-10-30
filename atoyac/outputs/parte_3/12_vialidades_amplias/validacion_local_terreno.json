@@ -1,0 +1,8 @@
+{
+  "rutas_locales": 62,
+  "extremos_inspeccion": 2,
+  "rutas_ptar": 102,
+  "rutas_perfiladas": 164,
+  "cobertura_entre_0_y_100": true,
+  "longitudes_locales_verificadas": true
+}

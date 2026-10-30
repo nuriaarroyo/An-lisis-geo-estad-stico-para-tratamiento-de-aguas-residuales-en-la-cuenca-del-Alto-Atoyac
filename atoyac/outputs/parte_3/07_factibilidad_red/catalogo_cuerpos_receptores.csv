@@ -1,0 +1,5 @@
+﻿nombre_normalizado,nombre_original,tipo,geometria_encontrada,fuente,nivel_confianza,observaciones
+RIO ATOYAC,Río Atoyac,río,True,capa dedicada RioAtoyac + mención documental,B,"Geometría disponible, conciliación nominal no embebida en RH18"
+RIO XOCHIAC,Río Xochiac,río,False,mención documental,D,No hay atributo nominal o geometría conciliable
+RIO TENITZATL,Río Tenitzatl,río,False,mención documental,D,No hay atributo nominal o geometría conciliable
+RIO XOPANAC,Río Xopanac,río,False,mención documental,D,No hay atributo nominal o geometría conciliable

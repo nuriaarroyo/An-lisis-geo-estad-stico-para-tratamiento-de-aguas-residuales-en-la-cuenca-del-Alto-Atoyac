@@ -1,0 +1,8 @@
+﻿entrega,ruta,tramos,crs_original,invalidas,vacias
+c2,data\raw\vialidades\c2\INEGI_Vialidades_.shp,1600,EPSG:4326,0,0
+c3,data\raw\vialidades\c3\INEGI_Vialidades_.shp,1407,EPSG:4326,0,0
+connect,data\raw\vialidades\connect\INEGI_Vialidades_.shp,1539,EPSG:4326,0,0
+huejotzingo,data\raw\vialidades\huejotzingo\INEGI_Vialidades_.shp,2804,EPSG:4326,0,0
+descarga_amplia,data\raw\vialidades\INEGI_Vialidades_.shp,46146,EPSG:4326,0,0
+san martin labastida,data\raw\vialidades\san martin labastida\INEGI_Vialidades_.shp,15051,EPSG:4326,0,0
+santa ana,data\raw\vialidades\santa ana\INEGI_Vialidades_.shp,901,EPSG:4326,0,0

@@ -1,0 +1,14 @@
+﻿fuente_id,ruta,capa,geometria,crs,objetos
+P2_EST,outputs\parte_2\06_clusters\solucion_principal.gpkg,establecimientos_membresia,Point,EPSG:32614,4365
+P2_EST,outputs\parte_2\06_clusters\solucion_principal.gpkg,envolventes_convexas,Polygon,EPSG:32614,22
+P2_SUB,outputs\parte_2\11_cierre\diagnostico_mega_cluster.gpkg,establecimientos_subnucleos,Point,EPSG:32614,1997
+P2_SUB,outputs\parte_2\11_cierre\diagnostico_mega_cluster.gpkg,hexagonos_250m,Polygon,EPSG:32614,867
+P3_BASE,outputs\parte_3\01_insumos_organizados\parte_3_insumos_base.gpkg,limite_cuenca,MultiPolygon,EPSG:32614,1
+P3_BASE,outputs\parte_3\01_insumos_organizados\parte_3_insumos_base.gpkg,municipios_interseccion_cuenca,MultiPolygon,EPSG:32614,67
+P3_BASE,outputs\parte_3\01_insumos_organizados\parte_3_insumos_base.gpkg,rio_atoyac_referencia,MultiLineString,EPSG:32614,1918
+P3_BASE,outputs\parte_3\01_insumos_organizados\parte_3_insumos_base.gpkg,franja_10m_referencia,MultiPolygon,EPSG:32614,1
+P3_BASE,outputs\parte_3\01_insumos_organizados\parte_3_insumos_base.gpkg,inegi_elementos_agua_cuenca,Point,EPSG:32614,1256
+P3_BASE,outputs\parte_3\01_insumos_organizados\parte_3_insumos_base.gpkg,inegi_ptar_cuenca,Point,EPSG:32614,65
+P3_BASE,outputs\parte_3\01_insumos_organizados\parte_3_insumos_base.gpkg,inegi_descargas_cuenca,Point,EPSG:32614,301
+P3_BASE,outputs\parte_3\01_insumos_organizados\parte_3_insumos_base.gpkg,ptar_compilacion_manual,Point,EPSG:32614,5
+P3_BASE,outputs\parte_3\01_insumos_organizados\parte_3_insumos_base.gpkg,red_hidrografica_rh18_cuenca,MultiLineString,EPSG:32614,12161

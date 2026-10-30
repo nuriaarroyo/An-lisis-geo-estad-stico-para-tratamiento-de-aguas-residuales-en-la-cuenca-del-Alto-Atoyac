@@ -1,0 +1,8 @@
+﻿origen,destino,nivel_evidencia,fundamento
+establecimiento,colector,D,No existe geometría ni vínculo documental recuperable
+establecimiento,descarga,C,Solo distancia euclidiana
+establecimiento,PTAR,C,Solo distancia euclidiana
+colector,descarga/PTAR,D,Sin geometría de colectores
+descarga,cuerpo receptor,A/C,A si está declarado; C para cauce geométricamente próximo
+PTAR,cuerpo receptor,A/D,A si está declarado; D si falta atributo
+subnúcleo,infraestructura,C,Coincidencia territorial agregada

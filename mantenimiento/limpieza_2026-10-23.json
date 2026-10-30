@@ -1,0 +1,2661 @@
+{
+  "respaldo": "C:\\Users\\narro\\Desktop\\semestre\\atoyac_original\\respaldo_limpieza_repo_2026-10-23_completo.zip",
+  "sha256_respaldo": "198f06cef831709f6cc565d91885d9e5698dad46e49cb3be1b537da45371c8ea",
+  "archivos": [
+    {
+      "ruta": "version_01/docs/santa_ana_xalmimilulco/reporte_auditoria_universos_santa_ana.aux",
+      "bytes": 1468,
+      "sha256": "ed9dadc519c549cb7f1f628c47254ebc8fdff452583ef2451ea4f544db92f0e7",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/santa_ana_xalmimilulco/reporte_auditoria_universos_santa_ana.fdb_latexmk",
+      "bytes": 10454,
+      "sha256": "7fe7895d2f61348197f2173440b894fa775f751f7ad633bf763972301971ef23",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/santa_ana_xalmimilulco/reporte_auditoria_universos_santa_ana.fls",
+      "bytes": 12902,
+      "sha256": "f80f7faaeaeb15ceb7958556b29e34a77aa5b08c1b672b08d325233fa2cca6f9",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/auditoria_clasificacion_denue_textil.aux",
+      "bytes": 10529,
+      "sha256": "cc824412a4bcd79cb4117aaddf495720d90b031b298f17dd813cb2e47deccdd3",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/auditoria_clasificacion_denue_textil.log",
+      "bytes": 34636,
+      "sha256": "7fcef854c02003041b2a7fbb658ce19ee852eae73884ef72e5da645afffecf76",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/auditoria_clasificacion_denue_textil.out",
+      "bytes": 1656,
+      "sha256": "c6d9560c27c1d393de088616550b7fdafa5c9b65a383c39ebc208c7421536f05",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/metodologia_diagnostico_textil_atoyac.aux",
+      "bytes": 2953,
+      "sha256": "706aa5ec60468313f4af3e556091ca71be5a7e15ff462e62544346fd52f2d18a",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/metodologia_diagnostico_textil_atoyac.fdb_latexmk",
+      "bytes": 13130,
+      "sha256": "326f90803aef6f1c0ac7a4f4ed6b1dca4796d1d92599045cfdb707fcf5e3bcfe",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/metodologia_diagnostico_textil_atoyac.fls",
+      "bytes": 16215,
+      "sha256": "7e0aec7cbc14ccfe01c9f91c1d188e09f0de6a9f118c35324b98d8e0a6c64af5",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/metodologia_diagnostico_textil_atoyac.log",
+      "bytes": 27385,
+      "sha256": "5be5403fee770002c60e1f821168c41651672bcf0e1bd046839c2aacadaedb62",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/metodologia_diagnostico_textil_atoyac.out",
+      "bytes": 3364,
+      "sha256": "da071cd9873c8a5d7971cb9c564c384eaa88590e02acf27fa84b32222a834121",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/observaciones_diagnostico_atoyac.aux",
+      "bytes": 3050,
+      "sha256": "8cb1469280eca88c81f7b85653fb5f5369656ac998b2def0bf7b33d6abd26736",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/observaciones_diagnostico_atoyac.fdb_latexmk",
+      "bytes": 11388,
+      "sha256": "0ec2d1094e56abc6d37bb29554f81f26a55a85395127036c4b2ce48a34abea30",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/observaciones_diagnostico_atoyac.fls",
+      "bytes": 14494,
+      "sha256": "f26134b8ce9c4c11367f20c09eaada9ed316b5ef3fb86f84ddb0737e40e0d6a2",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/observaciones_diagnostico_atoyac.log",
+      "bytes": 26369,
+      "sha256": "8d0b10fac590280a1cd42b9711fabe32b1cf803527d49ecabd3d5a1a218ed682",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "version_01/docs/legacy/flujo_experimental/observaciones_diagnostico_atoyac.out",
+      "bytes": 2710,
+      "sha256": "aac95f871a403439812bc720b229d780ed4365354111377fbce1dc6a0c36b6a4",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Breadcrumbs",
+      "bytes": 2727,
+      "sha256": "b048ae46dc40716de124c41fae92bb7130eb04eda9f32772e61461774bcef91b",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/CrashpadMetrics-active.pma",
+      "bytes": 16384,
+      "sha256": "1ca7e909fecc7307f09d87b49097519755a61b3bec7bf5263bde1186cd905316",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/FirstLaunchAfterInstallation",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/first_party_sets.db",
+      "bytes": 49152,
+      "sha256": "c9f29c89b668e84445f487bc14c7230915138c7af8da192e5c151038009f568f",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/first_party_sets.db-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Last Browser",
+      "bytes": 120,
+      "sha256": "9c70f766d3b84fc2bb298efa37cc9191f28bec336329cc11468cfadbc3b137f4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Last Version",
+      "bytes": 13,
+      "sha256": "75baac6a02c8f63abd477cf2c247d1bd2c6daf8275bab211fdf9b966c370df0c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Local State",
+      "bytes": 22501,
+      "sha256": "a66b05491a34f86e9a8a43b6b5bbcc31e4163ff580d92374e2a448b150f279f2",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Variations",
+      "bytes": 85,
+      "sha256": "b26da4f8c7e283aa74386da0229d66af14a37986b8ca828e054fc932f68dd557",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/VariationsRuntimeSeedV2",
+      "bytes": 19,
+      "sha256": "1560b22b2264f7cb6b7f6910164813f76c5e8a06fb1acf85b375e687ee49c1ad",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/VariationsSafeSeedV2",
+      "bytes": 11,
+      "sha256": "b4cc4174735c28360b9081be3c3d0552d8a4b3cdb54431ac00ed0d622bab6296",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/VariationsSeedV2",
+      "bytes": 10924,
+      "sha256": "3da1135e0759458876d2dd250e9095eb486eadd7b491c8532b28e6a38a9d5f59",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/00_data_exploration.cpython-313.pyc",
+      "bytes": 1306,
+      "sha256": "f519ec2f51b42547c0698632f4c3cf756d9126586a4b2d5ad1f7c3430cc89218",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/01_recorte_territorial.cpython-313.pyc",
+      "bytes": 1324,
+      "sha256": "f0b1c8415fbee2da3b19459b3db3ac96f807cab0e10e39cb2295f3fbd88a59e8",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/02_scian.cpython-313.pyc",
+      "bytes": 1088,
+      "sha256": "eab8802052969772d31f006f4f16d482c5a4ababdcd3a663d157a1fb42dbc209",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/03_text_filter.cpython-313.pyc",
+      "bytes": 4658,
+      "sha256": "bfc0a05175b386da91d0a9f8b4f96fe56cf237e24349445f068bdeb3b129c605",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/04_desiciones_preliminares.cpython-313.pyc",
+      "bytes": 4345,
+      "sha256": "c19442dd45862c81df7108a6730cdc4b54caf23e1ba7e4a0dac94dd80a4f7a24",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/05_csv_capa.cpython-313.pyc",
+      "bytes": 2253,
+      "sha256": "1b9deed7f1d157dac3ad518b34293ab39c9b2e12b0776c73f7babb603138acee",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/06_crear_figuras.cpython-313.pyc",
+      "bytes": 5798,
+      "sha256": "246c0aa012f14b8272d12d7fab33d4416ab64b017c32acde52d5ea795a193e14",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/06_generar_figuras_matplotlib.cpython-313.pyc",
+      "bytes": 137,
+      "sha256": "d20073117b037f2ee56240c5edb44235c670abefc1c3b5f6773d808e57a32dc6",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/07_comparaciones.cpython-313.pyc",
+      "bytes": 11594,
+      "sha256": "7dc0787d6cfe917081f400e41d8c0e9f0b247542aacb794606582d0412d64c90",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/08_mapas_cuenca_puebla.cpython-313.pyc",
+      "bytes": 19918,
+      "sha256": "9283032dfe5269986144b8a1a4e99012b64a2f4cb9d9a55dcb69bf3b59a6fc31",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/09_presentacion_cuenca_puebla.cpython-313.pyc",
+      "bytes": 13791,
+      "sha256": "714a38659dbb6057416b38614622b2b129a47e87bae5e7b8fd45452ef0056ee6",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/100_main.cpython-313.pyc",
+      "bytes": 6249,
+      "sha256": "734517ac503ece6334499bc02c327e54ead57b7b9af0e9687013e95150cd1e9c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/101_main_cuenca_puebla.cpython-313.pyc",
+      "bytes": 14519,
+      "sha256": "98e335ec135ab31d65dfe129796b71a66f2b4f33598822e950aa68e70b78646f",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/102_presentacion_direccion.cpython-313.pyc",
+      "bytes": 60568,
+      "sha256": "139c221b9c3325f3c4bea5864bc4f9f41c7b2176503c217afcde76a0fff3e293",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/10_integrar_mh.cpython-313.pyc",
+      "bytes": 10126,
+      "sha256": "0c7f83dbfb4bbfe6059dff03a5daa416ed372dabbf860532f4303192ccefc2a0",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/200_parte2_comun.cpython-313.pyc",
+      "bytes": 10380,
+      "sha256": "21ada355ba146aa575fa61bac36623f11f450df55f2199185ad853fca5fbd46a",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/201_auditar_y_construir_matriz.cpython-313.pyc",
+      "bytes": 6601,
+      "sha256": "aa704d3b45e06fc93b466d95b6bb4b043c8534eb9efed79cc18325a13c4eacc0",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/202_preparar_geometrias.cpython-313.pyc",
+      "bytes": 2391,
+      "sha256": "bc951e11797471c7e5145eac6a86038e74116021b1dece9afc73d4a972cbba56",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/203_diagnosticar_estructura_espacial.cpython-313.pyc",
+      "bytes": 5782,
+      "sha256": "2c968fdf9ce2ebe8c3772ecf56d7cd389a4bdd1d2d24ae5b73c3f0231ad335ed",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/204_evaluar_clustering_espacial.cpython-313.pyc",
+      "bytes": 5254,
+      "sha256": "719ac2d1b8eaaf00395d1a3502af21867644248adc8f512753e8e9560c762aea",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/205_seleccionar_solucion_espacial.cpython-313.pyc",
+      "bytes": 14333,
+      "sha256": "a40a952044e2c9378b0e8d4feb84e3a822b119381f9a93ba88349333b0fbea0d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/206_construir_clusters_y_borde.cpython-313.pyc",
+      "bytes": 4680,
+      "sha256": "3055794eeb5baa70f039b8cb4c1ca0b7cad302306e53e92b8a3baede8a3de92e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/207_perfilar_clusters.cpython-313.pyc",
+      "bytes": 4976,
+      "sha256": "a168700c5e66bacec4a94d8c3be551c9f09263577ae3eb03ad5fdb698afb96a9",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/208_analizar_sobrerrepresentacion.cpython-313.pyc",
+      "bytes": 4779,
+      "sha256": "fd66d8c4ad3f4ed3aa88992819f14b2a57bdcd22195c1b2c5934b2f8e1956b21",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/209_comparar_perfiles_clusters.cpython-313.pyc",
+      "bytes": 4803,
+      "sha256": "3fcf7410c31b4d7713a825886b6fe0db782c1687c639de81e309929ac1a5c582",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/210_generar_figuras_y_coexistencia.cpython-313.pyc",
+      "bytes": 7415,
+      "sha256": "fe789413bae3f0b0a6c122823e3cbc05ae3c473e02062090db940ec8361c7750",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/211_generar_documentos_parte2.cpython-313.pyc",
+      "bytes": 8080,
+      "sha256": "d7bcc06aea680eebb5b6ceadea0e899863f25712d3918a597d23e05976509373",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/212_ejecutar_parte2.cpython-313.pyc",
+      "bytes": 1340,
+      "sha256": "827f231d462b4f65d1845073960552a5bafb9c549035ff5d83a96be616780032",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/213_auditar_y_diagnosticar_cierre.cpython-313.pyc",
+      "bytes": 8009,
+      "sha256": "a8433c954cb458ea929aa368cdf658e1f170bf34f6276c8ab2738679275dff7f",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/214_cerrar_analisis_composicion.cpython-313.pyc",
+      "bytes": 12060,
+      "sha256": "ea6e894941e11d4693276fd6418af0b1a6c621f047ae24918115595a8c70f00c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/215_generar_figuras_finales_y_atlas.cpython-313.pyc",
+      "bytes": 21701,
+      "sha256": "4980b671773b71c2ea67e349a94af40a168fecb00736bc112fdf2e4ec2d48bc8",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/216_generar_latex_parte2.cpython-313.pyc",
+      "bytes": 27719,
+      "sha256": "e3ef68f8d49d5bde8ea01065469d49a505f4c4fe69650a0fea0e2757681b4e49",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/217_compilar_documentos_parte2.cpython-313.pyc",
+      "bytes": 1145,
+      "sha256": "5ab54a197722805660c0422161c2963b8a95244c781c08bf3f6a3c5118150828",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/218_validar_cierre_parte2.cpython-313.pyc",
+      "bytes": 5601,
+      "sha256": "56d21108e19ba2a41c09eb4a41ffaa940e21bf5c4b0ffca22c844c72471f56ce",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/219_ejecutar_parte2_completa.cpython-313.pyc",
+      "bytes": 1571,
+      "sha256": "e861b1dc5fef918e5e890621477a857f7c2941253fb4b1a78a9efbd50b9c5fae",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/307_grafos_corredores_exploratorios.cpython-313.pyc",
+      "bytes": 35505,
+      "sha256": "81cc671ed99c8ff899ff88af366438fdac11ce5c49fcf65de2505a97f10ba3f6",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/308_documentar_grafos_corredores.cpython-313.pyc",
+      "bytes": 23373,
+      "sha256": "8bc18875d45fd9de08fb42d0ffc61a372a8c99aec282192592b4af9819f29c73",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/scripts/__pycache__/99_crear_capa.cpython-313.pyc",
+      "bytes": 2814,
+      "sha256": "064365bfb94d47f417b1321dd5535678b74035d076d2e13b3c0016cdee6d104b",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/docs/dir1/presentacion a direccion.aux",
+      "bytes": 11855,
+      "sha256": "6049373dd0bf60a7990511ca99f499221afa023d3e34aa2115e0a6b22fbc86f8",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/dir1/presentacion a direccion.log",
+      "bytes": 53990,
+      "sha256": "c12aa75f3e2c0da7d4b18f6767b22a6bdb257228038dce453925016f5b8db73b",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/dir1/presentacion a direccion.nav",
+      "bytes": 8270,
+      "sha256": "d34868358b5618fad53c1cbfa57b690fe44096cd82f5c5326989db8e5b167994",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/dir1/presentacion a direccion.out",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/dir1/presentacion a direccion.snm",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/dir1/presentacion a direccion.toc",
+      "bytes": 30,
+      "sha256": "c69da94ddbaea48574c096364600bd8c146ba2f2db05cb5b800007ffeaf74591",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_3/reporte_tecnico_parte_3.aux",
+      "bytes": 9779,
+      "sha256": "aceb27a8a6463858869b4cc225552351ea0c546dfa362805f171c1083fa4bc7d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/docs/parte_3/reporte_tecnico_parte_3.fdb_latexmk",
+      "bytes": 15278,
+      "sha256": "437825ef5885eb36ed28a9ddec9b031246219e460e675fa5dd8bb33bab54df13",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/docs/parte_3/reporte_tecnico_parte_3.fls",
+      "bytes": 20871,
+      "sha256": "acd477024043665d78cb0f284cdbd7bce15fdb8216650295b0c391a74279fce3",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/docs/parte_3/reporte_tecnico_parte_3.log",
+      "bytes": 28932,
+      "sha256": "9fbb308d3078e02c08c2136b874b4125222a479f3fd7533ab1a0b191a2ac2aba",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/docs/parte_3/reporte_tecnico_parte_3.out",
+      "bytes": 6323,
+      "sha256": "c70c0e4be3dc44737ad0e7b00e5706ce3a72842d162660896ea603a5bfeb610b",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/docs/parte_3/reporte_tecnico_parte_3.toc",
+      "bytes": 4059,
+      "sha256": "e2b7089703fe52348b457b5e485514555605866d809f8f64f54b5f0be2e1c414",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla.aux",
+      "bytes": 5663,
+      "sha256": "7a6121bc369cdfdcb203af1cf9f5463924e5bc9132f0f01ed178144e6fead328",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla.log",
+      "bytes": 59764,
+      "sha256": "9ea0303ab33fe1222c0bf9da8fa0fde018cfd6da389fcbae6688d2575441d2e1",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla.nav",
+      "bytes": 3806,
+      "sha256": "f5cc975599fbdb8d508f4b9b019073c674d03ca6aecd83da478ea7596e4e5001",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla.out",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla.snm",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla.toc",
+      "bytes": 30,
+      "sha256": "c69da94ddbaea48574c096364600bd8c146ba2f2db05cb5b800007ffeaf74591",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_mh.aux",
+      "bytes": 5663,
+      "sha256": "7a6121bc369cdfdcb203af1cf9f5463924e5bc9132f0f01ed178144e6fead328",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_mh.log",
+      "bytes": 61746,
+      "sha256": "3cf8d0b6e803f0ffb5ecbb5d0e77285f5bf8be9a1538850a3d322d3fb4baacdd",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_mh.nav",
+      "bytes": 3806,
+      "sha256": "f5cc975599fbdb8d508f4b9b019073c674d03ca6aecd83da478ea7596e4e5001",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_mh.out",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_mh.snm",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_mh.toc",
+      "bytes": 30,
+      "sha256": "c69da94ddbaea48574c096364600bd8c146ba2f2db05cb5b800007ffeaf74591",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_sin_mh.aux",
+      "bytes": 5663,
+      "sha256": "7a6121bc369cdfdcb203af1cf9f5463924e5bc9132f0f01ed178144e6fead328",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_sin_mh.log",
+      "bytes": 62401,
+      "sha256": "a4eac8f1fc80a9a5bd6c04b38d20e3584f3e3bae8c9a2ef77915482081e4f99e",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_sin_mh.nav",
+      "bytes": 3806,
+      "sha256": "f5cc975599fbdb8d508f4b9b019073c674d03ca6aecd83da478ea7596e4e5001",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_sin_mh.out",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_sin_mh.snm",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_estricto_sin_mh.toc",
+      "bytes": 30,
+      "sha256": "c69da94ddbaea48574c096364600bd8c146ba2f2db05cb5b800007ffeaf74591",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_sin_mh.aux",
+      "bytes": 5663,
+      "sha256": "7a6121bc369cdfdcb203af1cf9f5463924e5bc9132f0f01ed178144e6fead328",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_sin_mh.log",
+      "bytes": 60926,
+      "sha256": "b1d78ad823f65bdcfb67c2752e16f66239d1162b1c7834d764bf738309d16bc3",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_sin_mh.nav",
+      "bytes": 3806,
+      "sha256": "f5cc975599fbdb8d508f4b9b019073c674d03ca6aecd83da478ea7596e4e5001",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_sin_mh.out",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_sin_mh.snm",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_sin_mh.toc",
+      "bytes": 30,
+      "sha256": "c69da94ddbaea48574c096364600bd8c146ba2f2db05cb5b800007ffeaf74591",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_todos_scian.aux",
+      "bytes": 5663,
+      "sha256": "7a6121bc369cdfdcb203af1cf9f5463924e5bc9132f0f01ed178144e6fead328",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_todos_scian.log",
+      "bytes": 61746,
+      "sha256": "09f776afc61a5f26823aa5413a10970d753bfeca30d04a5328b7c45c8d6d8920",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_todos_scian.nav",
+      "bytes": 3806,
+      "sha256": "f5cc975599fbdb8d508f4b9b019073c674d03ca6aecd83da478ea7596e4e5001",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_todos_scian.out",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_todos_scian.snm",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/presentacion_cuenca_puebla_todos_scian.toc",
+      "bytes": 30,
+      "sha256": "c69da94ddbaea48574c096364600bd8c146ba2f2db05cb5b800007ffeaf74591",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/presentaciones parciales/reporte_denue_textil.synctex.gz",
+      "bytes": 95897,
+      "sha256": "dfaa94f565048c98598ba76cc0b00f47059d495142655cc18cdfea7023ec49ae",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reportes/reporte_actualizado.aux",
+      "bytes": 7062,
+      "sha256": "9f2ef1c57d3082dbf1fba8224c48f093ab17bccf6d4e86b42725bec7d9683a0c",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reportes/reporte_actualizado.log",
+      "bytes": 25552,
+      "sha256": "5dcbecdc37922fab6922d9392b01edc203844d88bbfdc1c7293a8e0d48138d37",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reportes/reporte_actualizado.out",
+      "bytes": 5788,
+      "sha256": "9f148f04a4d7173e6dafa94a481122b8628a91c0b0cdb0f602fb28d26b597bd5",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reportes/reporte_actualizado.toc",
+      "bytes": 2657,
+      "sha256": "81ae8840c7d11024b118853211aa97e33cdc4c819ff33d9a551e90e117fd7d16",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reportes/reporte_denue_textil.aux",
+      "bytes": 7062,
+      "sha256": "9f2ef1c57d3082dbf1fba8224c48f093ab17bccf6d4e86b42725bec7d9683a0c",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reportes/reporte_denue_textil.fdb_latexmk",
+      "bytes": 14626,
+      "sha256": "2268ae6128eeb6e89257ee7fd3ab8aa40a1f6a12944961f3e6247fb1c628571b",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reportes/reporte_denue_textil.fls",
+      "bytes": 19267,
+      "sha256": "ae1f7f611b74e2ebb7ab1cfbdc79c0d77fcd11a321cfc2e296a4fb39d78a146d",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reportes/reporte_denue_textil.log",
+      "bytes": 25615,
+      "sha256": "66fe70756bd7d98ab73b31cf6741837c6118b66a1f68a2ecd5ba4cfe2feca667",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reportes/reporte_denue_textil.out",
+      "bytes": 5788,
+      "sha256": "9f148f04a4d7173e6dafa94a481122b8628a91c0b0cdb0f602fb28d26b597bd5",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reportes/reporte_denue_textil.toc",
+      "bytes": 2657,
+      "sha256": "81ae8840c7d11024b118853211aa97e33cdc4c819ff33d9a551e90e117fd7d16",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/estructura_reporte_trazabilidad_atoyac.aux",
+      "bytes": 11536,
+      "sha256": "cc4ec544a29c66f0581a082ea71e61492b118ce1e770f714407f0da473ca7c6b",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/estructura_reporte_trazabilidad_atoyac.fdb_latexmk",
+      "bytes": 31848,
+      "sha256": "2f1b4d1fa5ccf6f6d8ff454ee020ae81b4b4e5abcf640594cba6edf156a8b652",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/estructura_reporte_trazabilidad_atoyac.fls",
+      "bytes": 36672,
+      "sha256": "6a6eb17d2dfef17ba04fe48320851c587d128a53f9a8a12bc5695cf4e9a16cc2",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/estructura_reporte_trazabilidad_atoyac.log",
+      "bytes": 59431,
+      "sha256": "bd832311b2ab0ffadee316f987cee8167e0c73327a9bd423672ecf69c2f81bbe",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/estructura_reporte_trazabilidad_atoyac.out",
+      "bytes": 16932,
+      "sha256": "de1d01b8c3aa95171485d06ee9585401cd947bb8f58659b5b68d6976d86b30bf",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/estructura_reporte_trazabilidad_atoyac.synctex.gz",
+      "bytes": 162172,
+      "sha256": "3bee699bfa97be5932b804d6ff2c95b26d83360eddb1dee05829b9c39fa00ba3",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/estructura_reporte_trazabilidad_atoyac.toc",
+      "bytes": 7112,
+      "sha256": "a23405e1e02560e97b0947b2493814e18b1dc0928068d1bb57c7716b6d8179fd",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/reporte_compelto.aux",
+      "bytes": 35920,
+      "sha256": "6e25cdb654e19b41e2a4a8a0e6040ad094b2be86d58f72eefb4b66abfbe1b6a9",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/reporte_compelto.fdb_latexmk",
+      "bytes": 40695,
+      "sha256": "31f156407e96f5dc63e460c43fcc70b8645df41ea33c9a21514514bcfcb1aba2",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/reporte_compelto.fls",
+      "bytes": 56354,
+      "sha256": "d66eaf2fde19afcbc6851f48ae84457a79aec672c2cc90e7b44e657293960a00",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/reporte_compelto.log",
+      "bytes": 94904,
+      "sha256": "b4e34b36080bdc918015852c9a223fb0de0b083aaa2d3a471e7c0776439e8689",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/reporte_compelto.out",
+      "bytes": 25527,
+      "sha256": "6e023a73e965fd3f73d562a3a5305956e96c20067ad75bad96f8e1ee01a08565",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_completo/reporte_compelto.toc",
+      "bytes": 10402,
+      "sha256": "75ca6507172101db3c5539155f4b9f91a4e605563886064fb90906401868be77",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_sintetico/reporte_sintetico.aux",
+      "bytes": 6045,
+      "sha256": "4d975bee93cef7cd7ec3e7a5a50a8b8ccf8c4cb2180770e8d10c936544ff03d0",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_sintetico/reporte_sintetico.fdb_latexmk",
+      "bytes": 28791,
+      "sha256": "e1d7ba4b3c1a7c34e4c48c45ece9d91a3200e2b4d259a3fd95599706d5a2ce3b",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_sintetico/reporte_sintetico.fls",
+      "bytes": 35748,
+      "sha256": "b26009dce15d9012f8acb2481cb3c011fe9f336cfca2fa777edfbfa08340a9f0",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_sintetico/reporte_sintetico.log",
+      "bytes": 43759,
+      "sha256": "21eee68efce535f9915a754328352f343161449cbe036aae1f2f362584878526",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_sintetico/reporte_sintetico.out",
+      "bytes": 2402,
+      "sha256": "5c06ff2aea0cc699da624685fc46e2fd5cacbb1a3c09a851122daa778f66171e",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/reporte_sintetico/reporte_sintetico.toc",
+      "bytes": 1092,
+      "sha256": "e2fba0a6905f1f769641109bdb57e1b631056e16646d06e01458af38c887d2e1",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/servicio social/bitacora_actividades.aux",
+      "bytes": 25130,
+      "sha256": "8ce5911a33db9997f99ffa3599a806a78bc3c4960dfd72dee665c8a89878ec3a",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/servicio social/bitacora_actividades.fdb_latexmk",
+      "bytes": 16871,
+      "sha256": "52e7e84597581965cb91734e5f62692d7ea592ec0e2b1636333229622d83667f",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/servicio social/bitacora_actividades.fls",
+      "bytes": 20937,
+      "sha256": "43f26fd6b0dd44c07e766b7c6a2c4c120dffb238c1bb8be807aadd2e7cd16998",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/servicio social/bitacora_actividades.log",
+      "bytes": 35982,
+      "sha256": "2dfac55e0637fd804e7c63714dc765344c45ba2155dd3b22a21320dd6650e4bb",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/atlas/atlas_clusters.aux",
+      "bytes": 2178,
+      "sha256": "fd230accc4c1b8cacd5e6768ae8218bf553e09a32299e7b893eea8f83750c91a",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/atlas/atlas_clusters.fdb_latexmk",
+      "bytes": 12602,
+      "sha256": "2a430941904a53027a4eee40c5f768d497705547746737e368308543fdcf1c0f",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/atlas/atlas_clusters.fls",
+      "bytes": 18966,
+      "sha256": "ce4b70db0886493884055ab67e8dd0bd363b28a357ac454daf7d6aa6b32ee3a1",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/atlas/atlas_clusters.log",
+      "bytes": 25813,
+      "sha256": "09efa8ec0505d3b3ada39b5ee5384c56ffe3a4f54b014c0a19cb4bf74dae77e0",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/atlas/atlas_clusters.out",
+      "bytes": 1994,
+      "sha256": "6e1c086a2ed46c698711c3904c9a4af340dcc05163c750ece90d49dcb44a5fa9",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/atlas/atlas_clusters.toc",
+      "bytes": 1066,
+      "sha256": "f46aabf3c016435b6e50a03b173ec69476beaaf072f0c519d29fc8bc4f36a879",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/presentacion/presentacion_parte_2.aux",
+      "bytes": 3986,
+      "sha256": "62c1c667f67207226968489ab43cbfbc765d3f4f1aa8e007e643e7eeae206780",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/presentacion/presentacion_parte_2.fdb_latexmk",
+      "bytes": 31721,
+      "sha256": "2ade33a574471cc6f71649b41070daf0ea9341f63f259f859749ba96299696d2",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/presentacion/presentacion_parte_2.fls",
+      "bytes": 42904,
+      "sha256": "5b170af859ed067694a096b6a7d89cd68ef25877ee8a820bc303f65155eafb62",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/presentacion/presentacion_parte_2.log",
+      "bytes": 47807,
+      "sha256": "75f61eee5ba9535a22cc7ec63a0d4a625c4afd44a12ae735106221e30014e35c",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/presentacion/presentacion_parte_2.nav",
+      "bytes": 2597,
+      "sha256": "98bc5b2b007b30f9fade2aa67a2c8b38a4a24b62631cb0ab0adc8bbdb373def4",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/presentacion/presentacion_parte_2.out",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/presentacion/presentacion_parte_2.snm",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/presentacion/presentacion_parte_2.toc",
+      "bytes": 30,
+      "sha256": "c69da94ddbaea48574c096364600bd8c146ba2f2db05cb5b800007ffeaf74591",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/reporte/reporte_tecnico_parte_2.aux",
+      "bytes": 6009,
+      "sha256": "fc6811118fef6b0357e6e39f1ad2ddf635146cbf9db14e6d376e6c111ef54e80",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/reporte/reporte_tecnico_parte_2.fdb_latexmk",
+      "bytes": 16459,
+      "sha256": "7112c47ae142570e1f02f84ab1ecd8e5a363b5f9b56f244bec14b2ffdfbb54a9",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/reporte/reporte_tecnico_parte_2.fls",
+      "bytes": 22869,
+      "sha256": "7dc2d2e62ea9ebd9f5e08a6b4036803c9dfc5c9686cb17bb76d08a7604bb8e4c",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/reporte/reporte_tecnico_parte_2.log",
+      "bytes": 38197,
+      "sha256": "d300b8c41bb7b41ad78269ef8b67b2eb8a5cfb69661f2e52f782f9cb17a91d71",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/reporte/reporte_tecnico_parte_2.out",
+      "bytes": 5161,
+      "sha256": "248e95a1e21ddc6a126aae15b6d8c25015abb3ddf6111c0eca3785e07205c1ad",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/docs/parte_2/reporte/reporte_tecnico_parte_2.toc",
+      "bytes": 2201,
+      "sha256": "67ca59889e5e5d55b706ac3dc42c71496a757cf0f73c3618af18afd4b862c040",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/atoyac/.DS_Store",
+      "bytes": 6148,
+      "sha256": "6a15c10fb9c55b07689c66a28cc20c0f9ec0319cf4bbd2b3223c76b632bc61ed",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/._.DS_Store",
+      "bytes": 120,
+      "sha256": "2f380f4a3d05a8d90c2106f50da75064e9ce57a598599dc5404f8f69a0223aa9",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/capas_geojson/._caaresa_cuenca_alto_atoyac_21_reg_a.geojson",
+      "bytes": 276,
+      "sha256": "d3a859917386b3358b539198ce67c552ffaf45fe96fc6a8281ec3d9030ee63d1",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/capas_geojson/._caaresa_division_municipal_20_mun_a.geojson",
+      "bytes": 276,
+      "sha256": "ef04570ac85e9decfc36c5f1baa3ee7d5a87f93fe526714179426c17f31f4608",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/capas_geojson/._caaresa_red_hidro_digital_06_reg_l.geojson",
+      "bytes": 276,
+      "sha256": "0966d8fef1ffb6c99ebf6c89dd0988d9f52254abccefc520f185bd43637053cd",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/capas_gpkg/._caaresa_cuenca_alto_atoyac_21_reg_a.gpkg",
+      "bytes": 276,
+      "sha256": "0628e7e81e7cebfd15333d30477ab775628e1dc373f1d655d68f307b161d13cc",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/capas_gpkg/._caaresa_division_municipal_20_mun_a.gpkg",
+      "bytes": 276,
+      "sha256": "f1e39abc7cb02b14f160eac5846d8cb6cfd9ccc4b70748927883c2d6582acb14",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/capas_gpkg/._caaresa_red_hidro_digital_06_reg_l.gpkg",
+      "bytes": 276,
+      "sha256": "5425f98175236cd7b435eefeba96a674f663ab3d6f4cace91d2c3ad929760c57",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/metadatos_txt/._metadato_caaresa_cuenca_alto_atoyac_21_reg_a.txt",
+      "bytes": 276,
+      "sha256": "ce7cf341b5e967bd61c03749ea8312bdc9a6148e4d66f3abc26b3ce6200f5b81",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/metadatos_txt/._metadato_caaresa_division_municipal_20_mun_a.txt",
+      "bytes": 276,
+      "sha256": "dfd4625fa0ce0ce5e2dc82096d6eecae3b493bb8a0fcd34bf8e498932de9e08b",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/metadatos_txt/._metadato_caaresa_red_hidro_digital_06_reg_l.txt",
+      "bytes": 276,
+      "sha256": "7441d4ed2a0f8c803351d9c670b2e6b9756922a597748e9c133d40d21ff2a011",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/tablas_csv_xlsx/._caaresa_cuenca_alto_atoyac_21_reg_a",
+      "bytes": 220,
+      "sha256": "d3a11d7fb3ffd2ff88da6c255a1540b450c747a5612fdbf501777bc80d657c17",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/tablas_csv_xlsx/._caaresa_division_municipal_20_mun_a (2)",
+      "bytes": 220,
+      "sha256": "d3a11d7fb3ffd2ff88da6c255a1540b450c747a5612fdbf501777bc80d657c17",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/tablas_csv_xlsx/._caaresa_red_hidro_digital_06_reg_l",
+      "bytes": 220,
+      "sha256": "d3a11d7fb3ffd2ff88da6c255a1540b450c747a5612fdbf501777bc80d657c17",
+      "seguido_en_git": true
+    },
+    {
+      "ruta": "atoyac/data/processed/lesly/Archivos_PTAR/702825006881_s/.DS_Store",
+      "bytes": 6148,
+      "sha256": "ce3a7c168758148bc2f8b9b4930c36566174d8933131ab53f6ee31c370e5af96",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/data/processed/lesly/Archivos_PTAR/Capas_Cuenca-Alto-Atoyac/.DS_Store",
+      "bytes": 10244,
+      "sha256": "85794b4a77b163a6b925bbf6960541d69a18c3bd544c036e385df5c35bd32887",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/data/processed/lesly/Archivos_PTAR/PTAR_municipales_INEGI-2023-descarga original/.DS_Store",
+      "bytes": 10244,
+      "sha256": "e739c65e3f969771dc16f548abfe2c3a19b85353c095a294f20b9aea1d662ff2",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/data/processed/lesly/Archivos_PTAR/Capas_Cuenca-Alto-Atoyac/capas_geojson/.DS_Store",
+      "bytes": 6148,
+      "sha256": "7a2e3ac416cdd74e66638ed81938709f63e8d551c81785f467960b3878ab33b3",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/data/processed/lesly/Archivos_PTAR/702825006881_s/RH18/.DS_Store",
+      "bytes": 6148,
+      "sha256": "54c2c6948ca6c90fd1ac506668df6dc5e0f26ec60cd51f8bab79c73e034276f0",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/data/processed/lesly/Archivos_PTAR/702825006881_s/RH18/RH18A/.DS_Store",
+      "bytes": 14340,
+      "sha256": "b9c1107bc70d75123340f422e9da83086a370f59dca75a26a40cf91d208ff6f5",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Crashpad/metadata",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Crashpad/settings.dat",
+      "bytes": 288,
+      "sha256": "e8124ca049a3b709739b81b9511c7ae1b1b542f975211c23db333a9c088aa393",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Crashpad/throttle_store.dat",
+      "bytes": 20,
+      "sha256": "41c91a9c93d76295746a149dce7ebb3b9ee2cb551d84365fff108e59a61cc304",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Affiliation Database",
+      "bytes": 53248,
+      "sha256": "52b369ae1ac4db15be400b8d45b01d9e4c4054299fd3743f811e785a6abcbe3a",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Affiliation Database-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/arbitration_service_config.json",
+      "bytes": 20347,
+      "sha256": "10fd9f7498f2534271aec65104fa7659b1bcf58a593dc3a526dfc099e1f82b91",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/BookmarkMergedSurfaceOrdering",
+      "bytes": 6,
+      "sha256": "4489f9e3e454748b3521eb214e0a5694d562cff3d9ff511cb456953c8f534c00",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Bookmarks",
+      "bytes": 2992,
+      "sha256": "9cec73fca2cb4384882f138a522bcec813043dd0c56198e5468fe84d6b04c6d7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/declarative_performance_observer.db",
+      "bytes": 32768,
+      "sha256": "eda4c9567974174f08a1dbcd8badf4d6199a7e9a8b78b8826548f49e20e7badf",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/declarative_performance_observer.db-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DIPS",
+      "bytes": 4096,
+      "sha256": "97e8d54f8a7255106f66cf1b213c4a4d7b558d21310b1c2bfedc3d0d526dddda",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DIPS-wal",
+      "bytes": 37112,
+      "sha256": "067c471263da29b25c1a95d0fe680ca4051aa6a1bdc0001937d6925f42010a7e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Edge Profile Picture.png",
+      "bytes": 1108931,
+      "sha256": "70f9b24479da2eea55c437b01ef1c43ce196d6fa6cda60b1f94f6c97993cede8",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/ExtensionActivityComp",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/ExtensionActivityEdge",
+      "bytes": 32768,
+      "sha256": "dc26af192a29b7a5cf5edf9ad5f25dcc30a45744fcaed301509950e70e8ab160",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/ExtensionActivityEdge-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Favicons",
+      "bytes": 20480,
+      "sha256": "1fbc7ea9722b2154b0d69c9d0ed80b6c0c98c5d389cf31ac1a2b8db030724840",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Favicons-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/heavy_ad_intervention_opt_out.db",
+      "bytes": 16384,
+      "sha256": "2adb7920679589545e8f37e3918b42d962ca404ddbd569930383478f6525b6ee",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/heavy_ad_intervention_opt_out.db-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/History",
+      "bytes": 229376,
+      "sha256": "c5fd5e2df127f715dda5b6744489f0042c43c60370ebba8965962936522b553f",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/History-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/HubApps Icons",
+      "bytes": 28672,
+      "sha256": "5fb632fd6da74c7f797600382215cbeec68cbb132cc3beb0d57562ecdcff6b54",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/HubApps Icons-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/load_statistics.db",
+      "bytes": 4096,
+      "sha256": "97e8d54f8a7255106f66cf1b213c4a4d7b558d21310b1c2bfedc3d0d526dddda",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/load_statistics.db-shm",
+      "bytes": 32768,
+      "sha256": "d88c04ede57ea25f6e5c65aec5fdb4c549a23cafcc4bb758526a2d7d4b23d16a",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/load_statistics.db-wal",
+      "bytes": 70072,
+      "sha256": "cd7f34822cf7c02e8cd635d760fc26f489b8e17cee1a7ed2201cd685e4266fe3",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/LOG",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Login Data",
+      "bytes": 169984,
+      "sha256": "3796b60b9bb1d2f0b53ed5b33adf3a49293f38fa5006c2de1c3cb954d1d5cb8c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Login Data For Account",
+      "bytes": 51200,
+      "sha256": "4825922749265b3039e3d5fabc9e5cbdd00406b0d256bafea9a835234ab38683",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Login Data For Account-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Login Data-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network Action Predictor",
+      "bytes": 53248,
+      "sha256": "78c0f24e5b07037e9eb99ca2344f1b99ccc3a21c2ccecbe4282605e48a2751e7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network Action Predictor-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Preferences",
+      "bytes": 16956,
+      "sha256": "bed51d2a58fd0ea920bb6718b5d6e6eebd01a59cbefd732dfb8010cd6eb0d6b9",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/README",
+      "bytes": 182,
+      "sha256": "a0c9abae18599f0a65fc654ad36251f6330794bea66b718a09d8b297f3e38e87",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Secure Preferences",
+      "bytes": 113975,
+      "sha256": "e0960482df3caf8b703ffba0cf9b6cb8eae99942d5b0bcc36bb3f84eb9e26c7f",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/ServerCertificate",
+      "bytes": 20480,
+      "sha256": "180ffbc2a4f10b5563f5a7bfe62d23909f0aa77572a06e59a9be4c6fca7176f7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/ServerCertificate-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Shortcuts",
+      "bytes": 20480,
+      "sha256": "4d50f902dd988a05350991f9d575138fa62d7ee143eba5125bf5aac983ecd5de",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Shortcuts-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Top Sites",
+      "bytes": 20480,
+      "sha256": "4d9ebcf96faf105e25d6d3e14aece4730ffc7c87c242ab308dea324d6615ff14",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Top Sites-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Vpn Tokens",
+      "bytes": 28672,
+      "sha256": "0750267321d06309dfd0bc3957b29483fe4f76cdb105e02e64dbe9ec240ddc03",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Vpn Tokens-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Web Data",
+      "bytes": 241664,
+      "sha256": "9a61b4c4ecddcf0ebc7d07bc725e2d7b325ffa6c94c1a6f136dba31771e690a5",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Web Data-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/extensions_crx_cache/metadata.json",
+      "bytes": 13,
+      "sha256": "2771d13c637c267132afff9db67537bef95708534b79ae8d954254c4e64e4e0f",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/GrShaderCache/data_0",
+      "bytes": 8192,
+      "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/GrShaderCache/data_1",
+      "bytes": 270336,
+      "sha256": "b1e963d702392fb7224786e7d56d43973e9b9efd1b89c17814d7c558ffc0cdec",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/GrShaderCache/data_2",
+      "bytes": 8192,
+      "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/GrShaderCache/data_3",
+      "bytes": 8192,
+      "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/GrShaderCache/index",
+      "bytes": 262512,
+      "sha256": "b5a11f8254e78ac0c2eb3e361e6f91ef42dfaeecceddca9d9b507af4404b1256",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Nurturing/campaign_history",
+      "bytes": 20480,
+      "sha256": "bf3caa0226349b642e67dbccd9d8125c8c9c402a60a8e4e6295b7dad48feb3dd",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Nurturing/campaign_history-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/ShaderCache/data_0",
+      "bytes": 8192,
+      "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/ShaderCache/data_1",
+      "bytes": 270336,
+      "sha256": "b1e963d702392fb7224786e7d56d43973e9b9efd1b89c17814d7c558ffc0cdec",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/ShaderCache/data_2",
+      "bytes": 8192,
+      "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/ShaderCache/data_3",
+      "bytes": 8192,
+      "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/ShaderCache/index",
+      "bytes": 262512,
+      "sha256": "64e5349b542031066b70b2ebbc784137d4cbcafec45ae3882041a557341c63aa",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/SmartScreen/RemoteData/customSettings",
+      "bytes": 47,
+      "sha256": "d8d672f953e823063955bd9981532fc3453800c2e74c0cc3653d091088abd3b3",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/SmartScreen/RemoteData/customSettings_F95BA787499AB4FA9EFFF472CE383A14",
+      "bytes": 35,
+      "sha256": "2bae8302f9bd2d87ae26acf692663df1639b8e2068157451da4773bd8bd30a2b",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/SmartScreen/RemoteData/edgeSettings",
+      "bytes": 18,
+      "sha256": "42ccb5159b168dbe5d5ddf026e5f7ed3dbf50873cfe47c7c3ef0677bb07b90d4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/SmartScreen/RemoteData/edgeSettings_2.0-0",
+      "bytes": 3552,
+      "sha256": "e6beb5ac43dfa3e05ca3c40c4e5de7d763e2e0580203ad9034c6f0527ac0e45b",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/GPUPersistentCache/DawnGraphiteCache/ZBRSUVJ7IMDXK2RUP4UNAHPCKJL4BWQB/cache.db",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/GPUPersistentCache/DawnGraphiteCache/ZBRSUVJ7IMDXK2RUP4UNAHPCKJL4BWQB/cache.db-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/GPUPersistentCache/DawnGraphiteCache/ZBRSUVJ7IMDXK2RUP4UNAHPCKJL4BWQB/cache.journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/ClientCertificates/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/ClientCertificates/LOG",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Collections/collectionsSQLite",
+      "bytes": 73728,
+      "sha256": "c9b4ebb9e5d4cba483b249f22fa994b7309af6bc53ef599979218892e4d0bcd6",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Collections/collectionsSQLite-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/commerce_subscription_db/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/commerce_subscription_db/LOG",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DawnGraphiteCache/data_0",
+      "bytes": 8192,
+      "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DawnGraphiteCache/data_1",
+      "bytes": 270336,
+      "sha256": "b1e963d702392fb7224786e7d56d43973e9b9efd1b89c17814d7c558ffc0cdec",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DawnGraphiteCache/data_2",
+      "bytes": 8192,
+      "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DawnGraphiteCache/data_3",
+      "bytes": 8192,
+      "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DawnGraphiteCache/index",
+      "bytes": 262512,
+      "sha256": "6ab93f12bdc98f003a84558c635104e549c57da6c425ac5b39c203b65bec7d7c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DawnWebGPUCache/data_0",
+      "bytes": 8192,
+      "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DawnWebGPUCache/data_1",
+      "bytes": 270336,
+      "sha256": "b1e963d702392fb7224786e7d56d43973e9b9efd1b89c17814d7c558ffc0cdec",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DawnWebGPUCache/data_2",
+      "bytes": 8192,
+      "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DawnWebGPUCache/data_3",
+      "bytes": 8192,
+      "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DawnWebGPUCache/index",
+      "bytes": 262512,
+      "sha256": "06670c3084b465792110f55f33748fc0967b98e631f8004fed922c05cb888771",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/discounts_db/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/discounts_db/LOG",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/discount_infos_db/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/discount_infos_db/LOG",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DualEngine/SiteList-Consumer.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/DualEngine/SiteList-Enterprise.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgeHubAppUsage/EdgeHubAppUsageSQLite.db",
+      "bytes": 32768,
+      "sha256": "62bb674a8299a872bd362f7e22b2e09ba699879e68259fea9a29bc487a81f9f7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgeHubAppUsage/EdgeHubAppUsageSQLite.db-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgePushStorageWithConnectTokenAndKey/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgePushStorageWithConnectTokenAndKey/LOG",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgePushStorageWithConnectTokenAndKey/LOG.old",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension Rules/000003.log",
+      "bytes": 171,
+      "sha256": "14f92b911f9fe774720461eec5bb4761ae6bfc9445c67e30bf624a8694b4b1da",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension Rules/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension Rules/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension Rules/LOG",
+      "bytes": 297,
+      "sha256": "dc922435b2a83255565224b9fdd62ffa636a457f9cc323d66aac946dd1facade",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension Rules/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension Scripts/000003.log",
+      "bytes": 171,
+      "sha256": "14f92b911f9fe774720461eec5bb4761ae6bfc9445c67e30bf624a8694b4b1da",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension Scripts/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension Scripts/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension Scripts/LOG",
+      "bytes": 301,
+      "sha256": "92e12c2da714424081469f8cfb145c1beecaead8782f6ce7c015c5d4eb605b67",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension Scripts/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension State/000003.log",
+      "bytes": 513,
+      "sha256": "388c5c95f0f54f32b499c03a37aabfa5e0a31030ec70d0956a239942544b0eea",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension State/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension State/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension State/LOG",
+      "bytes": 297,
+      "sha256": "c1cfb7f369866089dc3c173d6868fc09e2bb2a4d021d6a88dd95c665315cada6",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Extension State/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/GPUCache/data_0",
+      "bytes": 45056,
+      "sha256": "82389e3b775fba8e80027efed43d09d0f479c80d786fc211b20ce9fd06d53e2d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/GPUCache/data_1",
+      "bytes": 270336,
+      "sha256": "8e1d086fdbb8fa876a2de05c607298812b5422054b552ef1150e1857edd6cd94",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/GPUCache/data_2",
+      "bytes": 1056768,
+      "sha256": "9fe757f7021484cb749ba84c0c8b8bb8f4031f203d8203585c1809774fa44996",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/GPUCache/data_3",
+      "bytes": 4202496,
+      "sha256": "b1477fc56b4c852e6a60a2ddfc58aee05d5d2b483a7dc0e7fa6f596ef3a4ce06",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/GPUCache/index",
+      "bytes": 262512,
+      "sha256": "c4bef0b367b5efda11ccd1a17f47210143d456874e8b0604dec9cfe67d5bb619",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/Cookies",
+      "bytes": 28672,
+      "sha256": "3951d82cbc3807f379d61f516f50f35bbd350033d43434038005e5625bb3996e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/Cookies-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/Device Bound Sessions",
+      "bytes": 20480,
+      "sha256": "6a22ff7ca6e53a73bc4578271e5f5bf34cdd7c1c9e8e13aea5db31ae5b2618d2",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/Device Bound Sessions-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/Network Persistent State",
+      "bytes": 1789,
+      "sha256": "8a4e74d85ce8ed7c8cc734998b77f1bf7adbd92cb391106d3b425057cafc25c3",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/NetworkDataMigrated",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/Reporting and NEL",
+      "bytes": 36864,
+      "sha256": "65780468d73b39859fcd99a92a0874c12c873ca620b02db311c6a9a50180e6bd",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/Reporting and NEL-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/SCT Auditing Pending Reports",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/TransportSecurity",
+      "bytes": 690,
+      "sha256": "0265ff83f7f3a51cd5319bdd8251745c35eb7a486c5cfb8bebc4198602a31e76",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/Trust Tokens",
+      "bytes": 36864,
+      "sha256": "88bafa2a265212152b2405502209d64438a416ff594a040e666f031ef442a812",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Network/Trust Tokens-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Nurturing/campaign_history",
+      "bytes": 20480,
+      "sha256": "bf3caa0226349b642e67dbccd9d8125c8c9c402a60a8e4e6295b7dad48feb3dd",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Nurturing/campaign_history-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/parcel_tracking_db/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/parcel_tracking_db/LOG",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Password_Diagnostics/PMLog_13434587479596932",
+      "bytes": 3286,
+      "sha256": "e2d9ea30c3750342d257849851e92d31b43ee6a1f7c934a3012d53f9a6129a39",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/PersistentOriginTrials/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/PersistentOriginTrials/LOG",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Session Storage/000003.log",
+      "bytes": 182,
+      "sha256": "a61525a4d7cf1b70033814170b3c672bef4e12bbb033d9828d51caa0aa211a24",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Session Storage/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Session Storage/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Session Storage/LOG",
+      "bytes": 295,
+      "sha256": "902e0c9b27517dd1d08cc7efec3c081bbdd21ffdb0ea054e580464921474b420",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Session Storage/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Sessions/Session_13434587479753362",
+      "bytes": 3575,
+      "sha256": "e12f2c1ba3b240e01dbc253b41e08ee5171c4b623bd81bb6ed66fdc7698c4cd4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Sessions/Tabs_13434587480359407",
+      "bytes": 3208,
+      "sha256": "095bfdf91e25f37fbc26db4eef594dcd048eda73e6aa5bd512d34fe27027a592",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Shared Dictionary/db",
+      "bytes": 45056,
+      "sha256": "0d6287fecedbc44ed9f51ded9de88629ec9f385ecff5da9a34e47e96fd5a9cba",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Shared Dictionary/db-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/shared_proto_db/000003.log",
+      "bytes": 38,
+      "sha256": "1c43a1bda1e458863c46dfae7fb43bfb3e27802169f37320399b1dd799a819ac",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/shared_proto_db/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/shared_proto_db/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/shared_proto_db/LOG",
+      "bytes": 295,
+      "sha256": "29faad53c30a14850ce2620af70ba1c66ec51fd078a869608a61ac6b4b2bf385",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/shared_proto_db/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Site Characteristics Database/000003.log",
+      "bytes": 40,
+      "sha256": "f096bc366a931fba656bdcd77b24af15a5f29fc53281a727c79f82c608ecfab8",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Site Characteristics Database/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Site Characteristics Database/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Site Characteristics Database/LOG",
+      "bytes": 325,
+      "sha256": "fec0c96d3e63d4468655711df1e4dd6d33542afc428cc395fd5b5687f7d66ccc",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Site Characteristics Database/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Sync Data/Nigori.bin",
+      "bytes": 2437,
+      "sha256": "97a7f34282463fe91f6812e7f601600237a9720409e2bd9ab6361bacbe18c258",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/WebStorage/QuotaManager",
+      "bytes": 40960,
+      "sha256": "eed2523d5010757b70295413f5f8ac389b0d805883c4e0e408fd64721cf2888b",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/WebStorage/QuotaManager-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Sync Data/LevelDB/000003.log",
+      "bytes": 4838,
+      "sha256": "e1ae29e61bd9ada333fe9468e3563e60a4ea0774936e12d2df4f08907ef762b9",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Sync Data/LevelDB/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Sync Data/LevelDB/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Sync Data/LevelDB/LOG",
+      "bytes": 301,
+      "sha256": "acb9e63a466d0fd3042fc963f2e071c9c254ceb868c5d02302ed55c1136b3830",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Sync Data/LevelDB/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_0",
+      "bytes": 8192,
+      "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_1",
+      "bytes": 270336,
+      "sha256": "b1e963d702392fb7224786e7d56d43973e9b9efd1b89c17814d7c558ffc0cdec",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_2",
+      "bytes": 8192,
+      "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_3",
+      "bytes": 8192,
+      "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/index",
+      "bytes": 262512,
+      "sha256": "de09a3715e61598244f5afb95a1e8b7841f238cc10538cccb7f5cb9e419f47f7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_0",
+      "bytes": 8192,
+      "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_1",
+      "bytes": 270336,
+      "sha256": "b1e963d702392fb7224786e7d56d43973e9b9efd1b89c17814d7c558ffc0cdec",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_2",
+      "bytes": 8192,
+      "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_3",
+      "bytes": 8192,
+      "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/index",
+      "bytes": 262512,
+      "sha256": "8047464a694b3404a61367fbdd295dfbea3b4c3c8ecab3c68392ffe83a0d1424",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_0",
+      "bytes": 8192,
+      "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_1",
+      "bytes": 270336,
+      "sha256": "b1e963d702392fb7224786e7d56d43973e9b9efd1b89c17814d7c558ffc0cdec",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_2",
+      "bytes": 8192,
+      "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_3",
+      "bytes": 8192,
+      "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/index",
+      "bytes": 262512,
+      "sha256": "b96e8a816d2cb4380cf8465cad8bbe077005d088e5bff8705cc5ac41e54a05fd",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Device Bound Sessions",
+      "bytes": 20480,
+      "sha256": "6a22ff7ca6e53a73bc4578271e5f5bf34cdd7c1c9e8e13aea5db31ae5b2618d2",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Network Persistent State",
+      "bytes": 111,
+      "sha256": "f5e224a52f6ad7e0c235d238c3e2983c5c0b314c552f20ff2affb4472ac866f5",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/NetworkDataMigrated",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Trust Tokens",
+      "bytes": 36864,
+      "sha256": "88bafa2a265212152b2405502209d64438a416ff594a040e666f031ef442a812",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Trust Tokens-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/000003.log",
+      "bytes": 49,
+      "sha256": "ffd700cf04be6fe8d51e2ffb8a2e37bc3fa95a6679a4102fa35e8494c2350eae",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/LOG",
+      "bytes": 393,
+      "sha256": "b6c52caf805dfbb43af33894461501a64d42aa147510a8b6e0076c06208c68e4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/db",
+      "bytes": 45056,
+      "sha256": "0d6287fecedbc44ed9f51ded9de88629ec9f385ecff5da9a34e47e96fd5a9cba",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/db-journal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index",
+      "bytes": 24,
+      "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/000003.log",
+      "bytes": 30,
+      "sha256": "8bd2ea70a0b70c91de138a5b87c7936c6a6fa7c4275c54b97f4ef0ccc5b79bb4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOG",
+      "bytes": 405,
+      "sha256": "3a83da0854bbaa2a5e0c17acd53258aabc37f504a54f7f54298820d7139e09fe",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/6f3a0dc5e6916f1e_0",
+      "bytes": 309,
+      "sha256": "e17962396525f06e89738b9ad0434bbeb22adb6c8cbf37e8c5067bacbc479bb8",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index",
+      "bytes": 24,
+      "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index",
+      "bytes": 24,
+      "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/shared_proto_db/metadata/000003.log",
+      "bytes": 474,
+      "sha256": "b1483e52071b6c439f507019be5e39c6ffd87461744a3afdaec07d686da00803",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/shared_proto_db/metadata/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/shared_proto_db/metadata/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/shared_proto_db/metadata/LOG",
+      "bytes": 313,
+      "sha256": "4853a5993c444dd754ec650b7cb4420fd98024712773ed59e9bc45fce2425593",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/shared_proto_db/metadata/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Shared Dictionary/cache/index",
+      "bytes": 24,
+      "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Shared Dictionary/cache/index-dir/the-real-index",
+      "bytes": 48,
+      "sha256": "ea2039f4abe555861c1458f2816b7bc3f47ee0c81f2fec2dc70fa1814e65e587",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Service Worker/Database/000003.log",
+      "bytes": 1038,
+      "sha256": "dd21bf5d30159d30d30b7ffe340423630db60f8aabbdd022900222122805f99e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Service Worker/Database/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Service Worker/Database/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Service Worker/Database/LOG",
+      "bytes": 313,
+      "sha256": "afb3ca33e2a396dec2343594a974d13230c0c5396200effdbdac749401695eef",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Service Worker/Database/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_0",
+      "bytes": 318069,
+      "sha256": "69ebe94509e6c6c9a51f2bdedd1e18e47b7f1da5847a095ae5404c60ed8631a7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Service Worker/ScriptCache/index",
+      "bytes": 24,
+      "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Service Worker/ScriptCache/index-dir/the-real-index",
+      "bytes": 72,
+      "sha256": "07884d9f30ca0cc147bb2276c955e4b57b13ec0b141f75e71f465ffa170a5c35",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Local Storage/leveldb/000003.log",
+      "bytes": 30,
+      "sha256": "8bd2ea70a0b70c91de138a5b87c7936c6a6fa7c4275c54b97f4ef0ccc5b79bb4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Local Storage/leveldb/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Local Storage/leveldb/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Local Storage/leveldb/LOG",
+      "bytes": 307,
+      "sha256": "b2d2987fae1e4028aacc253d3882e7340c2c504b17c9d5062c487d141d5019f9",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Local Storage/leveldb/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/000003.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOG",
+      "bytes": 381,
+      "sha256": "a25321ece540467b0a15189e103ba81aec7081e8453f26f194bb1efbfc56b9f6",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/MANIFEST-000001",
+      "bytes": 41,
+      "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgeCoupons/coupons_data.db/000004.log",
+      "bytes": 244,
+      "sha256": "202bdf36727eec3800ea667c1929538626b39befae4dfa8b600c07cc21d930d8",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgeCoupons/coupons_data.db/000005.ldb",
+      "bytes": 683273,
+      "sha256": "6ab374d29c3398ef0e92377b554eff0f2324b1f20cff38f91ceb20ac5c2a59b9",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgeCoupons/coupons_data.db/CURRENT",
+      "bytes": 16,
+      "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgeCoupons/coupons_data.db/LOCK",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgeCoupons/coupons_data.db/LOG",
+      "bytes": 485,
+      "sha256": "e01af29b9a7506c00710602e402e618565de594aaacd318116c418478111877c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/EdgeCoupons/coupons_data.db/MANIFEST-000001",
+      "bytes": 103,
+      "sha256": "08698572406e5f1ae8688a81bdbcc47dd0ff763ceb0c6b48aad39bec48633036",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/2a8a6f695a3ff316_0",
+      "bytes": 303,
+      "sha256": "f2dd7b5298197ab129cd621fd84c3cbd26ae68fb5f229a4013169b6272f34b69",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/2cca9bc741a6516d_0",
+      "bytes": 306,
+      "sha256": "996083a5ce9ca61dfd53192821a1ee5a98f6a97a629b4dd034f600c1f0d3cc56",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/5cce1706364839f1_0",
+      "bytes": 307,
+      "sha256": "284943b48a89cf174d04c6572c2f76ce9b7d3ad38cc662ee767379a2f630bf41",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/5fbb54f36261c413_0",
+      "bytes": 308,
+      "sha256": "82fcbcb6574947069791f2e68162c88bbab30bf0ddf33153045813f49e614c1b",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/7de0dc67a2b3a69c_0",
+      "bytes": 307,
+      "sha256": "de0bbbf53981b8f2e063e665514c9dd9c9b0ddbda7b46ee0a23af09643a2c376",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/8020acacb3d13763_0",
+      "bytes": 321,
+      "sha256": "4f523ae2eaffd505ff3532b90c34b748a55274929279f599f232a9b1a3f015da",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/8bb1867be67136eb_0",
+      "bytes": 305,
+      "sha256": "1dd9224cfb72821a25274ec5a392fe6bb24d6424ec01925e510c0e49b3d8b179",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/945cb8fb56d09a8e_0",
+      "bytes": 321,
+      "sha256": "4c6bb59a5914e5e638a14a679682f932c9b2cb839122280b0e56d7064d5a28fb",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/b21fb45197b9c728_0",
+      "bytes": 303,
+      "sha256": "7e26b4030595424a2481412c45d1e07be79121fcab069f6b89cfef0b75f2485d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/ba678a2fbd8c358c_0",
+      "bytes": 298,
+      "sha256": "0ff6d02cbc76ec3cf27b726825f7ff556f5bbfc8977c76c32454ba1a7f459c78",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/baded5730168391f_0",
+      "bytes": 313,
+      "sha256": "234ca5aea7d630196924a961b38f158ad217af3976d77e50c95d06986bccb652",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/e94999eac39dfd99_0",
+      "bytes": 317,
+      "sha256": "506f9582169b2df539c59b6df71b741af4d93b957ab32b22c0dfbcf79691ca6d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/e9a142a21b9ad9ef_0",
+      "bytes": 297,
+      "sha256": "a18bd88a7073b31f45c9778d5b0cb7616be95f8d69f519746b5091577fed1a5e",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/ebce9e52a869b921_0",
+      "bytes": 303,
+      "sha256": "fd8b928803cb2626aabae6625b8f7f17bd3ee061685747b502ff80ba6911cf8d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/index",
+      "bytes": 24,
+      "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/wasm/index",
+      "bytes": 24,
+      "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/wasm/index-dir/the-real-index",
+      "bytes": 48,
+      "sha256": "bd8cd014132cb0a92509bc0f2268d9fc73edf680578eb78fcac4258eb557282c",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Code Cache/js/index-dir/the-real-index",
+      "bytes": 384,
+      "sha256": "99d7d8a39f0b45e7d117dad66518abaf5ce98b14fa7e8f0c6d04cc0ed0a8ddf2",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Cache/Cache_Data/data_0",
+      "bytes": 45056,
+      "sha256": "c4ae665fa22e186f30d7eaebb7c21c3742a18fff1fcec535c2eb69456c818b35",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Cache/Cache_Data/data_1",
+      "bytes": 270336,
+      "sha256": "bf6712bd2f55c45bbb0f782ef43e01500b154f6f0ba7f7ed71b951e45a68e6c0",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Cache/Cache_Data/data_2",
+      "bytes": 8192,
+      "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Cache/Cache_Data/data_3",
+      "bytes": 4202496,
+      "sha256": "1dc14992492cce1120b46c1df50d4dd595222e1f2dfc33649f82043d36fbb7bb",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Cache/Cache_Data/f_000001",
+      "bytes": 683095,
+      "sha256": "90e734b891a5cf67004cd19fb56718b84d70fc0b758d207bc2c2e6b520e2f19a",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Cache/Cache_Data/index",
+      "bytes": 524656,
+      "sha256": "14ee8701e192608c1e14c1491c60ce9c4ea1f5f6d77462d9bfe3c51a15956e2a",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Cache/No_Vary_Search/journal.baj",
+      "bytes": 4,
+      "sha256": "9c169428d852e25bd59b27652ed533d2a1f09f96e4c329fa5e06f47e16731543",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/.edge_test_cluster_map/Default/Cache/No_Vary_Search/snapshot.baf",
+      "bytes": 20,
+      "sha256": "0c2dd377ed0cc66161e9db8f89f7d8bcb3ad8c06c4a054bdcba214ab05f58c9a",
+      "seguido_en_git": false
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/tablas_csv_xlsx/caaresa_cuenca_alto_atoyac_21_reg_a/._tabla_caaresa_cuenca_alto_atoyac_21_reg_a.csv",
+      "bytes": 176,
+      "sha256": "13be9ba152f2807d718b2f5e23f1c145d80b29c9cc161a8b15ba427abb921c64",
+      "seguido_en_git": true,
+      "nota": "Metadato macOS de ruta larga, trasladado con su carpeta; a?adido al respaldo completo."
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/tablas_csv_xlsx/caaresa_cuenca_alto_atoyac_21_reg_a/._tabla_caaresa_cuenca_alto_atoyac_21_reg_a.xlsx",
+      "bytes": 176,
+      "sha256": "13be9ba152f2807d718b2f5e23f1c145d80b29c9cc161a8b15ba427abb921c64",
+      "seguido_en_git": true,
+      "nota": "Metadato macOS de ruta larga, trasladado con su carpeta; a?adido al respaldo completo."
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/tablas_csv_xlsx/caaresa_division_municipal_20_mun_a (2)/._tabla_caaresa_division_municipal_20_mun_a.csv",
+      "bytes": 176,
+      "sha256": "8e17fc091174d0e98d1b28cba42fc9f6a76689fe288c8209e4fd58b114916df6",
+      "seguido_en_git": true,
+      "nota": "Metadato macOS de ruta larga, trasladado con su carpeta; a?adido al respaldo completo."
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/tablas_csv_xlsx/caaresa_division_municipal_20_mun_a (2)/._tabla_caaresa_division_municipal_20_mun_a.xlsx",
+      "bytes": 176,
+      "sha256": "8e17fc091174d0e98d1b28cba42fc9f6a76689fe288c8209e4fd58b114916df6",
+      "seguido_en_git": true,
+      "nota": "Metadato macOS de ruta larga, trasladado con su carpeta; a?adido al respaldo completo."
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/tablas_csv_xlsx/caaresa_red_hidro_digital_06_reg_l/._caaresa_red_hidro_digital_06_reg_l.csv",
+      "bytes": 176,
+      "sha256": "db8b962d7f2f37f201b4ebb976f97e776385eb2e763c503d1e1dc4cff0995695",
+      "seguido_en_git": true,
+      "nota": "Metadato macOS de ruta larga, trasladado con su carpeta; a?adido al respaldo completo."
+    },
+    {
+      "ruta": "atoyac/data/raw/cuenca_alto_atoyac/__MACOSX/atoyac/tablas_csv_xlsx/caaresa_red_hidro_digital_06_reg_l/._caaresa_red_hidro_digital_06_reg_l.xlsx",
+      "bytes": 176,
+      "sha256": "db8b962d7f2f37f201b4ebb976f97e776385eb2e763c503d1e1dc4cff0995695",
+      "seguido_en_git": true,
+      "nota": "Metadato macOS de ruta larga, trasladado con su carpeta; a?adido al respaldo completo."
+    }
+  ],
+  "bytes_totales": 21952903,
+  "criterio": "Temporales LaTeX, cache Python/navegador y metadatos macOS. Se trasladan a archivo_local, sin eliminacion.",
+  "respaldo_inicial": "C:\\Users\\narro\\Desktop\\semestre\\atoyac_original\\respaldo_limpieza_repo_2026-10-23.zip"
+}

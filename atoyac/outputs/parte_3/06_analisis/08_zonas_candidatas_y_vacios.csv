@@ -1,0 +1,19 @@
+﻿subnucleo_id,n_establecimientos,n_alta,n_media,prop_alta_media,dist_descarga_m,descargas_1km,dist_ptar_m,ptar_5km,dist_hidrografia_m,colector_disponible,nota,criterio_vacio_informacion,zona_candidata_investigacion
+SUB_00,31,5,21,0.839,392.587727381725,2,5861.705549589634,0,36.968216753418815,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_01,76,16,30,0.605,0.0,1,5761.932706310655,0,691.4946720428037,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_02,46,11,26,0.804,0.0,3,2607.4926441227717,2,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_03,57,11,32,0.754,888.1175446985055,2,1733.8162374084982,1,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_04,92,6,48,0.587,283.17842204592023,1,421.2416835546388,3,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,True
+SUB_05,93,15,41,0.602,310.45261590358797,3,1562.4781664916825,2,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,True
+SUB_06,58,9,26,0.603,5893.920392078394,0,54.903627515359446,2,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_07,41,6,18,0.585,4284.323856947951,0,2966.2668610229166,5,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_08,36,4,16,0.556,2633.463165778001,0,2129.7647620867842,2,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_09,65,7,28,0.538,1614.5224101331833,0,2433.628183837631,2,103.9797722822677,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_10,33,8,11,0.576,7363.945172512505,0,1162.5042391166012,4,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_11,74,12,32,0.595,1347.24175676402,0,1580.1024821342694,2,175.62211951106332,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_12,112,19,50,0.616,1002.3205283953863,0,1208.1772523480363,3,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_13,97,15,30,0.464,4555.761838449545,0,0.0,5,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_14,78,15,16,0.397,2401.6484852432222,0,1147.5632980974344,2,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_15,54,8,31,0.722,2137.475286433356,0,1961.4669572093567,3,382.8215526038313,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_16,30,4,6,0.333,4190.0967126217465,0,1953.6464361217134,3,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False
+SUB_17,35,5,17,0.629,4330.942176869504,0,2942.998541239105,3,0.0,False,Dimensiones separadas; no constituye ranking ni conexión,True,False

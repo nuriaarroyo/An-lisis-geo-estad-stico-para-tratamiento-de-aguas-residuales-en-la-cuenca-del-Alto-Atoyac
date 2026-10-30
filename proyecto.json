@@ -1,0 +1,10 @@
+{
+  "corte": "2026-10-23",
+  "autora": "Nuria Arroyo Bustamante",
+  "parte2": "atoyac/outputs/parte_2",
+  "parte3": "atoyac/outputs/parte_3/12_vialidades_amplias",
+  "foco_puntos": "atoyac/outputs/parte_3/09_foco_santa_ana_huejotzingo/foco_santa_ana_huejotzingo.gpkg",
+  "pdf_caminos": "atoyac/docs/parte_3/explicacion_caminos_minimos/explicacion_caminos_minimos.pdf",
+  "entrega": "entrega",
+  "estado": "exploracion; sin diseno hidraulico conjunto"
+}

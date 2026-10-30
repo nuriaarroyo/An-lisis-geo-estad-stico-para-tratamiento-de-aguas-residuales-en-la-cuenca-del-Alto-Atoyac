@@ -1,0 +1,14 @@
+{
+  "tramos_red_completa": 50212,
+  "nodos": 109464,
+  "componentes": 342,
+  "componentes_santa_ana": [
+    14
+  ],
+  "componentes_huejotzingo": [
+    4
+  ],
+  "componentes_ptar": [
+    4
+  ]
+}

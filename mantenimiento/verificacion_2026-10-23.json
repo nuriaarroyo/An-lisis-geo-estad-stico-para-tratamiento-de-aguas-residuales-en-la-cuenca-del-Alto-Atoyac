@@ -1,0 +1,14 @@
+{
+  "corte": "2026-10-23",
+  "documentos_revisados": 13,
+  "enlaces_locales": 77,
+  "scripts_con_sintaxis_valida": 93,
+  "verificaciones_parte2": 14,
+  "parte2_correcta": true,
+  "zip_enlaces_internos_correctos": 31,
+  "zip_bytes": 11178469,
+  "zip_sha256": "b5789cec830eb0f1733f99a72aac75527181182e8142cd0cfb0ab0e282e6d676",
+  "temporales_archivados": 441,
+  "retiradas_github_solo_temporales": true,
+  "reconstruccion_cientifica_completa_durante_limpieza": false
+}

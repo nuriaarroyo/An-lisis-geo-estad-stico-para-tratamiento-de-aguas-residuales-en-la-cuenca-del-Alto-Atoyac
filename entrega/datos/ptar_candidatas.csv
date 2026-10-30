@@ -1,0 +1,4 @@
+﻿ptar_id,nombre_fuente,municipio,capacidad_ls,caudal_tratado_ls,fuente,anio_fuente,estado_verificacion,registros_asociados,conciliacion
+PTAR_066,PLANTA DE LA CABECERA MUNICIPAL,Huejotzingo,,,PTAR_Final.csv,2021.0,C_compilacion_por_conciliar,PTAR_005;PTAR_066,probable_misma_instalacion_nombre_y_coordenadas
+PTAR_067,PASEO DE LOS SAUCES,Huejotzingo,60.0,30.0,PTAR_Final.csv,2022.0,C_compilacion_por_conciliar,PTAR_067,registro_individual_sin_confirmacion_operativa
+PTAR_068,REAL SEGOVIA,Huejotzingo,25.0,8.0,PTAR_Final.csv,2022.0,C_compilacion_por_conciliar,PTAR_068,registro_individual_sin_confirmacion_operativa

@@ -1,0 +1,209 @@
+﻿capa,campo,tipo,porcentaje_faltante,utilidad,advertencia
+establecimientos_textiles,establecimiento_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,d_llave,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,clee,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,nom_est,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,raz_soc,object,87.15,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,cve_scian,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,desc_scian,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Descripcion estrato personal ocupado,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Tipo de vialidad,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Nombre de la vialidad,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Tipo de entre vialidad 1,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Nombre de entre vialidad 1,object,0.02,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Tipo de entre vialidad 2,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Nombre de entre vialidad 2,object,0.02,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Tipo de entre vialidad 3,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Nombre de entre vialidad 3,object,0.21,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Numero exterior o kilometro,float64,28.59,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Letra exterior,object,58.67,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Edificio,object,99.77,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Edificio Piso,float64,97.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Numero interior,float64,95.44,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Letra interior,object,98.3,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Tipo de asentamiento humano,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Nombre de asentamiento humano,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Tipo centro comercial,object,96.15,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,"Corredor industrial, centro comercial o mercado publico",object,96.13,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Numero de local,object,96.13,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Codigo Postal,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Clave entidad,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Entidad federativa,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Clave municipio,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Municipio,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,cve_loc,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,localidad,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Area geoestadistica basica,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Manzana,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Numero de telefono,float64,48.2,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Correo electronico,object,87.06,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Sitio en Internet,object,96.33,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Tipo de establecimiento,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Latitud,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Longitud,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,Fecha de incorporacion al DENUE,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,coincide_filtro_scian,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,coincide_filtro_texto,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,textil,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,mezclilla,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,humedo_explicito,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,lavado_generico,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,produccion,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,maquila,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,proceso_seco_explicito,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,scian_textil,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,scian_acabado_humedo,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,scian_lavanderia,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,sector_textil,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,evidencia_hidrica,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,dentro_cuenca,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,scian_3,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,scian_4,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,scian_6,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,actividad_lavanderia_tintoreria,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,actividad_acabado_textil,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,actividad_confeccion,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,actividad_fabricacion_telas,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,actividad_tejido_hilado,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,actividad_bordado_deshilado,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,senal_pantalon,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,senal_mezclilla_o_pantalon,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,universo_conceptual,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,cluster,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,probabilidad,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,persistencia_territorial,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,clase_persistencia,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,tipo_resultado_espacial,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,nombre,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,scian,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,actividad,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,clasificacion,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,prioridad_ambiental,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,proceso_hidrico,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,cluster_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,subnucleo_id,object,74.62,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,fuente,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,estado_verificacion,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimientos_textiles,geometry,geometry,0.0,geometría,Validar definición de fuente; no inferir por nombre
+clusters_parte2,cluster_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,cluster,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,escenario_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,n_total_cluster,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,n_dentro_cuenca,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,n_fuera_cuenca,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,pct_cluster_dentro_cuenca,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,pct_cluster_fuera_cuenca,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,cruza_limite_cuenca,bool,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,area_convexa_km2,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,area_buffer_150m_km2,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,densidad_convexa_est_km2,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,n_municipios,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,n_localidades,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,persistencia_media,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,fuente,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,estado_verificacion,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+clusters_parte2,geometry,geometry,0.0,geometría,Validar definición de fuente; no inferir por nombre
+subnucleos_parte2,subnucleo_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+subnucleos_parte2,n_establecimientos,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+subnucleos_parte2,fuente,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+subnucleos_parte2,estado_verificacion,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+subnucleos_parte2,geometry,geometry,0.0,geometría,Validar definición de fuente; no inferir por nombre
+colectores,colector_id,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+colectores,nombre,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+colectores,municipio,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+colectores,tipo,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+colectores,estatus_geometria,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+colectores,fuente,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+colectores,anio,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+colectores,verificacion,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+colectores,observaciones,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+colectores,geometry,geometry,,geometría,Validar definición de fuente; no inferir por nombre
+descargas,descarga_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+descargas,tipo_descarga,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+descargas,municipio,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+descargas,nombre_sistema,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+descargas,cuerpo_receptor,object,99.67,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+descargas,fuente,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+descargas,anio,float64,0.33,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+descargas,estado_verificacion,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+descargas,observaciones,object,99.67,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+descargas,geometry,geometry,0.0,geometría,Validar definición de fuente; no inferir por nombre
+ptar,ptar_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,nombre_normalizado,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,nombre_fuente,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,municipio,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,localidad,object,94.2,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,tipo_ptar,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,tipo_usuario,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,proceso,object,94.2,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,capacidad_ls,float64,95.65,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,caudal_tratado_ls,float64,95.65,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,cuerpo_receptor,object,100.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,responsable_operacion,object,100.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,estado_operativo_reportado,object,100.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,anio_fuente,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,fuente,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,fecha_consulta,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,estado_verificacion,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,observaciones,object,94.2,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar,geometry,geometry,0.0,geometría,Validar definición de fuente; no inferir por nombre
+hidrografia,hidrografia_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,ID,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,CVE_SUBC,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,CLAVE50K,object,21.11,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,TIPO,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,ENTIDAD,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,FC,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,CONDICION,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,EDICION,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,FECHA,datetime64[ms],0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,LENGTHM,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,ID_DRENA,int32,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,FLOWDIR,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,ENABLED,int32,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,DESC_ENABL,object,99.93,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,CALI_REPR,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,SEQUENCEID,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,ORDER_1,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,LEVEL_1,int64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,ARBSUM_1,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,PATHL_1,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,hoja_fuente,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,fuente,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,estado_verificacion,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+hidrografia,geometry,geometry,0.0,geometría,Validar definición de fuente; no inferir por nombre
+cuerpos_receptores,cuerpo_receptor_id,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+cuerpos_receptores,nombre,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+cuerpos_receptores,tipo,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+cuerpos_receptores,fuente,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+cuerpos_receptores,estado_verificacion,object,,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+cuerpos_receptores,geometry,geometry,,geometría,Validar definición de fuente; no inferir por nombre
+municipios,g_id,int32,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+municipios,cve_ent,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+municipios,nom_ent,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+municipios,cve_mun,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+municipios,cvegeomun,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+municipios,nom_mun,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+municipios,geometry,geometry,0.0,geometría,Validar definición de fuente; no inferir por nombre
+limite_cuenca,g_id,int32,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+limite_cuenca,id_cuenca,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+limite_cuenca,nom_cuenca,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+limite_cuenca,id_rha,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+limite_cuenca,nom_rha,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+limite_cuenca,clasif,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+limite_cuenca,vol_dispo,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+limite_cuenca,geometry,geometry,0.0,geometría,Validar definición de fuente; no inferir por nombre
+ptar_fuentes,ptar_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar_fuentes,registro_fuente_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar_fuentes,fuente,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar_fuentes,anio,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar_fuentes,nombre_fuente,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+ptar_fuentes,ruta_origen,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimiento_descarga,establecimiento_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimiento_descarga,descarga_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimiento_descarga,distancia_m,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimiento_descarga,nivel_evidencia,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimiento_ptar,establecimiento_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimiento_ptar,ptar_id,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimiento_ptar,distancia_m,float64,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre
+establecimiento_ptar,nivel_evidencia,object,0.0,identificación/trazabilidad/modelado según semántica,Validar definición de fuente; no inferir por nombre

@@ -1,0 +1,26 @@
+{
+  "paginas": 6,
+  "rutas_hacia_ptar": 102,
+  "rutas_ptar_067": 34,
+  "ejemplos_reales": [
+    {
+      "ruta_id": "EST_03613_PTAR_067",
+      "origen_id": "EST_03613",
+      "longitud_vial_m": 2404.222439470063
+    },
+    {
+      "ruta_id": "EST_04147_PTAR_067",
+      "origen_id": "EST_04147",
+      "longitud_vial_m": 4138.07276326359
+    },
+    {
+      "ruta_id": "EST_03260_PTAR_067",
+      "origen_id": "EST_03260",
+      "longitud_vial_m": 5220.735632295745
+    }
+  ],
+  "suma_distancias_ptar_067_km": 141.02363587628227,
+  "union_aristas_ptar_067_km": 23.994437452133518,
+  "tramos_compartidos_34_km": 1.4214080386109686,
+  "pdf_sha256": "e061baf1421488faf5fdbda4706e5450cab495aba21b55a031adc5d14d05d825"
+}

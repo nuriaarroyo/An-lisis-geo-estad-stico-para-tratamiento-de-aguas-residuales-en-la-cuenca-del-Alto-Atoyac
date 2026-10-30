@@ -1,0 +1,15 @@
+﻿campo,interpretacion
+establecimiento_id,Identificador del establecimiento en la integración; d_llave conserva su referencia original.
+prioridad_ambiental,Señal alta/media/por_revisar según actividad y texto; no caudal ni contaminación demostrada.
+ptar_id / destino_id,Registro representante de planta o extremo EXT de inspección; no acredita operación.
+tipo_destino,PTAR o extremo_inspeccion_no_PTAR: no mezclar ambos tipos de resultado.
+registros_asociados / conciliacion,IDs de fuentes reunidos provisionalmente por nombre y coordenadas; conservar evidencia original.
+longitud_vial_m,"Camino mínimo por aristas viales, en metros, sin accesos."
+acceso_origen_m / acceso_destino_m,Enlaces geométricos a calle más próxima; no conexiones sanitarias comprobadas.
+longitud_con_accesos_m,"Longitud vial más ambos accesos, sólo cuando se informa."
+cobertura_longitud_pct,Porcentaje de longitud de la traza dentro de píxeles válidos del MDT.
+pendiente_global_pct,100 × diferencia de alturas / longitud; negativa es descenso. No garantiza gravedad.
+n_origenes,Número de caminos de un mismo destino que comparten arista; no caudal.
+capacidad_ls / caudal_tratado_ls,Valores reportados de PTAR; no disponibilidad actual ni eficiencia de remoción.
+coordenadas,Vectores EPSG:32614; longitud/latitud en CSV de establecimientos EPSG:4326.
+campo vacío,Dato no disponible/no calculado; no interpretar como cero.

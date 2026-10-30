@@ -1,0 +1,51 @@
+[
+  {
+    "capa": "ptar_registros_originales",
+    "objetos": 10,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "establecimientos_foco",
+    "objetos": 408,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "vialidades_zonas",
+    "objetos": 3038,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "zonas_operativas",
+    "objetos": 2,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "ptar_nucleo_local",
+    "objetos": 3,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "ptar_contexto_externo",
+    "objetos": 5,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  },
+  {
+    "capa": "cobertura_terreno_superficie",
+    "objetos": 4,
+    "epsg": 32614,
+    "invalidas": 0,
+    "vacias": 0
+  }
+]

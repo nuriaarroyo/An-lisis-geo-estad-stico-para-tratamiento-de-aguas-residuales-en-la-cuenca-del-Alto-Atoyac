@@ -1,0 +1,18 @@
+{
+  "geometrias_invalidas": {
+    "establecimientos": 0,
+    "ptar": 0,
+    "descargas": 0,
+    "hidrografia": 0
+  },
+  "crs_objetivo": "EPSG:32614",
+  "ptar_candidatos_conciliacion": 1,
+  "puntos_fuera_cuenca": {
+    "establecimientos": 355,
+    "ptar": 0,
+    "descargas": 0
+  },
+  "colectores_sin_fuente": 2,
+  "registros_ptar_sin_anio": 0,
+  "utilizacion_mayor_1": 0
+}

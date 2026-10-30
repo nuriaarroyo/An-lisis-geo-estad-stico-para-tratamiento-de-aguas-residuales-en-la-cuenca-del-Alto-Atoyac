@@ -1,0 +1,6 @@
+﻿familia,geometria,crs,n_hojas,objetos_total
+dr,Point,EPSG:4019,10,52
+ha,Polygon,EPSG:4019,10,1341
+hl,LineString,EPSG:4019,10,65342
+subc,Polygon,EPSG:4019,10,10
+to,Point,EPSG:4019,10,3913

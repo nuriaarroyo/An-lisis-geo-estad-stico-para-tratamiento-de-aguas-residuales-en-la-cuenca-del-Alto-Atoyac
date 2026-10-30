@@ -1,0 +1,17 @@
+{
+  "carpeta_entrada": "data\\processed\\lesly\\Archivos_PTAR",
+  "salida": "outputs\\parte_3\\01_insumos_organizados",
+  "archivos_inventariados": 268,
+  "capas_espaciales_inventariadas": 64,
+  "elementos_inegi_en_csv_cuenca": 1256,
+  "elementos_inegi_dentro_geometria_cuenca": 1256,
+  "ptar_inegi_dentro_cuenca": 65,
+  "descargas_inegi_dentro_cuenca": 301,
+  "ptar_compilacion_manual_dentro_cuenca": 5,
+  "advertencias": [
+    "La familia RH18 es hidrografía superficial; no equivale a una red de drenaje sanitario.",
+    "La franja de 10 m es una geometría de referencia y no acredita por sí sola un límite federal legal.",
+    "Los registros de distintas fuentes y años no demuestran operación, capacidad disponible ni conexión hidráulica.",
+    "Los colectores de Huejotzingo y San Martín Texmelucan siguen sin una capa fuente recuperable."
+  ]
+}

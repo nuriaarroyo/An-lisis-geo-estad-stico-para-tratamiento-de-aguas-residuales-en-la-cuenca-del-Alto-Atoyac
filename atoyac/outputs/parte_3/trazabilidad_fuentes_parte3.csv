@@ -1,0 +1,6 @@
+﻿producto,fuente,anio_referencia,transformacion
+establecimientos_textiles/clusters_parte2,outputs/parte_2/06_clusters/solucion_principal.gpkg,DENUE heredado,selección de campos e IDs estables
+subnucleos_parte2,outputs/parte_2/11_cierre/diagnostico_mega_cluster.gpkg,Parte 2,envolvente convexa diagnóstica
+ptar/descargas,INEGI CNGMD 2021 y PTAR_Final.csv,2021–2022,"separación por tipo, homologación sin fusión"
+hidrografia,"INEGI RH18 1:50,000",según EDICION/FECHA,unión de hojas y recorte a cuenca
+colectores,QGIS/Reporte de Lesly,2026,esquema vacío: geometrías no entregadas

@@ -1,0 +1,22 @@
+{
+  "entrada_qgz": "data\\processed\\lesly\\FINAL_ATOYAC.qgz",
+  "entrada_pdf": "data\\processed\\lesly\\Reporte_Río_Atoyac_colectores_lesly.pdf",
+  "tipo_entrega": "proyecto_qgis_comprimido_no_geopackage",
+  "crs_proyecto": "EPSG:32614",
+  "n_capas_maplayer": 12,
+  "n_fuentes_locales_referenciadas": 10,
+  "n_fuentes_locales_disponibles": 0,
+  "n_nodos_arbol_sin_maplayer": 2,
+  "categorias_declaradas": [
+    "cauce_rio_atoyac",
+    "establecimientos_denue",
+    "limite_cuenca",
+    "limite_estatal",
+    "limites_municipales",
+    "otro",
+    "plantas_tratamiento",
+    "raster_densidad_denue",
+    "zona_federal_buffer"
+  ],
+  "conclusion": "El QGZ conserva configuración y simbología, pero no incorpora las fuentes vectoriales/raster locales referenciadas. No es posible contar objetos, auditar atributos ni analizar conectividad hasta recibir esos archivos."
+}

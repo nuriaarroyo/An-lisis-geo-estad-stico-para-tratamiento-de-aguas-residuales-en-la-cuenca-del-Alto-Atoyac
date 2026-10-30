@@ -1,0 +1,347 @@
+﻿campo,valor,frecuencia
+cuerpo_receptor,[SIN DATO],301
+cuerpo_receptor,Río Atoyac,1
+tipo_descarga,no_especificado,301
+tipo_descarga,industrial,1
+nombre_sistema,RIO ZAHUAPAN,4
+nombre_sistema,SIN NOMBRE,4
+nombre_sistema,SANTA MARIA TEXCALAC,3
+nombre_sistema,BARRANCA,3
+nombre_sistema,DESCARGA 3,2
+nombre_sistema,LAGUNA DE OXIDACION,2
+nombre_sistema,FOSA DE OXIDACION,2
+nombre_sistema,RIO,2
+nombre_sistema,BARRANCA SN,2
+nombre_sistema,BARRANCA SIN NOMBRE,2
+nombre_sistema,DESCARGA DOS,2
+nombre_sistema,COMPUERTA,2
+nombre_sistema,FID 51,1
+nombre_sistema,FID 219,1
+nombre_sistema,FID 183,1
+nombre_sistema,RIO ZAPATERO,1
+nombre_sistema,PROGRESO,1
+nombre_sistema,SANTIAGO COLTZINGO,1
+nombre_sistema,FOSA DE SANTA CLARA OZUMBA (NUEVA),1
+nombre_sistema,LA REGADERA,1
+nombre_sistema,BARRANCA ALMOLOYA,1
+nombre_sistema,FOSA DE ZUMPANGO (NUEVA),1
+nombre_sistema,ZOLTEPETZI,1
+nombre_sistema,APIZAQUITO 1,1
+nombre_sistema,APIZAQUITO 4,1
+nombre_sistema,COLONIA FERROCARRILERA,1
+nombre_sistema,CARRETERA A TETLA,1
+nombre_sistema,BV. CIENEGA,1
+nombre_sistema,DESCARGA TETEL-HOVOMEX,1
+nombre_sistema,DESCARGA CERCA DEL OCOTAL,1
+nombre_sistema,"3RA SECCION, CALLE CANCUN Y OAXACA",1
+nombre_sistema,FOSA LA QUEBRADORA,1
+nombre_sistema,AVENIDA DEL TRABAJO FRACC. LOS ARCOS,1
+nombre_sistema,FOSA SEPTICA PIEDRAS NEGRAS,1
+nombre_sistema,RIO ZOPILOCALCO,1
+nombre_sistema,FID 5,1
+nombre_sistema,PILARES,1
+nombre_sistema,RIO ZAHUAPAN (EL VALOR),1
+nombre_sistema,CANAL DEL VALOR,1
+nombre_sistema,CANAL DE PANZACOLA,1
+nombre_sistema,PRIVADA AVENIDA DEL TRABAJO,1
+nombre_sistema,ATOYAC,1
+nombre_sistema,SAN BUENA VENTURA,1
+nombre_sistema,DESCARGA  TETLATLAHUCA,1
+nombre_sistema,UNO,1
+nombre_sistema,DOS,1
+nombre_sistema,BARRANCA BRIONES,1
+nombre_sistema,ATLALTENCO,1
+nombre_sistema,DESCARGA AQUIAHUAC,1
+nombre_sistema,BARRANCA EL METRO,1
+nombre_sistema,TETLATLAHUCA 6,1
+nombre_sistema,DESCARGA RIO ATOYAC CARCAMO,1
+nombre_sistema,DESCARGA XOCHITECATITLA,1
+nombre_sistema,DESCARGA SAN RAFAEL,1
+nombre_sistema,TETLATLAHUCA 4,1
+nombre_sistema,TETLATLAHUCA 9,1
+nombre_sistema,TETLATLAHUCA 8,1
+nombre_sistema,CALLE 20 DE NOVIEMBRE SAN RAFAEL TENANYECAC,1
+nombre_sistema,DESCARGA 3 Y 5 SAN JOSE ATOYATENCO,1
+nombre_sistema,PUNTO DE DESCARGA 5,1
+nombre_sistema,PUERTA,1
+nombre_sistema,PUNTO DE DESCARGA 6,1
+nombre_sistema,GUADALUPE VICTORIA,1
+nombre_sistema,CANAL SAN IGNACIO TECUEXCOMAC,1
+nombre_sistema,ZANJA XILOXOTITLA Y TENEXYECAC,1
+nombre_sistema,EL RANCHO,1
+nombre_sistema,BUENOS AIRES 5,1
+nombre_sistema,DESCARGA 1 SAN VICENTE XILOXOCHITLA,1
+nombre_sistema,CANAL SAN VICENTE,1
+nombre_sistema,BUENOS AIRES 2,1
+nombre_sistema,1A. DE PORFIRIO DIAZ,1
+nombre_sistema,TECUEXCOMAC ZANJA SIN NOMBRE,1
+nombre_sistema,DESCARGA SANTA INES TECUEXCOMAC V,1
+nombre_sistema,RIO ATOYAC SAN MATEO,1
+nombre_sistema,DESCARGA SANTA INES TECUEXCOMAC VI,1
+nombre_sistema,SAN IGNACIO 1,1
+nombre_sistema,DESCARGA SANTA INES TECUEXCOMAC II,1
+nombre_sistema,VILLA ALTA 2,1
+nombre_sistema,EL TORITO,1
+nombre_sistema,DESCARGA SANTA INES TECUEXCOMAC III,1
+nombre_sistema,LA CIENEGA,1
+nombre_sistema,DESCARGA SANTA JUSTINA ECATEPEC,1
+nombre_sistema,CANAL BUENOS AIRES TIZOSTOC,1
+nombre_sistema,CANAL BUENOS AIRES,1
+nombre_sistema,DESCARGA 1 TECHACHALCO,1
+nombre_sistema,DESCARGA 1 ACATITLA,1
+nombre_sistema,DESCARGA TRINIDAD TENEXYECAC-ANALCO II,1
+nombre_sistema,DESCARGA NO.2,1
+nombre_sistema,BARRANCA DE MONTERREY,1
+nombre_sistema,DESCARGA EL PUENTE,1
+nombre_sistema,LA CAÃADA,1
+nombre_sistema,DESCARGA 1 PANOTLA,1
+nombre_sistema,CANAL,1
+nombre_sistema,DESCARGA VIVEROS DE PANOTLA,1
+nombre_sistema,CAMPO DE FUTBOL ZARAGOZA,1
+nombre_sistema,CAMPO DE FUTBOL SAN JUAN,1
+nombre_sistema,DESCARGA 2 TEMETZONTLA,1
+nombre_sistema,DESCARGA 6 HUEXOYUCAN,1
+nombre_sistema,DESCARGA 4 HUEXOYUCAN,1
+nombre_sistema,DESCARGA 7 HUEXOYUCAN,1
+nombre_sistema,DESCARGA 1 HUILOAPAN,1
+nombre_sistema,DESCARGA 1 HUEXOYUCAN,1
+nombre_sistema,DESCARGA 2 HUEXOYUCAN,1
+nombre_sistema,BARRANCA EL POTRERO,1
+nombre_sistema,FOSA 1 SAN SIMON,1
+nombre_sistema,DESCARGA 1RA.,1
+nombre_sistema,FOSA 2 ACUICUIZCATEPEC,1
+nombre_sistema,DESCARGA DEL PANTEON,1
+nombre_sistema,PRIVADA ZARAGOZA,1
+nombre_sistema,CALLE REFORMA,1
+nombre_sistema,FOSA SEPTICA,1
+nombre_sistema,DESCARGA 16 SAN SIMEON,1
+nombre_sistema,CANAL BUENOS AIRES EL PORVENIR,1
+nombre_sistema,FOSA SEPTICA DE PANTANOS ARTIFICIALES,1
+nombre_sistema,FOSA SEPTICA SAN MIGUEL LA PRESA,1
+nombre_sistema,RIO ATOTONILCO,1
+nombre_sistema,CHICHICAZAC TENEXYECAC,1
+nombre_sistema,CHICAZAC,1
+nombre_sistema,FOSA SEPTICA SAN JOSE ESCANDONA,1
+nombre_sistema,FOSA SEPTICA OXTOTLAPANGO,1
+nombre_sistema,BARRANCA DEL TECHCALADO,1
+nombre_sistema,DESCARGA 1 TEMETZONTLA,1
+nombre_sistema,DESCARGA 5 HUEXOYUCAN,1
+nombre_sistema,DESCARGA 3 HUEXOYUCAN,1
+nombre_sistema,DESCARGA 18 IXCOTLA,1
+nombre_sistema,DESCARGA 19 IXCOTLA,1
+nombre_sistema,DESCARGA 17 IXCOTLA,1
+nombre_sistema,DESCARGA ALPOTZONGA DE LIRA Y ORTEGA,1
+nombre_sistema,FOSA SEPTICA SAN MIGUEL PIPIYOLA,1
+nombre_sistema,JAGÃEY DE SAN MIGUEL PIPIYOLA,1
+nombre_sistema,DESCARGA EL DESMONTE,1
+nombre_sistema,SAN FRANCISCO MITEPEC PLANTA 1,1
+nombre_sistema,SAN FRANCISCO MITEPEC PLANTA3													,1
+nombre_sistema,EL PIÃON - BARRANCA SIN NOMBRE,1
+nombre_sistema,FINAL DE LA LAGUNA,1
+nombre_sistema,PUENTE LA CAÃADA,1
+nombre_sistema,JAGÃEY SAN JUAN MITEPEC,1
+nombre_sistema,DESCARGA 6 TLALPAN,1
+nombre_sistema,DESCARGA 10 SAN SIMEON,1
+nombre_sistema,FOSA SEPTICA LA MAGDALENA,1
+nombre_sistema,DESCARGA TORRES BARRANCA SIN NOMBRE,1
+nombre_sistema,PRESA RECOBA,1
+nombre_sistema,MELCHOR OCAMPO,1
+nombre_sistema,FID 230,1
+nombre_sistema,PASO BLANCO,1
+nombre_sistema,LA LOMA,1
+nombre_sistema,BARRANCA SN 1,1
+nombre_sistema,DESCARGA DEL RIO,1
+nombre_sistema,LA JOYA,1
+nombre_sistema,ZACATZINGO,1
+nombre_sistema,DESCARGA A BARRANCA UNIDAD HABITACIONAL LOS PILARES,1
+nombre_sistema,DESCARGA 1 SAN PABLO,1
+nombre_sistema,SAN PABLO DEL MONTE (CANAL),1
+nombre_sistema,SAN PABLO DEL MONTE (SAN SEBASTIAN) 2,1
+nombre_sistema,SAN PABLO DEL MONTE (SAN ISIDRO),1
+nombre_sistema,RIO ATOYAC,1
+nombre_sistema,BARRANCA SIN NOMBRE NUMERO 5,1
+nombre_sistema,MICHAC,1
+nombre_sistema,ECOLOGICA CUATLAPANGA,1
+nombre_sistema,DESCARGA 9 SECCION 5,1
+nombre_sistema,DESCARGA 10 SECCION 5,1
+nombre_sistema,XICOHTENCATL,1
+nombre_sistema,REFORMA,1
+nombre_sistema,DESCARGA 8 SECCION 5,1
+nombre_sistema,05 DE FEBRERO,1
+nombre_sistema,DESCARGA DE LA SECUNDARIA,1
+nombre_sistema,DESCARGA DE LA REFORMA,1
+nombre_sistema,PUNTO DE DESCARGA DE LA TERCERA SECCION,1
+nombre_sistema,SAN MARCOS CONTLA,1
+nombre_sistema,BARRANCA TLEPTZAL,1
+nombre_sistema,20 DE NOVIEMBRE Y AQUILES SERDAN,1
+nombre_sistema,DS25,1
+nombre_sistema,DS22,1
+nombre_sistema,BARRANCA TECOLOTLA,1
+nombre_sistema,CALLE DE LA CRUZ,1
+nombre_sistema,DEL MERCADO NUEVO,1
+nombre_sistema,CANAL BELEN,1
+nombre_sistema,SAN MATIAS (ZAHUAPAN),1
+nombre_sistema,TECOLOTLA (ZAHUAPAN),1
+nombre_sistema,BARRANCA RAMONTLA,1
+nombre_sistema,RIO DE LOS NEGROS,1
+nombre_sistema,SAN MATIAS 2 (ZAHUAPAN),1
+nombre_sistema,SAN DAMIAN TLACOCALPAN,1
+nombre_sistema,BARRIO DEL ALTO,1
+nombre_sistema,"DESCARGA 5 A BARRANCA XICOYOTLA, BARRIO DEL ALTO",1
+nombre_sistema,DESCARGA PRIVADA EMILIO CARRANZA,1
+nombre_sistema,EL CRUCERO,1
+nombre_sistema,EL LLANO,1
+nombre_sistema,DESCARGA RANCHO SANTA CRUZ,1
+nombre_sistema,DESCARGA PUENTE EL TESORO,1
+nombre_sistema,DESCARGA ASILAC,1
+nombre_sistema,CANAL DE TEPETLALZINGO,1
+nombre_sistema,DESCARGA PRIVADA DEL CARMEN Y BENITO JUAREZ,1
+nombre_sistema,DESCARGA 1RO. DE MAYO,1
+nombre_sistema,DESCARGA PUENTE DEL FERROCARRIL Y AV. DEL TRABAJO,1
+nombre_sistema,DESCARGA PUENTE SAN MIGUEL,1
+nombre_sistema,LA MOJONERA 2,1
+nombre_sistema,ENCINAL,1
+nombre_sistema,ZACAMOLPA,1
+nombre_sistema,PIRULES,1
+nombre_sistema,BUENAVISTA,1
+nombre_sistema,COLONIA TORRES,1
+nombre_sistema,RIO TEQUIXQUIATL SAN MIGUEL CONTLA (3),1
+nombre_sistema,RIO TEQUIXQUIATL SAN MIGUEL CONTLA (4),1
+nombre_sistema,DESCARGA EL TESORO,1
+nombre_sistema,DESCARGA SAN MIGUEL 1 Y 2,1
+nombre_sistema,ESCUELA EMSAD,1
+nombre_sistema,CABECERA MUNICIPAL,1
+nombre_sistema,ATENCO,1
+nombre_sistema,PARADATLA,1
+nombre_sistema,SAN SALVADOR,1
+nombre_sistema,SAN ANDRES III,1
+nombre_sistema,SAN ANDRES II,1
+nombre_sistema,DESCARGA 15 AL RIO TEQUISQUIAC PROVENIENTE DE CARRETRA SANTA CRUZ - APIZACO,1
+nombre_sistema,FOSA SEPTICA XALTIANQUISCO,1
+nombre_sistema,FOSA SEPTICA SAN MATEO,1
+nombre_sistema,FOSA SEPTICA BARRANQUILLA XALTIANQUISCO,1
+nombre_sistema,FOSA SAN JUAN QUETZALCOAPAN (LEONA VICARIO),1
+nombre_sistema,FOSA SEPTICA BARRANCA SIN NOMBRE ( SAN JUAN),1
+nombre_sistema,BARRANCA DE SAN PEDRO,1
+nombre_sistema,BARRANCA TLACHA,1
+nombre_sistema,DESCARGA 16 AL RIO TEQUISQUIAC PROVENIENTE DE CANAL SOBRE CARRETRA SANTA CRUZ - APIZACO,1
+nombre_sistema,SAN ANDRES I,1
+nombre_sistema,DESCARGA 17 AL COLECTOR DE AGUAS RESIDUALES DEL MUNICIPIO DE APIZACO,1
+nombre_sistema,DESCARGA 1 SAN LUIS APIZAQUITO,1
+nombre_sistema,DESCARGA VISTA HERMOSA,1
+nombre_sistema,DESCARGA 1,1
+nombre_sistema,DESCARGA TRES,1
+nombre_sistema,DESCARGA 5 CALLE VICENTE GUERRERO,1
+nombre_sistema,DESCARGA 4 CALLE LEONA VICARIO,1
+nombre_sistema,FOSA DE ATLIHUETZIAN CAMINO A AMAXAC,1
+nombre_sistema,SANTA MARIA ATLIHUETZIA 3,1
+nombre_sistema,DESCARGA AL PUENTE DE LA CONQUISTA,1
+nombre_sistema,DESCARGA DE AGUA RESIDUAL BARRANCA COYOATLA,1
+nombre_sistema,DESCARGA DE CALLE LOS MUSICOS A COYOATLA,1
+nombre_sistema,SAN LORENZO TLACUALOYAN,1
+nombre_sistema,FOSA 2 SAN SIMON,1
+nombre_sistema,CALLE CAMINO REAL Y 2 DE ENERO,1
+nombre_sistema,FOSA SEPTICA SAN BENITO XALTOCAN DELANTE DE LA IGLESIA,1
+nombre_sistema,FOSA SEPTICA DEL BALNEARIO DE SAN BENITO,1
+nombre_sistema,FOSA SEPTICA JUNTO A LA MOJONERA,1
+nombre_sistema,FOSA AL LIMITE CON EL ROSARIO OCOTOXCO,1
+nombre_sistema,DESCARGA OCOTOXCO A BARRANCA SIN NOMBRE,1
+nombre_sistema,FOSA SEPTICA OCOTOXCO PANTEON,1
+nombre_sistema,PRIVADA GUADALUPE,1
+nombre_sistema,AVENIDA DEL TRABAJO,1
+nombre_sistema,AVENIDA DEL TRABAJO 1,1
+nombre_sistema,SAN DIONISIO YAUHQUEMEHCAN 2,1
+nombre_sistema,FOSA SEPTICA FUENTE DE RIELES,1
+nombre_sistema,FOSA 2 SAN LUIS,1
+nombre_sistema,LAGUNA DE OXIDACION CHIPILA,1
+nombre_sistema,FOSA 3 SAN LUIS,1
+nombre_sistema,BARRANCA SIN NOMBRE CALLE PUENTE GRANDE,1
+nombre_sistema,COLONIA JOSE MARIA MORELOS,1
+nombre_sistema,FOSA 4 SAN PEDRO ECATEPEC (NUEVA),1
+nombre_sistema,DESCARGA DE VILLA DE LAS FLORES,1
+nombre_sistema,BARRANCA S/N,1
+nombre_sistema,DESCARGA A LA BARRANQUILLA,1
+nombre_sistema,DESCARGA DE SANTA ELENA BARRANCA EL SALTERIO,1
+nombre_sistema,FOSA MAXIMO ROJAS,1
+nombre_sistema,PRESA DE OXIDACION ATOTONILCO,1
+nombre_sistema,FOSA TECOMALUCAN,1
+nombre_sistema,HUEXOTITLA FOSA SEPTICA,1
+nombre_sistema,FOSA DE N.C.P. LA HERRADURA,1
+nombre_sistema,DESCARGA 2,1
+nombre_sistema,DESCARGA 3 DE SANTA CLARA OZUMBA BARRANCA LA HERRADURA,1
+nombre_sistema,SANTA CLARA OZUMBA,1
+nombre_sistema,Global Denim S.A. de C.V.,1
+nombre_sistema,SANTIAGO COLTZINGO 2,1
+nombre_sistema,CUENCA ATENCO,1
+nombre_sistema,6 ORIENTE,1
+nombre_sistema,COLECTOR MARGINAL RIO METLALPANAPA,1
+nombre_sistema,PARAJE  CUATRO CAMINOS,1
+nombre_sistema,BARRANCA CUACHITA,1
+nombre_sistema,FID 171,1
+nombre_sistema,FID 158,1
+nombre_sistema,RIO TLAPALAC,1
+nombre_sistema,CANAL PORTALES,1
+nombre_sistema,CARCAMO SANTIAGO MICHAC,1
+nombre_sistema,DESCARGA 2 SAN MIGUEL ANALCO,1
+nombre_sistema,DESCARGA MUNICIPAL NUMERO 1,1
+nombre_sistema,DESCARGA DE SANTIAGO MICHAC,1
+nombre_sistema,DESCARGA 9 JESUS TEPACTEPEC,1
+nombre_sistema,BARRANCA ALAMO,1
+municipio,Ixtacuixtla de Mariano Matamoros,21
+municipio,Santa Cruz Tlaxcala,19
+municipio,Yauhquemehcan,18
+municipio,Xaltocan,16
+municipio,Panotla,13
+municipio,San JosÃ© Teacalco,12
+municipio,Apizaco,11
+municipio,EspaÃ±ita,11
+municipio,Tetlatlahuca,11
+municipio,NatÃ­vitas,10
+municipio,Atlangatepec,9
+municipio,Tzompantepec,9
+municipio,Hueyotlipan,9
+municipio,Cuaxomulco,9
+municipio,Tlaxco,8
+municipio,Tepetitla de LardizÃ¡bal,8
+municipio,Papalotla de XicohtÃ©ncatl,7
+municipio,San Lucas Tecopilco,6
+municipio,Tlaxcala,6
+municipio,Tenancingo,6
+municipio,Amaxac de Guerrero,6
+municipio,Puebla,5
+municipio,San DamiÃ¡n TexÃ³loc,5
+municipio,ApetatitlÃ¡n de Antonio Carvajal,5
+municipio,Santa Ana Nopalucan,5
+municipio,Tetla de la Solidaridad,5
+municipio,San AndrÃ©s Cholula,4
+municipio,San Pablo del Monte,4
+municipio,Xaloztoc,4
+municipio,Cuautlancingo,4
+municipio,Chiautempan,3
+municipio,Totolac,3
+municipio,Ocoyucan,3
+municipio,Contla de Juan Cuamatzi,2
+municipio,San JerÃ³nimo Zacualpan,2
+municipio,Xicohtzinco,2
+municipio,San MatÃ­as Tlalancaleca,2
+municipio,Tlaltenango,2
+municipio,MuÃ±oz de Domingo Arenas,2
+municipio,San Lorenzo Axocomanitla,1
+municipio,San Salvador el Verde,1
+municipio,Zacatelco,1
+municipio,Domingo Arenas,1
+municipio,Calpan,1
+municipio,San Miguel Xoxtla,1
+municipio,Huejotzingo,1
+municipio,Juan C. Bonilla,1
+municipio,San Pedro Cholula,1
+municipio,San Gregorio Atzompa,1
+municipio,Chiautzingo,1
+municipio,Amozoc,1
+municipio,Acuamanala de Miguel Hidalgo,1
+municipio,San Francisco Tetlanohcan,1
+municipio,San Martín Texmelucan,1
+fuente,INEGI CNGMD 2021 (descarga 2023),301
+fuente,PTAR_Final.csv,1
+estado_verificacion,A_registro_oficial_no_operacion,301
+estado_verificacion,C_compilacion_por_verificar,1

@@ -1,0 +1,315 @@
+﻿fuente_id,capa,campo,tipo
+P2_EST,establecimientos_membresia,d_llave,object
+P2_EST,establecimientos_membresia,clee,object
+P2_EST,establecimientos_membresia,nom_est,object
+P2_EST,establecimientos_membresia,raz_soc,object
+P2_EST,establecimientos_membresia,cve_scian,int64
+P2_EST,establecimientos_membresia,desc_scian,object
+P2_EST,establecimientos_membresia,Descripcion estrato personal ocupado,object
+P2_EST,establecimientos_membresia,Tipo de vialidad,object
+P2_EST,establecimientos_membresia,Nombre de la vialidad,object
+P2_EST,establecimientos_membresia,Tipo de entre vialidad 1,object
+P2_EST,establecimientos_membresia,Nombre de entre vialidad 1,object
+P2_EST,establecimientos_membresia,Tipo de entre vialidad 2,object
+P2_EST,establecimientos_membresia,Nombre de entre vialidad 2,object
+P2_EST,establecimientos_membresia,Tipo de entre vialidad 3,object
+P2_EST,establecimientos_membresia,Nombre de entre vialidad 3,object
+P2_EST,establecimientos_membresia,Numero exterior o kilometro,float64
+P2_EST,establecimientos_membresia,Letra exterior,object
+P2_EST,establecimientos_membresia,Edificio,object
+P2_EST,establecimientos_membresia,Edificio Piso,float64
+P2_EST,establecimientos_membresia,Numero interior,float64
+P2_EST,establecimientos_membresia,Letra interior,object
+P2_EST,establecimientos_membresia,Tipo de asentamiento humano,object
+P2_EST,establecimientos_membresia,Nombre de asentamiento humano,object
+P2_EST,establecimientos_membresia,Tipo centro comercial,object
+P2_EST,establecimientos_membresia,"Corredor industrial, centro comercial o mercado publico",object
+P2_EST,establecimientos_membresia,Numero de local,object
+P2_EST,establecimientos_membresia,Codigo Postal,int64
+P2_EST,establecimientos_membresia,Clave entidad,int64
+P2_EST,establecimientos_membresia,Entidad federativa,object
+P2_EST,establecimientos_membresia,Clave municipio,int64
+P2_EST,establecimientos_membresia,Municipio,object
+P2_EST,establecimientos_membresia,cve_loc,int64
+P2_EST,establecimientos_membresia,localidad,object
+P2_EST,establecimientos_membresia,Area geoestadistica basica,object
+P2_EST,establecimientos_membresia,Manzana,int64
+P2_EST,establecimientos_membresia,Numero de telefono,float64
+P2_EST,establecimientos_membresia,Correo electronico,object
+P2_EST,establecimientos_membresia,Sitio en Internet,object
+P2_EST,establecimientos_membresia,Tipo de establecimiento,object
+P2_EST,establecimientos_membresia,Latitud,float64
+P2_EST,establecimientos_membresia,Longitud,float64
+P2_EST,establecimientos_membresia,Fecha de incorporacion al DENUE,object
+P2_EST,establecimientos_membresia,coincide_filtro_scian,bool
+P2_EST,establecimientos_membresia,coincide_filtro_texto,bool
+P2_EST,establecimientos_membresia,textil,bool
+P2_EST,establecimientos_membresia,mezclilla,bool
+P2_EST,establecimientos_membresia,humedo_explicito,bool
+P2_EST,establecimientos_membresia,lavado_generico,bool
+P2_EST,establecimientos_membresia,produccion,bool
+P2_EST,establecimientos_membresia,maquila,bool
+P2_EST,establecimientos_membresia,proceso_seco_explicito,bool
+P2_EST,establecimientos_membresia,scian_textil,bool
+P2_EST,establecimientos_membresia,scian_acabado_humedo,bool
+P2_EST,establecimientos_membresia,scian_lavanderia,bool
+P2_EST,establecimientos_membresia,sector_textil,object
+P2_EST,establecimientos_membresia,evidencia_hidrica,object
+P2_EST,establecimientos_membresia,dentro_cuenca,bool
+P2_EST,establecimientos_membresia,scian_3,int64
+P2_EST,establecimientos_membresia,scian_4,int64
+P2_EST,establecimientos_membresia,scian_6,int64
+P2_EST,establecimientos_membresia,actividad_lavanderia_tintoreria,bool
+P2_EST,establecimientos_membresia,actividad_acabado_textil,bool
+P2_EST,establecimientos_membresia,actividad_confeccion,bool
+P2_EST,establecimientos_membresia,actividad_fabricacion_telas,bool
+P2_EST,establecimientos_membresia,actividad_tejido_hilado,bool
+P2_EST,establecimientos_membresia,actividad_bordado_deshilado,bool
+P2_EST,establecimientos_membresia,senal_pantalon,bool
+P2_EST,establecimientos_membresia,senal_mezclilla_o_pantalon,bool
+P2_EST,establecimientos_membresia,universo_conceptual,object
+P2_EST,establecimientos_membresia,cluster,int64
+P2_EST,establecimientos_membresia,probabilidad,float64
+P2_EST,establecimientos_membresia,persistencia_territorial,float64
+P2_EST,establecimientos_membresia,clase_persistencia,object
+P2_EST,establecimientos_membresia,tipo_resultado_espacial,object
+P2_EST,envolventes_convexas,cluster,int64
+P2_EST,envolventes_convexas,escenario_id,object
+P2_EST,envolventes_convexas,n_total_cluster,int64
+P2_EST,envolventes_convexas,n_dentro_cuenca,int64
+P2_EST,envolventes_convexas,n_fuera_cuenca,int64
+P2_EST,envolventes_convexas,pct_cluster_dentro_cuenca,float64
+P2_EST,envolventes_convexas,pct_cluster_fuera_cuenca,float64
+P2_EST,envolventes_convexas,cruza_limite_cuenca,bool
+P2_EST,envolventes_convexas,area_convexa_km2,float64
+P2_EST,envolventes_convexas,area_buffer_150m_km2,float64
+P2_EST,envolventes_convexas,densidad_convexa_est_km2,float64
+P2_EST,envolventes_convexas,n_municipios,int64
+P2_EST,envolventes_convexas,n_localidades,int64
+P2_EST,envolventes_convexas,persistencia_media,float64
+P2_SUB,establecimientos_subnucleos,d_llave,object
+P2_SUB,establecimientos_subnucleos,clee,object
+P2_SUB,establecimientos_subnucleos,nom_est,object
+P2_SUB,establecimientos_subnucleos,raz_soc,object
+P2_SUB,establecimientos_subnucleos,cve_scian,int64
+P2_SUB,establecimientos_subnucleos,desc_scian,object
+P2_SUB,establecimientos_subnucleos,Descripcion estrato personal ocupado,object
+P2_SUB,establecimientos_subnucleos,Tipo de vialidad,object
+P2_SUB,establecimientos_subnucleos,Nombre de la vialidad,object
+P2_SUB,establecimientos_subnucleos,Tipo de entre vialidad 1,object
+P2_SUB,establecimientos_subnucleos,Nombre de entre vialidad 1,object
+P2_SUB,establecimientos_subnucleos,Tipo de entre vialidad 2,object
+P2_SUB,establecimientos_subnucleos,Nombre de entre vialidad 2,object
+P2_SUB,establecimientos_subnucleos,Tipo de entre vialidad 3,object
+P2_SUB,establecimientos_subnucleos,Nombre de entre vialidad 3,object
+P2_SUB,establecimientos_subnucleos,Numero exterior o kilometro,float64
+P2_SUB,establecimientos_subnucleos,Letra exterior,object
+P2_SUB,establecimientos_subnucleos,Edificio,object
+P2_SUB,establecimientos_subnucleos,Edificio Piso,float64
+P2_SUB,establecimientos_subnucleos,Numero interior,float64
+P2_SUB,establecimientos_subnucleos,Letra interior,object
+P2_SUB,establecimientos_subnucleos,Tipo de asentamiento humano,object
+P2_SUB,establecimientos_subnucleos,Nombre de asentamiento humano,object
+P2_SUB,establecimientos_subnucleos,Tipo centro comercial,object
+P2_SUB,establecimientos_subnucleos,"Corredor industrial, centro comercial o mercado publico",object
+P2_SUB,establecimientos_subnucleos,Numero de local,object
+P2_SUB,establecimientos_subnucleos,Codigo Postal,int64
+P2_SUB,establecimientos_subnucleos,Clave entidad,int64
+P2_SUB,establecimientos_subnucleos,Entidad federativa,object
+P2_SUB,establecimientos_subnucleos,Clave municipio,int64
+P2_SUB,establecimientos_subnucleos,Municipio,object
+P2_SUB,establecimientos_subnucleos,cve_loc,int64
+P2_SUB,establecimientos_subnucleos,localidad,object
+P2_SUB,establecimientos_subnucleos,Area geoestadistica basica,object
+P2_SUB,establecimientos_subnucleos,Manzana,int64
+P2_SUB,establecimientos_subnucleos,Numero de telefono,float64
+P2_SUB,establecimientos_subnucleos,Correo electronico,object
+P2_SUB,establecimientos_subnucleos,Sitio en Internet,object
+P2_SUB,establecimientos_subnucleos,Tipo de establecimiento,object
+P2_SUB,establecimientos_subnucleos,Latitud,float64
+P2_SUB,establecimientos_subnucleos,Longitud,float64
+P2_SUB,establecimientos_subnucleos,Fecha de incorporacion al DENUE,object
+P2_SUB,establecimientos_subnucleos,coincide_filtro_scian,bool
+P2_SUB,establecimientos_subnucleos,coincide_filtro_texto,bool
+P2_SUB,establecimientos_subnucleos,textil,bool
+P2_SUB,establecimientos_subnucleos,mezclilla,bool
+P2_SUB,establecimientos_subnucleos,humedo_explicito,bool
+P2_SUB,establecimientos_subnucleos,lavado_generico,bool
+P2_SUB,establecimientos_subnucleos,produccion,bool
+P2_SUB,establecimientos_subnucleos,maquila,bool
+P2_SUB,establecimientos_subnucleos,proceso_seco_explicito,bool
+P2_SUB,establecimientos_subnucleos,scian_textil,bool
+P2_SUB,establecimientos_subnucleos,scian_acabado_humedo,bool
+P2_SUB,establecimientos_subnucleos,scian_lavanderia,bool
+P2_SUB,establecimientos_subnucleos,sector_textil,object
+P2_SUB,establecimientos_subnucleos,evidencia_hidrica,object
+P2_SUB,establecimientos_subnucleos,dentro_cuenca,bool
+P2_SUB,establecimientos_subnucleos,scian_3,int64
+P2_SUB,establecimientos_subnucleos,scian_4,int64
+P2_SUB,establecimientos_subnucleos,scian_6,int64
+P2_SUB,establecimientos_subnucleos,actividad_lavanderia_tintoreria,bool
+P2_SUB,establecimientos_subnucleos,actividad_acabado_textil,bool
+P2_SUB,establecimientos_subnucleos,actividad_confeccion,bool
+P2_SUB,establecimientos_subnucleos,actividad_fabricacion_telas,bool
+P2_SUB,establecimientos_subnucleos,actividad_tejido_hilado,bool
+P2_SUB,establecimientos_subnucleos,actividad_bordado_deshilado,bool
+P2_SUB,establecimientos_subnucleos,senal_pantalon,bool
+P2_SUB,establecimientos_subnucleos,senal_mezclilla_o_pantalon,bool
+P2_SUB,establecimientos_subnucleos,universo_conceptual,object
+P2_SUB,establecimientos_subnucleos,cluster,int64
+P2_SUB,establecimientos_subnucleos,probabilidad,float64
+P2_SUB,establecimientos_subnucleos,persistencia_territorial,float64
+P2_SUB,establecimientos_subnucleos,clase_persistencia,object
+P2_SUB,establecimientos_subnucleos,tipo_resultado_espacial,object
+P2_SUB,establecimientos_subnucleos,subnucleo_diagnostico,int64
+P2_SUB,establecimientos_subnucleos,prob_subnucleo,float64
+P2_SUB,hexagonos_250m,hex_id,int64
+P2_SUB,hexagonos_250m,n_establecimientos,int64
+P2_SUB,hexagonos_250m,radio_m,int64
+P3_BASE,limite_cuenca,g_id,int32
+P3_BASE,limite_cuenca,id_cuenca,object
+P3_BASE,limite_cuenca,nom_cuenca,object
+P3_BASE,limite_cuenca,id_rha,object
+P3_BASE,limite_cuenca,nom_rha,object
+P3_BASE,limite_cuenca,clasif,object
+P3_BASE,limite_cuenca,vol_dispo,float64
+P3_BASE,municipios_interseccion_cuenca,g_id,int32
+P3_BASE,municipios_interseccion_cuenca,cve_ent,object
+P3_BASE,municipios_interseccion_cuenca,nom_ent,object
+P3_BASE,municipios_interseccion_cuenca,cve_mun,object
+P3_BASE,municipios_interseccion_cuenca,cvegeomun,object
+P3_BASE,municipios_interseccion_cuenca,nom_mun,object
+P3_BASE,rio_atoyac_referencia,id,object
+P3_BASE,rio_atoyac_referencia,@id,object
+P3_BASE,rio_atoyac_referencia,abandoned,object
+P3_BASE,rio_atoyac_referencia,alt_name,object
+P3_BASE,rio_atoyac_referencia,boat,object
+P3_BASE,rio_atoyac_referencia,created_by,object
+P3_BASE,rio_atoyac_referencia,description,object
+P3_BASE,rio_atoyac_referencia,destination,object
+P3_BASE,rio_atoyac_referencia,intermittent,object
+P3_BASE,rio_atoyac_referencia,layer,object
+P3_BASE,rio_atoyac_referencia,name,object
+P3_BASE,rio_atoyac_referencia,note,object
+P3_BASE,rio_atoyac_referencia,source,object
+P3_BASE,rio_atoyac_referencia,source:geometry,object
+P3_BASE,rio_atoyac_referencia,tidal,object
+P3_BASE,rio_atoyac_referencia,tunnel,object
+P3_BASE,rio_atoyac_referencia,type,object
+P3_BASE,rio_atoyac_referencia,waterway,object
+P3_BASE,rio_atoyac_referencia,width,object
+P3_BASE,rio_atoyac_referencia,@relations,object
+P3_BASE,rio_atoyac_referencia,wikidata,object
+P3_BASE,rio_atoyac_referencia,wikipedia,object
+P3_BASE,franja_10m_referencia,id,object
+P3_BASE,franja_10m_referencia,@id,object
+P3_BASE,franja_10m_referencia,abandoned,object
+P3_BASE,franja_10m_referencia,alt_name,object
+P3_BASE,franja_10m_referencia,boat,object
+P3_BASE,franja_10m_referencia,created_by,object
+P3_BASE,franja_10m_referencia,description,object
+P3_BASE,franja_10m_referencia,destination,object
+P3_BASE,franja_10m_referencia,intermittent,object
+P3_BASE,franja_10m_referencia,layer,object
+P3_BASE,franja_10m_referencia,name,object
+P3_BASE,franja_10m_referencia,note,object
+P3_BASE,franja_10m_referencia,source,object
+P3_BASE,franja_10m_referencia,source:geometry,object
+P3_BASE,franja_10m_referencia,tidal,object
+P3_BASE,franja_10m_referencia,tunnel,object
+P3_BASE,franja_10m_referencia,type,object
+P3_BASE,franja_10m_referencia,waterway,object
+P3_BASE,franja_10m_referencia,width,object
+P3_BASE,franja_10m_referencia,@relations,object
+P3_BASE,franja_10m_referencia,wikidata,object
+P3_BASE,franja_10m_referencia,wikipedia,object
+P3_BASE,inegi_elementos_agua_cuenca,cve_geo,object
+P3_BASE,inegi_elementos_agua_cuenca,cve_ent,int64
+P3_BASE,inegi_elementos_agua_cuenca,nom_ent,object
+P3_BASE,inegi_elementos_agua_cuenca,cve_mun,int64
+P3_BASE,inegi_elementos_agua_cuenca,nom_mun,object
+P3_BASE,inegi_elementos_agua_cuenca,tipo,object
+P3_BASE,inegi_elementos_agua_cuenca,nom_tipo,object
+P3_BASE,inegi_elementos_agua_cuenca,latitud,float64
+P3_BASE,inegi_elementos_agua_cuenca,longitud,float64
+P3_BASE,inegi_elementos_agua_cuenca,orig_coord,object
+P3_BASE,inegi_elementos_agua_cuenca,cali_pos,object
+P3_BASE,inegi_elementos_agua_cuenca,g_id,int64
+P3_BASE,inegi_elementos_agua_cuenca,id_cuenca,int64
+P3_BASE,inegi_elementos_agua_cuenca,nom_cuenca,object
+P3_BASE,inegi_elementos_agua_cuenca,id_rha,int64
+P3_BASE,inegi_elementos_agua_cuenca,nom_rha,object
+P3_BASE,inegi_elementos_agua_cuenca,clasif,object
+P3_BASE,inegi_elementos_agua_cuenca,vol_dispo,float64
+P3_BASE,inegi_elementos_agua_cuenca,fuente_datos,object
+P3_BASE,inegi_ptar_cuenca,cve_geo,object
+P3_BASE,inegi_ptar_cuenca,cve_ent,int64
+P3_BASE,inegi_ptar_cuenca,nom_ent,object
+P3_BASE,inegi_ptar_cuenca,cve_mun,int64
+P3_BASE,inegi_ptar_cuenca,nom_mun,object
+P3_BASE,inegi_ptar_cuenca,tipo,object
+P3_BASE,inegi_ptar_cuenca,nom_tipo,object
+P3_BASE,inegi_ptar_cuenca,latitud,float64
+P3_BASE,inegi_ptar_cuenca,longitud,float64
+P3_BASE,inegi_ptar_cuenca,orig_coord,object
+P3_BASE,inegi_ptar_cuenca,cali_pos,object
+P3_BASE,inegi_ptar_cuenca,g_id,int64
+P3_BASE,inegi_ptar_cuenca,id_cuenca,int64
+P3_BASE,inegi_ptar_cuenca,nom_cuenca,object
+P3_BASE,inegi_ptar_cuenca,id_rha,int64
+P3_BASE,inegi_ptar_cuenca,nom_rha,object
+P3_BASE,inegi_ptar_cuenca,clasif,object
+P3_BASE,inegi_ptar_cuenca,vol_dispo,float64
+P3_BASE,inegi_ptar_cuenca,fuente_datos,object
+P3_BASE,inegi_descargas_cuenca,cve_geo,object
+P3_BASE,inegi_descargas_cuenca,cve_ent,int64
+P3_BASE,inegi_descargas_cuenca,nom_ent,object
+P3_BASE,inegi_descargas_cuenca,cve_mun,int64
+P3_BASE,inegi_descargas_cuenca,nom_mun,object
+P3_BASE,inegi_descargas_cuenca,tipo,object
+P3_BASE,inegi_descargas_cuenca,nom_tipo,object
+P3_BASE,inegi_descargas_cuenca,latitud,float64
+P3_BASE,inegi_descargas_cuenca,longitud,float64
+P3_BASE,inegi_descargas_cuenca,orig_coord,object
+P3_BASE,inegi_descargas_cuenca,cali_pos,object
+P3_BASE,inegi_descargas_cuenca,g_id,int64
+P3_BASE,inegi_descargas_cuenca,id_cuenca,int64
+P3_BASE,inegi_descargas_cuenca,nom_cuenca,object
+P3_BASE,inegi_descargas_cuenca,id_rha,int64
+P3_BASE,inegi_descargas_cuenca,nom_rha,object
+P3_BASE,inegi_descargas_cuenca,clasif,object
+P3_BASE,inegi_descargas_cuenca,vol_dispo,float64
+P3_BASE,inegi_descargas_cuenca,fuente_datos,object
+P3_BASE,ptar_compilacion_manual,id,int64
+P3_BASE,ptar_compilacion_manual,Tipo,object
+P3_BASE,ptar_compilacion_manual,Anio,float64
+P3_BASE,ptar_compilacion_manual,Nombre,object
+P3_BASE,ptar_compilacion_manual,Municipio_Localidad,object
+P3_BASE,ptar_compilacion_manual,Proceso,object
+P3_BASE,ptar_compilacion_manual,Capacidad_instalada_Ls,float64
+P3_BASE,ptar_compilacion_manual,Caudal_tratado_Ls,float64
+P3_BASE,ptar_compilacion_manual,Cuerpo_receptor_reuso,object
+P3_BASE,ptar_compilacion_manual,latitud,float64
+P3_BASE,ptar_compilacion_manual,longitud,float64
+P3_BASE,ptar_compilacion_manual,fuente_datos,object
+P3_BASE,red_hidrografica_rh18_cuenca,ID,int64
+P3_BASE,red_hidrografica_rh18_cuenca,CVE_SUBC,object
+P3_BASE,red_hidrografica_rh18_cuenca,CLAVE50K,object
+P3_BASE,red_hidrografica_rh18_cuenca,TIPO,int64
+P3_BASE,red_hidrografica_rh18_cuenca,ENTIDAD,object
+P3_BASE,red_hidrografica_rh18_cuenca,FC,int64
+P3_BASE,red_hidrografica_rh18_cuenca,CONDICION,object
+P3_BASE,red_hidrografica_rh18_cuenca,EDICION,object
+P3_BASE,red_hidrografica_rh18_cuenca,FECHA,datetime64[ms]
+P3_BASE,red_hidrografica_rh18_cuenca,LENGTHM,float64
+P3_BASE,red_hidrografica_rh18_cuenca,ID_DRENA,int32
+P3_BASE,red_hidrografica_rh18_cuenca,FLOWDIR,int64
+P3_BASE,red_hidrografica_rh18_cuenca,ENABLED,int32
+P3_BASE,red_hidrografica_rh18_cuenca,DESC_ENABL,object
+P3_BASE,red_hidrografica_rh18_cuenca,CALI_REPR,int64
+P3_BASE,red_hidrografica_rh18_cuenca,SEQUENCEID,float64
+P3_BASE,red_hidrografica_rh18_cuenca,ORDER_1,int64
+P3_BASE,red_hidrografica_rh18_cuenca,LEVEL_1,int64
+P3_BASE,red_hidrografica_rh18_cuenca,ARBSUM_1,float64
+P3_BASE,red_hidrografica_rh18_cuenca,PATHL_1,float64
+P3_BASE,red_hidrografica_rh18_cuenca,hoja_fuente,object

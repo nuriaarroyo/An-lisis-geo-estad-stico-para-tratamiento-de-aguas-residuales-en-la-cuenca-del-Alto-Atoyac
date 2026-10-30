@@ -1,0 +1,13 @@
+﻿registro_a,registro_b,distancia_m,similitud_nombre,mismo_municipio,atributos_coincidentes,decision,nivel_confianza,justificacion
+PTAR_066,PTAR_005,0.0,1.0,True,nombre+municipio+posición,misma_ptar_probable,B,Coincidencia exacta multicriterio
+PTAR_066,PTAR_006,6164.66,0.405,False,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente
+PTAR_066,PTAR_003,6165.45,0.478,False,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente
+PTAR_067,PTAR_005,1064.99,0.44,True,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente
+PTAR_067,PTAR_003,6952.08,0.291,False,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente
+PTAR_067,PTAR_006,7085.78,0.358,False,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente
+PTAR_068,PTAR_005,2077.18,0.14,True,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente
+PTAR_068,PTAR_003,7801.67,0.167,False,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente
+PTAR_068,PTAR_006,7963.64,0.233,False,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente
+PTAR_069,PTAR_015,0.0,1.0,False,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente
+PTAR_069,PTAR_018,3703.27,0.333,False,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente
+PTAR_069,PTAR_007,5369.88,0.439,False,por_revisar,no_consolidar_revision_manual,D,Candidato espacial; evidencia insuficiente

@@ -1,0 +1,112 @@
+[
+  {
+    "ruta": "data\\raw\\terreno\\huejotzingo\\1\\conjunto_de_datos\\e14b42c3_mt.bil",
+    "sha256": "9e9cae1b2b459bfcf0c6ba7813f2cdc477234128f681cbc0055ef8c8ffdc47aa",
+    "tipo": "MDT"
+  },
+  {
+    "ruta": "data\\raw\\terreno\\huejotzingo\\2\\conjunto_de_datos\\e14b42c3_ms.bil",
+    "sha256": "b879678d7139b09ba8f2b672db84a4a6fa14b2245329e7dd40527e6576c95931",
+    "tipo": "MDS"
+  },
+  {
+    "ruta": "data\\raw\\terreno\\santa ana\\1\\conjunto_de_datos\\e14b42c2_ms.bil",
+    "sha256": "9de65e2d0784b70026a9fdc21afa0e272711a153f491820011005cbf318677b2",
+    "tipo": "MDS"
+  },
+  {
+    "ruta": "data\\raw\\terreno\\santa ana\\2\\794551177266_b\\conjunto_de_datos\\e14b42c2_mt.bil",
+    "sha256": "2ba5facfb07664b86422aee4123d7f49fcd926b8cc6ed8c1930f18df84628993",
+    "tipo": "MDT"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\huejotzingo\\INEGI_Vialidades_.csv",
+    "sha256": "710bb395fe190f8dc7801c012026a6f68d74b376f728b319f890e2552ae3b6f8",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\huejotzingo\\INEGI_Vialidades_.dbf",
+    "sha256": "065805a528402c1bec6d6e986f63d36073c7780084595b58ee3a0aa9a5789f87",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\huejotzingo\\INEGI_Vialidades_.fix",
+    "sha256": "798ed8a952f7c85b2210482784320744d043e0b83f460a0e77eefaf621cf4de7",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\huejotzingo\\INEGI_Vialidades_.prj",
+    "sha256": "00a681c97d09da0982b2634a54aafd0df99c38fa634f682d6b241d18213d5a42",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\huejotzingo\\INEGI_Vialidades_.shp",
+    "sha256": "a3dc43a3c0f65a2a0b5c1732a68dd107cc64903c669f22af3af0ff71acd30cbc",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\huejotzingo\\INEGI_Vialidades_.shx",
+    "sha256": "b7ee03735c5d452188b95684838aac95affec40f26afc1880592d06428375f88",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\san martin labastida\\INEGI_Vialidades_.csv",
+    "sha256": "8bf11dce0e0f9933118c11db64f94da4352fd7cad0b256d0bbf7d38559bde9f5",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\san martin labastida\\INEGI_Vialidades_.dbf",
+    "sha256": "a77d954716b3475bb86cf2bedf7997e85f5692349e5260cd96a5de0413ef33c8",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\san martin labastida\\INEGI_Vialidades_.fix",
+    "sha256": "626a0403a00242b49e80a3a3bdffba131266cb0f5f78a7c6266183b9fdd4df40",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\san martin labastida\\INEGI_Vialidades_.prj",
+    "sha256": "00a681c97d09da0982b2634a54aafd0df99c38fa634f682d6b241d18213d5a42",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\san martin labastida\\INEGI_Vialidades_.shp",
+    "sha256": "19b73a95f361c83e30edeaa4e4c930954d7a48180e9f4f0b32a45bba0490860c",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\san martin labastida\\INEGI_Vialidades_.shx",
+    "sha256": "790a61d42f94a71852fa5cccea7e6f49c268a9e5f61de2826255fdc5729d3155",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\santa ana\\INEGI_Vialidades_.csv",
+    "sha256": "abbcbef50c524f608f077b3e7454ac83e2463b463917e4f4e142c6adc6a50faf",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\santa ana\\INEGI_Vialidades_.dbf",
+    "sha256": "c9b1fc25dd632971a627739c6ae9debf2d92ce5c3e96044ba9a038afade02230",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\santa ana\\INEGI_Vialidades_.fix",
+    "sha256": "324d9738f4d0167635b4a1c4cdd1edd3368df5b6fbbeea7f09a89e87fe757215",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\santa ana\\INEGI_Vialidades_.prj",
+    "sha256": "00a681c97d09da0982b2634a54aafd0df99c38fa634f682d6b241d18213d5a42",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\santa ana\\INEGI_Vialidades_.shp",
+    "sha256": "23f16fbd5d80f1eb6506782055366d2569f8d953ce1aaa075e2e26f4b1a7cf99",
+    "tipo": "vialidad_auxiliar_o_vector"
+  },
+  {
+    "ruta": "data\\raw\\vialidades\\santa ana\\INEGI_Vialidades_.shx",
+    "sha256": "16680000e5e59c077fc7f159a636fb741ca7867e73c980c5b6b2449fad05e393",
+    "tipo": "vialidad_auxiliar_o_vector"
+  }
+]

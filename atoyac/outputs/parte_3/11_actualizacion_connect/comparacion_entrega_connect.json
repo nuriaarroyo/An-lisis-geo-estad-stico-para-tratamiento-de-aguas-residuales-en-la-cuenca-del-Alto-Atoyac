@@ -1,0 +1,15 @@
+{
+  "archivos_huejotzingo_sin_cambios": true,
+  "connect_tramos": 1539,
+  "connect_invalidos": 0,
+  "connect_geometrias_no_presentes_antes": 328,
+  "red_regional_antes": 18707,
+  "red_regional_actual": 19035,
+  "componentes_antes": 82,
+  "componentes_actual": 81,
+  "brecha_nodos_antes_m": 1282.166662851609,
+  "brecha_nodos_actual_m": 989.8026412069584,
+  "brecha_geometrica_actual_m": 989.8026412069585,
+  "rutas_antes": 102,
+  "rutas_actual": 102
+}

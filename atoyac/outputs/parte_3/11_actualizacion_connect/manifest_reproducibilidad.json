@@ -1,0 +1,41 @@
+{
+  "python": "3.13.0",
+  "networkx": "3.6.1",
+  "geopandas": "1.1.3",
+  "fuentes": [
+    {
+      "ruta": "scripts\\307_grafos_corredores_exploratorios.py",
+      "sha256": "87890dc0069c97ae64d7069c4f2adc4369d77751bf865fe4caf04a6c3605f714",
+      "bytes": 19819
+    },
+    {
+      "ruta": "scripts\\308_documentar_grafos_corredores.py",
+      "sha256": "b980b6b620607b0b93280a1068b36df281702c500bc8263ee2f7a09387c72f73",
+      "bytes": 16236
+    },
+    {
+      "ruta": "outputs\\parte_3\\09_foco_santa_ana_huejotzingo\\foco_santa_ana_huejotzingo.gpkg",
+      "sha256": "19ffc1a8d2442d4ff2195f8369d88fc95d78b9c6df34c4aa6a10582b9ae3664b",
+      "bytes": 1683456
+    },
+    {
+      "ruta": "outputs\\parte_3\\08_integracion_vialidades_terreno\\localidades_vialidades_terreno.gpkg",
+      "sha256": "bd6511e24c0497b60ed80f902df0e36884c380bdb496a54fb9cd1af99b32c83a",
+      "bytes": 7909376
+    },
+    {
+      "ruta": "data\\raw\\terreno\\huejotzingo\\1\\conjunto_de_datos\\e14b42c3_mt.bil",
+      "sha256": "9e9cae1b2b459bfcf0c6ba7813f2cdc477234128f681cbc0055ef8c8ffdc47aa",
+      "bytes": 73691200
+    },
+    {
+      "ruta": "data\\raw\\terreno\\santa ana\\2\\794551177266_b\\conjunto_de_datos\\e14b42c2_mt.bil",
+      "sha256": "2ba5facfb07664b86422aee4123d7f49fcd926b8cc6ed8c1930f18df84628993",
+      "bytes": 73707000
+    }
+  ],
+  "fuente_vial_real_esta_revision": "outputs\\parte_3\\11_actualizacion_connect\\vialidades_con_connect.gpkg",
+  "sha256_fuente_vial_real": "4f33ef51b2c032bfd7f4332a704ff1a491902d6d79263efda15278c526f318bf",
+  "auditoria_raw": "auditoria_cambios_archivos.csv",
+  "script_actualizacion_sha256": "4f1f037ef9d82c73b13790699675f26ab1b9fd2fc789c404b551c28609c4c302"
+}

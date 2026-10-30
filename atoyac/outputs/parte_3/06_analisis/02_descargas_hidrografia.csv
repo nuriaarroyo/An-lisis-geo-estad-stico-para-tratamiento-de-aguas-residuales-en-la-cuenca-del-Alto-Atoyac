@@ -1,0 +1,305 @@
+﻿descarga_id,hidrografia_id,distancia_m,tipo_descarga,municipio,cuerpo_receptor,fuente,anio,estado_verificacion,observaciones,tipo_asociacion_cauce,nivel_evidencia
+DES_001,HID_04114,7.093856609359941,no_especificado,San AndrÃ©s Cholula,BARRANCA ALMOLOYA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_002,HID_04091,21.61370475089219,no_especificado,San AndrÃ©s Cholula,BARRANCA ALAMO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_003,HID_04113,12.846613664735157,no_especificado,Puebla,FID 230,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_004,HID_00216,50.91859822989942,no_especificado,Puebla,FID 171,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_005,HID_04138,10.817500503931122,no_especificado,San AndrÃ©s Cholula,FID 158,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_006,HID_00954,13.224790362000808,no_especificado,Puebla,FID 51,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_007,HID_00966,3.6970751156619857,no_especificado,Puebla,FID 219,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_008,HID_04139,8.794887405386092,no_especificado,Puebla,FID 183,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_009,HID_04128,70.11459351043273,no_especificado,San AndrÃ©s Cholula,RIO ZAPATERO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_010,HID_04146,16.698368543827673,no_especificado,Cuautlancingo,PROGRESO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_010,HID_04153,16.698368543827673,no_especificado,Cuautlancingo,PROGRESO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_011,HID_01075,1583.193496871034,no_especificado,Cuautlancingo,SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_012,HID_01006,1767.0101173430842,no_especificado,Cuautlancingo,SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_013,HID_03040,405.2095232414676,no_especificado,Ocoyucan,SANTIAGO COLTZINGO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_014,HID_03040,405.2095232414676,no_especificado,Ocoyucan,SANTIAGO COLTZINGO 2,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_015,HID_04116,215.41378536402084,no_especificado,Ocoyucan,SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_016,HID_03098,1.0524792829831573,no_especificado,San Gregorio Atzompa,CUENCA ATENCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_017,HID_04132,1784.8605007179365,no_especificado,San Pedro Cholula,6 ORIENTE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_017,HID_01071,1784.8605007179365,no_especificado,San Pedro Cholula,6 ORIENTE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_018,HID_04240,15.444884971304988,no_especificado,Juan C. Bonilla,COLECTOR MARGINAL RIO METLALPANAPA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_019,HID_04165,44.2389994098851,no_especificado,Calpan,PARAJE  CUATRO CAMINOS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_020,HID_03334,16.75318749592297,no_especificado,Domingo Arenas,BARRANCA CUACHITA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_021,HID_04231,881.9844724845677,no_especificado,Tlaltenango,DESCARGA DOS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_022,HID_04231,138.00199736345954,no_especificado,Tlaltenango,COMPUERTA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_023,HID_01092,804.9469027143911,no_especificado,San Miguel Xoxtla,RIO TLAPALAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_024,HID_01096,381.3795189343165,no_especificado,Tetlatlahuca,CANAL PORTALES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_025,HID_04257,5.751439346845872,no_especificado,NatÃ­vitas,CARCAMO SANTIAGO MICHAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_026,HID_04242,268.11519886189075,no_especificado,NatÃ­vitas,DESCARGA 2 SAN MIGUEL ANALCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_027,HID_04389,11.082485191309534,no_especificado,Huejotzingo,DESCARGA MUNICIPAL NUMERO 1,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_028,HID_04260,3.00759423725982,no_especificado,NatÃ­vitas,DESCARGA DE SANTIAGO MICHAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_029,HID_01098,576.8239810516118,no_especificado,NatÃ­vitas,DESCARGA 9 JESUS TEPACTEPEC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_030,HID_01113,0.9924208670269223,no_especificado,Tetlatlahuca,LA REGADERA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_031,HID_01141,10.561342472212932,no_especificado,Tetlatlahuca,RIO ZAHUAPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_032,HID_05380,154.01447902485884,no_especificado,Chiautzingo,BARRANCA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_033,HID_05832,2.800786555829025,no_especificado,San Salvador el Verde,RIO ZOPILOCALCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_034,HID_00992,7.872444153518708,no_especificado,Cuautlancingo,FID 5,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_035,HID_01018,14.724107699269076,no_especificado,Tenancingo,PILARES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_036,HID_01031,21.210941811520602,no_especificado,Papalotla de XicohtÃ©ncatl,RIO ZAHUAPAN (EL VALOR),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_037,HID_01035,6.99980199647362,no_especificado,Xicohtzinco,CANAL DEL VALOR,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_038,HID_01026,140.00473224243254,no_especificado,Papalotla de XicohtÃ©ncatl,CANAL DE PANZACOLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_039,HID_01026,56.75739472328135,no_especificado,Papalotla de XicohtÃ©ncatl,PRIVADA AVENIDA DEL TRABAJO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_040,HID_01026,49.8562121649979,no_especificado,Papalotla de XicohtÃ©ncatl,ATOYAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_041,HID_01031,9.51306854159077,no_especificado,Papalotla de XicohtÃ©ncatl,SAN BUENA VENTURA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_042,HID_01125,5.040000746328223,no_especificado,San JerÃ³nimo Zacualpan,COMPUERTA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_043,HID_01113,80.21100326988508,no_especificado,Tetlatlahuca,DESCARGA  TETLATLAHUCA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_044,HID_01041,1.2990636755767668,no_especificado,Xicohtzinco,UNO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_045,HID_01100,4.434391901512062,no_especificado,Zacatelco,DOS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_046,HID_01290,9.521772986814563,no_especificado,San Lorenzo Axocomanitla,BARRANCA BRIONES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_047,HID_01128,7.122261212378981,no_especificado,San JerÃ³nimo Zacualpan,ATLALTENCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_048,HID_01130,6.903383801072977,no_especificado,Tetlatlahuca,DESCARGA AQUIAHUAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_049,HID_04297,5.168722602981165,no_especificado,Tetlatlahuca,BARRANCA EL METRO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_050,HID_04324,6.975130000791986,no_especificado,Tetlatlahuca,TETLATLAHUCA 6,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_051,HID_04273,0.8770507396176668,no_especificado,NatÃ­vitas,DESCARGA RIO ATOYAC CARCAMO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_052,HID_04422,3.4370746076879883,no_especificado,NatÃ­vitas,DESCARGA XOCHITECATITLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_053,HID_04423,12.763547085547918,no_especificado,NatÃ­vitas,DESCARGA SAN RAFAEL,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_054,HID_01148,29.576997740223565,no_especificado,Tetlatlahuca,TETLATLAHUCA 4,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_055,HID_04332,7.6106390885037,no_especificado,Tetlatlahuca,TETLATLAHUCA 9,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_056,HID_01471,9.798571425982834,no_especificado,Tetlatlahuca,TETLATLAHUCA 8,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_057,HID_01476,17.35166460663301,no_especificado,Tetlatlahuca,RIO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_058,HID_04423,14.622744785394145,no_especificado,NatÃ­vitas,CALLE 20 DE NOVIEMBRE SAN RAFAEL TENANYECAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_059,HID_04255,453.5514105734942,no_especificado,Tepetitla de LardizÃ¡bal,DESCARGA 3 Y 5 SAN JOSE ATOYATENCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_060,HID_04518,8.286661347630806,no_especificado,Tepetitla de LardizÃ¡bal,PUNTO DE DESCARGA 5,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_061,HID_04424,937.2723154996788,no_especificado,Tepetitla de LardizÃ¡bal,PUERTA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_062,HID_04424,278.36090516785504,no_especificado,Tepetitla de LardizÃ¡bal,PUNTO DE DESCARGA 6,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_063,HID_04424,798.7353141569251,no_especificado,Tepetitla de LardizÃ¡bal,GUADALUPE VICTORIA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_064,HID_04522,0.4221230176578748,no_especificado,Ixtacuixtla de Mariano Matamoros,CANAL SAN IGNACIO TECUEXCOMAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_065,HID_04540,14.14598068923173,no_especificado,NatÃ­vitas,ZANJA XILOXOTITLA Y TENEXYECAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_066,HID_01531,9.149328213293824,no_especificado,San DamiÃ¡n TexÃ³loc,EL RANCHO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_067,HID_04549,15.730514709202764,no_especificado,Santa Ana Nopalucan,BUENOS AIRES 5,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_068,HID_04550,4.172505155859496,no_especificado,NatÃ­vitas,DESCARGA 1 SAN VICENTE XILOXOCHITLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_069,HID_04549,15.494483570111269,no_especificado,Santa Ana Nopalucan,CANAL SAN VICENTE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_070,HID_04549,14.890868341084833,no_especificado,Santa Ana Nopalucan,BUENOS AIRES 2,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_071,HID_04431,22.543174470007326,no_especificado,Tepetitla de LardizÃ¡bal,1A. DE PORFIRIO DIAZ,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_072,HID_04524,2.8368666096027955,no_especificado,Ixtacuixtla de Mariano Matamoros,TECUEXCOMAC ZANJA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_073,HID_04526,263.85997883711167,no_especificado,Ixtacuixtla de Mariano Matamoros,DESCARGA SANTA INES TECUEXCOMAC V,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_074,HID_04424,9.82329361924506,no_especificado,Tepetitla de LardizÃ¡bal,RIO ATOYAC SAN MATEO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_075,HID_04533,3.527912755330903,no_especificado,Ixtacuixtla de Mariano Matamoros,DESCARGA SANTA INES TECUEXCOMAC VI,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_076,HID_04533,6.928096738778038,no_especificado,Santa Ana Nopalucan,SAN IGNACIO 1,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_077,HID_04536,10.739019529328571,no_especificado,Ixtacuixtla de Mariano Matamoros,DESCARGA SANTA INES TECUEXCOMAC II,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_078,HID_04431,5.184796567478606,no_especificado,Tepetitla de LardizÃ¡bal,VILLA ALTA 2,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_079,HID_05882,11.263971046566535,no_especificado,San MatÃ­as Tlalancaleca,EL TORITO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_080,HID_04536,410.77799259634816,no_especificado,Ixtacuixtla de Mariano Matamoros,DESCARGA SANTA INES TECUEXCOMAC III,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_081,HID_04536,5.977822102803143,no_especificado,Ixtacuixtla de Mariano Matamoros,LA CIENEGA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_082,HID_04536,722.0927501505283,no_especificado,Ixtacuixtla de Mariano Matamoros,DESCARGA SANTA JUSTINA ECATEPEC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_083,HID_04560,7.5371863958703225,no_especificado,Ixtacuixtla de Mariano Matamoros,CANAL BUENOS AIRES TIZOSTOC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_084,HID_04549,11.928748840289986,no_especificado,Santa Ana Nopalucan,CANAL BUENOS AIRES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_085,HID_04551,14.251897178564564,no_especificado,Panotla,DESCARGA 1 TECHACHALCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_086,HID_04551,1.0703207084614381,no_especificado,Panotla,DESCARGA 1 ACATITLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_087,HID_04555,2.4863077808682648,no_especificado,Ixtacuixtla de Mariano Matamoros,DESCARGA TRINIDAD TENEXYECAC-ANALCO II,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_088,HID_01525,410.425725616044,no_especificado,San DamiÃ¡n TexÃ³loc,DESCARGA NO.2,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_089,HID_01525,9.33965226600907,no_especificado,San DamiÃ¡n TexÃ³loc,BARRANCA DE MONTERREY,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_090,HID_01527,2.688932132925964,no_especificado,San DamiÃ¡n TexÃ³loc,DESCARGA EL PUENTE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_091,HID_01533,8.868557567109507,no_especificado,San DamiÃ¡n TexÃ³loc,LA CAÃADA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_092,HID_01529,3.6449071980127266,no_especificado,Panotla,DESCARGA 1 PANOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_093,HID_01563,11.296542852485814,no_especificado,Tlaxcala,CANAL,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_094,HID_01566,1.9095104629593551,no_especificado,Tlaxcala,BARRANCA SN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_095,HID_01573,1.516365454717478,no_especificado,Tlaxcala,BARRANCA SN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_096,HID_01546,92.00218465991914,no_especificado,Totolac,DESCARGA VIVEROS DE PANOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_097,HID_01546,10.17380390756243,no_especificado,Totolac,CAMPO DE FUTBOL ZARAGOZA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_098,HID_01549,25.199066060708212,no_especificado,Totolac,CAMPO DE FUTBOL SAN JUAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_099,HID_01726,228.23206442353666,no_especificado,Panotla,DESCARGA 2 TEMETZONTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_100,HID_01742,24.757413196444443,no_especificado,Panotla,DESCARGA 6 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_101,HID_01742,58.2800457014077,no_especificado,Panotla,DESCARGA 4 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_102,HID_01746,93.33844885873378,no_especificado,Panotla,DESCARGA 7 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_103,HID_01747,15.398347295214663,no_especificado,Panotla,DESCARGA 1 HUILOAPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_104,HID_08118,59.89411611863507,no_especificado,Panotla,DESCARGA 1 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_105,HID_08121,41.473655965799004,no_especificado,Panotla,DESCARGA 2 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_106,HID_09856,24.977950924977215,no_especificado,Xaltocan,BARRANCA EL POTRERO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_107,HID_09918,15.584644433909578,no_especificado,Xaltocan,FOSA 1 SAN SIMON,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_108,HID_10059,18.904221732956476,no_especificado,Xaltocan,DESCARGA 1RA.,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_109,HID_10237,173.60801493942338,no_especificado,Xaltocan,FOSA 2 ACUICUIZCATEPEC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_110,HID_10279,5.9652206537896,no_especificado,Xaltocan,DESCARGA DEL PANTEON,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_111,HID_10267,52.03651507737279,no_especificado,San Lucas Tecopilco,PRIVADA ZARAGOZA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_112,HID_10269,7.001872878715811,no_especificado,San Lucas Tecopilco,CALLE REFORMA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_113,HID_08737,34.65507354355308,no_especificado,Xaltocan,FOSA SEPTICA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_114,HID_08769,104.99697106559147,no_especificado,Hueyotlipan,DESCARGA 16 SAN SIMEON,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_115,HID_04573,142.77214921390916,no_especificado,Ixtacuixtla de Mariano Matamoros,CANAL BUENOS AIRES EL PORVENIR,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_116,HID_05874,0.09955928443205679,no_especificado,San MatÃ­as Tlalancaleca,RIO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_117,HID_04671,42.730897437361094,no_especificado,Ixtacuixtla de Mariano Matamoros,FOSA SEPTICA DE PANTANOS ARTIFICIALES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_118,HID_04756,49.329243668034245,no_especificado,Ixtacuixtla de Mariano Matamoros,FOSA SEPTICA SAN MIGUEL LA PRESA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_119,HID_07107,0.9980752833065626,no_especificado,Ixtacuixtla de Mariano Matamoros,RIO ATOTONILCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_120,HID_04555,1.2773776746534335,no_especificado,Ixtacuixtla de Mariano Matamoros,CHICHICAZAC TENEXYECAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_121,HID_04582,14.304782228996194,no_especificado,Ixtacuixtla de Mariano Matamoros,CHICAZAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_122,HID_04792,8.57131808491274,no_especificado,Ixtacuixtla de Mariano Matamoros,FOSA SEPTICA SAN JOSE ESCANDONA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_123,HID_04873,60.2484711833555,no_especificado,Ixtacuixtla de Mariano Matamoros,FOSA SEPTICA OXTOTLAPANGO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_124,HID_07122,79.48790861402067,no_especificado,Ixtacuixtla de Mariano Matamoros,LAGUNA DE OXIDACION,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_125,HID_07161,51.148153160162295,no_especificado,Ixtacuixtla de Mariano Matamoros,BARRANCA DEL TECHCALADO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_126,HID_01723,234.69384605414942,no_especificado,Panotla,DESCARGA 1 TEMETZONTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_127,HID_08128,62.41679881488931,no_especificado,Panotla,DESCARGA 5 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_128,HID_08128,12.263713706029783,no_especificado,Panotla,DESCARGA 3 HUEXOYUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_129,HID_08447,168.5532404265109,no_especificado,Hueyotlipan,DESCARGA 18 IXCOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_130,HID_08450,52.6391565073886,no_especificado,Hueyotlipan,DESCARGA 19 IXCOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_131,HID_08466,368.07901774933083,no_especificado,Hueyotlipan,DESCARGA 17 IXCOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_132,HID_07186,8.578517669621187,no_especificado,Ixtacuixtla de Mariano Matamoros,DESCARGA ALPOTZONGA DE LIRA Y ORTEGA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_133,HID_08334,16.606348012610436,no_especificado,EspaÃ±ita,FOSA SEPTICA SAN MIGUEL PIPIYOLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_134,HID_08339,99.08628359031285,no_especificado,EspaÃ±ita,JAGÃEY DE SAN MIGUEL PIPIYOLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_135,HID_08523,72.370189078013,no_especificado,EspaÃ±ita,DESCARGA EL DESMONTE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_136,HID_08392,51.05707259171985,no_especificado,EspaÃ±ita,SAN FRANCISCO MITEPEC PLANTA 1,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_137,HID_09250,8.372110119030097,no_especificado,EspaÃ±ita,SAN FRANCISCO MITEPEC PLANTA3													,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_138,HID_08268,83.09774308585726,no_especificado,EspaÃ±ita,EL PIÃON - BARRANCA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_139,HID_08680,14.065724175675584,no_especificado,Hueyotlipan,FINAL DE LA LAGUNA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_140,HID_08684,1.5553885834557162,no_especificado,Hueyotlipan,PUENTE LA CAÃADA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_141,HID_08684,1.2815035444977054,no_especificado,Hueyotlipan,DESCARGA 3,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_142,HID_09360,40.11650428321647,no_especificado,EspaÃ±ita,JAGÃEY SAN JUAN MITEPEC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_143,HID_09303,58.47268289176135,no_especificado,EspaÃ±ita,SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_144,HID_08760,163.63721750544383,no_especificado,Hueyotlipan,DESCARGA 6 TLALPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_145,HID_08761,34.32766739104091,no_especificado,Hueyotlipan,DESCARGA 10 SAN SIMEON,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_146,HID_09482,24.581935808538667,no_especificado,EspaÃ±ita,FOSA SEPTICA LA MAGDALENA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_147,HID_09498,73.05655276579225,no_especificado,EspaÃ±ita,DESCARGA TORRES BARRANCA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_148,HID_09622,43.86687111714989,no_especificado,EspaÃ±ita,PRESA RECOBA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_149,HID_10335,248.07623003971955,no_especificado,San Lucas Tecopilco,MELCHOR OCAMPO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_150,HID_10336,10.500285840904517,no_especificado,San Lucas Tecopilco,BARRANCA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_151,HID_10336,9.38805783950962,no_especificado,San Lucas Tecopilco,PASO BLANCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_152,HID_10272,107.99328252844221,no_especificado,San Lucas Tecopilco,LA LOMA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_153,HID_10429,5.699436398709862,no_especificado,MuÃ±oz de Domingo Arenas,BARRANCA SN 1,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_154,HID_10253,150.55688699894918,no_especificado,Xaltocan,DESCARGA DEL RIO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_155,HID_00905,5.356894895464745,no_especificado,Tenancingo,LA JOYA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_156,HID_00899,5.612829518563741,no_especificado,Tenancingo,ZACATZINGO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_157,HID_00907,18.615178266127295,no_especificado,Papalotla de XicohtÃ©ncatl,DESCARGA A BARRANCA UNIDAD HABITACIONAL LOS PILARES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_158,HID_00887,233.41912979504542,no_especificado,San Pablo del Monte,DESCARGA 1 SAN PABLO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_159,HID_00887,218.07624027878023,no_especificado,San Pablo del Monte,SAN PABLO DEL MONTE (CANAL),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_160,HID_00887,3.4682366196025356,no_especificado,San Pablo del Monte,SAN PABLO DEL MONTE (SAN SEBASTIAN) 2,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_161,HID_00701,14.92181615546069,no_especificado,San Pablo del Monte,SAN PABLO DEL MONTE (SAN ISIDRO),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_162,HID_00609,75.62515442689129,no_especificado,Amozoc,RIO ATOYAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_163,HID_01855,19.88712835752853,no_especificado,San JosÃ© Teacalco,BARRANCA SIN NOMBRE NUMERO 5,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_164,HID_01854,8.69502019267347,no_especificado,San JosÃ© Teacalco,MICHAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_165,HID_02200,357.76745528763286,no_especificado,San JosÃ© Teacalco,ECOLOGICA CUATLAPANGA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_166,HID_02763,8.078327699663946,no_especificado,San JosÃ© Teacalco,DESCARGA 9 SECCION 5,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_167,HID_02765,15.501222294406322,no_especificado,San JosÃ© Teacalco,DESCARGA 10 SECCION 5,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_168,HID_02207,7.7863781501835305,no_especificado,San JosÃ© Teacalco,XICOHTENCATL,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_169,HID_02767,9.019883030891226,no_especificado,San JosÃ© Teacalco,REFORMA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_170,HID_02221,27.528639285561237,no_especificado,San JosÃ© Teacalco,DESCARGA 8 SECCION 5,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_171,HID_02178,13.590035111561845,no_especificado,San JosÃ© Teacalco,05 DE FEBRERO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_172,HID_00907,246.02248657404272,no_especificado,Tenancingo,DESCARGA DE LA SECUNDARIA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_173,HID_00907,345.49759782599415,no_especificado,Tenancingo,DESCARGA DE LA REFORMA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_174,HID_00924,6.168776086641095,no_especificado,Tenancingo,PUNTO DE DESCARGA DE LA TERCERA SECCION,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_175,HID_01275,262.00526857057173,no_especificado,Papalotla de XicohtÃ©ncatl,SAN MARCOS CONTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_176,HID_01390,29.12815949497431,no_especificado,Acuamanala de Miguel Hidalgo,BARRANCA TLEPTZAL,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_177,HID_01246,26.605331632080016,no_especificado,San Francisco Tetlanohcan,20 DE NOVIEMBRE Y AQUILES SERDAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_178,HID_01424,1.5709724957006552,no_especificado,Chiautempan,DS25,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_179,HID_01424,2.564536811308961,no_especificado,Chiautempan,DS22,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_180,HID_01425,7.493907189065138,no_especificado,Tlaxcala,BARRANCA TECOLOTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_181,HID_09746,23.319783687749496,no_especificado,Contla de Juan Cuamatzi,CALLE DE LA CRUZ,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_182,HID_01447,9.59969176484002,no_especificado,Chiautempan,DEL MERCADO NUEVO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_183,HID_09752,34.58078935626553,no_especificado,ApetatitlÃ¡n de Antonio Carvajal,CANAL BELEN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_184,HID_09752,21.25772466756592,no_especificado,ApetatitlÃ¡n de Antonio Carvajal,SAN MATIAS (ZAHUAPAN),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_185,HID_09768,30.891767325936378,no_especificado,ApetatitlÃ¡n de Antonio Carvajal,TECOLOTLA (ZAHUAPAN),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_186,HID_09750,1.7894315693375045,no_especificado,Tlaxcala,BARRANCA RAMONTLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_187,HID_09757,9.87394428811585,no_especificado,Tlaxcala,RIO DE LOS NEGROS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_188,HID_09754,6.891142875953442,no_especificado,ApetatitlÃ¡n de Antonio Carvajal,SAN MATIAS 2 (ZAHUAPAN),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_189,HID_09796,52.93877385936835,no_especificado,Amaxac de Guerrero,SAN DAMIAN TLACOCALPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_190,HID_02140,11.063944745249827,no_especificado,Santa Cruz Tlaxcala,BARRIO DEL ALTO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_191,HID_02052,14.946489353467571,no_especificado,Santa Cruz Tlaxcala,"DESCARGA 5 A BARRANCA XICOYOTLA, BARRIO DEL ALTO",INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_192,HID_02129,3.791932812287415,no_especificado,Santa Cruz Tlaxcala,DESCARGA PRIVADA EMILIO CARRANZA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_193,HID_02236,5.667018529031216,no_especificado,Cuaxomulco,EL CRUCERO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_194,HID_02235,62.570930534510744,no_especificado,Cuaxomulco,EL LLANO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_195,HID_02132,2.7540504495918072,no_especificado,Santa Cruz Tlaxcala,DESCARGA RANCHO SANTA CRUZ,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_196,HID_02142,9.646139418421754,no_especificado,Santa Cruz Tlaxcala,DESCARGA PUENTE EL TESORO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_197,HID_02133,7.191618223284226,no_especificado,Santa Cruz Tlaxcala,DESCARGA ASILAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_198,HID_02143,25.180725145101647,no_especificado,Santa Cruz Tlaxcala,CANAL DE TEPETLALZINGO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_199,HID_02143,17.81378608180428,no_especificado,Santa Cruz Tlaxcala,DESCARGA PRIVADA DEL CARMEN Y BENITO JUAREZ,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_200,HID_02055,7.974648069356618,no_especificado,Santa Cruz Tlaxcala,DESCARGA 1RO. DE MAYO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_201,HID_02146,0.7765630630645891,no_especificado,Santa Cruz Tlaxcala,DESCARGA PUENTE DEL FERROCARRIL Y AV. DEL TRABAJO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_202,HID_02058,12.164348084724503,no_especificado,Santa Cruz Tlaxcala,DESCARGA PUENTE SAN MIGUEL,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_203,HID_02208,86.066389424626,no_especificado,San JosÃ© Teacalco,LA MOJONERA 2,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_204,HID_02463,60.835389355539434,no_especificado,San JosÃ© Teacalco,ENCINAL,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_205,HID_02222,4.685456164181271,no_especificado,Cuaxomulco,ZACAMOLPA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_206,HID_02769,41.88307605040915,no_especificado,San JosÃ© Teacalco,PIRULES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_207,HID_02222,22.049737280469607,no_especificado,Cuaxomulco,BUENAVISTA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_208,HID_02222,467.218623506668,no_especificado,Cuaxomulco,COLONIA TORRES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_209,HID_02272,35.42426470223782,no_especificado,Santa Cruz Tlaxcala,RIO TEQUIXQUIATL SAN MIGUEL CONTLA (3),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_210,HID_02272,28.10208604101182,no_especificado,Santa Cruz Tlaxcala,RIO TEQUIXQUIATL SAN MIGUEL CONTLA (4),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_211,HID_02272,0.7501978038332568,no_especificado,Santa Cruz Tlaxcala,DESCARGA EL TESORO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_212,HID_02267,207.12684879776248,no_especificado,Santa Cruz Tlaxcala,DESCARGA SAN MIGUEL 1 Y 2,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_213,HID_02280,3.870147561089068,no_especificado,Cuaxomulco,ESCUELA EMSAD,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_214,HID_02236,8.526984738025092,no_especificado,Cuaxomulco,CABECERA MUNICIPAL,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_215,HID_02244,17.84414093630848,no_especificado,Cuaxomulco,ATENCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_216,HID_02283,5.308068184822616,no_especificado,Cuaxomulco,PARADATLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_217,HID_02236,2.152422678904274,no_especificado,Tzompantepec,SAN SALVADOR,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_218,HID_02267,6.160092217913457,no_especificado,Tzompantepec,SAN ANDRES III,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_219,HID_02286,49.20017541124605,no_especificado,Tzompantepec,SAN ANDRES II,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_220,HID_02290,22.107202478139303,no_especificado,Santa Cruz Tlaxcala,DESCARGA 15 AL RIO TEQUISQUIAC PROVENIENTE DE CARRETRA SANTA CRUZ - APIZACO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_221,HID_02248,4.197268740385621,no_especificado,Tzompantepec,FOSA SEPTICA XALTIANQUISCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_222,HID_02811,396.6432434819638,no_especificado,Tzompantepec,FOSA SEPTICA SAN MATEO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_223,HID_02466,33.38568108060132,no_especificado,Tzompantepec,FOSA SEPTICA BARRANQUILLA XALTIANQUISCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_224,HID_02465,356.45219094275876,no_especificado,Tzompantepec,FOSA SAN JUAN QUETZALCOAPAN (LEONA VICARIO),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_225,HID_02250,1132.20592755797,no_especificado,Tzompantepec,FOSA SEPTICA BARRANCA SIN NOMBRE ( SAN JUAN),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_226,HID_02821,1.0169109680014177,no_especificado,Xaloztoc,BARRANCA DE SAN PEDRO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_227,HID_02467,5.873308360809514,no_especificado,Xaloztoc,BARRANCA TLACHA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_228,HID_02279,0.9110001763991997,no_especificado,Santa Cruz Tlaxcala,DESCARGA 16 AL RIO TEQUISQUIAC PROVENIENTE DE CANAL SOBRE CARRETRA SANTA CRUZ - APIZACO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_229,HID_02301,2.9653483828886937,no_especificado,Tzompantepec,SAN ANDRES I,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_230,HID_02296,88.49642412440203,no_especificado,Santa Cruz Tlaxcala,DESCARGA 17 AL COLECTOR DE AGUAS RESIDUALES DEL MUNICIPIO DE APIZACO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_231,HID_02297,14.33501937761799,no_especificado,Apizaco,DESCARGA 1 SAN LUIS APIZAQUITO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_232,HID_02279,497.78510129482805,no_especificado,Santa Cruz Tlaxcala,DESCARGA VISTA HERMOSA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_233,HID_09800,5.768580138675866,no_especificado,Amaxac de Guerrero,DESCARGA DOS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_234,HID_09800,9.671534375730875,no_especificado,Amaxac de Guerrero,DESCARGA 1,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_235,HID_09800,16.707399230728086,no_especificado,Amaxac de Guerrero,DESCARGA TRES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_236,HID_02131,15.552641055949824,no_especificado,Amaxac de Guerrero,DESCARGA 5 CALLE VICENTE GUERRERO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_237,HID_02131,10.08242742510158,no_especificado,Amaxac de Guerrero,DESCARGA 4 CALLE LEONA VICARIO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_238,HID_10137,39.85268174080025,no_especificado,Yauhquemehcan,FOSA DE ATLIHUETZIAN CAMINO A AMAXAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_239,HID_09768,14.307362740566978,no_especificado,ApetatitlÃ¡n de Antonio Carvajal,RIO ZAHUAPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_240,HID_09770,150.71791891233323,no_especificado,Contla de Juan Cuamatzi,RIO ZAHUAPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_241,HID_10138,3.677551523614496,no_especificado,Yauhquemehcan,SANTA MARIA ATLIHUETZIA 3,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_242,HID_10137,3.3770874775999045,no_especificado,Yauhquemehcan,DESCARGA AL PUENTE DE LA CONQUISTA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_243,HID_02152,16.643965388362666,no_especificado,Yauhquemehcan,DESCARGA DE AGUA RESIDUAL BARRANCA COYOATLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_244,HID_02154,5.648677048890842,no_especificado,Yauhquemehcan,DESCARGA DE CALLE LOS MUSICOS A COYOATLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_245,HID_02154,5.686598213971146,no_especificado,Yauhquemehcan,SAN LORENZO TLACUALOYAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_246,HID_09921,22.48912890431375,no_especificado,Xaltocan,FOSA 2 SAN SIMON,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_247,HID_09923,4.999118486909666,no_especificado,Xaltocan,BARRANCA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_248,HID_09923,8.001337850453542,no_especificado,Xaltocan,RIO ZAHUAPAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_249,HID_09925,1.0815431682564582,no_especificado,Xaltocan,BARRANCA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_250,HID_02154,440.538882945524,no_especificado,Yauhquemehcan,CALLE CAMINO REAL Y 2 DE ENERO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_251,HID_02157,152.66828041866975,no_especificado,Yauhquemehcan,FOSA SEPTICA SAN BENITO XALTOCAN DELANTE DE LA IGLESIA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_252,HID_02367,16.829724006819777,no_especificado,Yauhquemehcan,FOSA SEPTICA DEL BALNEARIO DE SAN BENITO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_253,HID_10141,100.208162446793,no_especificado,Yauhquemehcan,FOSA SEPTICA JUNTO A LA MOJONERA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_254,HID_10141,105.72975949129564,no_especificado,Yauhquemehcan,FOSA AL LIMITE CON EL ROSARIO OCOTOXCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_255,HID_10141,226.0803098133788,no_especificado,Yauhquemehcan,DESCARGA OCOTOXCO A BARRANCA SIN NOMBRE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_256,HID_10141,366.33509403325127,no_especificado,Yauhquemehcan,FOSA SEPTICA OCOTOXCO PANTEON,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_257,HID_10188,136.74072597080448,no_especificado,Xaltocan,DESCARGA 3,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_258,HID_10156,120.44834910147722,no_especificado,Xaltocan,PRIVADA GUADALUPE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_259,HID_10164,10.609411020549013,no_especificado,Xaltocan,BARRANCA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_260,HID_10078,34.49825804654405,no_especificado,Xaltocan,AVENIDA DEL TRABAJO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_261,HID_10083,10.888951530328198,no_especificado,Xaltocan,AVENIDA DEL TRABAJO 1,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_262,HID_10144,10.190566038057497,no_especificado,Yauhquemehcan,SAN DIONISIO YAUHQUEMEHCAN 2,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_263,HID_10144,2.3811058614234155,no_especificado,Yauhquemehcan,FOSA SEPTICA FUENTE DE RIELES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_264,HID_11163,923.7621738823766,no_especificado,Atlangatepec,FOSA 2 SAN LUIS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_265,HID_10182,564.3877020440927,no_especificado,MuÃ±oz de Domingo Arenas,LAGUNA DE OXIDACION CHIPILA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_266,HID_10630,783.2932514561791,no_especificado,Atlangatepec,FOSA 3 SAN LUIS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_267,HID_10643,155.5352438338488,no_especificado,Atlangatepec,FOSA DE SANTA CLARA OZUMBA (NUEVA),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_268,HID_10503,89.39615633625871,no_especificado,Atlangatepec,FOSA DE ZUMPANGO (NUEVA),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_269,HID_02467,0.9362208444199591,no_especificado,Apizaco,SANTA MARIA TEXCALAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_270,HID_02817,96.02736684508398,no_especificado,Xaloztoc,ZOLTEPETZI,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_271,HID_02331,14.104948126382114,no_especificado,Apizaco,APIZAQUITO 1,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_272,HID_02324,15.692765950098817,no_especificado,Apizaco,APIZAQUITO 4,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_273,HID_02331,21.31631532056321,no_especificado,Apizaco,COLONIA FERROCARRILERA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_274,HID_02325,10.963402922497833,no_especificado,Apizaco,CARRETERA A TETLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_275,HID_02253,13.216649882314632,no_especificado,Apizaco,SANTA MARIA TEXCALAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_276,HID_02254,11.445990099992773,no_especificado,Apizaco,SANTA MARIA TEXCALAC,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_277,HID_02254,2.046626229371257,no_especificado,Apizaco,BV. CIENEGA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_278,HID_02375,337.05560142822975,no_especificado,Apizaco,DESCARGA TETEL-HOVOMEX,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_279,HID_02376,42.34265169723645,no_especificado,Yauhquemehcan,DESCARGA CERCA DEL OCOTAL,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_280,HID_02341,11.70345887303726,no_especificado,Tetla de la Solidaridad,"3RA SECCION, CALLE CANCUN Y OAXACA",INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_281,HID_02378,3.607995685853068,no_especificado,Yauhquemehcan,FOSA LA QUEBRADORA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_282,HID_02380,4.565673613690594,no_especificado,Yauhquemehcan,AVENIDA DEL TRABAJO FRACC. LOS ARCOS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_283,HID_02834,706.8472506522255,no_especificado,Xaloztoc,FOSA DE OXIDACION,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_284,HID_02881,0.46684543345675883,no_especificado,Tetla de la Solidaridad,FOSA SEPTICA PIEDRAS NEGRAS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_285,HID_02404,157.2060074247254,no_especificado,Tetla de la Solidaridad,BARRANCA SIN NOMBRE CALLE PUENTE GRANDE,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_286,HID_02408,46.31250580833022,no_especificado,Apizaco,COLONIA JOSE MARIA MORELOS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_287,HID_10757,20.69349986630261,no_especificado,Atlangatepec,FOSA 4 SAN PEDRO ECATEPEC (NUEVA),INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_288,HID_10672,5.878636688675223,no_especificado,Atlangatepec,DESCARGA DE VILLA DE LAS FLORES,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_289,HID_02518,276.5074062969854,no_especificado,Tlaxco,LAGUNA DE OXIDACION,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_290,HID_11069,4.198747557690959,no_especificado,Tetla de la Solidaridad,BARRANCA S/N,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_291,HID_11052,215.122593274288,no_especificado,Tetla de la Solidaridad,FOSA DE OXIDACION,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_292,HID_11206,267.4800730907822,no_especificado,Tlaxco,DESCARGA A LA BARRANQUILLA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_293,HID_10839,95.98157252989509,no_especificado,Atlangatepec,DESCARGA DE SANTA ELENA BARRANCA EL SALTERIO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_294,HID_11469,35.48704222977431,no_especificado,Tlaxco,FOSA MAXIMO ROJAS,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_295,HID_11364,166.33234333484342,no_especificado,Tlaxco,PRESA DE OXIDACION ATOTONILCO,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_296,HID_11379,258.06687131167536,no_especificado,Tlaxco,FOSA TECOMALUCAN,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_297,HID_11814,5.238694697899451,no_especificado,Tlaxco,HUEXOTITLA FOSA SEPTICA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_298,HID_11762,18.31608722930208,no_especificado,Tlaxco,FOSA DE N.C.P. LA HERRADURA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_299,HID_11183,358.51263478578215,no_especificado,Tlaxco,DESCARGA 2,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_300,HID_10634,89.23563580236058,no_especificado,Atlangatepec,DESCARGA 3 DE SANTA CLARA OZUMBA BARRANCA LA HERRADURA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_301,HID_10634,1.6758487707521035,no_especificado,Atlangatepec,SANTA CLARA OZUMBA,INEGI CNGMD 2021 (descarga 2023),2021.0,A_registro_oficial_no_operacion,,proximidad_geometrica,C
+DES_302,HID_04413,1480.661233174596,industrial,San Martín Texmelucan,Río Atoyac,PTAR_Final.csv,,C_compilacion_por_verificar,Global Denim S.A. de C.V.,proximidad_geometrica,C
